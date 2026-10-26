@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "^/$",
-      "dest": "/api/index"
+      "dest": "/api/_index"
     },
     {
       "src": "^/admin/?$",
@@ -18,15 +18,47 @@
       "dest": "/api/version"
     },
     {
-      "src": "^/api/(.+)$",
-      "dest": "/api/$1"
+      "src": "^/api/channels(.*)$",
+      "dest": "/api/channels$1"
+    },
+    {
+      "src": "^/api/auth(.*)$",
+      "dest": "/api/auth$1"
+    },
+    {
+      "src": "^/api/health(.*)$",
+      "dest": "/api/health$1"
+    },
+    {
+      "src": "^/api/customers(.*)$",
+      "dest": "/api/customers$1"
+    },
+    {
+      "src": "^/api/devices(.*)$",
+      "dest": "/api/devices$1"
+    },
+    {
+      "src": "^/api/subscriptions(.*)$",
+      "dest": "/api/subscriptions$1"
+    },
+    {
+      "src": "^/api/settings(.*)$",
+      "dest": "/api/settings$1"
+    },
+    {
+      "src": "^/api/version(.*)$",
+      "dest": "/api/version$1"
+    },
+    {
+      "src": "^/api/report(.*)$",
+      "dest": "/api/report$1"
     },
     {
       "src": "^/(css|js)/(.+)$",
       "dest": "/$1/$2"
     },
     {
-      "src": "^/(.+\\.(html|css|js|json|png|jpg|ico|svg))$",
+      "src": "^/(.+)$",
       "dest": "/$1"
     }
   ],
