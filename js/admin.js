@@ -559,18 +559,33 @@ class AdminDashboard {
           </div>
 
           <div style="display:flex; gap:8px; flex-shrink:0;">
-            <button onclick="app.reimportPlaylist('${pl.id}', '${pl.url || ''}', \`${pl.name || ''}\\`)"
-              class="btn-secondary-admin" style="padding:6px 12px; font-size:12px;">
-              \u{1F504} রি-ইমপোর্ট
+            <button class="btn-reimport-pl btn-secondary-admin" data-id="${pl.id}" data-url="${encodeURIComponent(pl.url || '')}" data-name="${encodeURIComponent(pl.name || '')}" style="padding:6px 12px; font-size:12px;">
+              🔄 রি-ইমপোর্ট
             </button>
-            <button onclick="app.deletePlaylist('${pl.id}', \`${pl.name || 'প্লেলিস্ট'}\\`)"
-              style="padding:6px 12px; font-size:12px; background:rgba(255,59,48,0.15);
-                border:1px solid rgba(255,59,48,0.4); color:#ff3b30; border-radius:8px; cursor:pointer;">
-              \u{1F5D1} মুছুন
+            <button class="btn-delete-pl" data-id="${pl.id}" data-name="${encodeURIComponent(pl.name || 'প্লেলিস্ট')}" style="padding:6px 12px; font-size:12px; background:rgba(255,59,48,0.15); border:1px solid rgba(255,59,48,0.4); color:#ff3b30; border-radius:8px; cursor:pointer;">
+              🗑 মুছুন
             </button>
           </div>
         </div>`;
     }).join('');
+
+    // Attach event listeners safely without escaping bugs
+    container.querySelectorAll('.btn-reimport-pl').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.id;
+        const url = decodeURIComponent(btn.dataset.url || '');
+        const name = decodeURIComponent(btn.dataset.name || '');
+        this.reimportPlaylist(id, url, name);
+      });
+    });
+
+    container.querySelectorAll('.btn-delete-pl').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = btn.dataset.id;
+        const name = decodeURIComponent(btn.dataset.name || 'প্লেলিস্ট');
+        this.deletePlaylist(id, name);
+      });
+    });
   }
 
   async deletePlaylist(id, name) {
@@ -634,10 +649,6 @@ class AdminDashboard {
       btn.textContent = '⚡ হেলথ স্ক্যান চালান';
       btn.disabled = false;
     }
-  }
-
-      tbody.appendChild(tr);
-    });
   }
 
   // 9. Customers & Subscriptions
