@@ -1,9 +1,34 @@
 {
-  "cleanUrls": true,
-  "rewrites": [
-    { "source": "/admin", "destination": "/admin.html" },
-    { "source": "/playlist.m3u", "destination": "/api/playlist" },
-    { "source": "/version.json", "destination": "/api/version" }
+  "cleanUrls": false,
+  "routes": [
+    {
+      "src": "^/$",
+      "dest": "/api/index"
+    },
+    {
+      "src": "^/admin/?$",
+      "dest": "/admin.html"
+    },
+    {
+      "src": "^/playlist\\.m3u$",
+      "dest": "/api/playlist"
+    },
+    {
+      "src": "^/version\\.json$",
+      "dest": "/api/version"
+    },
+    {
+      "src": "^/api/(.+)$",
+      "dest": "/api/$1"
+    },
+    {
+      "src": "^/(css|js)/(.+)$",
+      "dest": "/$1/$2"
+    },
+    {
+      "src": "^/(.+\\.(html|css|js|json|png|jpg|ico|svg))$",
+      "dest": "/$1"
+    }
   ],
   "headers": [
     {
