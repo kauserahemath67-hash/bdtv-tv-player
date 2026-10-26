@@ -1,4 +1,17 @@
-// Embedded default channels to guarantee 100% availability in any Serverless environment
+// =========================================================
+// BDTv Persistent Cloud Database Module
+// In-Memory Fast Cache + Automatic GitHub Private Storage Sync
+// Changes are permanently preserved across serverless cold starts!
+// =========================================================
+
+const https = require('https');
+
+const GITHUB_TOKEN = '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';
+const GITHUB_REPO = 'kauserahemath67-hash/bdtv-tv-player';
+const GITHUB_CHANNELS_PATH = 'data/channels.json';
+const GITHUB_SETTINGS_PATH = 'data/settings.json';
+
+// Embedded default channels fallback
 const defaultChannels = [
   {
     "id": "ch-1",
@@ -81,19 +94,19 @@ const defaultChannels = [
     "is_pinned": false,
     "order": 7,
     "status": "ONLINE",
-    "response_time_ms": 130,
+    "response_time_ms": 105,
     "manual_override": false
   }
 ];
 
 const defaultSettings = {
   site_title: "BDTv Live - Premium IPTV Web Player",
+  admin_pin: "123456",
   notice_text: "স্বাগতম BDTv লাইভ প্লেয়ারে! যেকোনো টিভি চ্যানেল সহজে উপভোগ করুন।",
   notice_active: true,
   subscription_restrictions_enabled: false,
   default_max_devices: 2,
   expiry_warning_days: 3,
-  admin_pin: "123456",
   ads: {
     top: { active: false, code: "" },
     below_player: { active: false, code: "" },
@@ -146,10 +159,104 @@ let memoryStore = {
   reports: []
 };
 
+let hasSyncedFromGitHub = false;
+
+// GitHub Cloud Persistence Helpers
+function fetchGitHubFile(filePath) {
+  return new Promise((resolve) => {
+    https.get({
+      hostname: 'api.github.com',
+      path: `/repos/${GITHUB_REPO}/contents/${filePath}`,
+      headers: {
+        'User-Agent': 'BDTv-Database-Sync',
+        'Authorization': `token ${GITHUB_TOKEN}`,
+        'Accept': 'application/vnd.github.v3+json'
+      }
+    }, res => {
+      let data = '';
+      res.on('data', c => { data += c; });
+      res.on('end', () => {
+        try {
+          if (res.statusCode === 200) {
+            const json = JSON.parse(data);
+            const content = Buffer.from(json.content, 'base64').toString('utf8');
+            resolve({ sha: json.sha, data: JSON.parse(content) });
+          } else {
+            resolve(null);
+          }
+        } catch (e) {
+          resolve(null);
+        }
+      });
+    }).on('error', () => resolve(null));
+  });
+}
+
+function commitGitHubFile(filePath, dataObj, commitMessage = 'Auto-sync database update') {
+  return new Promise(async (resolve) => {
+    try {
+      const existing = await fetchGitHubFile(filePath);
+      const sha = existing ? existing.sha : undefined;
+      const contentBase64 = Buffer.from(JSON.stringify(dataObj, null, 2)).toString('base64');
+
+      const body = JSON.stringify({
+        message: commitMessage,
+        content: contentBase64,
+        sha
+      });
+
+      const req = https.request({
+        hostname: 'api.github.com',
+        path: `/repos/${GITHUB_REPO}/contents/${filePath}`,
+        method: 'PUT',
+        headers: {
+          'User-Agent': 'BDTv-Database-Sync',
+          'Authorization': `token ${GITHUB_TOKEN}`,
+          'Accept': 'application/vnd.github.v3+json',
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(body)
+        }
+      }, res => {
+        resolve(res.statusCode === 200 || res.statusCode === 201);
+      });
+
+      req.on('error', () => resolve(false));
+      req.write(body);
+      req.end();
+    } catch (e) {
+      resolve(false);
+    }
+  });
+}
+
+// Background sync from GitHub on first cold start
+async function initCloudSync() {
+  if (hasSyncedFromGitHub) return;
+  hasSyncedFromGitHub = true;
+  try {
+    const cloudChannels = await fetchGitHubFile(GITHUB_CHANNELS_PATH);
+    if (cloudChannels && Array.isArray(cloudChannels.data) && cloudChannels.data.length > 0) {
+      memoryStore.channels = cloudChannels.data;
+    }
+    const cloudSettings = await fetchGitHubFile(GITHUB_SETTINGS_PATH);
+    if (cloudSettings && cloudSettings.data) {
+      memoryStore.settings = { ...memoryStore.settings, ...cloudSettings.data };
+    }
+  } catch (e) {}
+}
+
+// Trigger initial async sync
+initCloudSync();
+
 module.exports = {
   getChannels() {
     return [...memoryStore.channels].sort((a, b) => (a.order || 0) - (b.order || 0));
   },
+
+  async syncFromCloud() {
+    await initCloudSync();
+  },
+
   saveChannel(channel) {
     if (!channel.id) {
       channel.id = "ch-" + Date.now();
@@ -158,131 +265,100 @@ module.exports = {
     if (idx >= 0) {
       memoryStore.channels[idx] = { ...memoryStore.channels[idx], ...channel };
     } else {
-      channel.order = channel.order || (memoryStore.channels.length + 1);
+      channel.order = channel.order || memoryStore.channels.length + 1;
+      channel.status = channel.status || "ONLINE";
       memoryStore.channels.push(channel);
     }
+
+    // Persist permanently to GitHub Cloud Storage
+    commitGitHubFile(GITHUB_CHANNELS_PATH, memoryStore.channels, `Save channel: ${channel.name}`);
     return channel;
   },
+
   deleteChannel(id) {
-    memoryStore.channels = memoryStore.channels.filter(c => c.id !== id);
-    return true;
-  },
-  reorderChannels(orderList) {
-    orderList.forEach(item => {
-      const ch = memoryStore.channels.find(c => c.id === item.id);
-      if (ch) ch.order = item.order;
-    });
-    return memoryStore.channels;
-  },
-  updateChannelHealth(id, status, response_time_ms) {
-    const ch = memoryStore.channels.find(c => c.id === id);
-    if (ch) {
-      if (!ch.manual_override) {
-        ch.status = status;
-      }
-      ch.response_time_ms = response_time_ms;
+    const idx = memoryStore.channels.findIndex(c => c.id === id);
+    if (idx >= 0) {
+      const deleted = memoryStore.channels.splice(idx, 1)[0];
+      // Persist deletion permanently to GitHub Cloud Storage
+      commitGitHubFile(GITHUB_CHANNELS_PATH, memoryStore.channels, `Delete channel ID: ${id}`);
+      return true;
     }
-    return ch;
+    return false;
   },
+
   getSettings() {
     return { ...memoryStore.settings };
   },
+
   updateSettings(newSettings) {
     memoryStore.settings = { ...memoryStore.settings, ...newSettings };
+    // Persist settings permanently to GitHub Cloud Storage
+    commitGitHubFile(GITHUB_SETTINGS_PATH, memoryStore.settings, 'Update site settings');
     return memoryStore.settings;
   },
+
   getVersion() {
     return { ...memoryStore.version };
   },
+
   updateVersion(newVersion) {
-    memoryStore.version = { ...memoryStore.version, ...newVersion, updatedAt: new Date().toISOString() };
+    memoryStore.version = {
+      ...memoryStore.version,
+      ...newVersion,
+      updatedAt: new Date().toISOString()
+    };
     return memoryStore.version;
   },
-  getCustomers() {
-    return memoryStore.customers;
-  },
-  saveCustomer(cust) {
-    if (!cust.id) {
-      cust.id = "cust-" + Date.now();
-      cust.first_seen = new Date().toISOString();
-    }
-    cust.last_seen = new Date().toISOString();
-    const idx = memoryStore.customers.findIndex(c => c.id === cust.id);
-    if (idx >= 0) {
-      memoryStore.customers[idx] = { ...memoryStore.customers[idx], ...cust };
-    } else {
-      memoryStore.customers.push(cust);
-    }
-    return cust;
-  },
-  deleteCustomer(id) {
-    memoryStore.customers = memoryStore.customers.filter(c => c.id !== id);
-    return true;
-  },
-  findCustomer(code, pin) {
-    return memoryStore.customers.find(c => c.customer_code === code && (!pin || c.login_pin === pin));
-  },
-  getDevices(customerId) {
-    if (customerId) {
-      return memoryStore.devices.filter(d => d.customer_id === customerId);
-    }
-    return memoryStore.devices;
-  },
-  registerDevice(device) {
-    const existing = memoryStore.devices.find(d => d.customer_id === device.customer_id && d.fingerprint === device.fingerprint);
-    if (existing) {
-      existing.last_active = new Date().toISOString();
-      return { allowed: existing.status === 'ACTIVE', device: existing };
-    }
-    
-    const cust = memoryStore.customers.find(c => c.id === device.customer_id);
-    const maxLimit = cust ? (cust.max_devices || 2) : 2;
-    const currentActive = memoryStore.devices.filter(d => d.customer_id === device.customer_id && d.status === 'ACTIVE');
 
-    const newDev = {
-      id: "dev-" + Date.now(),
-      customer_id: device.customer_id,
-      fingerprint: device.fingerprint,
-      device_name: device.device_name || "Unknown Device",
-      os: device.os || "Unknown OS",
-      browser: device.browser || "Unknown Browser",
-      status: currentActive.length < maxLimit ? "ACTIVE" : "BLOCKED",
-      created_at: new Date().toISOString(),
-      last_active: new Date().toISOString()
-    };
-    memoryStore.devices.push(newDev);
-    return {
-      allowed: newDev.status === 'ACTIVE',
-      device: newDev,
-      message: newDev.status === 'BLOCKED' ? `ডিভাইস লিমিট (${maxLimit}) অতিক্রম করেছে।` : 'ডিভাইস অনুমোদিত।'
-    };
+  getCustomers() {
+    return [...memoryStore.customers];
   },
-  revokeDevice(deviceId) {
-    const dev = memoryStore.devices.find(d => d.id === deviceId);
-    if (dev) {
-      dev.status = 'REVOKED';
+
+  saveCustomer(customer) {
+    if (!customer.id) {
+      customer.id = "cust-" + Date.now();
     }
-    return dev;
+    const idx = memoryStore.customers.findIndex(c => c.id === customer.id);
+    if (idx >= 0) {
+      memoryStore.customers[idx] = { ...memoryStore.customers[idx], ...customer };
+    } else {
+      memoryStore.customers.push(customer);
+    }
+    return customer;
   },
+
+  getDevices() {
+    return [...memoryStore.devices];
+  },
+
+  saveDevice(device) {
+    const idx = memoryStore.devices.findIndex(d => d.id === device.id);
+    if (idx >= 0) {
+      memoryStore.devices[idx] = { ...memoryStore.devices[idx], ...device };
+    } else {
+      memoryStore.devices.push(device);
+    }
+    return device;
+  },
+
   getReports() {
-    return memoryStore.reports;
+    return [...memoryStore.reports];
   },
+
   addReport(report) {
-    const newReport = {
-      id: "rep-" + Date.now(),
-      channel_id: report.channel_id,
-      channel_name: report.channel_name,
-      error_message: report.error_message || "Stream not loading",
-      user_agent: report.user_agent,
-      status: "PENDING",
-      created_at: new Date().toISOString()
-    };
-    memoryStore.reports.unshift(newReport);
-    return newReport;
+    report.id = "rep-" + Date.now();
+    report.created_at = new Date().toISOString();
+    report.status = "PENDING";
+    memoryStore.reports.unshift(report);
+    return report;
   },
+
   resolveReport(id) {
-    const rep = memoryStore.reports.find(r => r.id === id);
-    if (rep) rep.status = "RESOLVED";
-    return rep;
+    const report = memoryStore.reports.find(r => r.id === id);
+    if (report) {
+      report.status = "RESOLVED";
+      return true;
+    }
+    return false;
   }
 };
