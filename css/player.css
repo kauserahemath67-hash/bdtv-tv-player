@@ -235,6 +235,34 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   white-space: nowrap;
 }
 
+/* Channels Toggle Pill Button */
+.btn-channels-pill {
+  background: rgba(14, 18, 28, 0.82);
+  border: 1.5px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  padding: 7px 18px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-channels-pill:hover, .btn-channels-pill:focus {
+  background: rgba(255, 210, 0, 0.25);
+  border-color: #ffd200;
+  color: #ffd200;
+  box-shadow: 0 0 18px rgba(255, 210, 0, 0.6);
+  transform: translateY(-1px);
+}
+
 .btn-top-action:hover, .btn-top-action:focus {
   background: rgba(255, 255, 255, 0.26);
   border-color: rgba(255, 255, 255, 0.4);
@@ -314,7 +342,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
 }
 
 /* ---------------------------------------------------------
-   5. Slider Channel Drawer (Bottom Sheet)
+   5. Floating Glassmorphism Channel Drawer (Auto-Hiding)
    --------------------------------------------------------- */
 #channel-drawer {
   position: absolute;
@@ -322,18 +350,18 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   left: 0;
   right: 0;
   z-index: 70;
-  transform: translateY(calc(100% - 40px));
-  transition: transform 0.38s cubic-bezier(0.18, 0.89, 0.32, 1.15);
-  background: rgba(13, 14, 21, 0.94);
-  border-top: 1px solid var(--surface-border);
-  backdrop-filter: blur(32px);
-  -webkit-backdrop-filter: blur(32px);
-  border-radius: 22px 22px 0 0;
-  max-height: 68vh;
+  transform: translateY(calc(100% - 36px));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.35s ease;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(6, 8, 14, 0.65) 15%, rgba(6, 8, 14, 0.92) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 20px 20px 0 0;
+  max-height: 60vh;
   display: flex;
   flex-direction: column;
   padding-bottom: var(--safe-bottom);
-  box-shadow: 0 -8px 30px rgba(0,0,0,0.6);
+  box-shadow: 0 -10px 40px rgba(0,0,0,0.7);
 }
 
 #channel-drawer.open {
@@ -341,7 +369,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
 }
 
 .drawer-handle {
-  height: 40px;
+  height: 36px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,7 +389,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
 }
 
 .drawer-handle:hover .handle-bar, #channel-drawer.open .handle-bar {
-  background: var(--primary);
+  background: #ffd200;
   width: 56px;
 }
 
@@ -433,8 +461,8 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
 }
 
 .channel-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(18, 22, 34, 0.72);
+  border: 1.5px solid rgba(255, 255, 255, 0.12);
   border-radius: 14px;
   padding: 12px 10px;
   display: flex;
@@ -443,24 +471,26 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   text-align: center;
   cursor: pointer;
   position: relative;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), 
+  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), 
               border-color 0.2s ease, 
               box-shadow 0.2s ease, 
               background-color 0.2s ease;
   outline: none;
+  backdrop-filter: blur(8px);
 }
 
 .channel-card:hover {
-  background: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Android TV Remote & Keyboard Focus State */
+/* Android TV Remote & Keyboard Focus State (Vibrant Yellow Glow like Nagorik TV in user screenshot) */
 .channel-card.focused, .channel-card:focus-visible {
-  transform: scale(1.09) !important;
-  border: 2px solid var(--primary) !important;
-  box-shadow: 0 8px 24px var(--primary-glow) !important;
-  background: rgba(255, 59, 48, 0.22) !important;
+  transform: scale(1.08) !important;
+  border: 2.5px solid #ffd200 !important;
+  box-shadow: 0 0 24px rgba(255, 210, 0, 0.75), inset 0 0 10px rgba(255, 210, 0, 0.2) !important;
+  background: rgba(255, 210, 0, 0.16) !important;
   z-index: 10;
 }
 
