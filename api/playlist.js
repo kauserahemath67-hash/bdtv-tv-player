@@ -133,7 +133,7 @@ module.exports = async (req, res) => {
   try {
     // GET: Serve Dynamic M3U
     if (req.method === 'GET') {
-      const channels = db.getChannels();
+      const channels = await db.getChannels();
       let m3u = '#EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"\n';
 
       for (let ch of channels) {
@@ -188,23 +188,32 @@ module.exports = async (req, res) => {
         });
       }
 
-      if (replaceExisting) {
-        const existing = db.getChannels();
-        existing.forEach(c => db.deleteChannel(c.id));
+      // Assign IDs and order, then bulk commit to GitHub once
+      const toImport = parsed.channels.map((ch, i) => ({
+        ...ch,
+        id: 'ch-' + Date.now() + '-' + i,
+        order: i + 1,
+        status: ch.status || 'ONLINE',
+        is_pinned: ch.is_pinned || false
+      }));
+
+      let finalList = toImport;
+      if (!replaceExisting) {
+        const existing = await db.getChannels();
+        const startOrder = existing.length;
+        const appended = toImport.map((ch, i) => ({ ...ch, order: startOrder + i + 1 }));
+        finalList = [...existing, ...appended];
       }
 
-      let count = 0;
-      for (let ch of parsed.channels) {
-        db.saveChannel(ch);
-        count++;
-      }
+      await db.importChannels(finalList);
+      const count = toImport.length;
 
       return res.status(200).json({
         success: true,
-        message: `${parsed.format} থেকে মোট ${count} টি চ্যানেল সফলভাবে ইমপোর্ট করা হয়েছে।`,
+        message: `${parsed.format} থেকে মোট ${count} টি চ্যানেল সফলভাবে ইমপোর্ট হয়েছে এবং স্থায়ীভাবে সেভ হয়েছে।`,
         format: parsed.format,
         importedCount: count,
-        totalChannels: db.getChannels().length
+        totalChannels: finalList.length
       });
     }
 

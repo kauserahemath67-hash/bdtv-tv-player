@@ -9,8 +9,7 @@ module.exports = async (req, res) => {
 
   try {
     if (req.method === 'GET') {
-      const settings = db.getSettings();
-      // Mask admin pin in public response unless authenticated
+      const settings = await db.getSettings();
       const publicSettings = { ...settings };
       delete publicSettings.admin_pin;
       return res.status(200).json({ success: true, data: publicSettings });
@@ -18,8 +17,8 @@ module.exports = async (req, res) => {
 
     if (req.method === 'POST') {
       const body = req.body || {};
-      const updated = db.updateSettings(body);
-      return res.status(200).json({ success: true, message: 'সেটিংস সংরক্ষিত হয়েছে।', data: updated });
+      const updated = await db.updateSettings(body);
+      return res.status(200).json({ success: true, message: 'সেটিংস সংরক্ষিত হয়েছে।', data: updated });
     }
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });
