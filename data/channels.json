@@ -1,0 +1,97 @@
+[
+  {
+    "id": "ch-1",
+    "name": "Somoy TV",
+    "category": "News",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Somoy_TV_logo.svg/300px-Somoy_TV_logo.svg.png",
+    "url": "https://stream.somoynews.tv/live/somoy/playlist.m3u8",
+    "is_pinned": true,
+    "order": 1,
+    "status": "ONLINE",
+    "response_time_ms": 120,
+    "manual_override": false
+  },
+  {
+    "id": "ch-2",
+    "name": "Jamuna TV",
+    "category": "News",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Jamuna_TV_logo.png/300px-Jamuna_TV_logo.png",
+    "url": "https://stream.jamuna.tv/live/jamuna/playlist.m3u8",
+    "is_pinned": true,
+    "order": 2,
+    "status": "ONLINE",
+    "response_time_ms": 140,
+    "manual_override": false
+  },
+  {
+    "id": "ch-3",
+    "name": "T Sports",
+    "category": "Sports",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/T_Sports_logo.svg/300px-T_Sports_logo.svg.png",
+    "url": "https://tsports.live/stream/playlist.m3u8",
+    "is_pinned": true,
+    "order": 3,
+    "status": "ONLINE",
+    "response_time_ms": 110,
+    "manual_override": false
+  },
+  {
+    "id": "ch-4",
+    "name": "Channel i",
+    "category": "Entertainment",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Channel_i_logo.svg/300px-Channel_i_logo.svg.png",
+    "url": "https://stream.channeli.tv/live/playlist.m3u8",
+    "is_pinned": false,
+    "order": 4,
+    "status": "ONLINE",
+    "response_time_ms": 160,
+    "manual_override": false
+  },
+  {
+    "id": "ch-5",
+    "name": "Al Jazeera English",
+    "category": "International",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Al_Jazeera_English_logo.svg/300px-Al_Jazeera_English_logo.svg.png",
+    "url": "https://live-hls-web-aje.getaj.net/AJE/03.m3u8",
+    "is_pinned": false,
+    "order": 5,
+    "status": "ONLINE",
+    "response_time_ms": 95,
+    "manual_override": false
+  },
+  {
+    "id": "ch-6",
+    "name": "NHK World Japan",
+    "category": "International",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/NHK_World-Japan_logo.svg/300px-NHK_World-Japan_logo.svg.png",
+    "url": "https://b-nhkworld.akamaized.net/hls/live/2014412/nhkworld/playlist_720.m3u8",
+    "is_pinned": false,
+    "order": 6,
+    "status": "ONLINE",
+    "response_time_ms": 85,
+    "manual_override": false
+  },
+  {
+    "id": "ch-7",
+    "name": "Bangladesh Betar (Radio)",
+    "category": "Music & Radio",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Bangladesh_Betar_Logo.svg/300px-Bangladesh_Betar_Logo.svg.png",
+    "url": "https://betarlive.teletalk.com.bd/live/betar.m3u8",
+    "is_pinned": false,
+    "order": 7,
+    "status": "ONLINE",
+    "response_time_ms": 105,
+    "manual_override": false
+  },
+  {
+    "id": "ch-1793045663239",
+    "name": "Persistent Test Channel",
+    "category": "News",
+    "logo": "",
+    "url": "https://stream.somoynews.tv/live/somoy/playlist.m3u8",
+    "is_pinned": false,
+    "order": 8,
+    "status": "ONLINE",
+    "manual_override": false
+  }
+]
