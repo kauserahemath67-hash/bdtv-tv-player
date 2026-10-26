@@ -9,8 +9,9 @@ const https = require('https');
 
 const GITHUB_TOKEN = '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';
 const GITHUB_REPO  = 'kauserahemath67-hash/bdtv-tv-player';
-const GITHUB_CHANNELS_PATH = 'data/channels.json';
-const GITHUB_SETTINGS_PATH = 'data/settings.json';
+const GITHUB_CHANNELS_PATH  = 'data/channels.json';
+const GITHUB_SETTINGS_PATH  = 'data/settings.json';
+const GITHUB_PLAYLISTS_PATH = 'data/playlists.json';
 
 const CACHE_TTL_MS = 20000; // 20-second in-process cache (warm requests)
 
@@ -37,14 +38,16 @@ const defaultSettings = {
 };
 
 // ── In-process TTL cache (warm requests within same instance) ──
-let _channelCache = { data: null, loadedAt: 0 };
-let _settingsCache = { data: null, loadedAt: 0 };
+let _channelCache   = { data: null, loadedAt: 0 };
+let _settingsCache  = { data: null, loadedAt: 0 };
+let _playlistsCache = { data: null, loadedAt: 0 };
 
 function isCacheValid(cacheObj) {
   return cacheObj.data !== null && (Date.now() - cacheObj.loadedAt) < CACHE_TTL_MS;
 }
-function invalidateChannelCache() { _channelCache.loadedAt = 0; }
-function invalidateSettingsCache() { _settingsCache.loadedAt = 0; }
+function invalidateChannelCache()   { _channelCache.loadedAt   = 0; }
+function invalidateSettingsCache()  { _settingsCache.loadedAt  = 0; }
+function invalidatePlaylistsCache() { _playlistsCache.loadedAt = 0; }
 
 // ── GitHub low-level helpers ──────────────────────────────
 function githubRequest(method, path, bodyObj) {
@@ -255,6 +258,67 @@ async function updateSettings(newSettings) {
   return merged;
 }
 
+// ── Saved Playlists (GitHub-backed) ──────────────────────
+
+/**
+ * Get all saved playlists.
+ */
+async function getPlaylists() {
+  if (isCacheValid(_playlistsCache)) return [..._playlistsCache.data];
+  const result = await ghFetch(GITHUB_PLAYLISTS_PATH);
+  if (result && Array.isArray(result.data)) {
+    _playlistsCache.data    = result.data;
+    _playlistsCache.loadedAt = Date.now();
+  } else {
+    return [];
+  }
+  return [..._playlistsCache.data];
+}
+
+/**
+ * Save a playlist record (after import).
+ */
+async function savePlaylist(playlist) {
+  invalidatePlaylistsCache();
+  const current = await getPlaylists();
+  if (!playlist.id) playlist.id = 'pl-' + Date.now();
+  playlist.savedAt = new Date().toISOString();
+  // Update if same URL already exists
+  const idx = current.findIndex(p => p.url && p.url === playlist.url);
+  if (idx >= 0) {
+    current[idx] = { ...current[idx], ...playlist };
+  } else {
+    current.unshift(playlist); // newest first
+  }
+  const ok = await ghCommit(GITHUB_PLAYLISTS_PATH, current, `Save playlist: ${playlist.name}`);
+  if (ok) {
+    _playlistsCache.data    = current;
+    _playlistsCache.loadedAt = Date.now();
+  } else {
+    invalidatePlaylistsCache();
+  }
+  return playlist;
+}
+
+/**
+ * Delete a saved playlist by ID.
+ */
+async function deletePlaylist(id) {
+  invalidatePlaylistsCache();
+  const current = await getPlaylists();
+  const idx = current.findIndex(p => p.id === id);
+  if (idx < 0) return false;
+  current.splice(idx, 1);
+  const ok = await ghCommit(GITHUB_PLAYLISTS_PATH, current, `Delete playlist: ${id}`);
+  if (ok) {
+    _playlistsCache.data    = current;
+    _playlistsCache.loadedAt = Date.now();
+  } else {
+    invalidatePlaylistsCache();
+  }
+  return true;
+}
+
 // ── In-memory only (no persistence needed for sessions) ──
 let _customers = [];
 let _devices   = [];
@@ -315,6 +379,11 @@ module.exports = {
   // Settings (all async)
   getSettings,
   updateSettings,
+
+  // Playlists (all async)
+  getPlaylists,
+  savePlaylist,
+  deletePlaylist,
 
   // Version
   getVersion,

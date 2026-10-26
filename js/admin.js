@@ -5,11 +5,11 @@
 class AdminDashboard {
   constructor() {
     this.token = localStorage.getItem('bdtv_admin_token');
-    this.channels = [];
+    this.channels  = [];
     this.customers = [];
-    this.devices = [];
-    this.reports = [];
-    this.settings = {};
+    this.devices   = [];
+    this.playlists = [];
+    this.settings  = {};
     this.previewHls = null;
 
     this.init();
@@ -118,8 +118,8 @@ class AdminDashboard {
       this.loadSettings(),
       this.loadCustomers(),
       this.loadDevices(),
-      this.loadReports(),
-      this.loadVersion()
+      this.loadVersion(),
+      this.loadPlaylists()
     ]);
     this.updateOverviewStats();
   }
@@ -454,7 +454,24 @@ class AdminDashboard {
         const json = await res.json();
         alert(json.message);
         if (json.success) {
+          // Save playlist metadata to the registry
+          await fetch('/api/playlists', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              name: playlistName || (isRaw ? 'Raw Import' : url),
+              url: isRaw ? '' : url,
+              format: json.format || 'AUTO',
+              channelCount: json.importedCount || 0,
+              active: true
+            })
+          });
           await this.loadChannels();
+          await this.loadPlaylists();
+          // Reset form
+          document.getElementById('playlist-import-form').reset();
+          document.getElementById('group-playlist-url').classList.remove('hidden');
+          document.getElementById('group-playlist-raw').classList.add('hidden');
         }
       } catch (err) {
         alert('ইমপোর্ট ব্যর্থ হয়েছে! সার্ভার সংযোগ পরীক্ষা করুন।');
@@ -478,6 +495,126 @@ class AdminDashboard {
     }
   }
 
+  // 7. Saved Playlists
+
+  async loadPlaylists() {
+    try {
+      const res = await fetch('/api/playlists');
+      const json = await res.json();
+      if (json.success) {
+        this.playlists = json.data || [];
+        this.renderPlaylistsList();
+      }
+    } catch (e) {
+      console.error('loadPlaylists error:', e);
+    }
+  }
+
+  renderPlaylistsList() {
+    const container = document.getElementById('saved-playlists-list');
+    const countEl   = document.getElementById('saved-playlists-count');
+    if (!container) return;
+
+    const list = this.playlists || [];
+    if (countEl) countEl.textContent = list.length + ' টি প্লেলিস্ট';
+
+    if (list.length === 0) {
+      container.innerHTML = `
+        <div style="text-align:center; padding:32px 0; color:var(--text-muted);">
+          <div style="font-size:40px; margin-bottom:10px;">\u{1F4C2}</div>
+          <p>এখনো কোনো প্লেলিস্ট সংরক্ষিত নেই।<br>উপরের ফর্মে URL দিয়ে ইমপোর্ট করুন।</p>
+        </div>`;
+      return;
+    }
+
+    container.innerHTML = list.map(pl => {
+      const savedDate = pl.savedAt ? new Date(pl.savedAt).toLocaleString('bn-BD') : '—';
+      const displayUrl = pl.url
+        ? '<a href="' + pl.url + '" target="_blank" style="color:var(--primary-light); word-break:break-all; font-size:12px;">' + pl.url + '</a>'
+        : '<span style="color:var(--text-muted); font-size:12px;">Raw/Manual Import</span>';
+
+      return `
+        <div class="playlist-row" id="plrow-${pl.id}" style="
+          display:flex; align-items:center; gap:14px; flex-wrap:wrap;
+          padding:14px 0; border-bottom:1px solid rgba(255,255,255,0.07);">
+
+          <div style="flex-shrink:0; width:42px; height:42px; border-radius:10px;
+            background:linear-gradient(135deg,#0066ff22,#00d2ff22);
+            border:1px solid rgba(0,102,255,0.3);
+            display:flex; align-items:center; justify-content:center; font-size:20px;">
+            \u{1F4CB}
+          </div>
+
+          <div style="flex:1; min-width:200px;">
+            <div style="font-weight:700; font-size:14px; color:#fff; margin-bottom:4px;">
+              ${pl.name || 'অজানা প্লেলিস্ট'}
+              <span style="margin-left:8px; font-size:11px; font-weight:500;
+                background:rgba(0,210,255,0.15); color:#00d2ff;
+                padding:2px 8px; border-radius:10px;">${pl.format || 'AUTO'}</span>
+            </div>
+            <div style="margin-bottom:3px;">${displayUrl}</div>
+            <div style="font-size:11px; color:var(--text-muted);">
+              \u{1F4FA} ${pl.channelCount || 0} টি চ্যানেল &nbsp;\u00B7&nbsp; \u{1F550} ${savedDate}
+            </div>
+          </div>
+
+          <div style="display:flex; gap:8px; flex-shrink:0;">
+            <button onclick="app.reimportPlaylist('${pl.id}', '${pl.url || ''}', \`${pl.name || ''}\\`)"
+              class="btn-secondary-admin" style="padding:6px 12px; font-size:12px;">
+              \u{1F504} রি-ইমপোর্ট
+            </button>
+            <button onclick="app.deletePlaylist('${pl.id}', \`${pl.name || 'প্লেলিস্ট'}\\`)"
+              style="padding:6px 12px; font-size:12px; background:rgba(255,59,48,0.15);
+                border:1px solid rgba(255,59,48,0.4); color:#ff3b30; border-radius:8px; cursor:pointer;">
+              \u{1F5D1} মুছুন
+            </button>
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  async deletePlaylist(id, name) {
+    if (!confirm('"' + name + '" প্লেলিস্টটি তালিকা থেকে মুছে ফেলবেন?\n(চ্যানেলগুলো অপরিবর্তিত থাকবে)')) return;
+    try {
+      const res = await fetch('/api/playlists?id=' + encodeURIComponent(id), { method: 'DELETE' });
+      const json = await res.json();
+      if (json.success) {
+        this.playlists = this.playlists.filter(p => p.id !== id);
+        this.renderPlaylistsList();
+      } else {
+        alert('মুছতে ব্যর্থ: ' + json.message);
+      }
+    } catch (e) {
+      alert('সংযোগ সমস্যা!');
+    }
+  }
+
+  async reimportPlaylist(id, url, name) {
+    if (!url) { alert('এই প্লেলিস্টটির URL নেই (Manual Import)।'); return; }
+    if (!confirm('"'  + name + '" আবার ইমপোর্ট করবেন?\nনতুন চ্যানেলগুলো বিদ্যমান তালিকায় যোগ হবে।')) return;
+    try {
+      const res = await fetch('/api/playlist', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'import', url, playlistName: name, replaceExisting: false })
+      });
+      const json = await res.json();
+      alert(json.message);
+      if (json.success) {
+        await fetch('/api/playlists', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ id, name, url, format: json.format, channelCount: json.importedCount, active: true })
+        });
+        await this.loadChannels();
+        await this.loadPlaylists();
+      }
+    } catch (e) {
+      alert('রি-ইমপোর্ট ব্যর্থ হয়েছে।');
+    }
+  }
+
+  // 8. Health Scanner
   // 7. Health Scanner
   async runHealthScan() {
     const btn = document.getElementById('btn-quick-scan');
@@ -498,48 +635,6 @@ class AdminDashboard {
       btn.disabled = false;
     }
   }
-
-  // 8. User Reports
-  async loadReports() {
-    try {
-      const res = await fetch('/api/report');
-      const json = await res.json();
-      if (json.success) {
-        this.reports = json.data;
-        this.renderReportsTable();
-      }
-    } catch (e) {}
-  }
-
-  renderReportsTable() {
-    const tbody = document.getElementById('reports-table-body');
-    tbody.innerHTML = '';
-    const pending = this.reports.filter(r => r.status === 'PENDING');
-    document.getElementById('stat-pending-reports').textContent = pending.length;
-
-    this.reports.forEach(r => {
-      const tr = document.createElement('tr');
-      const isPending = r.status === 'PENDING';
-      tr.innerHTML = `
-        <td>${new Date(r.created_at).toLocaleString('bn-BD')}</td>
-        <td><strong>${r.channel_name || 'Unknown'}</strong></td>
-        <td>${r.error_message}</td>
-        <td><span class="badge ${isPending ? 'badge-pending' : 'badge-online'}">${r.status}</span></td>
-        <td>
-          ${isPending ? `<button class="btn-secondary-admin btn-resolve">সমাধান চিহ্নিত করুন</button>` : '—'}
-        </td>
-      `;
-
-      if (isPending) {
-        tr.querySelector('.btn-resolve').addEventListener('click', async () => {
-          await fetch('/api/report', {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ id: r.id })
-          });
-          await this.loadReports();
-        });
-      }
 
       tbody.appendChild(tr);
     });
@@ -779,7 +874,6 @@ class AdminDashboard {
     document.getElementById('stat-total-channels').textContent = this.channels.length;
     document.getElementById('stat-online-channels').textContent = this.channels.filter(c => c.status === 'ONLINE').length;
     document.getElementById('stat-total-customers').textContent = this.customers.length;
-    document.getElementById('stat-pending-reports').textContent = this.reports.filter(r => r.status === 'PENDING').length;
   }
 }
 

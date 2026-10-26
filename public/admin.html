@@ -38,7 +38,6 @@
         <button class="nav-item active" data-tab="tab-overview">📊 ওভারভিউ</button>
         <button class="nav-item" data-tab="tab-channels">📺 চ্যানেল ম্যানেজার</button>
         <button class="nav-item" data-tab="tab-playlist">📋 M3U প্লেলিস্ট</button>
-        <button class="nav-item" data-tab="tab-health">🤖 হেলথ ও রিপোর্ট</button>
         <button class="nav-item" data-tab="tab-customers">👥 গ্রাহক ও সাবস্ক্রিপশন</button>
         <button class="nav-item" data-tab="tab-devices">📱 ডিভাইস লক</button>
         <button class="nav-item" data-tab="tab-settings">📢 বিজ্ঞাপন ও সেটিংস</button>
@@ -82,11 +81,6 @@
             <div class="stat-title">মোট গ্রাহক</div>
             <div id="stat-total-customers" class="stat-value">0</div>
             <div class="stat-meta">ভিআইপি একাউন্ট</div>
-          </div>
-          <div class="stat-card glass-card">
-            <div class="stat-title">পেন্ডিং এরর রিপোর্ট</div>
-            <div id="stat-pending-reports" class="stat-value text-red">0</div>
-            <div class="stat-meta">ইউজার রিপোর্ট</div>
           </div>
         </div>
 
@@ -227,6 +221,25 @@
             </div>
           </div>
 
+          <!-- Saved Playlists List -->
+          <div class="glass-card" id="saved-playlists-card">
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; flex-wrap:wrap; gap:10px;">
+              <div style="display:flex; align-items:center; gap:10px;">
+                <span style="font-size:20px;">📋</span>
+                <h3 style="font-size:17px; font-weight:700; margin:0;">সংরক্ষিত প্লেলিস্ট</h3>
+              </div>
+              <span id="saved-playlists-count" style="font-size:13px; color:var(--text-muted); background:rgba(0,102,255,0.15); padding:4px 12px; border-radius:20px;">লোড হচ্ছে...</span>
+            </div>
+
+            <div id="saved-playlists-list">
+              <!-- Rendered by admin.js -->
+              <div class="empty-state" style="text-align:center; padding:32px 0; color:var(--text-muted);">
+                <div style="font-size:40px; margin-bottom:10px;">📂</div>
+                <p>এখনো কোনো প্লেলিস্ট সংরক্ষিত নেই।<br>উপরের ফর্মে URL দিয়ে ইমপোর্ট করুন।</p>
+              </div>
+            </div>
+          </div>
+
           <!-- Export M3U Link Card -->
           <div class="glass-card">
             <h3>📤 আপনার সাইটের লাইভ M3U প্লেলিস্ট লিংক</h3>
@@ -236,34 +249,6 @@
               <button id="btn-copy-m3u" class="btn-secondary-admin">কপি করুন</button>
             </div>
             <p class="meta-note">💡 এটি সম্পূর্ণ ডায়নামিক; আপনার চ্যানেলে কোনো পরিবর্তন আনলে এই লিংক স্বয়ংক্রিয়ভাবে আপডেট থাকে।</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- TAB 4: HEALTH & REPORTS -->
-      <section id="tab-health" class="tab-pane">
-        <div class="health-header">
-          <h3>🤖 চ্যানেল হেলথ স্ট্যাটাস ও ইউজার রিপোর্ট</h3>
-          <button id="btn-run-health-scan" class="btn-primary-admin">সব চ্যানেল পিং টেস্ট করুন</button>
-        </div>
-
-        <div class="reports-section glass-card">
-          <h4>🚨 ইউজারদের পাঠানো প্লেব্যাক এরর রিপোর্ট</h4>
-          <div class="table-responsive">
-            <table class="data-table">
-              <thead>
-                <tr>
-                  <th>তারিখ</th>
-                  <th>চ্যানেল</th>
-                  <th>সমস্যা</th>
-                  <th>স্ট্যাটাস</th>
-                  <th>অ্যাকশন</th>
-                </tr>
-              </thead>
-              <tbody id="reports-table-body">
-                <!-- Rendered via JS -->
-              </tbody>
-            </table>
           </div>
         </div>
       </section>
