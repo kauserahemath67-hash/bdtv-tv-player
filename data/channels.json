@@ -1,17 +1,5 @@
 [
   {
-    "id": "ch-7",
-    "name": "Bangladesh Betar (Radio)",
-    "category": "Music & Radio",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Bangladesh_Betar_Logo.svg/300px-Bangladesh_Betar_Logo.svg.png",
-    "url": "https://betarlive.teletalk.com.bd/live/betar.m3u8",
-    "is_pinned": false,
-    "order": 7,
-    "status": "ONLINE",
-    "response_time_ms": 105,
-    "manual_override": false
-  },
-  {
     "name": "T Sports",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
     "url": "https://footfytv.pro/proxy/direct?url=http://103.16.24.4:8083/14.m3u8",
