@@ -51,6 +51,7 @@ class IPTVPlayer {
     this.topBarTimeout = null;
     this.hudTimeout = null;
     this.isDrawerOpen = false;
+    this.drawerAutoHideTimeout = null;
     this.settings = {};
 
     this.init();
@@ -141,6 +142,8 @@ class IPTVPlayer {
     this.filterChannels('All');
     if (this.channels.length > 0) {
       this.playChannel(0);
+      // Floating channel shelf auto-shows on load, then auto-hides after 5s
+      setTimeout(() => this.openDrawer(5000), 600);
     }
   }
 
@@ -173,8 +176,9 @@ class IPTVPlayer {
 
       card.addEventListener('click', () => {
         this.focusedIndex = idx;
+        this.updateCardFocus();
         this.playChannel(idx);
-        this.closeDrawer();
+        setTimeout(() => this.closeDrawer(), 800);
       });
 
       this.channelGrid.appendChild(card);
@@ -297,24 +301,41 @@ class IPTVPlayer {
     }, 3500);
   }
 
-  // 8. Drawer Controls
-  openDrawer() {
+  // 8. Drawer Controls (Floating Channel Shelf with Auto-Hide)
+  openDrawer(duration = 4500) {
     this.isDrawerOpen = true;
     this.channelDrawer.classList.add('open');
     this.topBar.classList.remove('fade-out');
     clearTimeout(this.topBarTimeout);
+    clearTimeout(this.drawerAutoHideTimeout);
     this.updateCardFocus();
+
+    if (duration > 0) {
+      this.drawerAutoHideTimeout = setTimeout(() => {
+        this.closeDrawer();
+      }, duration);
+    }
   }
 
   closeDrawer() {
     this.isDrawerOpen = false;
     this.channelDrawer.classList.remove('open');
+    clearTimeout(this.drawerAutoHideTimeout);
     this.triggerTopBar();
+  }
+
+  resetDrawerAutoHide(duration = 4500) {
+    if (this.isDrawerOpen) {
+      clearTimeout(this.drawerAutoHideTimeout);
+      this.drawerAutoHideTimeout = setTimeout(() => {
+        this.closeDrawer();
+      }, duration);
+    }
   }
 
   toggleDrawer() {
     if (this.isDrawerOpen) this.closeDrawer();
-    else this.openDrawer();
+    else this.openDrawer(4500);
   }
 
   updateCardFocus() {
@@ -338,11 +359,12 @@ class IPTVPlayer {
         case 'ArrowUp':
           e.preventDefault();
           if (!this.isDrawerOpen) {
-            this.openDrawer();
+            this.openDrawer(4500);
           } else {
             // Navigate focus backward by grid columns (approx 4)
             this.focusedIndex = Math.max(0, this.focusedIndex - 4);
             this.updateCardFocus();
+            this.resetDrawerAutoHide();
           }
           break;
 
@@ -352,8 +374,9 @@ class IPTVPlayer {
             const maxIdx = this.filteredChannels.length - 1;
             this.focusedIndex = Math.min(maxIdx, this.focusedIndex + 4);
             this.updateCardFocus();
+            this.resetDrawerAutoHide();
           } else {
-            this.openDrawer();
+            this.openDrawer(4500);
           }
           break;
 
@@ -362,10 +385,13 @@ class IPTVPlayer {
           if (this.isDrawerOpen) {
             this.focusedIndex = Math.max(0, this.focusedIndex - 1);
             this.updateCardFocus();
+            this.resetDrawerAutoHide();
           } else {
-            // Instant channel switch previous without opening drawer
+            // Instant channel switch previous and flash floating drawer briefly
             const prevIndex = (this.currentIndex - 1 + this.filteredChannels.length) % this.filteredChannels.length;
+            this.focusedIndex = prevIndex;
             this.playChannel(prevIndex);
+            this.openDrawer(3500);
           }
           break;
 
@@ -375,10 +401,13 @@ class IPTVPlayer {
             const maxIdx = this.filteredChannels.length - 1;
             this.focusedIndex = Math.min(maxIdx, this.focusedIndex + 1);
             this.updateCardFocus();
+            this.resetDrawerAutoHide();
           } else {
-            // Instant channel switch next without opening drawer
+            // Instant channel switch next and flash floating drawer briefly
             const nextIndex = (this.currentIndex + 1) % this.filteredChannels.length;
+            this.focusedIndex = nextIndex;
             this.playChannel(nextIndex);
+            this.openDrawer(3500);
           }
           break;
 
@@ -387,7 +416,7 @@ class IPTVPlayer {
           e.preventDefault();
           if (this.isDrawerOpen) {
             this.playChannel(this.focusedIndex);
-            this.closeDrawer();
+            setTimeout(() => this.closeDrawer(), 800);
           } else {
             // Play/Pause when drawer is closed
             if (this.video.paused) this.video.play();
@@ -434,17 +463,31 @@ class IPTVPlayer {
 
   // 11. Event Listeners (Clicks, PiP, Category, Error Retry)
   bindEvents() {
-    // Tap video screen to toggle top bar
+    // Tap video screen to toggle top bar & floating channels
     document.getElementById('video-wrapper').addEventListener('click', (e) => {
       if (e.target.closest('#channel-drawer') || e.target.closest('#top-bar')) return;
       if (this.isDrawerOpen) {
         this.closeDrawer();
       } else {
         this.triggerTopBar();
+        this.openDrawer(4500);
       }
     });
 
     this.drawerHandle.addEventListener('click', () => this.toggleDrawer());
+
+    // Channels Pill Button in Top Bar
+    const btnToggleChannels = document.getElementById('btn-toggle-channels');
+    if (btnToggleChannels) {
+      btnToggleChannels.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.toggleDrawer();
+      });
+    }
+
+    // Keep floating drawer active on interaction
+    this.channelDrawer.addEventListener('mousemove', () => this.resetDrawerAutoHide());
+    this.channelDrawer.addEventListener('touchstart', () => this.resetDrawerAutoHide(), { passive: true });
 
     // Category pills
     this.categoryBar.addEventListener('click', (e) => {
@@ -454,6 +497,7 @@ class IPTVPlayer {
       btn.classList.add('active');
       this.focusedIndex = 0;
       this.filterChannels(btn.dataset.cat);
+      this.resetDrawerAutoHide();
     });
 
     // PiP Button
