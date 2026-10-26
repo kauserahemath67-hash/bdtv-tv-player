@@ -276,6 +276,18 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   transform: scale(0.96);
 }
 
+/* Force hide any legacy report elements */
+#btn-report, .btn-report, [data-action="report"] {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 /* ---------------------------------------------------------
    3.5. Floating Unmute Pill (Audio unlock banner)
    --------------------------------------------------------- */
