@@ -52,6 +52,7 @@ class IPTVPlayer {
     this.hudTimeout = null;
     this.isDrawerOpen = false;
     this.drawerAutoHideTimeout = null;
+    this.isUserUnmuted = false;
     this.settings = {};
 
     this.init();
@@ -62,6 +63,7 @@ class IPTVPlayer {
     this.bindEvents();
     this.bindRemoteKeys();
     this.bindTouchGestures();
+    this.bindAudioUnlock();
     await this.loadSettings();
     await this.loadChannels();
   }
@@ -200,11 +202,16 @@ class IPTVPlayer {
       this.hls.on(Hls.Events.MANIFEST_PARSED, () => {
         this.showBuffering(false);
         this.hideError();
-        this.video.play().catch(() => {
-          // Fallback to muted autoplay if browser blocks audio
-          this.video.muted = true;
-          this.video.play();
-        });
+        this.attemptPlay();
+      });
+
+      // Activate first audio track if not active
+      this.hls.on(Hls.Events.AUDIO_TRACKS_UPDATED, (event, data) => {
+        if (data && data.audioTracks && data.audioTracks.length > 0) {
+          if (this.hls.audioTrack === -1) {
+            this.hls.audioTrack = 0;
+          }
+        }
       });
 
       this.hls.on(Hls.Events.ERROR, (event, data) => {
@@ -229,9 +236,112 @@ class IPTVPlayer {
     this.video.addEventListener('playing', () => {
       this.showBuffering(false);
       this.hideError();
+      if (this.video.muted && !this.isUserUnmuted) {
+        this.showUnmuteBanner(true);
+      } else {
+        this.showUnmuteBanner(false);
+      }
+      this.updateSoundButtonUI();
+    });
+    this.video.addEventListener('volumechange', () => {
+      this.updateSoundButtonUI();
     });
     this.video.addEventListener('error', () => {
       this.showError('প্লেব্যাক এরর: ভিডিও প্লে করা যায়নি।');
+    });
+  }
+
+  // Audio Playback & Unmute Handling
+  attemptPlay() {
+    if (this.isUserUnmuted) {
+      this.video.muted = false;
+      this.video.volume = 1.0;
+    }
+
+    const p = this.video.play();
+    if (p !== undefined) {
+      p.then(() => {
+        if (this.video.muted && !this.isUserUnmuted) {
+          this.showUnmuteBanner(true);
+        } else {
+          this.showUnmuteBanner(false);
+        }
+        this.updateSoundButtonUI();
+      }).catch(() => {
+        // Browser rejected unmuted autoplay policy -> fallback to muted & show unmute banner
+        this.video.muted = true;
+        this.video.play().then(() => {
+          this.showUnmuteBanner(true);
+          this.updateSoundButtonUI();
+        }).catch(err => console.error('Play error:', err));
+      });
+    }
+  }
+
+  unmuteAudio() {
+    this.isUserUnmuted = true;
+    this.video.muted = false;
+    this.video.volume = 1.0;
+    this.showUnmuteBanner(false);
+    this.updateSoundButtonUI();
+    this.flashSoundHUD('🔊 সাউন্ড চালু (১০০%)');
+  }
+
+  toggleSound() {
+    if (this.video.muted) {
+      this.unmuteAudio();
+    } else {
+      this.video.muted = true;
+      this.showUnmuteBanner(false);
+      this.updateSoundButtonUI();
+      this.flashSoundHUD('🔇 সাউন্ড মিউট');
+    }
+  }
+
+  showUnmuteBanner(show) {
+    const banner = document.getElementById('unmute-banner');
+    if (!banner) return;
+    if (show && this.video.muted && !this.isUserUnmuted) {
+      banner.classList.remove('hidden');
+    } else {
+      banner.classList.add('hidden');
+    }
+  }
+
+  updateSoundButtonUI() {
+    const btn = document.getElementById('btn-sound-toggle');
+    if (!btn) return;
+    if (this.video.muted) {
+      btn.innerHTML = '🔇 সাউন্ড অফ';
+      btn.classList.add('muted');
+      btn.title = 'সাউন্ড চালু করতে ক্লিক করুন';
+    } else {
+      btn.innerHTML = '🔊 সাউন্ড';
+      btn.classList.remove('muted');
+      btn.title = 'সাউন্ড বন্ধ করতে ক্লিক করুন';
+    }
+  }
+
+  flashSoundHUD(msg) {
+    const hud = document.getElementById('channel-hud');
+    if (!hud) return;
+    document.getElementById('hud-channel-name').textContent = msg;
+    document.getElementById('hud-channel-cat').textContent = 'অডিও ভলিউম';
+    const logo = document.getElementById('hud-channel-logo');
+    if (logo) logo.classList.add('hidden');
+    hud.classList.remove('hidden');
+    clearTimeout(this.hudTimeout);
+    this.hudTimeout = setTimeout(() => hud.classList.add('hidden'), 2200);
+  }
+
+  bindAudioUnlock() {
+    const unlock = () => {
+      if (this.video && this.video.muted && !this.isUserUnmuted) {
+        this.unmuteAudio();
+      }
+    };
+    ['click', 'touchstart', 'keydown'].forEach(evt => {
+      document.addEventListener(evt, unlock, { once: true, passive: true });
     });
   }
 
@@ -260,10 +370,7 @@ class IPTVPlayer {
       this.hls.loadSource(channel.url);
     } else {
       this.video.src = channel.url;
-      this.video.play().catch(() => {
-        this.video.muted = true;
-        this.video.play();
-      });
+      this.attemptPlay();
     }
 
     this.renderChannelGrid();
@@ -432,6 +539,33 @@ class IPTVPlayer {
             this.closeDrawer();
           }
           break;
+
+        case 'm':
+        case 'M':
+        case 'AudioVolumeMute':
+          e.preventDefault();
+          this.toggleSound();
+          break;
+
+        case '+':
+        case '=':
+        case 'AudioVolumeUp':
+          e.preventDefault();
+          this.video.muted = false;
+          this.video.volume = Math.min(1.0, this.video.volume + 0.1);
+          this.isUserUnmuted = true;
+          this.updateSoundButtonUI();
+          this.showUnmuteBanner(false);
+          this.flashSoundHUD(`🔊 ভলিউম: ${Math.round(this.video.volume * 100)}%`);
+          break;
+
+        case '-':
+        case '_':
+        case 'AudioVolumeDown':
+          e.preventDefault();
+          this.video.volume = Math.max(0.0, this.video.volume - 0.1);
+          this.flashSoundHUD(`🔉 ভলিউম: ${Math.round(this.video.volume * 100)}%`);
+          break;
       }
     });
   }
@@ -474,6 +608,24 @@ class IPTVPlayer {
     });
 
     this.drawerHandle.addEventListener('click', () => this.toggleDrawer());
+
+    // Sound Toggle Pill Button in Top Bar
+    const btnSound = document.getElementById('btn-sound-toggle');
+    if (btnSound) {
+      btnSound.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.toggleSound();
+      });
+    }
+
+    // Floating Unmute Banner Click
+    const unmuteBanner = document.getElementById('unmute-banner');
+    if (unmuteBanner) {
+      unmuteBanner.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.unmuteAudio();
+      });
+    }
 
     // Channels Pill Button in Top Bar
     const btnToggleChannels = document.getElementById('btn-toggle-channels');
@@ -580,5 +732,3 @@ window.handleAndroidBack = function() {
 document.addEventListener('DOMContentLoaded', () => {
   window.iptvPlayer = new IPTVPlayer();
 });
-
-// v1793046976

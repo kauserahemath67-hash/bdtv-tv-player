@@ -277,6 +277,93 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
 }
 
 /* ---------------------------------------------------------
+   3.5. Floating Unmute Pill (Audio unlock banner)
+   --------------------------------------------------------- */
+.unmute-pill {
+  position: absolute;
+  top: max(85px, calc(var(--safe-top) + 75px));
+  left: 50%;
+  transform: translateX(-50%) translate3d(0, 0, 0);
+  z-index: 95;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 24px;
+  background: rgba(6, 12, 28, 0.92);
+  border: 1.5px solid #00d2ff;
+  border-radius: 40px;
+  box-shadow: 0 8px 32px rgba(0, 102, 255, 0.5), 0 0 24px rgba(0, 210, 255, 0.35);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  animation: unmutePulse 2.2s infinite ease-in-out;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  max-width: 90vw;
+}
+
+.unmute-pill:hover, .unmute-pill:focus {
+  transform: translateX(-50%) scale(1.06);
+  background: rgba(0, 102, 255, 0.35);
+  box-shadow: 0 12px 42px rgba(0, 102, 255, 0.8), 0 0 32px rgba(0, 229, 255, 0.7);
+  border-color: #fff;
+}
+
+.unmute-pill.hidden {
+  display: none !important;
+}
+
+@keyframes unmutePulse {
+  0%, 100% {
+    box-shadow: 0 8px 30px rgba(0, 102, 255, 0.4), 0 0 16px rgba(0, 210, 255, 0.25);
+    border-color: rgba(0, 210, 255, 0.75);
+  }
+  50% {
+    box-shadow: 0 8px 40px rgba(0, 102, 255, 0.8), 0 0 30px rgba(0, 229, 255, 0.65);
+    border-color: #00e5ff;
+  }
+}
+
+.unmute-icon {
+  font-size: 26px;
+  line-height: 1;
+  animation: iconWiggle 1.5s infinite ease-in-out;
+}
+
+@keyframes iconWiggle {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-8deg); }
+  75% { transform: rotate(8deg); }
+}
+
+.unmute-copy {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.unmute-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.3px;
+}
+
+.unmute-subtitle {
+  font-size: 11px;
+  color: rgba(0, 229, 255, 0.9);
+  font-weight: 500;
+}
+
+/* Sound toggle active state */
+.btn-top-action.muted {
+  background: rgba(255, 59, 48, 0.25);
+  border-color: rgba(255, 59, 48, 0.5);
+  color: #ff6b6b;
+}
+
+/* ---------------------------------------------------------
    4. TV Channel Switch Banner / HUD
    --------------------------------------------------------- */
 .channel-hud {

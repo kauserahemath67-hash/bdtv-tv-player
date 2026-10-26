@@ -9,6 +9,7 @@ const https = require('https');
 
 const GITHUB_TOKEN = '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';
 const GITHUB_REPO  = 'kauserahemath67-hash/bdtv-tv-player';
+const GITHUB_BRANCH = 'data-storage';
 const GITHUB_CHANNELS_PATH  = 'data/channels.json';
 const GITHUB_SETTINGS_PATH  = 'data/settings.json';
 const GITHUB_PLAYLISTS_PATH = 'data/playlists.json';
@@ -86,7 +87,7 @@ function githubRequest(method, path, bodyObj) {
  */
 async function ghFetch(filePath) {
   try {
-    const res = await githubRequest('GET', filePath);
+    const res = await githubRequest('GET', `${filePath}?ref=${GITHUB_BRANCH}`);
     if (res.status !== 200 || !res.body || !res.body.content) return null;
     const decoded = Buffer.from(res.body.content, 'base64').toString('utf8');
     const data = JSON.parse(decoded);
@@ -100,6 +101,7 @@ async function ghFetch(filePath) {
 /**
  * Commit a JSON file to GitHub (create or update).
  * Always fetches current SHA first to avoid conflicts.
+ * Targets the data-storage branch to prevent Vercel build loops!
  * Returns true on success.
  */
 async function ghCommit(filePath, dataObj, message) {
@@ -109,7 +111,7 @@ async function ghCommit(filePath, dataObj, message) {
     const sha = current ? current.sha : undefined;
 
     const contentBase64 = Buffer.from(JSON.stringify(dataObj, null, 2)).toString('base64');
-    const body = { message, content: contentBase64 };
+    const body = { message, content: contentBase64, branch: GITHUB_BRANCH };
     if (sha) body.sha = sha;
 
     const res = await githubRequest('PUT', filePath, body);
