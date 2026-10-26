@@ -142,8 +142,7 @@ class IPTVPlayer {
     this.filterChannels('All');
     if (this.channels.length > 0) {
       this.playChannel(0);
-      // Floating channel shelf auto-shows on load, then auto-hides after 5s
-      setTimeout(() => this.openDrawer(5000), 600);
+      // Channel drawer stays closed on load — user opens it via button or swipe
     }
   }
 
@@ -525,28 +524,6 @@ class IPTVPlayer {
       this.playChannel(nextIndex);
     });
 
-    // Report Channel
-    document.getElementById('btn-report').addEventListener('click', async () => {
-      const currentCh = this.filteredChannels[this.currentIndex];
-      if (!currentCh) return;
-      const msg = prompt(`'${currentCh.name}' চ্যানেলটিতে কি সমস্যা হচ্ছে?`, 'স্ট্রিম আটকে গেছে / লোড হচ্ছে না');
-      if (msg) {
-        try {
-          await fetch('/api/report', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              channel_id: currentCh.id,
-              channel_name: currentCh.name,
-              error_message: msg
-            })
-          });
-          alert('রিপোর্ট সফলভাবে জমা হয়েছে। আমরা শীঘ্রই এটি সমাধান করব!');
-        } catch (e) {
-          alert('রিপোর্ট পাঠাতে ব্যর্থ হয়েছে।');
-        }
-      }
-    });
 
     // VIP Login form
     document.getElementById('auth-form').addEventListener('submit', async (e) => {

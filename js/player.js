@@ -142,8 +142,7 @@ class IPTVPlayer {
     this.filterChannels('All');
     if (this.channels.length > 0) {
       this.playChannel(0);
-      // Floating channel shelf auto-shows on load, then auto-hides after 5s
-      setTimeout(() => this.openDrawer(5000), 600);
+      // Channel drawer stays closed on load — user opens it via button or swipe
     }
   }
 
