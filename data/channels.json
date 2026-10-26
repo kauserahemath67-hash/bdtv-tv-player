@@ -82,16 +82,5 @@
     "status": "ONLINE",
     "response_time_ms": 105,
     "manual_override": false
-  },
-  {
-    "id": "ch-1793045663239",
-    "name": "Persistent Test Channel",
-    "category": "News",
-    "logo": "",
-    "url": "https://stream.somoynews.tv/live/somoy/playlist.m3u8",
-    "is_pinned": false,
-    "order": 8,
-    "status": "ONLINE",
-    "manual_override": false
   }
 ]
