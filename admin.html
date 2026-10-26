@@ -144,36 +144,98 @@
         </div>
       </section>
 
-      <!-- TAB 3: PLAYLIST M3U -->
+      <!-- TAB 3: PLAYLIST M3U / JSON / DIRECT MEDIA -->
       <section id="tab-playlist" class="tab-pane">
-        <div class="card-grid">
+        <div class="card-grid" style="grid-template-columns: 1fr;">
+          <!-- Add a new media source / playlist -->
           <div class="glass-card">
-            <h3>📥 M3U প্লেলিস্ট ইমপোর্ট</h3>
-            <p class="desc">সরাসরি অনলাইন M3U URL অথবা টেক্সট থেকে চ্যানেল ইমপোর্ট করুন</p>
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+              <span style="font-size: 20px;">☁️</span>
+              <h3 style="font-size: 18px; font-weight: 700;">Add a new media source / playlist</h3>
+            </div>
+            <p class="desc" style="margin-bottom: 20px;">Paste one authorized HTTP(S) playlist or media URL; the source format is inspected automatically.</p>
+
             <form id="playlist-import-form">
-              <div class="form-group">
-                <label>অনলাইন M3U URL:</label>
-                <input type="url" id="input-m3u-url" placeholder="https://example.com/playlist.m3u">
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; margin-bottom: 16px;">
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label>প্লেলিস্টের নাম:</label>
+                  <input type="text" id="input-playlist-name" placeholder="যেমন: Sports HD, All Channels">
+                </div>
+
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label>Input method:</label>
+                  <select id="select-input-method">
+                    <option value="url">URL (playlist or direct media)</option>
+                    <option value="raw">Raw Text / Paste code (M3U, JSON)</option>
+                  </select>
+                </div>
+
+                <div class="form-group" style="margin-bottom: 0;">
+                  <label>Source format:</label>
+                  <select id="select-source-format">
+                    <option value="auto">✓ AUTO DETECT</option>
+                    <option value="m3u">M3U playlist</option>
+                    <option value="json">JSON playlist</option>
+                    <option value="hls">M3U8 / HLS</option>
+                    <option value="dash">MPEG-DASH</option>
+                    <option value="mp4">MP4</option>
+                    <option value="audio">Audio</option>
+                    <option value="other">Other / detect only</option>
+                  </select>
+                </div>
               </div>
-              <div class="form-group">
-                <label>অথবা M3U টেক্সট পেস্ট করুন:</label>
-                <textarea id="input-m3u-raw" rows="6" placeholder="#EXTM3U&#10;#EXTINF:-1 tvg-name=..."></textarea>
+
+              <!-- URL Input Field -->
+              <div class="form-group" id="group-playlist-url">
+                <label>Stream / Playlist URL:</label>
+                <input type="url" id="input-playlist-url" placeholder="https://example.com/live/index.m3u8 or https://example.com/playlist.m3u or https://example.com/channels.json">
+                <span class="meta-note" style="display:block; margin-top:4px;">সাপোর্ট করে: M3U, JSON, HLS (.m3u8), DASH (.mpd), MP4 এবং অনলাইন আইপিটিভি স্ট্রিমিং লিঙ্ক</span>
               </div>
-              <div class="checkbox-row">
-                <label><input type="checkbox" id="replace-existing-m3u"> পূর্বের সব চ্যানেল মুছে নতুনগুলো আনুন</label>
+
+              <!-- Raw Text Input Field (hidden by default) -->
+              <div class="form-group hidden" id="group-playlist-raw">
+                <label>Raw Playlist Content (M3U / JSON):</label>
+                <textarea id="input-playlist-raw" rows="6" placeholder="#EXTM3U&#10;#EXTINF:-1 tvg-logo=&quot;...&quot; group-title=&quot;News&quot;,Channel Name&#10;https://.../stream.m3u8&#10;&#10;অথবা JSON ফরম্যাট:&#10;[{ &quot;name&quot;: &quot;TV&quot;, &quot;image&quot;: &quot;...&quot;, &quot;url&quot;: &quot;...&quot; }]"></textarea>
               </div>
-              <button type="submit" class="btn-primary-admin">ইমপোর্ট করুন</button>
+
+              <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 18px;">
+                <label class="checkbox-row" style="margin-bottom: 0;">
+                  <input type="checkbox" id="check-enable-after-import" checked> Enable after import
+                </label>
+                <label class="checkbox-row" style="margin-bottom: 0;">
+                  <input type="checkbox" id="replace-existing-m3u"> পূর্বের সব চ্যানেল মুছে নতুনগুলো আনুন (Replace Existing)
+                </label>
+              </div>
+
+              <!-- Action buttons -->
+              <div style="display: flex; gap: 12px; flex-wrap: wrap; align-items: center;">
+                <button type="button" id="btn-test-url" class="btn-secondary-admin">Test URL</button>
+                <button type="button" id="btn-diagnose-url" class="btn-secondary-admin">Diagnose</button>
+                <button type="submit" id="btn-import-submit" class="btn-primary-admin">+ প্লেলিস্ট সেভ ও চ্যানেল ইমপোর্ট করুন</button>
+              </div>
             </form>
+
+            <!-- Diagnose / Test Result Box -->
+            <div id="diagnose-result-box" class="glass-card hidden" style="margin-top: 20px; background: rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.12); padding: 16px;">
+              <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+                <h4 style="font-size: 15px; font-weight: 700; color: #fff;" id="diagnose-title">🔍 ডায়াগনোসিস ফলাফল</h4>
+                <button type="button" id="btn-close-diagnose" style="background:transparent; border:none; color:#aaa; font-size:18px; cursor:pointer;">&times;</button>
+              </div>
+              <div id="diagnose-content" style="font-size: 13px; line-height: 1.6; color: var(--text-muted);">
+                <!-- Dynamic diagnostic report -->
+              </div>
+            </div>
           </div>
 
+          <!-- Export M3U Link Card -->
           <div class="glass-card">
-            <h3>📤 আপনার জেনারেট করা M3U লিংক</h3>
-            <p class="desc">যেকোনো আইপিটিভি প্লেয়ার বা টিভিতে আপনার নিজস্ব প্লেলিস্ট দিন</p>
+            <h3>📤 আপনার সাইটের লাইভ M3U প্লেলিস্ট লিংক</h3>
+            <p class="desc">যেকোনো অ্যান্ড্রয়েড টিভি অ্যাপ, টিভিবক্স, ভিএলসি বা আইপিটিভি প্লেয়ারের জন্য এই লিংকটি ব্যবহার করুন</p>
             <div class="m3u-export-box">
               <input type="text" id="m3u-export-url" readonly value="">
               <button id="btn-copy-m3u" class="btn-secondary-admin">কপি করুন</button>
             </div>
-            <p class="meta-note">💡 এটি ডায়নামিকালি আপনার সমস্ত সক্রিয় চ্যানেল থেকে স্বয়ংক্রিয়ভাবে আপডেট হয়।</p>
+            <p class="meta-note">💡 এটি সম্পূর্ণ ডায়নামিক; আপনার চ্যানেলে কোনো পরিবর্তন আনলে এই লিংক স্বয়ংক্রিয়ভাবে আপডেট থাকে।</p>
           </div>
         </div>
       </section>

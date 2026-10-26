@@ -317,41 +317,165 @@ class AdminDashboard {
     // Channel Search
     document.getElementById('channel-search').addEventListener('input', () => this.renderChannelsTable());
 
-    // Playlist Import Form
-    document.getElementById('playlist-import-form').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const url = document.getElementById('input-m3u-url').value.trim();
-      const rawContent = document.getElementById('input-m3u-raw').value.trim();
-      const replaceExisting = document.getElementById('replace-existing-m3u').checked;
+    // Toggle Input Method in Playlist Tab
+    const selectMethod = document.getElementById('select-input-method');
+    const groupUrl = document.getElementById('group-playlist-url');
+    const groupRaw = document.getElementById('group-playlist-raw');
 
-      if (!url && !rawContent) {
-        alert('দয়া করে M3U URL অথবা টেক্সট দিন!');
+    if (selectMethod) {
+      selectMethod.addEventListener('change', () => {
+        if (selectMethod.value === 'raw') {
+          groupUrl.classList.add('hidden');
+          groupRaw.classList.remove('hidden');
+        } else {
+          groupUrl.classList.remove('hidden');
+          groupRaw.classList.add('hidden');
+        }
+      });
+    }
+
+    const diagnoseBox = document.getElementById('diagnose-result-box');
+    const diagnoseContent = document.getElementById('diagnose-content');
+    const btnCloseDiagnose = document.getElementById('btn-close-diagnose');
+    if (btnCloseDiagnose) {
+      btnCloseDiagnose.addEventListener('click', () => {
+        diagnoseBox.classList.add('hidden');
+      });
+    }
+
+    // Handler for Test URL & Diagnose
+    const runInspection = async (action) => {
+      const urlInput = document.getElementById('input-playlist-url');
+      const rawInput = document.getElementById('input-playlist-raw');
+      const isRaw = selectMethod && selectMethod.value === 'raw';
+      const url = urlInput ? urlInput.value.trim() : '';
+      const rawContent = rawInput ? rawInput.value.trim() : '';
+
+      if (!isRaw && !url) {
+        alert('দয়া করে একটি বৈধ Stream বা Playlist URL লিখুন!');
         return;
       }
+      if (isRaw && !rawContent) {
+        alert('দয়া করে M3U বা JSON কনটেন্ট পেস্ট করুন!');
+        return;
+      }
+
+      diagnoseBox.classList.remove('hidden');
+      diagnoseContent.innerHTML = `<span style="color:var(--yellow)">⏳ সার্ভার সংযোগ ও স্ট্রিম পরীক্ষা করা হচ্ছে... দয়া করে অপেক্ষা করুন...</span>`;
 
       try {
         const res = await fetch('/api/playlist', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ url, rawContent, replaceExisting })
+          body: JSON.stringify({
+            action: action || 'diagnose',
+            url: isRaw ? '' : url,
+            rawContent: isRaw ? rawContent : ''
+          })
         });
+
+        const json = await res.json();
+        if (json.success) {
+          let samplesHtml = '';
+          if (json.sampleChannels && json.sampleChannels.length > 0) {
+            samplesHtml = `
+              <div style="margin-top: 10px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;">
+                <strong style="color:#fff;">নমুনা চ্যানেলসমূহ (${json.sampleChannels.length} টি):</strong>
+                <ul style="margin: 6px 0 0 18px; padding: 0;">
+                  ${json.sampleChannels.map(c => `<li><strong>${c.name}</strong> (${c.category || 'General'}) - <span style="color:var(--green)">${c.url.substring(0, 45)}...</span></li>`).join('')}
+                </ul>
+              </div>
+            `;
+          }
+
+          diagnoseContent.innerHTML = `
+            <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
+              <div>✅ <strong>স্ট্যাটাস:</strong> <span style="color:var(--green)">HTTP ${json.httpStatus || 200} OK</span></div>
+              <div>⚡ <strong>রেসপন্স টাইম:</strong> ${json.responseTimeMs || 0} ms</div>
+              <div>📁 <strong>শনাক্ত ফরম্যাট:</strong> <span style="color:#ff3b30; font-weight:700;">${json.format}</span></div>
+              <div>📺 <strong>পাওয়া গেছে:</strong> <span style="color:var(--green); font-weight:700;">${json.channelCount} টি চ্যানেল</span></div>
+            </div>
+            <p style="color:#fff;">${json.message}</p>
+            ${samplesHtml}
+          `;
+        } else {
+          diagnoseContent.innerHTML = `<span style="color:var(--red)">❌ ত্রুটি: ${json.message || 'সংযোগ স্থাপন ব্যর্থ হয়েছে।'}</span>`;
+        }
+      } catch (err) {
+        diagnoseContent.innerHTML = `<span style="color:var(--red)">❌ ত্রুটি: সার্ভার রিকোয়েস্ট পাঠাতে ব্যর্থ হয়েছে।</span>`;
+      }
+    };
+
+    const btnTest = document.getElementById('btn-test-url');
+    if (btnTest) {
+      btnTest.addEventListener('click', () => runInspection('test'));
+    }
+
+    const btnDiagnose = document.getElementById('btn-diagnose-url');
+    if (btnDiagnose) {
+      btnDiagnose.addEventListener('click', () => runInspection('diagnose'));
+    }
+
+    // Playlist Import Form Submission
+    document.getElementById('playlist-import-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const isRaw = selectMethod && selectMethod.value === 'raw';
+      const url = document.getElementById('input-playlist-url').value.trim();
+      const rawContent = document.getElementById('input-playlist-raw').value.trim();
+      const playlistName = document.getElementById('input-playlist-name').value.trim();
+      const replaceExisting = document.getElementById('replace-existing-m3u').checked;
+
+      if (!isRaw && !url) {
+        alert('দয়া করে Playlist বা Stream URL লিখুন!');
+        return;
+      }
+      if (isRaw && !rawContent) {
+        alert('দয়া করে M3U বা JSON টেক্সট পেস্ট করুন!');
+        return;
+      }
+
+      const submitBtn = document.getElementById('btn-import-submit');
+      submitBtn.textContent = '⏳ ইমপোর্ট হচ্ছে...';
+      submitBtn.disabled = true;
+
+      try {
+        const res = await fetch('/api/playlist', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            action: 'import',
+            url: isRaw ? '' : url,
+            rawContent: isRaw ? rawContent : '',
+            playlistName,
+            replaceExisting
+          })
+        });
+
         const json = await res.json();
         alert(json.message);
         if (json.success) {
           await this.loadChannels();
         }
       } catch (err) {
-        alert('ইমপোর্ট ব্যর্থ হয়েছে!');
+        alert('ইমপোর্ট ব্যর্থ হয়েছে! সার্ভার সংযোগ পরীক্ষা করুন।');
+      } finally {
+        submitBtn.textContent = '+ প্লেলিস্ট সেভ ও চ্যানেল ইমপোর্ট করুন';
+        submitBtn.disabled = false;
       }
     });
 
     // M3U URL Copy
     const m3uUrl = `${window.location.origin}/playlist.m3u`;
-    document.getElementById('m3u-export-url').value = m3uUrl;
-    document.getElementById('btn-copy-m3u').addEventListener('click', () => {
-      navigator.clipboard.writeText(m3uUrl);
-      alert('M3U প্লেলিস্ট লিংক কপি করা হয়েছে!');
-    });
+    const exportInput = document.getElementById('m3u-export-url');
+    if (exportInput) exportInput.value = m3uUrl;
+
+    const btnCopy = document.getElementById('btn-copy-m3u');
+    if (btnCopy) {
+      btnCopy.addEventListener('click', () => {
+        navigator.clipboard.writeText(m3uUrl);
+        alert('M3U প্লেলিস্ট লিংক কপি করা হয়েছে!');
+      });
+    }
   }
 
   // 7. Health Scanner
