@@ -1,17 +1,5 @@
 [
   {
-    "id": "ch-2",
-    "name": "Jamuna TV",
-    "category": "News",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Jamuna_TV_logo.png/300px-Jamuna_TV_logo.png",
-    "url": "https://stream.jamuna.tv/live/jamuna/playlist.m3u8",
-    "is_pinned": true,
-    "order": 2,
-    "status": "ONLINE",
-    "response_time_ms": 140,
-    "manual_override": false
-  },
-  {
     "id": "ch-3",
     "name": "T Sports",
     "category": "Sports",
