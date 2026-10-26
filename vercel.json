@@ -1,7 +1,6 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/", "destination": "/api/home" },
     { "source": "/admin", "destination": "/admin.html" },
     { "source": "/playlist.m3u", "destination": "/api/playlist" },
     { "source": "/version.json", "destination": "/api/version" }
