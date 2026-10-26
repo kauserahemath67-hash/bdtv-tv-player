@@ -48,7 +48,7 @@
   "crons": [
     {
       "path": "/api/health?auto_scan=1",
-      "schedule": "0 */6 * * *"
+      "schedule": "0 0 * * *"
     }
   ]
 }
