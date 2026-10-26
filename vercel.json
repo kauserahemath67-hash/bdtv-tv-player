@@ -1,7 +1,7 @@
 {
   "cleanUrls": false,
   "routes": [
-    { "src": "^/$", "dest": "/api/serve" },
+    { "src": "^/?$", "dest": "/index.html" },
     { "src": "^/admin/?$", "dest": "/admin.html" },
     { "src": "^/playlist\\.m3u$", "dest": "/api/playlist" },
     { "src": "^/version\\.json$", "dest": "/api/version" },
