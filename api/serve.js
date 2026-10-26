@@ -1,0 +1,164 @@
+const fs = require('fs');
+const path = require('path');
+
+const FALLBACK_HTML = `<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="referrer" content="no-referrer">
+  <title>BDTv Live - লাইভ টিভি প্লেয়ার</title>
+  <link rel="stylesheet" href="/css/player.css">
+  <!-- HLS.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+  <!-- Notice Bar (Ticker) -->
+  <div id="notice-bar" class="notice-bar hidden">
+    <div class="notice-icon">📢</div>
+    <div class="notice-content">
+      <span id="notice-text">স্বাগতম BDTv লাইভ প্লেয়ারে!</span>
+    </div>
+  </div>
+
+  <!-- Top Ad Slot -->
+  <div id="ad-top-slot" class="ad-slot top-slot hidden"></div>
+
+  <!-- Video Player Wrapper -->
+  <div id="video-wrapper">
+    <video id="player" playsinline autoplay preload="auto"></video>
+
+    <!-- Top Bar Overlay -->
+    <div id="top-bar">
+      <div class="top-left">
+        <span class="live-badge"><span class="pulse-dot"></span> LIVE</span>
+        <div class="channel-info-header">
+          <img id="top-channel-logo" src="" alt="" class="top-logo hidden">
+          <span id="top-channel-name">লোডিং...</span>
+        </div>
+      </div>
+      <div class="top-right">
+        <button id="btn-report" class="btn-top-action" title="সমস্যা রিপোর্ট করুন">⚠️ রিপোর্ট</button>
+        <button id="btn-pip" class="btn-top-action" title="পিকচার ইন পিকচার">⧉ মিনিমাইজ</button>
+      </div>
+    </div>
+
+    <!-- TV Channel Switch Banner / HUD -->
+    <div id="channel-hud" class="channel-hud hidden">
+      <img id="hud-channel-logo" src="" alt="" class="hud-logo hidden">
+      <div class="hud-text">
+        <div id="hud-channel-name" class="hud-name">চ্যানেল নাম</div>
+        <div id="hud-channel-cat" class="hud-cat">ক্যাটাগরি</div>
+      </div>
+      <span class="hud-tag">LIVE</span>
+    </div>
+
+    <!-- Smart Buffering Overlay -->
+    <div id="buffering-overlay" class="overlay hidden">
+      <div class="spinner"></div>
+      <div class="buffering-text">বাফারিং হচ্ছে, অপেক্ষা করুন...</div>
+    </div>
+
+    <!-- Error & Retry Overlay -->
+    <div id="error-overlay" class="overlay hidden">
+      <div class="error-card glass-panel">
+        <div class="error-icon">⚠️</div>
+        <div class="error-title">স্ট্রিমটি সাময়িকভাবে বন্ধ আছে</div>
+        <div id="error-message" class="error-desc">দয়া করে অন্য চ্যানেল দেখুন অথবা রিকানেক্ট করুন।</div>
+        <div class="error-actions">
+          <button id="btn-retry" class="btn-primary">🔄 Retry (পুনরায় চেষ্টা)</button>
+          <button id="btn-next-channel" class="btn-secondary">পরের চ্যানেল ⏭</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Below Player Ad Slot -->
+  <div id="ad-below-slot" class="ad-slot below-slot hidden"></div>
+
+  <!-- Slider Channel Drawer -->
+  <div id="channel-drawer">
+    <!-- Pull Tab Handle -->
+    <div id="drawer-handle" class="drawer-handle">
+      <div class="handle-bar"></div>
+      <span class="handle-text">চ্যানেল তালিকা দেখতে ওপরে টানুন (Swipe Up / Press Up)</span>
+    </div>
+
+    <div class="drawer-inner">
+      <!-- Category Filter Bar -->
+      <div id="category-bar" class="category-bar">
+        <button class="cat-pill active" data-cat="All">সব চ্যানেল (All)</button>
+        <button class="cat-pill" data-cat="News">সংবাদ (News)</button>
+        <button class="cat-pill" data-cat="Sports">খেলাধুলা (Sports)</button>
+        <button class="cat-pill" data-cat="Entertainment">বিনোদন</button>
+        <button class="cat-pill" data-cat="International">আন্তর্জাতিক</button>
+        <button class="cat-pill" data-cat="Music & Radio">রেডিও ও গান</button>
+      </div>
+
+      <!-- Infeed Ad Slot -->
+      <div id="ad-infeed-slot" class="ad-slot infeed-slot hidden"></div>
+
+      <!-- Channels Grid -->
+      <div id="channel-list" class="channel-grid">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Ad Slot -->
+  <div id="ad-footer-slot" class="ad-slot footer-slot hidden"></div>
+
+  <!-- Subscriber Login Modal (Triggered when restricted) -->
+  <div id="auth-modal" class="modal-backdrop hidden">
+    <div class="modal-card glass-panel">
+      <div class="modal-header">
+        <h2>🔒 গ্রাহক লগইন (VIP Access)</h2>
+        <p>লাইভ টিভি দেখতে আপনার গ্রাহক কোড ও পিন প্রবেশ করান</p>
+      </div>
+      <form id="auth-form">
+        <div class="form-group">
+          <label>গ্রাহক কোড (Customer Code):</label>
+          <input type="text" id="input-customer-code" placeholder="উদা: BDTV-1001" required>
+        </div>
+        <div class="form-group">
+          <label>লগইন পিন (PIN):</label>
+          <input type="password" id="input-customer-pin" placeholder="****" required>
+        </div>
+        <div id="auth-error" class="form-error hidden"></div>
+        <button type="submit" class="btn-primary full-width">আনলক করুন</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/player.js"></script>
+</body>
+</html>`;
+
+module.exports = async (req, res) => {
+  let html = '';
+  const candidates = [
+    path.join(process.cwd(), 'index.html'),
+    path.join(__dirname, '..', 'index.html'),
+    path.join(__dirname, '..', 'public', 'index.html')
+  ];
+
+  for (const p of candidates) {
+    try {
+      if (fs.existsSync(p)) {
+        html = fs.readFileSync(p, 'utf8');
+        break;
+      }
+    } catch (e) {}
+  }
+
+  if (!html) {
+    html = FALLBACK_HTML;
+  }
+
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+  res.setHeader('Referrer-Policy', 'no-referrer');
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  return res.status(200).send(html);
+};
