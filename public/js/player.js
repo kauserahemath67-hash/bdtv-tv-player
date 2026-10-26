@@ -580,3 +580,5 @@ window.handleAndroidBack = function() {
 document.addEventListener('DOMContentLoaded', () => {
   window.iptvPlayer = new IPTVPlayer();
 });
+
+// v1793046976
