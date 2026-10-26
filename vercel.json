@@ -1,47 +1,18 @@
 {
-  "version": 2,
-  "routes": [
-    {
-      "src": "^/api/(.*)",
-      "dest": "/api/$1.js"
-    },
-    {
-      "src": "^/playlist.m3u",
-      "dest": "/api/playlist.js"
-    },
-    {
-      "src": "^/version.json",
-      "dest": "/api/version.js"
-    },
-    {
-      "src": "^/admin/?$",
-      "dest": "/admin.html"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/playlist.m3u", "destination": "/api/playlist" },
+    { "source": "/version.json", "destination": "/api/version" },
+    { "source": "/admin", "destination": "/admin.html" }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        {
-          "key": "Access-Control-Allow-Origin",
-          "value": "*"
-        },
-        {
-          "key": "Access-Control-Allow-Methods",
-          "value": "GET, POST, PUT, DELETE, OPTIONS"
-        },
-        {
-          "key": "Access-Control-Allow-Headers",
-          "value": "Content-Type, Authorization, X-Device-Fingerprint"
-        },
-        {
-          "key": "Referrer-Policy",
-          "value": "no-referrer"
-        }
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET, POST, PUT, DELETE, OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type, Authorization, X-Device-Fingerprint" },
+        { "key": "Referrer-Policy", "value": "no-referrer" }
       ]
     }
   ],

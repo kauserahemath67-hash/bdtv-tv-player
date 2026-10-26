@@ -1,11 +1,43 @@
 const fs = require('fs');
 const path = require('path');
 
-// Memory store fallback for Serverless environment
+// Direct require so Vercel bundler bundles the JSON files into Serverless functions
+let defaultChannels = [];
+let defaultSettings = {
+  site_title: "BDTv Live",
+  admin_pin: "123456",
+  subscription_restrictions_enabled: false,
+  notice_text: "Welcome to BDTv Live Player",
+  notice_active: true,
+  ads: {}
+};
+let defaultVersion = {
+  versionCode: 105,
+  versionName: "2.1.0",
+  apkUrl: "https://bdtv.free.je/BDTv.apk"
+};
+
+try {
+  defaultChannels = require('../data/initial-channels.json');
+} catch (e) {
+  try {
+    defaultChannels = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/initial-channels.json'), 'utf8'));
+  } catch (e2) {}
+}
+
+try {
+  defaultSettings = require('../data/settings.json');
+} catch (e) {}
+
+try {
+  defaultVersion = require('../data/version.json');
+} catch (e) {}
+
+// Memory store for Serverless environment
 let memoryStore = {
-  channels: null,
-  settings: null,
-  version: null,
+  channels: defaultChannels,
+  settings: defaultSettings,
+  version: defaultVersion,
   customers: [
     {
       id: "cust-1",
@@ -30,70 +62,12 @@ let memoryStore = {
   reports: []
 };
 
-// Safe file reader
-function readJsonFile(relPath, defaultData) {
-  try {
-    const fullPath = path.join(process.cwd(), relPath);
-    if (fs.existsSync(fullPath)) {
-      const content = fs.readFileSync(fullPath, 'utf8');
-      return JSON.parse(content);
-    }
-  } catch (err) {
-    console.warn(`Could not read ${relPath}, using fallback:`, err.message);
-  }
-  return defaultData;
-}
-
-// Safe file writer (when local filesystem is writable)
-function writeJsonFile(relPath, data) {
-  try {
-    const fullPath = path.join(process.cwd(), relPath);
-    const dir = path.dirname(fullPath);
-    if (!fs.existsSync(dir)) {
-      fs.mkdirSync(dir, { recursive: true });
-    }
-    fs.writeFileSync(fullPath, JSON.stringify(data, null, 2), 'utf8');
-    return true;
-  } catch (err) {
-    // Vercel serverless filesystem is read-only at runtime outside /tmp
-    return false;
-  }
-}
-
-// Initialize base data
-function initData() {
-  if (!memoryStore.channels) {
-    memoryStore.channels = readJsonFile('data/initial-channels.json', []);
-  }
-  if (!memoryStore.settings) {
-    memoryStore.settings = readJsonFile('data/settings.json', {
-      site_title: "BDTv Live",
-      admin_pin: "123456",
-      subscription_restrictions_enabled: false,
-      notice_text: "Welcome to BDTv Live Player",
-      notice_active: true,
-      ads: {}
-    });
-  }
-  if (!memoryStore.version) {
-    memoryStore.version = readJsonFile('data/version.json', {
-      versionCode: 105,
-      versionName: "2.1.0",
-      apkUrl: "https://bdtv.free.je/BDTv.apk"
-    });
-  }
-}
-
-initData();
-
 module.exports = {
   // Channels
   getChannels() {
-    initData();
     return [...memoryStore.channels].sort((a, b) => (a.order || 0) - (b.order || 0));
   },
   saveChannel(channel) {
-    initData();
     if (!channel.id) {
       channel.id = "ch-" + Date.now();
     }
@@ -104,27 +78,20 @@ module.exports = {
       channel.order = channel.order || (memoryStore.channels.length + 1);
       memoryStore.channels.push(channel);
     }
-    writeJsonFile('data/initial-channels.json', memoryStore.channels);
     return channel;
   },
   deleteChannel(id) {
-    initData();
     memoryStore.channels = memoryStore.channels.filter(c => c.id !== id);
-    writeJsonFile('data/initial-channels.json', memoryStore.channels);
     return true;
   },
   reorderChannels(orderList) {
-    // orderList: [{ id, order }]
-    initData();
     orderList.forEach(item => {
       const ch = memoryStore.channels.find(c => c.id === item.id);
       if (ch) ch.order = item.order;
     });
-    writeJsonFile('data/initial-channels.json', memoryStore.channels);
     return memoryStore.channels;
   },
   updateChannelHealth(id, status, response_time_ms) {
-    initData();
     const ch = memoryStore.channels.find(c => c.id === id);
     if (ch) {
       if (!ch.manual_override) {
@@ -137,29 +104,23 @@ module.exports = {
 
   // Settings
   getSettings() {
-    initData();
     return { ...memoryStore.settings };
   },
   updateSettings(newSettings) {
-    initData();
     memoryStore.settings = { ...memoryStore.settings, ...newSettings };
-    writeJsonFile('data/settings.json', memoryStore.settings);
     return memoryStore.settings;
   },
 
   // Version
   getVersion() {
-    initData();
     return { ...memoryStore.version };
   },
   updateVersion(newVersion) {
-    initData();
     memoryStore.version = { ...memoryStore.version, ...newVersion, updatedAt: new Date().toISOString() };
-    writeJsonFile('data/version.json', memoryStore.version);
     return memoryStore.version;
   },
 
-  // Customers / Users
+  // Customers
   getCustomers() {
     return memoryStore.customers;
   },
@@ -193,14 +154,12 @@ module.exports = {
     return memoryStore.devices;
   },
   registerDevice(device) {
-    // device: { customer_id, fingerprint, device_name, os, browser }
     const existing = memoryStore.devices.find(d => d.customer_id === device.customer_id && d.fingerprint === device.fingerprint);
     if (existing) {
       existing.last_active = new Date().toISOString();
       return { allowed: existing.status === 'ACTIVE', device: existing };
     }
     
-    // Check max devices for this customer
     const cust = memoryStore.customers.find(c => c.id === device.customer_id);
     const maxLimit = cust ? (cust.max_devices || 2) : 2;
     const currentActive = memoryStore.devices.filter(d => d.customer_id === device.customer_id && d.status === 'ACTIVE');

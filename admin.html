@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BDTv Admin Dashboard - আইপিটিভি কন্ট্রোল প্যানেল</title>
+  <link rel="stylesheet" href="/css/admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+  <!-- Login Modal Overlay (When not authenticated) -->
+  <div id="login-modal" class="login-wrapper">
+    <div class="login-box glass-card">
+      <div class="login-icon">🛡️</div>
+      <h2>BDTv অ্যাডমিন ড্যাশবোর্ড</h2>
+      <p>প্যানেলে প্রবেশ করতে আপনার সিক্রেট পিন দিন</p>
+      <form id="admin-login-form">
+        <div class="input-group">
+          <input type="password" id="admin-pin-input" placeholder="পিন নম্বর লিখুন (ডিফল্ট: 123456)" required autofocus>
+        </div>
+        <div id="login-error" class="login-error hidden"></div>
+        <button type="submit" class="btn-primary-admin full-btn">লগইন করুন</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main Admin Layout -->
+  <div id="admin-app" class="admin-layout hidden">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-badge">LIVE</span>
+        <h2>BDTv Admin</h2>
+      </div>
+
+      <nav class="nav-menu">
+        <button class="nav-item active" data-tab="tab-overview">📊 ওভারভিউ</button>
+        <button class="nav-item" data-tab="tab-channels">📺 চ্যানেল ম্যানেজার</button>
+        <button class="nav-item" data-tab="tab-playlist">📋 M3U প্লেলিস্ট</button>
+        <button class="nav-item" data-tab="tab-health">🤖 হেলথ ও রিপোর্ট</button>
+        <button class="nav-item" data-tab="tab-customers">👥 গ্রাহক ও সাবস্ক্রিপশন</button>
+        <button class="nav-item" data-tab="tab-devices">📱 ডিভাইস লক</button>
+        <button class="nav-item" data-tab="tab-settings">📢 বিজ্ঞাপন ও সেটিংস</button>
+        <button class="nav-item" data-tab="tab-version">🚀 অ্যাপ ভার্সন ও APK</button>
+      </nav>
+
+      <div class="sidebar-footer">
+        <a href="/" target="_blank" class="btn-view-site">🌐 লাইভ প্লেয়ার দেখুন</a>
+        <button id="btn-logout" class="btn-logout">🚪 লগআউট</button>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-body">
+      <!-- Header -->
+      <header class="top-header">
+        <div class="header-title">
+          <h1 id="page-title">ওভারভিউ ও পরিসংখ্যান</h1>
+          <p id="page-subtitle">সার্ভার ও লাইভ আইপিটিভি রিয়েল-টাইম তথ্য</p>
+        </div>
+        <div class="header-actions">
+          <button id="btn-quick-scan" class="btn-secondary-admin">⚡ হেলথ স্ক্যান চালান</button>
+          <span class="live-pill"><span class="dot"></span> লাইভ সক্রিয়</span>
+        </div>
+      </header>
+
+      <!-- TAB 1: OVERVIEW -->
+      <section id="tab-overview" class="tab-pane active">
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <div class="stat-title">মোট চ্যানেল</div>
+            <div id="stat-total-channels" class="stat-value">0</div>
+            <div class="stat-meta">সক্রিয় প্লেলিস্ট</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-title">অনলাইন চ্যানেল</div>
+            <div id="stat-online-channels" class="stat-value text-green">0</div>
+            <div class="stat-meta">পিং রেসপন্স ঠিক আছে</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-title">মোট গ্রাহক</div>
+            <div id="stat-total-customers" class="stat-value">0</div>
+            <div class="stat-meta">ভিআইপি একাউন্ট</div>
+          </div>
+          <div class="stat-card glass-card">
+            <div class="stat-title">পেন্ডিং এরর রিপোর্ট</div>
+            <div id="stat-pending-reports" class="stat-value text-red">0</div>
+            <div class="stat-meta">ইউজার রিপোর্ট</div>
+          </div>
+        </div>
+
+        <div class="quick-controls glass-card">
+          <h3>⚡ তাৎক্ষণিক নিয়ন্ত্রণ</h3>
+          <div class="toggle-row">
+            <div>
+              <strong>সাবস্ক্রিপশন মোড (VIP Lock):</strong>
+              <p class="desc">চালু থাকলে সাধারণ ভিজিটররা দেখতে পারবে না, কেবল সাবস্ক্রিপশন কোড থাকা ইউজাররা চ্যানেল দেখতে পাবে।</p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="toggle-sub-restriction">
+              <span class="slider"></span>
+            </label>
+          </div>
+          <div class="toggle-row">
+            <div>
+              <strong>স্ক্রলিং নোটিশ বার:</strong>
+              <p class="desc">প্লেয়ারের একদম ওপরে জরুরি নোটিশ দেখান।</p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" id="toggle-notice-active">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 2: CHANNELS -->
+      <section id="tab-channels" class="tab-pane">
+        <div class="section-toolbar">
+          <div class="search-box">
+            <input type="text" id="channel-search" placeholder="চ্যানেল খুঁজুন...">
+          </div>
+          <button id="btn-add-channel" class="btn-primary-admin">+ নতুন চ্যানেল যুক্ত করুন</button>
+        </div>
+
+        <div class="table-responsive glass-card">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ক্রম</th>
+                <th>লোগো</th>
+                <th>নাম</th>
+                <th>ক্যাটাগরি</th>
+                <th>পিন</th>
+                <th>স্ট্যাটাস</th>
+                <th>অ্যাকশন</th>
+              </tr>
+            </thead>
+            <tbody id="channels-table-body">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TAB 3: PLAYLIST M3U -->
+      <section id="tab-playlist" class="tab-pane">
+        <div class="card-grid">
+          <div class="glass-card">
+            <h3>📥 M3U প্লেলিস্ট ইমপোর্ট</h3>
+            <p class="desc">সরাসরি অনলাইন M3U URL অথবা টেক্সট থেকে চ্যানেল ইমপোর্ট করুন</p>
+            <form id="playlist-import-form">
+              <div class="form-group">
+                <label>অনলাইন M3U URL:</label>
+                <input type="url" id="input-m3u-url" placeholder="https://example.com/playlist.m3u">
+              </div>
+              <div class="form-group">
+                <label>অথবা M3U টেক্সট পেস্ট করুন:</label>
+                <textarea id="input-m3u-raw" rows="6" placeholder="#EXTM3U&#10;#EXTINF:-1 tvg-name=..."></textarea>
+              </div>
+              <div class="checkbox-row">
+                <label><input type="checkbox" id="replace-existing-m3u"> পূর্বের সব চ্যানেল মুছে নতুনগুলো আনুন</label>
+              </div>
+              <button type="submit" class="btn-primary-admin">ইমপোর্ট করুন</button>
+            </form>
+          </div>
+
+          <div class="glass-card">
+            <h3>📤 আপনার জেনারেট করা M3U লিংক</h3>
+            <p class="desc">যেকোনো আইপিটিভি প্লেয়ার বা টিভিতে আপনার নিজস্ব প্লেলিস্ট দিন</p>
+            <div class="m3u-export-box">
+              <input type="text" id="m3u-export-url" readonly value="">
+              <button id="btn-copy-m3u" class="btn-secondary-admin">কপি করুন</button>
+            </div>
+            <p class="meta-note">💡 এটি ডায়নামিকালি আপনার সমস্ত সক্রিয় চ্যানেল থেকে স্বয়ংক্রিয়ভাবে আপডেট হয়।</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 4: HEALTH & REPORTS -->
+      <section id="tab-health" class="tab-pane">
+        <div class="health-header">
+          <h3>🤖 চ্যানেল হেলথ স্ট্যাটাস ও ইউজার রিপোর্ট</h3>
+          <button id="btn-run-health-scan" class="btn-primary-admin">সব চ্যানেল পিং টেস্ট করুন</button>
+        </div>
+
+        <div class="reports-section glass-card">
+          <h4>🚨 ইউজারদের পাঠানো প্লেব্যাক এরর রিপোর্ট</h4>
+          <div class="table-responsive">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>তারিখ</th>
+                  <th>চ্যানেল</th>
+                  <th>সমস্যা</th>
+                  <th>স্ট্যাটাস</th>
+                  <th>অ্যাকশন</th>
+                </tr>
+              </thead>
+              <tbody id="reports-table-body">
+                <!-- Rendered via JS -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 5: CUSTOMERS & SUBSCRIPTIONS -->
+      <section id="tab-customers" class="tab-pane">
+        <div class="section-toolbar">
+          <h3>গ্রাহক ও সাবস্ক্রিপশন নিয়ন্ত্রণ</h3>
+          <button id="btn-add-customer" class="btn-primary-admin">+ নতুন গ্রাহক যোগ করুন</button>
+        </div>
+
+        <div class="table-responsive glass-card">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>গ্রাহক কোড</th>
+                <th>নাম</th>
+                <th>পিন</th>
+                <th>প্ল্যান</th>
+                <th>মেয়াদ শেষ</th>
+                <th>স্ট্যাটাস</th>
+                <th>ডিভাইস লিমিট</th>
+                <th>অ্যাকশন</th>
+              </tr>
+            </thead>
+            <tbody id="customers-table-body">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TAB 6: DEVICES -->
+      <section id="tab-devices" class="tab-pane">
+        <h3>📱 সক্রিয় ডিভাইস মনিটরিং</h3>
+        <p class="desc">গ্রাহকদের ডিভাইসের ফিঙ্গারপ্রিন্ট ও অনুমোদন হিস্ট্রি</p>
+
+        <div class="table-responsive glass-card">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>গ্রাহক ID</th>
+                <th>ডিভাইস মডেল/ব্রাউজার</th>
+                <th>OS</th>
+                <th>ফিঙ্গারপ্রিন্ট</th>
+                <th>স্ট্যাটাস</th>
+                <th>সর্বশেষ সক্রিয়</th>
+                <th>অ্যাকশন</th>
+              </tr>
+            </thead>
+            <tbody id="devices-table-body">
+              <!-- Rendered via JS -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- TAB 7: SETTINGS & ADS -->
+      <section id="tab-settings" class="tab-pane">
+        <div class="card-grid">
+          <div class="glass-card">
+            <h3>📢 স্ক্রলিং নোটিশ বার সেটিংস</h3>
+            <div class="form-group">
+              <label>নোটিশ টেক্সট:</label>
+              <input type="text" id="setting-notice-text">
+            </div>
+            <div class="checkbox-row">
+              <label><input type="checkbox" id="setting-notice-active"> নোটিশ প্রদর্শন চালু রাখুন</label>
+            </div>
+
+            <hr class="divider">
+
+            <h3>🔒 সিকিউরিটি সেটিংস</h3>
+            <div class="form-group">
+              <label>অ্যাডমিন পিন পরিবর্তন করুন:</label>
+              <input type="text" id="setting-admin-pin" placeholder="নতুন পিন লিখুন">
+            </div>
+
+            <button id="btn-save-settings" class="btn-primary-admin">সেটিংস সংরক্ষণ করুন</button>
+          </div>
+
+          <div class="glass-card">
+            <h3>💰 ৫টি বিজ্ঞাপন স্লট কন্ট্রোল</h3>
+            <p class="desc">HTML ব্যানার বা অ্যাডসেন্স কোড পেস্ট করুন এবং অন/অফ করুন</p>
+
+            <div class="ad-control-group">
+              <label><input type="checkbox" id="ad-top-active"> ১. টপ ব্যানার (Top Banner)</label>
+              <textarea id="ad-top-code" rows="2" placeholder="HTML / Ad Code"></textarea>
+            </div>
+
+            <div class="ad-control-group">
+              <label><input type="checkbox" id="ad-below-active"> ২. প্লেয়ারের নিচের ব্যানার (Below Player)</label>
+              <textarea id="ad-below-code" rows="2" placeholder="HTML / Ad Code"></textarea>
+            </div>
+
+            <div class="ad-control-group">
+              <label><input type="checkbox" id="ad-infeed-active"> ৩. চ্যানেল তালিকার মাঝে ব্যানার (In-feed)</label>
+              <textarea id="ad-infeed-code" rows="2" placeholder="HTML / Ad Code"></textarea>
+            </div>
+
+            <div class="ad-control-group">
+              <label><input type="checkbox" id="ad-footer-active"> ৪. ফুটার ব্যানার (Footer)</label>
+              <textarea id="ad-footer-code" rows="2" placeholder="HTML / Ad Code"></textarea>
+            </div>
+
+            <button id="btn-save-ads" class="btn-primary-admin">বিজ্ঞাপন কোড সেভ করুন</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TAB 8: APP VERSION & APK -->
+      <section id="tab-version" class="tab-pane">
+        <div class="glass-card max-w-600">
+          <h3>🚀 অ্যান্ড্রয়েড অ্যাপ ভার্সন ও আপডেট ম্যানেজার</h3>
+          <p class="desc">কোনো কোড এডিট না করেই অ্যাপ ব্যবহারকারীদের নতুন আপডেট ও APK পাঠান</p>
+
+          <form id="version-form">
+            <div class="form-group">
+              <label>ভার্সন কোড (Version Code):</label>
+              <input type="number" id="ver-code" required>
+            </div>
+            <div class="form-group">
+              <label>ভার্সন নাম (Version Name):</label>
+              <input type="text" id="ver-name" required placeholder="উদা: 2.1.0">
+            </div>
+            <div class="form-group">
+              <label>APK ডাউনলোড লিংক (APK Download URL):</label>
+              <input type="url" id="ver-apk-url" required placeholder="https://example.com/BDTv.apk">
+            </div>
+            <div class="form-group">
+              <label>আপডেট টাইটেল:</label>
+              <input type="text" id="ver-title" placeholder="নতুন আপডেট উপলব্ধ!">
+            </div>
+            <div class="form-group">
+              <label>কি কি নতুন এসেছে (Change Log):</label>
+              <textarea id="ver-changelog" rows="4" placeholder="প্রতি লাইনে একটি নতুন ফিচার লিখুন..."></textarea>
+            </div>
+            <div class="checkbox-row">
+              <label><input type="checkbox" id="ver-force"> ফোর্স আপডেট (বাধ্যতামূলক আপডেট)</label>
+            </div>
+            <button type="submit" class="btn-primary-admin">ভার্সন আপডেট সেভ করুন</button>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- Channel Add/Edit Modal -->
+  <div id="channel-modal" class="admin-modal-backdrop hidden">
+    <div class="admin-modal-card glass-card">
+      <div class="modal-head">
+        <h3 id="channel-modal-title">নতুন চ্যানেল যোগ করুন</h3>
+        <button class="btn-close-modal" id="btn-close-channel-modal">&times;</button>
+      </div>
+      <form id="channel-form">
+        <input type="hidden" id="channel-edit-id">
+        <div class="form-group">
+          <label>চ্যানেলের নাম:</label>
+          <input type="text" id="form-ch-name" required placeholder="উদা: Somoy TV">
+        </div>
+        <div class="form-group">
+          <label>ক্যাটাগরি:</label>
+          <select id="form-ch-category">
+            <option value="News">News (সংবাদ)</option>
+            <option value="Sports">Sports (খেলাধুলা)</option>
+            <option value="Entertainment">Entertainment (বিনোদন)</option>
+            <option value="International">International (আন্তর্জাতিক)</option>
+            <option value="Music & Radio">Music & Radio</option>
+            <option value="Movies">Movies (সিনেমা)</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>লোগো URL:</label>
+          <input type="url" id="form-ch-logo" placeholder="https://.../logo.png">
+        </div>
+        <div class="form-group">
+          <label>লাইভ স্ট্রিম URL (m3u8):</label>
+          <input type="url" id="form-ch-url" required placeholder="https://.../playlist.m3u8">
+        </div>
+        <div class="checkbox-row">
+          <label><input type="checkbox" id="form-ch-pinned"> এই চ্যানেলটি শীর্ষে পিন করে রাখুন (Pinned)</label>
+        </div>
+        <div class="checkbox-row">
+          <label><input type="checkbox" id="form-ch-override"> ম্যানুয়াল ওভাররাইড (রোবট অফলাইন বললেও জোরপূর্বক চালু রাখুন)</label>
+        </div>
+        <button type="submit" class="btn-primary-admin full-btn">সংরক্ষণ করুন</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Live Stream Preview Modal -->
+  <div id="preview-modal" class="admin-modal-backdrop hidden">
+    <div class="admin-modal-card glass-card" style="max-width: 640px;">
+      <div class="modal-head">
+        <h3 id="preview-modal-title">লাইভ প্রিভিউ টেস্ট</h3>
+        <button class="btn-close-modal" id="btn-close-preview-modal">&times;</button>
+      </div>
+      <div class="preview-video-box">
+        <video id="admin-preview-player" controls autoplay style="width: 100%; height: 320px; background: #000; border-radius: 8px;"></video>
+      </div>
+      <div id="preview-status-text" class="preview-status">স্ট্রিম লোড হচ্ছে...</div>
+    </div>
+  </div>
+
+  <!-- Customer Add/Edit Modal -->
+  <div id="customer-modal" class="admin-modal-backdrop hidden">
+    <div class="admin-modal-card glass-card">
+      <div class="modal-head">
+        <h3 id="customer-modal-title">নতুন গ্রাহক যোগ করুন</h3>
+        <button class="btn-close-modal" id="btn-close-customer-modal">&times;</button>
+      </div>
+      <form id="customer-form">
+        <input type="hidden" id="cust-edit-id">
+        <div class="form-group">
+          <label>গ্রাহক কোড (Customer Code):</label>
+          <input type="text" id="form-cust-code" required placeholder="BDTV-1002">
+        </div>
+        <div class="form-group">
+          <label>নাম:</label>
+          <input type="text" id="form-cust-name" required placeholder="গ্রাহকের নাম">
+        </div>
+        <div class="form-group">
+          <label>লগইন পিন:</label>
+          <input type="password" id="form-cust-pin" required placeholder="1234">
+        </div>
+        <div class="form-group">
+          <label>প্ল্যান:</label>
+          <input type="text" id="form-cust-plan" value="Monthly VIP">
+        </div>
+        <div class="form-group">
+          <label>মেয়াদ শেষ হওয়ার তারিখ:</label>
+          <input type="date" id="form-cust-expiry" required>
+        </div>
+        <div class="form-group">
+          <label>সর্বোচ্চ অনুমোদিত ডিভাইস লিমিট:</label>
+          <input type="number" id="form-cust-max-dev" value="2" min="1" max="10">
+        </div>
+        <div class="checkbox-row">
+          <label><input type="checkbox" id="form-cust-block"> গ্রাহককে সাময়িক ব্লক রাখুন</label>
+        </div>
+        <div class="form-group" id="block-reason-group">
+          <label>ব্লক করার কারণ:</label>
+          <input type="text" id="form-cust-block-reason" placeholder="উদা: পেমেন্ট বকেয়া">
+        </div>
+        <button type="submit" class="btn-primary-admin full-btn">সংরক্ষণ করুন</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/admin.js"></script>
+</body>
+</html>
