@@ -1,29 +1,5 @@
 [
   {
-    "id": "ch-4",
-    "name": "Channel i",
-    "category": "Entertainment",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Channel_i_logo.svg/300px-Channel_i_logo.svg.png",
-    "url": "https://stream.channeli.tv/live/playlist.m3u8",
-    "is_pinned": false,
-    "order": 4,
-    "status": "ONLINE",
-    "response_time_ms": 160,
-    "manual_override": false
-  },
-  {
-    "id": "ch-5",
-    "name": "Al Jazeera English",
-    "category": "International",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Al_Jazeera_English_logo.svg/300px-Al_Jazeera_English_logo.svg.png",
-    "url": "https://live-hls-web-aje.getaj.net/AJE/03.m3u8",
-    "is_pinned": false,
-    "order": 5,
-    "status": "ONLINE",
-    "response_time_ms": 95,
-    "manual_override": false
-  },
-  {
     "id": "ch-6",
     "name": "NHK World Japan",
     "category": "International",
