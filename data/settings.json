@@ -1,0 +1,31 @@
+{
+  "site_title": "BDTv Live - Premium IPTV Web Player",
+  "notice_text": "স্বাগতম BDTv লাইভ প্লেয়ারে! যেকোনো টিভি চ্যানেল সহজে উপভোগ করুন।",
+  "notice_active": true,
+  "subscription_restrictions_enabled": false,
+  "default_max_devices": 2,
+  "expiry_warning_days": 3,
+  "admin_pin": "123456",
+  "ads": {
+    "header": {
+      "active": false,
+      "code": "<!-- Header Ad Code -->"
+    },
+    "top": {
+      "active": false,
+      "code": "<div class='ad-banner'>Top Banner Ad (Sponsored)</div>"
+    },
+    "below_player": {
+      "active": false,
+      "code": "<div class='ad-banner'>Below Player Banner Ad</div>"
+    },
+    "infeed": {
+      "active": false,
+      "code": "<div class='ad-banner infeed'>Special Offer / Ad</div>"
+    },
+    "footer": {
+      "active": false,
+      "code": "<div class='ad-banner'>Footer Ad Notice</div>"
+    }
+  }
+}
