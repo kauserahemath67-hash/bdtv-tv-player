@@ -1,17 +1,5 @@
 [
   {
-    "id": "ch-3",
-    "name": "T Sports",
-    "category": "Sports",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/T_Sports_logo.svg/300px-T_Sports_logo.svg.png",
-    "url": "https://tsports.live/stream/playlist.m3u8",
-    "is_pinned": true,
-    "order": 3,
-    "status": "ONLINE",
-    "response_time_ms": 110,
-    "manual_override": false
-  },
-  {
     "id": "ch-4",
     "name": "Channel i",
     "category": "Entertainment",
