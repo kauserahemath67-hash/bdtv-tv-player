@@ -1,39 +1,123 @@
-const fs = require('fs');
-const path = require('path');
+// Embedded default channels to guarantee 100% availability in any Serverless environment
+const defaultChannels = [
+  {
+    "id": "ch-1",
+    "name": "Somoy TV",
+    "category": "News",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Somoy_TV_logo.svg/300px-Somoy_TV_logo.svg.png",
+    "url": "https://stream.somoynews.tv/live/somoy/playlist.m3u8",
+    "is_pinned": true,
+    "order": 1,
+    "status": "ONLINE",
+    "response_time_ms": 120,
+    "manual_override": false
+  },
+  {
+    "id": "ch-2",
+    "name": "Jamuna TV",
+    "category": "News",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Jamuna_TV_logo.png/300px-Jamuna_TV_logo.png",
+    "url": "https://stream.jamuna.tv/live/jamuna/playlist.m3u8",
+    "is_pinned": true,
+    "order": 2,
+    "status": "ONLINE",
+    "response_time_ms": 140,
+    "manual_override": false
+  },
+  {
+    "id": "ch-3",
+    "name": "T Sports",
+    "category": "Sports",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/91/T_Sports_logo.svg/300px-T_Sports_logo.svg.png",
+    "url": "https://tsports.live/stream/playlist.m3u8",
+    "is_pinned": true,
+    "order": 3,
+    "status": "ONLINE",
+    "response_time_ms": 110,
+    "manual_override": false
+  },
+  {
+    "id": "ch-4",
+    "name": "Channel i",
+    "category": "Entertainment",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Channel_i_logo.svg/300px-Channel_i_logo.svg.png",
+    "url": "https://stream.channeli.tv/live/playlist.m3u8",
+    "is_pinned": false,
+    "order": 4,
+    "status": "ONLINE",
+    "response_time_ms": 160,
+    "manual_override": false
+  },
+  {
+    "id": "ch-5",
+    "name": "Al Jazeera English",
+    "category": "International",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Al_Jazeera_English_logo.svg/300px-Al_Jazeera_English_logo.svg.png",
+    "url": "https://live-hls-web-aje.getaj.net/AJE/03.m3u8",
+    "is_pinned": false,
+    "order": 5,
+    "status": "ONLINE",
+    "response_time_ms": 95,
+    "manual_override": false
+  },
+  {
+    "id": "ch-6",
+    "name": "NHK World Japan",
+    "category": "International",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/NHK_World-Japan_logo.svg/300px-NHK_World-Japan_logo.svg.png",
+    "url": "https://b-nhkworld.akamaized.net/hls/live/2014412/nhkworld/playlist_720.m3u8",
+    "is_pinned": false,
+    "order": 6,
+    "status": "ONLINE",
+    "response_time_ms": 85,
+    "manual_override": false
+  },
+  {
+    "id": "ch-7",
+    "name": "Bangladesh Betar (Radio)",
+    "category": "Music & Radio",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Bangladesh_Betar_Logo.svg/300px-Bangladesh_Betar_Logo.svg.png",
+    "url": "https://betarlive.teletalk.com.bd/live/betar.m3u8",
+    "is_pinned": false,
+    "order": 7,
+    "status": "ONLINE",
+    "response_time_ms": 130,
+    "manual_override": false
+  }
+];
 
-// Direct require so Vercel bundler bundles the JSON files into Serverless functions
-let defaultChannels = [];
-let defaultSettings = {
-  site_title: "BDTv Live",
-  admin_pin: "123456",
-  subscription_restrictions_enabled: false,
-  notice_text: "Welcome to BDTv Live Player",
+const defaultSettings = {
+  site_title: "BDTv Live - Premium IPTV Web Player",
+  notice_text: "স্বাগতম BDTv লাইভ প্লেয়ারে! যেকোনো টিভি চ্যানেল সহজে উপভোগ করুন।",
   notice_active: true,
-  ads: {}
+  subscription_restrictions_enabled: false,
+  default_max_devices: 2,
+  expiry_warning_days: 3,
+  admin_pin: "123456",
+  ads: {
+    top: { active: false, code: "" },
+    below_player: { active: false, code: "" },
+    infeed: { active: false, code: "" },
+    footer: { active: false, code: "" }
+  }
 };
-let defaultVersion = {
+
+const defaultVersion = {
   versionCode: 105,
   versionName: "2.1.0",
-  apkUrl: "https://bdtv.free.je/BDTv.apk"
+  minSupportedVersion: 100,
+  apkUrl: "https://bdtv.free.je/BDTv.apk",
+  updateTitle: "নতুন আপডেট উপলব্ধ!",
+  changelog: [
+    "অ্যান্ড্রয়েড টিভি রিমোট কন্ট্রোল আরও স্মুথ ও দ্রুত হয়েছে",
+    "লো-লেটেন্সি লাইভ স্ট্রিমিং মোড যুক্ত করা হয়েছে",
+    "চ্যানেল ড্রয়ার ও সোয়াইপ জেসচার আরও অপ্টিমাইজ করা হয়েছে",
+    "বাফারিং ও এরর অটো-রিকভারি ফিক্স"
+  ],
+  forceUpdate: false,
+  updatedAt: "2026-10-27T00:00:00.000Z"
 };
 
-try {
-  defaultChannels = require('../data/initial-channels.json');
-} catch (e) {
-  try {
-    defaultChannels = JSON.parse(fs.readFileSync(path.join(__dirname, '../data/initial-channels.json'), 'utf8'));
-  } catch (e2) {}
-}
-
-try {
-  defaultSettings = require('../data/settings.json');
-} catch (e) {}
-
-try {
-  defaultVersion = require('../data/version.json');
-} catch (e) {}
-
-// Memory store for Serverless environment
 let memoryStore = {
   channels: defaultChannels,
   settings: defaultSettings,
@@ -63,7 +147,6 @@ let memoryStore = {
 };
 
 module.exports = {
-  // Channels
   getChannels() {
     return [...memoryStore.channels].sort((a, b) => (a.order || 0) - (b.order || 0));
   },
@@ -101,8 +184,6 @@ module.exports = {
     }
     return ch;
   },
-
-  // Settings
   getSettings() {
     return { ...memoryStore.settings };
   },
@@ -110,8 +191,6 @@ module.exports = {
     memoryStore.settings = { ...memoryStore.settings, ...newSettings };
     return memoryStore.settings;
   },
-
-  // Version
   getVersion() {
     return { ...memoryStore.version };
   },
@@ -119,8 +198,6 @@ module.exports = {
     memoryStore.version = { ...memoryStore.version, ...newVersion, updatedAt: new Date().toISOString() };
     return memoryStore.version;
   },
-
-  // Customers
   getCustomers() {
     return memoryStore.customers;
   },
@@ -145,8 +222,6 @@ module.exports = {
   findCustomer(code, pin) {
     return memoryStore.customers.find(c => c.customer_code === code && (!pin || c.login_pin === pin));
   },
-
-  // Devices
   getDevices(customerId) {
     if (customerId) {
       return memoryStore.devices.filter(d => d.customer_id === customerId);
@@ -189,8 +264,6 @@ module.exports = {
     }
     return dev;
   },
-
-  // Reports
   getReports() {
     return memoryStore.reports;
   },

@@ -1,9 +1,10 @@
 {
-  "cleanUrls": true,
+  "cleanUrls": false,
   "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/admin", "destination": "/admin.html" },
     { "source": "/playlist.m3u", "destination": "/api/playlist" },
-    { "source": "/version.json", "destination": "/api/version" },
-    { "source": "/admin", "destination": "/admin.html" }
+    { "source": "/version.json", "destination": "/api/version" }
   ],
   "headers": [
     {
