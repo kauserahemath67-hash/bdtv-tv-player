@@ -582,15 +582,36 @@ class AdminDashboard {
 
   async loadPlaylists() {
     try {
+      let list = [];
+      // 1. Try /api/playlists
       const res = await fetch('/api/playlists');
-      if (!res.ok) return;
-      const json = await res.json();
-      if (json && json.success) {
-        this.playlists = json.data || [];
-        this.renderPlaylistsList();
+      if (res.ok) {
+        const json = await res.json();
+        if (json && json.success && Array.isArray(json.data)) list = json.data;
       }
+      // 2. Try /api/playlist?action=list fallback
+      if (list.length === 0) {
+        try {
+          const res2 = await fetch('/api/playlist?action=list');
+          if (res2.ok) {
+            const json2 = await res2.json();
+            if (json2 && json2.success && Array.isArray(json2.data)) list = json2.data;
+          }
+        } catch (_) {}
+      }
+      // 3. Fallback to settings.playlists
+      if (list.length === 0 && this.settings && Array.isArray(this.settings.playlists) && this.settings.playlists.length > 0) {
+        list = this.settings.playlists;
+      }
+
+      this.playlists = list;
+      this.renderPlaylistsList();
     } catch (e) {
       console.warn('loadPlaylists error:', e);
+      if (this.settings && Array.isArray(this.settings.playlists)) {
+        this.playlists = this.settings.playlists;
+        this.renderPlaylistsList();
+      }
     }
   }
 
@@ -963,6 +984,12 @@ class AdminDashboard {
       const json = await res.json();
       if (json.success) {
         this.settings = json.data;
+
+        // If playlists list is still empty, populate from settings.playlists
+        if ((!this.playlists || this.playlists.length === 0) && Array.isArray(this.settings.playlists) && this.settings.playlists.length > 0) {
+          this.playlists = this.settings.playlists;
+          this.renderPlaylistsList();
+        }
 
         document.getElementById('toggle-sub-restriction').checked = Boolean(this.settings.subscription_restrictions_enabled);
         document.getElementById('toggle-notice-active').checked = Boolean(this.settings.notice_active);

@@ -131,8 +131,15 @@ module.exports = async (req, res) => {
   }
 
   try {
-    // GET: Serve Dynamic M3U
+    // GET: Serve Dynamic M3U or JSON list of saved playlists
     if (req.method === 'GET') {
+      const q = req.query || {};
+      const acceptHeader = req.headers['accept'] || '';
+      if (q.action === 'list' || q.format === 'json' || acceptHeader.includes('application/json')) {
+        const playlists = await db.getPlaylists();
+        return res.status(200).json({ success: true, count: playlists.length, data: playlists });
+      }
+
       const channels = await db.getChannels();
       let m3u = '#EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"\n';
 
@@ -207,6 +214,18 @@ module.exports = async (req, res) => {
 
       await db.importChannels(finalList);
       const count = toImport.length;
+
+      // Also persist to playlists registry
+      try {
+        const plName = playlistName || (url ? url.split('/').pop().replace(/\.[^/.]+$/, '') : 'Custom Playlist');
+        await db.savePlaylist({
+          name: plName,
+          url: url || '',
+          format: parsed.format,
+          channelCount: count,
+          active: true
+        });
+      } catch (_) {}
 
       return res.status(200).json({
         success: true,
