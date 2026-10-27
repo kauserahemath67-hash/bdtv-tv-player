@@ -87,6 +87,27 @@ class AdminDashboard {
     this.bindNav();
     this.bindModals();
     this.loadAllData();
+    // Initialize AutoDetector
+    this._scanResults = {};
+    this.autoDetector = new AutoDetector(
+      () => this.channels,
+      (id, result) => {
+        this._scanResults[id] = result;
+        // Update badge in DOM without full re-render
+        const badge = document.querySelector(`.status-badge[data-chid="${id}"]`);
+        if (badge) {
+          badge.className = 'badge status-badge';
+          if (result === 'CHECKING') { badge.classList.add('badge-checking'); badge.textContent = '⏳ চেকিং...'; }
+          else if (result === 'ONLINE')  { badge.classList.add('badge-online');  badge.textContent = '✅ ONLINE'; }
+          else if (result === 'OFFLINE') { badge.classList.add('badge-offline'); badge.textContent = '❌ OFFLINE'; }
+          else if (result === 'TIMEOUT') { badge.classList.add('badge-timeout'); badge.textContent = '⏱ TIMEOUT'; }
+        }
+      },
+      async (id, finalStatus) => {
+        await this.updateChannelStatus(id, finalStatus === 'ONLINE' ? 'ONLINE' : 'OFFLINE');
+      }
+    );
+    this.bindAutoDetectorUI();
   }
 
   // 2. Navigation
@@ -164,7 +185,15 @@ class AdminDashboard {
 
     filtered.forEach((ch, idx) => {
       const tr = document.createElement('tr');
+      tr.dataset.chId = ch.id;
       const isOnline = ch.status === 'ONLINE';
+      const scanStatus = this._scanResults && this._scanResults[ch.id];
+      let statusBadgeClass = isOnline ? 'badge-online' : 'badge-offline';
+      let statusText = ch.status || 'ONLINE';
+      if (scanStatus === 'CHECKING') { statusBadgeClass = 'badge-checking'; statusText = '⏳ চেকিং...'; }
+      else if (scanStatus === 'ONLINE')  { statusBadgeClass = 'badge-online';  statusText = '✅ ONLINE'; }
+      else if (scanStatus === 'OFFLINE') { statusBadgeClass = 'badge-offline'; statusText = '❌ OFFLINE'; }
+      else if (scanStatus === 'TIMEOUT') { statusBadgeClass = 'badge-timeout'; statusText = '⏱ TIMEOUT'; }
 
       tr.innerHTML = `
         <td><strong>#${ch.order || (idx + 1)}</strong></td>
@@ -176,12 +205,13 @@ class AdminDashboard {
         <td><span class="badge" style="background:rgba(255,255,255,0.08);">${ch.category || 'General'}</span></td>
         <td>${ch.is_pinned ? '⭐ পিনড' : '—'}</td>
         <td>
-          <span class="badge ${isOnline ? 'badge-online' : 'badge-offline'}">
-            ${ch.status || 'ONLINE'} ${ch.response_time_ms ? `(${ch.response_time_ms}ms)` : ''}
+          <span class="badge status-badge ${statusBadgeClass}" title="ক্লিক করে ONLINE/OFFLINE টগল করুন" style="cursor:pointer;" data-chid="${ch.id}" data-status="${ch.status || 'ONLINE'}">
+            ${statusText} ${(!scanStatus && ch.response_time_ms) ? `(${ch.response_time_ms}ms)` : ''}
           </span>
         </td>
         <td>
           <button class="btn-action btn-preview" title="লাইভ টেস্ট করুন">▶️</button>
+          <button class="btn-action btn-auto-detect" title="স্ট্রিম চেক করুন">🔍</button>
           <button class="btn-action btn-move-up" title="উপরে নিন">⬆️</button>
           <button class="btn-action btn-move-down" title="নিচে নিন">⬇️</button>
           <button class="btn-action btn-edit" title="এডিট">✏️</button>
@@ -191,6 +221,28 @@ class AdminDashboard {
 
       // Preview Live Stream
       tr.querySelector('.btn-preview').addEventListener('click', () => this.openPreview(ch));
+
+      // Per-channel Auto Detect
+      tr.querySelector('.btn-auto-detect').addEventListener('click', async (e) => {
+        const btn = e.currentTarget;
+        btn.disabled = true;
+        btn.textContent = '⏳';
+        const result = await this.autoDetector.probeChannel(ch);
+        btn.disabled = false;
+        btn.textContent = '🔍';
+        await this.updateChannelStatus(ch.id, result === 'ONLINE' ? 'ONLINE' : 'OFFLINE');
+        await this.loadChannels();
+      });
+
+      // Clickable status badge to toggle ONLINE/OFFLINE
+      tr.querySelector('.status-badge').addEventListener('click', async (e) => {
+        if (e.currentTarget.dataset.status === 'ONLINE') {
+          await this.updateChannelStatus(ch.id, 'OFFLINE');
+        } else {
+          await this.updateChannelStatus(ch.id, 'ONLINE');
+        }
+        await this.loadChannels();
+      });
 
       // Move Up / Down
       tr.querySelector('.btn-move-up').addEventListener('click', () => this.moveChannel(idx, -1));
@@ -207,6 +259,19 @@ class AdminDashboard {
 
     document.getElementById('stat-total-channels').textContent = this.channels.length;
     document.getElementById('stat-online-channels').textContent = this.channels.filter(c => c.status === 'ONLINE').length;
+  }
+
+  // Update a single channel's status via API
+  async updateChannelStatus(id, newStatus) {
+    try {
+      await fetch('/api/channels', {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ id, status: newStatus, manual_override: true })
+      });
+    } catch (e) {
+      console.warn('updateChannelStatus error:', e);
+    }
   }
 
   async moveChannel(index, delta) {
@@ -756,6 +821,23 @@ class AdminDashboard {
     }
   }
 
+  // 8b. Auto Detector UI Binding
+  bindAutoDetectorUI() {
+    const btnStart  = document.getElementById('ad-btn-start');
+    const btnPause  = document.getElementById('ad-btn-pause');
+    const btnResume = document.getElementById('ad-btn-resume');
+    const btnStop   = document.getElementById('ad-btn-stop');
+    if (!btnStart) return;
+
+    btnStart.addEventListener('click', () => {
+      this._scanResults = {};
+      this.autoDetector.start();
+    });
+    btnPause.addEventListener('click',  () => this.autoDetector.pause());
+    btnResume.addEventListener('click', () => this.autoDetector.resume());
+    btnStop.addEventListener('click',   () => this.autoDetector.stop());
+  }
+
   // 9. Customers & Subscriptions
   async loadCustomers() {
     try {
@@ -1146,3 +1228,193 @@ class AdminDashboard {
 document.addEventListener('DOMContentLoaded', () => {
   window.adminDashboard = new AdminDashboard();
 });
+
+// ==========================================
+// AutoDetector — Client-side HLS Stream Health Checker
+// ==========================================
+class AutoDetector {
+  constructor(getChannels, onProgress, onSave) {
+    this.getChannels = getChannels; // () => channels array
+    this.onProgress  = onProgress;  // (id, 'CHECKING'|'ONLINE'|'OFFLINE'|'TIMEOUT') => void
+    this.onSave      = onSave;      // (id, finalStatus) => Promise
+    this.status      = 'IDLE';      // IDLE | RUNNING | PAUSED | STOPPED | DONE
+    this._paused     = false;
+    this._stopped    = false;
+    this._pauseResolve = null;
+    this.counters    = { total: 0, done: 0, online: 0, offline: 0, timeout: 0 };
+    this._logLines   = [];
+  }
+
+  _log(icon, msg) {
+    this._logLines.unshift(`${icon} ${msg}`);
+    if (this._logLines.length > 200) this._logLines.pop();
+    const box = document.getElementById('ad-log-box');
+    if (box) box.innerHTML = this._logLines.map(l => `<div>${l}</div>`).join('');
+  }
+
+  _updateUI() {
+    const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };
+    set('ad-count-total',   this.counters.total);
+    set('ad-count-done',    this.counters.done);
+    set('ad-count-online',  this.counters.online);
+    set('ad-count-offline', this.counters.offline);
+    set('ad-count-timeout', this.counters.timeout);
+
+    const progressBar = document.getElementById('ad-progress-bar');
+    if (progressBar && this.counters.total > 0) {
+      progressBar.style.width = Math.round(this.counters.done / this.counters.total * 100) + '%';
+    }
+
+    const btnStart  = document.getElementById('ad-btn-start');
+    const btnPause  = document.getElementById('ad-btn-pause');
+    const btnResume = document.getElementById('ad-btn-resume');
+    const btnStop   = document.getElementById('ad-btn-stop');
+    if (!btnStart) return;
+
+    const s = this.status;
+    btnStart.disabled  = (s === 'RUNNING' || s === 'PAUSED');
+    btnPause.disabled  = (s !== 'RUNNING');
+    btnResume.disabled = (s !== 'PAUSED');
+    btnStop.disabled   = (s === 'IDLE' || s === 'DONE' || s === 'STOPPED');
+
+    const statusEl = document.getElementById('ad-status-text');
+    if (statusEl) {
+      const map = { IDLE:'💤 প্রস্তুত', RUNNING:'🔄 স্ক্যান চলছে...', PAUSED:'⏸ বিরতি', STOPPED:'⏹ বন্ধ', DONE:'✅ সম্পন্ন' };
+      statusEl.textContent = map[s] || s;
+    }
+  }
+
+  async probeChannel(ch, timeoutMs = 8000) {
+    return new Promise((resolve) => {
+      const video = document.createElement('video');
+      video.muted = true;
+      video.style.cssText = 'position:fixed;width:1px;height:1px;opacity:0;pointer-events:none;top:-9999px';
+      document.body.appendChild(video);
+
+      let settled = false;
+      let hlsInstance = null;
+
+      const done = (result) => {
+        if (settled) return;
+        settled = true;
+        clearTimeout(timer);
+        video.pause();
+        video.removeAttribute('src');
+        video.load();
+        if (hlsInstance) { try { hlsInstance.destroy(); } catch(_){} }
+        document.body.removeChild(video);
+        resolve(result);
+      };
+
+      const timer = setTimeout(() => done('TIMEOUT'), timeoutMs);
+
+      const tryNative = () => {
+        video.src = ch.url;
+        video.addEventListener('canplay',  () => done('ONLINE'),  { once: true });
+        video.addEventListener('playing',  () => done('ONLINE'),  { once: true });
+        video.addEventListener('error',    () => done('OFFLINE'), { once: true });
+        video.play().catch(() => {});
+      };
+
+      if (ch.url && ch.url.includes('.m3u8') && typeof Hls !== 'undefined' && Hls.isSupported()) {
+        hlsInstance = new Hls({ enableWorker: false, debug: false });
+        hlsInstance.loadSource(ch.url);
+        hlsInstance.attachMedia(video);
+        hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => { video.play().catch(() => {}); });
+        hlsInstance.on(Hls.Events.ERROR, (evt, data) => {
+          if (data.fatal) done('OFFLINE');
+        });
+        video.addEventListener('canplay', () => done('ONLINE'), { once: true });
+        video.addEventListener('playing', () => done('ONLINE'), { once: true });
+      } else {
+        tryNative();
+      }
+    });
+  }
+
+  _waitIfPaused() {
+    if (!this._paused) return Promise.resolve();
+    return new Promise(resolve => { this._pauseResolve = resolve; });
+  }
+
+  async start() {
+    if (this.status === 'RUNNING') return;
+    this._stopped = false;
+    this._paused  = false;
+    this.status   = 'RUNNING';
+    this._logLines = [];
+    const channels = this.getChannels();
+    this.counters  = { total: channels.length, done: 0, online: 0, offline: 0, timeout: 0 };
+    this._updateUI();
+
+    this._log('🚀', `স্ক্যান শুরু হয়েছে — মোট ${channels.length} টি চ্যানেল`);
+
+    for (let i = 0; i < channels.length; i++) {
+      if (this._stopped) break;
+      await this._waitIfPaused();
+      if (this._stopped) break;
+
+      const ch = channels[i];
+      this._log('⏳', `[${i+1}/${channels.length}] চেক করছি: ${ch.name}`);
+      this.onProgress(ch.id, 'CHECKING');
+      this._updateUI();
+
+      const result = await this.probeChannel(ch);
+      this.counters.done++;
+      if (result === 'ONLINE')  this.counters.online++;
+      else if (result === 'OFFLINE') this.counters.offline++;
+      else                           this.counters.timeout++;
+
+      if (result === 'ONLINE') {
+        this._log('✅', `ONLINE — ${ch.name}`);
+      } else if (result === 'TIMEOUT') {
+        this._log('⏱', `TIMEOUT — ${ch.name}`);
+      } else {
+        this._log('❌', `OFFLINE — ${ch.name}`);
+      }
+
+      this.onProgress(ch.id, result);
+      const finalStatus = (result === 'ONLINE') ? 'ONLINE' : 'OFFLINE';
+      try { await this.onSave(ch.id, finalStatus); } catch(_) {}
+      this._updateUI();
+
+      // Small inter-channel delay to avoid overloading
+      await new Promise(r => setTimeout(r, 400));
+    }
+
+    if (!this._stopped) {
+      this.status = 'DONE';
+      this._log('🏁', `সম্পন্ন! Online: ${this.counters.online} | Offline: ${this.counters.offline} | Timeout: ${this.counters.timeout}`);
+    } else {
+      this.status = 'STOPPED';
+      this._log('⏹', 'ব্যবহারকারী স্ক্যান বন্ধ করেছেন।');
+    }
+    this._updateUI();
+  }
+
+  pause() {
+    if (this.status !== 'RUNNING') return;
+    this._paused = true;
+    this.status  = 'PAUSED';
+    this._log('⏸', 'স্ক্যান বিরতিতে রাখা হয়েছে।');
+    this._updateUI();
+  }
+
+  resume() {
+    if (this.status !== 'PAUSED') return;
+    this._paused = false;
+    this.status  = 'RUNNING';
+    this._log('▶️', 'স্ক্যান পুনরায় শুরু হয়েছে।');
+    if (this._pauseResolve) { this._pauseResolve(); this._pauseResolve = null; }
+    this._updateUI();
+  }
+
+  stop() {
+    this._stopped = true;
+    this._paused  = false;
+    if (this._pauseResolve) { this._pauseResolve(); this._pauseResolve = null; }
+    this.status = 'STOPPED';
+    this._log('⏹', 'স্ক্যান থামানো হয়েছে।');
+    this._updateUI();
+  }
+}

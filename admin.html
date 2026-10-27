@@ -121,6 +121,47 @@
           <button id="btn-add-channel" class="btn-primary-admin">+ নতুন চ্যানেল যুক্ত করুন</button>
         </div>
 
+        <!-- AUTO DETECTOR PANEL -->
+        <div class="glass-card" id="auto-detector-panel" style="margin-bottom:18px; padding:18px;">
+          <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:14px;">
+            <span style="font-size:22px;">🔍</span>
+            <div>
+              <h3 style="margin:0; font-size:15px; font-weight:700;">চ্যানেল হেলথ অটো-ডিটেক্টর</h3>
+              <p style="margin:2px 0 0; font-size:12px; color:var(--text-muted);">প্রতিটি চ্যানেলের স্ট্রিম লোড পরীক্ষা করে ONLINE/OFFLINE নির্ধারণ করে।</p>
+            </div>
+            <span id="ad-status-text" style="margin-left:auto; font-size:13px; font-weight:600; color:#00d2ff;">💤 প্রস্তুত</span>
+          </div>
+
+          <!-- Progress Bar -->
+          <div style="background:rgba(255,255,255,0.08); border-radius:8px; height:8px; overflow:hidden; margin-bottom:14px;">
+            <div id="ad-progress-bar" style="height:100%; width:0%; background:linear-gradient(90deg,#0066ff,#00d2ff); transition:width 0.4s ease; border-radius:8px;"></div>
+          </div>
+
+          <!-- Counters -->
+          <div style="display:flex; gap:12px; flex-wrap:wrap; margin-bottom:14px; font-size:13px;">
+            <div style="padding:6px 14px; border-radius:20px; background:rgba(255,255,255,0.07);">📦 মোট: <strong id="ad-count-total">0</strong></div>
+            <div style="padding:6px 14px; border-radius:20px; background:rgba(255,255,255,0.07);">✅ অনলাইন: <strong id="ad-count-online" style="color:#34d399;">0</strong></div>
+            <div style="padding:6px 14px; border-radius:20px; background:rgba(255,255,255,0.07);">❌ অফলাইন: <strong id="ad-count-offline" style="color:#ff3b30;">0</strong></div>
+            <div style="padding:6px 14px; border-radius:20px; background:rgba(255,255,255,0.07);">⏱ টাইমআউট: <strong id="ad-count-timeout" style="color:#f59e0b;">0</strong></div>
+            <div style="padding:6px 14px; border-radius:20px; background:rgba(255,255,255,0.07);">🔄 সম্পন্ন: <strong id="ad-count-done">0</strong></div>
+          </div>
+
+          <!-- Control Buttons -->
+          <div style="display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;">
+            <button id="ad-btn-start"  class="btn-primary-admin"     style="padding:8px 18px; font-size:13px;">▶️ স্ক্যান শুরু</button>
+            <button id="ad-btn-pause"  class="btn-secondary-admin"   style="padding:8px 18px; font-size:13px;" disabled>⏸ বিরতি</button>
+            <button id="ad-btn-resume" class="btn-secondary-admin"   style="padding:8px 18px; font-size:13px;" disabled>▶️ চালিয়ে যান</button>
+            <button id="ad-btn-stop"   style="padding:8px 18px; font-size:13px; background:rgba(255,59,48,0.15); border:1px solid rgba(255,59,48,0.4); color:#ff3b30; border-radius:8px; cursor:pointer;" disabled>⏹ থামান</button>
+          </div>
+
+          <!-- Log Box -->
+          <div id="ad-log-box" style="
+            background:rgba(0,0,0,0.35); border-radius:8px; padding:12px;
+            font-size:11.5px; font-family:monospace; color:#a0aec0;
+            max-height:160px; overflow-y:auto; line-height:1.8;
+          ">লগ এখানে দেখাবে...</div>
+        </div>
+
         <div class="table-responsive glass-card">
           <table class="data-table">
             <thead>
