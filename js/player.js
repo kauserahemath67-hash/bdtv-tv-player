@@ -189,8 +189,13 @@ class IPTVPlayer {
     if (closeBtn) closeBtn.onclick = dismiss;
     if (laterBtn) laterBtn.onclick = dismiss;
     if (dlBtn) {
-      dlBtn.onclick = () => {
+      dlBtn.onclick = (e) => {
         localStorage.setItem('bdtv_app_version', info.versionCode);
+        const bridge = window.AndroidApp || window.AndroidBridge;
+        if (bridge && typeof bridge.startAppUpdate === 'function') {
+          e.preventDefault();
+          bridge.startAppUpdate(info.apkUrl || 'https://bdtv-app.vercel.app/BDTv.apk');
+        }
       };
     }
   }
