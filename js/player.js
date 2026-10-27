@@ -66,6 +66,9 @@ class IPTVPlayer {
     this.bindAudioUnlock();
     await this.loadSettings();
     await this.loadChannels();
+
+    // Real-time activity heartbeat every 25 seconds
+    setInterval(() => this.sendHeartbeat(), 25000);
   }
 
   // 1. Load Settings (Notice, Ads, Subscription switch)
@@ -120,23 +123,62 @@ class IPTVPlayer {
 
   checkSubscriptionAccess() {
     const custCode = localStorage.getItem('bdtv_cust_code');
-    if (!custCode) {
-      this.authModal.classList.remove('hidden');
+    const custPin  = localStorage.getItem('bdtv_cust_pin');
+    if (!custCode || !custPin) {
+      this.showVipLockModal();
+      return false;
+    }
+    return true;
+  }
+
+  showVipLockModal(msg) {
+    if (this.hls) {
+      try { this.hls.stopLoad(); this.hls.destroy(); } catch {}
+      this.hls = null;
+    }
+    this.video.pause();
+    this.video.src = '';
+    this.showBuffering(false);
+    this.authModal.classList.remove('hidden');
+    const errorDiv = document.getElementById('auth-error');
+    if (msg && errorDiv) {
+      errorDiv.textContent = msg;
+      errorDiv.classList.remove('hidden');
     }
   }
 
   // 2. Fetch Channels (API -> Fallback)
   async loadChannels() {
     this.showBuffering(true);
+    const custCode = localStorage.getItem('bdtv_cust_code') || '';
+    const custPin  = localStorage.getItem('bdtv_cust_pin') || '';
+
+    // If VIP mode enabled and user has no credentials, prompt modal and do not load
+    if (this.settings.subscription_restrictions_enabled && (!custCode || !custPin)) {
+      this.showVipLockModal();
+      return;
+    }
+
     try {
-      const res = await fetch('/api/channels');
+      const url = `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}`;
+      const res = await fetch(url);
       const json = await res.json();
+
+      if (json.vip_locked) {
+        this.showVipLockModal(json.message);
+        return;
+      }
+
       if (json.success && Array.isArray(json.data) && json.data.length > 0) {
         this.channels = json.data;
       } else {
         throw new Error('No channels from API');
       }
     } catch (err) {
+      if (this.settings.subscription_restrictions_enabled && (!custCode || !custPin)) {
+        this.showVipLockModal();
+        return;
+      }
       console.warn('Fallback to demo channels:', err);
       this.channels = FALLBACK_CHANNELS;
     }
@@ -144,7 +186,6 @@ class IPTVPlayer {
     this.filterChannels('All');
     if (this.channels.length > 0) {
       this.playChannel(0);
-      // Channel drawer stays closed on load — user opens it via button or swipe
     }
   }
 
@@ -390,6 +431,7 @@ class IPTVPlayer {
 
     this.flashHUD(channel);
     this.showBuffering(true);
+    this.sendHeartbeat();
     this.hideError();
 
     // 3. Start fresh clean stream
@@ -436,41 +478,32 @@ class IPTVPlayer {
     }, 3500);
   }
 
-  // 8. Drawer Controls (Floating Channel Shelf with Auto-Hide)
-  openDrawer(duration = 3000) {
+  // 8. Drawer Controls (Persistent Shelf: NEVER auto-hides while user scrolls or browses)
+  // Closed ONLY when:
+  // a) User clicks on video player screen area
+  // b) User selects and plays a specific channel
+  // c) User explicitly clicks "Channels" toggle button in top bar
+  openDrawer() {
     this.isDrawerOpen = true;
     this.channelDrawer.classList.add('open');
     this.topBar.classList.remove('fade-out');
     clearTimeout(this.topBarTimeout);
-    clearTimeout(this.drawerAutoHideTimeout);
     this.updateCardFocus();
-
-    if (duration > 0) {
-      this.drawerAutoHideTimeout = setTimeout(() => {
-        this.closeDrawer();
-      }, duration);
-    }
   }
 
   closeDrawer() {
     this.isDrawerOpen = false;
     this.channelDrawer.classList.remove('open');
-    clearTimeout(this.drawerAutoHideTimeout);
     this.triggerTopBar();
   }
 
-  resetDrawerAutoHide(duration = 3000) {
-    if (this.isDrawerOpen) {
-      clearTimeout(this.drawerAutoHideTimeout);
-      this.drawerAutoHideTimeout = setTimeout(() => {
-        this.closeDrawer();
-      }, duration);
-    }
+  resetDrawerAutoHide() {
+    // Disabled auto-hide by design so user can scroll uninterrupted
   }
 
   toggleDrawer() {
     if (this.isDrawerOpen) this.closeDrawer();
-    else this.openDrawer(3000);
+    else this.openDrawer();
   }
 
   updateCardFocus() {
@@ -494,12 +527,11 @@ class IPTVPlayer {
         case 'ArrowUp':
           e.preventDefault();
           if (!this.isDrawerOpen) {
-            this.openDrawer(3000);
+            this.openDrawer();
           } else {
             // Navigate focus backward by grid columns (approx 4)
             this.focusedIndex = Math.max(0, this.focusedIndex - 4);
             this.updateCardFocus();
-            this.resetDrawerAutoHide(3000);
           }
           break;
 
@@ -509,9 +541,8 @@ class IPTVPlayer {
             const maxIdx = this.filteredChannels.length - 1;
             this.focusedIndex = Math.min(maxIdx, this.focusedIndex + 4);
             this.updateCardFocus();
-            this.resetDrawerAutoHide(3000);
           } else {
-            this.openDrawer(3000);
+            this.openDrawer();
           }
           break;
 
@@ -520,13 +551,11 @@ class IPTVPlayer {
           if (this.isDrawerOpen) {
             this.focusedIndex = Math.max(0, this.focusedIndex - 1);
             this.updateCardFocus();
-            this.resetDrawerAutoHide(3000);
           } else {
-            // Instant channel switch previous and flash floating drawer briefly
+            // Instant channel switch previous
             const prevIndex = (this.currentIndex - 1 + this.filteredChannels.length) % this.filteredChannels.length;
             this.focusedIndex = prevIndex;
             this.playChannel(prevIndex);
-            this.openDrawer(3000);
           }
           break;
 
@@ -536,13 +565,11 @@ class IPTVPlayer {
             const maxIdx = this.filteredChannels.length - 1;
             this.focusedIndex = Math.min(maxIdx, this.focusedIndex + 1);
             this.updateCardFocus();
-            this.resetDrawerAutoHide(3000);
           } else {
-            // Instant channel switch next and flash floating drawer briefly
+            // Instant channel switch next
             const nextIndex = (this.currentIndex + 1) % this.filteredChannels.length;
             this.focusedIndex = nextIndex;
             this.playChannel(nextIndex);
-            this.openDrawer(3000);
           }
           break;
 
@@ -625,28 +652,24 @@ class IPTVPlayer {
 
   // 11. Event Listeners (Clicks, PiP, Category, Error Retry)
   bindEvents() {
-    // Tap video screen to toggle top bar & floating channels
+    // Tap video screen area: hides drawer if open, or toggles top bar
     document.getElementById('video-wrapper').addEventListener('click', (e) => {
       if (e.target.closest('#channel-drawer') || e.target.closest('#top-bar')) return;
       if (this.isDrawerOpen) {
         this.closeDrawer();
       } else {
         this.triggerTopBar();
-        this.openDrawer(3000);
       }
     });
 
     this.drawerHandle.addEventListener('click', () => this.toggleDrawer());
 
-    // User interaction (mouse move or touch) to smoothly reveal drawer & top bar
+    // User interaction (mouse move or touch) to reveal top bar
     let activityDebounce = null;
     const handleUserInteraction = () => {
       if (activityDebounce) return;
       activityDebounce = setTimeout(() => { activityDebounce = null; }, 150);
       this.triggerTopBar();
-      if (this.isDrawerOpen) {
-        this.resetDrawerAutoHide(3000);
-      }
     };
     window.addEventListener('mousemove', handleUserInteraction, { passive: true });
     window.addEventListener('touchstart', handleUserInteraction, { passive: true });
@@ -731,8 +754,11 @@ class IPTVPlayer {
         const json = await res.json();
         if (json.success) {
           localStorage.setItem('bdtv_cust_code', code);
+          localStorage.setItem('bdtv_cust_pin', pin);
           this.authModal.classList.add('hidden');
-          alert('অভিনন্দন! আপনার সাবস্ক্রিপশন সফলভাবে যাচাই হয়েছে।');
+          if (errorDiv) errorDiv.classList.add('hidden');
+          alert('অভিনন্দন! আপনার ভিআইপি সাবস্ক্রিপশন সফলভাবে আনলক হয়েছে।');
+          await this.loadChannels();
         } else {
           errorDiv.textContent = json.message || 'ভুল কোড বা পিন নম্বর।';
           errorDiv.classList.remove('hidden');
@@ -742,6 +768,22 @@ class IPTVPlayer {
         errorDiv.classList.remove('hidden');
       }
     });
+  }
+
+  sendHeartbeat() {
+    try {
+      const currentCh = this.channels && this.channels[this.currentIndex];
+      const payload = {
+        channel_name: currentCh ? currentCh.name : 'BDTv Player',
+        stream_url: currentCh ? currentCh.url : '—',
+        customer_code: localStorage.getItem('bdtv_cust_code') || 'Guest'
+      };
+      fetch('/api/activity', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      }).catch(() => {});
+    } catch {}
   }
 
   showBuffering(show) {

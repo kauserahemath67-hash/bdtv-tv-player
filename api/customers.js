@@ -13,7 +13,7 @@ module.exports = async (req, res) => {
 
       // If verifying a specific customer
       if (code) {
-        const customer = db.findCustomer(code, pin);
+        const customer = await db.findCustomer(code, pin);
         if (!customer) {
           return res.status(404).json({ success: false, message: 'গ্রাহক কোড অথবা পিন ভুল।' });
         }
@@ -43,7 +43,7 @@ module.exports = async (req, res) => {
       }
 
       // Return all customers for Admin
-      const customers = db.getCustomers();
+      const customers = await db.getCustomers();
       return res.status(200).json({ success: true, count: customers.length, data: customers });
     }
 
@@ -53,7 +53,7 @@ module.exports = async (req, res) => {
         return res.status(400).json({ success: false, message: 'Customer Code আবশ্যক।' });
       }
 
-      const saved = db.saveCustomer({
+      const saved = await db.saveCustomer({
         id: body.id,
         customer_code: body.customer_code,
         name: body.name || 'Anonymous User',
@@ -76,7 +76,7 @@ module.exports = async (req, res) => {
     if (req.method === 'DELETE') {
       const { id } = req.query || req.body || {};
       if (!id) return res.status(400).json({ success: false, message: 'Customer ID আবশ্যক।' });
-      db.deleteCustomer(id);
+      await db.deleteCustomer(id);
       return res.status(200).json({ success: true, message: 'গ্রাহক মুছে ফেলা হয়েছে।' });
     }
 

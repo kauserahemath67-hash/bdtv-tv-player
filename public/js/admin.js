@@ -121,16 +121,29 @@ class AdminDashboard {
       this.loadSettings(),
       this.loadCustomers(),
       this.loadDevices(),
+      this.loadActivity(),
       this.loadVersion(),
       this.loadPlaylists()
     ]);
     this.updateOverviewStats();
+
+    // Poll live activity connections every 8s
+    if (!this._activityPoller) {
+      this._activityPoller = setInterval(() => {
+        if (this.token && !document.getElementById('admin-app').classList.contains('hidden')) {
+          this.loadActivity();
+        }
+      }, 8000);
+    }
   }
 
   // 4. Channels Management
   async loadChannels() {
     try {
-      const res = await fetch('/api/channels');
+      // Admin must pass Bearer token so VIP lock does not block channel list
+      const headers = {};
+      if (this.token) headers['Authorization'] = `Bearer ${this.token}`;
+      const res = await fetch('/api/channels', { headers });
       if (!res.ok) return;
       const json = await res.json();
       if (json && json.success) {
@@ -309,6 +322,72 @@ class AdminDashboard {
         alert('চ্যানেল সেভ করা যায়নি!');
       }
     });
+
+    // Customer Modal Bindings
+    const btnAddCustomer = document.getElementById('btn-add-customer');
+    if (btnAddCustomer) {
+      btnAddCustomer.addEventListener('click', () => {
+        document.getElementById('customer-modal-title').textContent = 'নতুন গ্রাহক যোগ করুন';
+        document.getElementById('customer-form').reset();
+        document.getElementById('cust-edit-id').value = '';
+        document.getElementById('form-cust-code').value = 'BDTV-' + Math.floor(1000 + Math.random() * 9000);
+        document.getElementById('form-cust-pin').value = Math.floor(1000 + Math.random() * 9000);
+        const expDate = new Date(Date.now() + 30 * 24 * 3600 * 1000);
+        document.getElementById('form-cust-expiry').value = expDate.toISOString().split('T')[0];
+        document.getElementById('customer-modal').classList.remove('hidden');
+      });
+    }
+
+    const btnCloseCustModal = document.getElementById('btn-close-customer-modal');
+    if (btnCloseCustModal) {
+      btnCloseCustModal.addEventListener('click', () => {
+        document.getElementById('customer-modal').classList.add('hidden');
+      });
+    }
+
+    const custForm = document.getElementById('customer-form');
+    if (custForm) {
+      custForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const id = document.getElementById('cust-edit-id').value;
+        const payload = {
+          id: id || undefined,
+          customer_code: document.getElementById('form-cust-code').value.trim(),
+          name: document.getElementById('form-cust-name').value.trim(),
+          login_pin: document.getElementById('form-cust-pin').value.trim(),
+          plan: document.getElementById('form-cust-plan').value.trim() || 'Monthly VIP',
+          expires_at: document.getElementById('form-cust-expiry').value,
+          max_devices: Number(document.getElementById('form-cust-max-dev').value) || 2,
+          manual_block: document.getElementById('form-cust-block').checked,
+          block_reason: document.getElementById('form-cust-block-reason').value.trim(),
+          account_status: document.getElementById('form-cust-block').checked ? 'SUSPENDED' : 'ACTIVE'
+        };
+
+        try {
+          const res = await fetch('/api/customers', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+          });
+          const json = await res.json();
+          if (json.success) {
+            document.getElementById('customer-modal').classList.add('hidden');
+            alert('গ্রাহক সফলভাবে সংরক্ষণ করা হয়েছে!');
+            await this.loadCustomers();
+          } else {
+            alert(json.message || 'গ্রাহক সংরক্ষণ ব্যর্থ হয়েছে!');
+          }
+        } catch (err) {
+          alert('সার্ভার এরর! গ্রাহক সংরক্ষণ করা যায়নি।');
+        }
+      });
+    }
+
+    // Refresh Activity Button
+    const btnRefreshAct = document.getElementById('btn-refresh-activity');
+    if (btnRefreshAct) {
+      btnRefreshAct.addEventListener('click', () => this.loadActivity());
+    }
 
     // Preview Modal Close
     document.getElementById('btn-close-preview-modal').addEventListener('click', () => {
@@ -686,10 +765,25 @@ class AdminDashboard {
         <td><span class="badge ${isBlocked ? 'badge-offline' : 'badge-online'}">${c.account_status}</span></td>
         <td>${c.max_devices || 2} টি</td>
         <td>
+          <button class="btn-action btn-edit-cust" title="এডিট">✏️</button>
           <button class="btn-action btn-extend" title="+৩০ দিন মেয়াদ বাড়ান">➕৩০ দিন</button>
           <button class="btn-action btn-delete-cust" title="মুছে ফেলুন">🗑️</button>
         </td>
       `;
+
+      tr.querySelector('.btn-edit-cust').addEventListener('click', () => {
+        document.getElementById('customer-modal-title').textContent = 'গ্রাহক তথ্য পরিবর্তন করুন';
+        document.getElementById('cust-edit-id').value = c.id;
+        document.getElementById('form-cust-code').value = c.customer_code || '';
+        document.getElementById('form-cust-name').value = c.name || '';
+        document.getElementById('form-cust-pin').value = c.login_pin || '';
+        document.getElementById('form-cust-plan').value = c.plan || 'Monthly VIP';
+        document.getElementById('form-cust-expiry').value = c.expires_at || '';
+        document.getElementById('form-cust-max-dev').value = c.max_devices || 2;
+        document.getElementById('form-cust-block').checked = Boolean(c.manual_block);
+        document.getElementById('form-cust-block-reason').value = c.block_reason || '';
+        document.getElementById('customer-modal').classList.remove('hidden');
+      });
 
       tr.querySelector('.btn-extend').addEventListener('click', async () => {
         await fetch('/api/subscriptions', {
@@ -707,6 +801,60 @@ class AdminDashboard {
         await this.loadCustomers();
       });
 
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Real-Time Active Connections & Analytics
+  async loadActivity() {
+    try {
+      const res = await fetch('/api/activity');
+      const json = await res.json();
+      if (json.success && Array.isArray(json.data)) {
+        this.renderActivityTable(json.data);
+      }
+    } catch (e) {
+      console.warn('Could not load activity:', e);
+    }
+  }
+
+  renderActivityTable(activities) {
+    const tbody = document.getElementById('activity-table-body');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+
+    if (!activities || activities.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:18px; color:#94A3B8;">কোনো সক্রিয় কানেকশন নেই।</td></tr>';
+      return;
+    }
+
+    activities.forEach(item => {
+      const tr = document.createElement('tr');
+      const secondsAgo = Math.max(1, Math.round((Date.now() - (item.last_ping || Date.now())) / 1000));
+      const timeStr = secondsAgo < 60 ? `${secondsAgo} সেকেন্ড আগে` : `${Math.round(secondsAgo / 60)} মিনিট আগে`;
+
+      let uaLabel = item.user_agent;
+      if (item.user_agent.includes('BDTv-Android-App') || item.user_agent.includes('BDTv-App')) {
+        uaLabel = '📱 BDTv Android App';
+      } else if (item.user_agent.includes('Android')) {
+        uaLabel = '📱 Android TV / Mobile';
+      } else if (item.user_agent.includes('Windows')) {
+        uaLabel = '💻 Windows PC';
+      } else if (item.user_agent.includes('Macintosh')) {
+        uaLabel = '💻 macOS';
+      } else if (item.user_agent.includes('iPhone') || item.user_agent.includes('iPad')) {
+        uaLabel = '📱 iOS Device';
+      }
+
+      tr.innerHTML = `
+        <td><strong><code>${item.ip}</code></strong></td>
+        <td><span title="${item.user_agent}">${uaLabel}</span></td>
+        <td><span class="badge badge-online">📺 ${item.channel_name || 'Live'}</span></td>
+        <td><code style="font-size:11px; max-width:240px; display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${item.stream_url}">${item.stream_url}</code></td>
+        <td><strong>${item.customer_code || 'Guest'}</strong></td>
+        <td>${timeStr}</td>
+        <td><span class="badge badge-online" style="background:#059669; color:#fff;">🟢 LIVE</span></td>
+      `;
       tbody.appendChild(tr);
     });
   }
@@ -750,6 +898,60 @@ class AdminDashboard {
         });
       }
 
+      tbody.appendChild(tr);
+    });
+  }
+
+  // Real-Time Active Connections & Analytics
+  async loadActivity() {
+    try {
+      const res = await fetch('/api/activity');
+      const json = await res.json();
+      if (json.success && Array.isArray(json.data)) {
+        this.renderActivityTable(json.data);
+      }
+    } catch (e) {
+      console.warn('Could not load activity:', e);
+    }
+  }
+
+  renderActivityTable(activities) {
+    const tbody = document.getElementById('activity-table-body');
+    if (!tbody) return;
+    tbody.innerHTML = '';
+
+    if (!activities || activities.length === 0) {
+      tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:18px; color:#94A3B8;">কোনো সক্রিয় কানেকশন নেই।</td></tr>';
+      return;
+    }
+
+    activities.forEach(item => {
+      const tr = document.createElement('tr');
+      const secondsAgo = Math.max(1, Math.round((Date.now() - (item.last_ping || Date.now())) / 1000));
+      const timeStr = secondsAgo < 60 ? `${secondsAgo} সেকেন্ড আগে` : `${Math.round(secondsAgo / 60)} মিনিট আগে`;
+
+      let uaLabel = item.user_agent;
+      if (item.user_agent.includes('BDTv-Android-App') || item.user_agent.includes('BDTv-App')) {
+        uaLabel = '📱 BDTv Android App';
+      } else if (item.user_agent.includes('Android')) {
+        uaLabel = '📱 Android TV / Mobile';
+      } else if (item.user_agent.includes('Windows')) {
+        uaLabel = '💻 Windows PC';
+      } else if (item.user_agent.includes('Macintosh')) {
+        uaLabel = '💻 macOS';
+      } else if (item.user_agent.includes('iPhone') || item.user_agent.includes('iPad')) {
+        uaLabel = '📱 iOS Device';
+      }
+
+      tr.innerHTML = `
+        <td><strong><code>${item.ip}</code></strong></td>
+        <td><span title="${item.user_agent}">${uaLabel}</span></td>
+        <td><span class="badge badge-online">📺 ${item.channel_name || 'Live'}</span></td>
+        <td><code style="font-size:11px; max-width:240px; display:inline-block; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;" title="${item.stream_url}">${item.stream_url}</code></td>
+        <td><strong>${item.customer_code || 'Guest'}</strong></td>
+        <td>${timeStr}</td>
+        <td><span class="badge badge-online" style="background:#059669; color:#fff;">🟢 LIVE</span></td>
+      `;
       tbody.appendChild(tr);
     });
   }

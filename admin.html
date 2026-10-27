@@ -42,7 +42,7 @@
         <button class="nav-item" data-tab="tab-channels">📺 চ্যানেল ম্যানেজার</button>
         <button class="nav-item" data-tab="tab-playlist">📋 M3U প্লেলিস্ট</button>
         <button class="nav-item" data-tab="tab-customers">👥 গ্রাহক ও সাবস্ক্রিপশন</button>
-        <button class="nav-item" data-tab="tab-devices">📱 ডিভাইস লক</button>
+        <button class="nav-item" data-tab="tab-devices">🌐 লাইভ কানেকশন ও ডিভাইস</button>
         <button class="nav-item" data-tab="tab-settings">📢 বিজ্ঞাপন ও সেটিংস</button>
         <button class="nav-item" data-tab="tab-version">🚀 অ্যাপ ভার্সন ও APK</button>
       </nav>
@@ -284,9 +284,36 @@
         </div>
       </section>
 
-      <!-- TAB 6: DEVICES -->
+      <!-- TAB 6: DEVICES & REAL-TIME CONNECTIONS -->
       <section id="tab-devices" class="tab-pane">
-        <h3>📱 সক্রিয় ডিভাইস মনিটরিং</h3>
+        <div class="section-header" style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
+          <div>
+            <h3>🌐 রিয়েল-টাইম লাইভ কানেকশন ও ইউজার অ্যাক্টিভিটি</h3>
+            <p class="desc">লাইভ স্ট্রিমিং অ্যাপের সক্রিয় সংযোগসমূহ (আইপি, ব্রাউজার/ডিভাইস, চলমান চ্যানেল ও স্ট্রিম URL)</p>
+          </div>
+          <button id="btn-refresh-activity" class="btn-secondary-admin" style="padding:8px 14px; background:#1E293B; border:1px solid #38BDF8; color:#38BDF8; border-radius:8px; cursor:pointer;">🔄 রিফ্রেশ করুন</button>
+        </div>
+
+        <div class="table-responsive glass-card" style="margin-bottom: 28px;">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>ক্লায়েন্ট আইপি (IP)</th>
+                <th>ডিভাইস / ব্রাউজার</th>
+                <th>চলমান চ্যানেল</th>
+                <th>টার্গেট স্ট্রিম URL</th>
+                <th>গ্রাহক কোড</th>
+                <th>সর্বশেষ সক্রিয়</th>
+                <th>স্ট্যাটাস</th>
+              </tr>
+            </thead>
+            <tbody id="activity-table-body">
+              <tr><td colspan="7" style="text-align:center; padding:16px; color:#94A3B8;">কোনো সক্রিয় কানেকশন লোড হচ্ছে...</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>📱 নিবন্ধিত ডিভাইস হিস্ট্রি</h3>
         <p class="desc">গ্রাহকদের ডিভাইসের ফিঙ্গারপ্রিন্ট ও অনুমোদন হিস্ট্রি</p>
 
         <div class="table-responsive glass-card">

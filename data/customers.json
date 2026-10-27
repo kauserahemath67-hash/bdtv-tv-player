@@ -1,0 +1,18 @@
+[
+  {
+    "id": "cust-101",
+    "customer_code": "BDTV-VIP-101",
+    "name": "VIP Subscriber",
+    "login_pin": "1234",
+    "account_status": "ACTIVE",
+    "manual_block": false,
+    "block_reason": "",
+    "max_devices": 2,
+    "channels_enabled": true,
+    "plan": "Monthly VIP",
+    "starts_at": "2026-01-01",
+    "expires_at": "2030-12-31",
+    "payment_status": "PAID",
+    "transaction_reference": "DIRECT-ACTIVATION"
+  }
+]

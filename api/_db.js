@@ -14,6 +14,7 @@ const GITHUB_CHANNELS_PATH  = 'data/channels.json';
 const GITHUB_SETTINGS_PATH  = 'data/settings.json';
 const GITHUB_PLAYLISTS_PATH = 'data/playlists.json';
 const GITHUB_VERSION_PATH   = 'data/version.json';
+const GITHUB_CUSTOMERS_PATH = 'data/customers.json';
 
 const CACHE_TTL_MS = 20000; // 20-second in-process cache (warm requests)
 
@@ -46,6 +47,7 @@ let _channelCache   = { data: null, loadedAt: 0 };
 let _settingsCache  = { data: null, loadedAt: 0 };
 let _playlistsCache = { data: null, loadedAt: 0 };
 let _versionCache   = { data: null, loadedAt: 0 };
+let _customersCache = { data: null, loadedAt: 0 };
 
 function isCacheValid(cacheObj) {
   return cacheObj.data !== null && (Date.now() - cacheObj.loadedAt) < CACHE_TTL_MS;
@@ -54,6 +56,7 @@ function invalidateChannelCache()   { _channelCache.loadedAt   = 0; }
 function invalidateSettingsCache()  { _settingsCache.loadedAt  = 0; }
 function invalidatePlaylistsCache() { _playlistsCache.loadedAt = 0; }
 function invalidateVersionCache()   { _versionCache.loadedAt   = 0; }
+function invalidateCustomersCache() { _customersCache.loadedAt = 0; }
 
 // ── GitHub low-level helpers ──────────────────────────────
 function githubRequest(method, path, bodyObj) {
@@ -326,18 +329,120 @@ async function deletePlaylist(id) {
   return true;
 }
 
-// ── In-memory only (no persistence needed for sessions) ──
-let _customers = [];
-let _devices   = [];
-let _reports   = [];
+// ── Customers & Subscription Management (GitHub-backed) ──
+const defaultCustomers = [
+  {
+    id: 'cust-101',
+    customer_code: 'BDTV-VIP-101',
+    name: 'VIP Subscriber',
+    login_pin: '1234',
+    account_status: 'ACTIVE',
+    manual_block: false,
+    block_reason: '',
+    max_devices: 2,
+    channels_enabled: true,
+    plan: 'Monthly VIP',
+    starts_at: '2026-01-01',
+    expires_at: '2030-12-31',
+    payment_status: 'PAID',
+    transaction_reference: 'DIRECT-ACTIVATION'
+  }
+];
 
-function getCustomers() { return [..._customers]; }
-function saveCustomer(c) {
+async function getCustomers() {
+  if (isCacheValid(_customersCache)) return [..._customersCache.data];
+
+  const result = await ghFetch(GITHUB_CUSTOMERS_PATH);
+  if (result && Array.isArray(result.data)) {
+    _customersCache.data = result.data;
+    _customersCache.loadedAt = Date.now();
+  } else {
+    _customersCache.data = [...defaultCustomers];
+    _customersCache.loadedAt = Date.now();
+  }
+  return [..._customersCache.data];
+}
+
+async function saveCustomer(c) {
+  invalidateCustomersCache();
+  const current = await getCustomers();
   if (!c.id) c.id = 'cust-' + Date.now();
-  const i = _customers.findIndex(x => x.id === c.id);
-  if (i >= 0) _customers[i] = { ..._customers[i], ...c }; else _customers.push(c);
+  const i = current.findIndex(x => x.id === c.id || (c.customer_code && x.customer_code.toLowerCase() === c.customer_code.toLowerCase()));
+  if (i >= 0) {
+    current[i] = { ...current[i], ...c, updatedAt: new Date().toISOString() };
+  } else {
+    current.unshift({ ...c, createdAt: new Date().toISOString() });
+  }
+
+  const ok = await ghCommit(GITHUB_CUSTOMERS_PATH, current, `Save customer: ${c.customer_code || c.id}`);
+  if (ok) {
+    _customersCache.data = current;
+    _customersCache.loadedAt = Date.now();
+  }
   return c;
 }
+
+async function deleteCustomer(id) {
+  invalidateCustomersCache();
+  let current = await getCustomers();
+  current = current.filter(x => x.id !== id && x.customer_code !== id);
+  const ok = await ghCommit(GITHUB_CUSTOMERS_PATH, current, `Delete customer: ${id}`);
+  if (ok) {
+    _customersCache.data = current;
+    _customersCache.loadedAt = Date.now();
+  }
+  return ok;
+}
+
+async function findCustomer(code, pin) {
+  if (!code) return null;
+  const customers = await getCustomers();
+  const found = customers.find(c => c.customer_code && c.customer_code.toLowerCase() === String(code).trim().toLowerCase());
+  if (!found) return null;
+  if (pin && String(found.login_pin).trim() !== String(pin).trim()) {
+    return null;
+  }
+  return found;
+}
+
+// ── Real-Time Active Connections & Analytics ──────────────
+let _activeConnections = [];
+
+function logActivity({ ip, userAgent, streamUrl, channelName, customerCode }) {
+  const cleanIp = (ip || '127.0.0.1').split(',')[0].trim();
+  const cleanUa = userAgent || 'BDTv App';
+  const now = Date.now();
+
+  const idx = _activeConnections.findIndex(c => c.ip === cleanIp && c.user_agent === cleanUa);
+  const entry = {
+    id: idx >= 0 ? _activeConnections[idx].id : 'conn-' + now + '-' + Math.random().toString(36).substr(2, 4),
+    ip: cleanIp,
+    user_agent: cleanUa,
+    stream_url: streamUrl || 'Live IPTV Stream',
+    channel_name: channelName || 'Player Screen',
+    customer_code: customerCode || 'Guest',
+    last_ping: now,
+    connected_at: idx >= 0 ? _activeConnections[idx].connected_at : new Date().toISOString()
+  };
+
+  if (idx >= 0) {
+    _activeConnections[idx] = entry;
+  } else {
+    _activeConnections.unshift(entry);
+    if (_activeConnections.length > 250) _activeConnections.pop();
+  }
+  return entry;
+}
+
+function getActiveConnections() {
+  const now = Date.now();
+  return _activeConnections.filter(c => (now - c.last_ping) < 90000);
+}
+
+// ── Devices & Reports ─────────────────────────────────────
+let _devices = [];
+let _reports = [];
+
 function getDevices() { return [..._devices]; }
 function saveDevice(d) {
   const i = _devices.findIndex(x => x.id === d.id);
@@ -421,9 +526,17 @@ module.exports = {
   getVersion,
   updateVersion,
 
-  // In-memory
+  // Customers & Subscriptions
   getCustomers,
   saveCustomer,
+  deleteCustomer,
+  findCustomer,
+
+  // Real-Time Activity & Analytics
+  logActivity,
+  getActiveConnections,
+
+  // In-memory
   getDevices,
   saveDevice,
   getReports,

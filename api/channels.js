@@ -10,7 +10,42 @@ module.exports = async (req, res) => {
   try {
     // ── GET — list channels ──────────────────────────────
     if (req.method === 'GET') {
-      const { category, search } = req.query || {};
+      const { category, search, code, pin, admin_token } = req.query || {};
+
+      // Check if Subscription Mode (VIP Lock) is enabled
+      const settings = await db.getSettings();
+      if (settings.subscription_restrictions_enabled) {
+        const authHeader = req.headers.authorization || '';
+        const isAdmin = authHeader.includes('Bearer') || admin_token === 'admin_auth_bypass';
+
+        if (!isAdmin) {
+          const custCode = code || req.headers['x-customer-code'];
+          const custPin  = pin  || req.headers['x-customer-pin'];
+
+          const customer = await db.findCustomer(custCode, custPin);
+          if (!customer) {
+            return res.status(403).json({
+              success: false,
+              vip_locked: true,
+              message: '🔒 ভিআইপি সাবস্ক্রিপশন মোড সক্রিয়। চ্যানেল দেখতে বৈধ গ্রাহক কোড ও পিন প্রয়োজন।'
+            });
+          }
+          if (customer.manual_block || customer.account_status !== 'ACTIVE') {
+            return res.status(403).json({
+              success: false,
+              vip_locked: true,
+              message: `অ্যাকাউন্ট স্থগিত: ${customer.block_reason || 'অ্যাডমিন দ্বারা সাময়িক স্থগিত'}`
+            });
+          }
+          if (customer.expires_at && new Date(customer.expires_at) < new Date()) {
+            return res.status(403).json({
+              success: false,
+              vip_locked: true,
+              message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। অনুগ্রহ করে নবায়ন করুন।'
+            });
+          }
+        }
+      }
 
       // Always await — reads from GitHub when cache is cold
       let channels = await db.getChannels();
