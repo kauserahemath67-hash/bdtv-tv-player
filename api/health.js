@@ -57,14 +57,14 @@ module.exports = async (req, res) => {
 
     // 1. Single channel test
     if (channel_id) {
-      const channels = db.getChannels();
+      const channels = await db.getChannels();
       const ch = channels.find(c => c.id === channel_id);
       if (!ch) {
         return res.status(404).json({ success: false, message: 'চ্যানেল পাওয়া যায়নি।' });
       }
 
       const result = await pingStream(ch.url);
-      db.updateChannelHealth(ch.id, result.status, result.time);
+      await db.updateChannelHealth(ch.id, result.status, result.time);
 
       return res.status(200).json({
         success: true,
@@ -75,14 +75,19 @@ module.exports = async (req, res) => {
       });
     }
 
-    // 2. Full scan or Cron scan
+    // 2. Full scan
     if (auto_scan || req.method === 'GET') {
-      const channels = db.getChannels();
+      const channels = await db.getChannels();
       const results = [];
+      const updates = [];
 
       for (let ch of channels) {
         const check = await pingStream(ch.url);
-        db.updateChannelHealth(ch.id, check.status, check.time);
+        updates.push({
+          id: ch.id,
+          status: check.status,
+          response_time_ms: check.time
+        });
         results.push({
           id: ch.id,
           name: ch.name,
@@ -90,6 +95,9 @@ module.exports = async (req, res) => {
           response_time_ms: check.time
         });
       }
+
+      // Save all in one batch commit
+      await db.batchUpdateChannels(updates);
 
       return res.status(200).json({
         success: true,
@@ -104,12 +112,12 @@ module.exports = async (req, res) => {
       const { id, manual_override, status } = req.body || {};
       if (!id) return res.status(400).json({ success: false, message: 'চ্যানেল ID প্রদান করুন।' });
 
-      const channels = db.getChannels();
+      const channels = await db.getChannels();
       const ch = channels.find(c => c.id === id);
       if (ch) {
         ch.manual_override = Boolean(manual_override);
         if (status) ch.status = status;
-        db.saveChannel(ch);
+        await db.saveChannel(ch);
         return res.status(200).json({ success: true, message: 'স্ট্যাটাস ওভাররাইড সফল হয়েছে।', channel: ch });
       }
       return res.status(404).json({ success: false, message: 'চ্যানেল পাওয়া যায়নি।' });

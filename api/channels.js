@@ -90,14 +90,34 @@ module.exports = async (req, res) => {
       return res.status(200).json({ success: true, message: 'চ্যানেল সংরক্ষিত হয়েছে।', data: saved });
     }
 
-    // ── PUT — reorder channels ───────────────────────────
+    // ── PUT — reorder channels OR update single/batch channel status ──
     if (req.method === 'PUT') {
-      const { orderList } = req.body || {};
+      const body = req.body || {};
+      const { orderList, id, status, manual_override, batchUpdates } = body;
+
+      // Batch status update (used by in-built Auto-Detector)
+      if (Array.isArray(batchUpdates) && batchUpdates.length > 0) {
+        await db.batchUpdateChannels(batchUpdates);
+        return res.status(200).json({ success: true, message: `${batchUpdates.length} টি চ্যানেলের স্ট্যাটাস আপডেট হয়েছে।`, count: batchUpdates.length });
+      }
+
+      // Single channel status update
+      if (id && status) {
+        const channels = await db.getChannels();
+        const ch = channels.find(c => c.id === id);
+        if (!ch) return res.status(404).json({ success: false, message: 'চ্যানেল পাওয়া যায়নি।' });
+        ch.status = status;
+        if (manual_override !== undefined) ch.manual_override = Boolean(manual_override);
+        await db.saveChannel(ch);
+        return res.status(200).json({ success: true, message: `স্ট্যাটাস ${status} করা হয়েছে।`, data: ch });
+      }
+
+      // Bulk reorder
       if (Array.isArray(orderList)) {
         const updated = await db.reorderChannels(orderList);
         return res.status(200).json({ success: true, message: 'চ্যানেলের ক্রম পরিবর্তিত হয়েছে।', data: updated });
       }
-      return res.status(400).json({ success: false, message: 'Invalid order list' });
+      return res.status(400).json({ success: false, message: 'Invalid request body' });
     }
 
     // ── DELETE — remove channel ──────────────────────────

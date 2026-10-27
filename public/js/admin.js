@@ -230,18 +230,18 @@ class AdminDashboard {
         const result = await this.autoDetector.probeChannel(ch);
         btn.disabled = false;
         btn.textContent = '🔍';
-        await this.updateChannelStatus(ch.id, result === 'ONLINE' ? 'ONLINE' : 'OFFLINE');
-        await this.loadChannels();
+        const finalStatus = (result === 'ONLINE') ? 'ONLINE' : 'OFFLINE';
+        ch.status = finalStatus;
+        await this.updateChannelStatus(ch.id, finalStatus);
+        this.renderChannelsTable();
       });
 
       // Clickable status badge to toggle ONLINE/OFFLINE
       tr.querySelector('.status-badge').addEventListener('click', async (e) => {
-        if (e.currentTarget.dataset.status === 'ONLINE') {
-          await this.updateChannelStatus(ch.id, 'OFFLINE');
-        } else {
-          await this.updateChannelStatus(ch.id, 'ONLINE');
-        }
-        await this.loadChannels();
+        const newStatus = (ch.status === 'ONLINE') ? 'OFFLINE' : 'ONLINE';
+        ch.status = newStatus;
+        await this.updateChannelStatus(ch.id, newStatus);
+        this.renderChannelsTable();
       });
 
       // Move Up / Down
@@ -1284,10 +1284,13 @@ class AutoDetector {
     }
   }
 
-  async probeChannel(ch, timeoutMs = 8000) {
+  async probeChannel(ch, timeoutMs = 6000) {
+    if (!ch || !ch.url) return 'OFFLINE';
+
     return new Promise((resolve) => {
       const video = document.createElement('video');
       video.muted = true;
+      video.playsInline = true;
       video.style.cssText = 'position:fixed;width:1px;height:1px;opacity:0;pointer-events:none;top:-9999px';
       document.body.appendChild(video);
 
@@ -1298,11 +1301,13 @@ class AutoDetector {
         if (settled) return;
         settled = true;
         clearTimeout(timer);
-        video.pause();
-        video.removeAttribute('src');
-        video.load();
-        if (hlsInstance) { try { hlsInstance.destroy(); } catch(_){} }
-        document.body.removeChild(video);
+        try {
+          video.pause();
+          video.removeAttribute('src');
+          video.load();
+        } catch (_) {}
+        if (hlsInstance) { try { hlsInstance.destroy(); } catch (_) {} }
+        if (video.parentNode) { video.parentNode.removeChild(video); }
         resolve(result);
       };
 
@@ -1310,22 +1315,38 @@ class AutoDetector {
 
       const tryNative = () => {
         video.src = ch.url;
-        video.addEventListener('canplay',  () => done('ONLINE'),  { once: true });
-        video.addEventListener('playing',  () => done('ONLINE'),  { once: true });
-        video.addEventListener('error',    () => done('OFFLINE'), { once: true });
+        video.addEventListener('loadeddata', () => done('ONLINE'), { once: true });
+        video.addEventListener('canplay',    () => done('ONLINE'), { once: true });
+        video.addEventListener('playing',    () => done('ONLINE'), { once: true });
+        video.addEventListener('error',      () => done('OFFLINE'), { once: true });
         video.play().catch(() => {});
       };
 
-      if (ch.url && ch.url.includes('.m3u8') && typeof Hls !== 'undefined' && Hls.isSupported()) {
-        hlsInstance = new Hls({ enableWorker: false, debug: false });
-        hlsInstance.loadSource(ch.url);
-        hlsInstance.attachMedia(video);
-        hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => { video.play().catch(() => {}); });
-        hlsInstance.on(Hls.Events.ERROR, (evt, data) => {
-          if (data.fatal) done('OFFLINE');
-        });
-        video.addEventListener('canplay', () => done('ONLINE'), { once: true });
-        video.addEventListener('playing', () => done('ONLINE'), { once: true });
+      if (ch.url.includes('.m3u8') && typeof Hls !== 'undefined' && Hls.isSupported()) {
+        try {
+          hlsInstance = new Hls({
+            enableWorker: false,
+            debug: false,
+            manifestLoadingTimeOut: timeoutMs,
+            manifestLoadingMaxRetry: 1
+          });
+          hlsInstance.loadSource(ch.url);
+          hlsInstance.attachMedia(video);
+
+          // Fast detection: if manifest parsed or level loaded, it's definitely ONLINE!
+          hlsInstance.on(Hls.Events.MANIFEST_PARSED, () => done('ONLINE'));
+          hlsInstance.on(Hls.Events.LEVEL_LOADED, () => done('ONLINE'));
+          hlsInstance.on(Hls.Events.ERROR, (evt, data) => {
+            if (data && data.fatal) done('OFFLINE');
+          });
+
+          video.addEventListener('loadeddata', () => done('ONLINE'), { once: true });
+          video.addEventListener('canplay',    () => done('ONLINE'), { once: true });
+          video.addEventListener('playing',    () => done('ONLINE'), { once: true });
+          video.addEventListener('error',      () => done('OFFLINE'), { once: true });
+        } catch (_) {
+          tryNative();
+        }
       } else {
         tryNative();
       }
@@ -1349,6 +1370,8 @@ class AutoDetector {
 
     this._log('🚀', `স্ক্যান শুরু হয়েছে — মোট ${channels.length} টি চ্যানেল`);
 
+    const changedUpdates = [];
+
     for (let i = 0; i < channels.length; i++) {
       if (this._stopped) break;
       await this._waitIfPaused();
@@ -1365,26 +1388,46 @@ class AutoDetector {
       else if (result === 'OFFLINE') this.counters.offline++;
       else                           this.counters.timeout++;
 
+      const finalStatus = (result === 'ONLINE') ? 'ONLINE' : 'OFFLINE';
       if (result === 'ONLINE') {
         this._log('✅', `ONLINE — ${ch.name}`);
       } else if (result === 'TIMEOUT') {
-        this._log('⏱', `TIMEOUT — ${ch.name}`);
+        this._log('⏱', `TIMEOUT — ${ch.name} (OFFLINE হিসেবে চিহ্নিত)`);
       } else {
         this._log('❌', `OFFLINE — ${ch.name}`);
       }
 
       this.onProgress(ch.id, result);
-      const finalStatus = (result === 'ONLINE') ? 'ONLINE' : 'OFFLINE';
-      try { await this.onSave(ch.id, finalStatus); } catch(_) {}
+
+      if (ch.status !== finalStatus) {
+        ch.status = finalStatus;
+        changedUpdates.push({ id: ch.id, status: finalStatus, manual_override: true });
+      }
+
       this._updateUI();
 
-      // Small inter-channel delay to avoid overloading
-      await new Promise(r => setTimeout(r, 400));
+      // Small inter-channel delay so browser stays smooth
+      await new Promise(r => setTimeout(r, 200));
+    }
+
+    // Batch save any changes to server in one single commit
+    if (changedUpdates.length > 0) {
+      this._log('💾', `${changedUpdates.length} টি পরিবর্তিত চ্যানেলের স্ট্যাটাস সেভ হচ্ছে...`);
+      try {
+        await fetch('/api/channels', {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ batchUpdates: changedUpdates })
+        });
+        this._log('☁️', 'সব স্ট্যাটাস ক্লাউড ডাটাবেসে সফলভাবে সেভ হয়েছে!');
+      } catch (err) {
+        this._log('⚠️', 'ডাটাবেস সেভ করতে সমস্যা হয়েছে।');
+      }
     }
 
     if (!this._stopped) {
       this.status = 'DONE';
-      this._log('🏁', `সম্পন্ন! Online: ${this.counters.online} | Offline: ${this.counters.offline} | Timeout: ${this.counters.timeout}`);
+      this._log('🏁', `স্ক্যান সম্পন্ন! Online: ${this.counters.online} | Offline: ${this.counters.offline} | Timeout: ${this.counters.timeout}`);
     } else {
       this.status = 'STOPPED';
       this._log('⏹', 'ব্যবহারকারী স্ক্যান বন্ধ করেছেন।');

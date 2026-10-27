@@ -242,6 +242,54 @@ async function reorderChannels(orderedIds) {
   return sorted;
 }
 
+/**
+ * Update health/status of a single channel.
+ */
+async function updateChannelHealth(id, status, responseTimeMs) {
+  invalidateChannelCache();
+  const current = await getChannels();
+  const ch = current.find(c => c.id === id);
+  if (ch) {
+    ch.status = status;
+    if (responseTimeMs !== undefined) ch.response_time_ms = responseTimeMs;
+    await ghCommit(GITHUB_CHANNELS_PATH, current, `Update health: ${ch.name} -> ${status}`);
+    _channelCache.data = current;
+    _channelCache.loadedAt = Date.now();
+    return ch;
+  }
+  return null;
+}
+
+/**
+ * Batch update channels (status, response_time_ms, manual_override) in one single GitHub commit.
+ */
+async function batchUpdateChannels(updates) {
+  if (!Array.isArray(updates) || updates.length === 0) return [];
+  invalidateChannelCache();
+  const current = await getChannels();
+  let changedCount = 0;
+
+  for (const item of updates) {
+    if (!item.id) continue;
+    const ch = current.find(c => c.id === item.id);
+    if (ch) {
+      if (item.status && ch.status !== item.status) {
+        ch.status = item.status;
+        changedCount++;
+      }
+      if (item.response_time_ms !== undefined) ch.response_time_ms = item.response_time_ms;
+      if (item.manual_override !== undefined) ch.manual_override = Boolean(item.manual_override);
+    }
+  }
+
+  if (changedCount > 0 || updates.length > 0) {
+    await ghCommit(GITHUB_CHANNELS_PATH, current, `Batch update channels status (${updates.length} items)`);
+    _channelCache.data = current;
+    _channelCache.loadedAt = Date.now();
+  }
+  return current;
+}
+
 // ── Settings ──────────────────────────────────────────────
 async function getSettings() {
   if (isCacheValid(_settingsCache)) return { ..._settingsCache.data };
@@ -512,6 +560,8 @@ module.exports = {
   deleteChannel,
   importChannels,
   reorderChannels,
+  updateChannelHealth,
+  batchUpdateChannels,
 
   // Settings (all async)
   getSettings,
