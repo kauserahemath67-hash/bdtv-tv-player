@@ -25,7 +25,13 @@ module.exports = async (req, res) => {
         }
 
         // Check subscription expiry
-        const isExpired = new Date(customer.expires_at) < new Date();
+        if (customer.expires_at && new Date(customer.expires_at) < new Date()) {
+          return res.status(403).json({
+            success: false,
+            message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। অনুগ্রহ করে প্যাকেজটি নবায়ন করুন।'
+          });
+        }
+
         return res.status(200).json({
           success: true,
           data: {
@@ -36,7 +42,6 @@ module.exports = async (req, res) => {
             channels_enabled: customer.channels_enabled,
             plan: customer.plan,
             expires_at: customer.expires_at,
-            is_expired: isExpired,
             max_devices: customer.max_devices || 2
           }
         });
