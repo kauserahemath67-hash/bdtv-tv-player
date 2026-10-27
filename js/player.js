@@ -64,21 +64,8 @@ class IPTVPlayer {
     this.bindRemoteKeys();
     this.bindTouchGestures();
     this.bindAudioUnlock();
-    this.bindFullscreenEvents();
     await this.loadSettings();
     await this.loadChannels();
-  }
-
-  // Listen for browser fullscreen change and sync button label
-  bindFullscreenEvents() {
-    const syncBtn = () => {
-      const btn = document.getElementById('btn-rotate');
-      if (!btn) return;
-      const isFs = !!document.fullscreenElement || !!document.webkitFullscreenElement;
-      btn.innerHTML = isFs ? '⤢ এক্সিট' : '⛶ ফুলস্ক্রিন';
-    };
-    document.addEventListener('fullscreenchange', syncBtn);
-    document.addEventListener('webkitfullscreenchange', syncBtn);
   }
 
   // 1. Load Settings (Notice, Ads, Subscription switch)
@@ -312,39 +299,6 @@ class IPTVPlayer {
     }
   }
 
-  // Fullscreen + Screen Orientation Lock (works in browser & TV)
-  async toggleFullscreen() {
-    const el = document.documentElement;
-    const isFullscreen = !!document.fullscreenElement || !!document.webkitFullscreenElement;
-
-    try {
-      if (!isFullscreen) {
-        // Enter fullscreen
-        if (el.requestFullscreen) await el.requestFullscreen({ navigationUI: 'hide' });
-        else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
-
-        // Lock to landscape on mobile browsers that support it
-        if (screen.orientation && screen.orientation.lock) {
-          try { await screen.orientation.lock('landscape'); } catch(_) {}
-        }
-        const btn = document.getElementById('btn-rotate');
-        if (btn) btn.innerHTML = '⤢ এক্সিট';
-      } else {
-        // Exit fullscreen
-        if (document.exitFullscreen) await document.exitFullscreen();
-        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
-
-        if (screen.orientation && screen.orientation.unlock) {
-          try { screen.orientation.unlock(); } catch(_) {}
-        }
-        const btn = document.getElementById('btn-rotate');
-        if (btn) btn.innerHTML = '⛶ ফুলস্ক্রিন';
-      }
-    } catch (err) {
-      console.warn('Fullscreen error:', err);
-    }
-  }
-
   showUnmuteBanner(show) {
     const banner = document.getElementById('unmute-banner');
     if (!banner) return;
@@ -503,18 +457,6 @@ class IPTVPlayer {
     });
   }
 
-  getGridColumns() {
-    const cards = this.channelGrid.querySelectorAll('.channel-card');
-    if (cards.length < 2) return 1;
-    const firstTop = cards[0].offsetTop;
-    for (let i = 1; i < cards.length; i++) {
-      if (cards[i].offsetTop > firstTop) {
-        return i;
-      }
-    }
-    return Math.max(1, cards.length);
-  }
-
   // 9. Android TV Remote Control Logic
   bindRemoteKeys() {
     window.addEventListener('keydown', (e) => {
@@ -526,8 +468,8 @@ class IPTVPlayer {
           if (!this.isDrawerOpen) {
             this.openDrawer(3000);
           } else {
-            const cols = this.getGridColumns();
-            this.focusedIndex = Math.max(0, this.focusedIndex - cols);
+            // Navigate focus backward by grid columns (approx 4)
+            this.focusedIndex = Math.max(0, this.focusedIndex - 4);
             this.updateCardFocus();
             this.resetDrawerAutoHide(3000);
           }
@@ -536,9 +478,8 @@ class IPTVPlayer {
         case 'ArrowDown':
           e.preventDefault();
           if (this.isDrawerOpen) {
-            const cols = this.getGridColumns();
             const maxIdx = this.filteredChannels.length - 1;
-            this.focusedIndex = Math.min(maxIdx, this.focusedIndex + cols);
+            this.focusedIndex = Math.min(maxIdx, this.focusedIndex + 4);
             this.updateCardFocus();
             this.resetDrawerAutoHide(3000);
           } else {
@@ -605,12 +546,6 @@ class IPTVPlayer {
         case 'AudioVolumeMute':
           e.preventDefault();
           this.toggleSound();
-          break;
-
-        case 'f':
-        case 'F':
-          e.preventDefault();
-          this.toggleFullscreen();
           break;
 
         case '+':
@@ -729,15 +664,6 @@ class IPTVPlayer {
       this.filterChannels(btn.dataset.cat);
       this.resetDrawerAutoHide();
     });
-
-    // Fullscreen Rotate Button
-    const btnRotate = document.getElementById('btn-rotate');
-    if (btnRotate) {
-      btnRotate.addEventListener('click', (e) => {
-        e.stopPropagation();
-        this.toggleFullscreen();
-      });
-    }
 
     // PiP Button
     document.getElementById('btn-pip').addEventListener('click', async () => {
