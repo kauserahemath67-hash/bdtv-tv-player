@@ -356,7 +356,7 @@ function resolveReport(id) {
 // Version (static)
 const VERSION = {
   versionCode: 107, versionName: '2.2.0', minSupportedVersion: 100,
-  apkUrl: 'https://bdtv-live-tv.vercel.app/BDTv.apk',
+  apkUrl: 'https://bdtv-app.vercel.app/BDTv.apk',
   updateTitle: 'নতুন আপডেট উপলব্ধ!',
   changelog: [
     'প্লেয়ারের পারফরম্যান্স বৃদ্ধি ও বাফারিং অপ্টিমাইজেশন',
