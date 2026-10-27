@@ -1,5 +1,22 @@
 [
   {
+    "id": "cust-1793120196338",
+    "customer_code": "BDTV-9999",
+    "name": "Test User",
+    "login_pin": "4321",
+    "account_status": "ACTIVE",
+    "manual_block": false,
+    "block_reason": "",
+    "max_devices": 2,
+    "channels_enabled": true,
+    "plan": "Monthly VIP",
+    "starts_at": "2026-10-27",
+    "expires_at": "2026-11-26",
+    "payment_status": "PAID",
+    "transaction_reference": "",
+    "createdAt": "2026-10-27T16:56:36.338Z"
+  },
+  {
     "id": "cust-101",
     "customer_code": "BDTV-VIP-101",
     "name": "VIP Subscriber",
