@@ -64,8 +64,21 @@ class IPTVPlayer {
     this.bindRemoteKeys();
     this.bindTouchGestures();
     this.bindAudioUnlock();
+    this.bindFullscreenEvents();
     await this.loadSettings();
     await this.loadChannels();
+  }
+
+  // Listen for browser fullscreen change and sync button label
+  bindFullscreenEvents() {
+    const syncBtn = () => {
+      const btn = document.getElementById('btn-rotate');
+      if (!btn) return;
+      const isFs = !!document.fullscreenElement || !!document.webkitFullscreenElement;
+      btn.innerHTML = isFs ? '⤢ এক্সিট' : '⛶ ফুলস্ক্রিন';
+    };
+    document.addEventListener('fullscreenchange', syncBtn);
+    document.addEventListener('webkitfullscreenchange', syncBtn);
   }
 
   // 1. Load Settings (Notice, Ads, Subscription switch)
@@ -296,6 +309,39 @@ class IPTVPlayer {
       this.showUnmuteBanner(false);
       this.updateSoundButtonUI();
       this.flashSoundHUD('🔇 সাউন্ড মিউট');
+    }
+  }
+
+  // Fullscreen + Screen Orientation Lock (works in browser & TV)
+  async toggleFullscreen() {
+    const el = document.documentElement;
+    const isFullscreen = !!document.fullscreenElement || !!document.webkitFullscreenElement;
+
+    try {
+      if (!isFullscreen) {
+        // Enter fullscreen
+        if (el.requestFullscreen) await el.requestFullscreen({ navigationUI: 'hide' });
+        else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+
+        // Lock to landscape on mobile browsers that support it
+        if (screen.orientation && screen.orientation.lock) {
+          try { await screen.orientation.lock('landscape'); } catch(_) {}
+        }
+        const btn = document.getElementById('btn-rotate');
+        if (btn) btn.innerHTML = '⤢ এক্সিট';
+      } else {
+        // Exit fullscreen
+        if (document.exitFullscreen) await document.exitFullscreen();
+        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+
+        if (screen.orientation && screen.orientation.unlock) {
+          try { screen.orientation.unlock(); } catch(_) {}
+        }
+        const btn = document.getElementById('btn-rotate');
+        if (btn) btn.innerHTML = '⛶ ফুলস্ক্রিন';
+      }
+    } catch (err) {
+      console.warn('Fullscreen error:', err);
     }
   }
 
@@ -548,6 +594,12 @@ class IPTVPlayer {
           this.toggleSound();
           break;
 
+        case 'f':
+        case 'F':
+          e.preventDefault();
+          this.toggleFullscreen();
+          break;
+
         case '+':
         case '=':
         case 'AudioVolumeUp':
@@ -664,6 +716,15 @@ class IPTVPlayer {
       this.filterChannels(btn.dataset.cat);
       this.resetDrawerAutoHide();
     });
+
+    // Fullscreen Rotate Button
+    const btnRotate = document.getElementById('btn-rotate');
+    if (btnRotate) {
+      btnRotate.addEventListener('click', (e) => {
+        e.stopPropagation();
+        this.toggleFullscreen();
+      });
+    }
 
     // PiP Button
     document.getElementById('btn-pip').addEventListener('click', async () => {
