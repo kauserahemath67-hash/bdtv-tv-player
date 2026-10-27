@@ -16,6 +16,7 @@ const apiRoutes = {
   '/api/subscriptions': require('./api/subscriptions'),
   '/api/settings': require('./api/settings'),
   '/api/version': require('./api/version'),
+  '/api/activity': require('./api/activity'),
   '/api/report': require('./api/report')
 };
 
