@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "id": "pl-master-live",
+    "name": "BDTv Master Live Playlist (অল চ্যানেল)",
+    "url": "https://bdtv-app.vercel.app/playlist.m3u",
+    "format": "M3U Playlist",
+    "channelCount": 160,
+    "active": true,
+    "savedAt": "2026-10-27T18:25:00.000Z"
+  },
+  {
+    "id": "pl-sports-live",
+    "name": "Sports & Entertainment Live Stream",
+    "url": "https://alixbd.com/playlistconfig/playlist.m3u",
+    "format": "M3U8 / HLS",
+    "channelCount": 85,
+    "active": true,
+    "savedAt": "2026-10-27T18:20:00.000Z"
+  },
+  {
+    "id": "pl-bangla-hd",
+    "name": "Bangla & Global News HD",
+    "url": "https://footfytv.pro/playlist.m3u8",
+    "format": "HLS Stream",
+    "channelCount": 75,
+    "active": true,
+    "savedAt": "2026-10-27T18:15:00.000Z"
+  }
+]
