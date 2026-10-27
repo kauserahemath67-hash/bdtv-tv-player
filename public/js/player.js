@@ -694,24 +694,47 @@ class IPTVPlayer {
     let startY = 0;
     let endY = 0;
     let touchStartedInsideDrawer = false;
+    let isScrollingDrawer = false;
+
+    // Drawer-এর ভেতরে touchmove হলে window-এ bubble যাওয়া বন্ধ করো
+    if (this.channelDrawer) {
+      this.channelDrawer.addEventListener('touchstart', (e) => {
+        startY = e.touches[0].clientY;
+        isScrollingDrawer = true;
+      }, { passive: true });
+
+      this.channelDrawer.addEventListener('touchend', () => {
+        isScrollingDrawer = false;
+      }, { passive: true });
+
+      this.channelDrawer.addEventListener('touchcancel', () => {
+        isScrollingDrawer = false;
+      }, { passive: true });
+    }
 
     window.addEventListener('touchstart', (e) => {
       startY = e.touches[0].clientY;
-      // চ্যানেল drawer-এর ভেতরে touch শুরু হয়েছে কিনা ট্র্যাক করো
       touchStartedInsideDrawer = !!e.target.closest('#channel-drawer');
+      if (!touchStartedInsideDrawer) isScrollingDrawer = false;
     }, { passive: true });
 
     window.addEventListener('touchend', (e) => {
+      // Drawer-এর ভেতরে scroll হচ্ছিলে — কিছু করব না
+      if (isScrollingDrawer || touchStartedInsideDrawer) {
+        isScrollingDrawer = false;
+        return;
+      }
+
       endY = e.changedTouches[0].clientY;
       const diffY = startY - endY;
 
-      // Swipe Up: Open drawer (drawer-এর বাইরে থেকে)
-      if (diffY > 60 && !this.isDrawerOpen && !touchStartedInsideDrawer) {
+      // Swipe Up (স্ক্রিনের নিচ থেকে উপরে): Drawer খোলো
+      if (diffY > 60 && !this.isDrawerOpen) {
         this.openDrawer();
       }
-      // Swipe Down: Close drawer — শুধুমাত্র drawer-এর বাইরে থেকে swipe করলে
-      // drawer-এর ভেতরে স্ক্রোল করলে কখনো close হবে না
-      else if (diffY < -60 && this.isDrawerOpen && !touchStartedInsideDrawer) {
+      // Swipe Down (স্ক্রিনের উপর থেকে নিচে): Drawer বন্ধ করো
+      // শুধুমাত্র video area থেকে swipe করলে — drawer-এর ভেতরে নয়
+      else if (diffY < -60 && this.isDrawerOpen) {
         this.closeDrawer();
       }
     }, { passive: true });

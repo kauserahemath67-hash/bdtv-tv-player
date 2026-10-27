@@ -493,6 +493,8 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   flex-direction: column;
   padding-bottom: var(--safe-bottom);
   box-shadow: none;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
 
 #channel-drawer.open {
@@ -540,6 +542,8 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   overflow-y: auto;
   flex: 1;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
 }
 
 /* ---------------------------------------------------------
