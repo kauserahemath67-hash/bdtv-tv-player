@@ -503,6 +503,18 @@ class IPTVPlayer {
     });
   }
 
+  getGridColumns() {
+    const cards = this.channelGrid.querySelectorAll('.channel-card');
+    if (cards.length < 2) return 1;
+    const firstTop = cards[0].offsetTop;
+    for (let i = 1; i < cards.length; i++) {
+      if (cards[i].offsetTop > firstTop) {
+        return i;
+      }
+    }
+    return Math.max(1, cards.length);
+  }
+
   // 9. Android TV Remote Control Logic
   bindRemoteKeys() {
     window.addEventListener('keydown', (e) => {
@@ -514,8 +526,8 @@ class IPTVPlayer {
           if (!this.isDrawerOpen) {
             this.openDrawer(3000);
           } else {
-            // Navigate focus backward by grid columns (approx 4)
-            this.focusedIndex = Math.max(0, this.focusedIndex - 4);
+            const cols = this.getGridColumns();
+            this.focusedIndex = Math.max(0, this.focusedIndex - cols);
             this.updateCardFocus();
             this.resetDrawerAutoHide(3000);
           }
@@ -524,8 +536,9 @@ class IPTVPlayer {
         case 'ArrowDown':
           e.preventDefault();
           if (this.isDrawerOpen) {
+            const cols = this.getGridColumns();
             const maxIdx = this.filteredChannels.length - 1;
-            this.focusedIndex = Math.min(maxIdx, this.focusedIndex + 4);
+            this.focusedIndex = Math.min(maxIdx, this.focusedIndex + cols);
             this.updateCardFocus();
             this.resetDrawerAutoHide(3000);
           } else {
