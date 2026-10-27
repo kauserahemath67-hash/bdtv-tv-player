@@ -129,6 +129,54 @@
     </div>
   </div>
 
+  <!-- App Update Modal (Modern Glassmorphic Responsive Card) -->
+  <div id="update-modal" class="modal-backdrop hidden">
+    <div class="update-card glass-panel">
+      <!-- Header -->
+      <div class="update-header">
+        <div class="update-title-group">
+          <span class="update-icon">🚀</span>
+          <div>
+            <h2 id="update-modal-title" class="update-title">নতুন আপডেট উপলব্ধ!</h2>
+            <div class="update-subtitle">
+              <span id="update-modal-version" class="version-badge">v2.3.1</span>
+              <span class="update-tag">সর্বশেষ সংস্করণ</span>
+            </div>
+          </div>
+        </div>
+        <button id="btn-close-update" class="btn-icon-close" title="বন্ধ করুন">✕</button>
+      </div>
+
+      <!-- Content / 2-Column Responsive Body -->
+      <div class="update-body">
+        <div class="update-intro">
+          <p class="intro-headline">BDTv অ্যাপের নতুন অভিজ্ঞতা</p>
+          <p class="intro-desc">নিরবচ্ছিন্ন লাইভ স্ট্রিমিং, ইনস্ট্যান্ট সাউন্ড সিন্ক এবং উন্নত প্লেয়ার সুবিধার জন্য অ্যাপটি এখনই আপডেট করুন।</p>
+          <div class="update-chips">
+            <span class="chip">⚡ আল্ট্রা ফাস্ট</span>
+            <span class="chip">📺 ফুলস্ক্রিন</span>
+            <span class="chip">🔊 জিরো বাফারিং</span>
+          </div>
+        </div>
+
+        <div class="update-changelog-card">
+          <div class="changelog-header">নতুন কী যোগ করা হয়েছে:</div>
+          <ul id="update-changelog-list" class="changelog-list">
+            <li>ওয়াইডস্ক্রিন রেস্পন্সিভ সিনেমা আপডেট ডায়ালগ</li>
+            <li>সরাসরি ইন-অ্যাপ আপডেট বাটন ও অটো-ডাউনলোড</li>
+            <li>চ্যানেল ড্রয়ার ও প্লেয়ার পারফরম্যান্স অপ্টিমাইজেশন</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="update-actions">
+        <button id="btn-update-later" class="btn-secondary">পরে করুন</button>
+        <a id="btn-update-download" href="/BDTv.apk" class="btn-primary btn-update-cta" download>🚀 আপডেট করুন</a>
+      </div>
+    </div>
+  </div>
+
   <script src="/js/player.js"></script>
 </body>
 </html>

@@ -66,6 +66,7 @@ class IPTVPlayer {
     this.bindAudioUnlock();
     await this.loadSettings();
     await this.loadChannels();
+    this.checkAppUpdate();
 
     // Real-time activity heartbeat every 25 seconds
     setInterval(() => this.sendHeartbeat(), 25000);
@@ -144,6 +145,53 @@ class IPTVPlayer {
     if (msg && errorDiv) {
       errorDiv.textContent = msg;
       errorDiv.classList.remove('hidden');
+    }
+  }
+
+  async checkAppUpdate() {
+    try {
+      const res = await fetch('/api/version');
+      if (!res.ok) return;
+      const json = await res.json();
+      if (!json || !json.versionCode) return;
+
+      const installedVersion = Number(localStorage.getItem('bdtv_app_version') || '108');
+      if (json.versionCode > installedVersion || json.forceUpdate) {
+        this.showUpdateModal(json);
+      }
+    } catch (e) {}
+  }
+
+  showUpdateModal(info) {
+    const modal = document.getElementById('update-modal');
+    if (!modal) return;
+    const titleEl = document.getElementById('update-modal-title');
+    const verEl = document.getElementById('update-modal-version');
+    const listEl = document.getElementById('update-changelog-list');
+    const dlBtn = document.getElementById('btn-update-download');
+
+    if (titleEl && info.updateTitle) titleEl.textContent = info.updateTitle;
+    if (verEl && info.versionName) verEl.textContent = `v${info.versionName}`;
+    if (dlBtn && info.apkUrl) dlBtn.href = info.apkUrl;
+
+    if (listEl && info.changelog && Array.isArray(info.changelog)) {
+      listEl.innerHTML = info.changelog.map(item => `<li>${item}</li>`).join('');
+    }
+
+    modal.classList.remove('hidden');
+
+    const closeBtn = document.getElementById('btn-close-update');
+    const laterBtn = document.getElementById('btn-update-later');
+    const dismiss = () => {
+      modal.classList.add('hidden');
+      localStorage.setItem('bdtv_app_version', info.versionCode);
+    };
+    if (closeBtn) closeBtn.onclick = dismiss;
+    if (laterBtn) laterBtn.onclick = dismiss;
+    if (dlBtn) {
+      dlBtn.onclick = () => {
+        localStorage.setItem('bdtv_app_version', info.versionCode);
+      };
     }
   }
 
