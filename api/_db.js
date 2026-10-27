@@ -355,14 +355,13 @@ function resolveReport(id) {
 
 // Version (static)
 const VERSION = {
-  versionCode: 105, versionName: '2.1.0', minSupportedVersion: 100,
-  apkUrl: 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.1.0/BDTv.apk',
+  versionCode: 107, versionName: '2.2.0', minSupportedVersion: 100,
+  apkUrl: 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.2.0/BDTv.apk',
   updateTitle: 'নতুন আপডেট উপলব্ধ!',
   changelog: [
-    '১০০% ফুলস্ক্রিন ও অটো-হাইড ড্রয়ার সাপোর্ট',
-    'অ্যান্ড্রয়েড টিভি রিমোট ও বাটন নেভিগেশন',
-    'আল্ট্রা-স্মুথ ৬০-১২০ FPS হার্ডওয়্যার এক্সিলারেশন',
-    'ভিডিও প্লে শুরু হওয়ার ধূসর পোস্টার ফিক্স'
+    'প্লেয়ারের পারফরম্যান্স বৃদ্ধি ও বাফারিং অপ্টিমাইজেশন',
+    'নতুন টিভি চ্যানেল ও লাইভ স্ট্রিম ফিক্স',
+    'ড্রয়ার ও রিমোট কন্ট্রোল বাগ ফিক্স'
   ],
   forceUpdate: false, updateMessage: ''
 };
