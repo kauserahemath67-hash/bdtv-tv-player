@@ -296,7 +296,6 @@ class IPTVPlayer {
     this.video.addEventListener('playing', () => {
       this.showBuffering(false);
       this.hideError();
-      this.closeDrawer();
       if (this.video.muted && !this.isUserUnmuted) {
         this.showUnmuteBanner(true);
       } else {
@@ -692,48 +691,33 @@ class IPTVPlayer {
   // 10. Mobile Touch Gestures
   bindTouchGestures() {
     let startY = 0;
-    let endY = 0;
-    let touchStartedInsideDrawer = false;
-    let isScrollingDrawer = false;
 
-    // Drawer-এর ভেতরে touchmove হলে window-এ bubble যাওয়া বন্ধ করো
-    if (this.channelDrawer) {
-      this.channelDrawer.addEventListener('touchstart', (e) => {
-        startY = e.touches[0].clientY;
-        isScrollingDrawer = true;
-      }, { passive: true });
+    // ✅ শুধুমাত্র video-wrapper এ swipe gesture নেওয়া হবে
+    // Drawer-এর ভেতরে যা হোক — এখানে আসবেই না, তাই close হওয়ার প্রশ্ন নেই
+    const videoWrapper = document.getElementById('video-wrapper');
+    if (!videoWrapper) return;
 
-      this.channelDrawer.addEventListener('touchend', () => {
-        isScrollingDrawer = false;
-      }, { passive: true });
-
-      this.channelDrawer.addEventListener('touchcancel', () => {
-        isScrollingDrawer = false;
-      }, { passive: true });
-    }
-
-    window.addEventListener('touchstart', (e) => {
+    videoWrapper.addEventListener('touchstart', (e) => {
+      // Drawer-এর ভেতরে touch শুরু হলে ignore করো
+      if (e.target.closest('#channel-drawer')) return;
       startY = e.touches[0].clientY;
-      touchStartedInsideDrawer = !!e.target.closest('#channel-drawer');
-      if (!touchStartedInsideDrawer) isScrollingDrawer = false;
     }, { passive: true });
 
-    window.addEventListener('touchend', (e) => {
-      // Drawer-এর ভেতরে scroll হচ্ছিলে — কিছু করব না
-      if (isScrollingDrawer || touchStartedInsideDrawer) {
-        isScrollingDrawer = false;
-        return;
-      }
+    videoWrapper.addEventListener('touchend', (e) => {
+      // Drawer-এর ভেতরে touch শেষ হলে ignore করো
+      if (e.target.closest('#channel-drawer')) return;
+      if (startY === 0) return;
 
-      endY = e.changedTouches[0].clientY;
+      const endY = e.changedTouches[0].clientY;
       const diffY = startY - endY;
+      startY = 0;
 
-      // Swipe Up (স্ক্রিনের নিচ থেকে উপরে): Drawer খোলো
+      // Swipe Up (আঙুল নিচ→উপর): Drawer খোলো
       if (diffY > 60 && !this.isDrawerOpen) {
         this.openDrawer();
       }
-      // Swipe Down (স্ক্রিনের উপর থেকে নিচে): Drawer বন্ধ করো
-      // শুধুমাত্র video area থেকে swipe করলে — drawer-এর ভেতরে নয়
+      // Swipe Down (আঙুল উপর→নিচ): Drawer বন্ধ করো
+      // কিন্তু শুধু video area থেকে — drawer থেকে নয়
       else if (diffY < -60 && this.isDrawerOpen) {
         this.closeDrawer();
       }
@@ -791,9 +775,18 @@ class IPTVPlayer {
       });
     }
 
-    // Keep floating drawer active on interaction
+    // Keep floating drawer active on interaction & stop propagation to prevent accidental close
+    this.channelDrawer.addEventListener('click', (e) => {
+      e.stopPropagation();
+    });
+    this.channelDrawer.addEventListener('touchstart', (e) => {
+      e.stopPropagation();
+      this.resetDrawerAutoHide();
+    }, { passive: true });
+    this.channelDrawer.addEventListener('touchend', (e) => {
+      e.stopPropagation();
+    }, { passive: true });
     this.channelDrawer.addEventListener('mousemove', () => this.resetDrawerAutoHide());
-    this.channelDrawer.addEventListener('touchstart', () => this.resetDrawerAutoHide(), { passive: true });
 
     // Category pills
     this.categoryBar.addEventListener('click', (e) => {
