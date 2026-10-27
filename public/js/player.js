@@ -59,7 +59,7 @@ class IPTVPlayer {
   }
 
   async init() {
-    this.initHLS();
+    this.bindVideoEvents();
     this.bindEvents();
     this.bindRemoteKeys();
     this.bindTouchGestures();
@@ -186,52 +186,8 @@ class IPTVPlayer {
     });
   }
 
-  // 4. HLS.js Live Streaming Engine
-  initHLS() {
-    if (Hls.isSupported()) {
-      this.hls = new Hls({
-        lowLatencyMode: true,
-        enableWorker: true,
-        backBufferLength: 30,
-        liveSyncDurationCount: 3,
-        liveMaxLatencyDurationCount: 5
-      });
-
-      this.hls.attachMedia(this.video);
-
-      this.hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        this.showBuffering(false);
-        this.hideError();
-        this.attemptPlay();
-      });
-
-      // Activate first audio track if not active
-      this.hls.on(Hls.Events.AUDIO_TRACKS_UPDATED, (event, data) => {
-        if (data && data.audioTracks && data.audioTracks.length > 0) {
-          if (this.hls.audioTrack === -1) {
-            this.hls.audioTrack = 0;
-          }
-        }
-      });
-
-      this.hls.on(Hls.Events.ERROR, (event, data) => {
-        console.warn('HLS Event Error:', data);
-        if (data.fatal) {
-          switch (data.type) {
-            case Hls.ErrorTypes.NETWORK_ERROR:
-              this.hls.startLoad();
-              break;
-            case Hls.ErrorTypes.MEDIA_ERROR:
-              this.hls.recoverMediaError();
-              break;
-            default:
-              this.showError('লাইভ সম্প্রচার লোড করা সম্ভব হয়নি।');
-              break;
-          }
-        }
-      });
-    }
-
+  // 4. Video Events & HLS.js Live Streaming Engine
+  bindVideoEvents() {
     this.video.addEventListener('waiting', () => this.showBuffering(true));
     this.video.addEventListener('playing', () => {
       this.showBuffering(false);
@@ -252,29 +208,87 @@ class IPTVPlayer {
     });
   }
 
+  initHLS() {
+    if (!Hls.isSupported()) return;
+
+    this.hls = new Hls({
+      enableWorker: true,
+      lowLatencyMode: false,          // Avoid micro-buffer stalls on standard CDN streams!
+      backBufferLength: 10,           // Don't waste RAM caching past 10s on TV/mobile
+      maxBufferLength: 20,            // Buffer 20 seconds ahead
+      maxMaxBufferLength: 40,         // Up to 40 seconds max
+      maxBufferSize: 30 * 1024 * 1024,// 30 MB buffer limit
+      liveSyncDurationCount: 4,       // 4 segments live sync for maximum buffer stability
+      liveMaxLatencyDurationCount: 8, // Allow up to 8 segments without forced skipping
+      maxBufferHole: 0.5,             // Jump across any 0.5s gaps seamlessly without freezing
+      highBufferWatchdogPeriod: 2,
+      nudgeOffset: 0.2,
+      nudgeMaxRetry: 5,
+      fragLoadingTimeOut: 20000,      // 20s fragment timeout
+      manifestLoadingTimeOut: 15000,
+      startFragPrefetch: true,        // Prefetch first fragment for instant start!
+      capLevelToPlayerSize: true
+    });
+
+    this.hls.attachMedia(this.video);
+
+    this.hls.on(Hls.Events.MANIFEST_PARSED, () => {
+      this.showBuffering(false);
+      this.hideError();
+      this.attemptPlay();
+    });
+
+    this.hls.on(Hls.Events.FRAG_BUFFERED, () => {
+      this.showBuffering(false);
+    });
+
+    // Activate first audio track if not active
+    this.hls.on(Hls.Events.AUDIO_TRACKS_UPDATED, (event, data) => {
+      if (data && data.audioTracks && data.audioTracks.length > 0) {
+        if (this.hls.audioTrack === -1) {
+          this.hls.audioTrack = 0;
+        }
+      }
+    });
+
+    this.hls.on(Hls.Events.ERROR, (event, data) => {
+      console.warn('HLS Event Error:', data);
+      if (data.fatal) {
+        switch (data.type) {
+          case Hls.ErrorTypes.NETWORK_ERROR:
+            console.log('HLS Network error, attempting recovery...');
+            this.hls.startLoad();
+            break;
+          case Hls.ErrorTypes.MEDIA_ERROR:
+            console.log('HLS Media error, attempting recovery...');
+            this.hls.recoverMediaError();
+            break;
+          default:
+            this.showError('লাইভ সম্প্রচার লোড করা সম্ভব হয়নি।');
+            break;
+        }
+      }
+    });
+  }
+
   // Audio Playback & Unmute Handling
   attemptPlay() {
-    if (this.isUserUnmuted) {
-      this.video.muted = false;
-      this.video.volume = 1.0;
-    }
+    this.video.muted = false;
+    this.video.volume = 1.0;
 
     const p = this.video.play();
     if (p !== undefined) {
       p.then(() => {
-        if (this.video.muted && !this.isUserUnmuted) {
-          this.showUnmuteBanner(true);
-        } else {
-          this.showUnmuteBanner(false);
-        }
+        this.isUserUnmuted = true;
+        this.showUnmuteBanner(false);
         this.updateSoundButtonUI();
-      }).catch(() => {
-        // Browser rejected unmuted autoplay policy -> fallback to muted & show unmute banner
+      }).catch((err) => {
+        console.warn('Direct unmuted play blocked, falling back to muted autoplay:', err);
         this.video.muted = true;
         this.video.play().then(() => {
           this.showUnmuteBanner(true);
           this.updateSoundButtonUI();
-        }).catch(err => console.error('Play error:', err));
+        }).catch(e => console.error('Play totally failed:', e));
       });
     }
   }
@@ -341,8 +355,8 @@ class IPTVPlayer {
         this.unmuteAudio();
       }
     };
-    ['click', 'touchstart', 'keydown'].forEach(evt => {
-      document.addEventListener(evt, unlock, { once: true, passive: true });
+    ['click', 'touchstart', 'touchend', 'keydown'].forEach(evt => {
+      document.addEventListener(evt, unlock, { passive: true });
     });
   }
 
@@ -352,7 +366,19 @@ class IPTVPlayer {
     this.currentIndex = index;
     const channel = this.filteredChannels[index];
 
-    // Update Top Bar & HUD
+    // 1. Instantly STOP old stream & destroy old HLS pipeline (Prevents audio bleed/overlap completely!)
+    this.video.pause();
+    if (this.hls) {
+      try {
+        this.hls.stopLoad();
+        this.hls.destroy();
+      } catch (e) {}
+      this.hls = null;
+    }
+    this.video.removeAttribute('src');
+    this.video.load(); // Flushes all hardware audio/video decoders & buffers!
+
+    // 2. Update Top Bar & HUD
     document.getElementById('top-channel-name').textContent = channel.name;
     const topLogo = document.getElementById('top-channel-logo');
     if (channel.logo) {
@@ -366,8 +392,10 @@ class IPTVPlayer {
     this.showBuffering(true);
     this.hideError();
 
-    // Stream playback
-    if (this.hls && channel.url.includes('.m3u8')) {
+    // 3. Start fresh clean stream
+    const isM3u8 = channel.url.includes('.m3u8') || channel.url.includes('/hls') || channel.url.includes('/mono') || channel.url.includes('playlist');
+    if (Hls.isSupported() && isM3u8) {
+      this.initHLS();
       this.hls.loadSource(channel.url);
     } else {
       this.video.src = channel.url;
