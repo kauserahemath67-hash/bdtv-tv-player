@@ -5,9 +5,31 @@
   "admin_pin": "42431967",
   "notice_text": "স্বাগতম BDTv লাইভ প্লেয়ারে! যেকোনো টিভি চ্যানেল সহজে উপভোগ করুন।",
   "notice_active": false,
-  "subscription_restrictions_enabled": true,
+  "subscription_restrictions_enabled": false,
   "default_max_devices": 2,
   "expiry_warning_days": 3,
+  "ads": {
+    "header": {
+      "active": false,
+      "code": "<!-- Header Ad Code -->"
+    },
+    "top": {
+      "active": false,
+      "code": ""
+    },
+    "below_player": {
+      "active": false,
+      "code": "<div class='ad-banner'>Below Player Banner Ad</div>"
+    },
+    "infeed": {
+      "active": false,
+      "code": "<div class='ad-banner infeed'>Special Offer / Ad</div>"
+    },
+    "footer": {
+      "active": false,
+      "code": "<div class='ad-banner'>Footer Ad Notice</div>"
+    }
+  },
   "playlists": [
     {
       "id": "pl-master-live",
@@ -36,27 +58,5 @@
       "active": true,
       "savedAt": "2026-10-27T18:15:00.000Z"
     }
-  ],
-  "ads": {
-    "header": {
-      "active": false,
-      "code": "<!-- Header Ad Code -->"
-    },
-    "top": {
-      "active": false,
-      "code": ""
-    },
-    "below_player": {
-      "active": false,
-      "code": "<div class='ad-banner'>Below Player Banner Ad</div>"
-    },
-    "infeed": {
-      "active": false,
-      "code": "<div class='ad-banner infeed'>Special Offer / Ad</div>"
-    },
-    "footer": {
-      "active": false,
-      "code": "<div class='ad-banner'>Footer Ad Notice</div>"
-    }
-  }
+  ]
 }
