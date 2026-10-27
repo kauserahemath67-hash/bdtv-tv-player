@@ -7,7 +7,7 @@
 
 const https = require('https');
 
-const GITHUB_TOKEN = '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';
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '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';
 const GITHUB_REPO  = 'kauserahemath67-hash/bdtv-tv-player';
 const GITHUB_BRANCH = 'data-storage';
 const GITHUB_CHANNELS_PATH  = 'data/channels.json';
