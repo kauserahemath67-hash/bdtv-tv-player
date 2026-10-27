@@ -106,9 +106,11 @@ class AdminDashboard {
       });
     });
 
-    // Quick scan button
-    document.getElementById('btn-quick-scan').addEventListener('click', () => this.runHealthScan());
-    document.getElementById('btn-run-health-scan').addEventListener('click', () => this.runHealthScan());
+    // Quick scan buttons
+    const btnQuickScan = document.getElementById('btn-quick-scan');
+    if (btnQuickScan) btnQuickScan.addEventListener('click', () => this.runHealthScan());
+    const btnRunHealthScan = document.getElementById('btn-run-health-scan');
+    if (btnRunHealthScan) btnRunHealthScan.addEventListener('click', () => this.runHealthScan());
   }
 
   // 3. Load All Data
@@ -128,9 +130,10 @@ class AdminDashboard {
   async loadChannels() {
     try {
       const res = await fetch('/api/channels');
+      if (!res.ok) return;
       const json = await res.json();
-      if (json.success) {
-        this.channels = json.data;
+      if (json && json.success) {
+        this.channels = json.data || [];
         this.renderChannelsTable();
       }
     } catch (e) {
@@ -500,13 +503,14 @@ class AdminDashboard {
   async loadPlaylists() {
     try {
       const res = await fetch('/api/playlists');
+      if (!res.ok) return;
       const json = await res.json();
-      if (json.success) {
+      if (json && json.success) {
         this.playlists = json.data || [];
         this.renderPlaylistsList();
       }
     } catch (e) {
-      console.error('loadPlaylists error:', e);
+      console.warn('loadPlaylists error:', e);
     }
   }
 
