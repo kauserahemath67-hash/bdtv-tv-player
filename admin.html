@@ -14,13 +14,16 @@
     <div class="login-box glass-card">
       <div class="login-icon">🛡️</div>
       <h2>BDTv অ্যাডমিন ড্যাশবোর্ড</h2>
-      <p>প্যানেলে প্রবেশ করতে আপনার সিক্রেট পিন দিন</p>
+      <p>প্যানেলে প্রবেশ করতে আপনার জিমেইল ও পাসওয়ার্ড দিন</p>
       <form id="admin-login-form">
         <div class="input-group">
-          <input type="password" id="admin-pin-input" placeholder="পিন নম্বর লিখুন (ডিফল্ট: 123456)" required autofocus>
+          <input type="email" id="admin-email-input" placeholder="আপনার জিমেইল / ইমেইল লিখুন" required autofocus style="margin-bottom: 12px;">
+        </div>
+        <div class="input-group">
+          <input type="password" id="admin-password-input" placeholder="পাসওয়ার্ড লিখুন" required>
         </div>
         <div id="login-error" class="login-error hidden"></div>
-        <button type="submit" class="btn-primary-admin full-btn">লগইন করুন</button>
+        <button type="submit" class="btn-primary-admin full-btn" style="margin-top: 14px;">লগইন করুন</button>
       </form>
     </div>
   </div>
@@ -323,8 +326,12 @@
 
             <h3>🔒 সিকিউরিটি সেটিংস</h3>
             <div class="form-group">
-              <label>অ্যাডমিন পিন পরিবর্তন করুন:</label>
-              <input type="text" id="setting-admin-pin" placeholder="নতুন পিন লিখুন">
+              <label>অ্যাডমিন জিমেইল / ইমেইল:</label>
+              <input type="email" id="setting-admin-email" placeholder="আপনার জিমেইল লিখুন">
+            </div>
+            <div class="form-group">
+              <label>অ্যাডমিন পাসওয়ার্ড (পরিবর্তন করতে চাইলে):</label>
+              <input type="password" id="setting-admin-password" placeholder="নতুন পাসওয়ার্ড লিখুন">
             </div>
 
             <button id="btn-save-settings" class="btn-primary-admin">সেটিংস সংরক্ষণ করুন</button>

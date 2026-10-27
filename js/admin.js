@@ -45,14 +45,15 @@ class AdminDashboard {
   bindLogin() {
     document.getElementById('admin-login-form').addEventListener('submit', async (e) => {
       e.preventDefault();
-      const pin = document.getElementById('admin-pin-input').value.trim();
+      const email = (document.getElementById('admin-email-input').value || '').trim();
+      const password = (document.getElementById('admin-password-input').value || '').trim();
       const errBox = document.getElementById('login-error');
 
       try {
         const res = await fetch('/api/auth', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ pin })
+          body: JSON.stringify({ email, password })
         });
         const data = await res.json();
         if (data.success && data.token) {
@@ -60,7 +61,7 @@ class AdminDashboard {
           localStorage.setItem('bdtv_admin_token', this.token);
           this.showDashboard();
         } else {
-          errBox.textContent = data.message || 'ভুল পিন!';
+          errBox.textContent = data.message || 'ভুল ইমেইল বা পাসওয়ার্ড!';
           errBox.classList.remove('hidden');
         }
       } catch (err) {
@@ -767,6 +768,11 @@ class AdminDashboard {
         document.getElementById('setting-notice-text').value = this.settings.notice_text || '';
         document.getElementById('setting-notice-active').checked = Boolean(this.settings.notice_active);
 
+        if (this.settings.admin_email) {
+          const emailInput = document.getElementById('setting-admin-email');
+          if (emailInput) emailInput.value = this.settings.admin_email;
+        }
+
         const ads = this.settings.ads || {};
         if (ads.top) {
           document.getElementById('ad-top-active').checked = Boolean(ads.top.active);
@@ -807,19 +813,34 @@ class AdminDashboard {
 
     // Save Settings
     document.getElementById('btn-save-settings').addEventListener('click', async () => {
-      const newPin = document.getElementById('setting-admin-pin').value.trim();
+      const email = (document.getElementById('setting-admin-email').value || '').trim();
+      const password = (document.getElementById('setting-admin-password').value || '').trim();
       const payload = {
         notice_text: document.getElementById('setting-notice-text').value.trim(),
         notice_active: document.getElementById('setting-notice-active').checked
       };
-      if (newPin) payload.admin_pin = newPin;
+      if (email) payload.admin_email = email;
+      if (password) {
+        payload.admin_password = password;
+        payload.admin_pin = password;
+      }
 
-      await fetch('/api/settings', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload)
-      });
-      alert('সেটিংস সফলভাবে সংরক্ষিত হয়েছে!');
+      try {
+        const res = await fetch('/api/settings', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const json = await res.json();
+        if (json.success) {
+          alert('জিমেইল ও পাসওয়ার্ড সফলভাবে সংরক্ষিত হয়েছে!');
+          document.getElementById('setting-admin-password').value = '';
+        } else {
+          alert('সেভ ব্যর্থ: ' + (json.error || json.message));
+        }
+      } catch (err) {
+        alert('সার্ভার এরর!');
+      }
     });
 
     // Save Ads

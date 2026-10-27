@@ -12,6 +12,7 @@ module.exports = async (req, res) => {
       const settings = await db.getSettings();
       const publicSettings = { ...settings };
       delete publicSettings.admin_pin;
+      delete publicSettings.admin_password;
       return res.status(200).json({ success: true, data: publicSettings });
     }
 

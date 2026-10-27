@@ -29,6 +29,8 @@ const defaultChannels = [
 
 const defaultSettings = {
   site_title: 'BDTv Live - Premium IPTV Web Player',
+  admin_email: 'kauserahemath67@gmail.com',
+  admin_password: 'admin',
   admin_pin: '123456',
   notice_text: 'স্বাগতম BDTv লাইভ প্লেয়ারে! যেকোনো টিভি চ্যানেল সহজে উপভোগ করুন।',
   notice_active: true,
