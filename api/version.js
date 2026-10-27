@@ -9,13 +9,13 @@ module.exports = async (req, res) => {
 
   try {
     if (req.method === 'GET') {
-      const version = db.getVersion();
+      const version = await db.getVersion();
       return res.status(200).json(version);
     }
 
     if (req.method === 'POST') {
       const body = req.body || {};
-      const updated = db.updateVersion({
+      const updated = await db.updateVersion({
         versionCode: Number(body.versionCode) || 100,
         versionName: body.versionName || '1.0.0',
         minSupportedVersion: Number(body.minSupportedVersion) || 100,

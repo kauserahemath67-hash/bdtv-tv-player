@@ -7,12 +7,13 @@
 
 const https = require('https');
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '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';
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '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';
 const GITHUB_REPO  = 'kauserahemath67-hash/bdtv-tv-player';
 const GITHUB_BRANCH = 'data-storage';
 const GITHUB_CHANNELS_PATH  = 'data/channels.json';
 const GITHUB_SETTINGS_PATH  = 'data/settings.json';
 const GITHUB_PLAYLISTS_PATH = 'data/playlists.json';
+const GITHUB_VERSION_PATH   = 'data/version.json';
 
 const CACHE_TTL_MS = 20000; // 20-second in-process cache (warm requests)
 
@@ -44,6 +45,7 @@ const defaultSettings = {
 let _channelCache   = { data: null, loadedAt: 0 };
 let _settingsCache  = { data: null, loadedAt: 0 };
 let _playlistsCache = { data: null, loadedAt: 0 };
+let _versionCache   = { data: null, loadedAt: 0 };
 
 function isCacheValid(cacheObj) {
   return cacheObj.data !== null && (Date.now() - cacheObj.loadedAt) < CACHE_TTL_MS;
@@ -51,6 +53,7 @@ function isCacheValid(cacheObj) {
 function invalidateChannelCache()   { _channelCache.loadedAt   = 0; }
 function invalidateSettingsCache()  { _settingsCache.loadedAt  = 0; }
 function invalidatePlaylistsCache() { _playlistsCache.loadedAt = 0; }
+function invalidateVersionCache()   { _versionCache.loadedAt   = 0; }
 
 // ── GitHub low-level helpers ──────────────────────────────
 function githubRequest(method, path, bodyObj) {
@@ -355,20 +358,46 @@ function resolveReport(id) {
   return false;
 }
 
-// Version (static)
-const VERSION = {
-  versionCode: 107, versionName: '2.2.0', minSupportedVersion: 100,
+// Version (GitHub-backed with fallback)
+const defaultVersion = {
+  versionCode: 108,
+  versionName: '2.3.0',
+  minSupportedVersion: 100,
   apkUrl: 'https://bdtv-app.vercel.app/BDTv.apk',
   updateTitle: 'নতুন আপডেট উপলব্ধ!',
   changelog: [
     'প্লেয়ারের পারফরম্যান্স বৃদ্ধি ও বাফারিং অপ্টিমাইজেশন',
-    'নতুন টিভি চ্যানেল ও লাইভ স্ট্রিম ফিক্স',
-    'ড্রয়ার ও রিমোট কন্ট্রোল বাগ ফিক্স'
+    'সাউন্ড ডিলে ও চ্যানেল সুইচ সম্পূর্ণ ফিক্স',
+    'অটো-প্লে এবং ইন-অ্যাপ আপডেট সিস্টেম সক্রিয়'
   ],
-  forceUpdate: false, updateMessage: ''
+  forceUpdate: false,
+  updateMessage: ''
 };
-function getVersion() { return { ...VERSION }; }
-function updateVersion(v) { Object.assign(VERSION, v, { updatedAt: new Date().toISOString() }); return { ...VERSION }; }
+
+async function getVersion() {
+  if (isCacheValid(_versionCache)) return { ..._versionCache.data };
+
+  const result = await ghFetch(GITHUB_VERSION_PATH);
+  if (result && result.data && typeof result.data === 'object') {
+    _versionCache.data = { ...defaultVersion, ...result.data };
+    _versionCache.loadedAt = Date.now();
+  } else {
+    return { ...defaultVersion };
+  }
+  return { ..._versionCache.data };
+}
+
+async function updateVersion(newVersion) {
+  invalidateVersionCache();
+  const current = await getVersion();
+  const merged = { ...current, ...newVersion, updatedAt: new Date().toISOString() };
+  const ok = await ghCommit(GITHUB_VERSION_PATH, merged, 'Update app version info');
+  if (ok) {
+    _versionCache.data = merged;
+    _versionCache.loadedAt = Date.now();
+  }
+  return merged;
+}
 
 // ── Exports ───────────────────────────────────────────────
 module.exports = {
