@@ -157,7 +157,17 @@ class IPTVPlayer {
 
       const installedVersion = Number(localStorage.getItem('bdtv_app_version') || '108');
       if (json.versionCode > installedVersion || json.forceUpdate) {
+        // আপডেট আছে — টপ বার বাটন দেখাও
+        const dlBtn = document.getElementById('btn-download-app');
+        if (dlBtn) {
+          dlBtn.href = json.apkUrl || '/BDTv.apk';
+          dlBtn.classList.remove('hidden');
+        }
         this.showUpdateModal(json);
+      } else {
+        // আপডেট নেই — বাটন লুকিয়ে রাখো
+        const dlBtn = document.getElementById('btn-download-app');
+        if (dlBtn) dlBtn.classList.add('hidden');
       }
     } catch (e) {}
   }
