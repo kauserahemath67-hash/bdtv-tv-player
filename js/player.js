@@ -693,21 +693,25 @@ class IPTVPlayer {
   bindTouchGestures() {
     let startY = 0;
     let endY = 0;
+    let touchStartedInsideDrawer = false;
 
     window.addEventListener('touchstart', (e) => {
       startY = e.touches[0].clientY;
+      // চ্যানেল drawer-এর ভেতরে touch শুরু হয়েছে কিনা ট্র্যাক করো
+      touchStartedInsideDrawer = !!e.target.closest('#channel-drawer');
     }, { passive: true });
 
     window.addEventListener('touchend', (e) => {
       endY = e.changedTouches[0].clientY;
       const diffY = startY - endY;
 
-      // Swipe Up: Open drawer
-      if (diffY > 60 && !this.isDrawerOpen) {
+      // Swipe Up: Open drawer (drawer-এর বাইরে থেকে)
+      if (diffY > 60 && !this.isDrawerOpen && !touchStartedInsideDrawer) {
         this.openDrawer();
       }
-      // Swipe Down: Close drawer
-      else if (diffY < -60 && this.isDrawerOpen) {
+      // Swipe Down: Close drawer — শুধুমাত্র drawer-এর বাইরে থেকে swipe করলে
+      // drawer-এর ভেতরে স্ক্রোল করলে কখনো close হবে না
+      else if (diffY < -60 && this.isDrawerOpen && !touchStartedInsideDrawer) {
         this.closeDrawer();
       }
     }, { passive: true });
