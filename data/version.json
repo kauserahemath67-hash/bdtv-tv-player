@@ -1,6 +1,6 @@
 {
-  "versionCode": 109,
-  "versionName": "2.3.1",
+  "versionCode": 108,
+  "versionName": "2.3.0",
   "minSupportedVersion": 100,
   "apkUrl": "https://bdtv-app.vercel.app/BDTv.apk",
   "updateTitle": "নতুন আপডেট উপলব্ধ!",
@@ -9,6 +9,6 @@
     "সরাসরি ইন-অ্যাপ আপডেট বাটন ও অটো-ডাউনলোড",
     "চ্যানেল ড্রয়ার ও প্লেয়ার পারফরম্যান্স অপ্টিমাইজেশন"
   ],
-  "forceUpdate": true,
-  "updatedAt": "2026-10-27T17:08:00.000Z"
+  "forceUpdate": false,
+  "updatedAt": "2026-10-27T17:43:00.000Z"
 }
