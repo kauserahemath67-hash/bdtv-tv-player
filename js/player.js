@@ -641,7 +641,7 @@ class IPTVPlayer {
     cards.forEach((card, idx) => {
       if (idx === this.focusedIndex) {
         card.classList.add('focused');
-        card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        card.scrollIntoView({ behavior: 'auto', block: 'nearest', inline: 'center' });
       } else {
         card.classList.remove('focused');
       }
@@ -701,6 +701,45 @@ class IPTVPlayer {
             this.focusedIndex = nextIndex;
             this.playChannel(nextIndex);
           }
+          break;
+
+        case 'ChannelUp':
+        case 'MediaTrackNext':
+          e.preventDefault();
+          {
+            const nextIndex = (this.currentIndex + 1) % this.filteredChannels.length;
+            this.focusedIndex = nextIndex;
+            this.playChannel(nextIndex);
+          }
+          break;
+
+        case 'ChannelDown':
+        case 'MediaTrackPrevious':
+          e.preventDefault();
+          {
+            const prevIndex = (this.currentIndex - 1 + this.filteredChannels.length) % this.filteredChannels.length;
+            this.focusedIndex = prevIndex;
+            this.playChannel(prevIndex);
+          }
+          break;
+
+        case 'Menu':
+        case 'Guide':
+          e.preventDefault();
+          this.toggleDrawer();
+          break;
+
+        case 'Info':
+          e.preventDefault();
+          if (this.filteredChannels[this.currentIndex]) {
+            this.flashHUD(this.filteredChannels[this.currentIndex]);
+          }
+          break;
+
+        case 'MediaPlayPause':
+          e.preventDefault();
+          if (this.video.paused) this.video.play();
+          else this.video.pause();
           break;
 
         case 'Enter':
