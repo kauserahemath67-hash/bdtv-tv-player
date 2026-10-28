@@ -800,19 +800,34 @@ class IPTVPlayer {
     });
 
     // PiP Button
-    document.getElementById('btn-pip').addEventListener('click', async () => {
-      try {
-        if (document.pictureInPictureElement) {
-          await document.exitPictureInPicture();
-        } else if (this.video !== document.pictureInPictureElement) {
+    const btnPip = document.getElementById('btn-pip');
+    if (btnPip) {
+      btnPip.addEventListener('click', async () => {
+        // Native Android Bridge PiP
+        const bridge = window.AndroidBridge || window.AndroidApp;
+        if (bridge && typeof bridge.enterPip === 'function') {
           this.closeDrawer();
           this.hud.classList.add('hidden');
-          await this.video.requestPictureInPicture();
+          bridge.enterPip();
+          return;
         }
-      } catch (err) {
-        alert('আপনার ব্রাউজারে পিকচার-ইন-পিকচার সাপোর্ট করে না।');
-      }
-    });
+
+        // Web HTML5 PiP fallback
+        try {
+          if (document.pictureInPictureElement) {
+            await document.exitPictureInPicture();
+          } else if (this.video && this.video !== document.pictureInPictureElement) {
+            this.closeDrawer();
+            this.hud.classList.add('hidden');
+            if (typeof this.video.requestPictureInPicture === 'function') {
+              await this.video.requestPictureInPicture();
+            }
+          }
+        } catch (err) {
+          console.warn('PiP error / not supported:', err);
+        }
+      });
+    }
 
     // Error Retry & Next Channel
     document.getElementById('btn-retry').addEventListener('click', () => {
@@ -840,7 +855,10 @@ class IPTVPlayer {
           localStorage.setItem('bdtv_cust_pin', pin);
           this.authModal.classList.add('hidden');
           if (errorDiv) errorDiv.classList.add('hidden');
-          alert('অভিনন্দন! আপনার ভিআইপি সাবস্ক্রিপশন সফলভাবে আনলক হয়েছে।');
+          const bridge = window.AndroidBridge || window.AndroidApp;
+          if (bridge && typeof bridge.showToast === 'function') {
+            bridge.showToast('অভিনন্দন! আপনার ভিআইপি সাবস্ক্রিপশন সফলভাবে আনলক হয়েছে।');
+          }
           await this.loadChannels();
         } else {
           errorDiv.textContent = json.message || 'ভুল কোড বা পিন নম্বর।';
