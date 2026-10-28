@@ -919,11 +919,11 @@ class IPTVPlayer {
       text-align: center; padding: 32px;
       font-family: 'Hind Siliguri', sans-serif;
     `;
-    overlay.innerHTML = \`
+    overlay.innerHTML = `
       <div style="font-size:64px; margin-bottom:20px;">🔒</div>
       <h2 style="color:#ff3b30; font-size:22px; margin:0 0 12px 0; font-weight:700;">সাবস্ক্রিপশন মেয়াদ শেষ</h2>
       <p style="color:#ccc; font-size:15px; margin:0 0 28px 0; max-width:320px; line-height:1.6;">
-        \${message || 'আপনার সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে।<br>অনুগ্রহ করে নবায়ন করুন।'}
+        ${message || 'আপনার সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে।<br>অনুগ্রহ করে নবায়ন করুন।'}
       </p>
       <button id="expiry-relogin-btn" style="
         background: linear-gradient(135deg,#e50914,#ff6b35);
@@ -931,7 +931,7 @@ class IPTVPlayer {
         border-radius:12px; font-size:16px; font-weight:700;
         cursor:pointer; font-family:inherit;
       ">🔄 লগইন করুন</button>
-    \`;
+    `;
     document.body.appendChild(overlay);
 
     document.getElementById('expiry-relogin-btn').onclick = () => {
