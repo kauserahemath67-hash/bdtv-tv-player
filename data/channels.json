@@ -880,56 +880,6 @@
     "order": 88
   },
   {
-    "name": "Somoy TV",
-    "logo": "https://assets-prod.services.toffeelive.com/Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/7.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-6",
-    "order": 89
-  },
-  {
-    "name": "Jamuna TV",
-    "logo": "https://assets-prod.services.toffeelive.com/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/8.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-7",
-    "order": 90
-  },
-  {
-    "name": "Ananda TV",
-    "logo": "https://assets-prod.services.toffeelive.com/wCM3l5sBEef-9-uVXFvD/posters/d80f7aee-5bd7-4edc-97eb-ead0e3ebbe09.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/9.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-8",
-    "order": 91
-  },
-  {
-    "name": "Bijoy TV",
-    "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
-    "category": "Action",
-    "url": "https://alixbd.com/playlistconfig/channel/10.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-9",
-    "order": 92
-  },
-  {
-    "name": "NTV",
-    "logo": "https://assets-prod.services.toffeelive.com/wHLVIJ4B7a1HdMSjaGLJ/posters/83b89557-3ae8-4ca8-8c5d-3c617359c738.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/11.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-10",
-    "order": 93
-  },
-  {
     "name": "Global TV",
     "logo": "https://assets-prod.services.toffeelive.com/0y_tDJsBNnOkwJLWNrdE/posters/2ff058e1-630f-4657-8dc6-b677e65642c5.png",
     "category": "Live Action",
@@ -937,7 +887,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-11",
-    "order": 94
+    "order": 89
   },
   {
     "name": "Channel S",
@@ -947,7 +897,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-12",
-    "order": 95
+    "order": 90
   },
   {
     "name": "Rajdhani TV",
@@ -957,7 +907,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-13",
-    "order": 96
+    "order": 91
   },
   {
     "name": "Bangla TV",
@@ -967,17 +917,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-14",
-    "order": 97
-  },
-  {
-    "name": "Asian TV",
-    "logo": "https://assets-prod.services.toffeelive.com/MyK__poBEef-9-uVmf5l/posters/1eadef5b-28e7-4dc2-b42f-c67a3357c9a0.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/16.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-15",
-    "order": 98
+    "order": 92
   },
   {
     "name": "Channel i",
@@ -987,17 +927,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-16",
-    "order": 99
-  },
-  {
-    "name": "Movie Bangla",
-    "logo": "https://assets-prod.services.toffeelive.com/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/18.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-17",
-    "order": 100
+    "order": 93
   },
   {
     "name": "Nexus TV",
@@ -1007,7 +937,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-18",
-    "order": 101
+    "order": 94
   },
   {
     "name": "Islamic TV",
@@ -1017,7 +947,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-19",
-    "order": 102
+    "order": 95
   },
   {
     "name": "Desh TV",
@@ -1027,17 +957,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-20",
-    "order": 103
-  },
-  {
-    "name": "Independent TV",
-    "logo": "https://assets-prod.services.toffeelive.com/ES_cZZsBNnOkwJLW1Oz1/posters/b872b8f5-cb6b-45a1-a1cd-7609df51d614.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/22.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-21",
-    "order": 104
+    "order": 96
   },
   {
     "name": "Ekhon TV",
@@ -1047,7 +967,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-22",
-    "order": 105
+    "order": 97
   },
   {
     "name": "Ekattor TV",
@@ -1057,7 +977,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-23",
-    "order": 106
+    "order": 98
   },
   {
     "name": "Channel News Asia",
@@ -1067,7 +987,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-24",
-    "order": 107
+    "order": 99
   },
   {
     "name": "TRT World",
@@ -1077,7 +997,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-25",
-    "order": 108
+    "order": 100
   },
   {
     "name": "DW",
@@ -1087,17 +1007,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-26",
-    "order": 109
-  },
-  {
-    "name": "Al Jazeera",
-    "logo": "https://assets-prod.services.toffeelive.com/S9bzFaEBalKyvLQIrh3b/posters/f400a8bc-d83c-40f8-93e8-206314ad332d.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/28.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-27",
-    "order": 110
+    "order": 101
   },
   {
     "name": "Russia Today",
@@ -1107,7 +1017,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-28",
-    "order": 111
+    "order": 102
   },
   {
     "name": "France 24",
@@ -1117,7 +1027,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-29",
-    "order": 112
+    "order": 103
   },
   {
     "name": "CGTN",
@@ -1127,7 +1037,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-30",
-    "order": 113
+    "order": 104
   },
   {
     "name": "Eurosport HD",
@@ -1137,7 +1047,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-31",
-    "order": 114
+    "order": 105
   },
   {
     "name": "Saudi Sunnah",
@@ -1147,7 +1057,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-32",
-    "order": 115
+    "order": 106
   },
   {
     "name": "Saudi Quran",
@@ -1157,7 +1067,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-33",
-    "order": 116
+    "order": 107
   },
   {
     "name": "Sony Ten Sports 1 HD",
@@ -1167,7 +1077,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-34",
-    "order": 117
+    "order": 108
   },
   {
     "name": "Sony Ten Sports 2 HD",
@@ -1177,7 +1087,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-35",
-    "order": 118
+    "order": 109
   },
   {
     "name": "Sony Ten Sports 5 HD",
@@ -1187,7 +1097,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-36",
-    "order": 119
+    "order": 110
   },
   {
     "name": "Sony Ten Cricket",
@@ -1197,7 +1107,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-37",
-    "order": 120
+    "order": 111
   },
   {
     "name": "Cartoon Network HD +",
@@ -1207,7 +1117,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-38",
-    "order": 121
+    "order": 112
   },
   {
     "name": "Cartoon Network",
@@ -1217,17 +1127,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-39",
-    "order": 122
-  },
-  {
-    "name": "POGO",
-    "logo": "https://assets-prod.services.toffeelive.com/ny6W-JQBv9knK3AHujXC/posters/7e7c2afe-a663-4c09-983a-2d0fa0f1ca9a.webp",
-    "category": "Teen",
-    "url": "https://alixbd.com/playlistconfig/channel/41.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-40",
-    "order": 123
+    "order": 113
   },
   {
     "name": "Discovery Kids",
@@ -1237,7 +1137,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-41",
-    "order": 124
+    "order": 114
   },
   {
     "name": "Sony YAY",
@@ -1247,17 +1147,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-42",
-    "order": 125
-  },
-  {
-    "name": "Zee Bangla",
-    "logo": "https://assets-prod.services.toffeelive.com/kK2aX5UBrjBfS2_RBcKf/posters/ba5dd8dc-4f87-414a-b57f-c9ecdeda5253.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/44.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-43",
-    "order": 126
+    "order": 115
   },
   {
     "name": "Zee Anmol",
@@ -1267,7 +1157,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-44",
-    "order": 127
+    "order": 116
   },
   {
     "name": "Zing",
@@ -1277,7 +1167,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-45",
-    "order": 128
+    "order": 117
   },
   {
     "name": "HUM",
@@ -1287,7 +1177,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-46",
-    "order": 129
+    "order": 118
   },
   {
     "name": "HUM Masala",
@@ -1297,7 +1187,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-47",
-    "order": 130
+    "order": 119
   },
   {
     "name": "HUM Sitaray",
@@ -1307,17 +1197,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-48",
-    "order": 131
-  },
-  {
-    "name": "Sony Aath",
-    "logo": "https://assets-prod.services.toffeelive.com/xi6xX5UBv9knK3AH9aMk/posters/f4db1c12-b10f-46e8-a09b-e0efb8820970.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/50.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-49",
-    "order": 132
+    "order": 120
   },
   {
     "name": "Sony Entertainment Television HD",
@@ -1327,7 +1207,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-50",
-    "order": 133
+    "order": 121
   },
   {
     "name": "Sony Entertainment Television",
@@ -1337,17 +1217,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-51",
-    "order": 134
-  },
-  {
-    "name": "B4U Music",
-    "logo": "https://assets-prod.services.toffeelive.com/PS6F-JQBv9knK3AHqjVz/posters/0f83ee72-be0f-4861-94df-30b158d3df8d.webp",
-    "category": "Musical",
-    "url": "https://alixbd.com/playlistconfig/channel/53.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-52",
-    "order": 135
+    "order": 122
   },
   {
     "name": "Sony SAB HD",
@@ -1357,7 +1227,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-53",
-    "order": 136
+    "order": 123
   },
   {
     "name": "Zee TV HD",
@@ -1367,7 +1237,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-54",
-    "order": 137
+    "order": 124
   },
   {
     "name": "Sony MAX HD",
@@ -1377,7 +1247,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-55",
-    "order": 138
+    "order": 125
   },
   {
     "name": "Zee Bangla Cinema",
@@ -1387,7 +1257,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-56",
-    "order": 139
+    "order": 126
   },
   {
     "name": "Zee Bollywood",
@@ -1397,7 +1267,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-57",
-    "order": 140
+    "order": 127
   },
   {
     "name": "Zee Action",
@@ -1407,17 +1277,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-58",
-    "order": 141
-  },
-  {
-    "name": "Sony MAX",
-    "logo": "https://assets-prod.services.toffeelive.com/Ay52-JQBv9knK3AHFDWt/posters/00afb30b-3c19-4c4c-abd8-891db94e4767.webp",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/60.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-59",
-    "order": 142
+    "order": 128
   },
   {
     "name": "Sony PIX HD",
@@ -1427,7 +1287,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-60",
-    "order": 143
+    "order": 129
   },
   {
     "name": "Zee Cafe",
@@ -1437,7 +1297,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-61",
-    "order": 144
+    "order": 130
   },
   {
     "name": "B4U Movies APAC",
@@ -1447,17 +1307,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-62",
-    "order": 145
-  },
-  {
-    "name": "Sony MAX 2",
-    "logo": "https://assets-prod.services.toffeelive.com/Ii5_-JQBv9knK3AHLDV3/posters/d961cc87-81b6-4b30-8414-8c0af2774818.webp",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/64.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-63",
-    "order": 146
+    "order": 131
   },
   {
     "name": "Zee Cinema HD",
@@ -1467,7 +1317,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-64",
-    "order": 147
+    "order": 132
   },
   {
     "name": "TLC HD",
@@ -1477,7 +1327,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-65",
-    "order": 148
+    "order": 133
   },
   {
     "name": "TLC",
@@ -1487,17 +1337,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-66",
-    "order": 149
-  },
-  {
-    "name": "Animal Planet",
-    "logo": "https://assets-prod.services.toffeelive.com/Ny61-JQBv9knK3AHgzZ7/posters/0909b36a-afd5-426a-93b3-4512800977db.webp",
-    "category": "Adventure",
-    "url": "https://alixbd.com/playlistconfig/channel/68.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-67",
-    "order": 150
+    "order": 134
   },
   {
     "name": "Animal Planet HD",
@@ -1507,7 +1347,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-68",
-    "order": 151
+    "order": 135
   },
   {
     "name": "Sony BBC Earth HD",
@@ -1517,7 +1357,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-69",
-    "order": 152
+    "order": 136
   },
   {
     "name": "Discovery HD",
@@ -1527,17 +1367,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-70",
-    "order": 153
-  },
-  {
-    "name": "Discovery",
-    "logo": "https://assets-prod.services.toffeelive.com/KS6x-JQBv9knK3AHwDZy/posters/6594d216-aaca-4eee-b6f5-bbc6b80feb15.webp",
-    "category": "Adventure",
-    "url": "https://alixbd.com/playlistconfig/channel/72.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793172838470-71",
-    "order": 154
+    "order": 137
   },
   {
     "name": "Discovery Science",
@@ -1547,7 +1377,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-72",
-    "order": 155
+    "order": 138
   },
   {
     "name": "Discovery Turbo",
@@ -1557,7 +1387,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-73",
-    "order": 156
+    "order": 139
   },
   {
     "name": "Investigation Discovery HD",
@@ -1567,7 +1397,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-74",
-    "order": 157
+    "order": 140
   },
   {
     "name": "&TV HD",
@@ -1577,7 +1407,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-75",
-    "order": 158
+    "order": 141
   },
   {
     "name": "& Pictures HD",
@@ -1587,7 +1417,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-76",
-    "order": 159
+    "order": 142
   },
   {
     "name": "w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png\" group-title=\"Live TV\",BFL | Live 5",
@@ -1597,6 +1427,6 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793172838470-77",
-    "order": 160
+    "order": 143
   }
 ]
