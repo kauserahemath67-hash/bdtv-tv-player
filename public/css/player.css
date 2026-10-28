@@ -74,7 +74,7 @@ html, body {
   font-weight: 600;
   box-shadow: 0 4px 16px rgba(0, 102, 255, 0.35);
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
 }
 
 .notice-icon {
@@ -160,9 +160,8 @@ video::-webkit-media-controls-overlay-play-button {
 }
 
 /* When notice bar is visible, push top bar down slightly */
-body:has(.notice-bar:not(.hidden)) #top-bar {
-  top: 32px;
-}
+/* Lock top-bar position permanently to prevent vertical jumping */
+#top-bar { top: 0 !important; }
 
 #top-bar.fade-out {
   opacity: 0;
@@ -252,7 +251,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   font-weight: 600;
   cursor: pointer;
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
@@ -285,7 +284,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   letter-spacing: 0.6px;
   cursor: pointer;
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
   transition: all 0.25s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
   display: inline-flex;
@@ -341,7 +340,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   border-radius: 40px;
   box-shadow: 0 8px 32px rgba(0, 102, 255, 0.5), 0 0 24px rgba(0, 210, 255, 0.35);
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
   color: #fff;
   cursor: pointer;
   user-select: none;
@@ -421,7 +420,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   background: var(--surface-glass);
   border: 1px solid var(--surface-border);
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
   padding: 12px 22px;
   border-radius: 18px;
   display: flex;
@@ -435,7 +434,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
 
 .channel-hud.hidden {
   opacity: 0;
-  transform: translateX(-50%) translateY(-35px);
+  transform: translateX(-50%);
   pointer-events: none;
 }
 
@@ -495,7 +494,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   background: linear-gradient(180deg, rgba(6, 8, 14, 0.5) 0%, rgba(6, 8, 14, 0.88) 20%, rgba(6, 8, 14, 0.98) 100%);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
   border-radius: 20px 20px 0 0;
   max-height: 60vh;
   display: flex;
@@ -627,7 +626,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
               background-color 0.2s ease;
   outline: none;
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
 }
 
 .channel-card:hover {
@@ -714,7 +713,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   background: rgba(0, 0, 0, 0.72);
   z-index: 40;
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
   padding: 20px;
 }
 
@@ -747,7 +746,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   background: var(--surface-glass);
   border: 1px solid var(--surface-border);
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
   border-radius: 20px;
   padding: 24px;
   box-shadow: 0 18px 48px rgba(0,0,0,0.75);
@@ -852,7 +851,7 @@ body:has(.notice-bar:not(.hidden)) #top-bar {
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(0, 210, 255, 0.18);
   padding: 24px 28px;
   /* backdrop-filter optimized */
-  -webkit-/* backdrop-filter optimized */
+  
   animation: updateSlideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   color: #ffffff;
 }
