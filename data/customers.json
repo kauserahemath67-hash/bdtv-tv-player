@@ -21,7 +21,7 @@
     "id": "cust-101",
     "customer_code": "kauser",
     "name": "VIP Subscriber",
-    "login_pin": "123",
+    "login_pin": "12345",
     "account_status": "ACTIVE",
     "manual_block": false,
     "block_reason": "",
@@ -32,6 +32,6 @@
     "expires_at": "2026-11-28",
     "payment_status": "PAID",
     "transaction_reference": "",
-    "updatedAt": "2026-10-28T13:17:37.805Z"
+    "updatedAt": "2026-10-28T15:41:00.052Z"
   }
 ]
