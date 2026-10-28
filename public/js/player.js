@@ -352,21 +352,25 @@ class IPTVPlayer {
 
     this.hls = new Hls({
       enableWorker: true,
-      lowLatencyMode: false,          // Avoid micro-buffer stalls on standard CDN streams!
-      backBufferLength: 10,           // Don't waste RAM caching past 10s on TV/mobile
-      maxBufferLength: 20,            // Buffer 20 seconds ahead
-      maxMaxBufferLength: 40,         // Up to 40 seconds max
-      maxBufferSize: 30 * 1024 * 1024,// 30 MB buffer limit
-      liveSyncDurationCount: 4,       // 4 segments live sync for maximum buffer stability
-      liveMaxLatencyDurationCount: 8, // Allow up to 8 segments without forced skipping
-      maxBufferHole: 0.5,             // Jump across any 0.5s gaps seamlessly without freezing
+      lowLatencyMode: false,
+      backBufferLength: 15,
+      maxBufferLength: 30,             // 30s buffer ahead for rock-solid smooth stream
+      maxMaxBufferLength: 60,          // Up to 60s max buffer
+      maxBufferSize: 60 * 1024 * 1024, // 60 MB buffer
+      liveSyncDurationCount: 5,        // 5 segments back from edge to avoid rate-limit drops
+      liveMaxLatencyDurationCount: 10, // Tolerance for network slowdowns
+      maxBufferHole: 0.8,              // Automatically jump over audio/video holes up to 0.8s
       highBufferWatchdogPeriod: 2,
-      nudgeOffset: 0.2,
-      nudgeMaxRetry: 5,
-      fragLoadingTimeOut: 20000,      // 20s fragment timeout
-      manifestLoadingTimeOut: 15000,
-      startFragPrefetch: true,        // Prefetch first fragment for instant start!
-      capLevelToPlayerSize: true
+      nudgeOffset: 0.3,
+      nudgeMaxRetry: 10,               // Auto un-stall video & audio
+      fragLoadingTimeOut: 30000,
+      manifestLoadingTimeOut: 20000,
+      fragLoadingMaxRetry: 6,
+      manifestLoadingMaxRetry: 6,
+      levelLoadingMaxRetry: 6,
+      startFragPrefetch: true,
+      capLevelToPlayerSize: true,
+      autoStartLoad: true
     });
 
     this.hls.attachMedia(this.video);
@@ -381,26 +385,54 @@ class IPTVPlayer {
       this.showBuffering(false);
     });
 
-    // Activate first audio track if not active
+    // Activate and ensure audio track is bound
     this.hls.on(Hls.Events.AUDIO_TRACKS_UPDATED, (event, data) => {
       if (data && data.audioTracks && data.audioTracks.length > 0) {
-        if (this.hls.audioTrack === -1) {
+        if (this.hls.audioTrack === -1 || this.hls.audioTrack === undefined) {
           this.hls.audioTrack = 0;
         }
       }
     });
+
+    this.hls.on(Hls.Events.AUDIO_TRACK_LOADED, (event, data) => {
+      // Un-mute if user already unmuted
+      if (this.isUserUnmuted && this.video.muted) {
+        this.video.muted = false;
+      }
+    });
+
+    let mediaRecoveryCount = 0;
+    let networkRecoveryCount = 0;
 
     this.hls.on(Hls.Events.ERROR, (event, data) => {
       console.warn('HLS Event Error:', data);
       if (data.fatal) {
         switch (data.type) {
           case Hls.ErrorTypes.NETWORK_ERROR:
-            console.log('HLS Network error, attempting recovery...');
-            this.hls.startLoad();
+            networkRecoveryCount++;
+            console.log(`HLS Network error (${networkRecoveryCount}), retrying stream connection...`);
+            if (networkRecoveryCount <= 5) {
+              this.hls.startLoad();
+            } else {
+              // Destroy and cleanly re-attach
+              setTimeout(() => {
+                networkRecoveryCount = 0;
+                if (this.filteredChannels[this.currentIndex]) {
+                  this.playChannel(this.currentIndex);
+                }
+              }, 2000);
+            }
             break;
           case Hls.ErrorTypes.MEDIA_ERROR:
-            console.log('HLS Media error, attempting recovery...');
-            this.hls.recoverMediaError();
+            mediaRecoveryCount++;
+            console.log(`HLS Media error (${mediaRecoveryCount}), auto-recovering audio/video decoders...`);
+            if (mediaRecoveryCount <= 3) {
+              this.hls.recoverMediaError();
+            } else {
+              this.hls.swapAudioCodec();
+              this.hls.recoverMediaError();
+              mediaRecoveryCount = 0;
+            }
             break;
           default:
             this.showError('লাইভ সম্প্রচার লোড করা সম্ভব হয়নি।');
