@@ -10,22 +10,31 @@ module.exports = async (req, res) => {
   try {
     if (req.method === 'GET') {
       const { customer_id } = req.query || {};
-      const devices = db.getDevices(customer_id);
+      const devices = await db.getDevices(customer_id);
       return res.status(200).json({ success: true, count: devices.length, data: devices });
     }
 
     if (req.method === 'POST') {
-      const { customer_id, fingerprint, device_name, os, browser } = req.body || {};
-      if (!customer_id || !fingerprint) {
-        return res.status(400).json({ success: false, message: 'Customer ID ও Device Fingerprint আবশ্যক।' });
+      const { customer_id, customer_code, fingerprint, device_name, os, browser } = req.body || {};
+      if ((!customer_id && !customer_code) || !fingerprint) {
+        return res.status(400).json({ success: false, message: 'গ্রাহক তথ্য ও ডিভাইস ফিঙ্গারপ্রিন্ট আবশ্যক।' });
       }
 
-      const result = db.registerDevice({
+      const clientIp = (
+        req.headers['x-forwarded-for'] ||
+        req.headers['x-real-ip'] ||
+        req.socket.remoteAddress ||
+        '127.0.0.1'
+      ).split(',')[0].trim();
+
+      const result = await db.registerOrValidateDevice({
         customer_id,
+        customer_code,
         fingerprint,
         device_name,
         os,
-        browser
+        browser,
+        ip: clientIp
       });
 
       return res.status(result.allowed ? 200 : 403).json({
@@ -39,7 +48,10 @@ module.exports = async (req, res) => {
       const { device_id } = req.query || req.body || {};
       if (!device_id) return res.status(400).json({ success: false, message: 'Device ID আবশ্যক।' });
 
-      const revoked = db.revokeDevice(device_id);
+      const revoked = await db.revokeDevice(device_id);
+      if (!revoked) {
+        return res.status(404).json({ success: false, message: 'ডিভাইস পাওয়া যায়নি।' });
+      }
       return res.status(200).json({ success: true, message: 'ডিভাইস অ্যাক্সেস বাতিল করা হয়েছে।', device: revoked });
     }
 

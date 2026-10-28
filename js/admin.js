@@ -999,7 +999,7 @@ class AdminDashboard {
       const isActive = d.status === 'ACTIVE';
 
       tr.innerHTML = `
-        <td>${d.customer_id}</td>
+        <td>${d.customer_code || d.customer_id}</td>
         <td><strong>${d.device_name}</strong></td>
         <td>${d.os} / ${d.browser}</td>
         <td><code>${d.fingerprint.substring(0, 10)}...</code></td>

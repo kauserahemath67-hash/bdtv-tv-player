@@ -125,6 +125,38 @@ class IPTVPlayer {
     }
   }
 
+  getDeviceId() {
+    let devId = localStorage.getItem('bdtv_device_id');
+    if (!devId) {
+      devId = 'dev-' + Math.random().toString(36).substring(2, 10) + '-' + Date.now().toString(36);
+      localStorage.setItem('bdtv_device_id', devId);
+    }
+    return devId;
+  }
+
+  getDeviceInfo() {
+    const ua = navigator.userAgent || '';
+    let os = 'Unknown OS';
+    if (/Android/i.test(ua)) os = 'Android';
+    else if (/iPhone|iPad|iPod/i.test(ua)) os = 'iOS';
+    else if (/Windows/i.test(ua)) os = 'Windows';
+    else if (/Macintosh|Mac OS/i.test(ua)) os = 'macOS';
+    else if (/Linux/i.test(ua)) os = 'Linux';
+
+    let browser = 'Unknown Browser';
+    if (/Chrome|CriOS/i.test(ua) && !/Edge|OPR/i.test(ua)) browser = 'Chrome';
+    else if (/Safari/i.test(ua) && !/Chrome/i.test(ua)) browser = 'Safari';
+    else if (/Firefox/i.test(ua)) browser = 'Firefox';
+    else if (/Edge/i.test(ua)) browser = 'Edge';
+
+    return {
+      deviceId: this.getDeviceId(),
+      deviceName: `${os} (${browser})`,
+      os: os,
+      browser: browser
+    };
+  }
+
   checkSubscriptionAccess() {
     const custCode = localStorage.getItem('bdtv_cust_code');
     const custPin  = localStorage.getItem('bdtv_cust_pin');
@@ -226,7 +258,8 @@ class IPTVPlayer {
     }
 
     try {
-      const url = `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}`;
+      const devInfo = this.getDeviceInfo();
+      const url = `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}&device_id=${encodeURIComponent(devInfo.deviceId)}`;
       const res = await fetch(url);
       const json = await res.json();
 
@@ -854,6 +887,30 @@ class IPTVPlayer {
         const res = await fetch(`/api/customers?code=${encodeURIComponent(code)}&pin=${encodeURIComponent(pin)}`);
         const json = await res.json();
         if (json.success) {
+          const cust = json.data;
+          const devInfo = this.getDeviceInfo();
+
+          // Validate device limit with server
+          const devRes = await fetch('/api/devices', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              customer_id: cust.id,
+              customer_code: cust.customer_code,
+              fingerprint: devInfo.deviceId,
+              device_name: devInfo.deviceName,
+              os: devInfo.os,
+              browser: devInfo.browser
+            })
+          });
+          const devJson = await devRes.json();
+
+          if (!devJson.success) {
+            errorDiv.textContent = devJson.message || `সর্বোচ্চ ডিভাইস সীমা (${cust.max_devices || 2} টি) পূরণ হয়ে গেছে! এই ডিভাইসে চালানো যাবে না।`;
+            errorDiv.classList.remove('hidden');
+            return;
+          }
+
           localStorage.setItem('bdtv_cust_code', code);
           localStorage.setItem('bdtv_cust_pin', pin);
           this.authModal.classList.add('hidden');
@@ -884,7 +941,7 @@ class IPTVPlayer {
     }
     try {
       const res = await fetch(
-        `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}&_ts=${Date.now()}`,
+        `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}&device_id=${encodeURIComponent(this.getDeviceId())}&_ts=${Date.now()}`,
         { cache: 'no-store' }
       );
       const json = await res.json();

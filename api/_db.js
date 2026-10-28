@@ -15,6 +15,7 @@ const GITHUB_SETTINGS_PATH  = 'data/settings.json';
 const GITHUB_PLAYLISTS_PATH = 'data/playlists.json';
 const GITHUB_VERSION_PATH   = 'data/version.json';
 const GITHUB_CUSTOMERS_PATH = 'data/customers.json';
+const GITHUB_DEVICES_PATH   = 'data/devices.json';
 
 const CACHE_TTL_MS = 20000; // 20-second in-process cache (warm requests)
 
@@ -48,6 +49,7 @@ let _settingsCache  = { data: null, loadedAt: 0 };
 let _playlistsCache = { data: null, loadedAt: 0 };
 let _versionCache   = { data: null, loadedAt: 0 };
 let _customersCache = { data: null, loadedAt: 0 };
+let _devicesCache   = { data: null, loadedAt: 0 };
 
 function isCacheValid(cacheObj) {
   return cacheObj.data !== null && (Date.now() - cacheObj.loadedAt) < CACHE_TTL_MS;
@@ -57,6 +59,7 @@ function invalidateSettingsCache()  { _settingsCache.loadedAt  = 0; }
 function invalidatePlaylistsCache() { _playlistsCache.loadedAt = 0; }
 function invalidateVersionCache()   { _versionCache.loadedAt   = 0; }
 function invalidateCustomersCache() { _customersCache.loadedAt = 0; }
+function invalidateDevicesCache()   { _devicesCache.loadedAt   = 0; }
 
 // ── GitHub low-level helpers ──────────────────────────────
 function githubRequest(method, path, bodyObj) {
@@ -488,14 +491,135 @@ function getActiveConnections() {
 }
 
 // ── Devices & Reports ─────────────────────────────────────
-let _devices = [];
 let _reports = [];
 
-function getDevices() { return [..._devices]; }
-function saveDevice(d) {
-  const i = _devices.findIndex(x => x.id === d.id);
-  if (i >= 0) _devices[i] = { ..._devices[i], ...d }; else _devices.push(d);
-  return d;
+async function getDevices(customerId = null) {
+  if (isCacheValid(_devicesCache)) {
+    const list = [..._devicesCache.data];
+    return customerId ? list.filter(d => d.customer_id === customerId) : list;
+  }
+
+  const result = await ghFetch(GITHUB_DEVICES_PATH);
+  if (result && Array.isArray(result.data)) {
+    _devicesCache.data = result.data;
+    _devicesCache.loadedAt = Date.now();
+  } else {
+    _devicesCache.data = [];
+    _devicesCache.loadedAt = Date.now();
+  }
+  const list = [..._devicesCache.data];
+  return customerId ? list.filter(d => d.customer_id === customerId) : list;
+}
+
+async function registerOrValidateDevice({ customer_id, customer_code, fingerprint, device_name, os, browser, ip }) {
+  if (!fingerprint) {
+    return { allowed: false, message: 'ডিভাইস ফিঙ্গারপ্রিন্ট পাওয়া যায়নি।' };
+  }
+
+  // 1. Get customer
+  let cust = null;
+  if (customer_id) {
+    const customers = await getCustomers();
+    cust = customers.find(c => c.id === customer_id);
+  } else if (customer_code) {
+    const customers = await getCustomers();
+    cust = customers.find(c => c.customer_code && c.customer_code.toLowerCase() === String(customer_code).trim().toLowerCase());
+  }
+
+  if (!cust) {
+    return { allowed: false, message: 'গ্রাহক অ্যাকাউন্ট পাওয়া যায়নি।' };
+  }
+
+  if (cust.manual_block || cust.account_status !== 'ACTIVE') {
+    return { allowed: false, message: `অ্যাকাউন্ট স্থগিত: ${cust.block_reason || 'অ্যাডমিন দ্বারা সাময়িক স্থগিত'}` };
+  }
+
+  if (cust.expires_at && new Date(cust.expires_at) < new Date()) {
+    return { allowed: false, message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। অনুগ্রহ করে নবায়ন করুন।' };
+  }
+
+  const maxAllowed = Number(cust.max_devices) || 2;
+
+  // 2. Load all devices
+  const allDevices = await getDevices();
+  const customerDevices = allDevices.filter(d => d.customer_id === cust.id || (cust.customer_code && d.customer_code === cust.customer_code));
+
+  // Check if this fingerprint already exists for this customer
+  const existingIndex = allDevices.findIndex(d => 
+    (d.customer_id === cust.id || (cust.customer_code && d.customer_code === cust.customer_code)) &&
+    d.fingerprint === fingerprint
+  );
+
+  const now = new Date().toISOString();
+
+  if (existingIndex >= 0) {
+    // Already registered device
+    const dev = allDevices[existingIndex];
+    if (dev.status === 'BLOCKED') {
+      return { allowed: false, message: 'এই ডিভাইসটি অ্যাডমিন দ্বারা ব্লক করা হয়েছে।' };
+    }
+    // Update last_active and details
+    allDevices[existingIndex] = {
+      ...dev,
+      device_name: device_name || dev.device_name || 'Device',
+      os: os || dev.os || 'Unknown',
+      browser: browser || dev.browser || 'Unknown',
+      ip: ip || dev.ip || '127.0.0.1',
+      last_active: now,
+      status: 'ACTIVE'
+    };
+    await ghCommit(GITHUB_DEVICES_PATH, allDevices, `Update device ping: ${fingerprint}`);
+    _devicesCache.data = allDevices;
+    _devicesCache.loadedAt = Date.now();
+    return { allowed: true, message: 'ডিভাইস অনুমোদিত।', device: allDevices[existingIndex] };
+  }
+
+  // New device trying to register - check limit
+  const activeCount = customerDevices.filter(d => d.status === 'ACTIVE').length;
+  if (activeCount >= maxAllowed) {
+    return {
+      allowed: false,
+      message: `সর্বোচ্চ অনুমোদিত ডিভাইস সীমা (${maxAllowed} টি) অতিক্রম করেছে! এই ডিভাইসে চালানো সম্ভব নয়।`
+    };
+  }
+
+  // Register new device
+  const newDev = {
+    id: 'dev-' + Date.now() + '-' + Math.random().toString(36).substr(2, 4),
+    customer_id: cust.id,
+    customer_code: cust.customer_code,
+    fingerprint: fingerprint,
+    device_name: device_name || 'New Device',
+    os: os || 'Unknown',
+    browser: browser || 'Unknown',
+    ip: ip || '127.0.0.1',
+    status: 'ACTIVE',
+    registered_at: now,
+    last_active: now
+  };
+
+  allDevices.push(newDev);
+  invalidateDevicesCache();
+  await ghCommit(GITHUB_DEVICES_PATH, allDevices, `Register new device for ${cust.customer_code}: ${fingerprint}`);
+  _devicesCache.data = allDevices;
+  _devicesCache.loadedAt = Date.now();
+
+  return { allowed: true, message: 'নতুন ডিভাইস সফলভাবে যুক্ত হয়েছে।', device: newDev };
+}
+
+async function revokeDevice(deviceId) {
+  const allDevices = await getDevices();
+  const i = allDevices.findIndex(d => d.id === deviceId);
+  if (i >= 0) {
+    allDevices[i].status = 'BLOCKED';
+    allDevices[i].blocked_at = new Date().toISOString();
+    invalidateDevicesCache();
+    await ghCommit(GITHUB_DEVICES_PATH, allDevices, `Revoke device: ${deviceId}`);
+    _devicesCache.data = allDevices;
+    _devicesCache.loadedAt = Date.now();
+    return allDevices[i];
+  }
+  return null;
 }
 function getReports() { return [..._reports]; }
 function addReport(r) {
@@ -586,9 +710,10 @@ module.exports = {
   logActivity,
   getActiveConnections,
 
-  // In-memory
+  // Devices (GitHub-persisted)
   getDevices,
-  saveDevice,
+  registerOrValidateDevice,
+  revokeDevice,
   getReports,
   addReport,
   resolveReport

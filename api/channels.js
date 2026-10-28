@@ -39,8 +39,38 @@ module.exports = async (req, res) => {
           return res.status(403).json({
             success: false,
             vip_locked: true,
-            message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। অনুগ্রহ করে নবায়ন করুন।'
+            message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। অনুগ্রহ করে নবায়ন করুন।'
           });
+        }
+
+        // Strict Device Limit Enforcement
+        const deviceFp = req.query.device_id || req.headers['x-device-fingerprint'] || req.headers['x-device-id'];
+        if (deviceFp) {
+          const clientIp = (
+            req.headers['x-forwarded-for'] ||
+            req.headers['x-real-ip'] ||
+            req.socket.remoteAddress ||
+            '127.0.0.1'
+          ).split(',')[0].trim();
+
+          const devValidation = await db.registerOrValidateDevice({
+            customer_id: customer.id,
+            customer_code: customer.customer_code,
+            fingerprint: deviceFp,
+            device_name: req.headers['x-device-name'] || 'App Player',
+            os: req.headers['x-device-os'] || 'Android / TV',
+            browser: req.headers['x-device-browser'] || 'Webview',
+            ip: clientIp
+          });
+
+          if (!devValidation.allowed) {
+            return res.status(403).json({
+              success: false,
+              vip_locked: true,
+              device_blocked: true,
+              message: devValidation.message || `সর্বোচ্চ ডিভাইস সীমা (${customer.max_devices || 2} টি) অতিক্রম করেছে!`
+            });
+          }
         }
       }
 
