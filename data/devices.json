@@ -24,5 +24,18 @@
     "status": "ACTIVE",
     "registered_at": "2026-10-28T15:44:46.037Z",
     "last_active": "2026-10-28T15:44:55.924Z"
+  },
+  {
+    "id": "dev-1793202389968-gkq5",
+    "customer_id": "cust-101",
+    "customer_code": "kauser",
+    "fingerprint": "dev-yl03pufr-mvs94s0v",
+    "device_name": "Linux (Chrome)",
+    "os": "Linux",
+    "browser": "Chrome",
+    "ip": "103.200.37.206",
+    "status": "ACTIVE",
+    "registered_at": "2026-10-28T15:46:29.968Z",
+    "last_active": "2026-10-28T15:46:29.968Z"
   }
 ]
