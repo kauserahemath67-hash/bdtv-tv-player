@@ -4,12 +4,12 @@
     "customer_id": "cust-101",
     "customer_code": "kauser",
     "fingerprint": "dev-r1t7qvz5-mvsa62s4",
-    "device_name": "macOS (Chrome)",
-    "os": "macOS",
-    "browser": "Chrome",
+    "device_name": "App Player",
+    "os": "Android / TV",
+    "browser": "Webview",
     "ip": "103.200.37.206",
     "status": "ACTIVE",
     "registered_at": "2026-10-28T15:40:26.310Z",
-    "last_active": "2026-10-28T15:44:21.719Z"
+    "last_active": "2026-10-28T15:44:23.041Z"
   }
 ]
