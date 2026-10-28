@@ -70,6 +70,9 @@ class IPTVPlayer {
 
     // Real-time activity heartbeat every 25 seconds
     setInterval(() => this.sendHeartbeat(), 25000);
+
+    // Subscription expiry watcher — check every 3 minutes during playback
+    setInterval(() => this.checkSubscriptionLive(), 3 * 60 * 1000);
   }
 
   // 1. Load Settings (Notice, Ads, Subscription switch)
@@ -869,6 +872,74 @@ class IPTVPlayer {
         errorDiv.classList.remove('hidden');
       }
     });
+  }
+
+  async checkSubscriptionLive() {
+    if (!this.settings || !this.settings.subscription_restrictions_enabled) return;
+    const custCode = localStorage.getItem('bdtv_cust_code');
+    const custPin  = localStorage.getItem('bdtv_cust_pin');
+    if (!custCode || !custPin) {
+      this.showVipLockModal();
+      return;
+    }
+    try {
+      const res = await fetch(
+        `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}&_ts=${Date.now()}`,
+        { cache: 'no-store' }
+      );
+      const json = await res.json();
+      if (json.vip_locked) {
+        // Stop playback immediately
+        if (this.hls) {
+          try { this.hls.stopLoad(); this.hls.destroy(); } catch {}
+          this.hls = null;
+        }
+        this.video.pause();
+        this.video.src = '';
+        this.showExpiryLockScreen(json.message);
+      }
+    } catch (e) {
+      // Network error — do NOT lock (give benefit of doubt)
+      console.warn('Subscription check failed (network):', e);
+    }
+  }
+
+  showExpiryLockScreen(message) {
+    // Remove existing overlay if any
+    const existing = document.getElementById('expiry-lock-overlay');
+    if (existing) existing.remove();
+
+    const overlay = document.createElement('div');
+    overlay.id = 'expiry-lock-overlay';
+    overlay.style.cssText = `
+      position: fixed; inset: 0; z-index: 99999;
+      background: rgba(0,0,0,0.96);
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; padding: 32px;
+      font-family: 'Hind Siliguri', sans-serif;
+    `;
+    overlay.innerHTML = \`
+      <div style="font-size:64px; margin-bottom:20px;">🔒</div>
+      <h2 style="color:#ff3b30; font-size:22px; margin:0 0 12px 0; font-weight:700;">সাবস্ক্রিপশন মেয়াদ শেষ</h2>
+      <p style="color:#ccc; font-size:15px; margin:0 0 28px 0; max-width:320px; line-height:1.6;">
+        \${message || 'আপনার সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে।<br>অনুগ্রহ করে নবায়ন করুন।'}
+      </p>
+      <button id="expiry-relogin-btn" style="
+        background: linear-gradient(135deg,#e50914,#ff6b35);
+        color:#fff; border:none; padding:14px 32px;
+        border-radius:12px; font-size:16px; font-weight:700;
+        cursor:pointer; font-family:inherit;
+      ">🔄 লগইন করুন</button>
+    \`;
+    document.body.appendChild(overlay);
+
+    document.getElementById('expiry-relogin-btn').onclick = () => {
+      localStorage.removeItem('bdtv_cust_code');
+      localStorage.removeItem('bdtv_cust_pin');
+      overlay.remove();
+      this.showVipLockModal(message || 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে।');
+    };
   }
 
   sendHeartbeat() {
