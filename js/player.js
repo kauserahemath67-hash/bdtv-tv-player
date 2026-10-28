@@ -594,7 +594,7 @@ class IPTVPlayer {
     clearTimeout(this.hudTimeout);
     this.hudTimeout = setTimeout(() => {
       this.hud.classList.add('hidden');
-    }, 2500);
+    }, 1800);
   }
 
   // 7. Auto-hide Top Bar
@@ -638,10 +638,19 @@ class IPTVPlayer {
 
   updateCardFocus() {
     const cards = this.channelGrid.querySelectorAll('.channel-card');
+    const drawerViewport = this.channelGrid.closest('.drawer-inner');
     cards.forEach((card, idx) => {
       if (idx === this.focusedIndex) {
         card.classList.add('focused');
-        card.scrollIntoView({ behavior: 'auto', block: 'nearest', inline: 'center' });
+        if (drawerViewport) {
+          const cardBounds = card.getBoundingClientRect();
+          const viewportBounds = drawerViewport.getBoundingClientRect();
+          if (cardBounds.top < viewportBounds.top) {
+            drawerViewport.scrollTop -= viewportBounds.top - cardBounds.top;
+          } else if (cardBounds.bottom > viewportBounds.bottom) {
+            drawerViewport.scrollTop += cardBounds.bottom - viewportBounds.bottom;
+          }
+        }
       } else {
         card.classList.remove('focused');
       }

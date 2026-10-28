@@ -44,14 +44,21 @@
 }
 
 html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: fixed;
-  background-color: var(--bg-dark);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  background-color: #000;
   color: var(--text-main);
   font-family: var(--font-family);
   touch-action: manipulation;
+  overscroll-behavior: none;
 }
 
 /* ---------------------------------------------------------
@@ -104,16 +111,14 @@ html, body {
    2. Video Player & Locked Fullscreen Wrapper
    --------------------------------------------------------- */
 #video-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #000;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-  -webkit-transform: translate3d(0, 0, 0);
-  will-change: transform;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: #000 !important;
+  overflow: hidden !important;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -413,29 +418,29 @@ video::-webkit-media-controls-overlay-play-button {
    4. TV Channel Switch Banner / HUD
    --------------------------------------------------------- */
 .channel-hud {
-  position: absolute;
-  top: max(32px, calc(var(--safe-top) + 20px));
-  left: 50%;
-  transform: translateX(-50%) translate3d(0, 0, 0);
-  background: var(--surface-glass);
-  border: 1px solid var(--surface-border);
-  /* backdrop-filter optimized */
-  
-  padding: 12px 22px;
-  border-radius: 18px;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  box-shadow: 0 12px 36px rgba(0,0,0,0.7);
-  z-index: 60;
-  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-  max-width: 90vw;
+  position: fixed !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background: rgba(10, 15, 30, 0.92) !important;
+  border: 1.5px solid rgba(0, 229, 255, 0.4) !important;
+  padding: 16px 28px !important;
+  border-radius: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 16px !important;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.85), 0 0 20px rgba(0, 102, 255, 0.3) !important;
+  z-index: 9999 !important;
+  transition: opacity 0.3s ease, visibility 0.3s ease !important;
+  max-width: 85vw !important;
+  pointer-events: none !important;
 }
 
 .channel-hud.hidden {
-  opacity: 0;
-  transform: translateX(-50%);
-  pointer-events: none;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 .hud-logo {
@@ -481,28 +486,26 @@ video::-webkit-media-controls-overlay-play-button {
    5. Floating Glassmorphism Channel Drawer (Auto-Hiding)
    --------------------------------------------------------- */
 #channel-drawer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 70;
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 100 !important;
   transform: translateY(100%);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease, visibility 0.35s;
-  background: linear-gradient(180deg, rgba(6, 8, 14, 0.5) 0%, rgba(6, 8, 14, 0.88) 20%, rgba(6, 8, 14, 0.98) 100%);
-  border-top: 1px solid rgba(255, 255, 255, 0.12);
-  /* backdrop-filter optimized */
-  
-  border-radius: 20px 20px 0 0;
-  max-height: 60vh;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
+  background: linear-gradient(180deg, rgba(8, 12, 24, 0.85) 0%, rgba(6, 8, 16, 0.98) 25%, #05070d 100%);
+  border-top: 1.5px solid rgba(56, 189, 248, 0.25);
+  border-radius: 24px 24px 0 0;
+  max-height: 52vh;
   display: flex;
   flex-direction: column;
   padding-bottom: var(--safe-bottom);
   box-shadow: none;
-  overscroll-behavior: contain;
-  touch-action: pan-y;
+  overscroll-behavior: none !important;
+  touch-action: auto;
 }
 
 #channel-drawer.open {
@@ -551,7 +554,7 @@ video::-webkit-media-controls-overlay-play-button {
   flex: 1;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
-  touch-action: pan-y;
+  touch-action: auto;
 }
 
 /* ---------------------------------------------------------
@@ -1128,7 +1131,7 @@ video::-webkit-media-controls-overlay-play-button {
 }
 
 /* Ads Styles */
-.ad-slot {
+.ad-slot { position: fixed; pointer-events: none;
   width: 100%;
   display: flex;
   justify-content: center;
