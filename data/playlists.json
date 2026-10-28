@@ -1,12 +1,12 @@
 [
   {
-    "name": "movies",
+    "name": "https://iptv-org.github.io/iptv/categories/movies.m3u",
     "url": "https://iptv-org.github.io/iptv/categories/movies.m3u",
     "format": "M3U Playlist",
     "channelCount": 768,
     "active": true,
-    "id": "pl-1793173474601",
-    "savedAt": "2026-10-28T07:44:34.601Z"
+    "id": "pl-1793173477522",
+    "savedAt": "2026-10-28T07:44:37.522Z"
   },
   {
     "name": "https://rslivetv.pages.dev/bd76t2s1w9.json",
