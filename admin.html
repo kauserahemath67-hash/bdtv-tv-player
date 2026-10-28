@@ -286,13 +286,16 @@
 
           <!-- Export M3U Link Card -->
           <div class="glass-card">
-            <h3>📤 আপনার সাইটের লাইভ M3U প্লেলিস্ট লিংক</h3>
-            <p class="desc">যেকোনো অ্যান্ড্রয়েড টিভি অ্যাপ, টিভিবক্স, ভিএলসি বা আইপিটিভি প্লেয়ারের জন্য এই লিংকটি ব্যবহার করুন</p>
+            <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;">
+              <h3>📤 আপনার সাইটের লাইভ M3U প্লেলিস্ট লিংক</h3>
+              <span class="badge badge-online" style="font-size:12px; padding:4px 10px;">🟢 শুধুমাত্র অনলাইন চ্যানেল</span>
+            </div>
+            <p class="desc">যেকোনো অ্যান্ড্রয়েড টিভি অ্যাপ, টিভিবক্স, ভিএলসি বা আইপিটিভি প্লেয়ারের জন্য এই লিংকটি ব্যবহার করুন। হেলথ স্ক্যানারে যে চ্যানেলগুলো অনলাইন থাকবে কেবল সেগুলোই এখানে স্বয়ংক্রিয়ভাবে থাকবে।</p>
             <div class="m3u-export-box">
               <input type="text" id="m3u-export-url" readonly value="">
               <button id="btn-copy-m3u" class="btn-secondary-admin">কপি করুন</button>
             </div>
-            <p class="meta-note">💡 এটি সম্পূর্ণ ডায়নামিক; আপনার চ্যানেলে কোনো পরিবর্তন আনলে এই লিংক স্বয়ংক্রিয়ভাবে আপডেট থাকে।</p>
+            <p class="meta-note">💡 এটি সম্পূর্ণ ডায়নামিক; স্ক্যান বা চ্যানেল পরিচালনায় কোনো পরিবর্তন আনলে অফলাইন চ্যানেলগুলো নিজে থেকেই বাদ পড়বে এবং অনলাইন চ্যানেলগুলো সক্রিয় থাকবে।</p>
           </div>
         </div>
       </section>

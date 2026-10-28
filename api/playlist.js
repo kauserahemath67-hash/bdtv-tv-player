@@ -140,7 +140,13 @@ module.exports = async (req, res) => {
         return res.status(200).json({ success: true, count: playlists.length, data: playlists });
       }
 
-      const channels = await db.getChannels();
+      let channels = await db.getChannels();
+
+      // Only include ONLINE channels in live playlist (filter out broken/offline ones)
+      if (q.all !== '1' && q.all !== 'true') {
+        channels = channels.filter(ch => ch.status !== 'OFFLINE');
+      }
+
       let m3u = '#EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"\n';
 
       for (let ch of channels) {

@@ -1372,6 +1372,23 @@ class AutoDetector {
 
     const changedUpdates = [];
 
+    const flushUpdates = async () => {
+      if (changedUpdates.length === 0) return;
+      const toSend = [...changedUpdates];
+      changedUpdates.length = 0;
+      this._log('💾', `${toSend.length} টি পরিবর্তিত চ্যানেলের স্ট্যাটাস ক্লাউডে সেভ হচ্ছে...`);
+      try {
+        await fetch('/api/channels', {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ batchUpdates: toSend })
+        });
+        this._log('☁️', 'ডাটাবেস সফলভাবে আপডেট হয়েছে!');
+      } catch (err) {
+        this._log('⚠️', 'ডাটাবেস সেভ করতে সমস্যা হয়েছে।');
+      }
+    };
+
     for (let i = 0; i < channels.length; i++) {
       if (this._stopped) break;
       await this._waitIfPaused();
@@ -1406,23 +1423,18 @@ class AutoDetector {
 
       this._updateUI();
 
+      // Auto-flush every 20 channel changes to keep database updated in real-time
+      if (changedUpdates.length >= 20) {
+        await flushUpdates();
+      }
+
       // Small inter-channel delay so browser stays smooth
       await new Promise(r => setTimeout(r, 200));
     }
 
-    // Batch save any changes to server in one single commit
+    // Flush any remaining updates
     if (changedUpdates.length > 0) {
-      this._log('💾', `${changedUpdates.length} টি পরিবর্তিত চ্যানেলের স্ট্যাটাস সেভ হচ্ছে...`);
-      try {
-        await fetch('/api/channels', {
-          method: 'PUT',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ batchUpdates: changedUpdates })
-        });
-        this._log('☁️', 'সব স্ট্যাটাস ক্লাউড ডাটাবেসে সফলভাবে সেভ হয়েছে!');
-      } catch (err) {
-        this._log('⚠️', 'ডাটাবেস সেভ করতে সমস্যা হয়েছে।');
-      }
+      await flushUpdates();
     }
 
     if (!this._stopped) {
