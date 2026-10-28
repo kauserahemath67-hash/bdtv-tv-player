@@ -25,13 +25,13 @@
     "account_status": "ACTIVE",
     "manual_block": false,
     "block_reason": "",
-    "max_devices": 2,
+    "max_devices": 3,
     "channels_enabled": true,
     "plan": "Monthly VIP",
     "starts_at": "2026-10-28",
     "expires_at": "2026-11-28",
     "payment_status": "PAID",
     "transaction_reference": "",
-    "updatedAt": "2026-10-28T13:09:54.394Z"
+    "updatedAt": "2026-10-28T13:15:45.663Z"
   }
 ]
