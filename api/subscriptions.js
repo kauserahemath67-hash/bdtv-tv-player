@@ -9,8 +9,8 @@ module.exports = async (req, res) => {
 
   try {
     if (req.method === 'GET') {
-      const customers = db.getCustomers();
-      const settings = db.getSettings();
+      const customers = await db.getCustomers();   // ✅ await
+      const settings  = await db.getSettings();    // ✅ await
 
       const activeSubs = customers.map(c => {
         const isExpired = new Date(c.expires_at) < new Date();
@@ -41,11 +41,14 @@ module.exports = async (req, res) => {
       const { customer_id, days_to_add, plan, payment_method, transaction_reference } = req.body || {};
       if (!customer_id) return res.status(400).json({ success: false, message: 'Customer ID আবশ্যক।' });
 
-      const customers = db.getCustomers();
+      const customers = await db.getCustomers();   // ✅ await
       const cust = customers.find(c => c.id === customer_id);
-      if (!cust) return res.status(404).json({ success: false, message: 'গ্রাহক পাওয়া যায়নি।' });
+      if (!cust) return res.status(404).json({ success: false, message: 'গ্রাহক পাওয়া যায়নি।' });
 
-      const currentExpiry = new Date(cust.expires_at) > new Date() ? new Date(cust.expires_at) : new Date();
+      // If subscription is already active, extend from current expiry; otherwise from today
+      const currentExpiry = new Date(cust.expires_at) > new Date()
+        ? new Date(cust.expires_at)
+        : new Date();
       const addDays = Number(days_to_add) || 30;
       currentExpiry.setDate(currentExpiry.getDate() + addDays);
 
@@ -56,11 +59,11 @@ module.exports = async (req, res) => {
         cust.transaction_reference = `${payment_method || 'Payment'}: ${transaction_reference}`;
       }
 
-      db.saveCustomer(cust);
+      await db.saveCustomer(cust);   // ✅ await
 
       return res.status(200).json({
         success: true,
-        message: `সাবস্ক্রিপশনের মেয়াদ ${addDays} দিন বৃদ্ধি করা হয়েছে।`,
+        message: `সাবস্ক্রিপশনের মেয়াদ ${addDays} দিন বৃদ্ধি করা হয়েছে।`,
         new_expiry: cust.expires_at
       });
     }

@@ -889,14 +889,30 @@ class AdminDashboard {
       });
 
       tr.querySelector('.btn-extend').addEventListener('click', async () => {
-        await fetch('/api/subscriptions', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ customer_id: c.id, days_to_add: 30 })
-        });
-        alert('মেয়াদ ৩০ দিন বাড়ানো হয়েছে!');
-        await this.loadCustomers();
-      });
+        const btn = tr.querySelector('.btn-extend');
+        btn.disabled = true;
+        btn.textContent = '⏳...';
+        try {
+          const res = await fetch('/api/subscriptions', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ customer_id: c.id, days_to_add: 30 })
+          });
+          const json = await res.json();
+          if (json.success) {
+            this.showToast(`✅ ${c.name} — মেয়াদ ৩০ দিন বাড়ানো হয়েছে! নতুন মেয়াদ: ${json.new_expiry}`, 'success');
+            await this.loadCustomers();
+          } else {
+            this.showToast(`❌ ত্রুটি: ${json.message || 'মেয়াদ বাড়ানো যায়নি।'}`, 'error');
+            btn.disabled = false;
+            btn.textContent = '➕৩০ দিন';
+          }
+        } catch (err) {
+          this.showToast('❌ নেটর্঵ার্ক ত্রুটি। পুনরায় চেষ্টা করুন।', 'error');
+          btn.disabled = false;
+          btn.textContent = '➕৩০ দিন';
+        }
+      });;
 
       tr.querySelector('.btn-delete-cust').addEventListener('click', async () => {
         if (!confirm(`'${c.name}' অ্যাকাউন্টটি মুছে ফেলতে চান?`)) return;
@@ -1222,6 +1238,43 @@ class AdminDashboard {
     document.getElementById('stat-online-channels').textContent = this.channels.filter(c => c.status === 'ONLINE').length;
     document.getElementById('stat-total-customers').textContent = this.customers.length;
   }
+
+  showToast(message, type = 'info') {
+    // Remove existing toast if any
+    const existing = document.getElementById('admin-toast');
+    if (existing) existing.remove();
+
+    const toast = document.createElement('div');
+    toast.id = 'admin-toast';
+    const colors = {
+      success: 'rgba(52,199,89,0.15)',
+      error:   'rgba(255,59,48,0.15)',
+      info:    'rgba(10,132,255,0.15)'
+    };
+    const borders = {
+      success: 'rgba(52,199,89,0.5)',
+      error:   'rgba(255,59,48,0.5)',
+      info:    'rgba(10,132,255,0.5)'
+    };
+    toast.style.cssText = `
+      position: fixed; bottom: 28px; right: 28px; z-index: 9999;
+      background: ${colors[type] || colors.info};
+      border: 1px solid ${borders[type] || borders.info};
+      color: #fff; padding: 14px 22px; border-radius: 12px;
+      font-size: 14px; font-weight: 500; max-width: 400px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+      backdrop-filter: blur(12px); opacity: 0;
+      transition: opacity 0.3s ease;
+    `;
+    toast.textContent = message;
+    document.body.appendChild(toast);
+    requestAnimationFrame(() => { toast.style.opacity = '1'; });
+    setTimeout(() => {
+      toast.style.opacity = '0';
+      setTimeout(() => toast.remove(), 300);
+    }, 4000);
+  }
+
 }
 
 // Start Admin on Load
