@@ -873,17 +873,6 @@
     "order": 85
   },
   {
-    "name": "AWSN TV",
-    "logo": "https://assets-prod.services.toffeelive.com/F9UM56ABalKyvLQIr9B1/posters/26081e64-671e-44a8-95ba-a692bfaae49c.jpeg",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/4.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793275837430-3",
-    "order": 86,
-    "manual_override": true
-  },
-  {
     "name": "SAFF Live 1",
     "logo": "https://assets-prod.services.toffeelive.com/itdbVKEBalKyvLQI94RR/posters/f92c276c-543c-40db-b9f0-a53b86c497a2.png",
     "category": "Sports",
