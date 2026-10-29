@@ -1114,17 +1114,6 @@
     "order": 109
   },
   {
-    "name": "Al Jazeera",
-    "logo": "https://assets-prod.services.toffeelive.com/S9bzFaEBalKyvLQIrh3b/posters/f400a8bc-d83c-40f8-93e8-206314ad332d.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/28.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793275837430-27",
-    "order": 110,
-    "manual_override": true
-  },
-  {
     "name": "Russia Today",
     "logo": "https://assets-prod.services.toffeelive.com/CNT2_p8BalKyvLQIBSUG/posters/1e937055-a014-4274-bb69-b1b56d18c434.png",
     "category": "Documentary",
