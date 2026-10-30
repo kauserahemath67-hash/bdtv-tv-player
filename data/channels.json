@@ -2041,110 +2041,120 @@
     "logo": "https://assets-prod.services.toffeelive.com/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/18.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-17",
     "order": 175,
-    "response_time_ms": 542
+    "response_time_ms": 542,
+    "manual_override": true
   },
   {
     "name": "Nexus TV",
     "logo": "https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/19.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-18",
     "order": 176,
-    "response_time_ms": 555
+    "response_time_ms": 555,
+    "manual_override": true
   },
   {
     "name": "Islamic TV",
     "logo": "https://assets-prod.services.toffeelive.com/jehEA54BIxFjn23xAmdw/posters/2c276556-cbcd-4467-b627-4394bb20f250.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/20.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-19",
     "order": 177,
-    "response_time_ms": 566
+    "response_time_ms": 566,
+    "manual_override": true
   },
   {
     "name": "Desh TV",
     "logo": "https://assets-prod.services.toffeelive.com/6Hz1PJwBcqxnFHJBhgkV/posters/845f1e3f-987a-47cc-a48d-ee12d8f4d419.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/21.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-20",
     "order": 178,
-    "response_time_ms": 571
+    "response_time_ms": 571,
+    "manual_override": true
   },
   {
     "name": "Independent TV",
     "logo": "https://assets-prod.services.toffeelive.com/ES_cZZsBNnOkwJLW1Oz1/posters/b872b8f5-cb6b-45a1-a1cd-7609df51d614.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/22.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-21",
     "order": 179,
-    "response_time_ms": 570
+    "response_time_ms": 570,
+    "manual_override": true
   },
   {
     "name": "Ekhon TV",
     "logo": "https://assets-prod.services.toffeelive.com/o3v235oBcqxnFHJBkAdC/posters/159af631-796d-4342-a2a7-c272f32bcd32.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/23.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-22",
     "order": 180,
-    "response_time_ms": 570
+    "response_time_ms": 570,
+    "manual_override": true
   },
   {
     "name": "Ekattor TV",
     "logo": "https://assets-prod.services.toffeelive.com/PS_La5oBNnOkwJLWLRN_/posters/e8c444fd-ee3b-4bf3-bb0a-f969bc295f82.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/24.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-23",
     "order": 181,
-    "response_time_ms": 560
+    "response_time_ms": 560,
+    "manual_override": true
   },
   {
     "name": "Channel News Asia",
     "logo": "https://assets-prod.services.toffeelive.com/rYOv_p8BJIOHmUelrnXh/posters/d537453f-7e5b-45f3-9b52-42f6f65950c8.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/25.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-24",
     "order": 182,
-    "response_time_ms": 547
+    "response_time_ms": 547,
+    "manual_override": true
   },
   {
     "name": "TRT World",
     "logo": "https://assets-prod.services.toffeelive.com/1YPq_p8BJIOHmUelSHXc/posters/f65b0273-0f23-4b56-93dd-417224369105.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/26.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-25",
     "order": 183,
-    "response_time_ms": 573
+    "response_time_ms": 573,
+    "manual_override": true
   },
   {
     "name": "DW",
     "logo": "https://assets-prod.services.toffeelive.com/7oPt_p8BJIOHmUelhXWj/posters/d6328092-9437-4806-8dc7-d00732d56832.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/27.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-26",
     "order": 184,
-    "response_time_ms": 571
+    "response_time_ms": 571,
+    "manual_override": true
   },
   {
     "name": "Al Jazeera",
@@ -2163,110 +2173,120 @@
     "logo": "https://assets-prod.services.toffeelive.com/CNT2_p8BalKyvLQIBSUG/posters/1e937055-a014-4274-bb69-b1b56d18c434.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/29.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-28",
     "order": 186,
-    "response_time_ms": 556
+    "response_time_ms": 556,
+    "manual_override": true
   },
   {
     "name": "France 24",
     "logo": "https://assets-prod.services.toffeelive.com/G4ML_58BJIOHmUelNXZr/posters/becc2fba-4ed5-4f43-af2d-3c1ea2b4ee57.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/30.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-29",
     "order": 187,
-    "response_time_ms": 546
+    "response_time_ms": 546,
+    "manual_override": true
   },
   {
     "name": "CGTN",
     "logo": "https://assets-prod.services.toffeelive.com/DYMI_58BJIOHmUelm3aK/posters/d8436322-804a-47b6-9a3f-62764c4622d5.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/31.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-30",
     "order": 188,
-    "response_time_ms": 565
+    "response_time_ms": 565,
+    "manual_override": true
   },
   {
     "name": "Eurosport HD",
     "logo": "https://assets-prod.services.toffeelive.com/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/32.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-31",
     "order": 189,
-    "response_time_ms": 555
+    "response_time_ms": 555,
+    "manual_override": true
   },
   {
     "name": "Saudi Sunnah",
     "logo": "https://assets-prod.services.toffeelive.com/JNQA_58BalKyvLQIhiVD/posters/11e764bf-7969-4dcb-a94c-937a3bde2a7f.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/33.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-32",
     "order": 190,
-    "response_time_ms": 565
+    "response_time_ms": 565,
+    "manual_override": true
   },
   {
     "name": "Saudi Quran",
     "logo": "https://assets-prod.services.toffeelive.com/FdT9_p8BalKyvLQIpCUP/posters/6b39f2c6-6fe8-4720-a986-379e09968b5b.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/34.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-33",
     "order": 191,
-    "response_time_ms": 553
+    "response_time_ms": 553,
+    "manual_override": true
   },
   {
     "name": "Sony Ten Sports 1 HD",
     "logo": "https://assets-prod.services.toffeelive.com/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/35.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-34",
     "order": 192,
-    "response_time_ms": 580
+    "response_time_ms": 580,
+    "manual_override": true
   },
   {
     "name": "Sony Ten Sports 2 HD",
     "logo": "https://assets-prod.services.toffeelive.com/sy5m-JQBv9knK3AHYTTk/posters/5e40bf0e-633f-4d37-a3b2-3d606f0ac19a.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/36.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-35",
     "order": 193,
-    "response_time_ms": 565
+    "response_time_ms": 565,
+    "manual_override": true
   },
   {
     "name": "Sony Ten Sports 5 HD",
     "logo": "https://assets-prod.services.toffeelive.com/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/37.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-36",
     "order": 194,
-    "response_time_ms": 563
+    "response_time_ms": 563,
+    "manual_override": true
   },
   {
     "name": "Sony Ten Cricket",
     "logo": "https://assets-prod.services.toffeelive.com/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/38.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-37",
     "order": 195,
-    "response_time_ms": 562
+    "response_time_ms": 562,
+    "manual_override": true
   },
   {
     "name": "Cartoon Network HD +",
