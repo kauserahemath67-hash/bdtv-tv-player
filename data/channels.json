@@ -62,7 +62,7 @@
     "logo": "https://i.postimg.cc/2yhw5M0c/20241005-170916.png",
     "url": "https://tvsen7.aynaott.com/ssport2hd/index.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-5",
     "order": 6,
@@ -208,11 +208,12 @@
     "logo": "https://yt3.googleusercontent.com/dWloAb5aD9Jvz57fz6eZJmLoirWclDN6KOP6oWkmcJXsx6tseGedGxV90fYFgBGjV1KKly7yGg=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://drk6xq0vhn.gpcdn.net/live/sony_aath_abr/live/sony_aath_720/chunks.m3u8?nimblesessionid=227640839",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-18",
     "order": 19,
-    "response_time_ms": 302
+    "response_time_ms": 302,
+    "manual_override": true
   },
   {
     "name": "Enterr10",
@@ -275,7 +276,7 @@
     "logo": "https://d38ll44lbmt52p.cloudfront.net/cms/channel_poster/1677040358634_BTVogo.png",
     "url": "https://btv.hridoytv-channel.workers.dev/btv.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-24",
     "order": 25,
@@ -298,11 +299,12 @@
     "logo": "https://www.metvbd.com/media/common/logo-fb.png",
     "url": "https://iptvbd.live/metv1080/1080.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-26",
     "order": 27,
-    "response_time_ms": 1091
+    "response_time_ms": 1091,
+    "manual_override": true
   },
   {
     "name": "G-Series",
@@ -386,11 +388,12 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1784629064327.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/somoy_tv_abr/live/somoy_tv_720/chunks.m3u8?nimblesessionid=238809308",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-34",
     "order": 35,
-    "response_time_ms": 291
+    "response_time_ms": 291,
+    "manual_override": true
   },
   {
     "name": "Akhon Tv",
@@ -563,22 +566,24 @@
     "logo": "https://yt3.googleusercontent.com/AbXfwy0BwAB4yjwV4gkMmSZizuTv30M9kZjO7V33LLvpy7CRVxK523zdvnZ3oTMtanUf9tHe=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://5dd3981940faa.streamlock.net/thikanatv/thikanatv/playlist.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-50",
     "order": 51,
-    "response_time_ms": 1251
+    "response_time_ms": 1251,
+    "manual_override": true
   },
   {
     "name": "Maasranga TV",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1773680325498.png",
     "url": "https://mtv.sunplex.live/MAASRANGA/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-51",
     "order": 52,
-    "response_time_ms": 1228
+    "response_time_ms": 1228,
+    "manual_override": true
   },
   {
     "name": "News 24 HD",
@@ -596,7 +601,7 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
     "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8#skym3u.dev",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-53",
     "order": 54,
@@ -641,11 +646,12 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/channel_24_abr/live/channel_24_720/chunks.m3u8?nimblesessionid=238811623",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-57",
     "order": 58,
-    "response_time_ms": 273
+    "response_time_ms": 273,
+    "manual_override": true
   },
   {
     "name": "Channel 1",
@@ -710,7 +716,7 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyChyEkV9SuWsXb7A_EyU9YwOrMaxvty8msO7FTXvRuK7dFMGGHYUzr6g&s=10",
     "url": "https://drk6xq0vhn.gpcdn.net/live/max_hd_abr/live/max_hd_720/chunks.m3u8?nimblesessionid=206455791",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275800305-63",
     "order": 64,
@@ -930,110 +936,120 @@
     "logo": "https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",
     "category": "Family",
     "url": "https://alixbd.com/playlistconfig/channel/1.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-0",
     "order": 83,
-    "response_time_ms": 883
+    "response_time_ms": 883,
+    "manual_override": true
   },
   {
     "name": "Toffee Movies",
     "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/2.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-1",
     "order": 84,
-    "response_time_ms": 574
+    "response_time_ms": 574,
+    "manual_override": true
   },
   {
     "name": "WC Match Recap",
     "logo": "https://assets-prod.services.toffeelive.com/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/3.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-2",
     "order": 85,
-    "response_time_ms": 547
+    "response_time_ms": 547,
+    "manual_override": true
   },
   {
     "name": "SAFF Live 1",
     "logo": "https://assets-prod.services.toffeelive.com/itdbVKEBalKyvLQI94RR/posters/f92c276c-543c-40db-b9f0-a53b86c497a2.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/5.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-4",
     "order": 87,
-    "response_time_ms": 554
+    "response_time_ms": 554,
+    "manual_override": true
   },
   {
     "name": "CNN",
     "logo": "https://assets-prod.services.toffeelive.com/VC6Q-JQBv9knK3AHhTXt/posters/63e79814-8fcf-4c3e-bb66-408b2a402613.webp",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/6.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-5",
     "order": 88,
-    "response_time_ms": 571
+    "response_time_ms": 571,
+    "manual_override": true
   },
   {
     "name": "Somoy TV",
     "logo": "https://assets-prod.services.toffeelive.com/Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/7.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-6",
     "order": 89,
-    "response_time_ms": 556
+    "response_time_ms": 556,
+    "manual_override": true
   },
   {
     "name": "Jamuna TV",
     "logo": "https://assets-prod.services.toffeelive.com/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/8.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-7",
     "order": 90,
-    "response_time_ms": 577
+    "response_time_ms": 577,
+    "manual_override": true
   },
   {
     "name": "Ananda TV",
     "logo": "https://assets-prod.services.toffeelive.com/wCM3l5sBEef-9-uVXFvD/posters/d80f7aee-5bd7-4edc-97eb-ead0e3ebbe09.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/9.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-8",
     "order": 91,
-    "response_time_ms": 575
+    "response_time_ms": 575,
+    "manual_override": true
   },
   {
     "name": "Bijoy TV",
     "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
     "category": "Action",
     "url": "https://alixbd.com/playlistconfig/channel/10.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-9",
     "order": 92,
-    "response_time_ms": 563
+    "response_time_ms": 563,
+    "manual_override": true
   },
   {
     "name": "NTV",
     "logo": "https://assets-prod.services.toffeelive.com/wHLVIJ4B7a1HdMSjaGLJ/posters/83b89557-3ae8-4ca8-8c5d-3c617359c738.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/11.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-10",
     "order": 93,
-    "response_time_ms": 567
+    "response_time_ms": 567,
+    "manual_override": true
   },
   {
     "name": "Global TV",
