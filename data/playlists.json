@@ -9,12 +9,12 @@
     "savedAt": "2026-10-30T13:05:22.524Z"
   },
   {
-    "id": "pl-1793365540531",
-    "name": "playlist",
+    "id": "pl-1793365543012",
+    "name": "https://alixbd.com/playlistconfig/playlist.m3u",
     "url": "https://alixbd.com/playlistconfig/playlist.m3u",
     "format": "M3U Playlist",
     "channelCount": 78,
     "active": true,
-    "savedAt": "2026-10-30T13:05:40.531Z"
+    "savedAt": "2026-10-30T13:05:43.012Z"
   }
 ]
