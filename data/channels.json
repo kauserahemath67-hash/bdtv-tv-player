@@ -764,20 +764,22 @@
     "logo": "https://i.ibb.co.com/01gmWfz/images-1.webp",
     "url": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/chunklist_b2000000_DVR.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793365518372-74",
-    "order": 75
+    "order": 75,
+    "manual_override": true
   },
   {
     "name": "Khushboo Bangla",
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/c4/Khushboo_Bangla_logo_%282016-present%29.png",
     "url": "https://cdn-4.pishow.tv/live/1473/master.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793365518372-75",
-    "order": 76
+    "order": 76,
+    "manual_override": true
   },
   {
     "name": "Moto Patlu",
@@ -804,40 +806,44 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyoiK0AGw4_tmNbbk1DVh0OD_DcCRGXQ45dNkYfD8Mw&s=10",
     "url": "https://server.zillarbarta.com/zbcatun/video.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793365518372-78",
-    "order": 79
+    "order": 79,
+    "manual_override": true
   },
   {
     "name": "Batul The Great",
     "logo": "https://i.postimg.cc/WbDWKcdF/20260715-150726.png",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-209869/tracks-v1a1/mono.ts.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793365518372-79",
-    "order": 80
+    "order": 80,
+    "manual_override": true
   },
   {
     "name": "Animal Planet",
     "logo": "https://logos-world.net/wp-content/uploads/2023/04/Animal-Planet-Logo.png",
     "url": "https://stream.ottplus.bd/live/animal_planet_hd_abr/playlist.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793365518372-80",
-    "order": 81
+    "order": 81,
+    "manual_override": true
   },
   {
     "name": "Discovery",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqezFALo-LbtcS9LIbXWG88NFs5W5v99xfaYqrVOzs3oAzeHoTfXiTNdBs&s=10",
     "url": "https://stream.ottplus.bd/live/discovery_sd_abr/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793365518372-81",
-    "order": 82
+    "order": 82,
+    "manual_override": true
   },
   {
     "name": "Toffee TV",
@@ -1114,10 +1120,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/S9bzFaEBalKyvLQIrh3b/posters/f400a8bc-d83c-40f8-93e8-206314ad332d.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/28.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793365539275-27",
-    "order": 110
+    "order": 110,
+    "manual_override": true
   },
   {
     "name": "Russia Today",
@@ -1454,10 +1461,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/U3QEd5YBcqxnFHJBpYzc/posters/8bc7ae1b-1a46-4b76-bdb1-13c7dbd3a95c.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/62.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793365539275-61",
-    "order": 144
+    "order": 144,
+    "manual_override": true
   },
   {
     "name": "B4U Movies APAC",
@@ -1614,9 +1622,10 @@
     "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png",
     "category": "Live TV",
     "url": "https://alixbd.com/playlistconfig/channel/78.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793365539276-77",
-    "order": 160
+    "order": 160,
+    "manual_override": true
   }
 ]
