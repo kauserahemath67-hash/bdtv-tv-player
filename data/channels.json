@@ -1536,220 +1536,240 @@
     "logo": "https://assets-prod.services.toffeelive.com/PS6F-JQBv9knK3AHqjVz/posters/0f83ee72-be0f-4861-94df-30b158d3df8d.webp",
     "category": "Musical",
     "url": "https://alixbd.com/playlistconfig/channel/53.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-52",
     "order": 135,
-    "response_time_ms": 560
+    "response_time_ms": 560,
+    "manual_override": true
   },
   {
     "name": "Sony SAB HD",
     "logo": "https://assets-prod.services.toffeelive.com/ES55-JQBv9knK3AHNDWC/posters/13411be9-62b9-4a99-a062-b6e91dfb1099.webp",
     "category": "Family",
     "url": "https://alixbd.com/playlistconfig/channel/54.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-53",
     "order": 136,
-    "response_time_ms": 551
+    "response_time_ms": 551,
+    "manual_override": true
   },
   {
     "name": "Zee TV HD",
     "logo": "https://assets-prod.services.toffeelive.com/ltPQX5UBm1RY_In7b3F1/posters/d039d9df-9877-4969-a0b6-56888ebe2385.png",
     "category": "Drama",
     "url": "https://alixbd.com/playlistconfig/channel/55.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-54",
     "order": 137,
-    "response_time_ms": 580
+    "response_time_ms": 580,
+    "manual_override": true
   },
   {
     "name": "Sony MAX HD",
     "logo": "https://assets-prod.services.toffeelive.com/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/56.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-55",
     "order": 138,
-    "response_time_ms": 595
+    "response_time_ms": 595,
+    "manual_override": true
   },
   {
     "name": "Zee Bangla Cinema",
     "logo": "https://assets-prod.services.toffeelive.com/-C7MX5UBv9knK3AHdKOi/posters/e37fef13-9bf3-4ecc-8b74-fca091874fa0.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/57.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-56",
     "order": 139,
-    "response_time_ms": 546
+    "response_time_ms": 546,
+    "manual_override": true
   },
   {
     "name": "Zee Bollywood",
     "logo": "https://assets-prod.services.toffeelive.com/OnSlPJYBcqxnFHJB6lFX/posters/d9ccb2a6-227f-4a41-8714-efaddab5cf5e.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/58.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-57",
     "order": 140,
-    "response_time_ms": 576
+    "response_time_ms": 576,
+    "manual_override": true
   },
   {
     "name": "Zee Action",
     "logo": "https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/33d667ae-bcc3-4f6b-b376-76c552136923.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/59.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-58",
     "order": 141,
-    "response_time_ms": 591
+    "response_time_ms": 591,
+    "manual_override": true
   },
   {
     "name": "Sony MAX",
     "logo": "https://assets-prod.services.toffeelive.com/Ay52-JQBv9knK3AHFDWt/posters/00afb30b-3c19-4c4c-abd8-891db94e4767.webp",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/60.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-59",
     "order": 142,
-    "response_time_ms": 556
+    "response_time_ms": 556,
+    "manual_override": true
   },
   {
     "name": "Sony PIX HD",
     "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/61.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-60",
     "order": 143,
-    "response_time_ms": 594
+    "response_time_ms": 594,
+    "manual_override": true
   },
   {
     "name": "Zee Cafe",
     "logo": "https://assets-prod.services.toffeelive.com/U3QEd5YBcqxnFHJBpYzc/posters/8bc7ae1b-1a46-4b76-bdb1-13c7dbd3a95c.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/62.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-61",
     "order": 144,
-    "response_time_ms": 552
+    "response_time_ms": 552,
+    "manual_override": true
   },
   {
     "name": "B4U Movies APAC",
     "logo": "https://assets-prod.services.toffeelive.com/PC6F-JQBv9knK3AHlTUO/posters/fb0243ba-39a0-4101-a78c-c197be550c6c.webp",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/63.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-62",
     "order": 145,
-    "response_time_ms": 547
+    "response_time_ms": 547,
+    "manual_override": true
   },
   {
     "name": "Sony MAX 2",
     "logo": "https://assets-prod.services.toffeelive.com/Ii5_-JQBv9knK3AHLDV3/posters/d961cc87-81b6-4b30-8414-8c0af2774818.webp",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/64.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-63",
     "order": 146,
-    "response_time_ms": 555
+    "response_time_ms": 555,
+    "manual_override": true
   },
   {
     "name": "Zee Cinema HD",
     "logo": "https://assets-prod.services.toffeelive.com/5y7HX5UBv9knK3AHs6Nk/posters/7582fb79-c15f-4247-ba5b-1d2dd27f3d71.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/65.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-64",
     "order": 147,
-    "response_time_ms": 568
+    "response_time_ms": 568,
+    "manual_override": true
   },
   {
     "name": "TLC HD",
     "logo": "https://assets-prod.services.toffeelive.com/7S6j-JQBv9knK3AHbzXC/posters/0973097c-bc5c-4b28-aaca-f04d6f6cb5e2.webp",
     "category": "Fantasy",
     "url": "https://alixbd.com/playlistconfig/channel/66.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-65",
     "order": 148,
-    "response_time_ms": 547
+    "response_time_ms": 547,
+    "manual_override": true
   },
   {
     "name": "TLC",
     "logo": "https://assets-prod.services.toffeelive.com/7C6j-JQBv9knK3AHVzUA/posters/e8f84105-5efe-4e91-a0d4-18a0849cf2f2.webp",
     "category": "Fantasy",
     "url": "https://alixbd.com/playlistconfig/channel/67.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-66",
     "order": 149,
-    "response_time_ms": 582
+    "response_time_ms": 582,
+    "manual_override": true
   },
   {
     "name": "Animal Planet",
     "logo": "https://assets-prod.services.toffeelive.com/Ny61-JQBv9knK3AHgzZ7/posters/0909b36a-afd5-426a-93b3-4512800977db.webp",
     "category": "Adventure",
     "url": "https://alixbd.com/playlistconfig/channel/68.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-67",
     "order": 150,
-    "response_time_ms": 570
+    "response_time_ms": 570,
+    "manual_override": true
   },
   {
     "name": "Animal Planet HD",
     "logo": "https://assets-prod.services.toffeelive.com/Ni61-JQBv9knK3AHcDYc/posters/c16e8633-6b2a-401a-9cd6-ac26a4fcdedb.webp",
     "category": "Adventure",
     "url": "https://alixbd.com/playlistconfig/channel/69.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-68",
     "order": 151,
-    "response_time_ms": 582
+    "response_time_ms": 582,
+    "manual_override": true
   },
   {
     "name": "Sony BBC Earth HD",
     "logo": "https://assets-prod.services.toffeelive.com/MC6C-JQBv9knK3AHUzUT/posters/a8c32fd3-2ba7-437c-85ac-de2f1b2fa6ca.webp",
     "category": "Family",
     "url": "https://alixbd.com/playlistconfig/channel/70.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-69",
     "order": 152,
-    "response_time_ms": 569
+    "response_time_ms": 569,
+    "manual_override": true
   },
   {
     "name": "Discovery HD",
     "logo": "https://assets-prod.services.toffeelive.com/KC6x-JQBv9knK3AHqjYc/posters/55e554f1-dbbb-47bd-97fe-fca878726c4c.webp",
     "category": "Adventure",
     "url": "https://alixbd.com/playlistconfig/channel/71.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-70",
     "order": 153,
-    "response_time_ms": 556
+    "response_time_ms": 556,
+    "manual_override": true
   },
   {
     "name": "Discovery",
     "logo": "https://assets-prod.services.toffeelive.com/KS6x-JQBv9knK3AHwDZy/posters/6594d216-aaca-4eee-b6f5-bbc6b80feb15.webp",
     "category": "Adventure",
     "url": "https://alixbd.com/playlistconfig/channel/72.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-71",
     "order": 154,
-    "response_time_ms": 563
+    "response_time_ms": 563,
+    "manual_override": true
   },
   {
     "name": "Discovery Science",
