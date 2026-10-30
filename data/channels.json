@@ -1776,44 +1776,48 @@
     "logo": "https://assets-prod.services.toffeelive.com/AS6s-JQBv9knK3AHDTZb/posters/eab8fd0f-9351-464c-b45e-332f38b49f4b.webp",
     "category": "Science Fiction",
     "url": "https://alixbd.com/playlistconfig/channel/73.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-72",
     "order": 155,
-    "response_time_ms": 563
+    "response_time_ms": 563,
+    "manual_override": true
   },
   {
     "name": "Discovery Turbo",
     "logo": "https://assets-prod.services.toffeelive.com/Ay6s-JQBv9knK3AHJTY1/posters/e8f65578-e82d-4e4a-a1ff-073becc5bd71.webp",
     "category": "Adventure",
     "url": "https://alixbd.com/playlistconfig/channel/74.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-73",
     "order": 156,
-    "response_time_ms": 573
+    "response_time_ms": 573,
+    "manual_override": true
   },
   {
     "name": "Investigation Discovery HD",
     "logo": "https://assets-prod.services.toffeelive.com/ay7uX5UBv9knK3AHs6TI/posters/deb3c186-b2e1-4a91-aafb-d86f9128b851.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/75.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-74",
     "order": 157,
-    "response_time_ms": 576
+    "response_time_ms": 576,
+    "manual_override": true
   },
   {
     "name": "&TV HD",
     "logo": "https://assets-prod.services.toffeelive.com/5cwRnZUBtpl-Sbt7wWrN/posters/5779ade3-e9ba-4107-b3da-bae6f891500a.png",
     "category": "Drama",
     "url": "https://alixbd.com/playlistconfig/channel/76.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-75",
     "order": 158,
-    "response_time_ms": 595
+    "response_time_ms": 595,
+    "manual_override": true
   },
   {
     "name": "Toffee TV",
@@ -1830,11 +1834,12 @@
     "logo": "https://assets-prod.services.toffeelive.com/QMwWnZUBtpl-Sbt7S2sx/posters/8cad9a82-842a-47bf-a060-f17011f11c07.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/77.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793275837430-76",
     "order": 159,
-    "response_time_ms": 570
+    "response_time_ms": 570,
+    "manual_override": true
   },
   {
     "name": "Toffee Movies",
@@ -2101,10 +2106,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/S9bzFaEBalKyvLQIrh3b/posters/f400a8bc-d83c-40f8-93e8-206314ad332d.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/28.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-27",
-    "order": 185
+    "order": 185,
+    "manual_override": true
   },
   {
     "name": "Russia Today",
@@ -2601,9 +2607,10 @@
     "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png",
     "category": "Live TV",
     "url": "https://alixbd.com/playlistconfig/channel/78.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793357603975-77",
-    "order": 235
+    "order": 235,
+    "manual_override": true
   }
 ]
