@@ -8,7 +8,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-0",
     "order": 1,
-    "response_time_ms": 765,
+    "response_time_ms": 793,
     "manual_override": true
   },
   {
@@ -20,7 +20,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-1",
     "order": 2,
-    "response_time_ms": 1047
+    "response_time_ms": 1082
   },
   {
     "name": "A Sports",
@@ -31,7 +31,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-2",
     "order": 3,
-    "response_time_ms": 714
+    "response_time_ms": 729
   },
   {
     "name": "PTV Sports",
@@ -55,7 +55,7 @@
     "id": "ch-1793275800305-4",
     "order": 5,
     "manual_override": true,
-    "response_time_ms": 4000
+    "response_time_ms": 334
   },
   {
     "name": "Star Sports 2",
@@ -67,7 +67,7 @@
     "id": "ch-1793275800305-5",
     "order": 6,
     "manual_override": true,
-    "response_time_ms": 736
+    "response_time_ms": 713
   },
   {
     "name": "Willow Sports",
@@ -78,7 +78,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-6",
     "order": 7,
-    "response_time_ms": 65
+    "response_time_ms": 32
   },
   {
     "name": "Sony Sports 1",
@@ -89,7 +89,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-7",
     "order": 8,
-    "response_time_ms": 267
+    "response_time_ms": 285
   },
   {
     "name": "Sony Sports 2",
@@ -100,7 +100,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-8",
     "order": 9,
-    "response_time_ms": 227
+    "response_time_ms": 216
   },
   {
     "name": "Sony Sports 5",
@@ -111,7 +111,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-9",
     "order": 10,
-    "response_time_ms": 220
+    "response_time_ms": 227
   },
   {
     "name": "Matribhumi Tv",
@@ -122,7 +122,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-10",
     "order": 11,
-    "response_time_ms": 686
+    "response_time_ms": 675
   },
   {
     "name": "Star Jalsha HD",
@@ -133,7 +133,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-11",
     "order": 12,
-    "response_time_ms": 90
+    "response_time_ms": 91
   },
   {
     "name": "Jalsha Movies SD",
@@ -144,7 +144,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-12",
     "order": 13,
-    "response_time_ms": 382
+    "response_time_ms": 347
   },
   {
     "name": "Jalsha Movies HD",
@@ -156,7 +156,7 @@
     "id": "ch-1793275800305-13",
     "order": 14,
     "manual_override": true,
-    "response_time_ms": 334
+    "response_time_ms": 356
   },
   {
     "name": "Colors Bangla",
@@ -167,7 +167,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-14",
     "order": 15,
-    "response_time_ms": 24
+    "response_time_ms": 74
   },
   {
     "name": "Colors Bangla Cinema",
@@ -179,7 +179,7 @@
     "id": "ch-1793275800305-15",
     "order": 16,
     "manual_override": true,
-    "response_time_ms": 1079
+    "response_time_ms": 1152
   },
   {
     "name": "ZEE Bangla",
@@ -190,7 +190,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-16",
     "order": 17,
-    "response_time_ms": 17
+    "response_time_ms": 19
   },
   {
     "name": "Sananda Tv",
@@ -201,7 +201,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-17",
     "order": 18,
-    "response_time_ms": 682
+    "response_time_ms": 630
   },
   {
     "name": "Sony Aath",
@@ -212,7 +212,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-18",
     "order": 19,
-    "response_time_ms": 916,
+    "response_time_ms": 548,
     "manual_override": true
   },
   {
@@ -224,7 +224,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-19",
     "order": 20,
-    "response_time_ms": 33
+    "response_time_ms": 50
   },
   {
     "name": "TaraTv",
@@ -235,7 +235,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-20",
     "order": 21,
-    "response_time_ms": 1087
+    "response_time_ms": 1079
   },
   {
     "name": "Zee Bangla Sonar",
@@ -246,7 +246,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-21",
     "order": 22,
-    "response_time_ms": 18
+    "response_time_ms": 13
   },
   {
     "name": "Bangla Plus",
@@ -257,7 +257,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-22",
     "order": 23,
-    "response_time_ms": 750
+    "response_time_ms": 786
   },
   {
     "name": "Sangeet Bangla",
@@ -269,7 +269,7 @@
     "id": "ch-1793275800305-23",
     "order": 24,
     "manual_override": true,
-    "response_time_ms": 853
+    "response_time_ms": 874
   },
   {
     "name": "Btv HD",
@@ -281,7 +281,7 @@
     "id": "ch-1793275800305-24",
     "order": 25,
     "manual_override": true,
-    "response_time_ms": 368
+    "response_time_ms": 1484
   },
   {
     "name": "Bijoy Tv",
@@ -292,7 +292,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-25",
     "order": 26,
-    "response_time_ms": 216
+    "response_time_ms": 244
   },
   {
     "name": "Me Tv",
@@ -303,7 +303,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-26",
     "order": 27,
-    "response_time_ms": 2680,
+    "response_time_ms": 1075,
     "manual_override": true
   },
   {
@@ -315,7 +315,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-27",
     "order": 28,
-    "response_time_ms": 732
+    "response_time_ms": 717
   },
   {
     "name": "Movie Bangla",
@@ -326,7 +326,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-28",
     "order": 29,
-    "response_time_ms": 1079
+    "response_time_ms": 683
   },
   {
     "name": "Gazi Tv",
@@ -337,7 +337,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-29",
     "order": 30,
-    "response_time_ms": 313
+    "response_time_ms": 310
   },
   {
     "name": "Asian Tv",
@@ -348,7 +348,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-30",
     "order": 31,
-    "response_time_ms": 730
+    "response_time_ms": 738
   },
   {
     "name": "Ananda Tv",
@@ -359,7 +359,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-31",
     "order": 32,
-    "response_time_ms": 69
+    "response_time_ms": 48
   },
   {
     "name": "Ekushey Tv",
@@ -370,7 +370,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-32",
     "order": 33,
-    "response_time_ms": 724
+    "response_time_ms": 707
   },
   {
     "name": "R Tv",
@@ -381,7 +381,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-33",
     "order": 34,
-    "response_time_ms": 724
+    "response_time_ms": 711
   },
   {
     "name": "Somoy Tv",
@@ -392,7 +392,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-34",
     "order": 35,
-    "response_time_ms": 845,
+    "response_time_ms": 1781,
     "manual_override": true
   },
   {
@@ -404,7 +404,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-35",
     "order": 36,
-    "response_time_ms": 1143
+    "response_time_ms": 954
   },
   {
     "name": "Boishakhi Tv",
@@ -415,7 +415,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-36",
     "order": 37,
-    "response_time_ms": 713
+    "response_time_ms": 731
   },
   {
     "name": "Atn Bangla",
@@ -426,7 +426,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-37",
     "order": 38,
-    "response_time_ms": 718
+    "response_time_ms": 734
   },
   {
     "name": "My Tv",
@@ -437,7 +437,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-38",
     "order": 39,
-    "response_time_ms": 305
+    "response_time_ms": 302
   },
   {
     "name": "ATN News",
@@ -448,7 +448,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-39",
     "order": 40,
-    "response_time_ms": 725
+    "response_time_ms": 747
   },
   {
     "name": "Global Channel HD",
@@ -459,7 +459,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-40",
     "order": 41,
-    "response_time_ms": 320
+    "response_time_ms": 299
   },
   {
     "name": "Mohona Tv",
@@ -470,7 +470,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-41",
     "order": 42,
-    "response_time_ms": 52
+    "response_time_ms": 71
   },
   {
     "name": "Independent TV",
@@ -481,7 +481,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-42",
     "order": 43,
-    "response_time_ms": 213
+    "response_time_ms": 217
   },
   {
     "name": "Ayna Tv",
@@ -492,7 +492,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-43",
     "order": 44,
-    "response_time_ms": 309
+    "response_time_ms": 298
   },
   {
     "name": "Jamuna TV",
@@ -503,7 +503,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-44",
     "order": 45,
-    "response_time_ms": 715
+    "response_time_ms": 732
   },
   {
     "name": "Green Tv",
@@ -515,7 +515,7 @@
     "id": "ch-1793275800305-45",
     "order": 46,
     "manual_override": true,
-    "response_time_ms": 170
+    "response_time_ms": 180
   },
   {
     "name": "Channel I HD",
@@ -526,7 +526,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-46",
     "order": 47,
-    "response_time_ms": 708
+    "response_time_ms": 718
   },
   {
     "name": "Channel 9 HD",
@@ -537,7 +537,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-47",
     "order": 48,
-    "response_time_ms": 1065
+    "response_time_ms": 1052
   },
   {
     "name": "DBC News HD",
@@ -548,7 +548,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-48",
     "order": 49,
-    "response_time_ms": 722
+    "response_time_ms": 715
   },
   {
     "name": "Ekattor HD",
@@ -559,7 +559,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-49",
     "order": 50,
-    "response_time_ms": 725
+    "response_time_ms": 720
   },
   {
     "name": "Thikana Tv",
@@ -570,7 +570,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-50",
     "order": 51,
-    "response_time_ms": 1433,
+    "response_time_ms": 1437,
     "manual_override": true
   },
   {
@@ -582,7 +582,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-51",
     "order": 52,
-    "response_time_ms": 1269,
+    "response_time_ms": 1287,
     "manual_override": true
   },
   {
@@ -594,7 +594,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-52",
     "order": 53,
-    "response_time_ms": 713
+    "response_time_ms": 710
   },
   {
     "name": "Deepto TV HD",
@@ -606,7 +606,7 @@
     "id": "ch-1793275800305-53",
     "order": 54,
     "manual_override": true,
-    "response_time_ms": 981
+    "response_time_ms": 952
   },
   {
     "name": "Bangla Vision",
@@ -617,7 +617,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-54",
     "order": 55,
-    "response_time_ms": 710
+    "response_time_ms": 702
   },
   {
     "name": "NTV",
@@ -628,7 +628,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-55",
     "order": 56,
-    "response_time_ms": 714
+    "response_time_ms": 721
   },
   {
     "name": "SRK TV",
@@ -639,7 +639,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-56",
     "order": 57,
-    "response_time_ms": 769
+    "response_time_ms": 749
   },
   {
     "name": "Channel 24 HD",
@@ -650,7 +650,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-57",
     "order": 58,
-    "response_time_ms": 780,
+    "response_time_ms": 905,
     "manual_override": true
   },
   {
@@ -663,7 +663,7 @@
     "id": "ch-1793275800305-58",
     "order": 59,
     "manual_override": true,
-    "response_time_ms": 59
+    "response_time_ms": 53
   },
   {
     "name": "Star News",
@@ -674,7 +674,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-59",
     "order": 60,
-    "response_time_ms": 476
+    "response_time_ms": 480
   },
   {
     "name": "Al Quran",
@@ -685,7 +685,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-60",
     "order": 61,
-    "response_time_ms": 132
+    "response_time_ms": 141
   },
   {
     "name": "Unmochon Tv",
@@ -697,7 +697,7 @@
     "id": "ch-1793275800305-61",
     "order": 62,
     "manual_override": true,
-    "response_time_ms": 747
+    "response_time_ms": 742
   },
   {
     "name": "Al Jazeera",
@@ -709,7 +709,7 @@
     "id": "ch-1793275800305-62",
     "order": 63,
     "manual_override": true,
-    "response_time_ms": 44
+    "response_time_ms": 31
   },
   {
     "name": "Sony Max",
@@ -721,7 +721,7 @@
     "id": "ch-1793275800305-63",
     "order": 64,
     "manual_override": true,
-    "response_time_ms": 822
+    "response_time_ms": 753
   },
   {
     "name": "Sony Entertainment Hd",
@@ -733,7 +733,7 @@
     "id": "ch-1793275800305-64",
     "order": 65,
     "manual_override": true,
-    "response_time_ms": 1376
+    "response_time_ms": 753
   },
   {
     "name": "Sony Max 2",
@@ -745,7 +745,7 @@
     "id": "ch-1793275800305-65",
     "order": 66,
     "manual_override": true,
-    "response_time_ms": 818
+    "response_time_ms": 805
   },
   {
     "name": "Sony Movies",
@@ -756,7 +756,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-66",
     "order": 67,
-    "response_time_ms": 153
+    "response_time_ms": 145
   },
   {
     "name": "Atn Music",
@@ -768,7 +768,7 @@
     "id": "ch-1793275800305-67",
     "order": 68,
     "manual_override": true,
-    "response_time_ms": 156
+    "response_time_ms": 146
   },
   {
     "name": "Music India",
@@ -780,7 +780,7 @@
     "id": "ch-1793275800305-68",
     "order": 69,
     "manual_override": true,
-    "response_time_ms": 832
+    "response_time_ms": 852
   },
   {
     "name": "B4U Music",
@@ -792,7 +792,7 @@
     "id": "ch-1793275800305-69",
     "order": 70,
     "manual_override": true,
-    "response_time_ms": 4000
+    "response_time_ms": 781
   },
   {
     "name": "Gopal Bhar",
@@ -803,7 +803,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-70",
     "order": 71,
-    "response_time_ms": 66
+    "response_time_ms": 53
   },
   {
     "name": "Duronto Tv",
@@ -826,7 +826,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-72",
     "order": 73,
-    "response_time_ms": 1161
+    "response_time_ms": 1091
   },
   {
     "name": "Tiny POP",
@@ -837,7 +837,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-73",
     "order": 74,
-    "response_time_ms": 260
+    "response_time_ms": 113
   },
   {
     "name": "PBS Kids",
@@ -849,7 +849,7 @@
     "id": "ch-1793275800305-74",
     "order": 75,
     "manual_override": true,
-    "response_time_ms": 140
+    "response_time_ms": 59
   },
   {
     "name": "Khushboo Bangla",
@@ -861,7 +861,7 @@
     "id": "ch-1793275800305-75",
     "order": 76,
     "manual_override": true,
-    "response_time_ms": 807
+    "response_time_ms": 839
   },
   {
     "name": "Moto Patlu",
@@ -883,7 +883,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-77",
     "order": 78,
-    "response_time_ms": 50
+    "response_time_ms": 287
   },
   {
     "name": "ZB Cartoon",
@@ -894,7 +894,7 @@
     "is_pinned": false,
     "id": "ch-1793275800305-78",
     "order": 79,
-    "response_time_ms": 975
+    "response_time_ms": 998
   },
   {
     "name": "Batul The Great",
@@ -917,7 +917,7 @@
     "id": "ch-1793275800305-80",
     "order": 81,
     "manual_override": true,
-    "response_time_ms": 496
+    "response_time_ms": 499
   },
   {
     "name": "Discovery",
@@ -929,7 +929,7 @@
     "id": "ch-1793275800305-81",
     "order": 82,
     "manual_override": true,
-    "response_time_ms": 491
+    "response_time_ms": 489
   },
   {
     "name": "Toffee TV",
@@ -940,7 +940,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-0",
     "order": 83,
-    "response_time_ms": 863,
+    "response_time_ms": 853,
     "manual_override": true
   },
   {
@@ -952,7 +952,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-1",
     "order": 84,
-    "response_time_ms": 561,
+    "response_time_ms": 548,
     "manual_override": true
   },
   {
@@ -964,7 +964,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-2",
     "order": 85,
-    "response_time_ms": 542,
+    "response_time_ms": 578,
     "manual_override": true
   },
   {
@@ -976,7 +976,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-4",
     "order": 87,
-    "response_time_ms": 593,
+    "response_time_ms": 565,
     "manual_override": true
   },
   {
@@ -988,7 +988,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-5",
     "order": 88,
-    "response_time_ms": 565,
+    "response_time_ms": 570,
     "manual_override": true
   },
   {
@@ -1000,7 +1000,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-6",
     "order": 89,
-    "response_time_ms": 553,
+    "response_time_ms": 556,
     "manual_override": true
   },
   {
@@ -1012,7 +1012,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-7",
     "order": 90,
-    "response_time_ms": 584,
+    "response_time_ms": 589,
     "manual_override": true
   },
   {
@@ -1024,7 +1024,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-8",
     "order": 91,
-    "response_time_ms": 542,
+    "response_time_ms": 567,
     "manual_override": true
   },
   {
@@ -1036,7 +1036,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-9",
     "order": 92,
-    "response_time_ms": 554,
+    "response_time_ms": 553,
     "manual_override": true
   },
   {
@@ -1048,7 +1048,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-10",
     "order": 93,
-    "response_time_ms": 547,
+    "response_time_ms": 573,
     "manual_override": true
   },
   {
@@ -1060,7 +1060,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-11",
     "order": 94,
-    "response_time_ms": 568,
+    "response_time_ms": 569,
     "manual_override": true
   },
   {
@@ -1072,7 +1072,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-12",
     "order": 95,
-    "response_time_ms": 565,
+    "response_time_ms": 579,
     "manual_override": true
   },
   {
@@ -1084,7 +1084,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-13",
     "order": 96,
-    "response_time_ms": 556,
+    "response_time_ms": 544,
     "manual_override": true
   },
   {
@@ -1096,7 +1096,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-14",
     "order": 97,
-    "response_time_ms": 560,
+    "response_time_ms": 570,
     "manual_override": true
   },
   {
@@ -1108,7 +1108,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-15",
     "order": 98,
-    "response_time_ms": 573,
+    "response_time_ms": 575,
     "manual_override": true
   },
   {
@@ -1120,7 +1120,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-16",
     "order": 99,
-    "response_time_ms": 560,
+    "response_time_ms": 556,
     "manual_override": true
   },
   {
@@ -1132,7 +1132,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-17",
     "order": 100,
-    "response_time_ms": 568,
+    "response_time_ms": 543,
     "manual_override": true
   },
   {
@@ -1156,7 +1156,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-19",
     "order": 102,
-    "response_time_ms": 565,
+    "response_time_ms": 569,
     "manual_override": true
   },
   {
@@ -1168,7 +1168,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-20",
     "order": 103,
-    "response_time_ms": 543,
+    "response_time_ms": 562,
     "manual_override": true
   },
   {
@@ -1180,7 +1180,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-21",
     "order": 104,
-    "response_time_ms": 594,
+    "response_time_ms": 561,
     "manual_override": true
   },
   {
@@ -1192,7 +1192,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-22",
     "order": 105,
-    "response_time_ms": 556,
+    "response_time_ms": 577,
     "manual_override": true
   },
   {
@@ -1204,7 +1204,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-23",
     "order": 106,
-    "response_time_ms": 542,
+    "response_time_ms": 557,
     "manual_override": true
   },
   {
@@ -1216,7 +1216,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-24",
     "order": 107,
-    "response_time_ms": 572,
+    "response_time_ms": 568,
     "manual_override": true
   },
   {
@@ -1228,7 +1228,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-25",
     "order": 108,
-    "response_time_ms": 558,
+    "response_time_ms": 571,
     "manual_override": true
   },
   {
@@ -1240,7 +1240,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-26",
     "order": 109,
-    "response_time_ms": 569,
+    "response_time_ms": 582,
     "manual_override": true
   },
   {
@@ -1252,7 +1252,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-28",
     "order": 111,
-    "response_time_ms": 564,
+    "response_time_ms": 586,
     "manual_override": true
   },
   {
@@ -1264,7 +1264,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-29",
     "order": 112,
-    "response_time_ms": 551,
+    "response_time_ms": 550,
     "manual_override": true
   },
   {
@@ -1276,7 +1276,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-30",
     "order": 113,
-    "response_time_ms": 546,
+    "response_time_ms": 554,
     "manual_override": true
   },
   {
@@ -1288,7 +1288,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-31",
     "order": 114,
-    "response_time_ms": 544,
+    "response_time_ms": 565,
     "manual_override": true
   },
   {
@@ -1300,7 +1300,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-32",
     "order": 115,
-    "response_time_ms": 569,
+    "response_time_ms": 564,
     "manual_override": true
   },
   {
@@ -1312,7 +1312,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-33",
     "order": 116,
-    "response_time_ms": 546,
+    "response_time_ms": 553,
     "manual_override": true
   },
   {
@@ -1324,7 +1324,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-34",
     "order": 117,
-    "response_time_ms": 563,
+    "response_time_ms": 581,
     "manual_override": true
   },
   {
@@ -1336,7 +1336,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-35",
     "order": 118,
-    "response_time_ms": 564,
+    "response_time_ms": 565,
     "manual_override": true
   },
   {
@@ -1348,7 +1348,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-36",
     "order": 119,
-    "response_time_ms": 579,
+    "response_time_ms": 555,
     "manual_override": true
   },
   {
@@ -1360,7 +1360,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-37",
     "order": 120,
-    "response_time_ms": 564,
+    "response_time_ms": 573,
     "manual_override": true
   },
   {
@@ -1372,7 +1372,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-38",
     "order": 121,
-    "response_time_ms": 581,
+    "response_time_ms": 544,
     "manual_override": true
   },
   {
@@ -1384,7 +1384,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-39",
     "order": 122,
-    "response_time_ms": 552,
+    "response_time_ms": 548,
     "manual_override": true
   },
   {
@@ -1396,7 +1396,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-40",
     "order": 123,
-    "response_time_ms": 564,
+    "response_time_ms": 575,
     "manual_override": true
   },
   {
@@ -1408,7 +1408,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-41",
     "order": 124,
-    "response_time_ms": 573,
+    "response_time_ms": 552,
     "manual_override": true
   },
   {
@@ -1420,7 +1420,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-42",
     "order": 125,
-    "response_time_ms": 562,
+    "response_time_ms": 573,
     "manual_override": true
   },
   {
@@ -1432,7 +1432,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-43",
     "order": 126,
-    "response_time_ms": 563,
+    "response_time_ms": 564,
     "manual_override": true
   },
   {
@@ -1444,7 +1444,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-44",
     "order": 127,
-    "response_time_ms": 541,
+    "response_time_ms": 557,
     "manual_override": true
   },
   {
@@ -1456,7 +1456,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-45",
     "order": 128,
-    "response_time_ms": 556,
+    "response_time_ms": 574,
     "manual_override": true
   },
   {
@@ -1468,7 +1468,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-46",
     "order": 129,
-    "response_time_ms": 562,
+    "response_time_ms": 559,
     "manual_override": true
   },
   {
@@ -1480,7 +1480,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-47",
     "order": 130,
-    "response_time_ms": 562,
+    "response_time_ms": 554,
     "manual_override": true
   },
   {
@@ -1492,7 +1492,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-48",
     "order": 131,
-    "response_time_ms": 564,
+    "response_time_ms": 566,
     "manual_override": true
   },
   {
@@ -1504,7 +1504,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-49",
     "order": 132,
-    "response_time_ms": 563,
+    "response_time_ms": 548,
     "manual_override": true
   },
   {
@@ -1516,7 +1516,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-50",
     "order": 133,
-    "response_time_ms": 573,
+    "response_time_ms": 541,
     "manual_override": true
   },
   {
@@ -1528,7 +1528,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-51",
     "order": 134,
-    "response_time_ms": 564,
+    "response_time_ms": 568,
     "manual_override": true
   },
   {
@@ -1540,7 +1540,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-52",
     "order": 135,
-    "response_time_ms": 550,
+    "response_time_ms": 543,
     "manual_override": true
   },
   {
@@ -1552,7 +1552,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-53",
     "order": 136,
-    "response_time_ms": 568,
+    "response_time_ms": 565,
     "manual_override": true
   },
   {
@@ -1564,7 +1564,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-54",
     "order": 137,
-    "response_time_ms": 575,
+    "response_time_ms": 563,
     "manual_override": true
   },
   {
@@ -1576,7 +1576,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-55",
     "order": 138,
-    "response_time_ms": 565,
+    "response_time_ms": 555,
     "manual_override": true
   },
   {
@@ -1588,7 +1588,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-56",
     "order": 139,
-    "response_time_ms": 551,
+    "response_time_ms": 590,
     "manual_override": true
   },
   {
@@ -1600,7 +1600,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-57",
     "order": 140,
-    "response_time_ms": 594,
+    "response_time_ms": 556,
     "manual_override": true
   },
   {
@@ -1612,7 +1612,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-58",
     "order": 141,
-    "response_time_ms": 563,
+    "response_time_ms": 543,
     "manual_override": true
   },
   {
@@ -1624,7 +1624,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-59",
     "order": 142,
-    "response_time_ms": 561,
+    "response_time_ms": 546,
     "manual_override": true
   },
   {
@@ -1636,7 +1636,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-60",
     "order": 143,
-    "response_time_ms": 570,
+    "response_time_ms": 563,
     "manual_override": true
   },
   {
@@ -1648,7 +1648,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-61",
     "order": 144,
-    "response_time_ms": 573,
+    "response_time_ms": 574,
     "manual_override": true
   },
   {
@@ -1660,7 +1660,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-62",
     "order": 145,
-    "response_time_ms": 556,
+    "response_time_ms": 567,
     "manual_override": true
   },
   {
@@ -1672,7 +1672,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-63",
     "order": 146,
-    "response_time_ms": 571,
+    "response_time_ms": 566,
     "manual_override": true
   },
   {
@@ -1684,7 +1684,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-64",
     "order": 147,
-    "response_time_ms": 555,
+    "response_time_ms": 556,
     "manual_override": true
   },
   {
@@ -1696,7 +1696,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-65",
     "order": 148,
-    "response_time_ms": 582,
+    "response_time_ms": 577,
     "manual_override": true
   },
   {
@@ -1708,7 +1708,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-66",
     "order": 149,
-    "response_time_ms": 543,
+    "response_time_ms": 571,
     "manual_override": true
   },
   {
@@ -1720,7 +1720,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-67",
     "order": 150,
-    "response_time_ms": 556,
+    "response_time_ms": 548,
     "manual_override": true
   },
   {
@@ -1732,7 +1732,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-68",
     "order": 151,
-    "response_time_ms": 555,
+    "response_time_ms": 559,
     "manual_override": true
   },
   {
@@ -1768,7 +1768,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-71",
     "order": 154,
-    "response_time_ms": 574,
+    "response_time_ms": 563,
     "manual_override": true
   },
   {
@@ -1792,7 +1792,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-73",
     "order": 156,
-    "response_time_ms": 573,
+    "response_time_ms": 595,
     "manual_override": true
   },
   {
@@ -1804,7 +1804,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-74",
     "order": 157,
-    "response_time_ms": 561,
+    "response_time_ms": 543,
     "manual_override": true
   },
   {
@@ -1816,7 +1816,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-75",
     "order": 158,
-    "response_time_ms": 563,
+    "response_time_ms": 574,
     "manual_override": true
   },
   {
@@ -1828,7 +1828,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-0",
     "order": 158,
-    "response_time_ms": 560
+    "response_time_ms": 555
   },
   {
     "name": "& Pictures HD",
@@ -1839,7 +1839,7 @@
     "is_pinned": false,
     "id": "ch-1793275837430-76",
     "order": 159,
-    "response_time_ms": 555,
+    "response_time_ms": 564,
     "manual_override": true
   },
   {
@@ -1851,7 +1851,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-1",
     "order": 159,
-    "response_time_ms": 572
+    "response_time_ms": 560
   },
   {
     "name": "WC Match Recap",
@@ -1862,7 +1862,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-2",
     "order": 160,
-    "response_time_ms": 573
+    "response_time_ms": 555
   },
   {
     "name": "AWSN TV",
@@ -1873,7 +1873,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-3",
     "order": 161,
-    "response_time_ms": 565
+    "response_time_ms": 556
   },
   {
     "name": "SAFF Live 1",
@@ -1884,7 +1884,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-4",
     "order": 162,
-    "response_time_ms": 560
+    "response_time_ms": 583
   },
   {
     "name": "CNN",
@@ -1895,7 +1895,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-5",
     "order": 163,
-    "response_time_ms": 555
+    "response_time_ms": 575
   },
   {
     "name": "Somoy TV",
@@ -1906,7 +1906,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-6",
     "order": 164,
-    "response_time_ms": 563
+    "response_time_ms": 565
   },
   {
     "name": "Jamuna TV",
@@ -1917,7 +1917,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-7",
     "order": 165,
-    "response_time_ms": 575
+    "response_time_ms": 542
   },
   {
     "name": "Ananda TV",
@@ -1928,7 +1928,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-8",
     "order": 166,
-    "response_time_ms": 551
+    "response_time_ms": 565
   },
   {
     "name": "Bijoy TV",
@@ -1939,7 +1939,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-9",
     "order": 167,
-    "response_time_ms": 593
+    "response_time_ms": 570
   },
   {
     "name": "NTV",
@@ -1961,7 +1961,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-11",
     "order": 169,
-    "response_time_ms": 555
+    "response_time_ms": 546
   },
   {
     "name": "Channel S",
@@ -1983,7 +1983,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-13",
     "order": 171,
-    "response_time_ms": 579
+    "response_time_ms": 548
   },
   {
     "name": "Bangla TV",
@@ -1994,7 +1994,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-14",
     "order": 172,
-    "response_time_ms": 582
+    "response_time_ms": 574
   },
   {
     "name": "Asian TV",
@@ -2005,7 +2005,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-15",
     "order": 173,
-    "response_time_ms": 544
+    "response_time_ms": 575
   },
   {
     "name": "Channel i",
@@ -2016,7 +2016,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-16",
     "order": 174,
-    "response_time_ms": 579
+    "response_time_ms": 568
   },
   {
     "name": "Movie Bangla",
@@ -2027,7 +2027,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-17",
     "order": 175,
-    "response_time_ms": 552
+    "response_time_ms": 542
   },
   {
     "name": "Nexus TV",
@@ -2038,7 +2038,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-18",
     "order": 176,
-    "response_time_ms": 552
+    "response_time_ms": 555
   },
   {
     "name": "Islamic TV",
@@ -2049,7 +2049,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-19",
     "order": 177,
-    "response_time_ms": 555
+    "response_time_ms": 566
   },
   {
     "name": "Desh TV",
@@ -2060,7 +2060,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-20",
     "order": 178,
-    "response_time_ms": 546
+    "response_time_ms": 571
   },
   {
     "name": "Independent TV",
@@ -2071,7 +2071,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-21",
     "order": 179,
-    "response_time_ms": 562
+    "response_time_ms": 570
   },
   {
     "name": "Ekhon TV",
@@ -2082,7 +2082,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-22",
     "order": 180,
-    "response_time_ms": 565
+    "response_time_ms": 570
   },
   {
     "name": "Ekattor TV",
@@ -2093,7 +2093,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-23",
     "order": 181,
-    "response_time_ms": 555
+    "response_time_ms": 560
   },
   {
     "name": "Channel News Asia",
@@ -2104,7 +2104,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-24",
     "order": 182,
-    "response_time_ms": 544
+    "response_time_ms": 547
   },
   {
     "name": "TRT World",
@@ -2115,7 +2115,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-25",
     "order": 183,
-    "response_time_ms": 552
+    "response_time_ms": 573
   },
   {
     "name": "DW",
@@ -2126,7 +2126,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-26",
     "order": 184,
-    "response_time_ms": 565
+    "response_time_ms": 571
   },
   {
     "name": "Al Jazeera",
@@ -2138,7 +2138,7 @@
     "id": "ch-1793357603975-27",
     "order": 185,
     "manual_override": true,
-    "response_time_ms": 560
+    "response_time_ms": 564
   },
   {
     "name": "Russia Today",
@@ -2149,7 +2149,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-28",
     "order": 186,
-    "response_time_ms": 580
+    "response_time_ms": 556
   },
   {
     "name": "France 24",
@@ -2160,7 +2160,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-29",
     "order": 187,
-    "response_time_ms": 564
+    "response_time_ms": 546
   },
   {
     "name": "CGTN",
@@ -2171,7 +2171,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-30",
     "order": 188,
-    "response_time_ms": 579
+    "response_time_ms": 565
   },
   {
     "name": "Eurosport HD",
@@ -2182,7 +2182,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-31",
     "order": 189,
-    "response_time_ms": 565
+    "response_time_ms": 555
   },
   {
     "name": "Saudi Sunnah",
@@ -2193,7 +2193,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-32",
     "order": 190,
-    "response_time_ms": 583
+    "response_time_ms": 565
   },
   {
     "name": "Saudi Quran",
@@ -2204,7 +2204,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-33",
     "order": 191,
-    "response_time_ms": 567
+    "response_time_ms": 553
   },
   {
     "name": "Sony Ten Sports 1 HD",
@@ -2215,7 +2215,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-34",
     "order": 192,
-    "response_time_ms": 556
+    "response_time_ms": 580
   },
   {
     "name": "Sony Ten Sports 2 HD",
@@ -2226,7 +2226,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-35",
     "order": 193,
-    "response_time_ms": 547
+    "response_time_ms": 565
   },
   {
     "name": "Sony Ten Sports 5 HD",
@@ -2237,7 +2237,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-36",
     "order": 194,
-    "response_time_ms": 553
+    "response_time_ms": 563
   },
   {
     "name": "Sony Ten Cricket",
@@ -2248,7 +2248,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-37",
     "order": 195,
-    "response_time_ms": 542
+    "response_time_ms": 562
   },
   {
     "name": "Cartoon Network HD +",
@@ -2259,7 +2259,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-38",
     "order": 196,
-    "response_time_ms": 556
+    "response_time_ms": 583
   },
   {
     "name": "Cartoon Network",
@@ -2270,7 +2270,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-39",
     "order": 197,
-    "response_time_ms": 567
+    "response_time_ms": 562
   },
   {
     "name": "POGO",
@@ -2281,7 +2281,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-40",
     "order": 198,
-    "response_time_ms": 585
+    "response_time_ms": 552
   },
   {
     "name": "Discovery Kids",
@@ -2292,7 +2292,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-41",
     "order": 199,
-    "response_time_ms": 545
+    "response_time_ms": 584
   },
   {
     "name": "Sony YAY",
@@ -2303,7 +2303,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-42",
     "order": 200,
-    "response_time_ms": 573
+    "response_time_ms": 593
   },
   {
     "name": "Zee Bangla",
@@ -2314,7 +2314,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-43",
     "order": 201,
-    "response_time_ms": 569
+    "response_time_ms": 553
   },
   {
     "name": "Zee Anmol",
@@ -2325,7 +2325,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-44",
     "order": 202,
-    "response_time_ms": 581
+    "response_time_ms": 554
   },
   {
     "name": "Zing",
@@ -2336,7 +2336,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-45",
     "order": 203,
-    "response_time_ms": 557
+    "response_time_ms": 571
   },
   {
     "name": "HUM",
@@ -2347,7 +2347,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-46",
     "order": 204,
-    "response_time_ms": 542
+    "response_time_ms": 564
   },
   {
     "name": "HUM Masala",
@@ -2358,7 +2358,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-47",
     "order": 205,
-    "response_time_ms": 555
+    "response_time_ms": 573
   },
   {
     "name": "HUM Sitaray",
@@ -2369,7 +2369,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-48",
     "order": 206,
-    "response_time_ms": 550
+    "response_time_ms": 583
   },
   {
     "name": "Sony Aath",
@@ -2380,7 +2380,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-49",
     "order": 207,
-    "response_time_ms": 571
+    "response_time_ms": 544
   },
   {
     "name": "Sony Entertainment Television HD",
@@ -2391,7 +2391,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-50",
     "order": 208,
-    "response_time_ms": 564
+    "response_time_ms": 560
   },
   {
     "name": "Sony Entertainment Television",
@@ -2402,7 +2402,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-51",
     "order": 209,
-    "response_time_ms": 547
+    "response_time_ms": 552
   },
   {
     "name": "B4U Music",
@@ -2413,7 +2413,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-52",
     "order": 210,
-    "response_time_ms": 591
+    "response_time_ms": 563
   },
   {
     "name": "Sony SAB HD",
@@ -2435,7 +2435,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-54",
     "order": 212,
-    "response_time_ms": 586
+    "response_time_ms": 563
   },
   {
     "name": "Sony MAX HD",
@@ -2446,7 +2446,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-55",
     "order": 213,
-    "response_time_ms": 541
+    "response_time_ms": 563
   },
   {
     "name": "Zee Bangla Cinema",
@@ -2457,7 +2457,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-56",
     "order": 214,
-    "response_time_ms": 583
+    "response_time_ms": 563
   },
   {
     "name": "Zee Bollywood",
@@ -2468,7 +2468,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-57",
     "order": 215,
-    "response_time_ms": 551
+    "response_time_ms": 552
   },
   {
     "name": "Zee Action",
@@ -2479,7 +2479,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-58",
     "order": 216,
-    "response_time_ms": 555
+    "response_time_ms": 574
   },
   {
     "name": "Sony MAX",
@@ -2490,7 +2490,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-59",
     "order": 217,
-    "response_time_ms": 552
+    "response_time_ms": 575
   },
   {
     "name": "Sony PIX HD",
@@ -2501,7 +2501,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-60",
     "order": 218,
-    "response_time_ms": 559
+    "response_time_ms": 552
   },
   {
     "name": "Zee Cafe",
@@ -2512,7 +2512,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-61",
     "order": 219,
-    "response_time_ms": 542
+    "response_time_ms": 547
   },
   {
     "name": "B4U Movies APAC",
@@ -2523,7 +2523,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-62",
     "order": 220,
-    "response_time_ms": 576
+    "response_time_ms": 548
   },
   {
     "name": "Sony MAX 2",
@@ -2534,7 +2534,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-63",
     "order": 221,
-    "response_time_ms": 567
+    "response_time_ms": 541
   },
   {
     "name": "Zee Cinema HD",
@@ -2545,7 +2545,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-64",
     "order": 222,
-    "response_time_ms": 564
+    "response_time_ms": 592
   },
   {
     "name": "TLC HD",
@@ -2556,7 +2556,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-65",
     "order": 223,
-    "response_time_ms": 583
+    "response_time_ms": 578
   },
   {
     "name": "TLC",
@@ -2567,7 +2567,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-66",
     "order": 224,
-    "response_time_ms": 576
+    "response_time_ms": 546
   },
   {
     "name": "Animal Planet",
@@ -2578,7 +2578,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-67",
     "order": 225,
-    "response_time_ms": 570
+    "response_time_ms": 560
   },
   {
     "name": "Animal Planet HD",
@@ -2589,7 +2589,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-68",
     "order": 226,
-    "response_time_ms": 563
+    "response_time_ms": 553
   },
   {
     "name": "Sony BBC Earth HD",
@@ -2600,7 +2600,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-69",
     "order": 227,
-    "response_time_ms": 550
+    "response_time_ms": 561
   },
   {
     "name": "Discovery HD",
@@ -2611,7 +2611,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-70",
     "order": 228,
-    "response_time_ms": 594
+    "response_time_ms": 564
   },
   {
     "name": "Discovery",
@@ -2622,7 +2622,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-71",
     "order": 229,
-    "response_time_ms": 574
+    "response_time_ms": 553
   },
   {
     "name": "Discovery Science",
@@ -2633,7 +2633,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-72",
     "order": 230,
-    "response_time_ms": 556
+    "response_time_ms": 563
   },
   {
     "name": "Discovery Turbo",
@@ -2644,7 +2644,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-73",
     "order": 231,
-    "response_time_ms": 594
+    "response_time_ms": 554
   },
   {
     "name": "Investigation Discovery HD",
@@ -2655,7 +2655,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-74",
     "order": 232,
-    "response_time_ms": 552
+    "response_time_ms": 574
   },
   {
     "name": "&TV HD",
@@ -2666,7 +2666,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-75",
     "order": 233,
-    "response_time_ms": 561
+    "response_time_ms": 548
   },
   {
     "name": "& Pictures HD",
@@ -2677,7 +2677,7 @@
     "is_pinned": false,
     "id": "ch-1793357603975-76",
     "order": 234,
-    "response_time_ms": 555
+    "response_time_ms": 564
   },
   {
     "name": "w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png\" group-title=\"Live TV\",BFL | Live 5",
@@ -2689,6 +2689,6 @@
     "id": "ch-1793357603975-77",
     "order": 235,
     "manual_override": true,
-    "response_time_ms": 556
+    "response_time_ms": 570
   }
 ]
