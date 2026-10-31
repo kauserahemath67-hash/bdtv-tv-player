@@ -7,14 +7,5 @@
     "active": true,
     "id": "pl-1793365522524",
     "savedAt": "2026-10-31T16:02:52.915Z"
-  },
-  {
-    "id": "pl-1793462657014",
-    "name": "https://alixbd.com/playlistconfig/playlist.m3u",
-    "url": "https://alixbd.com/playlistconfig/playlist.m3u",
-    "format": "M3U Playlist",
-    "channelCount": 77,
-    "active": true,
-    "savedAt": "2026-10-31T16:04:17.014Z"
   }
 ]
