@@ -9,13 +9,9 @@
   "default_max_devices": 2,
   "expiry_warning_days": 3,
   "ads": {
-    "header": {
-      "active": false,
-      "code": "<!-- Header Ad Code -->"
-    },
     "top": {
-      "active": false,
-      "code": ""
+      "active": true,
+      "code": "<script src=\"https://pl31474814.profitableratecpmnetwork.com/eb/46/0d/eb460d5892acbe0649e2e19486b5bbe1.js\"></script>\n<script src=\"https://pl31568848.profitableratecpmnetwork.com/2a/b9/e3/2ab9e3edd5975aa36c4b3263bdcca882.js\"></script>"
     },
     "below_player": {
       "active": false,
