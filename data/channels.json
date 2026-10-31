@@ -1642,16 +1642,6 @@
     "name": "Unknown Channel",
     "logo": "",
     "category": "General",
-    "url": "channel1-1793446680.ts?txspiseq=106152513118423095366",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793450469024-1",
-    "order": 162
-  },
-  {
-    "name": "Unknown Channel",
-    "logo": "",
-    "category": "General",
     "url": "channel1-1793446681.ts?txspiseq=106152513118423095366",
     "status": "ONLINE",
     "is_pinned": false,
