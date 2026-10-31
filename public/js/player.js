@@ -2,6 +2,8 @@
 // BDTv Live IPTV Web Player Engine
 // ==========================================
 
+const INSTALLED_APP_VERSION = 116;
+
 const FALLBACK_CHANNELS = [
   {
     id: "fb-1",
@@ -190,7 +192,11 @@ class IPTVPlayer {
       const json = await res.json();
       if (!json || !json.versionCode) return;
 
-      const installedVersion = Number(localStorage.getItem('bdtv_app_version') || '108');
+      const savedVersion = Number(localStorage.getItem('bdtv_app_version'));
+      const installedVersion = Math.max(
+        INSTALLED_APP_VERSION,
+        Number.isFinite(savedVersion) ? savedVersion : 0
+      );
       if (json.versionCode > installedVersion || json.forceUpdate) {
         // আপডেট আছে — টপ বার বাটন দেখাও
         const dlBtn = document.getElementById('btn-download-app');
