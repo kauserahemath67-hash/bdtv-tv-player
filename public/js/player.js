@@ -193,9 +193,14 @@ class IPTVPlayer {
       if (!json || !json.versionCode) return;
 
       const savedVersion = Number(localStorage.getItem('bdtv_app_version'));
+      const bridge = window.AndroidApp || window.AndroidBridge;
+      const nativeVersion = bridge && typeof bridge.getAppVersionCode === 'function'
+        ? Number(bridge.getAppVersionCode())
+        : 0;
       const installedVersion = Math.max(
         INSTALLED_APP_VERSION,
-        Number.isFinite(savedVersion) ? savedVersion : 0
+        Number.isFinite(savedVersion) ? savedVersion : 0,
+        Number.isFinite(nativeVersion) ? nativeVersion : 0
       );
       if (json.versionCode > installedVersion || json.forceUpdate) {
         // আপডেট আছে — টপ বার বাটন দেখাও
