@@ -1632,7 +1632,7 @@
     "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png",
     "category": "Live TV",
     "url": "https://alixbd.com/playlistconfig/channel/78.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793365539276-77",
     "order": 160,
