@@ -2,7 +2,7 @@
 // BDTv Live IPTV Web Player Engine
 // ==========================================
 
-const INSTALLED_APP_VERSION = 116;
+const INSTALLED_APP_VERSION = 118;
 
 const FALLBACK_CHANNELS = [
   {
@@ -668,6 +668,24 @@ class IPTVPlayer {
     });
   }
 
+  moveChannelFocusVertically(direction) {
+    const channelCount = this.filteredChannels.length;
+    if (!channelCount) return;
+
+    const columns = window.getComputedStyle(this.channelGrid).gridTemplateColumns
+      .split(/\s+/)
+      .filter(Boolean).length || 1;
+    const maxIndex = channelCount - 1;
+    const currentRow = Math.floor(this.focusedIndex / columns);
+    const currentColumn = this.focusedIndex % columns;
+    const maxRow = Math.floor(maxIndex / columns);
+    const targetRow = Math.max(0, Math.min(maxRow, currentRow + direction));
+    const targetRowEnd = Math.min(maxIndex, (targetRow + 1) * columns - 1);
+
+    this.focusedIndex = Math.min(targetRow * columns + currentColumn, targetRowEnd);
+    this.updateCardFocus();
+  }
+
   // 9. Android TV Remote Control Logic
   bindRemoteKeys() {
     window.addEventListener('keydown', (e) => {
@@ -679,18 +697,14 @@ class IPTVPlayer {
           if (!this.isDrawerOpen) {
             this.openDrawer();
           } else {
-            // Navigate focus backward by grid columns (approx 4)
-            this.focusedIndex = Math.max(0, this.focusedIndex - 4);
-            this.updateCardFocus();
+            this.moveChannelFocusVertically(-1);
           }
           break;
 
         case 'ArrowDown':
           e.preventDefault();
           if (this.isDrawerOpen) {
-            const maxIdx = this.filteredChannels.length - 1;
-            this.focusedIndex = Math.min(maxIdx, this.focusedIndex + 4);
-            this.updateCardFocus();
+            this.moveChannelFocusVertically(1);
           } else {
             this.openDrawer();
           }
