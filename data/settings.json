@@ -14,11 +14,11 @@
       "code": "<script src=\"https://pl31474814.profitableratecpmnetwork.com/eb/46/0d/eb460d5892acbe0649e2e19486b5bbe1.js\"></script>\n<script src=\"https://pl31568848.profitableratecpmnetwork.com/2a/b9/e3/2ab9e3edd5975aa36c4b3263bdcca882.js\"></script>"
     },
     "below_player": {
-      "active": false,
-      "code": "<div class='ad-banner'>Below Player Banner Ad</div>"
+      "active": true,
+      "code": "<div class='ad-banner'>Bel<script>\n  atOptions = {\n    'key' : '2808f6c384349d93a281bafddc6ded93',\n    'format' : 'iframe',\n    'height' : 90,\n    'width' : 728,\n    'params' : {}\n  };\n</script>\n<script src=\"https://www.highrevenueformat.com/2808f6c384349d93a281bafddc6ded93/invoke.js\"></script>ow Player Banner Ad</div>"
     },
     "infeed": {
-      "active": false,
+      "active": true,
       "code": "<div class='ad-banner infeed'>Special Offer / Ad</div>"
     },
     "footer": {
