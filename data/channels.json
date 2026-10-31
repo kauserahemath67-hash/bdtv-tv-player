@@ -1,15 +1,5 @@
 [
   {
-    "name": "Fotball",
-    "logo": "",
-    "category": "Sports",
-    "url": "https://live2.jorvakstreamcache.com/live/channel6.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793450469024-0",
-    "manual_override": true
-  },
-  {
     "name": "T Sports",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
     "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
