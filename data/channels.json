@@ -1812,40 +1812,43 @@
     "logo": "https://assets-prod.services.toffeelive.com/ay7uX5UBv9knK3AHs6TI/posters/deb3c186-b2e1-4a91-aafb-d86f9128b851.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/74.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793463148757-73",
     "order": 156,
-    "response_time_ms": 546
+    "response_time_ms": 546,
+    "manual_override": true
   },
   {
     "name": "&TV HD",
     "logo": "https://assets-prod.services.toffeelive.com/5cwRnZUBtpl-Sbt7wWrN/posters/5779ade3-e9ba-4107-b3da-bae6f891500a.png",
     "category": "Drama",
     "url": "https://alixbd.com/playlistconfig/channel/75.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793463148757-74",
     "order": 157,
-    "response_time_ms": 563
+    "response_time_ms": 563,
+    "manual_override": true
   },
   {
     "name": "& Pictures HD",
     "logo": "https://assets-prod.services.toffeelive.com/QMwWnZUBtpl-Sbt7S2sx/posters/8cad9a82-842a-47bf-a060-f17011f11c07.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/76.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793463148757-75",
     "order": 158,
-    "response_time_ms": 562
+    "response_time_ms": 562,
+    "manual_override": true
   },
   {
     "name": "w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png\" group-title=\"Live TV\",BFL | Live 5",
     "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png",
     "category": "Live TV",
     "url": "https://alixbd.com/playlistconfig/channel/77.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793463148757-76",
     "order": 159,
