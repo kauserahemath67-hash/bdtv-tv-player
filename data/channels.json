@@ -824,20 +824,22 @@
     "logo": "https://logos-world.net/wp-content/uploads/2023/04/Animal-Planet-Logo.png",
     "url": "https://stream.ottplus.bd/live/animal_planet_hd_abr/playlist.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793609079574-80",
-    "order": 81
+    "order": 81,
+    "manual_override": true
   },
   {
     "name": "Discovery",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqezFALo-LbtcS9LIbXWG88NFs5W5v99xfaYqrVOzs3oAzeHoTfXiTNdBs&s=10",
     "url": "https://stream.ottplus.bd/live/discovery_sd_abr/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793609079574-81",
-    "order": 82
+    "order": 82,
+    "manual_override": true
   },
   {
     "name": "Toffee TV",
@@ -1114,10 +1116,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/S9bzFaEBalKyvLQIrh3b/posters/f400a8bc-d83c-40f8-93e8-206314ad332d.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/28.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793609093117-27",
-    "order": 110
+    "order": 110,
+    "manual_override": true
   },
   {
     "name": "Russia Today",
