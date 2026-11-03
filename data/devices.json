@@ -28,20 +28,6 @@
     "blocked_at": "2026-11-03T12:10:46.540Z"
   },
   {
-    "id": "dev-1793202389968-gkq5",
-    "customer_id": "cust-101",
-    "customer_code": "kauser",
-    "fingerprint": "dev-yl03pufr-mvs94s0v",
-    "device_name": "App Player",
-    "os": "Android / TV",
-    "browser": "Webview",
-    "ip": "103.200.37.206",
-    "status": "BLOCKED",
-    "registered_at": "2026-10-28T15:46:29.968Z",
-    "last_active": "2026-10-28T15:46:31.655Z",
-    "blocked_at": "2026-11-03T12:10:44.845Z"
-  },
-  {
     "id": "dev-1793715013503-juod",
     "customer_id": "cust-1793714991373",
     "customer_code": "kauser",
