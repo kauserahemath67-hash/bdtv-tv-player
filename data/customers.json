@@ -3,7 +3,7 @@
     "id": "cust-1793714991373",
     "customer_code": "kauser",
     "name": "kauser",
-    "login_pin": "123",
+    "login_pin": "1234",
     "account_status": "ACTIVE",
     "manual_block": false,
     "block_reason": "",
@@ -15,7 +15,7 @@
     "payment_status": "PAID",
     "transaction_reference": "",
     "createdAt": "2026-11-03T14:09:51.373Z",
-    "updatedAt": "2026-11-03T16:56:23.410Z"
+    "updatedAt": "2026-11-03T17:00:32.263Z"
   },
   {
     "id": "cust-1793125203845",
