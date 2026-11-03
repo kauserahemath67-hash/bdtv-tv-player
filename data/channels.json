@@ -635,10 +635,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1777454219313.png",
     "url": "https://akash-by-hady.srhady.workers.dev/ts?ep=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9vd3Jjb3ZjcnB5LmdwY2RuLm5ldC9icGstdHYvMTcyMS9vdXRwdXQvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRWRnZVRpbWUiOjE3ODY4Mjc2NDJ9fX1dfQ&es=krTb1ISx2d02a7DZiOUUZk~aKxq7x4cg-B99bEhJM1o&url=https%3A%2F%2Fowrcovcrpy.gpcdn.net%2Fbpk-tv%2F1721%2Foutput%2F1721-audio_113512_eng%3D113200-video%3D2202800.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-62",
-    "order": 63
+    "order": 63,
+    "manual_override": true
   },
   {
     "name": "Sony Max",
@@ -655,20 +656,22 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/b02e7be82b9b488e5a79b0f7e8f7ca1c.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/sony_ent_hd_abr/live/sony_ent_hd_480/chunks.m3u8?nimblesessionid=206459882",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-64",
-    "order": 65
+    "order": 65,
+    "manual_override": true
   },
   {
     "name": "Sony Max 2",
     "logo": "https://yt3.googleusercontent.com/r7fi39b2G0g-xrHbziVK_V0rgQqwRqXRtSDuUaALPCL-41ayfqIs_m7tSGR1ZGXU76toUEU3wg=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://drk6xq0vhn.gpcdn.net/live/max_2_abr/live/max_2_720/chunks.m3u8?nimblesessionid=206458908",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-65",
-    "order": 66
+    "order": 66,
+    "manual_override": true
   },
   {
     "name": "Sony Movies",
@@ -685,30 +688,33 @@
     "logo": "https://yt3.googleusercontent.com/ytc/AIdro_laNnznvidGadk1O6pI_FsGpRqKdrH6MsequORPttJsBNc=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-67",
-    "order": 68
+    "order": 68,
+    "manual_override": true
   },
   {
     "name": "Music India",
     "logo": "https://pbs.twimg.com/profile_images/618036953/music_india_400x400.png",
     "url": "https://cdn-2.pishow.tv/live/226/master.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-68",
-    "order": 69
+    "order": 69,
+    "manual_override": true
   },
   {
     "name": "B4U Music",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/e41d7120121fbc7f3fe1f07b30c737d2.png",
     "url": "https://stream.ottplus.bd/live/b4u_music_abr/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-69",
-    "order": 70
+    "order": 70,
+    "manual_override": true
   },
   {
     "name": "Gopal Bhar",
@@ -725,10 +731,11 @@
     "logo": "https://mir-s3-cdn-cf.behance.net/projects/202/085a3357868699.Y3JvcCw3MTksNTYzLDMyMSw4Mw.jpg",
     "url": "https://box.bbaria.net/DurontoTV/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-71",
-    "order": 72
+    "order": 72,
+    "manual_override": true
   },
   {
     "name": "Pogo",
@@ -755,20 +762,22 @@
     "logo": "https://i.ibb.co.com/01gmWfz/images-1.webp",
     "url": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/chunklist_b2000000_DVR.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-74",
-    "order": 75
+    "order": 75,
+    "manual_override": true
   },
   {
     "name": "Khushboo Bangla",
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/c4/Khushboo_Bangla_logo_%282016-present%29.png",
     "url": "https://cdn-4.pishow.tv/live/1473/master.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-75",
-    "order": 76
+    "order": 76,
+    "manual_override": true
   },
   {
     "name": "Moto Patlu",
@@ -795,10 +804,11 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyoiK0AGw4_tmNbbk1DVh0OD_DcCRGXQ45dNkYfD8Mw&s=10",
     "url": "https://server.zillarbarta.com/zbcatun/video.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-78",
-    "order": 79
+    "order": 79,
+    "manual_override": true
   },
   {
     "name": "Batul The Great",
