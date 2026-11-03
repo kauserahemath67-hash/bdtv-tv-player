@@ -898,20 +898,22 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2025/02/bartoman-web-150x150.jpeg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/bartomantv.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-12",
-    "order": 88
+    "order": 88,
+    "manual_override": true
   },
   {
     "name": "BD-আমার বাংলা ২৪",
     "logo": "https://www.jagobd.com/wp-content/uploads/2026/04/amr-bangla--150x150.jpeg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/citizentv.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-13",
-    "order": 89
+    "order": 89,
+    "manual_override": true
   },
   {
     "name": "BiswaBangla 24",
@@ -928,10 +930,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2017/08/3WUFkD8.png?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvnational-ctg.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-16",
-    "order": 91
+    "order": 91,
+    "manual_override": true
   },
   {
     "name": "BTV National",
