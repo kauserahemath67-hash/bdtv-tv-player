@@ -649,7 +649,8 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-63",
-    "order": 64
+    "order": 64,
+    "manual_override": true
   },
   {
     "name": "Sony Entertainment Hd",
