@@ -308,11 +308,30 @@ class IPTVPlayer {
   // 3. Filter Channels
   filterChannels(cat) {
     this.currentCategory = cat;
+
+    // Remember the currently-playing channel before filter changes the array
+    const playingChannel = (this.currentIndex >= 0 && this.filteredChannels.length > 0)
+      ? this.filteredChannels[this.currentIndex]
+      : null;
+
     if (cat === 'All') {
       this.filteredChannels = [...this.channels];
     } else {
       this.filteredChannels = this.channels.filter(c => c.category && c.category.toLowerCase() === cat.toLowerCase());
     }
+
+    // Re-sync currentIndex so the playing channel stays correctly tracked in the new array
+    if (playingChannel) {
+      const newIdx = this.filteredChannels.findIndex(c => c.id === playingChannel.id || c.url === playingChannel.url);
+      this.currentIndex = newIdx >= 0 ? newIdx : -1;
+    } else {
+      this.currentIndex = -1;
+    }
+
+    // Keep focusedIndex in bounds; default to the playing channel position
+    this.focusedIndex = this.currentIndex >= 0 ? this.currentIndex : 0;
+    if (this.focusedIndex >= this.filteredChannels.length) this.focusedIndex = 0;
+
     this.renderChannelGrid();
   }
 
@@ -591,7 +610,8 @@ class IPTVPlayer {
       this.attemptPlay();
     }
 
-    this.renderChannelGrid();
+    // Update card highlights without full re-render (prevents wrong-channel visual bug)
+    this.updateCardFocus();
     this.triggerTopBar();
   }
 
@@ -810,12 +830,19 @@ class IPTVPlayer {
   updateCardFocus() {
     const cards = this.channelGrid.querySelectorAll('.channel-card');
     cards.forEach((card, idx) => {
+      // focused = keyboard/mouse highlight
       if (idx === this.focusedIndex) {
         card.classList.add('focused');
         card.focus({ preventScroll: true });
         card.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'auto' });
       } else {
         card.classList.remove('focused');
+      }
+      // active-playing = currently streaming channel (must match currentIndex, NOT focusedIndex)
+      if (idx === this.currentIndex) {
+        card.classList.add('active-playing');
+      } else {
+        card.classList.remove('active-playing');
       }
     });
   }
@@ -1286,7 +1313,7 @@ class IPTVPlayer {
 
   sendHeartbeat() {
     try {
-      const currentCh = this.channels && this.channels[this.currentIndex];
+      const currentCh = this.filteredChannels && this.filteredChannels[this.currentIndex];
       const payload = {
         channel_name: currentCh ? currentCh.name : 'BDTv Player',
         stream_url: currentCh ? currentCh.url : '—',
