@@ -703,32 +703,40 @@ class IPTVPlayer {
 
   handleUpdateModalKey(e) {
     const key = e.key;
-    if (key === 'ArrowLeft' || key === 'ArrowRight') {
+    const keyCode = e.keyCode || e.which;
+    const isLeft = key === 'ArrowLeft' || keyCode === 21 || keyCode === 37;
+    const isRight = key === 'ArrowRight' || keyCode === 22 || keyCode === 39;
+    const isUp = key === 'ArrowUp' || keyCode === 19 || keyCode === 38;
+    const isDown = key === 'ArrowDown' || keyCode === 20 || keyCode === 40;
+    const isOk = key === 'Enter' || key === 'Select' || key === 'Go' || key === 'Accept' || keyCode === 13 || keyCode === 23 || keyCode === 66;
+    const isBack = key === 'Escape' || key === 'Back' || key === 'BrowserBack' || keyCode === 27 || keyCode === 4;
+
+    if (isLeft || isRight) {
       e.preventDefault();
       this.updateModalFocusIndex = (this.updateModalFocusIndex === 0) ? 1 : 0;
       this.updateUpdateModalFocus();
       return true;
     }
-    if (key === 'ArrowUp') {
+    if (isUp) {
       e.preventDefault();
       this.updateModalFocusIndex = 2; // Close button
       this.updateUpdateModalFocus();
       return true;
     }
-    if (key === 'ArrowDown') {
+    if (isDown) {
       e.preventDefault();
       this.updateModalFocusIndex = 0; // Download button
       this.updateUpdateModalFocus();
       return true;
     }
-    if (key === 'Enter' || key === 'Select') {
+    if (isOk) {
       e.preventDefault();
       const ids = ['btn-update-download', 'btn-update-later', 'btn-close-update'];
       const el = document.getElementById(ids[this.updateModalFocusIndex]);
       if (el) el.click();
       return true;
     }
-    if (key === 'Escape' || key === 'Back') {
+    if (isBack) {
       e.preventDefault();
       const closeBtn = document.getElementById('btn-close-update') || document.getElementById('btn-update-later');
       if (closeBtn) closeBtn.click();
@@ -900,6 +908,18 @@ class IPTVPlayer {
   bindRemoteKeys() {
     window.addEventListener('keydown', (e) => {
       const key = e.key;
+      const keyCode = e.keyCode || e.which;
+
+      const isUp = key === 'ArrowUp' || keyCode === 19 || keyCode === 38;
+      const isDown = key === 'ArrowDown' || keyCode === 20 || keyCode === 40;
+      const isLeft = key === 'ArrowLeft' || keyCode === 21 || keyCode === 37;
+      const isRight = key === 'ArrowRight' || keyCode === 22 || keyCode === 39;
+      const isOk = key === 'Enter' || key === 'Select' || key === 'Go' || key === 'Accept' || keyCode === 13 || keyCode === 23 || keyCode === 66;
+      const isBack = key === 'Escape' || key === 'Back' || key === 'BrowserBack' || keyCode === 27 || keyCode === 4;
+      const isChannelUp = key === 'ChannelUp' || key === 'MediaTrackNext' || key === 'PageUp' || keyCode === 166 || keyCode === 33;
+      const isChannelDown = key === 'ChannelDown' || key === 'MediaTrackPrevious' || key === 'PageDown' || keyCode === 167 || keyCode === 34;
+      const isMenu = key === 'Menu' || key === 'Guide' || keyCode === 82 || keyCode === 462;
+      const isPlayPause = key === 'MediaPlayPause' || key === 'MediaPlay' || key === 'MediaPause' || keyCode === 179 || keyCode === 85;
 
       // Priority 1: Update Modal Key Interception
       if (this.isUpdateModalOpen()) {
@@ -913,7 +933,7 @@ class IPTVPlayer {
 
       // Priority 3: Expiry Screen Interception
       if (this.isExpiryScreenOpen()) {
-        if (key === 'Enter' || key === 'Select') {
+        if (isOk) {
           e.preventDefault();
           const btn = document.getElementById('expiry-relogin-btn');
           if (btn) btn.click();
@@ -924,145 +944,139 @@ class IPTVPlayer {
       // Priority 4: Active input element on screen (don't switch channels on Left/Right)
       const activeEl = document.activeElement;
       if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA')) {
-        if (key === 'ArrowLeft' || key === 'ArrowRight') {
+        if (isLeft || isRight) {
           return; // Let user edit input text naturally
         }
       }
 
-      switch (key) {
-        case 'ArrowUp':
-          e.preventDefault();
-          if (!this.isDrawerOpen) {
-            this.openDrawer();
-          } else {
-            this.moveChannelFocusVertically(-1);
-          }
-          break;
+      // --- D-Pad UP: Open drawer or move channel focus up ---
+      if (isUp) {
+        e.preventDefault();
+        if (!this.isDrawerOpen) {
+          this.openDrawer();
+        } else {
+          this.moveChannelFocusVertically(-1);
+        }
+        return;
+      }
 
-        case 'ArrowDown':
-          e.preventDefault();
-          if (this.isDrawerOpen) {
-            this.moveChannelFocusVertically(1);
-          } else {
-            this.openDrawer();
-          }
-          break;
+      // --- D-Pad DOWN: Open drawer or move channel focus down ---
+      if (isDown) {
+        e.preventDefault();
+        if (this.isDrawerOpen) {
+          this.moveChannelFocusVertically(1);
+        } else {
+          this.openDrawer();
+        }
+        return;
+      }
 
-        case 'ArrowLeft':
-          e.preventDefault();
-          if (this.isDrawerOpen) {
-            this.focusedIndex = Math.max(0, this.focusedIndex - 1);
-            this.updateCardFocus();
-          } else {
-            // Instant channel switch previous
-            const prevIndex = (this.currentIndex - 1 + this.filteredChannels.length) % this.filteredChannels.length;
-            this.focusedIndex = prevIndex;
-            this.playChannel(prevIndex);
-          }
-          break;
+      // --- D-Pad LEFT: Move card left in drawer OR zap previous channel ---
+      if (isLeft) {
+        e.preventDefault();
+        if (this.isDrawerOpen) {
+          this.focusedIndex = Math.max(0, this.focusedIndex - 1);
+          this.updateCardFocus();
+        } else {
+          const prevIndex = (this.currentIndex - 1 + this.filteredChannels.length) % this.filteredChannels.length;
+          this.focusedIndex = prevIndex;
+          this.playChannel(prevIndex);
+        }
+        return;
+      }
 
-        case 'ArrowRight':
-          e.preventDefault();
-          if (this.isDrawerOpen) {
-            const maxIdx = this.filteredChannels.length - 1;
-            this.focusedIndex = Math.min(maxIdx, this.focusedIndex + 1);
-            this.updateCardFocus();
-          } else {
-            // Instant channel switch next
-            const nextIndex = (this.currentIndex + 1) % this.filteredChannels.length;
-            this.focusedIndex = nextIndex;
-            this.playChannel(nextIndex);
-          }
-          break;
+      // --- D-Pad RIGHT: Move card right in drawer OR zap next channel ---
+      if (isRight) {
+        e.preventDefault();
+        if (this.isDrawerOpen) {
+          const maxIdx = this.filteredChannels.length - 1;
+          this.focusedIndex = Math.min(maxIdx, this.focusedIndex + 1);
+          this.updateCardFocus();
+        } else {
+          const nextIndex = (this.currentIndex + 1) % this.filteredChannels.length;
+          this.focusedIndex = nextIndex;
+          this.playChannel(nextIndex);
+        }
+        return;
+      }
 
-        case 'ChannelUp':
-        case 'MediaTrackNext':
-          e.preventDefault();
-          {
-            const nextIndex = (this.currentIndex + 1) % this.filteredChannels.length;
-            this.focusedIndex = nextIndex;
-            this.playChannel(nextIndex);
-          }
-          break;
+      // --- Channel Up ---
+      if (isChannelUp) {
+        e.preventDefault();
+        const nextIndex = (this.currentIndex + 1) % this.filteredChannels.length;
+        this.focusedIndex = nextIndex;
+        this.playChannel(nextIndex);
+        return;
+      }
 
-        case 'ChannelDown':
-        case 'MediaTrackPrevious':
-          e.preventDefault();
-          {
-            const prevIndex = (this.currentIndex - 1 + this.filteredChannels.length) % this.filteredChannels.length;
-            this.focusedIndex = prevIndex;
-            this.playChannel(prevIndex);
-          }
-          break;
+      // --- Channel Down ---
+      if (isChannelDown) {
+        e.preventDefault();
+        const prevIndex = (this.currentIndex - 1 + this.filteredChannels.length) % this.filteredChannels.length;
+        this.focusedIndex = prevIndex;
+        this.playChannel(prevIndex);
+        return;
+      }
 
-        case 'Menu':
-        case 'Guide':
-          e.preventDefault();
-          this.toggleDrawer();
-          break;
+      // --- Menu / Guide ---
+      if (isMenu) {
+        e.preventDefault();
+        this.toggleDrawer();
+        return;
+      }
 
-        case 'Info':
-          e.preventDefault();
-          if (this.filteredChannels[this.currentIndex]) {
-            this.flashHUD(this.filteredChannels[this.currentIndex]);
-          }
-          break;
+      // --- Media Play/Pause ---
+      if (isPlayPause) {
+        e.preventDefault();
+        if (this.video.paused) this.video.play();
+        else this.video.pause();
+        return;
+      }
 
-        case 'MediaPlayPause':
-          e.preventDefault();
-          if (this.video.paused) this.video.play();
-          else this.video.pause();
-          break;
+      // --- OK / Enter / Select ---
+      if (isOk) {
+        e.preventDefault();
+        if (this.isDrawerOpen) {
+          this.playChannel(this.focusedIndex);
+          this.closeDrawer();
+        } else {
+          this.openDrawer();
+        }
+        return;
+      }
 
-        case 'Enter':
-        case 'Select':
+      // --- Back / Escape ---
+      if (isBack) {
+        if (this.isDrawerOpen) {
           e.preventDefault();
-          if (this.isDrawerOpen) {
-            this.playChannel(this.focusedIndex);
-            this.closeDrawer();
-          } else {
-            // Play/Pause when drawer is closed
-            if (this.video.paused) this.video.play();
-            else this.video.pause();
-            this.triggerTopBar();
-          }
-          break;
+          this.closeDrawer();
+          return;
+        }
+      }
 
-        case 'Escape':
-        case 'Back':
-        case 'BrowserBack':
-          if (this.isDrawerOpen) {
-            e.preventDefault();
-            this.closeDrawer();
-          }
-          break;
+      // --- Volume / Mute ---
+      if (key === 'm' || key === 'M' || key === 'AudioVolumeMute' || keyCode === 164) {
+        e.preventDefault();
+        this.toggleSound();
+        return;
+      }
 
-        case 'm':
-        case 'M':
-        case 'AudioVolumeMute':
-          e.preventDefault();
-          this.toggleSound();
-          break;
+      if (key === '+' || key === '=' || key === 'AudioVolumeUp' || keyCode === 24) {
+        e.preventDefault();
+        this.video.muted = false;
+        this.video.volume = Math.min(1.0, this.video.volume + 0.1);
+        this.isUserUnmuted = true;
+        this.updateSoundButtonUI();
+        this.showUnmuteBanner(false);
+        this.flashSoundHUD(`🔊 ভলিউম: ${Math.round(this.video.volume * 100)}%`);
+        return;
+      }
 
-        case '+':
-        case '=':
-        case 'AudioVolumeUp':
-          e.preventDefault();
-          this.video.muted = false;
-          this.video.volume = Math.min(1.0, this.video.volume + 0.1);
-          this.isUserUnmuted = true;
-          this.updateSoundButtonUI();
-          this.showUnmuteBanner(false);
-          this.flashSoundHUD(`🔊 ভলিউম: ${Math.round(this.video.volume * 100)}%`);
-          break;
-
-        case '-':
-        case '_':
-        case 'AudioVolumeDown':
-          e.preventDefault();
-          this.video.volume = Math.max(0.0, this.video.volume - 0.1);
-          this.flashSoundHUD(`🔉 ভলিউম: ${Math.round(this.video.volume * 100)}%`);
-          break;
+      if (key === '-' || key === '_' || key === 'AudioVolumeDown' || keyCode === 25) {
+        e.preventDefault();
+        this.video.volume = Math.max(0.0, this.video.volume - 0.1);
+        this.flashSoundHUD(`🔉 ভলিউম: ${Math.round(this.video.volume * 100)}%`);
+        return;
       }
     });
   }
