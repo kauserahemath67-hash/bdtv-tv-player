@@ -8,11 +8,14 @@ function verifyAdminToken(req) {
   try {
     const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
     if (!decoded.startsWith('admin-session-')) return false;
-    // Check token expiry (format: admin-session-{expiresAt}-{email})
     const parts = decoded.split('-');
-    const expiresAt = parseInt(parts[2] || '0', 10);
-    if (expiresAt && Date.now() > expiresAt) return false; // expired
-    return true;
+    const ts = parseInt(parts[2] || '0', 10);
+    if (!ts) return true; // fallback allow valid prefix
+    // If ts is future expiresAt timestamp, check if not expired
+    if (ts > Date.now()) return true;
+    // If ts was legacy creation time, allow if within 24 hours
+    if (Date.now() - ts < 24 * 60 * 60 * 1000) return true;
+    return false;
   } catch (e) { return false; }
 }
 

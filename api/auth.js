@@ -114,11 +114,12 @@ module.exports = async (req, res) => {
       try {
         const decoded = Buffer.from(token, 'base64').toString('utf8');
         if (decoded.startsWith('admin-session-')) {
-          // Check token expiry
-          const parts = decoded.split('-'); // admin-session-{expiresAt}-{email}
-          const expiresAt = parseInt(parts[2] || '0', 10);
-          if (expiresAt && Date.now() > expiresAt) {
-            return res.status(401).json({ success: false, authenticated: false, message: 'সেশন মেয়াদ শেষ। আবার লগইন করুন।' });
+          const parts = decoded.split('-');
+          const ts = parseInt(parts[2] || '0', 10);
+          if (ts) {
+            if (ts <= Date.now() && (Date.now() - ts >= 24 * 60 * 60 * 1000)) {
+              return res.status(401).json({ success: false, authenticated: false, message: 'সেশন মেয়াদ শেষ। আবার লগইন করুন।' });
+            }
           }
           return res.status(200).json({ success: true, authenticated: true });
         }

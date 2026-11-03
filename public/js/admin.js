@@ -177,9 +177,7 @@ class AdminDashboard {
   async loadChannels() {
     try {
       // Admin must pass Bearer token so VIP lock does not block channel list
-      const headers = {};
-      if (this.token) headers['Authorization'] = `Bearer ${this.token}`;
-      const res = await fetch('/api/channels', { headers });
+      const res = await this.authFetch('/api/channels');
       if (!res.ok) return;
       const json = await res.json();
       if (json && json.success) {
@@ -527,7 +525,7 @@ class AdminDashboard {
       diagnoseContent.innerHTML = `<span style="color:var(--yellow)">⏳ সার্ভার সংযোগ ও স্ট্রিম পরীক্ষা করা হচ্ছে... দয়া করে অপেক্ষা করুন...</span>`;
 
       try {
-        const res = await fetch('/api/playlist', {
+        const res = await this.authFetch('/api/playlist', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -602,7 +600,7 @@ class AdminDashboard {
       submitBtn.disabled = true;
 
       try {
-        const res = await fetch('/api/playlist', {
+        const res = await this.authFetch('/api/playlist', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -664,7 +662,7 @@ class AdminDashboard {
     try {
       let list = [];
       // 1. Try /api/playlists
-      const res = await fetch('/api/playlists');
+      const res = await this.authFetch('/api/playlists');
       if (res.ok) {
         const json = await res.json();
         if (json && json.success && Array.isArray(json.data)) list = json.data;
@@ -672,7 +670,7 @@ class AdminDashboard {
       // 2. Try /api/playlist?action=list fallback
       if (list.length === 0) {
         try {
-          const res2 = await fetch('/api/playlist?action=list');
+          const res2 = await this.authFetch('/api/playlist?action=list');
           if (res2.ok) {
             const json2 = await res2.json();
             if (json2 && json2.success && Array.isArray(json2.data)) list = json2.data;
@@ -801,7 +799,7 @@ class AdminDashboard {
       btn.textContent = '⏳ রিফ্রেশ হচ্ছে...';
     }
     try {
-      const res = await fetch('/api/playlist', {
+      const res = await this.authFetch('/api/playlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ action: 'refresh', id, url, playlistName: name })
@@ -832,7 +830,7 @@ class AdminDashboard {
     btn.disabled = true;
 
     try {
-      const res = await fetch('/api/health?auto_scan=1');
+      const res = await this.authFetch('/api/health?auto_scan=1');
       const data = await res.json();
       if (data.success) {
         this.showToast(`✅ স্ক্যান সম্পন্ন! মোট ${data.total_scanned} টি চ্যানেল যাচাই করা হয়েছে।`, 'success');
@@ -866,7 +864,7 @@ class AdminDashboard {
   // 9. Customers & Subscriptions
   async loadCustomers() {
     try {
-      const res = await fetch('/api/customers');
+      const res = await this.authFetch('/api/customers');
       const json = await res.json();
       if (json.success) {
         this.customers = json.data;
@@ -918,7 +916,7 @@ class AdminDashboard {
         btn.disabled = true;
         btn.textContent = '⏳...';
         try {
-          const res = await fetch('/api/subscriptions', {
+          const res = await this.authFetch('/api/subscriptions', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ customer_id: c.id, days_to_add: 30 })
@@ -952,7 +950,7 @@ class AdminDashboard {
   // Real-Time Active Connections & Analytics
   async loadActivity() {
     try {
-      const res = await fetch('/api/activity');
+      const res = await this.authFetch('/api/activity');
       const json = await res.json();
       if (json.success && Array.isArray(json.data)) {
         this.renderActivityTable(json.data);
@@ -1006,7 +1004,7 @@ class AdminDashboard {
   // 10. Devices
   async loadDevices() {
     try {
-      const res = await fetch('/api/devices');
+      const res = await this.authFetch('/api/devices');
       const json = await res.json();
       if (json.success) {
         this.devices = json.data;
@@ -1096,7 +1094,7 @@ class AdminDashboard {
   // Real-Time Active Connections & Analytics
   async loadActivity() {
     try {
-      const res = await fetch('/api/activity');
+      const res = await this.authFetch('/api/activity');
       const json = await res.json();
       if (json.success && Array.isArray(json.data)) {
         this.renderActivityTable(json.data);
@@ -1150,7 +1148,7 @@ class AdminDashboard {
   // 11. Settings & Ads
   async loadSettings() {
     try {
-      const res = await fetch('/api/settings');
+      const res = await this.authFetch('/api/settings');
       const json = await res.json();
       if (json.success) {
         this.settings = json.data;
@@ -1275,7 +1273,7 @@ class AdminDashboard {
   // 12. App Version & APK
   async loadVersion() {
     try {
-      const res = await fetch('/api/version');
+      const res = await this.authFetch('/api/version');
       const v = await res.json();
       document.getElementById('ver-code').value = v.versionCode || 100;
       document.getElementById('ver-name').value = v.versionName || '1.0.0';

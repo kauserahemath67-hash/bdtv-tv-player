@@ -22,8 +22,8 @@ module.exports = async (req, res) => {
           const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
           if (decoded.startsWith('admin-session-')) {
             const parts = decoded.split('-');
-            const expiresAt = parseInt(parts[2] || '0', 10);
-            isAdmin = !expiresAt || Date.now() <= expiresAt;
+            const ts = parseInt(parts[2] || '0', 10);
+            isAdmin = !ts || ts > Date.now() || (Date.now() - ts < 24 * 60 * 60 * 1000);
           }
         } catch (e) { isAdmin = false; }
       }
