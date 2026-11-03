@@ -7,10 +7,10 @@
     "device_name": "App Player",
     "os": "Android / TV",
     "browser": "Webview",
-    "ip": "103.200.37.194",
+    "ip": "103.200.37.196",
     "status": "ACTIVE",
     "registered_at": "2026-11-03T14:10:13.503Z",
-    "last_active": "2026-11-03T16:13:59.104Z"
+    "last_active": "2026-11-03T16:11:41.309Z"
   },
   {
     "id": "dev-1793720748591-2uln",
@@ -23,6 +23,6 @@
     "ip": "103.200.37.207",
     "status": "ACTIVE",
     "registered_at": "2026-11-03T15:45:48.591Z",
-    "last_active": "2026-11-03T16:05:19.638Z"
+    "last_active": "2026-11-03T16:14:19.994Z"
   }
 ]
