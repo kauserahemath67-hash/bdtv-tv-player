@@ -781,23 +781,25 @@ class IPTVPlayer {
         el.classList.add('focused');
         try {
           el.focus();
-          if (el.tagName === 'INPUT' && typeof el.select === 'function') {
-            // Select text if any, or place cursor at end
+          if (el.tagName === 'INPUT') {
             const len = el.value.length;
-            el.setSelectionRange(len, len);
+            if (typeof el.setSelectionRange === 'function') {
+              el.setSelectionRange(len, len);
+            }
           }
         } catch {}
 
+        // ✅ KEYBOARD RULE:
+        // - INPUT focused → always show keyboard
+        // - BUTTON focused → do NOT hide keyboard! user may still need to type
+        // - keyboard only hides on: Back key OR successful submit
         const bridge = window.AndroidBridge || window.AndroidApp;
         if (el.tagName === 'INPUT') {
           if (bridge && typeof bridge.showKeyboard === 'function') {
             bridge.showKeyboard();
           }
-        } else {
-          if (bridge && typeof bridge.hideKeyboard === 'function') {
-            bridge.hideKeyboard();
-          }
         }
+        // ❌ REMOVED: do NOT call bridge.hideKeyboard() when button gets focus
       } else {
         el.classList.remove('focused');
       }
@@ -855,10 +857,14 @@ class IPTVPlayer {
       return true;
     }
     if (isBack) {
+      // Back key: hide keyboard first, then close modal
       const bridge = window.AndroidBridge || window.AndroidApp;
       if (bridge && typeof bridge.hideKeyboard === 'function') {
         bridge.hideKeyboard();
       }
+      // Close auth modal on back
+      const modal = document.getElementById('auth-modal') || document.querySelector('.auth-modal');
+      if (modal) modal.style.display = 'none';
       return true;
     }
     return false;
