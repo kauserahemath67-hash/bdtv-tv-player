@@ -8,9 +8,8 @@
     "os": "Android / TV",
     "browser": "Webview",
     "ip": "103.200.37.197",
-    "status": "BLOCKED",
+    "status": "ACTIVE",
     "registered_at": "2026-11-03T14:10:13.503Z",
-    "last_active": "2026-11-03T14:13:01.568Z",
-    "blocked_at": "2026-11-03T14:55:20.873Z"
+    "last_active": "2026-11-03T14:13:01.568Z"
   }
 ]
