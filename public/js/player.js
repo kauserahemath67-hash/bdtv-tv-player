@@ -2,7 +2,7 @@
 // BDTv Live IPTV Web Player Engine
 // ==========================================
 
-const INSTALLED_APP_VERSION = 121;
+const INSTALLED_APP_VERSION = 122;
 
 const FALLBACK_CHANNELS = [
   {
@@ -210,15 +210,18 @@ class IPTVPlayer {
       if (!json || !json.versionCode) return;
 
       const bridge = window.AndroidApp || window.AndroidBridge;
+
+      // 1. Android অ্যাপে — Native Bridge থেকে সরাসরি ইন্সটল্ড ভার্সন কোড পড়ো
       const nativeVersion = bridge && typeof bridge.getAppVersionCode === 'function'
         ? Number(bridge.getAppVersionCode())
         : 0;
 
-      // In Android App, prioritize actual installed APK version from Native Bridge
       let installedVersion = 0;
       if (nativeVersion > 0) {
+        // Android অ্যাপের ভেতর থেকে খোলা — সত্যিকারের ইন্সটল্ড কোড ব্যবহার করো
         installedVersion = nativeVersion;
       } else {
+        // Browser / WebView fallback
         const savedVersion = Number(localStorage.getItem('bdtv_app_version'));
         installedVersion = Math.max(
           INSTALLED_APP_VERSION,
@@ -226,27 +229,34 @@ class IPTVPlayer {
         );
       }
 
-      // If app is already updated (installedVersion >= server version), never show update popup
+      // 2. ইতিমধ্যে এই ভার্সনের পপআপ dismiss করা হয়েছে কিনা চেক করো
+      //    (শুধু browser mode-এ প্রযোজ্য, force update এ এটা bypass হবে)
+      const dismissedVersion = Number(localStorage.getItem('bdtv_update_dismissed'));
+      const alreadyDismissed = dismissedVersion >= json.versionCode;
+
+      // 3. সার্ভারে নতুন ভার্সন নেই → সব বাটন লুকাও
       if (installedVersion >= json.versionCode) {
         const dlBtn = document.getElementById('btn-download-app');
         if (dlBtn) dlBtn.classList.add('hidden');
         return;
       }
 
-      if (json.versionCode > installedVersion) {
-        // আপডেট আছে — টপ বার বাটন দেখাও
-        const dlBtn = document.getElementById('btn-download-app');
-        if (dlBtn) {
-          dlBtn.href = json.apkUrl || '/BDTv.apk';
-          dlBtn.classList.remove('hidden');
-        }
-        this.showUpdateModal(json);
-      } else {
-        // আপডেট নেই — বাটন লুকিয়ে রাখো
-        const dlBtn = document.getElementById('btn-download-app');
-        if (dlBtn) dlBtn.classList.add('hidden');
+      // 4. নতুন ভার্সন আছে → টপ বার বাটন দেখাও
+      const dlBtn = document.getElementById('btn-download-app');
+      if (dlBtn) {
+        dlBtn.href = json.apkUrl || '/BDTv.apk';
+        dlBtn.classList.remove('hidden');
       }
-    } catch (e) {}
+
+      // 5. Force Update: dismiss করলেও পপআপ আসবে
+      //    Normal Update: আগে dismiss করা থাকলে চুপ থাকো
+      if (json.forceUpdate || !alreadyDismissed) {
+        this.showUpdateModal(json);
+      }
+
+    } catch (e) {
+      console.warn('checkAppUpdate error:', e);
+    }
   }
 
   showUpdateModal(info) {
@@ -271,20 +281,33 @@ class IPTVPlayer {
 
     const closeBtn = document.getElementById('btn-close-update');
     const laterBtn = document.getElementById('btn-update-later');
+
     const dismiss = () => {
       modal.classList.add('hidden');
-      localStorage.setItem('bdtv_app_version', info.versionCode);
+      // forceUpdate হলে dismiss save করো না — পরেরবারও দেখাবে
+      if (!info.forceUpdate) {
+        localStorage.setItem('bdtv_update_dismissed', info.versionCode);
+      }
     };
-    if (closeBtn) closeBtn.onclick = dismiss;
-    if (laterBtn) laterBtn.onclick = dismiss;
+
+    // forceUpdate হলে X বাটন ও পরে করুন লুকাও
+    if (info.forceUpdate) {
+      if (closeBtn) closeBtn.style.display = 'none';
+      if (laterBtn) laterBtn.style.display = 'none';
+    } else {
+      if (closeBtn) { closeBtn.style.display = ''; closeBtn.onclick = dismiss; }
+      if (laterBtn) { laterBtn.style.display = ''; laterBtn.onclick = dismiss; }
+    }
+
     if (dlBtn) {
       dlBtn.onclick = (e) => {
-        localStorage.setItem('bdtv_app_version', info.versionCode);
+        localStorage.setItem('bdtv_update_dismissed', info.versionCode);
         const bridge = window.AndroidApp || window.AndroidBridge;
         if (bridge && typeof bridge.startAppUpdate === 'function') {
           e.preventDefault();
           bridge.startAppUpdate(info.apkUrl || 'https://bdtv-app.vercel.app/BDTv.apk');
         }
+        modal.classList.add('hidden');
       };
     }
   }
