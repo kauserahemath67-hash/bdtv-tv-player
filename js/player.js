@@ -2,7 +2,7 @@
 // BDTv Live IPTV Web Player Engine
 // ==========================================
 
-const INSTALLED_APP_VERSION = 122;
+const INSTALLED_APP_VERSION = 123;
 
 const FALLBACK_CHANNELS = [
   {
