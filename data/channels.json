@@ -30,16 +30,6 @@
     "order": 3
   },
   {
-    "name": "PTV Sports",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
-    "url": "https://flussonic.defineatoz.com/PTV/index.m3u8",
-    "category": "General",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718599247-3",
-    "order": 4
-  },
-  {
     "name": "Star Sports 1",
     "logo": "https://i.postimg.cc/rmQ7XZg7/20241005-170805.png",
     "url": "https://footfytv.pro/proxy/direct?url=https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8",
