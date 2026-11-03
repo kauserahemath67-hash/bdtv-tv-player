@@ -2,7 +2,7 @@ const db = require('./_db');
 
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Device-Fingerprint');
 
   if (req.method === 'OPTIONS') return res.status(200).end();
@@ -44,10 +44,34 @@ module.exports = async (req, res) => {
       });
     }
 
-    if (req.method === 'DELETE') {
-      const { device_id } = req.query || req.body || {};
+    if (req.method === 'PUT') {
+      const { device_id, action } = req.body || req.query || {};
       if (!device_id) return res.status(400).json({ success: false, message: 'Device ID আবশ্যক।' });
 
+      if (action === 'unblock') {
+        const unblocked = await db.unblockDevice(device_id);
+        if (!unblocked) return res.status(404).json({ success: false, message: 'ডিভাইস পাওয়া যায়নি।' });
+        return res.status(200).json({ success: true, message: 'ডিভাইস আনব্লক করা হয়েছে।', device: unblocked });
+      } else if (action === 'block') {
+        const revoked = await db.revokeDevice(device_id);
+        if (!revoked) return res.status(404).json({ success: false, message: 'ডিভাইস পাওয়া যায়নি।' });
+        return res.status(200).json({ success: true, message: 'ডিভাইস ব্লক করা হয়েছে।', device: revoked });
+      }
+      return res.status(400).json({ success: false, message: 'অজানা অ্যাকশন।' });
+    }
+
+    if (req.method === 'DELETE') {
+      const { device_id, action } = req.query || req.body || {};
+      if (!device_id) return res.status(400).json({ success: false, message: 'Device ID আবশ্যক।' });
+
+      // If permanent delete is requested
+      if (action === 'delete') {
+        const deleted = await db.deleteDevice(device_id);
+        if (!deleted) return res.status(404).json({ success: false, message: 'ডিভাইস পাওয়া যায়নি।' });
+        return res.status(200).json({ success: true, message: 'ডিভাইস মুছে ফেলা হয়েছে।' });
+      }
+
+      // Default DELETE action is revoke/block
       const revoked = await db.revokeDevice(device_id);
       if (!revoked) {
         return res.status(404).json({ success: false, message: 'ডিভাইস পাওয়া যায়নি।' });

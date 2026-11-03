@@ -639,6 +639,34 @@ async function revokeDevice(deviceId) {
   }
   return null;
 }
+
+async function unblockDevice(deviceId) {
+  const allDevices = await getDevices();
+  const i = allDevices.findIndex(d => d.id === deviceId);
+  if (i >= 0) {
+    allDevices[i].status = 'ACTIVE';
+    delete allDevices[i].blocked_at;
+    invalidateDevicesCache();
+    await ghCommit(GITHUB_DEVICES_PATH, allDevices, `Unblock device: ${deviceId}`);
+    _devicesCache.data = allDevices;
+    _devicesCache.loadedAt = Date.now();
+    return allDevices[i];
+  }
+  return null;
+}
+
+async function deleteDevice(deviceId) {
+  const allDevices = await getDevices();
+  const filtered = allDevices.filter(d => d.id !== deviceId);
+  if (filtered.length !== allDevices.length) {
+    invalidateDevicesCache();
+    await ghCommit(GITHUB_DEVICES_PATH, filtered, `Delete device: ${deviceId}`);
+    _devicesCache.data = filtered;
+    _devicesCache.loadedAt = Date.now();
+    return true;
+  }
+  return false;
+}
 function getReports() { return [..._reports]; }
 function addReport(r) {
   r.id = 'rep-' + Date.now();
@@ -732,6 +760,8 @@ module.exports = {
   getDevices,
   registerOrValidateDevice,
   revokeDevice,
+  unblockDevice,
+  deleteDevice,
   getReports,
   addReport,
   resolveReport

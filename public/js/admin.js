@@ -1004,28 +1004,75 @@ class AdminDashboard {
     const tbody = document.getElementById('devices-table-body');
     tbody.innerHTML = '';
 
+    if (!this.devices || this.devices.length === 0) {
+      tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; padding:18px; color:#94A3B8;">কোনো নিবন্ধিত ডিভাইস পাওয়া যায়নি।</td></tr>`;
+      return;
+    }
+
     this.devices.forEach(d => {
       const tr = document.createElement('tr');
-      const isActive = d.status === 'ACTIVE';
+      const isBlocked = d.status === 'BLOCKED';
 
       tr.innerHTML = `
         <td>${d.customer_code || d.customer_id}</td>
         <td><strong>${d.device_name}</strong></td>
         <td>${d.os} / ${d.browser}</td>
         <td><code>${d.fingerprint.substring(0, 10)}...</code></td>
-        <td><span class="badge ${isActive ? 'badge-online' : 'badge-offline'}">${d.status}</span></td>
-        <td>${new Date(d.last_active).toLocaleString()}</td>
         <td>
-          ${isActive ? `<button class="btn-secondary-admin btn-revoke-dev">বাতিল করুন</button>` : '—'}
+          <span class="badge ${isBlocked ? 'badge-offline' : 'badge-online'}" 
+                style="cursor:pointer; user-select:none;" 
+                title="${isBlocked ? 'ক্লিক করে আনব্লক (Unblock) করুন' : 'ক্লিক করে ব্লক (Block) করুন'}">
+            ${isBlocked ? '🚫 BLOCKED (আনব্লক)' : '✅ ACTIVE (ব্লক)'}
+          </span>
+        </td>
+        <td>${d.last_active ? new Date(d.last_active).toLocaleString() : '—'}</td>
+        <td>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <button class="btn-secondary-admin btn-toggle-dev" style="padding:6px 12px; font-size:12px;">
+              ${isBlocked ? '🔓 আনব্লক' : '🚫 ব্লক'}
+            </button>
+            <button class="btn-action-icon btn-delete-dev" title="ডিভাইস মুছে ফেলুন" style="background:rgba(239,68,68,0.15); border-color:#ef4444; color:#ef4444;">
+              🗑️
+            </button>
+          </div>
         </td>
       `;
 
-      if (isActive) {
-        tr.querySelector('.btn-revoke-dev').addEventListener('click', async () => {
-          await fetch(`/api/devices?device_id=${d.id}`, { method: 'DELETE' });
+      // Status Badge Click -> Toggle Block/Unblock
+      const badge = tr.querySelector('.badge');
+      const toggleBtn = tr.querySelector('.btn-toggle-dev');
+      const deleteBtn = tr.querySelector('.btn-delete-dev');
+
+      const toggleAction = async () => {
+        const newAction = isBlocked ? 'unblock' : 'block';
+        try {
+          const res = await fetch('/api/devices', {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ device_id: d.id, action: newAction })
+          });
+          const json = await res.json();
+          this.showToast(json.message || (isBlocked ? 'ডিভাইস আনব্লক করা হয়েছে!' : 'ডিভাইস ব্লক করা হয়েছে!'));
           await this.loadDevices();
-        });
-      }
+        } catch (err) {
+          this.showToast('সার্ভার এরর! স্ট্যাটাস পরিবর্তন করা যায়নি।');
+        }
+      };
+
+      badge.addEventListener('click', toggleAction);
+      toggleBtn.addEventListener('click', toggleAction);
+
+      // Delete Device Click
+      deleteBtn.addEventListener('click', async () => {
+        try {
+          const res = await fetch(`/api/devices?device_id=${d.id}&action=delete`, { method: 'DELETE' });
+          const json = await res.json();
+          this.showToast(json.message || 'ডিভাইস মুছে ফেলা হয়েছে!');
+          await this.loadDevices();
+        } catch (err) {
+          this.showToast('ডিভাইস মুছতে সমস্যা হয়েছে!');
+        }
+      });
 
       tbody.appendChild(tr);
     });
