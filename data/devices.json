@@ -46,12 +46,12 @@
     "customer_id": "cust-101",
     "customer_code": "kauser",
     "fingerprint": "dev-bt5byfzi-mw0fy3m0",
-    "device_name": "Linux (Chrome)",
-    "os": "Linux",
-    "browser": "Chrome",
+    "device_name": "App Player",
+    "os": "Android / TV",
+    "browser": "Webview",
     "ip": "103.200.37.197",
     "status": "ACTIVE",
     "registered_at": "2026-11-03T12:18:18.842Z",
-    "last_active": "2026-11-03T12:18:18.842Z"
+    "last_active": "2026-11-03T12:18:20.671Z"
   }
 ]
