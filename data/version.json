@@ -1,6 +1,6 @@
 {
-  "versionCode": 123,
-  "versionName": "2.3.15",
+  "versionCode": 122,
+  "versionName": "2.3.14",
   "minSupportedVersion": 100,
   "apkUrl": "https://bdtv-app.vercel.app/BDTv.apk",
   "updateTitle": "স্থায়ী হার্ডওয়্যার ডিভাইস আইডি ও স্ট্যাবিলিটি আপডেট 🚀 (v2.3.14)",
@@ -11,5 +11,5 @@
   ],
   "forceUpdate": false,
   "updateMessage": "",
-  "updatedAt": "2026-11-03T17:35:05.597Z"
+  "updatedAt": "2026-11-03T17:35:39.654Z"
 }
