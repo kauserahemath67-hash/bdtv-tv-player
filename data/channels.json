@@ -1456,20 +1456,22 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2020/08/millennium24-150x150.jpg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mnews24.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-73",
-    "order": 142
+    "order": 142,
+    "manual_override": true
   },
   {
     "name": "MillenniumTV | USA",
     "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/mileninumTV-150x150.jpg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/millenniumtv-odr-up2.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-74",
-    "order": 143
+    "order": 143,
+    "manual_override": true
   },
   {
     "name": "Music Bangla",
@@ -1506,10 +1508,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2021/07/nexustv-150x150.png?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/nexustv.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-82",
-    "order": 147
+    "order": 147,
+    "manual_override": true
   },
   {
     "name": "Noborup TV",
