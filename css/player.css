@@ -1239,6 +1239,7 @@ video::-webkit-media-controls-overlay-play-button {
   color: #fff;
   font-size: 14px;
   outline: none;
+  caret-color: #ffeb3b !important;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 

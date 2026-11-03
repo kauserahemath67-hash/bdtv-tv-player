@@ -779,7 +779,15 @@ class IPTVPlayer {
       if (!el) return;
       if (index === this.authModalFocusIndex) {
         el.classList.add('focused');
-        try { el.focus(); } catch {}
+        try {
+          el.focus();
+          if (el.tagName === 'INPUT' && typeof el.select === 'function') {
+            // Select text if any, or place cursor at end
+            const len = el.value.length;
+            el.setSelectionRange(len, len);
+          }
+        } catch {}
+
         const bridge = window.AndroidBridge || window.AndroidApp;
         if (el.tagName === 'INPUT') {
           if (bridge && typeof bridge.showKeyboard === 'function') {
