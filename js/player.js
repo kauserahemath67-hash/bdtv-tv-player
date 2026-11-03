@@ -130,6 +130,19 @@ class IPTVPlayer {
   }
 
   getDeviceId() {
+    // 1. Android Native App: Hardware-locked permanent Android ID (never changes across reinstall/update/network change)
+    const bridge = window.AndroidBridge || window.AndroidApp;
+    if (bridge && typeof bridge.getDeviceId === 'function') {
+      try {
+        const nativeId = bridge.getDeviceId();
+        if (nativeId && nativeId.trim().length > 3) {
+          localStorage.setItem('bdtv_device_id', nativeId);
+          return nativeId;
+        }
+      } catch (e) {}
+    }
+
+    // 2. Web browser fallback: persisted in localStorage
     let devId = localStorage.getItem('bdtv_device_id');
     if (!devId) {
       devId = 'dev-' + Math.random().toString(36).substring(2, 10) + '-' + Date.now().toString(36);
