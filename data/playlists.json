@@ -1,12 +1,12 @@
 [
   {
-    "name": "playlist",
+    "name": "https://alixbd.com/playlistconfig/playlist.m3u",
     "url": "https://alixbd.com/playlistconfig/playlist.m3u",
     "format": "M3U Playlist",
     "channelCount": 78,
     "active": true,
-    "id": "pl-1793687198648",
-    "savedAt": "2026-11-03T06:26:38.648Z"
+    "id": "pl-1793687201260",
+    "savedAt": "2026-11-03T06:26:41.260Z"
   },
   {
     "name": "https://rslivetv.pages.dev/bd76t2s1w9.json",
