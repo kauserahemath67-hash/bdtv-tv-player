@@ -1,13 +1,11 @@
 {
-  "versionCode": 121,
-  "versionName": "2.3.13",
+  "versionCode": 100,
+  "versionName": "1.0.0",
   "minSupportedVersion": 100,
   "apkUrl": "https://bdtv-app.vercel.app/BDTv.apk",
-  "updateTitle": "চ্যানেল স্ট্রিমিং ও নতুন আপডেট 📺 (v2.3.13)",
-  "changelog": [
-    "সব চ্যানেল এখন সরাসরি এক ফ্রেশ তালিকায় সাজানো",
-    "চ্যানেল স্ট্রিমিং ও রিমোট নেভিগেশন দ্রুত করা হয়েছে"
-  ],
+  "updateTitle": "নতুন আপডেট উপলব্ধ!",
+  "changelog": [],
   "forceUpdate": false,
-  "updatedAt": "2026-11-03T08:44:59.993Z"
+  "updateMessage": "",
+  "updatedAt": "2026-11-03T09:57:33.241Z"
 }
