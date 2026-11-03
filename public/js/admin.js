@@ -255,10 +255,31 @@ class AdminDashboard {
 
       // Clickable status badge to toggle ONLINE/OFFLINE
       tr.querySelector('.status-badge').addEventListener('click', async (e) => {
-        const newStatus = (ch.status === 'ONLINE') ? 'OFFLINE' : 'ONLINE';
+        e.stopPropagation();
+        const badge = e.currentTarget;
+        const isCurrentlyOnline = ch.status === 'ONLINE';
+        const newStatus = isCurrentlyOnline ? 'OFFLINE' : 'ONLINE';
+        
+        // Immediate local state update
         ch.status = newStatus;
+        ch.manual_override = true;
+        if (this._scanResults) {
+          this._scanResults[ch.id] = newStatus;
+        }
+
+        // Instant DOM update so user sees it right away
+        badge.className = `badge status-badge ${newStatus === 'ONLINE' ? 'badge-online' : 'badge-offline'}`;
+        badge.textContent = newStatus === 'ONLINE' ? '✅ ONLINE' : '❌ OFFLINE';
+        badge.dataset.status = newStatus;
+
+        // Update online channels counter
+        const statEl = document.getElementById('stat-online-channels');
+        if (statEl) {
+          statEl.textContent = this.channels.filter(c => c.status === 'ONLINE').length;
+        }
+
+        this.showToast(`${ch.name} স্ট্যাটাস ${newStatus} করা হয়েছে`, 'success');
         await this.updateChannelStatus(ch.id, newStatus);
-        this.renderChannelsTable();
       });
 
       // Move Up / Down
@@ -329,6 +350,8 @@ class AdminDashboard {
     document.getElementById('form-ch-category').value = ch.category || 'News';
     document.getElementById('form-ch-logo').value = ch.logo || '';
     document.getElementById('form-ch-url').value = ch.url;
+    const statusSelect = document.getElementById('form-ch-status');
+    if (statusSelect) statusSelect.value = ch.status || 'ONLINE';
     document.getElementById('form-ch-pinned').checked = Boolean(ch.is_pinned);
     document.getElementById('form-ch-override').checked = Boolean(ch.manual_override);
 
@@ -382,12 +405,14 @@ class AdminDashboard {
     document.getElementById('channel-form').addEventListener('submit', async (e) => {
       e.preventDefault();
       const id = document.getElementById('channel-edit-id').value;
+      const statusSelect = document.getElementById('form-ch-status');
       const data = {
         id: id || undefined,
         name: document.getElementById('form-ch-name').value.trim(),
         category: document.getElementById('form-ch-category').value,
         logo: document.getElementById('form-ch-logo').value.trim(),
         url: document.getElementById('form-ch-url').value.trim(),
+        status: statusSelect ? statusSelect.value : 'ONLINE',
         is_pinned: document.getElementById('form-ch-pinned').checked,
         manual_override: document.getElementById('form-ch-override').checked
       };

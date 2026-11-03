@@ -506,6 +506,13 @@
           <label>লাইভ স্ট্রিম URL (m3u8):</label>
           <input type="url" id="form-ch-url" required placeholder="https://.../playlist.m3u8">
         </div>
+        <div class="form-group">
+          <label>স্ট্যাটাস:</label>
+          <select id="form-ch-status">
+            <option value="ONLINE">✅ ONLINE (সচল)</option>
+            <option value="OFFLINE">❌ OFFLINE (বন্ধ)</option>
+          </select>
+        </div>
         <div class="checkbox-row">
           <label><input type="checkbox" id="form-ch-pinned"> এই চ্যানেলটি শীর্ষে পিন করে রাখুন (Pinned)</label>
         </div>
@@ -576,6 +583,6 @@
     </div>
   </div>
 
-  <script src="/js/admin.js?v=2315"></script>
+  <script src="/js/admin.js?v=2316"></script>
 </body>
 </html>
