@@ -7,7 +7,8 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793687502248-0",
-    "order": 1
+    "order": 1,
+    "response_time_ms": 777
   },
   {
     "name": "Nagorik Tv",
