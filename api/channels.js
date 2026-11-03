@@ -77,10 +77,10 @@ module.exports = async (req, res) => {
       // Always await — reads from GitHub when cache is cold
       let channels = await db.getChannels();
 
-      // Show ALL channels to users (ONLINE + OFFLINE) — never auto-hide
-      // Channels are hidden only if manually set by admin with manual_override=true
+      // For regular users: Hide OFFLINE channels so users are never annoyed by broken streams.
+      // Only ONLINE channels are shown to users. Admin with ?all=1 or token sees everything.
       if (!isAdmin) {
-        channels = channels.filter(c => c.manual_override !== true || c.status !== 'HIDDEN');
+        channels = channels.filter(c => c.status !== 'OFFLINE' && (c.manual_override !== true || c.status !== 'HIDDEN'));
       }
 
       if (category && category !== 'All') {

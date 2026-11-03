@@ -145,9 +145,9 @@ module.exports = async (req, res) => {
 
       let channels = await db.getChannels();
 
-      // Include all active channels except explicitly hidden ones
+      // Include only active ONLINE channels for user M3U export
       if (q.all !== '1' && q.all !== 'true') {
-        channels = channels.filter(ch => !(ch.manual_override === true && ch.status === 'HIDDEN'));
+        channels = channels.filter(ch => ch.status !== 'OFFLINE' && !(ch.manual_override === true && ch.status === 'HIDDEN'));
       }
 
       let m3u = '#EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"\n';
