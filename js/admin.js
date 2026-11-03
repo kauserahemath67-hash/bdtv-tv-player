@@ -1027,11 +1027,11 @@ class AdminDashboard {
         </td>
         <td>${d.last_active ? new Date(d.last_active).toLocaleString() : '—'}</td>
         <td>
-          <div style="display:flex; align-items:center; gap:8px;">
-            <button class="btn-secondary-admin btn-toggle-dev" style="padding:6px 12px; font-size:12px;">
+          <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+            <button class="btn-toggle-dev" style="padding:6px 14px; font-size:12px; border-radius:6px; border:1px solid ${isBlocked ? '#22c55e' : '#f59e0b'}; background:${isBlocked ? 'rgba(34,197,94,0.15)' : 'rgba(245,158,11,0.15)'}; color:${isBlocked ? '#22c55e' : '#f59e0b'}; cursor:pointer; font-weight:600; white-space:nowrap;">
               ${isBlocked ? '🔓 আনব্লক' : '🚫 ব্লক'}
             </button>
-            <button class="btn-action-icon btn-delete-dev" title="ডিভাইস মুছে ফেলুন" style="background:rgba(239,68,68,0.15); border-color:#ef4444; color:#ef4444;">
+            <button class="btn-delete-dev" title="ডিভাইস মুছে ফেলুন" style="padding:6px 10px; font-size:14px; border-radius:6px; border:1px solid #ef4444; background:rgba(239,68,68,0.15); color:#ef4444; cursor:pointer;">
               🗑️
             </button>
           </div>
