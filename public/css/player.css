@@ -179,7 +179,19 @@ video::-webkit-media-controls-overlay-play-button {
   align-items: center;
   gap: 10px;
   min-width: 0;
-  flex: 1;
+  flex: 0 0 auto;
+}
+
+.top-center.channel-info-header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 48vw;
+  pointer-events: none;
 }
 
 .live-badge {
@@ -638,13 +650,62 @@ video::-webkit-media-controls-overlay-play-button {
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Android TV Remote & Keyboard Focus State (Vibrant Yellow Glow) */
+/* Android TV Remote & Keyboard Focus State (High-Visibility Dual Ring & Badge) */
 .channel-card.focused, .channel-card:focus-visible {
+  transform: scale(1.12) !important;
+  border: 3.5px solid #ffeb3b !important;
+  outline: 3px solid #ffffff !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 35px rgba(255, 235, 59, 0.95), 0 0 15px rgba(255, 255, 255, 0.8), inset 0 0 20px rgba(255, 235, 59, 0.35) !important;
+  background: rgba(255, 235, 59, 0.28) !important;
+  z-index: 100 !important;
+}
+
+.channel-card.focused::before {
+  content: "▶ SELECT";
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffeb3b;
+  color: #000;
+  font-size: 10px;
+  font-weight: 900;
+  padding: 2px 8px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 235, 59, 0.8);
+  letter-spacing: 0.8px;
+  white-space: nowrap;
+  z-index: 105;
+  animation: focusPulse 1s infinite alternate ease-in-out;
+}
+
+@keyframes focusPulse {
+  0% { transform: translateX(-50%) scale(0.95); opacity: 0.9; }
+  100% { transform: translateX(-50%) scale(1.08); opacity: 1; }
+}
+
+/* Android TV Remote Focus for Update Modal & Buttons */
+#btn-update-download.focused, #btn-update-download:focus-visible,
+#btn-update-later.focused, #btn-update-later:focus-visible,
+#btn-close-update.focused, #btn-close-update:focus-visible,
+#btn-auth-submit.focused, #btn-auth-submit:focus-visible,
+#expiry-relogin-btn.focused, #expiry-relogin-btn:focus-visible {
+  outline: 3px solid #ffeb3b !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 25px rgba(255, 235, 59, 0.9), inset 0 0 10px rgba(255, 235, 59, 0.4) !important;
   transform: scale(1.06) !important;
-  border: 2px solid #ffd200 !important;
-  box-shadow: 0 0 20px rgba(255, 210, 0, 0.65), inset 0 0 8px rgba(255, 210, 0, 0.2) !important;
-  background: rgba(255, 210, 0, 0.14) !important;
-  z-index: 10;
+  border-color: #ffeb3b !important;
+}
+
+/* Android TV Remote Focus for VIP Auth Inputs */
+#input-customer-code.focused, #input-customer-code:focus,
+#input-customer-pin.focused, #input-customer-pin:focus {
+  border-color: #ffeb3b !important;
+  outline: 3px solid rgba(255, 235, 59, 0.85) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 25px rgba(255, 235, 59, 0.6) !important;
+  background: rgba(255, 255, 255, 0.18) !important;
 }
 
 .channel-card.active-playing {

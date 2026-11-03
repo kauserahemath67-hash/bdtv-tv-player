@@ -2,7 +2,7 @@
 // BDTv Live IPTV Web Player Engine
 // ==========================================
 
-const INSTALLED_APP_VERSION = 118;
+const INSTALLED_APP_VERSION = 119;
 
 const FALLBACK_CHANNELS = [
   {
@@ -49,6 +49,8 @@ class IPTVPlayer {
     this.currentCategory = 'All';
     this.currentIndex = -1;
     this.focusedIndex = 0;
+    this.updateModalFocusIndex = 0;
+    this.authModalFocusIndex = 0;
     this.hls = null;
     this.topBarTimeout = null;
     this.hudTimeout = null;
@@ -183,6 +185,8 @@ class IPTVPlayer {
       errorDiv.textContent = msg;
       errorDiv.classList.remove('hidden');
     }
+    this.authModalFocusIndex = 0;
+    setTimeout(() => this.updateAuthModalFocus(), 100);
   }
 
   async checkAppUpdate() {
@@ -235,6 +239,8 @@ class IPTVPlayer {
     }
 
     modal.classList.remove('hidden');
+    this.updateModalFocusIndex = 0;
+    setTimeout(() => this.updateUpdateModalFocus(), 100);
 
     const closeBtn = document.getElementById('btn-close-update');
     const laterBtn = document.getElementById('btn-update-later');
@@ -619,17 +625,171 @@ class IPTVPlayer {
     }, 3500);
   }
 
+  // Modal State Helpers & Remote Focus Handlers
+  isUpdateModalOpen() {
+    const modal = document.getElementById('update-modal');
+    return modal && !modal.classList.contains('hidden');
+  }
+
+  isAuthModalOpen() {
+    return this.authModal && !this.authModal.classList.contains('hidden');
+  }
+
+  isExpiryScreenOpen() {
+    const overlay = document.getElementById('expiry-lock-overlay');
+    return overlay && !overlay.classList.contains('hidden');
+  }
+
+  updateUpdateModalFocus() {
+    const ids = ['btn-update-download', 'btn-update-later', 'btn-close-update'];
+    ids.forEach((id, index) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (index === this.updateModalFocusIndex) {
+        el.classList.add('focused');
+        el.focus();
+      } else {
+        el.classList.remove('focused');
+      }
+    });
+  }
+
+  handleUpdateModalKey(e) {
+    const key = e.key;
+    if (key === 'ArrowLeft' || key === 'ArrowRight') {
+      e.preventDefault();
+      this.updateModalFocusIndex = (this.updateModalFocusIndex === 0) ? 1 : 0;
+      this.updateUpdateModalFocus();
+      return true;
+    }
+    if (key === 'ArrowUp') {
+      e.preventDefault();
+      this.updateModalFocusIndex = 2; // Close button
+      this.updateUpdateModalFocus();
+      return true;
+    }
+    if (key === 'ArrowDown') {
+      e.preventDefault();
+      this.updateModalFocusIndex = 0; // Download button
+      this.updateUpdateModalFocus();
+      return true;
+    }
+    if (key === 'Enter' || key === 'Select') {
+      e.preventDefault();
+      const ids = ['btn-update-download', 'btn-update-later', 'btn-close-update'];
+      const el = document.getElementById(ids[this.updateModalFocusIndex]);
+      if (el) el.click();
+      return true;
+    }
+    if (key === 'Escape' || key === 'Back') {
+      e.preventDefault();
+      const closeBtn = document.getElementById('btn-close-update') || document.getElementById('btn-update-later');
+      if (closeBtn) closeBtn.click();
+      return true;
+    }
+    e.preventDefault();
+    return true;
+  }
+
+  updateAuthModalFocus() {
+    const codeInput = document.getElementById('input-customer-code');
+    const pinInput = document.getElementById('input-customer-pin');
+    const submitBtn = document.getElementById('btn-auth-submit') || (this.authModal ? this.authModal.querySelector('button[type="submit"]') : null);
+    const elements = [codeInput, pinInput, submitBtn];
+
+    elements.forEach((el, index) => {
+      if (!el) return;
+      if (index === this.authModalFocusIndex) {
+        el.classList.add('focused');
+        el.focus();
+        const bridge = window.AndroidBridge || window.AndroidApp;
+        if (el.tagName === 'INPUT') {
+          if (bridge && typeof bridge.showKeyboard === 'function') {
+            bridge.showKeyboard();
+          }
+        } else {
+          if (bridge && typeof bridge.hideKeyboard === 'function') {
+            bridge.hideKeyboard();
+          }
+        }
+      } else {
+        el.classList.remove('focused');
+      }
+    });
+  }
+
+  handleAuthModalKey(e) {
+    const key = e.key;
+    if (key === 'ArrowUp') {
+      e.preventDefault();
+      this.authModalFocusIndex = Math.max(0, this.authModalFocusIndex - 1);
+      this.updateAuthModalFocus();
+      return true;
+    }
+    if (key === 'ArrowDown') {
+      e.preventDefault();
+      this.authModalFocusIndex = Math.min(2, this.authModalFocusIndex + 1);
+      this.updateAuthModalFocus();
+      return true;
+    }
+    if (key === 'ArrowLeft' || key === 'ArrowRight') {
+      // Allow natural text navigation inside input; do not change channels
+      return true;
+    }
+    if (key === 'Enter' || key === 'Select') {
+      e.preventDefault();
+      if (this.authModalFocusIndex === 0) {
+        this.authModalFocusIndex = 1;
+        this.updateAuthModalFocus();
+      } else if (this.authModalFocusIndex === 1) {
+        const codeInput = document.getElementById('input-customer-code');
+        const pinInput = document.getElementById('input-customer-pin');
+        if (codeInput && !codeInput.value.trim()) {
+          this.authModalFocusIndex = 0;
+          this.updateAuthModalFocus();
+        } else if (pinInput && pinInput.value.trim()) {
+          const form = document.getElementById('auth-form');
+          if (form) {
+            form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true }));
+          }
+        } else {
+          this.authModalFocusIndex = 2;
+          this.updateAuthModalFocus();
+        }
+      } else {
+        const form = document.getElementById('auth-form');
+        if (form) {
+          form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true }));
+        }
+      }
+      return true;
+    }
+    if (key === 'Escape' || key === 'Back') {
+      const bridge = window.AndroidBridge || window.AndroidApp;
+      if (bridge && typeof bridge.hideKeyboard === 'function') {
+        bridge.hideKeyboard();
+      }
+      return true;
+    }
+    return false;
+  }
+
   // 8. Drawer Controls (Persistent Shelf: NEVER auto-hides while user scrolls or browses)
-  // Closed ONLY when:
-  // a) User clicks on video player screen area
-  // b) User selects and plays a specific channel
-  // c) User explicitly clicks "Channels" toggle button in top bar
   openDrawer() {
     this.isDrawerOpen = true;
     this.channelDrawer.classList.add('open');
     this.topBar.classList.remove('fade-out');
     clearTimeout(this.topBarTimeout);
+
+    // Sync focusedIndex with current playing channel
+    if (this.currentIndex >= 0 && this.currentIndex < this.filteredChannels.length) {
+      this.focusedIndex = this.currentIndex;
+    } else {
+      this.focusedIndex = 0;
+    }
     this.updateCardFocus();
+    setTimeout(() => this.updateCardFocus(), 100);
+    setTimeout(() => this.updateCardFocus(), 300);
   }
 
   closeDrawer() {
@@ -649,19 +809,11 @@ class IPTVPlayer {
 
   updateCardFocus() {
     const cards = this.channelGrid.querySelectorAll('.channel-card');
-    const drawerViewport = this.channelGrid.closest('.drawer-inner');
     cards.forEach((card, idx) => {
       if (idx === this.focusedIndex) {
         card.classList.add('focused');
-        if (drawerViewport) {
-          const cardBounds = card.getBoundingClientRect();
-          const viewportBounds = drawerViewport.getBoundingClientRect();
-          if (cardBounds.top < viewportBounds.top) {
-            drawerViewport.scrollTop -= viewportBounds.top - cardBounds.top;
-          } else if (cardBounds.bottom > viewportBounds.bottom) {
-            drawerViewport.scrollTop += cardBounds.bottom - viewportBounds.bottom;
-          }
-        }
+        card.focus({ preventScroll: true });
+        card.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: 'auto' });
       } else {
         card.classList.remove('focused');
       }
@@ -690,6 +842,34 @@ class IPTVPlayer {
   bindRemoteKeys() {
     window.addEventListener('keydown', (e) => {
       const key = e.key;
+
+      // Priority 1: Update Modal Key Interception
+      if (this.isUpdateModalOpen()) {
+        if (this.handleUpdateModalKey(e)) return;
+      }
+
+      // Priority 2: VIP Auth Modal Key Interception
+      if (this.isAuthModalOpen()) {
+        if (this.handleAuthModalKey(e)) return;
+      }
+
+      // Priority 3: Expiry Screen Interception
+      if (this.isExpiryScreenOpen()) {
+        if (key === 'Enter' || key === 'Select') {
+          e.preventDefault();
+          const btn = document.getElementById('expiry-relogin-btn');
+          if (btn) btn.click();
+        }
+        return;
+      }
+
+      // Priority 4: Active input element on screen (don't switch channels on Left/Right)
+      const activeEl = document.activeElement;
+      if (activeEl && (activeEl.tagName === 'INPUT' || activeEl.tagName === 'TEXTAREA')) {
+        if (key === 'ArrowLeft' || key === 'ArrowRight') {
+          return; // Let user edit input text naturally
+        }
+      }
 
       switch (key) {
         case 'ArrowUp':

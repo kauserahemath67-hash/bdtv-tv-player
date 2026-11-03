@@ -30,10 +30,10 @@
     <div id="top-bar">
       <div class="top-left">
         <span class="live-badge"><span class="pulse-dot"></span> LIVE</span>
-        <div class="channel-info-header">
-          <img id="top-channel-logo" src="" alt="" class="top-logo hidden">
-          <span id="top-channel-name">লোডিং...</span>
-        </div>
+      </div>
+      <div class="top-center channel-info-header">
+        <img id="top-channel-logo" src="" alt="" class="top-logo hidden">
+        <span id="top-channel-name">লোডিং...</span>
       </div>
       <div class="top-right">
         <a id="btn-download-app" href="/BDTv.apk" class="btn-top-action btn-apk-download hidden" title="অ্যাপ আপডেট বা ডাউনলোড করুন" download>⬇️ অ্যাপ আপডেট</a>
@@ -124,7 +124,7 @@
           <input type="password" id="input-customer-pin" placeholder="****" required>
         </div>
         <div id="auth-error" class="form-error hidden"></div>
-        <button type="submit" class="btn-primary full-width">আনলক করুন</button>
+        <button type="submit" id="btn-auth-submit" class="btn-primary full-width">আনলক করুন</button>
       </form>
     </div>
   </div>
@@ -177,6 +177,6 @@
     </div>
   </div>
 
-  <script src="/js/player.js?v=2.3.10"></script>
+  <script src="/js/player.js?v=2.3.11"></script>
 </body>
 </html>
