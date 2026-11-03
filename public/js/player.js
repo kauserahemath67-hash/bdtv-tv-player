@@ -75,8 +75,8 @@ class IPTVPlayer {
     // Real-time activity heartbeat every 25 seconds
     setInterval(() => this.sendHeartbeat(), 25000);
 
-    // Subscription expiry watcher — check every 3 minutes during playback
-    setInterval(() => this.checkSubscriptionLive(), 3 * 60 * 1000);
+    // Subscription + device block watcher — check every 30 seconds during playback
+    setInterval(() => this.checkSubscriptionLive(), 30 * 1000);
   }
 
   // 1. Load Settings (Notice, Ads, Subscription switch)
@@ -1281,24 +1281,40 @@ class IPTVPlayer {
       return;
     }
     try {
+      const deviceId = this.getDeviceId();
       const res = await fetch(
-        `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}&device_id=${encodeURIComponent(this.getDeviceId())}&_ts=${Date.now()}`,
+        `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}&device_id=${encodeURIComponent(deviceId)}&_ts=${Date.now()}`,
         { cache: 'no-store' }
       );
       const json = await res.json();
+
+      // ── Device blocked by admin ──
+      if (res.status === 403 || json.device_blocked) {
+        this._stopPlayback();
+        this.showExpiryLockScreen('🚫 আপনার ডিভাইস ব্লক করা হয়েছে।<br>বিস্তারিত জানতে সার্ভিস প্রদানকারীর সাথে যোগাযোগ করুন।');
+        return;
+      }
+
+      // ── Subscription expired / VIP locked ──
       if (json.vip_locked) {
-        // Stop playback immediately
-        if (this.hls) {
-          try { this.hls.stopLoad(); this.hls.destroy(); } catch {}
-          this.hls = null;
-        }
-        this.video.pause();
-        this.video.src = '';
+        this._stopPlayback();
         this.showExpiryLockScreen(json.message);
       }
     } catch (e) {
       // Network error — do NOT lock (give benefit of doubt)
-      console.warn('Subscription check failed (network):', e);
+      console.warn('Live check failed (network):', e);
+    }
+  }
+
+  // Internal helper — stop HLS + video immediately
+  _stopPlayback() {
+    if (this.hls) {
+      try { this.hls.stopLoad(); this.hls.destroy(); } catch {}
+      this.hls = null;
+    }
+    if (this.video) {
+      this.video.pause();
+      this.video.src = '';
     }
   }
 
