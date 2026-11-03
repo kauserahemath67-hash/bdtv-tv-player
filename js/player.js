@@ -348,7 +348,6 @@ class IPTVPlayer {
           <img src="${ch.logo || 'https://via.placeholder.com/60x60?text=TV'}" alt="${ch.name}" onerror="this.src='https://via.placeholder.com/60x60?text=TV'">
         </div>
         <div class="ch-title">${ch.name}</div>
-        <div class="ch-category-badge">${ch.category || 'General'}</div>
       `;
 
       card.addEventListener('click', () => {
@@ -1136,16 +1135,18 @@ class IPTVPlayer {
     }, { passive: true });
     this.channelDrawer.addEventListener('mousemove', () => this.resetDrawerAutoHide());
 
-    // Category pills
-    this.categoryBar.addEventListener('click', (e) => {
-      const btn = e.target.closest('.cat-pill');
-      if (!btn) return;
-      this.categoryBar.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
-      btn.classList.add('active');
-      this.focusedIndex = 0;
-      this.filterChannels(btn.dataset.cat);
-      this.resetDrawerAutoHide();
-    });
+    // Category pills (if present)
+    if (this.categoryBar) {
+      this.categoryBar.addEventListener('click', (e) => {
+        const btn = e.target.closest('.cat-pill');
+        if (!btn) return;
+        this.categoryBar.querySelectorAll('.cat-pill').forEach(p => p.classList.remove('active'));
+        btn.classList.add('active');
+        this.focusedIndex = 0;
+        this.filterChannels(btn.dataset.cat);
+        this.resetDrawerAutoHide();
+      });
+    }
 
     // PiP Button
     const btnPip = document.getElementById('btn-pip');
