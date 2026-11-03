@@ -21,8 +21,9 @@
     "os": "Linux",
     "browser": "Chrome",
     "ip": "103.200.37.195",
-    "status": "ACTIVE",
+    "status": "BLOCKED",
     "registered_at": "2026-11-03T19:39:26.543Z",
-    "last_active": "2026-11-03T19:39:26.543Z"
+    "last_active": "2026-11-03T19:39:26.543Z",
+    "blocked_at": "2026-11-03T19:41:08.840Z"
   }
 ]
