@@ -6,7 +6,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-0",
+    "id": "ch-1793719250678-0",
     "order": 1
   },
   {
@@ -16,7 +16,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-1",
+    "id": "ch-1793719250678-1",
     "order": 2
   },
   {
@@ -26,8 +26,18 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-2",
+    "id": "ch-1793719250678-2",
     "order": 3
+  },
+  {
+    "name": "PTV Sports",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "url": "https://flussonic.defineatoz.com/PTV/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793719250678-3",
+    "order": 4
   },
   {
     "name": "Star Sports 1",
@@ -36,7 +46,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-4",
+    "id": "ch-1793719250678-4",
     "order": 5
   },
   {
@@ -46,7 +56,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-5",
+    "id": "ch-1793719250678-5",
     "order": 6
   },
   {
@@ -56,7 +66,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-6",
+    "id": "ch-1793719250678-6",
     "order": 7
   },
   {
@@ -66,7 +76,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-7",
+    "id": "ch-1793719250678-7",
     "order": 8
   },
   {
@@ -76,7 +86,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-8",
+    "id": "ch-1793719250678-8",
     "order": 9
   },
   {
@@ -86,7 +96,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-9",
+    "id": "ch-1793719250678-9",
     "order": 10
   },
   {
@@ -96,7 +106,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-10",
+    "id": "ch-1793719250678-10",
     "order": 11
   },
   {
@@ -106,7 +116,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-11",
+    "id": "ch-1793719250678-11",
     "order": 12
   },
   {
@@ -116,7 +126,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-12",
+    "id": "ch-1793719250678-12",
     "order": 13
   },
   {
@@ -126,7 +136,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-13",
+    "id": "ch-1793719250678-13",
     "order": 14
   },
   {
@@ -136,7 +146,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-14",
+    "id": "ch-1793719250678-14",
     "order": 15
   },
   {
@@ -146,7 +156,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-15",
+    "id": "ch-1793719250678-15",
     "order": 16
   },
   {
@@ -156,7 +166,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-16",
+    "id": "ch-1793719250678-16",
     "order": 17
   },
   {
@@ -166,7 +176,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-17",
+    "id": "ch-1793719250678-17",
     "order": 18
   },
   {
@@ -176,7 +186,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-18",
+    "id": "ch-1793719250678-18",
     "order": 19
   },
   {
@@ -186,7 +196,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-19",
+    "id": "ch-1793719250678-19",
     "order": 20
   },
   {
@@ -196,7 +206,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-20",
+    "id": "ch-1793719250678-20",
     "order": 21
   },
   {
@@ -206,7 +216,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-21",
+    "id": "ch-1793719250678-21",
     "order": 22
   },
   {
@@ -216,7 +226,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-22",
+    "id": "ch-1793719250678-22",
     "order": 23
   },
   {
@@ -226,7 +236,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-23",
+    "id": "ch-1793719250678-23",
     "order": 24
   },
   {
@@ -236,7 +246,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-24",
+    "id": "ch-1793719250678-24",
     "order": 25
   },
   {
@@ -246,7 +256,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-25",
+    "id": "ch-1793719250678-25",
     "order": 26
   },
   {
@@ -256,7 +266,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-26",
+    "id": "ch-1793719250678-26",
     "order": 27
   },
   {
@@ -266,7 +276,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-27",
+    "id": "ch-1793719250678-27",
     "order": 28
   },
   {
@@ -276,7 +286,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-28",
+    "id": "ch-1793719250678-28",
     "order": 29
   },
   {
@@ -286,7 +296,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-29",
+    "id": "ch-1793719250678-29",
     "order": 30
   },
   {
@@ -296,7 +306,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-30",
+    "id": "ch-1793719250678-30",
     "order": 31
   },
   {
@@ -306,7 +316,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-31",
+    "id": "ch-1793719250678-31",
     "order": 32
   },
   {
@@ -316,7 +326,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-32",
+    "id": "ch-1793719250678-32",
     "order": 33
   },
   {
@@ -326,7 +336,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-33",
+    "id": "ch-1793719250678-33",
     "order": 34
   },
   {
@@ -336,7 +346,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-34",
+    "id": "ch-1793719250678-34",
     "order": 35
   },
   {
@@ -346,7 +356,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-35",
+    "id": "ch-1793719250678-35",
     "order": 36
   },
   {
@@ -356,7 +366,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-36",
+    "id": "ch-1793719250678-36",
     "order": 37
   },
   {
@@ -366,7 +376,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-37",
+    "id": "ch-1793719250678-37",
     "order": 38
   },
   {
@@ -376,7 +386,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-38",
+    "id": "ch-1793719250678-38",
     "order": 39
   },
   {
@@ -386,7 +396,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-39",
+    "id": "ch-1793719250678-39",
     "order": 40
   },
   {
@@ -396,7 +406,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-40",
+    "id": "ch-1793719250678-40",
     "order": 41
   },
   {
@@ -406,7 +416,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-41",
+    "id": "ch-1793719250678-41",
     "order": 42
   },
   {
@@ -416,7 +426,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-42",
+    "id": "ch-1793719250678-42",
     "order": 43
   },
   {
@@ -426,7 +436,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-43",
+    "id": "ch-1793719250678-43",
     "order": 44
   },
   {
@@ -436,7 +446,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-44",
+    "id": "ch-1793719250678-44",
     "order": 45
   },
   {
@@ -446,7 +456,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-45",
+    "id": "ch-1793719250678-45",
     "order": 46
   },
   {
@@ -456,7 +466,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-46",
+    "id": "ch-1793719250678-46",
     "order": 47
   },
   {
@@ -466,7 +476,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-47",
+    "id": "ch-1793719250678-47",
     "order": 48
   },
   {
@@ -476,7 +486,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-48",
+    "id": "ch-1793719250678-48",
     "order": 49
   },
   {
@@ -486,7 +496,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-49",
+    "id": "ch-1793719250678-49",
     "order": 50
   },
   {
@@ -496,7 +506,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-50",
+    "id": "ch-1793719250678-50",
     "order": 51
   },
   {
@@ -506,7 +516,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-51",
+    "id": "ch-1793719250678-51",
     "order": 52
   },
   {
@@ -516,7 +526,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-52",
+    "id": "ch-1793719250678-52",
     "order": 53
   },
   {
@@ -526,7 +536,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-53",
+    "id": "ch-1793719250678-53",
     "order": 54
   },
   {
@@ -536,7 +546,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-54",
+    "id": "ch-1793719250678-54",
     "order": 55
   },
   {
@@ -546,7 +556,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-55",
+    "id": "ch-1793719250678-55",
     "order": 56
   },
   {
@@ -556,7 +566,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-56",
+    "id": "ch-1793719250678-56",
     "order": 57
   },
   {
@@ -566,7 +576,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-57",
+    "id": "ch-1793719250678-57",
     "order": 58
   },
   {
@@ -576,7 +586,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-58",
+    "id": "ch-1793719250678-58",
     "order": 59
   },
   {
@@ -586,7 +596,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-59",
+    "id": "ch-1793719250678-59",
     "order": 60
   },
   {
@@ -596,7 +606,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-60",
+    "id": "ch-1793719250678-60",
     "order": 61
   },
   {
@@ -606,7 +616,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-61",
+    "id": "ch-1793719250678-61",
     "order": 62
   },
   {
@@ -616,7 +626,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-62",
+    "id": "ch-1793719250678-62",
     "order": 63
   },
   {
@@ -626,7 +636,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-63",
+    "id": "ch-1793719250678-63",
     "order": 64
   },
   {
@@ -636,7 +646,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-64",
+    "id": "ch-1793719250678-64",
     "order": 65
   },
   {
@@ -646,7 +656,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-65",
+    "id": "ch-1793719250678-65",
     "order": 66
   },
   {
@@ -656,7 +666,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-66",
+    "id": "ch-1793719250678-66",
     "order": 67
   },
   {
@@ -666,7 +676,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-67",
+    "id": "ch-1793719250678-67",
     "order": 68
   },
   {
@@ -676,7 +686,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-68",
+    "id": "ch-1793719250678-68",
     "order": 69
   },
   {
@@ -686,7 +696,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-69",
+    "id": "ch-1793719250678-69",
     "order": 70
   },
   {
@@ -696,7 +706,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-70",
+    "id": "ch-1793719250678-70",
     "order": 71
   },
   {
@@ -706,7 +716,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-71",
+    "id": "ch-1793719250678-71",
     "order": 72
   },
   {
@@ -716,7 +726,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-72",
+    "id": "ch-1793719250678-72",
     "order": 73
   },
   {
@@ -726,7 +736,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-73",
+    "id": "ch-1793719250678-73",
     "order": 74
   },
   {
@@ -736,7 +746,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-74",
+    "id": "ch-1793719250678-74",
     "order": 75
   },
   {
@@ -746,7 +756,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-75",
+    "id": "ch-1793719250678-75",
     "order": 76
   },
   {
@@ -756,7 +766,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-76",
+    "id": "ch-1793719250678-76",
     "order": 77
   },
   {
@@ -766,7 +776,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-77",
+    "id": "ch-1793719250678-77",
     "order": 78
   },
   {
@@ -776,7 +786,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-78",
+    "id": "ch-1793719250678-78",
     "order": 79
   },
   {
@@ -786,7 +796,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-79",
+    "id": "ch-1793719250678-79",
     "order": 80
   },
   {
@@ -796,7 +806,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-80",
+    "id": "ch-1793719250678-80",
     "order": 81
   },
   {
@@ -806,127 +816,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793718599247-81",
+    "id": "ch-1793719250678-81",
     "order": 82
-  },
-  {
-    "name": "DBC News (480p)",
-    "logo": "https://i.imgur.com/Qbt6q4z.png",
-    "category": "Bangladesh News",
-    "url": "http://tvn3.chowdhury-shaheb.com/dbc/index.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-0",
-    "order": 83
-  },
-  {
-    "name": "Ekushey TV (480p)",
-    "logo": "https://i.imgur.com/lRpkGHj.png",
-    "category": "Bangladesh News",
-    "url": "https://ekusheyserver.com/etvlivesn.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-1",
-    "order": 84
-  },
-  {
-    "name": "NAN TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2019/11/NAN-TV-Logo-02.png",
-    "category": "Bangladesh News",
-    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/nantv.stream/live-orgin/nantv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-2",
-    "order": 85
-  },
-  {
-    "name": "News 21 Bangla TV",
-    "logo": "https://i.imgur.com/ijuJfmd.png",
-    "category": "Bangladesh News",
-    "url": "http://103.190.133.68:1935/news21live/live/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-3",
-    "order": 86
-  },
-  {
-    "name": "Probashi TV News (1080p)",
-    "logo": "https://i.imgur.com/7oTsfQ4.png",
-    "category": "Bangladesh News",
-    "url": "http://158.69.24.53:8080/probashi_tv/index.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-4",
-    "order": 87
-  },
-  {
-    "name": "BTV News",
-    "logo": "https://s3.aynaott.com/storage/35ae3e7750a053925a0a1732e219dc7a",
-    "category": "Bangladesh News",
-    "url": "https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8?e=1784102532&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=20448821bed8f397806d492c1b39da46",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-7",
-    "order": 88
-  },
-  {
-    "name": "Ekattor TV",
-    "logo": "https://s3.aynaott.com/storage/d91767995b2f2a54852c92bbbc20daa7",
-    "category": "Bangladesh News",
-    "url": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8?e=1784102532&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=3b9afdda2bd5332e8f49ed7dfa321a06",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-8",
-    "order": 89
-  },
-  {
-    "name": "News 24 BD",
-    "logo": "https://s3.aynaott.com/storage/7c002f22c02096b0d1ba833ae9ea6d5b",
-    "category": "Bangladesh News",
-    "url": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8?e=1784102534&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=ff40b53535a0e90b724ac25ff41c590c",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-9",
-    "order": 90
-  },
-  {
-    "name": "Channel 24",
-    "logo": "https://s3.aynaott.com/storage/129b0d0a02566999a0c164cd7d506e55",
-    "category": "Bangladesh News",
-    "url": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8?e=1784102534&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=af07191085f18faa873302c2d8cdff28",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-10",
-    "order": 91
-  },
-  {
-    "name": "DBC News",
-    "logo": "https://s3.aynaott.com/storage/2c5a73ac3f9772a9cb2d18df1b152545",
-    "category": "Bangladesh News",
-    "url": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8?e=1784102535&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=d1848b7fd84cef719a89b61f0f5704ee",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-11",
-    "order": 92
-  },
-  {
-    "name": "Desh TV",
-    "logo": "https://s3.aynaott.com/storage/d10390e5434e8cb44172257abd714beb",
-    "category": "Bangladesh News",
-    "url": "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8?e=1784102570&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=78b23c868a34420397be9c985d04db9b",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-14",
-    "order": 93
-  },
-  {
-    "name": "BTV World",
-    "logo": "https://s3.aynaott.com/storage/b30147b97d86754e4b97fc2989628391",
-    "category": "Bangladesh News",
-    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8?e=1784102575&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=c85b53f4cee30af4a19d4b9ad0cd60c7",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793718715713-16",
-    "order": 94
   }
 ]
