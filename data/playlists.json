@@ -9,15 +9,6 @@
     "savedAt": "2026-11-03T06:31:56.718Z"
   },
   {
-    "name": "Custom Playlist",
-    "url": "",
-    "format": "JSON Playlist",
-    "channelCount": 78,
-    "active": true,
-    "id": "pl-1793687372969",
-    "savedAt": "2026-11-03T06:29:32.969Z"
-  },
-  {
     "name": "https://rslivetv.pages.dev/bd76t2s1w9.json",
     "url": "https://rslivetv.pages.dev/bd76t2s1w9.json",
     "format": "JSON Playlist",
