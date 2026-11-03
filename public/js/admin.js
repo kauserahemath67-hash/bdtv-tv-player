@@ -638,7 +638,7 @@ class AdminDashboard {
     if (btnCopy) {
       btnCopy.addEventListener('click', () => {
         navigator.clipboard.writeText(m3uUrl);
-        alert('M3U প্লেলিস্ট লিংক কপি করা হয়েছে!');
+        this.showToast('✅ M3U প্লেলিস্ট লিংক কপি করা হয়েছে!', 'success');
       });
     }
   }
@@ -789,16 +789,11 @@ class AdminDashboard {
       const res = await fetch('/api/playlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'refresh', url, playlistName: name })
+        body: JSON.stringify({ action: 'refresh', id, url, playlistName: name })
       });
       const json = await res.json();
       if (json.success) {
         this.showToast(json.message || `✅ ${json.updated || 0} টি চ্যানেল আপডেট, ${json.added || 0} টি নতুন যোগ হয়েছে।`, 'success');
-        await fetch('/api/playlists', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ id, name, url, format: json.format, channelCount: json.total || 0, active: true })
-        });
         await this.loadChannels();
         await this.loadPlaylists();
       } else {
@@ -825,11 +820,11 @@ class AdminDashboard {
       const res = await fetch('/api/health?auto_scan=1');
       const data = await res.json();
       if (data.success) {
-        alert(`স্ক্যান সম্পন্ন! মোট ${data.total_scanned} টি চ্যানেল যাচাই করা হয়েছে।`);
+        this.showToast(`✅ স্ক্যান সম্পন্ন! মোট ${data.total_scanned} টি চ্যানেল যাচাই করা হয়েছে।`, 'success');
         await this.loadChannels();
       }
     } catch (e) {
-      alert('স্ক্যান ব্যর্থ হয়েছে!');
+      this.showToast('স্ক্যান ব্যর্থ হয়েছে!', 'error');
     } finally {
       btn.textContent = '⚡ হেলথ স্ক্যান চালান';
       btn.disabled = false;

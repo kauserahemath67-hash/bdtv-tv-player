@@ -29,7 +29,7 @@ function pingStream(streamUrl) {
           'Accept-Language': 'en-US,en;q=0.9',
           'Cache-Control': 'no-cache'
         },
-        timeout: 5000
+        timeout: 3000
       }, (res) => {
         const timeTaken = Date.now() - startTime;
         res.destroy();
@@ -42,7 +42,7 @@ function pingStream(streamUrl) {
 
       req.on('timeout', () => {
         req.destroy();
-        resolve({ status: 'UNCERTAIN', time: 5000, error: 'Timeout' });
+        resolve({ status: 'UNCERTAIN', time: 3000, error: 'Timeout' });
       });
 
       req.on('error', (err) => {
@@ -94,19 +94,25 @@ module.exports = async (req, res) => {
       const results = [];
       const updates = [];
 
-      for (let ch of channels) {
-        const check = await pingStream(ch.url);
-        updates.push({
-          id: ch.id,
-          status: ch.status || 'ONLINE', // Safe mode: do not automatically turn channels OFFLINE
-          response_time_ms: check.time
-        });
-        results.push({
-          id: ch.id,
-          name: ch.name,
-          status: ch.status || 'ONLINE',
-          ping_result: check.status,
-          response_time_ms: check.time
+      // Concurrency batch processing (15 at a time) to ensure fast completion and prevent timeouts
+      const BATCH_SIZE = 15;
+      for (let i = 0; i < channels.length; i += BATCH_SIZE) {
+        const batch = channels.slice(i, i + BATCH_SIZE);
+        const batchChecks = await Promise.all(batch.map(ch => pingStream(ch.url)));
+        batch.forEach((ch, idx) => {
+          const check = batchChecks[idx];
+          updates.push({
+            id: ch.id,
+            status: ch.status || 'ONLINE', // Safe mode: do not automatically turn channels OFFLINE
+            response_time_ms: check.time
+          });
+          results.push({
+            id: ch.id,
+            name: ch.name,
+            status: ch.status || 'ONLINE',
+            ping_result: check.status,
+            response_time_ms: check.time
+          });
         });
       }
 

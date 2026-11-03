@@ -161,7 +161,7 @@ module.exports = async (req, res) => {
 
     // POST: Import, Test or Diagnose
     if (req.method === 'POST') {
-      const { action, url, rawContent, playlistName, replaceExisting } = req.body || {};
+      const { action, id: playlistId, url, rawContent, playlistName, replaceExisting } = req.body || {};
       let content = rawContent || '';
       let fetchMeta = null;
 
@@ -211,13 +211,16 @@ module.exports = async (req, res) => {
           const normIncomingName = (incoming.name || '').trim().toLowerCase();
 
           // Find match by name or by URL
-          let match = existing.find(c => (c.name || '').trim().toLowerCase() === normIncomingName);
-          if (!match) {
-            match = existing.find(c => c.url === incoming.url);
+          let match = null;
+          if (normIncomingName) {
+            match = existing.find(c => (c.name || '').trim().toLowerCase() === normIncomingName);
+          }
+          if (!match && incoming.url) {
+            match = existing.find(c => c.url && c.url.trim() === incoming.url.trim());
           }
 
           if (match) {
-            // Update URL and other metadata if present, preserve existing id, order, status, is_pinned
+            // Update URL and other metadata if present, preserve existing id, order, is_pinned
             if (match.url !== incoming.url) {
               match.url = incoming.url;
               updatedCount++;
@@ -225,6 +228,10 @@ module.exports = async (req, res) => {
             if (incoming.logo && !match.logo) match.logo = incoming.logo;
             if (incoming.category && (!match.category || match.category === 'General')) {
               match.category = incoming.category;
+            }
+            // If channel was previously marked OFFLINE, reactivate with the fresh stream URL
+            if (match.status === 'OFFLINE') {
+              match.status = 'ONLINE';
             }
           } else {
             // Genuinely new channel
@@ -248,6 +255,7 @@ module.exports = async (req, res) => {
         try {
           const plName = playlistName || (url ? url.split('/').pop().replace(/\.[^/.]+$/, '') : 'Custom Playlist');
           await db.savePlaylist({
+            id: playlistId,
             name: plName,
             url: url || '',
             format: parsed.format,
@@ -263,6 +271,7 @@ module.exports = async (req, res) => {
           format: parsed.format,
           updated: updatedCount,
           added: addedCount,
+          playlistChannelCount: parsed.channels.length,
           total: existing.length
         });
       }

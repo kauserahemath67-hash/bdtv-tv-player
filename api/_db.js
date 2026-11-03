@@ -344,10 +344,10 @@ async function savePlaylist(playlist) {
   const current = await getPlaylists();
   if (!playlist.id) playlist.id = 'pl-' + Date.now();
   playlist.savedAt = new Date().toISOString();
-  // Update if same URL already exists
-  const idx = current.findIndex(p => p.url && p.url === playlist.url);
+  // Update if same ID or same URL already exists
+  const idx = current.findIndex(p => (playlist.id && p.id === playlist.id) || (p.url && playlist.url && p.url === playlist.url));
   if (idx >= 0) {
-    current[idx] = { ...current[idx], ...playlist };
+    current[idx] = { ...current[idx], ...playlist, id: current[idx].id };
   } else {
     current.unshift(playlist); // newest first
   }
