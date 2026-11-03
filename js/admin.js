@@ -15,6 +15,13 @@ class AdminDashboard {
     this.init();
   }
 
+  // Central authenticated fetch — always sends admin token
+  authFetch(url, options = {}) {
+    const headers = { 'Content-Type': 'application/json', ...(options.headers || {}) };
+    if (this.token) headers['Authorization'] = `Bearer ${this.token}`;
+    return fetch(url, { ...options, headers });
+  }
+
   async init() {
     this.bindLogin();
     if (this.token) {
@@ -264,7 +271,7 @@ class AdminDashboard {
   // Update a single channel's status via API
   async updateChannelStatus(id, newStatus) {
     try {
-      await fetch('/api/channels', {
+      await this.authFetch('/api/channels', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ id, status: newStatus, manual_override: true })
@@ -284,7 +291,7 @@ class AdminDashboard {
 
     const orderList = this.channels.map((ch, idx) => ({ id: ch.id, order: idx + 1 }));
     try {
-      await fetch('/api/channels', {
+      await this.authFetch('/api/channels', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ orderList })
@@ -298,7 +305,7 @@ class AdminDashboard {
   async deleteChannel(id, name) {
     if (!confirm(`আপনি কি নিশ্চিতভাবে '${name}' চ্যানেলটি মুছে ফেলতে চান?`)) return;
     try {
-      await fetch(`/api/channels?id=${id}`, { method: 'DELETE' });
+      await this.authFetch(`/api/channels?id=${id}`, { method: 'DELETE' });
       await this.loadChannels();
     } catch (e) {
       alert('চ্যানেল মুছে ফেলা যায়নি');
@@ -376,7 +383,7 @@ class AdminDashboard {
       };
 
       try {
-        await fetch('/api/channels', {
+        await this.authFetch('/api/channels', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
@@ -429,7 +436,7 @@ class AdminDashboard {
         };
 
         try {
-          const res = await fetch('/api/customers', {
+          const res = await this.authFetch('/api/customers', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(payload)
@@ -603,7 +610,7 @@ class AdminDashboard {
         alert(json.message);
         if (json.success) {
           // Save playlist metadata to the registry
-          await fetch('/api/playlists', {
+          await this.authFetch('/api/playlists', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -761,7 +768,7 @@ class AdminDashboard {
   async deletePlaylist(id, name) {
     if (!confirm('"' + name + '" প্লেলিস্টটি তালিকা থেকে মুছে ফেলবেন?\n(চ্যানেলগুলো অপরিবর্তিত থাকবে)')) return;
     try {
-      const res = await fetch('/api/playlists?id=' + encodeURIComponent(id), { method: 'DELETE' });
+      const res = await this.authFetch('/api/playlists?id=' + encodeURIComponent(id), { method: 'DELETE' });
       const json = await res.json();
       if (json.success) {
         this.playlists = this.playlists.filter(p => p.id !== id);
@@ -926,7 +933,7 @@ class AdminDashboard {
 
       tr.querySelector('.btn-delete-cust').addEventListener('click', async () => {
         if (!confirm(`'${c.name}' অ্যাকাউন্টটি মুছে ফেলতে চান?`)) return;
-        await fetch(`/api/customers?id=${c.id}`, { method: 'DELETE' });
+        await this.authFetch(`/api/customers?id=${c.id}`, { method: 'DELETE' });
         await this.loadCustomers();
       });
 
@@ -1046,7 +1053,7 @@ class AdminDashboard {
       const toggleAction = async () => {
         const newAction = isBlocked ? 'unblock' : 'block';
         try {
-          const res = await fetch('/api/devices', {
+          const res = await this.authFetch('/api/devices', {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ device_id: d.id, action: newAction })
@@ -1065,7 +1072,7 @@ class AdminDashboard {
       // Delete Device Click
       deleteBtn.addEventListener('click', async () => {
         try {
-          const res = await fetch(`/api/devices?device_id=${d.id}&action=delete`, { method: 'DELETE' });
+          const res = await this.authFetch(`/api/devices?device_id=${d.id}&action=delete`, { method: 'DELETE' });
           const json = await res.json();
           this.showToast(json.message || 'ডিভাইস মুছে ফেলা হয়েছে!');
           await this.loadDevices();
@@ -1179,7 +1186,7 @@ class AdminDashboard {
 
     // Quick toggle bindings
     document.getElementById('toggle-sub-restriction').addEventListener('change', async (e) => {
-      await fetch('/api/settings', {
+      await this.authFetch('/api/settings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ subscription_restrictions_enabled: e.target.checked })
@@ -1188,7 +1195,7 @@ class AdminDashboard {
     });
 
     document.getElementById('toggle-notice-active').addEventListener('change', async (e) => {
-      await fetch('/api/settings', {
+      await this.authFetch('/api/settings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ notice_active: e.target.checked })
@@ -1210,7 +1217,7 @@ class AdminDashboard {
       }
 
       try {
-        const res = await fetch('/api/settings', {
+        const res = await this.authFetch('/api/settings', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
@@ -1248,7 +1255,7 @@ class AdminDashboard {
         }
       };
 
-      await fetch('/api/settings', {
+      await this.authFetch('/api/settings', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ads })
@@ -1281,7 +1288,7 @@ class AdminDashboard {
         forceUpdate: document.getElementById('ver-force').checked
       };
 
-      await fetch('/api/version', {
+      await this.authFetch('/api/version', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
@@ -1488,7 +1495,7 @@ class AutoDetector {
       changedUpdates.length = 0;
       this._log('💾', `${toSend.length} টি পরিবর্তিত চ্যানেলের স্ট্যাটাস ক্লাউডে সেভ হচ্ছে...`);
       try {
-        await fetch('/api/channels', {
+        await this.authFetch('/api/channels', {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ batchUpdates: toSend })

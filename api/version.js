@@ -14,6 +14,18 @@ module.exports = async (req, res) => {
     }
 
     if (req.method === 'POST') {
+      // Protect version write with admin token check
+      const authHeader = req.headers.authorization || '';
+      let isAdmin = false;
+      if (authHeader.startsWith('Bearer ')) {
+        try {
+          const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+          isAdmin = decoded.startsWith('admin-session-');
+        } catch (e) { isAdmin = false; }
+      }
+      if (!isAdmin) {
+        return res.status(401).json({ success: false, message: 'Unauthorized' });
+      }
       const body = req.body || {};
       const updated = await db.updateVersion({
         versionCode: Number(body.versionCode) || 100,

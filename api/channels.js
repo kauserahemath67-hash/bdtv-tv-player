@@ -1,5 +1,15 @@
 const db = require('./_db');
 
+// Helper: verify admin session token (issued by /api/auth)
+function verifyAdminToken(req) {
+  const authHeader = req.headers.authorization || '';
+  if (!authHeader.startsWith('Bearer ')) return false;
+  try {
+    const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+    return decoded.startsWith('admin-session-');
+  } catch (e) { return false; }
+}
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
@@ -10,9 +20,17 @@ module.exports = async (req, res) => {
   try {
     // ── GET — list channels ──────────────────────────────
     if (req.method === 'GET') {
-      const { category, search, code, pin, admin_token, all } = req.query || {};
+      const { category, search, code, pin } = req.query || {};
       const authHeader = req.headers.authorization || '';
-      const isAdmin = authHeader.includes('Bearer') || admin_token === 'admin_auth_bypass' || all === '1';
+
+      // SECURE admin check: must have a valid base64 admin-session token (issued by /api/auth)
+      let isAdmin = false;
+      if (authHeader.startsWith('Bearer ')) {
+        try {
+          const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+          isAdmin = decoded.startsWith('admin-session-');
+        } catch (e) { isAdmin = false; }
+      }
 
       // Check if Subscription Mode (VIP Lock) is enabled
       const settings = await db.getSettings();
@@ -43,9 +61,16 @@ module.exports = async (req, res) => {
           });
         }
 
-        // Strict Device Limit Enforcement
+        // STRICT Device Limit Enforcement — device_id is now MANDATORY
         const deviceFp = req.query.device_id || req.headers['x-device-fingerprint'] || req.headers['x-device-id'];
-        if (deviceFp) {
+        if (!deviceFp) {
+          return res.status(403).json({
+            success: false,
+            vip_locked: true,
+            message: 'ডিভাইস আইডি পাওয়া যায়নি। অ্যাপ রিস্টার্ট করুন।'
+          });
+        }
+        {
           const clientIp = (
             req.headers['x-forwarded-for'] ||
             req.headers['x-real-ip'] ||
@@ -103,6 +128,9 @@ module.exports = async (req, res) => {
 
     // ── POST — add / update channel ─────────────────────
     if (req.method === 'POST') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const body = req.body || {};
       if (!body.name || !body.url) {
         return res.status(400).json({ success: false, message: 'চ্যানেলের নাম এবং স্ট্রিমিং URL বাধ্যতামূলক।' });
@@ -125,6 +153,9 @@ module.exports = async (req, res) => {
 
     // ── PUT — reorder channels OR update single/batch channel status ──
     if (req.method === 'PUT') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const body = req.body || {};
       const { orderList, id, status, manual_override, batchUpdates } = body;
 
@@ -155,6 +186,9 @@ module.exports = async (req, res) => {
 
     // ── DELETE — remove channel ──────────────────────────
     if (req.method === 'DELETE') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const { id } = req.query || req.body || {};
       if (!id) {
         return res.status(400).json({ success: false, message: 'চ্যানেল ID প্রয়োজন।' });

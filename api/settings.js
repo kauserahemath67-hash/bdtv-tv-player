@@ -17,6 +17,18 @@ module.exports = async (req, res) => {
     }
 
     if (req.method === 'POST') {
+      // Admin auth required to change settings
+      const authHeader = req.headers.authorization || '';
+      let isAdmin = false;
+      if (authHeader.startsWith('Bearer ')) {
+        try {
+          const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+          isAdmin = decoded.startsWith('admin-session-');
+        } catch (e) { isAdmin = false; }
+      }
+      if (!isAdmin) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const body = req.body || {};
       const updated = await db.updateSettings(body);
       return res.status(200).json({ success: true, message: 'সেটিংস সংরক্ষিত হয়েছে।', data: updated });
