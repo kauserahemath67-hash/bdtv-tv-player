@@ -50,8 +50,9 @@
     "os": "Android / TV",
     "browser": "Webview",
     "ip": "103.200.37.197",
-    "status": "ACTIVE",
+    "status": "BLOCKED",
     "registered_at": "2026-11-03T12:18:18.842Z",
-    "last_active": "2026-11-03T12:18:20.671Z"
+    "last_active": "2026-11-03T12:18:20.671Z",
+    "blocked_at": "2026-11-03T12:18:53.944Z"
   }
 ]
