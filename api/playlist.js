@@ -254,10 +254,8 @@ module.exports = async (req, res) => {
             if (incoming.category && (!match.category || match.category === 'General')) {
               match.category = incoming.category;
             }
-            // If channel was previously marked OFFLINE, reactivate with the fresh stream URL
-            if (match.status === 'OFFLINE') {
-              match.status = 'ONLINE';
-            }
+            // Preserve existing status: if channel was marked OFFLINE, keep it OFFLINE!
+            // Never automatically reactivate an OFFLINE channel.
           } else {
             // Genuinely new channel
             existing.push({

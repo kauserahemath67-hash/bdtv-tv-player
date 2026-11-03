@@ -120,6 +120,10 @@ class AdminDashboard {
       },
       async (id, finalStatus) => {
         await this.updateChannelStatus(id, finalStatus === 'ONLINE' ? 'ONLINE' : 'OFFLINE');
+      },
+      (url, opts) => this.authFetch(url, opts),
+      async () => {
+        await this.loadChannels();
       }
     );
     this.bindAutoDetectorUI();
@@ -1356,10 +1360,12 @@ document.addEventListener('DOMContentLoaded', () => {
 // AutoDetector — Client-side HLS Stream Health Checker
 // ==========================================
 class AutoDetector {
-  constructor(getChannels, onProgress, onSave) {
+  constructor(getChannels, onProgress, onSave, authFetch, onComplete) {
     this.getChannels = getChannels; // () => channels array
     this.onProgress  = onProgress;  // (id, 'CHECKING'|'ONLINE'|'OFFLINE'|'TIMEOUT') => void
     this.onSave      = onSave;      // (id, finalStatus) => Promise
+    this.authFetch   = authFetch;   // Authenticated fetch function
+    this.onComplete  = onComplete;  // Callback when scan completes
     this.status      = 'IDLE';      // IDLE | RUNNING | PAUSED | STOPPED | DONE
     this._paused     = false;
     this._stopped    = false;
@@ -1501,14 +1507,20 @@ class AutoDetector {
       changedUpdates.length = 0;
       this._log('💾', `${toSend.length} টি পরিবর্তিত চ্যানেলের স্ট্যাটাস ক্লাউডে সেভ হচ্ছে...`);
       try {
-        await this.authFetch('/api/channels', {
+        const fetcher = this.authFetch || (window.adminApp ? window.adminApp.authFetch.bind(window.adminApp) : fetch);
+        const res = await fetcher('/api/channels', {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ batchUpdates: toSend })
         });
-        this._log('☁️', 'ডাটাবেস সফলভাবে আপডেট হয়েছে!');
+        const json = await res.json();
+        if (json.success) {
+          this._log('☁️', 'ডাটাবেস সফলভাবে আপডেট হয়েছে!');
+        } else {
+          this._log('⚠️', 'ডাটাবেস সেভ ব্যর্থ: ' + (json.message || ''));
+        }
       } catch (err) {
-        this._log('⚠️', 'ডাটাবেস সেভ করতে সমস্যা হয়েছে।');
+        this._log('⚠️', 'ডাটাবেস সেভ করতে সমস্যা হয়েছে: ' + err.message);
       }
     };
 
@@ -1518,6 +1530,19 @@ class AutoDetector {
       if (this._stopped) break;
 
       const ch = channels[i];
+
+      // CRITICAL: If channel is ALREADY marked OFFLINE:
+      // NEVER automatically turn it back ONLINE! It stays locked as OFFLINE.
+      // Admin must manually click the badge or edit the channel if they want to reactivate it.
+      if (ch.status === 'OFFLINE') {
+        this.counters.done++;
+        this.counters.offline++;
+        this._log('🔒', `[${i+1}/${channels.length}] ${ch.name} — অফলাইন (লকড: এডমিন ম্যানুয়ালি অন না করা পর্যন্ত অফলাইন থাকবে)`);
+        this.onProgress(ch.id, 'OFFLINE');
+        this._updateUI();
+        continue;
+      }
+
       this._log('⏳', `[${i+1}/${channels.length}] চেক করছি: ${ch.name}`);
       this.onProgress(ch.id, 'CHECKING');
       this._updateUI();
@@ -1546,8 +1571,8 @@ class AutoDetector {
 
       this._updateUI();
 
-      // Auto-flush every 20 channel changes to keep database updated in real-time
-      if (changedUpdates.length >= 20) {
+      // Auto-flush every 10 channel changes to keep database updated in real-time
+      if (changedUpdates.length >= 10) {
         await flushUpdates();
       }
 
@@ -1568,6 +1593,10 @@ class AutoDetector {
       this._log('⏹', 'ব্যবহারকারী স্ক্যান বন্ধ করেছেন।');
     }
     this._updateUI();
+
+    if (this.onComplete) {
+      try { await this.onComplete(); } catch (e) {}
+    }
   }
 
   pause() {
