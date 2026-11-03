@@ -75,11 +75,14 @@ function parseUniversal(content, defaultName = 'Live Channel') {
       line = line.trim();
       if (!line) continue;
       if (line.startsWith('#EXTINF:')) {
-        const nameMatch = line.match(/,(.+)$/) || line.match(/tvg-name="([^"]+)"/);
+        const lastCommaIdx = line.lastIndexOf(',');
+        const commaName = lastCommaIdx !== -1 ? line.substring(lastCommaIdx + 1).trim() : null;
+        const tvgNameMatch = line.match(/tvg-name="([^"]+)"/);
+        const nameMatch = commaName || (tvgNameMatch ? tvgNameMatch[1].trim() : null);
         const logoMatch = line.match(/tvg-logo="([^"]+)"/);
         const groupMatch = line.match(/group-title="([^"]+)"/);
         current = {
-          name: nameMatch ? nameMatch[1].trim() : 'Unknown Channel',
+          name: nameMatch || 'Unknown Channel',
           logo: logoMatch ? logoMatch[1].trim() : '',
           category: groupMatch ? groupMatch[1].trim() : 'General'
         };
