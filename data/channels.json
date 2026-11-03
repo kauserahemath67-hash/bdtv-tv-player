@@ -6,7 +6,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-0",
+    "id": "ch-1793687331783-0",
     "order": 1
   },
   {
@@ -16,7 +16,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-1",
+    "id": "ch-1793687331783-1",
     "order": 2
   },
   {
@@ -26,7 +26,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-2",
+    "id": "ch-1793687331783-2",
     "order": 3
   },
   {
@@ -34,33 +34,30 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
     "url": "https://flussonic.defineatoz.com/PTV/index.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-3",
-    "order": 4,
-    "manual_override": true
+    "id": "ch-1793687331783-3",
+    "order": 4
   },
   {
     "name": "Star Sports 1",
     "logo": "https://i.postimg.cc/rmQ7XZg7/20241005-170805.png",
     "url": "https://footfytv.pro/proxy/direct?url=https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-4",
-    "order": 5,
-    "manual_override": true
+    "id": "ch-1793687331783-4",
+    "order": 5
   },
   {
     "name": "Star Sports 2",
     "logo": "https://i.postimg.cc/2yhw5M0c/20241005-170916.png",
     "url": "https://tvsen7.aynaott.com/ssport2hd/index.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-5",
-    "order": 6,
-    "manual_override": true
+    "id": "ch-1793687331783-5",
+    "order": 6
   },
   {
     "name": "Willow Sports",
@@ -69,7 +66,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-6",
+    "id": "ch-1793687331783-6",
     "order": 7
   },
   {
@@ -79,7 +76,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-7",
+    "id": "ch-1793687331783-7",
     "order": 8
   },
   {
@@ -89,7 +86,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-8",
+    "id": "ch-1793687331783-8",
     "order": 9
   },
   {
@@ -99,7 +96,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-9",
+    "id": "ch-1793687331783-9",
     "order": 10
   },
   {
@@ -109,7 +106,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-10",
+    "id": "ch-1793687331783-10",
     "order": 11
   },
   {
@@ -119,7 +116,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-11",
+    "id": "ch-1793687331783-11",
     "order": 12
   },
   {
@@ -129,7 +126,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-12",
+    "id": "ch-1793687331783-12",
     "order": 13
   },
   {
@@ -137,11 +134,10 @@
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/6/69/Jalsha_Movies_HD_alt.png",
     "url": "https://robitv.com/rn/http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-13",
-    "order": 14,
-    "manual_override": true
+    "id": "ch-1793687331783-13",
+    "order": 14
   },
   {
     "name": "Colors Bangla",
@@ -150,7 +146,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-14",
+    "id": "ch-1793687331783-14",
     "order": 15
   },
   {
@@ -158,11 +154,10 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Colors_Bangla_Cinema.png",
     "url": "https://footfytv.pro/proxy/direct?url=https://footfytv.pro/proxy/direct?url=http://103.114.11.37:8081/Colors-bangla-cinema/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-15",
-    "order": 16,
-    "manual_override": true
+    "id": "ch-1793687331783-15",
+    "order": 16
   },
   {
     "name": "ZEE Bangla",
@@ -171,7 +166,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-16",
+    "id": "ch-1793687331783-16",
     "order": 17
   },
   {
@@ -181,7 +176,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-17",
+    "id": "ch-1793687331783-17",
     "order": 18
   },
   {
@@ -191,7 +186,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-18",
+    "id": "ch-1793687331783-18",
     "order": 19
   },
   {
@@ -201,7 +196,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-19",
+    "id": "ch-1793687331783-19",
     "order": 20
   },
   {
@@ -211,7 +206,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-20",
+    "id": "ch-1793687331783-20",
     "order": 21
   },
   {
@@ -221,7 +216,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-21",
+    "id": "ch-1793687331783-21",
     "order": 22
   },
   {
@@ -231,7 +226,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-22",
+    "id": "ch-1793687331783-22",
     "order": 23
   },
   {
@@ -239,11 +234,10 @@
     "logo": "https://imglink.cc/cdn/LmVOSdl3ku.png",
     "url": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-23",
-    "order": 24,
-    "manual_override": true
+    "id": "ch-1793687331783-23",
+    "order": 24
   },
   {
     "name": "Btv HD",
@@ -252,7 +246,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-24",
+    "id": "ch-1793687331783-24",
     "order": 25
   },
   {
@@ -262,7 +256,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-25",
+    "id": "ch-1793687331783-25",
     "order": 26
   },
   {
@@ -272,7 +266,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-26",
+    "id": "ch-1793687331783-26",
     "order": 27
   },
   {
@@ -282,7 +276,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-27",
+    "id": "ch-1793687331783-27",
     "order": 28
   },
   {
@@ -292,7 +286,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-28",
+    "id": "ch-1793687331783-28",
     "order": 29
   },
   {
@@ -302,7 +296,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-29",
+    "id": "ch-1793687331783-29",
     "order": 30
   },
   {
@@ -312,7 +306,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-30",
+    "id": "ch-1793687331783-30",
     "order": 31
   },
   {
@@ -322,7 +316,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-31",
+    "id": "ch-1793687331783-31",
     "order": 32
   },
   {
@@ -332,7 +326,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-32",
+    "id": "ch-1793687331783-32",
     "order": 33
   },
   {
@@ -342,7 +336,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-33",
+    "id": "ch-1793687331783-33",
     "order": 34
   },
   {
@@ -352,7 +346,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-34",
+    "id": "ch-1793687331783-34",
     "order": 35
   },
   {
@@ -362,7 +356,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-35",
+    "id": "ch-1793687331783-35",
     "order": 36
   },
   {
@@ -372,7 +366,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-36",
+    "id": "ch-1793687331783-36",
     "order": 37
   },
   {
@@ -382,7 +376,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-37",
+    "id": "ch-1793687331783-37",
     "order": 38
   },
   {
@@ -392,7 +386,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-38",
+    "id": "ch-1793687331783-38",
     "order": 39
   },
   {
@@ -402,7 +396,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-39",
+    "id": "ch-1793687331783-39",
     "order": 40
   },
   {
@@ -412,7 +406,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-40",
+    "id": "ch-1793687331783-40",
     "order": 41
   },
   {
@@ -422,7 +416,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-41",
+    "id": "ch-1793687331783-41",
     "order": 42
   },
   {
@@ -432,7 +426,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-42",
+    "id": "ch-1793687331783-42",
     "order": 43
   },
   {
@@ -442,7 +436,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-43",
+    "id": "ch-1793687331783-43",
     "order": 44
   },
   {
@@ -452,7 +446,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-44",
+    "id": "ch-1793687331783-44",
     "order": 45
   },
   {
@@ -460,11 +454,10 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/2/20/Green_TV_Logo.png",
     "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/chunks.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-45",
-    "order": 46,
-    "manual_override": true
+    "id": "ch-1793687331783-45",
+    "order": 46
   },
   {
     "name": "Channel I HD",
@@ -473,7 +466,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-46",
+    "id": "ch-1793687331783-46",
     "order": 47
   },
   {
@@ -481,11 +474,10 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
     "url": "https://box.bbaria.net:8083/Channel9/video.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-47",
-    "order": 48,
-    "manual_override": true
+    "id": "ch-1793687331783-47",
+    "order": 48
   },
   {
     "name": "DBC News HD",
@@ -494,7 +486,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-48",
+    "id": "ch-1793687331783-48",
     "order": 49
   },
   {
@@ -504,7 +496,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-49",
+    "id": "ch-1793687331783-49",
     "order": 50
   },
   {
@@ -514,7 +506,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-50",
+    "id": "ch-1793687331783-50",
     "order": 51
   },
   {
@@ -524,7 +516,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-51",
+    "id": "ch-1793687331783-51",
     "order": 52
   },
   {
@@ -534,7 +526,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-52",
+    "id": "ch-1793687331783-52",
     "order": 53
   },
   {
@@ -542,11 +534,10 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
     "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8#skym3u.dev",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-53",
-    "order": 54,
-    "manual_override": true
+    "id": "ch-1793687331783-53",
+    "order": 54
   },
   {
     "name": "Bangla Vision",
@@ -555,7 +546,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-54",
+    "id": "ch-1793687331783-54",
     "order": 55
   },
   {
@@ -565,7 +556,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-55",
+    "id": "ch-1793687331783-55",
     "order": 56
   },
   {
@@ -575,7 +566,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-56",
+    "id": "ch-1793687331783-56",
     "order": 57
   },
   {
@@ -585,7 +576,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-57",
+    "id": "ch-1793687331783-57",
     "order": 58
   },
   {
@@ -593,11 +584,10 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1781163068414.png",
     "url": "https://akash-by-hady.srhady.workers.dev/live/299.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-58",
-    "order": 59,
-    "manual_override": true
+    "id": "ch-1793687331783-58",
+    "order": 59
   },
   {
     "name": "Star News",
@@ -606,7 +596,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-59",
+    "id": "ch-1793687331783-59",
     "order": 60
   },
   {
@@ -616,7 +606,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-60",
+    "id": "ch-1793687331783-60",
     "order": 61
   },
   {
@@ -624,22 +614,20 @@
     "logo": "https://i.postimg.cc/MK83K74Z/20260705-053736.jpg",
     "url": "https://jagroniakash.ncare.live/unmochontv/unmochontv.stream/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-61",
-    "order": 62,
-    "manual_override": true
+    "id": "ch-1793687331783-61",
+    "order": 62
   },
   {
     "name": "Al Jazeera",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1777454219313.png",
     "url": "https://akash-by-hady.srhady.workers.dev/ts?ep=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9vd3Jjb3ZjcnB5LmdwY2RuLm5ldC9icGstdHYvMTcyMS9vdXRwdXQvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRWRnZVRpbWUiOjE3ODY4Mjc2NDJ9fX1dfQ&es=krTb1ISx2d02a7DZiOUUZk~aKxq7x4cg-B99bEhJM1o&url=https%3A%2F%2Fowrcovcrpy.gpcdn.net%2Fbpk-tv%2F1721%2Foutput%2F1721-audio_113512_eng%3D113200-video%3D2202800.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-62",
-    "order": 63,
-    "manual_override": true
+    "id": "ch-1793687331783-62",
+    "order": 63
   },
   {
     "name": "Sony Max",
@@ -648,7 +636,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-63",
+    "id": "ch-1793687331783-63",
     "order": 64
   },
   {
@@ -656,22 +644,20 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/b02e7be82b9b488e5a79b0f7e8f7ca1c.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/sony_ent_hd_abr/live/sony_ent_hd_480/chunks.m3u8?nimblesessionid=206459882",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-64",
-    "order": 65,
-    "manual_override": true
+    "id": "ch-1793687331783-64",
+    "order": 65
   },
   {
     "name": "Sony Max 2",
     "logo": "https://yt3.googleusercontent.com/r7fi39b2G0g-xrHbziVK_V0rgQqwRqXRtSDuUaALPCL-41ayfqIs_m7tSGR1ZGXU76toUEU3wg=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://drk6xq0vhn.gpcdn.net/live/max_2_abr/live/max_2_720/chunks.m3u8?nimblesessionid=206458908",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-65",
-    "order": 66,
-    "manual_override": true
+    "id": "ch-1793687331783-65",
+    "order": 66
   },
   {
     "name": "Sony Movies",
@@ -680,7 +666,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-66",
+    "id": "ch-1793687331783-66",
     "order": 67
   },
   {
@@ -688,33 +674,30 @@
     "logo": "https://yt3.googleusercontent.com/ytc/AIdro_laNnznvidGadk1O6pI_FsGpRqKdrH6MsequORPttJsBNc=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-67",
-    "order": 68,
-    "manual_override": true
+    "id": "ch-1793687331783-67",
+    "order": 68
   },
   {
     "name": "Music India",
     "logo": "https://pbs.twimg.com/profile_images/618036953/music_india_400x400.png",
     "url": "https://cdn-2.pishow.tv/live/226/master.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-68",
-    "order": 69,
-    "manual_override": true
+    "id": "ch-1793687331783-68",
+    "order": 69
   },
   {
     "name": "B4U Music",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/e41d7120121fbc7f3fe1f07b30c737d2.png",
     "url": "https://stream.ottplus.bd/live/b4u_music_abr/index.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-69",
-    "order": 70,
-    "manual_override": true
+    "id": "ch-1793687331783-69",
+    "order": 70
   },
   {
     "name": "Gopal Bhar",
@@ -723,7 +706,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-70",
+    "id": "ch-1793687331783-70",
     "order": 71
   },
   {
@@ -731,11 +714,10 @@
     "logo": "https://mir-s3-cdn-cf.behance.net/projects/202/085a3357868699.Y3JvcCw3MTksNTYzLDMyMSw4Mw.jpg",
     "url": "https://box.bbaria.net/DurontoTV/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-71",
-    "order": 72,
-    "manual_override": true
+    "id": "ch-1793687331783-71",
+    "order": 72
   },
   {
     "name": "Pogo",
@@ -744,7 +726,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-72",
+    "id": "ch-1793687331783-72",
     "order": 73
   },
   {
@@ -754,7 +736,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-73",
+    "id": "ch-1793687331783-73",
     "order": 74
   },
   {
@@ -762,22 +744,20 @@
     "logo": "https://i.ibb.co.com/01gmWfz/images-1.webp",
     "url": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/chunklist_b2000000_DVR.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-74",
-    "order": 75,
-    "manual_override": true
+    "id": "ch-1793687331783-74",
+    "order": 75
   },
   {
     "name": "Khushboo Bangla",
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/c4/Khushboo_Bangla_logo_%282016-present%29.png",
     "url": "https://cdn-4.pishow.tv/live/1473/master.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-75",
-    "order": 76,
-    "manual_override": true
+    "id": "ch-1793687331783-75",
+    "order": 76
   },
   {
     "name": "Moto Patlu",
@@ -786,7 +766,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-76",
+    "id": "ch-1793687331783-76",
     "order": 77
   },
   {
@@ -796,7 +776,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-77",
+    "id": "ch-1793687331783-77",
     "order": 78
   },
   {
@@ -806,7 +786,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-78",
+    "id": "ch-1793687331783-78",
     "order": 79
   },
   {
@@ -816,7 +796,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-79",
+    "id": "ch-1793687331783-79",
     "order": 80
   },
   {
@@ -824,801 +804,19 @@
     "logo": "https://logos-world.net/wp-content/uploads/2023/04/Animal-Planet-Logo.png",
     "url": "https://stream.ottplus.bd/live/animal_planet_hd_abr/playlist.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793685908770-80",
-    "order": 81,
-    "manual_override": true
+    "id": "ch-1793687331783-80",
+    "order": 81
   },
   {
     "name": "Discovery",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqezFALo-LbtcS9LIbXWG88NFs5W5v99xfaYqrVOzs3oAzeHoTfXiTNdBs&s=10",
     "url": "https://stream.ottplus.bd/live/discovery_sd_abr/index.m3u8",
     "category": "General",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793685908770-81",
-    "order": 82,
-    "manual_override": true
-  },
-  {
-    "name": "Toffee TV",
-    "logo": "https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",
-    "category": "Family",
-    "url": "https://alixbd.com/playlistconfig/channel/1.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-0",
-    "order": 83
-  },
-  {
-    "name": "Toffee Movies",
-    "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/2.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-1",
-    "order": 84
-  },
-  {
-    "name": "WC Match Recap",
-    "logo": "https://assets-prod.services.toffeelive.com/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png",
-    "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/3.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-2",
-    "order": 85
-  },
-  {
-    "name": "AWSN TV",
-    "logo": "https://assets-prod.services.toffeelive.com/F9UM56ABalKyvLQIr9B1/posters/26081e64-671e-44a8-95ba-a692bfaae49c.jpeg",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/4.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-3",
-    "order": 86
-  },
-  {
-    "name": "SAFF Live 1",
-    "logo": "https://assets-prod.services.toffeelive.com/itdbVKEBalKyvLQI94RR/posters/7f266367-077c-4acb-b29a-73437a80419b.png",
-    "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/5.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-4",
-    "order": 87
-  },
-  {
-    "name": "CNN",
-    "logo": "https://assets-prod.services.toffeelive.com/VC6Q-JQBv9knK3AHhTXt/posters/63e79814-8fcf-4c3e-bb66-408b2a402613.webp",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/6.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-5",
-    "order": 88
-  },
-  {
-    "name": "Somoy TV",
-    "logo": "https://assets-prod.services.toffeelive.com/Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/7.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-6",
-    "order": 89
-  },
-  {
-    "name": "Jamuna TV",
-    "logo": "https://assets-prod.services.toffeelive.com/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/8.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-7",
-    "order": 90
-  },
-  {
-    "name": "Ananda TV",
-    "logo": "https://assets-prod.services.toffeelive.com/wCM3l5sBEef-9-uVXFvD/posters/d80f7aee-5bd7-4edc-97eb-ead0e3ebbe09.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/9.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-8",
-    "order": 91
-  },
-  {
-    "name": "Bijoy TV",
-    "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
-    "category": "Action",
-    "url": "https://alixbd.com/playlistconfig/channel/10.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-9",
-    "order": 92
-  },
-  {
-    "name": "NTV",
-    "logo": "https://assets-prod.services.toffeelive.com/wHLVIJ4B7a1HdMSjaGLJ/posters/83b89557-3ae8-4ca8-8c5d-3c617359c738.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/11.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-10",
-    "order": 93
-  },
-  {
-    "name": "Global TV",
-    "logo": "https://assets-prod.services.toffeelive.com/0y_tDJsBNnOkwJLWNrdE/posters/2ff058e1-630f-4657-8dc6-b677e65642c5.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/12.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-11",
-    "order": 94
-  },
-  {
-    "name": "Channel S",
-    "logo": "https://assets-prod.services.toffeelive.com/WyPuDJsBEef-9-uVUA_z/posters/ea20055c-a824-443c-8083-ce8e2da8b922.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/13.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-12",
-    "order": 95
-  },
-  {
-    "name": "Rajdhani TV",
-    "logo": "https://assets-prod.services.toffeelive.com/KECGB54BuUSiBsg_dHyj/posters/58af9c58-ed80-458c-af13-cf381680cec6.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/14.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-13",
-    "order": 96
-  },
-  {
-    "name": "Bangla TV",
-    "logo": "https://assets-prod.services.toffeelive.com/JiK-_poBEef-9-uVZv6L/posters/757a328e-70d6-45de-b093-0a843c69ade7.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/15.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-14",
-    "order": 97
-  },
-  {
-    "name": "Asian TV",
-    "logo": "https://assets-prod.services.toffeelive.com/MyK__poBEef-9-uVmf5l/posters/1eadef5b-28e7-4dc2-b42f-c67a3357c9a0.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/16.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-15",
-    "order": 98
-  },
-  {
-    "name": "Channel i",
-    "logo": "https://assets-prod.services.toffeelive.com/qnv835oBcqxnFHJBuQcB/posters/348dfac3-c1e0-485d-a72b-3d282c9e2c73.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/17.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-16",
-    "order": 99
-  },
-  {
-    "name": "Movie Bangla",
-    "logo": "https://assets-prod.services.toffeelive.com/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/18.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-17",
-    "order": 100
-  },
-  {
-    "name": "Nexus TV",
-    "logo": "https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/19.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-18",
-    "order": 101
-  },
-  {
-    "name": "Islamic TV",
-    "logo": "https://assets-prod.services.toffeelive.com/jehEA54BIxFjn23xAmdw/posters/2c276556-cbcd-4467-b627-4394bb20f250.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/20.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-19",
-    "order": 102
-  },
-  {
-    "name": "Desh TV",
-    "logo": "https://assets-prod.services.toffeelive.com/6Hz1PJwBcqxnFHJBhgkV/posters/845f1e3f-987a-47cc-a48d-ee12d8f4d419.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/21.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-20",
-    "order": 103
-  },
-  {
-    "name": "Independent TV",
-    "logo": "https://assets-prod.services.toffeelive.com/ES_cZZsBNnOkwJLW1Oz1/posters/b872b8f5-cb6b-45a1-a1cd-7609df51d614.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/22.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-21",
-    "order": 104
-  },
-  {
-    "name": "Ekhon TV",
-    "logo": "https://assets-prod.services.toffeelive.com/o3v235oBcqxnFHJBkAdC/posters/159af631-796d-4342-a2a7-c272f32bcd32.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/23.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-22",
-    "order": 105
-  },
-  {
-    "name": "Ekattor TV",
-    "logo": "https://assets-prod.services.toffeelive.com/PS_La5oBNnOkwJLWLRN_/posters/e8c444fd-ee3b-4bf3-bb0a-f969bc295f82.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/24.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-23",
-    "order": 106
-  },
-  {
-    "name": "Channel News Asia",
-    "logo": "https://assets-prod.services.toffeelive.com/rYOv_p8BJIOHmUelrnXh/posters/d537453f-7e5b-45f3-9b52-42f6f65950c8.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/25.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-24",
-    "order": 107
-  },
-  {
-    "name": "TRT World",
-    "logo": "https://assets-prod.services.toffeelive.com/1YPq_p8BJIOHmUelSHXc/posters/f65b0273-0f23-4b56-93dd-417224369105.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/26.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-25",
-    "order": 108
-  },
-  {
-    "name": "DW",
-    "logo": "https://assets-prod.services.toffeelive.com/7oPt_p8BJIOHmUelhXWj/posters/d6328092-9437-4806-8dc7-d00732d56832.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/27.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-26",
-    "order": 109
-  },
-  {
-    "name": "Al Jazeera",
-    "logo": "https://assets-prod.services.toffeelive.com/S9bzFaEBalKyvLQIrh3b/posters/f400a8bc-d83c-40f8-93e8-206314ad332d.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/28.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-27",
-    "order": 110
-  },
-  {
-    "name": "Russia Today",
-    "logo": "https://assets-prod.services.toffeelive.com/CNT2_p8BalKyvLQIBSUG/posters/1e937055-a014-4274-bb69-b1b56d18c434.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/29.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-28",
-    "order": 111
-  },
-  {
-    "name": "France 24",
-    "logo": "https://assets-prod.services.toffeelive.com/G4ML_58BJIOHmUelNXZr/posters/becc2fba-4ed5-4f43-af2d-3c1ea2b4ee57.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/30.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-29",
-    "order": 112
-  },
-  {
-    "name": "CGTN",
-    "logo": "https://assets-prod.services.toffeelive.com/DYMI_58BJIOHmUelm3aK/posters/d8436322-804a-47b6-9a3f-62764c4622d5.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/31.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-30",
-    "order": 113
-  },
-  {
-    "name": "Eurosport HD",
-    "logo": "https://assets-prod.services.toffeelive.com/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",
-    "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/32.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-31",
-    "order": 114
-  },
-  {
-    "name": "Saudi Sunnah",
-    "logo": "https://assets-prod.services.toffeelive.com/JNQA_58BalKyvLQIhiVD/posters/11e764bf-7969-4dcb-a94c-937a3bde2a7f.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/33.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-32",
-    "order": 115
-  },
-  {
-    "name": "Saudi Quran",
-    "logo": "https://assets-prod.services.toffeelive.com/FdT9_p8BalKyvLQIpCUP/posters/6b39f2c6-6fe8-4720-a986-379e09968b5b.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/34.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-33",
-    "order": 116
-  },
-  {
-    "name": "Sony Ten Sports 1 HD",
-    "logo": "https://assets-prod.services.toffeelive.com/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
-    "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/35.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-34",
-    "order": 117
-  },
-  {
-    "name": "Sony Ten Sports 2 HD",
-    "logo": "https://assets-prod.services.toffeelive.com/sy5m-JQBv9knK3AHYTTk/posters/5e40bf0e-633f-4d37-a3b2-3d606f0ac19a.png",
-    "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/36.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-35",
-    "order": 118
-  },
-  {
-    "name": "Sony Ten Sports 5 HD",
-    "logo": "https://assets-prod.services.toffeelive.com/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
-    "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/37.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-36",
-    "order": 119
-  },
-  {
-    "name": "Sony Ten Cricket",
-    "logo": "https://assets-prod.services.toffeelive.com/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp",
-    "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/38.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-37",
-    "order": 120
-  },
-  {
-    "name": "Cartoon Network HD +",
-    "logo": "https://assets-prod.services.toffeelive.com/1y6e-JQBv9knK3AHNDWb/posters/ee9ba01b-1bcf-436b-b273-7b857f0810fb.webp",
-    "category": "Teen",
-    "url": "https://alixbd.com/playlistconfig/channel/39.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-38",
-    "order": 121
-  },
-  {
-    "name": "Cartoon Network",
-    "logo": "https://assets-prod.services.toffeelive.com/mC6W-JQBv9knK3AHfDWA/posters/d2a02d82-fde4-4769-a6d9-95c0560e2120.webp",
-    "category": "Teen",
-    "url": "https://alixbd.com/playlistconfig/channel/40.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-39",
-    "order": 122
-  },
-  {
-    "name": "POGO",
-    "logo": "https://assets-prod.services.toffeelive.com/ny6W-JQBv9knK3AHujXC/posters/7e7c2afe-a663-4c09-983a-2d0fa0f1ca9a.webp",
-    "category": "Teen",
-    "url": "https://alixbd.com/playlistconfig/channel/41.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-40",
-    "order": 123
-  },
-  {
-    "name": "Discovery Kids",
-    "logo": "https://assets-prod.services.toffeelive.com/1i6e-JQBv9knK3AHHTXR/posters/325887a7-84ea-4cf9-a6fd-6111ddc25671.webp",
-    "category": "Teen",
-    "url": "https://alixbd.com/playlistconfig/channel/42.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-41",
-    "order": 124
-  },
-  {
-    "name": "Sony YAY",
-    "logo": "https://assets-prod.services.toffeelive.com/IC5_-JQBv9knK3AHFDXh/posters/36df4012-80f2-4a98-9970-3b663f62093f.webp",
-    "category": "Family",
-    "url": "https://alixbd.com/playlistconfig/channel/43.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-42",
-    "order": 125
-  },
-  {
-    "name": "Zee Bangla",
-    "logo": "https://assets-prod.services.toffeelive.com/kK2aX5UBrjBfS2_RBcKf/posters/ba5dd8dc-4f87-414a-b57f-c9ecdeda5253.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/44.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-43",
-    "order": 126
-  },
-  {
-    "name": "Zee Anmol",
-    "logo": "https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f9c07bfc-9fde-40d0-91a1-e28c5840f400.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/45.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-44",
-    "order": 127
-  },
-  {
-    "name": "Zing",
-    "logo": "https://assets-prod.services.toffeelive.com/DK8dd5YBrjBfS2_Ru22e/posters/a4e57fd0-1853-4540-a9bc-0265ee43b5cb.png",
-    "category": "Comedy",
-    "url": "https://alixbd.com/playlistconfig/channel/46.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-45",
-    "order": 128
-  },
-  {
-    "name": "HUM",
-    "logo": "https://assets-prod.services.toffeelive.com/0C63X5UBv9knK3AHxaOs/posters/6dce1143-1045-4fec-ac4f-86d2bfb32447.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/47.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-46",
-    "order": 129
-  },
-  {
-    "name": "HUM Masala",
-    "logo": "https://assets-prod.services.toffeelive.com/T9O9X5UBm1RY_In7UXFv/posters/30e0f372-eb3e-4cf9-be1e-b196a40c2fc7.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/48.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-47",
-    "order": 130
-  },
-  {
-    "name": "HUM Sitaray",
-    "logo": "https://assets-prod.services.toffeelive.com/WtPBX5UBm1RY_In7mXEU/posters/188d51f6-aeef-41ed-835b-e25ff911e209.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/49.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-48",
-    "order": 131
-  },
-  {
-    "name": "Sony Aath",
-    "logo": "https://assets-prod.services.toffeelive.com/xi6xX5UBv9knK3AH9aMk/posters/f4db1c12-b10f-46e8-a09b-e0efb8820970.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/50.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-49",
-    "order": 132
-  },
-  {
-    "name": "Sony Entertainment Television HD",
-    "logo": "https://assets-prod.services.toffeelive.com/-y50-JQBv9knK3AHLzSn/posters/0ab48ac0-ec84-4ca2-9601-746ff3cb809e.webp",
-    "category": "Family",
-    "url": "https://alixbd.com/playlistconfig/channel/51.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-50",
-    "order": 133
-  },
-  {
-    "name": "Sony Entertainment Television",
-    "logo": "https://assets-prod.services.toffeelive.com/2S5t-JQBv9knK3AHJTTW/posters/ae74f943-77c9-4395-a16c-8ed84b439080.webp",
-    "category": "Family",
-    "url": "https://alixbd.com/playlistconfig/channel/52.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-51",
-    "order": 134
-  },
-  {
-    "name": "B4U Music",
-    "logo": "https://assets-prod.services.toffeelive.com/PS6F-JQBv9knK3AHqjVz/posters/0f83ee72-be0f-4861-94df-30b158d3df8d.webp",
-    "category": "Musical",
-    "url": "https://alixbd.com/playlistconfig/channel/53.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-52",
-    "order": 135
-  },
-  {
-    "name": "Sony SAB HD",
-    "logo": "https://assets-prod.services.toffeelive.com/ES55-JQBv9knK3AHNDWC/posters/13411be9-62b9-4a99-a062-b6e91dfb1099.webp",
-    "category": "Family",
-    "url": "https://alixbd.com/playlistconfig/channel/54.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-53",
-    "order": 136
-  },
-  {
-    "name": "Zee TV HD",
-    "logo": "https://assets-prod.services.toffeelive.com/ltPQX5UBm1RY_In7b3F1/posters/d039d9df-9877-4969-a0b6-56888ebe2385.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/55.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-54",
-    "order": 137
-  },
-  {
-    "name": "Sony MAX HD",
-    "logo": "https://assets-prod.services.toffeelive.com/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/56.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-55",
-    "order": 138
-  },
-  {
-    "name": "Zee Bangla Cinema",
-    "logo": "https://assets-prod.services.toffeelive.com/-C7MX5UBv9knK3AHdKOi/posters/e37fef13-9bf3-4ecc-8b74-fca091874fa0.png",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/57.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-56",
-    "order": 139
-  },
-  {
-    "name": "Zee Bollywood",
-    "logo": "https://assets-prod.services.toffeelive.com/OnSlPJYBcqxnFHJB6lFX/posters/d9ccb2a6-227f-4a41-8714-efaddab5cf5e.png",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/58.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-57",
-    "order": 140
-  },
-  {
-    "name": "Zee Action",
-    "logo": "https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/33d667ae-bcc3-4f6b-b376-76c552136923.png",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/59.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-58",
-    "order": 141
-  },
-  {
-    "name": "Sony MAX",
-    "logo": "https://assets-prod.services.toffeelive.com/Ay52-JQBv9knK3AHFDWt/posters/00afb30b-3c19-4c4c-abd8-891db94e4767.webp",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/60.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-59",
-    "order": 142
-  },
-  {
-    "name": "Sony PIX HD",
-    "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/61.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-60",
-    "order": 143
-  },
-  {
-    "name": "Zee Cafe",
-    "logo": "https://assets-prod.services.toffeelive.com/U3QEd5YBcqxnFHJBpYzc/posters/8bc7ae1b-1a46-4b76-bdb1-13c7dbd3a95c.png",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/62.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-61",
-    "order": 144
-  },
-  {
-    "name": "B4U Movies APAC",
-    "logo": "https://assets-prod.services.toffeelive.com/PC6F-JQBv9knK3AHlTUO/posters/fb0243ba-39a0-4101-a78c-c197be550c6c.webp",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/63.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-62",
-    "order": 145
-  },
-  {
-    "name": "Sony MAX 2",
-    "logo": "https://assets-prod.services.toffeelive.com/Ii5_-JQBv9knK3AHLDV3/posters/d961cc87-81b6-4b30-8414-8c0af2774818.webp",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/64.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-63",
-    "order": 146
-  },
-  {
-    "name": "Zee Cinema HD",
-    "logo": "https://assets-prod.services.toffeelive.com/5y7HX5UBv9knK3AHs6Nk/posters/7582fb79-c15f-4247-ba5b-1d2dd27f3d71.png",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/65.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-64",
-    "order": 147
-  },
-  {
-    "name": "TLC HD",
-    "logo": "https://assets-prod.services.toffeelive.com/7S6j-JQBv9knK3AHbzXC/posters/0973097c-bc5c-4b28-aaca-f04d6f6cb5e2.webp",
-    "category": "Fantasy",
-    "url": "https://alixbd.com/playlistconfig/channel/66.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-65",
-    "order": 148
-  },
-  {
-    "name": "TLC",
-    "logo": "https://assets-prod.services.toffeelive.com/7C6j-JQBv9knK3AHVzUA/posters/e8f84105-5efe-4e91-a0d4-18a0849cf2f2.webp",
-    "category": "Fantasy",
-    "url": "https://alixbd.com/playlistconfig/channel/67.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-66",
-    "order": 149
-  },
-  {
-    "name": "Animal Planet",
-    "logo": "https://assets-prod.services.toffeelive.com/Ny61-JQBv9knK3AHgzZ7/posters/0909b36a-afd5-426a-93b3-4512800977db.webp",
-    "category": "Adventure",
-    "url": "https://alixbd.com/playlistconfig/channel/68.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-67",
-    "order": 150
-  },
-  {
-    "name": "Animal Planet HD",
-    "logo": "https://assets-prod.services.toffeelive.com/Ni61-JQBv9knK3AHcDYc/posters/c16e8633-6b2a-401a-9cd6-ac26a4fcdedb.webp",
-    "category": "Adventure",
-    "url": "https://alixbd.com/playlistconfig/channel/69.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-68",
-    "order": 151
-  },
-  {
-    "name": "Sony BBC Earth HD",
-    "logo": "https://assets-prod.services.toffeelive.com/MC6C-JQBv9knK3AHUzUT/posters/a8c32fd3-2ba7-437c-85ac-de2f1b2fa6ca.webp",
-    "category": "Family",
-    "url": "https://alixbd.com/playlistconfig/channel/70.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-69",
-    "order": 152
-  },
-  {
-    "name": "Discovery HD",
-    "logo": "https://assets-prod.services.toffeelive.com/KC6x-JQBv9knK3AHqjYc/posters/55e554f1-dbbb-47bd-97fe-fca878726c4c.webp",
-    "category": "Adventure",
-    "url": "https://alixbd.com/playlistconfig/channel/71.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-70",
-    "order": 153
-  },
-  {
-    "name": "Discovery",
-    "logo": "https://assets-prod.services.toffeelive.com/KS6x-JQBv9knK3AHwDZy/posters/6594d216-aaca-4eee-b6f5-bbc6b80feb15.webp",
-    "category": "Adventure",
-    "url": "https://alixbd.com/playlistconfig/channel/72.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-71",
-    "order": 154
-  },
-  {
-    "name": "Discovery Science",
-    "logo": "https://assets-prod.services.toffeelive.com/AS6s-JQBv9knK3AHDTZb/posters/eab8fd0f-9351-464c-b45e-332f38b49f4b.webp",
-    "category": "Science Fiction",
-    "url": "https://alixbd.com/playlistconfig/channel/73.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-72",
-    "order": 155
-  },
-  {
-    "name": "Discovery Turbo",
-    "logo": "https://assets-prod.services.toffeelive.com/Ay6s-JQBv9knK3AHJTY1/posters/e8f65578-e82d-4e4a-a1ff-073becc5bd71.webp",
-    "category": "Adventure",
-    "url": "https://alixbd.com/playlistconfig/channel/74.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-73",
-    "order": 156
-  },
-  {
-    "name": "Investigation Discovery HD",
-    "logo": "https://assets-prod.services.toffeelive.com/ay7uX5UBv9knK3AHs6TI/posters/deb3c186-b2e1-4a91-aafb-d86f9128b851.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/75.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-74",
-    "order": 157
-  },
-  {
-    "name": "&TV HD",
-    "logo": "https://assets-prod.services.toffeelive.com/5cwRnZUBtpl-Sbt7wWrN/posters/5779ade3-e9ba-4107-b3da-bae6f891500a.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/76.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-75",
-    "order": 158
-  },
-  {
-    "name": "& Pictures HD",
-    "logo": "https://assets-prod.services.toffeelive.com/QMwWnZUBtpl-Sbt7S2sx/posters/8cad9a82-842a-47bf-a060-f17011f11c07.png",
-    "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/77.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793687197509-76",
-    "order": 159
-  },
-  {
-    "name": "w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png\" group-title=\"Live TV\",BFL | Live 5",
-    "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png",
-    "category": "Live TV",
-    "url": "https://alixbd.com/playlistconfig/channel/78.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793687197509-77",
-    "order": 160
+    "id": "ch-1793687331783-81",
+    "order": 82
   }
 ]
