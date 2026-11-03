@@ -1,5 +1,16 @@
 const db = require('./_db');
 
+// Helper: verify admin session token (issued by /api/auth)
+function verifyAdminToken(req) {
+  const authHeader = req.headers.authorization || '';
+  if (!authHeader.startsWith('Bearer ')) return false;
+  try {
+    const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+    return decoded.startsWith('admin-session-');
+  } catch (e) { return false; }
+}
+
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, OPTIONS');
@@ -9,6 +20,9 @@ module.exports = async (req, res) => {
 
   try {
     if (req.method === 'GET') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const reports = db.getReports();
       return res.status(200).json({ success: true, count: reports.length, data: reports });
     }
@@ -30,6 +44,9 @@ module.exports = async (req, res) => {
     }
 
     if (req.method === 'PUT') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const { id } = req.body || {};
       if (!id) return res.status(400).json({ success: false, message: 'Report ID প্রয়োজন।' });
 

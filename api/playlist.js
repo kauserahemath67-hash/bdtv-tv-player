@@ -1,4 +1,15 @@
 const db = require('./_db');
+
+// Helper: verify admin session token (issued by /api/auth)
+function verifyAdminToken(req) {
+  const authHeader = req.headers.authorization || '';
+  if (!authHeader.startsWith('Bearer ')) return false;
+  try {
+    const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+    return decoded.startsWith('admin-session-');
+  } catch (e) { return false; }
+}
+
 const https = require('https');
 const http = require('http');
 
@@ -164,6 +175,9 @@ module.exports = async (req, res) => {
 
     // POST: Import, Test or Diagnose
     if (req.method === 'POST') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const { action, id: playlistId, url, rawContent, playlistName, replaceExisting } = req.body || {};
       let content = rawContent || '';
       let fetchMeta = null;

@@ -318,8 +318,9 @@ class IPTVPlayer {
         throw new Error('No channels from API');
       }
     } catch (err) {
-      if (this.settings.subscription_restrictions_enabled && (!custCode || !custPin)) {
-        this.showVipLockModal();
+      // SECURITY: If VIP/subscription mode is ON, NEVER show fallback demo channels
+      if (this.settings.subscription_restrictions_enabled) {
+        this.showVipLockModal('সার্ভার সংযোগ সমস্যা। অনুগ্রহ করে পুনরায় চেষ্টা করুন।');
         return;
       }
       console.warn('Fallback to demo channels:', err);

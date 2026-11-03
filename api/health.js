@@ -6,6 +6,17 @@
 // This prevents Vercel server IP blocks from hiding channels.
 // =========================================================
 const db = require('./_db');
+
+// Helper: verify admin session token (issued by /api/auth)
+function verifyAdminToken(req) {
+  const authHeader = req.headers.authorization || '';
+  if (!authHeader.startsWith('Bearer ')) return false;
+  try {
+    const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+    return decoded.startsWith('admin-session-');
+  } catch (e) { return false; }
+}
+
 const https = require('https');
 const http = require('http');
 const { URL } = require('url');
@@ -64,6 +75,9 @@ module.exports = async (req, res) => {
   if (req.method === 'OPTIONS') return res.status(200).end();
 
   try {
+    if (!verifyAdminToken(req)) {
+      return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+    }
     const { channel_id, auto_scan } = req.query || {};
 
     // 1. Single channel test

@@ -1,5 +1,16 @@
 const db = require('./_db');
 
+// Helper: verify admin session token (issued by /api/auth)
+function verifyAdminToken(req) {
+  const authHeader = req.headers.authorization || '';
+  if (!authHeader.startsWith('Bearer ')) return false;
+  try {
+    const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+    return decoded.startsWith('admin-session-');
+  } catch (e) { return false; }
+}
+
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
@@ -10,6 +21,10 @@ module.exports = async (req, res) => {
   try {
     if (req.method === 'GET') {
       const { customer_id } = req.query || {};
+      // Admin-only: list all devices
+      if (!customer_id && !verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized.' });
+      }
       const devices = await db.getDevices(customer_id);
       return res.status(200).json({ success: true, count: devices.length, data: devices });
     }
@@ -45,6 +60,9 @@ module.exports = async (req, res) => {
     }
 
     if (req.method === 'PUT') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const { device_id, action } = req.body || req.query || {};
       if (!device_id) return res.status(400).json({ success: false, message: 'Device ID আবশ্যক।' });
 
@@ -61,6 +79,9 @@ module.exports = async (req, res) => {
     }
 
     if (req.method === 'DELETE') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const { device_id, action } = req.query || req.body || {};
       if (!device_id) return res.status(400).json({ success: false, message: 'Device ID আবশ্যক।' });
 

@@ -1,5 +1,16 @@
 const db = require('./_db');
 
+// Helper: verify admin session token (issued by /api/auth)
+function verifyAdminToken(req) {
+  const authHeader = req.headers.authorization || '';
+  if (!authHeader.startsWith('Bearer ')) return false;
+  try {
+    const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+    return decoded.startsWith('admin-session-');
+  } catch (e) { return false; }
+}
+
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -9,6 +20,9 @@ module.exports = async (req, res) => {
 
   try {
     if (req.method === 'GET') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const customers = await db.getCustomers();   // ✅ await
       const settings  = await db.getSettings();    // ✅ await
 
@@ -37,6 +51,9 @@ module.exports = async (req, res) => {
     }
 
     if (req.method === 'POST') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       // Renew or extend subscription
       const { customer_id, days_to_add, plan, payment_method, transaction_reference } = req.body || {};
       if (!customer_id) return res.status(400).json({ success: false, message: 'Customer ID আবশ্যক।' });
