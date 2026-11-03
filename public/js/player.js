@@ -707,7 +707,8 @@ class IPTVPlayer {
 
   isExpiryScreenOpen() {
     const overlay = document.getElementById('expiry-lock-overlay');
-    return overlay && !overlay.classList.contains('hidden');
+    // overlay is created dynamically with display:flex, no 'hidden' class used
+    return !!(overlay && overlay.isConnected && overlay.style.display !== 'none');
   }
 
   updateUpdateModalFocus() {
@@ -727,42 +728,66 @@ class IPTVPlayer {
   handleUpdateModalKey(e) {
     const key = e.key;
     const keyCode = e.keyCode || e.which;
-    const isLeft = key === 'ArrowLeft' || keyCode === 21 || keyCode === 37;
+    // TV remote keycodes: LEFT=21, RIGHT=22, UP=19, DOWN=20, OK=23, BACK=4
+    const isLeft  = key === 'ArrowLeft'  || keyCode === 21 || keyCode === 37;
     const isRight = key === 'ArrowRight' || keyCode === 22 || keyCode === 39;
-    const isUp = key === 'ArrowUp' || keyCode === 19 || keyCode === 38;
-    const isDown = key === 'ArrowDown' || keyCode === 20 || keyCode === 40;
-    const isOk = key === 'Enter' || key === 'Select' || key === 'Go' || key === 'Accept' || keyCode === 13 || keyCode === 23 || keyCode === 66;
-    const isBack = key === 'Escape' || key === 'Back' || key === 'BrowserBack' || keyCode === 27 || keyCode === 4;
+    const isUp    = key === 'ArrowUp'    || keyCode === 19 || keyCode === 38;
+    const isDown  = key === 'ArrowDown'  || keyCode === 20 || keyCode === 40;
+    const isOk    = key === 'Enter' || key === 'Select' || key === 'Accept' || keyCode === 13 || keyCode === 23 || keyCode === 66;
+    const isBack  = key === 'Escape' || key === 'Back' || key === 'BrowserBack' || keyCode === 27 || keyCode === 4;
 
+    // Layout:  [আপডেট করুন(0)]  [পরে করুন(1)]   ✕(2) top-right
+    // Left/Right: toggle between Download(0) <-> Later(1)
     if (isLeft || isRight) {
       e.preventDefault();
-      this.updateModalFocusIndex = (this.updateModalFocusIndex === 0) ? 1 : 0;
+      // Only toggle between 0 and 1 (bottom row)
+      if (this.updateModalFocusIndex <= 1) {
+        this.updateModalFocusIndex = this.updateModalFocusIndex === 0 ? 1 : 0;
+      } else {
+        this.updateModalFocusIndex = 0; // from close → go to download
+      }
       this.updateUpdateModalFocus();
       return true;
     }
+    // Up: from bottom buttons → close button (if visible)
     if (isUp) {
       e.preventDefault();
-      this.updateModalFocusIndex = 2; // Close button
+      const closeBtn = document.getElementById('btn-close-update');
+      if (closeBtn && closeBtn.style.display !== 'none') {
+        this.updateModalFocusIndex = 2; // Close ✕ button
+      } else {
+        this.updateModalFocusIndex = 1; // Later button (if no close)
+      }
       this.updateUpdateModalFocus();
       return true;
     }
+    // Down: from close → download button
     if (isDown) {
       e.preventDefault();
       this.updateModalFocusIndex = 0; // Download button
       this.updateUpdateModalFocus();
       return true;
     }
+    // OK / Enter / D-Pad Center: activate focused button
     if (isOk) {
       e.preventDefault();
       const ids = ['btn-update-download', 'btn-update-later', 'btn-close-update'];
-      const el = document.getElementById(ids[this.updateModalFocusIndex]);
+      const id = ids[this.updateModalFocusIndex];
+      const el = document.getElementById(id);
       if (el) el.click();
       return true;
     }
+    // Back / Escape: dismiss modal (same as পরে করুন or ✕)
     if (isBack) {
       e.preventDefault();
-      const closeBtn = document.getElementById('btn-close-update') || document.getElementById('btn-update-later');
-      if (closeBtn) closeBtn.click();
+      const closeBtn = document.getElementById('btn-close-update');
+      const laterBtn = document.getElementById('btn-update-later');
+      // Use later or close, whichever is visible
+      if (laterBtn && laterBtn.style.display !== 'none') {
+        laterBtn.click();
+      } else if (closeBtn && closeBtn.style.display !== 'none') {
+        closeBtn.click();
+      }
       return true;
     }
     e.preventDefault();
@@ -862,9 +887,10 @@ class IPTVPlayer {
       if (bridge && typeof bridge.hideKeyboard === 'function') {
         bridge.hideKeyboard();
       }
-      // Close auth modal on back
-      const modal = document.getElementById('auth-modal') || document.querySelector('.auth-modal');
-      if (modal) modal.style.display = 'none';
+      // Close auth modal properly using hidden class
+      if (this.authModal) {
+        this.authModal.classList.add('hidden');
+      }
       return true;
     }
     return false;
@@ -970,10 +996,13 @@ class IPTVPlayer {
 
       // Priority 3: Expiry Screen Interception
       if (this.isExpiryScreenOpen()) {
-        if (isOk) {
-          e.preventDefault();
-          const btn = document.getElementById('expiry-relogin-btn');
-          if (btn) btn.click();
+        e.preventDefault();
+        // Any key → focus the relogin button; OK/Enter → click it; Back → same (can't escape expiry)
+        const btn = document.getElementById('expiry-relogin-btn');
+        if (btn) {
+          btn.classList.add('focused');
+          btn.focus();
+          if (isOk || isBack) btn.click();
         }
         return;
       }
@@ -1501,14 +1530,27 @@ class IPTVPlayer {
       </div>
       <button id="expiry-relogin-btn" style="
         background: linear-gradient(135deg,#e50914,#ff6b35);
-        color:#fff; border:none; padding:14px 32px;
+        color:#fff; border:3px solid transparent; padding:14px 32px;
         border-radius:12px; font-size:16px; font-weight:700;
-        cursor:pointer; font-family:inherit;
+        cursor:pointer; font-family:inherit; outline:none;
+        transition: border-color 0.2s, transform 0.1s;
       ">🔄 লগইন করুন</button>
     `;
     document.body.appendChild(overlay);
 
-    document.getElementById('expiry-relogin-btn').onclick = () => {
+    const reloginBtn = document.getElementById('expiry-relogin-btn');
+
+    // Auto-focus the button so TV remote OK works immediately
+    setTimeout(() => {
+      if (reloginBtn) {
+        reloginBtn.classList.add('focused');
+        reloginBtn.style.borderColor = '#ffeb3b';
+        reloginBtn.style.transform = 'scale(1.05)';
+        reloginBtn.focus();
+      }
+    }, 150);
+
+    reloginBtn.onclick = () => {
       localStorage.removeItem('bdtv_cust_code');
       localStorage.removeItem('bdtv_cust_pin');
       overlay.remove();
