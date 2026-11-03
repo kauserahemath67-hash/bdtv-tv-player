@@ -1,5 +1,21 @@
 const db = require('./_db');
 
+// Helper: verify admin session token (issued by /api/auth)
+function verifyAdminToken(req) {
+  const authHeader = req.headers.authorization || '';
+  if (!authHeader.startsWith('Bearer ')) return false;
+  try {
+    const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
+    if (!decoded.startsWith('admin-session-')) return false;
+    const parts = decoded.split('-');
+    const ts = parseInt(parts[2] || '0', 10);
+    if (!ts) return true;
+    if (ts > Date.now()) return true;
+    if (Date.now() - ts < 24 * 60 * 60 * 1000) return true;
+    return false;
+  } catch (e) { return false; }
+}
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
@@ -10,6 +26,9 @@ module.exports = async (req, res) => {
   try {
     // ── GET: Return real-time active connections for Admin ─────────
     if (req.method === 'GET') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const active = db.getActiveConnections();
       return res.status(200).json({
         success: true,

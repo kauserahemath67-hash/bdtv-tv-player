@@ -65,7 +65,10 @@ module.exports = async (req, res) => {
         });
       }
 
-      // Return all customers for Admin
+      // Return all customers for Admin — strictly requires admin token
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const customers = await db.getCustomers();
       return res.status(200).json({ success: true, count: customers.length, data: customers });
     }

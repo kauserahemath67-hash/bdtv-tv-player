@@ -195,7 +195,7 @@ class IPTVPlayer {
     this.authModal.classList.remove('hidden');
     const errorDiv = document.getElementById('auth-error');
     if (msg && errorDiv) {
-      errorDiv.textContent = msg;
+      errorDiv.innerHTML = msg + (msg.includes('01629666467') ? '' : '<br><span style="color:#00d2ff; font-weight:700; display:inline-block; margin-top:6px;">📞 যোগাযোগ: 01629666467</span>');
       errorDiv.classList.remove('hidden');
     }
     this.authModalFocusIndex = 0;
@@ -1247,7 +1247,7 @@ class IPTVPlayer {
           const devJson = await devRes.json();
 
           if (!devJson.success) {
-            errorDiv.textContent = devJson.message || `সর্বোচ্চ ডিভাইস সীমা (${cust.max_devices || 2} টি) পূরণ হয়ে গেছে! এই ডিভাইসে চালানো যাবে না।`;
+            errorDiv.innerHTML = (devJson.message || `সর্বোচ্চ ডিভাইস সীমা (${cust.max_devices || 2} টি) পূরণ হয়ে গেছে!`) + '<br><span style="color:#00d2ff; font-weight:700; display:inline-block; margin-top:6px;">📞 যোগাযোগ: 01629666467</span>';
             errorDiv.classList.remove('hidden');
             return;
           }
@@ -1262,7 +1262,7 @@ class IPTVPlayer {
           }
           await this.loadChannels();
         } else {
-          errorDiv.textContent = json.message || 'ভুল কোড বা পিন নম্বর।';
+          errorDiv.innerHTML = (json.message || 'ভুল কোড বা পিন নম্বর।') + '<br><span style="color:#00d2ff; font-weight:700; display:inline-block; margin-top:6px;">📞 যোগাযোগ: 01629666467</span>';
           errorDiv.classList.remove('hidden');
         }
       } catch (err) {
@@ -1291,7 +1291,7 @@ class IPTVPlayer {
       // ── Device blocked by admin ──
       if (res.status === 403 || json.device_blocked) {
         this._stopPlayback();
-        this.showExpiryLockScreen('🚫 আপনার ডিভাইস ব্লক করা হয়েছে।<br>বিস্তারিত জানতে সার্ভিস প্রদানকারীর সাথে যোগাযোগ করুন:');
+        this.showExpiryLockScreen(json.message || '🚫 আপনার ডিভাইস ব্লক করা হয়েছে।<br>বিস্তারিত জানতে যোগাযোগ করুন:');
         return;
       }
 

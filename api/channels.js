@@ -58,14 +58,14 @@ module.exports = async (req, res) => {
           return res.status(403).json({
             success: false,
             vip_locked: true,
-            message: `অ্যাকাউন্ট স্থগিত: ${customer.block_reason || 'অ্যাডমিন দ্বারা সাময়িক স্থগিত'}`
+            message: `অ্যাকাউন্ট স্থগিত: ${customer.block_reason || 'অ্যাডমিন দ্বারা সাময়িক স্থগিত'}। যোগাযোগ: 01629666467`
           });
         }
         if (customer.expires_at && new Date(customer.expires_at) < new Date()) {
           return res.status(403).json({
             success: false,
             vip_locked: true,
-            message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। অনুগ্রহ করে নবায়ন করুন।'
+            message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। নবায়ন করতে যোগাযোগ করুন: 01629666467'
           });
         }
 

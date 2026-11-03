@@ -552,11 +552,11 @@ async function registerOrValidateDevice({ customer_id, customer_code, fingerprin
   }
 
   if (cust.manual_block || cust.account_status !== 'ACTIVE') {
-    return { allowed: false, message: `অ্যাকাউন্ট স্থগিত: ${cust.block_reason || 'অ্যাডমিন দ্বারা সাময়িক স্থগিত'}` };
+    return { allowed: false, message: `অ্যাকাউন্ট স্থগিত: ${cust.block_reason || 'অ্যাডমিন দ্বারা সাময়িক স্থগিত'}। যোগাযোগ করুন: 01629666467` };
   }
 
   if (cust.expires_at && new Date(cust.expires_at) < new Date()) {
-    return { allowed: false, message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। অনুগ্রহ করে নবায়ন করুন।' };
+    return { allowed: false, message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। নবায়ন করতে যোগাযোগ করুন: 01629666467' };
   }
 
   const maxAllowed = Number(cust.max_devices) || 2;
@@ -577,9 +577,13 @@ async function registerOrValidateDevice({ customer_id, customer_code, fingerprin
     // Already registered device
     const dev = allDevices[existingIndex];
     if (dev.status === 'BLOCKED') {
-      return { allowed: false, message: 'এই ডিভাইসটি অ্যাডমিন দ্বারা ব্লক করা হয়েছে।' };
+      return { allowed: false, message: 'এই ডিভাইসটি অ্যাডমিন দ্বারা ব্লক করা হয়েছে। যোগাযোগ করুন: 01629666467' };
     }
     // Update last_active and details
+    const lastActiveMs = dev.last_active ? new Date(dev.last_active).getTime() : 0;
+    // Only commit ping to GitHub once every 30 minutes to prevent Vercel deployment limit exhaustion
+    const shouldPersist = (Date.now() - lastActiveMs > 30 * 60 * 1000) || dev.status !== 'ACTIVE';
+
     allDevices[existingIndex] = {
       ...dev,
       device_name: device_name || dev.device_name || 'Device',
@@ -589,7 +593,9 @@ async function registerOrValidateDevice({ customer_id, customer_code, fingerprin
       last_active: now,
       status: 'ACTIVE'
     };
-    await ghCommit(GITHUB_DEVICES_PATH, allDevices, `Update device ping: ${fingerprint}`);
+    if (shouldPersist) {
+      await ghCommit(GITHUB_DEVICES_PATH, allDevices, `Update device ping: ${fingerprint}`);
+    }
     _devicesCache.data = allDevices;
     _devicesCache.loadedAt = Date.now();
     return { allowed: true, message: 'ডিভাইস অনুমোদিত।', device: allDevices[existingIndex] };
@@ -600,7 +606,7 @@ async function registerOrValidateDevice({ customer_id, customer_code, fingerprin
   if (activeCount >= maxAllowed) {
     return {
       allowed: false,
-      message: `সর্বোচ্চ অনুমোদিত ডিভাইস সীমা (${maxAllowed} টি) অতিক্রম করেছে! এই ডিভাইসে চালানো সম্ভব নয়।`
+      message: `সর্বোচ্চ অনুমোদিত ডিভাইস সীমা (${maxAllowed} টি) অতিক্রম করেছে! যোগাযোগ করুন: 01629666467`
     };
   }
 
