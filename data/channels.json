@@ -1,163 +1,189 @@
 [
   {
+    "name": "T Sports",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
+    "category": "General",
+    "status": "OFFLINE",
+    "is_pinned": true,
+    "id": "ch-1793683218925-0",
+    "manual_override": true
+  },
+  {
     "name": "Toffee TV",
     "logo": "https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",
     "category": "Family",
     "url": "https://alixbd.com/playlistconfig/channel/1.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-0",
-    "order": 1
+    "order": 1,
+    "manual_override": true
   },
   {
     "name": "Toffee Movies",
     "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
     "category": "Movies",
     "url": "https://alixbd.com/playlistconfig/channel/2.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-1",
-    "order": 2
+    "order": 2,
+    "manual_override": true
   },
   {
     "name": "WC Match Recap",
     "logo": "https://assets-prod.services.toffeelive.com/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/3.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-2",
-    "order": 3
+    "order": 3,
+    "manual_override": true
   },
   {
     "name": "AWSN TV",
     "logo": "https://assets-prod.services.toffeelive.com/F9UM56ABalKyvLQIr9B1/posters/26081e64-671e-44a8-95ba-a692bfaae49c.jpeg",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/4.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-3",
-    "order": 4
+    "order": 4,
+    "manual_override": true
   },
   {
     "name": "SAFF Live 1",
     "logo": "https://assets-prod.services.toffeelive.com/itdbVKEBalKyvLQI94RR/posters/7f266367-077c-4acb-b29a-73437a80419b.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-4",
-    "order": 5
+    "order": 5,
+    "manual_override": true
   },
   {
     "name": "CNN",
     "logo": "https://assets-prod.services.toffeelive.com/VC6Q-JQBv9knK3AHhTXt/posters/63e79814-8fcf-4c3e-bb66-408b2a402613.webp",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-5",
-    "order": 6
+    "order": 6,
+    "manual_override": true
   },
   {
     "name": "Somoy TV",
     "logo": "https://assets-prod.services.toffeelive.com/Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-6",
-    "order": 7
+    "order": 7,
+    "manual_override": true
   },
   {
     "name": "Jamuna TV",
     "logo": "https://assets-prod.services.toffeelive.com/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/8.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-7",
-    "order": 8
+    "order": 8,
+    "manual_override": true
   },
   {
     "name": "Ananda TV",
     "logo": "https://assets-prod.services.toffeelive.com/wCM3l5sBEef-9-uVXFvD/posters/d80f7aee-5bd7-4edc-97eb-ead0e3ebbe09.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/9.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-8",
-    "order": 9
+    "order": 9,
+    "manual_override": true
   },
   {
     "name": "Bijoy TV",
     "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
     "category": "Action",
     "url": "https://alixbd.com/playlistconfig/channel/10.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-9",
-    "order": 10
+    "order": 10,
+    "manual_override": true
   },
   {
     "name": "NTV",
     "logo": "https://assets-prod.services.toffeelive.com/wHLVIJ4B7a1HdMSjaGLJ/posters/83b89557-3ae8-4ca8-8c5d-3c617359c738.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/11.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-10",
-    "order": 11
+    "order": 11,
+    "manual_override": true
   },
   {
     "name": "Global TV",
     "logo": "https://assets-prod.services.toffeelive.com/0y_tDJsBNnOkwJLWNrdE/posters/2ff058e1-630f-4657-8dc6-b677e65642c5.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/12.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-11",
-    "order": 12
+    "order": 12,
+    "manual_override": true
   },
   {
     "name": "Channel S",
     "logo": "https://assets-prod.services.toffeelive.com/WyPuDJsBEef-9-uVUA_z/posters/ea20055c-a824-443c-8083-ce8e2da8b922.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/13.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-12",
-    "order": 13
+    "order": 13,
+    "manual_override": true
   },
   {
     "name": "Rajdhani TV",
     "logo": "https://assets-prod.services.toffeelive.com/KECGB54BuUSiBsg_dHyj/posters/58af9c58-ed80-458c-af13-cf381680cec6.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/14.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-13",
-    "order": 14
+    "order": 14,
+    "manual_override": true
   },
   {
     "name": "Bangla TV",
     "logo": "https://assets-prod.services.toffeelive.com/JiK-_poBEef-9-uVZv6L/posters/757a328e-70d6-45de-b093-0a843c69ade7.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/15.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-14",
-    "order": 15
+    "order": 15,
+    "manual_override": true
   },
   {
     "name": "Asian TV",
     "logo": "https://assets-prod.services.toffeelive.com/MyK__poBEef-9-uVmf5l/posters/1eadef5b-28e7-4dc2-b42f-c67a3357c9a0.png",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/16.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793683194717-15",
-    "order": 16
+    "order": 16,
+    "manual_override": true
   },
   {
     "name": "Channel i",
@@ -778,16 +804,6 @@
     "is_pinned": false,
     "id": "ch-1793683194717-77",
     "order": 78
-  },
-  {
-    "name": "T Sports",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
-    "category": "General",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1793683218925-0",
-    "manual_override": true
   },
   {
     "name": "Nagorik Tv",
