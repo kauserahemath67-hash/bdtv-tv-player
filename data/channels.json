@@ -825,20 +825,22 @@
     "logo": "https://logos-world.net/wp-content/uploads/2023/04/Animal-Planet-Logo.png",
     "url": "https://stream.ottplus.bd/live/animal_planet_hd_abr/playlist.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735680853-80",
-    "order": 81
+    "order": 81,
+    "manual_override": true
   },
   {
     "name": "Discovery",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqezFALo-LbtcS9LIbXWG88NFs5W5v99xfaYqrVOzs3oAzeHoTfXiTNdBs&s=10",
     "url": "https://stream.ottplus.bd/live/discovery_sd_abr/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735680853-81",
-    "order": 82
+    "order": 82,
+    "manual_override": true
   },
   {
     "name": "ATN Bangla UK",
@@ -855,10 +857,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/atnislamictv-150x150.jpg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnislamictv.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-5",
-    "order": 84
+    "order": 84,
+    "manual_override": true
   },
   {
     "name": "Azan TV Canada",
