@@ -1291,7 +1291,7 @@ class IPTVPlayer {
       // ── Device blocked by admin ──
       if (res.status === 403 || json.device_blocked) {
         this._stopPlayback();
-        this.showExpiryLockScreen('🚫 আপনার ডিভাইস ব্লক করা হয়েছে।<br>বিস্তারিত জানতে সার্ভিস প্রদানকারীর সাথে যোগাযোগ করুন।');
+        this.showExpiryLockScreen('🚫 আপনার ডিভাইস ব্লক করা হয়েছে।<br>বিস্তারিত জানতে সার্ভিস প্রদানকারীর সাথে যোগাযোগ করুন:');
         return;
       }
 
@@ -1334,11 +1334,25 @@ class IPTVPlayer {
       font-family: 'Hind Siliguri', sans-serif;
     `;
     overlay.innerHTML = `
-      <div style="font-size:64px; margin-bottom:20px;">🔒</div>
+      <div style="font-size:64px; margin-bottom:16px;">🔒</div>
       <h2 style="color:#ff3b30; font-size:22px; margin:0 0 12px 0; font-weight:700;">সাবস্ক্রিপশন মেয়াদ শেষ</h2>
-      <p style="color:#ccc; font-size:15px; margin:0 0 28px 0; max-width:320px; line-height:1.6;">
+      <p style="color:#ccc; font-size:15px; margin:0 0 18px 0; max-width:340px; line-height:1.6;">
         ${message || 'আপনার সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে।<br>অনুগ্রহ করে নবায়ন করুন।'}
       </p>
+      <div style="
+        background: rgba(255,255,255,0.08);
+        border: 1px solid rgba(255,255,255,0.18);
+        padding: 10px 22px;
+        border-radius: 12px;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      ">
+        <span style="font-size: 20px;">📞</span>
+        <span style="color:#ddd; font-size: 15px;">যোগাযোগ:</span>
+        <a href="tel:01629666467" style="color: #00d2ff; font-size: 18px; font-weight: 700; text-decoration: none; letter-spacing: 0.5px;">01629666467</a>
+      </div>
       <button id="expiry-relogin-btn" style="
         background: linear-gradient(135deg,#e50914,#ff6b35);
         color:#fff; border:none; padding:14px 32px;
