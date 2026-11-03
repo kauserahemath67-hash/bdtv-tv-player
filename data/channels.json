@@ -994,10 +994,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2026/01/channel16-150x150.jpeg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel16bd.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-23",
-    "order": 97
+    "order": 97,
+    "manual_override": true
   },
   {
     "name": "Channel 24",
@@ -1034,10 +1035,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/chsbd-150x150.jpg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channels.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-27",
-    "order": 101
+    "order": 101,
+    "manual_override": true
   },
   {
     "name": "Channel S UK",
@@ -1054,10 +1056,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2015/10/chi-150x150.jpg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channeli-8-org.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-29",
-    "order": 103
+    "order": 103,
+    "manual_override": true
   },
   {
     "name": "DBC News",
