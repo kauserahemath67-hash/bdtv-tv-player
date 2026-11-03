@@ -941,30 +941,33 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2017/08/btvctg.png?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvnational1.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-17",
-    "order": 92
+    "order": 92,
+    "manual_override": true
   },
   {
     "name": "BTV News",
     "logo": "https://www.jagobd.com/wp-content/uploads/2024/12/btv-news--150x150.jpg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvbd-office-sg.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-18",
-    "order": 93
+    "order": 93,
+    "manual_override": true
   },
   {
     "name": "CB24 TV",
     "logo": "https://www.jagobd.com/wp-content/uploads/2024/01/CB24-PP-LOGO-150x150.png?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cb24.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-19",
-    "order": 94
+    "order": 94,
+    "manual_override": true
   },
   {
     "name": "CGTN",
