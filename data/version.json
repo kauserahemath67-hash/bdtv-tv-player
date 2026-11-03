@@ -1,11 +1,14 @@
 {
-  "versionCode": 100,
-  "versionName": "1.0.0",
+  "versionCode": 122,
+  "versionName": "2.3.14",
   "minSupportedVersion": 100,
   "apkUrl": "https://bdtv-app.vercel.app/BDTv.apk",
-  "updateTitle": "নতুন আপডেট উপলব্ধ!",
-  "changelog": [],
+  "updateTitle": "স্থায়ী হার্ডওয়্যার ডিভাইস আইডি ও স্ট্যাবিলিটি আপডেট 🚀 (v2.3.14)",
+  "changelog": [
+    "অ্যাপ আনইন্সটল করে আবার ইন্সটল করলেও স্থায়ী ডিভাইস আইডি একই থাকবে",
+    "নেটওয়ার্ক (ওয়াইফাই বা মোবাইল ডাটা) পরিবর্তনের পরেও ডিভাইস লক হবে না",
+    "সাবস্ক্রিপশন ডিভাইস লিমিট আরও নির্ভরযোগ্য ও নিখুঁত করা হয়েছে"
+  ],
   "forceUpdate": false,
-  "updateMessage": "",
-  "updatedAt": "2026-11-03T09:57:51.178Z"
+  "updatedAt": "2026-11-03T12:28:00.000Z"
 }
