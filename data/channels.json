@@ -70,7 +70,8 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793720783356-6",
-    "order": 7
+    "order": 7,
+    "manual_override": true
   },
   {
     "name": "Sony Sports 1",
