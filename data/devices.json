@@ -60,12 +60,12 @@
     "customer_id": "cust-1793714991373",
     "customer_code": "kauser",
     "fingerprint": "bdtv-8f209b7f89620da0",
-    "device_name": "Linux (Chrome)",
-    "os": "Linux",
-    "browser": "Chrome",
+    "device_name": "App Player",
+    "os": "Android / TV",
+    "browser": "Webview",
     "ip": "103.200.37.197",
     "status": "ACTIVE",
     "registered_at": "2026-11-03T14:10:13.503Z",
-    "last_active": "2026-11-03T14:10:13.503Z"
+    "last_active": "2026-11-03T14:10:14.869Z"
   }
 ]
