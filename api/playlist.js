@@ -142,9 +142,9 @@ module.exports = async (req, res) => {
 
       let channels = await db.getChannels();
 
-      // Only include ONLINE channels in live playlist (filter out broken/offline ones)
+      // Include all active channels except explicitly hidden ones
       if (q.all !== '1' && q.all !== 'true') {
-        channels = channels.filter(ch => ch.status !== 'OFFLINE');
+        channels = channels.filter(ch => !(ch.manual_override === true && ch.status === 'HIDDEN'));
       }
 
       let m3u = '#EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"\n';
@@ -190,6 +190,80 @@ module.exports = async (req, res) => {
           contentType: fetchMeta ? fetchMeta.contentType : 'text/plain',
           sampleChannels: parsed.channels.slice(0, 5),
           message: `${parsed.format} শনাক্ত হয়েছে। মোট ${parsed.channels.length} টি চ্যানেল পাওয়া গেছে।`
+        });
+      }
+
+      // Smart Refresh mode: updates stream URLs without duplicating channels, adds genuinely new channels
+      if (action === 'refresh') {
+        if (parsed.channels.length === 0) {
+          return res.status(400).json({
+            success: false,
+            message: 'প্লেলিস্ট থেকে কোনো বৈধ চ্যানেল বা স্ট্রিম লিংক পাওয়া যায়নি।'
+          });
+        }
+
+        const existing = await db.getChannels();
+        let updatedCount = 0;
+        let addedCount = 0;
+
+        for (const incoming of parsed.channels) {
+          if (!incoming.url) continue;
+          const normIncomingName = (incoming.name || '').trim().toLowerCase();
+
+          // Find match by name or by URL
+          let match = existing.find(c => (c.name || '').trim().toLowerCase() === normIncomingName);
+          if (!match) {
+            match = existing.find(c => c.url === incoming.url);
+          }
+
+          if (match) {
+            // Update URL and other metadata if present, preserve existing id, order, status, is_pinned
+            if (match.url !== incoming.url) {
+              match.url = incoming.url;
+              updatedCount++;
+            }
+            if (incoming.logo && !match.logo) match.logo = incoming.logo;
+            if (incoming.category && (!match.category || match.category === 'General')) {
+              match.category = incoming.category;
+            }
+          } else {
+            // Genuinely new channel
+            existing.push({
+              id: 'ch-' + Date.now() + '-' + addedCount,
+              name: incoming.name || 'Channel ' + (existing.length + 1),
+              url: incoming.url,
+              logo: incoming.logo || '',
+              category: incoming.category || 'General',
+              order: existing.length + 1,
+              status: incoming.status || 'ONLINE',
+              is_pinned: false
+            });
+            addedCount++;
+          }
+        }
+
+        await db.importChannels(existing);
+
+        // Update playlist in registry
+        try {
+          const plName = playlistName || (url ? url.split('/').pop().replace(/\.[^/.]+$/, '') : 'Custom Playlist');
+          await db.savePlaylist({
+            name: plName,
+            url: url || '',
+            format: parsed.format,
+            channelCount: parsed.channels.length,
+            active: true
+          });
+        } catch (_) {}
+
+        return res.status(200).json({
+          success: true,
+          action: 'refresh',
+          message: `প্লেলিস্ট রিফ্রেশ সম্পন্ন! ${updatedCount} টি চ্যানেল আপডেট ও ${addedCount} টি নতুন চ্যানেল যুক্ত হয়েছে। মোট চ্যানেল: ${existing.length}`,
+          format: parsed.format,
+          updated: updatedCount,
+          added: addedCount,
+          total: existing.length
         });
       }
 

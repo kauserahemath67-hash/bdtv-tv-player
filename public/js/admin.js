@@ -729,8 +729,8 @@ class AdminDashboard {
           </div>
 
           <div style="display:flex; gap:8px; flex-shrink:0;">
-            <button class="btn-reimport-pl btn-secondary-admin" data-id="${pl.id}" data-url="${encodeURIComponent(pl.url || '')}" data-name="${encodeURIComponent(pl.name || '')}" style="padding:6px 12px; font-size:12px;">
-              🔄 রি-ইমপোর্ট
+            <button class="btn-refresh-pl btn-secondary-admin" data-id="${pl.id}" data-url="${encodeURIComponent(pl.url || '')}" data-name="${encodeURIComponent(pl.name || '')}" style="padding:6px 12px; font-size:12px;">
+              🔄 রিফ্রেশ
             </button>
             <button class="btn-delete-pl" data-id="${pl.id}" data-name="${encodeURIComponent(pl.name || 'প্লেলিস্ট')}" style="padding:6px 12px; font-size:12px; background:rgba(255,59,48,0.15); border:1px solid rgba(255,59,48,0.4); color:#ff3b30; border-radius:8px; cursor:pointer;">
               🗑 মুছুন
@@ -740,12 +740,12 @@ class AdminDashboard {
     }).join('');
 
     // Attach event listeners safely without escaping bugs
-    container.querySelectorAll('.btn-reimport-pl').forEach(btn => {
+    container.querySelectorAll('.btn-refresh-pl').forEach(btn => {
       btn.addEventListener('click', () => {
         const id = btn.dataset.id;
         const url = decodeURIComponent(btn.dataset.url || '');
         const name = decodeURIComponent(btn.dataset.name || '');
-        this.reimportPlaylist(id, url, name);
+        this.refreshPlaylist(id, url, name);
       });
     });
 
@@ -766,36 +766,51 @@ class AdminDashboard {
       if (json.success) {
         this.playlists = this.playlists.filter(p => p.id !== id);
         this.renderPlaylistsList();
+        this.showToast('প্লেলিস্ট সফলভাবে মুছে ফেলা হয়েছে।', 'success');
       } else {
-        alert('মুছতে ব্যর্থ: ' + json.message);
+        this.showToast('মুছতে ব্যর্থ: ' + json.message, 'error');
       }
     } catch (e) {
-      alert('সংযোগ সমস্যা!');
+      this.showToast('সংযোগ সমস্যা!', 'error');
     }
   }
 
-  async reimportPlaylist(id, url, name) {
-    if (!url) { alert('এই প্লেলিস্টটির URL নেই (Manual Import)।'); return; }
-    if (!confirm('"'  + name + '" আবার ইমপোর্ট করবেন?\nনতুন চ্যানেলগুলো বিদ্যমান তালিকায় যোগ হবে।')) return;
+  async refreshPlaylist(id, url, name) {
+    if (!url) {
+      this.showToast('এই প্লেলিস্টটির কোনো অনলাইন URL নেই।', 'error');
+      return;
+    }
+    const btn = document.querySelector(`.btn-refresh-pl[data-id="${id}"]`);
+    if (btn) {
+      btn.disabled = true;
+      btn.textContent = '⏳ রিফ্রেশ হচ্ছে...';
+    }
     try {
       const res = await fetch('/api/playlist', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ action: 'import', url, playlistName: name, replaceExisting: false })
+        body: JSON.stringify({ action: 'refresh', url, playlistName: name })
       });
       const json = await res.json();
-      alert(json.message);
       if (json.success) {
+        this.showToast(json.message || `✅ ${json.updated || 0} টি চ্যানেল আপডেট, ${json.added || 0} টি নতুন যোগ হয়েছে।`, 'success');
         await fetch('/api/playlists', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ id, name, url, format: json.format, channelCount: json.importedCount, active: true })
+          body: JSON.stringify({ id, name, url, format: json.format, channelCount: json.total || 0, active: true })
         });
         await this.loadChannels();
         await this.loadPlaylists();
+      } else {
+        this.showToast('রিফ্রেশ ব্যর্থ: ' + (json.message || 'অজানা ত্রুটি'), 'error');
       }
     } catch (e) {
-      alert('রি-ইমপোর্ট ব্যর্থ হয়েছে।');
+      this.showToast('সার্ভার সংযোগ সমস্যা!', 'error');
+    } finally {
+      if (btn) {
+        btn.disabled = false;
+        btn.textContent = '🔄 রিফ্রেশ';
+      }
     }
   }
 

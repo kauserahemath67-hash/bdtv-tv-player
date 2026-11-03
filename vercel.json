@@ -22,11 +22,5 @@
         { "key": "Referrer-Policy", "value": "no-referrer" }
       ]
     }
-  ],
-  "crons": [
-    {
-      "path": "/api/health?auto_scan=1",
-      "schedule": "0 0 * * *"
-    }
   ]
 }

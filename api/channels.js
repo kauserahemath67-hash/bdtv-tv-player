@@ -77,9 +77,10 @@ module.exports = async (req, res) => {
       // Always await — reads from GitHub when cache is cold
       let channels = await db.getChannels();
 
-      // Normal app / TV users should only see ONLINE channels (OFFLINE channels are auto-hidden)
+      // Show ALL channels to users (ONLINE + OFFLINE) — never auto-hide
+      // Channels are hidden only if manually set by admin with manual_override=true
       if (!isAdmin) {
-        channels = channels.filter(c => c.status !== 'OFFLINE');
+        channels = channels.filter(c => c.manual_override !== true || c.status !== 'HIDDEN');
       }
 
       if (category && category !== 'All') {

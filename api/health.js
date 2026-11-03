@@ -1,9 +1,17 @@
+// =========================================================
+// BDTv Health Check API
+// SAFE MODE: Health scan only RECORDS response times.
+// It does NOT change channel status to OFFLINE automatically.
+// Channels are only marked OFFLINE by admin manually.
+// This prevents Vercel server IP blocks from hiding channels.
+// =========================================================
 const db = require('./_db');
 const https = require('https');
 const http = require('http');
 const { URL } = require('url');
 
-// Lightweight stream ping test
+// Lightweight stream ping test — spoofs a real browser User-Agent
+// so streaming servers don't block the Vercel cloud IP as a bot
 function pingStream(streamUrl) {
   return new Promise((resolve) => {
     const startTime = Date.now();
@@ -12,35 +20,38 @@ function pingStream(streamUrl) {
       const client = parsedUrl.protocol === 'https:' ? https : http;
 
       const req = client.request(streamUrl, {
-        method: 'GET',
+        method: 'HEAD', // Use HEAD — much lighter, avoids downloading stream data
         headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) BDTv-Health/1.0',
-          'Range': 'bytes=0-1024'
+          'User-Agent': 'Mozilla/5.0 (Linux; Android 12; Pixel 6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36',
+          'Referer': '',  // No referrer — prevents domain-based blocking
+          'Origin': '',
+          'Accept': '*/*',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Cache-Control': 'no-cache'
         },
-        timeout: 4000
+        timeout: 5000
       }, (res) => {
         const timeTaken = Date.now() - startTime;
-        res.destroy(); // End immediately
-
-        if (res.statusCode >= 200 && res.statusCode < 400) {
-          resolve({ status: 'ONLINE', time: timeTaken });
+        res.destroy();
+        if (res.statusCode >= 200 && res.statusCode < 500) {
+          resolve({ status: 'ONLINE', time: timeTaken, code: res.statusCode });
         } else {
-          resolve({ status: 'OFFLINE', time: timeTaken, code: res.statusCode });
+          resolve({ status: 'UNCERTAIN', time: timeTaken, code: res.statusCode });
         }
       });
 
       req.on('timeout', () => {
         req.destroy();
-        resolve({ status: 'OFFLINE', time: 4000, error: 'Timeout' });
+        resolve({ status: 'UNCERTAIN', time: 5000, error: 'Timeout' });
       });
 
       req.on('error', (err) => {
-        resolve({ status: 'OFFLINE', time: Date.now() - startTime, error: err.message });
+        resolve({ status: 'UNCERTAIN', time: Date.now() - startTime, error: err.message });
       });
 
       req.end();
     } catch (e) {
-      resolve({ status: 'OFFLINE', time: 0, error: e.message });
+      resolve({ status: 'UNCERTAIN', time: 0, error: e.message });
     }
   });
 }
@@ -64,12 +75,14 @@ module.exports = async (req, res) => {
       }
 
       const result = await pingStream(ch.url);
-      await db.updateChannelHealth(ch.id, result.status, result.time);
+      // SAFE MODE: Preserve existing channel status, only record response time
+      await db.updateChannelHealth(ch.id, ch.status || 'ONLINE', result.time);
 
       return res.status(200).json({
         success: true,
         channel: ch.name,
-        status: result.status,
+        status: ch.status || 'ONLINE',
+        ping_result: result.status,
         response_time_ms: result.time,
         error: result.error || null
       });
@@ -85,13 +98,14 @@ module.exports = async (req, res) => {
         const check = await pingStream(ch.url);
         updates.push({
           id: ch.id,
-          status: check.status,
+          status: ch.status || 'ONLINE', // Safe mode: do not automatically turn channels OFFLINE
           response_time_ms: check.time
         });
         results.push({
           id: ch.id,
           name: ch.name,
-          status: check.status,
+          status: ch.status || 'ONLINE',
+          ping_result: check.status,
           response_time_ms: check.time
         });
       }
@@ -101,6 +115,7 @@ module.exports = async (req, res) => {
 
       return res.status(200).json({
         success: true,
+        safe_mode: true,
         scanned_at: new Date().toISOString(),
         total_scanned: results.length,
         results
