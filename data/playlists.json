@@ -1,14 +1,5 @@
 [
   {
-    "name": "https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/channels_data.json",
-    "url": "https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/channels_data.json",
-    "format": "JSON Playlist",
-    "channelCount": 1,
-    "active": true,
-    "id": "pl-1793720724262",
-    "savedAt": "2026-11-03T15:45:27.330Z"
-  },
-  {
     "name": "https://rslivetv.pages.dev/bd76t2s1w9.json",
     "url": "https://rslivetv.pages.dev/bd76t2s1w9.json",
     "format": "JSON Playlist",
