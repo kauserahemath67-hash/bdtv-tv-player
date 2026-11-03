@@ -213,7 +213,14 @@ class IPTVPlayer {
         );
       }
 
-      if (json.versionCode > installedVersion || json.forceUpdate) {
+      // If app is already updated (installedVersion >= server version), never show update popup
+      if (installedVersion >= json.versionCode) {
+        const dlBtn = document.getElementById('btn-download-app');
+        if (dlBtn) dlBtn.classList.add('hidden');
+        return;
+      }
+
+      if (json.versionCode > installedVersion) {
         // আপডেট আছে — টপ বার বাটন দেখাও
         const dlBtn = document.getElementById('btn-download-app');
         if (dlBtn) {
