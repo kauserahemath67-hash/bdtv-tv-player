@@ -10,6 +10,7 @@
     "আপডেট মোডাল, VIP মোডাল, Expiry screen — সব রিমোটে কাজ করবে",
     "Android Back button সব screen এ সঠিকভাবে কাজ করবে"
   ],
-  "forceUpdate": true,
-  "updatedAt": "2026-11-04T01:25:00.000Z"
+  "forceUpdate": false,
+  "updateMessage": "",
+  "updatedAt": "2026-11-03T19:31:33.458Z"
 }
