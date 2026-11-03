@@ -216,8 +216,26 @@ async function deleteChannel(id) {
 
 /**
  * Bulk import channels (replaces entire list). Persists to GitHub.
+ * Automatically deduplicates channels by normalized name or URL.
  */
 async function importChannels(newChannels) {
+  if (Array.isArray(newChannels)) {
+    const seenNames = new Set();
+    const seenUrls = new Set();
+    const unique = [];
+    newChannels.forEach(c => {
+      const normName = (c.name || '').trim().toLowerCase();
+      const normUrl = (c.url || '').trim().toLowerCase();
+      if (normName && !seenNames.has(normName) && (!normUrl || !seenUrls.has(normUrl))) {
+        seenNames.add(normName);
+        if (normUrl) seenUrls.add(normUrl);
+        unique.push(c);
+      }
+    });
+    newChannels = unique;
+    newChannels.forEach((c, idx) => { c.order = idx + 1; });
+  }
+
   const ok = await ghCommit(GITHUB_CHANNELS_PATH, newChannels, `Bulk import: ${newChannels.length} channels`);
   if (ok) {
     _channelCache.data    = newChannels;
