@@ -11,5 +11,18 @@
     "status": "ACTIVE",
     "registered_at": "2026-11-03T14:10:13.503Z",
     "last_active": "2026-11-03T15:44:59.545Z"
+  },
+  {
+    "id": "dev-1793720748591-2uln",
+    "customer_id": "cust-1793714991373",
+    "customer_code": "kauser",
+    "fingerprint": "dev-r1t7qvz5-mvsa62s4",
+    "device_name": "macOS (Chrome)",
+    "os": "macOS",
+    "browser": "Chrome",
+    "ip": "103.200.37.207",
+    "status": "ACTIVE",
+    "registered_at": "2026-11-03T15:45:48.591Z",
+    "last_active": "2026-11-03T15:45:48.591Z"
   }
 ]
