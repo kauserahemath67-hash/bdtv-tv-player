@@ -835,10 +835,22 @@ class IPTVPlayer {
     const key = e.key;
     const keyCode = e.keyCode || e.which;
 
-    const isUp = key === 'ArrowUp' || keyCode === 19 || keyCode === 38;
-    const isDown = key === 'ArrowDown' || keyCode === 20 || keyCode === 40;
-    const isOk = key === 'Enter' || key === 'Select' || key === 'Go' || key === 'Accept' || keyCode === 13 || keyCode === 23 || keyCode === 66;
-    const isBack = key === 'Escape' || key === 'Back' || keyCode === 27 || keyCode === 4;
+    const isUp    = key === 'ArrowUp'    || keyCode === 19 || keyCode === 38;
+    const isDown  = key === 'ArrowDown'  || keyCode === 20 || keyCode === 40;
+    const isLeft  = key === 'ArrowLeft'  || keyCode === 21 || keyCode === 37;
+    const isRight = key === 'ArrowRight' || keyCode === 22 || keyCode === 39;
+    const isOk    = key === 'Enter' || key === 'Select' || key === 'Go' || key === 'Accept' || keyCode === 13 || keyCode === 23 || keyCode === 66;
+    const isBack  = key === 'Escape' || key === 'Back' || key === 'BrowserBack' || keyCode === 27 || keyCode === 4;
+
+    // Left/Right: allow natural text cursor movement inside input fields, do NOT preventDefault
+    if (isLeft || isRight) {
+      // Only intercept if focus is on the submit button (no text cursor there)
+      if (this.authModalFocusIndex === 2) {
+        e.preventDefault();
+        // On button, left/right does nothing special
+      }
+      return true; // consume event so main handler doesn't switch channels
+    }
 
     if (isUp) {
       e.preventDefault();
@@ -846,53 +858,53 @@ class IPTVPlayer {
       this.updateAuthModalFocus();
       return true;
     }
+
     if (isDown) {
       e.preventDefault();
       this.authModalFocusIndex = Math.min(2, this.authModalFocusIndex + 1);
       this.updateAuthModalFocus();
       return true;
     }
-    if (key === 'ArrowLeft' || key === 'ArrowRight' || keyCode === 21 || keyCode === 22 || keyCode === 37 || keyCode === 39) {
-      // Allow natural cursor movement in text inputs
-      return true;
-    }
+
     if (isOk) {
       e.preventDefault();
       if (this.authModalFocusIndex === 0) {
+        // From customer code: if filled, go to PIN; else stay
         const codeInput = document.getElementById('input-customer-code');
         if (codeInput && codeInput.value.trim()) {
           this.authModalFocusIndex = 1;
           this.updateAuthModalFocus();
         } else {
-          this.updateAuthModalFocus();
+          this.updateAuthModalFocus(); // re-focus code input
         }
       } else if (this.authModalFocusIndex === 1) {
+        // From PIN: if filled, submit directly
         const pinInput = document.getElementById('input-customer-pin');
         if (pinInput && pinInput.value.trim()) {
-          // Both code & pin entered, submit immediately!
           this.submitAuthForm();
         } else {
           this.authModalFocusIndex = 2;
           this.updateAuthModalFocus();
         }
       } else {
-        // Focus is on submit button
+        // On submit button → submit
         this.submitAuthForm();
       }
       return true;
     }
+
     if (isBack) {
-      // Back key: hide keyboard first, then close modal
+      // Back key: hide keyboard, then close modal
       const bridge = window.AndroidBridge || window.AndroidApp;
       if (bridge && typeof bridge.hideKeyboard === 'function') {
         bridge.hideKeyboard();
       }
-      // Close auth modal properly using hidden class
       if (this.authModal) {
         this.authModal.classList.add('hidden');
       }
       return true;
     }
+
     return false;
   }
 
@@ -1592,16 +1604,46 @@ class IPTVPlayer {
 
 // 12. Android Back Button Native Bridge
 window.handleAndroidBack = function() {
-  if (window.iptvPlayer && window.iptvPlayer.isDrawerOpen) {
-    window.iptvPlayer.closeDrawer();
-    return true; // handled
+  const player = window.iptvPlayer;
+  if (!player) return false;
+
+  // Priority 1: Auth modal open → close it
+  if (player.isAuthModalOpen && player.isAuthModalOpen()) {
+    const bridge = window.AndroidBridge || window.AndroidApp;
+    if (bridge && typeof bridge.hideKeyboard === 'function') bridge.hideKeyboard();
+    if (player.authModal) player.authModal.classList.add('hidden');
+    return true;
   }
+
+  // Priority 2: Update modal open → dismiss it (if not forceUpdate)
+  if (player.isUpdateModalOpen && player.isUpdateModalOpen()) {
+    const laterBtn = document.getElementById('btn-update-later');
+    const closeBtn = document.getElementById('btn-close-update');
+    if (laterBtn && laterBtn.style.display !== 'none') { laterBtn.click(); return true; }
+    if (closeBtn && closeBtn.style.display !== 'none') { closeBtn.click(); return true; }
+    return true; // forceUpdate — block back
+  }
+
+  // Priority 3: Expiry screen → can't go back, force relogin
+  if (player.isExpiryScreenOpen && player.isExpiryScreenOpen()) {
+    const btn = document.getElementById('expiry-relogin-btn');
+    if (btn) btn.click();
+    return true;
+  }
+
+  // Priority 4: Drawer open → close it
+  if (player.isDrawerOpen) {
+    player.closeDrawer();
+    return true;
+  }
+
   const drawer = document.getElementById('channel-drawer');
   if (drawer && drawer.classList.contains('open')) {
     drawer.classList.remove('open');
-    return true; // handled
+    return true;
   }
-  return false; // let Android WebView handle default
+
+  return false; // let Android WebView handle default (exit app)
 };
 
 // Start Player on DOM Load
