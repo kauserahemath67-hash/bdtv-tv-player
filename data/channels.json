@@ -1474,200 +1474,220 @@
     "logo": "https://assets-prod.services.toffeelive.com/OnSlPJYBcqxnFHJB6lFX/posters/d9ccb2a6-227f-4a41-8714-efaddab5cf5e.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_bollywood/playlist.m3u8?edge-cache-token=Expires=1793682361~Starts=1793682061~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=ai0LMNCVq0i5_4eVr3yykxxJwqu2Xk588pBISRpyMEXQMSKnEzImjTRFdpWtD_PeFmbAYoN9n2m8X2zmLfjJBQ",
     "category": "Movies",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-57",
-    "order": 140
+    "order": 140,
+    "manual_override": true
   },
   {
     "name": "Zee Action",
     "logo": "https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/33d667ae-bcc3-4f6b-b376-76c552136923.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_action/playlist.m3u8?edge-cache-token=Expires=1793682361~Starts=1793682061~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=ai0LMNCVq0i5_4eVr3yykxxJwqu2Xk588pBISRpyMEXQMSKnEzImjTRFdpWtD_PeFmbAYoN9n2m8X2zmLfjJBQ",
     "category": "Movies",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-58",
-    "order": 141
+    "order": 141,
+    "manual_override": true
   },
   {
     "name": "Sony MAX",
     "logo": "https://assets-prod.services.toffeelive.com/Ay52-JQBv9knK3AHFDWt/posters/00afb30b-3c19-4c4c-abd8-891db94e4767.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_max/playlist.m3u8?edge-cache-token=Expires=1793682361~Starts=1793682061~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=ai0LMNCVq0i5_4eVr3yykxxJwqu2Xk588pBISRpyMEXQMSKnEzImjTRFdpWtD_PeFmbAYoN9n2m8X2zmLfjJBQ",
     "category": "Movies",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-59",
-    "order": 142
+    "order": 142,
+    "manual_override": true
   },
   {
     "name": "Sony PIX HD",
     "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/sonypix_hd/playlist.m3u8?edge-cache-token=Expires=1793682361~Starts=1793682061~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=ai0LMNCVq0i5_4eVr3yykxxJwqu2Xk588pBISRpyMEXQMSKnEzImjTRFdpWtD_PeFmbAYoN9n2m8X2zmLfjJBQ",
     "category": "Movies",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-60",
-    "order": 143
+    "order": 143,
+    "manual_override": true
   },
   {
     "name": "Zee Cafe",
     "logo": "https://assets-prod.services.toffeelive.com/U3QEd5YBcqxnFHJBpYzc/posters/8bc7ae1b-1a46-4b76-bdb1-13c7dbd3a95c.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_cafe_hd/playlist.m3u8?edge-cache-token=Expires=1793682362~Starts=1793682062~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=Rij6XNP-94hgANGGmcXkvzvLMIaQA-S5fHpsM1l2Smj0vWjfR_tDQS7KBZQCbpEOPtOQce5lW8rqnFwWHS5ODA",
     "category": "Movies",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-61",
-    "order": 144
+    "order": 144,
+    "manual_override": true
   },
   {
     "name": "B4U Movies APAC",
     "logo": "https://assets-prod.services.toffeelive.com/PC6F-JQBv9knK3AHlTUO/posters/fb0243ba-39a0-4101-a78c-c197be550c6c.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/b4u_movies/playlist.m3u8?edge-cache-token=Expires=1793682363~Starts=1793682063~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=-02jVpVBNyvljsC-P0eRRQ2WT9lvuROA6gPDgMz9o6785Q40e-TqJ1y-G7WQbEeNuUc6or87gY__Bstf-eiaAg",
     "category": "Movies",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-62",
-    "order": 145
+    "order": 145,
+    "manual_override": true
   },
   {
     "name": "Sony MAX 2",
     "logo": "https://assets-prod.services.toffeelive.com/Ii5_-JQBv9knK3AHLDV3/posters/d961cc87-81b6-4b30-8414-8c0af2774818.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/sonymax_2/playlist.m3u8?edge-cache-token=Expires=1793685662~Starts=1793682062~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=esd55INz5hZvkzqA8FFdmZgbA8RO9-ZmXib-61mRW-Fq2IKWS7ICT4tvYB68ryG9ZynPddLjRD6cwIBrBG6wDw",
     "category": "Movies",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-63",
-    "order": 146
+    "order": 146,
+    "manual_override": true
   },
   {
     "name": "Zee Cinema HD",
     "logo": "https://assets-prod.services.toffeelive.com/5y7HX5UBv9knK3AHs6Nk/posters/7582fb79-c15f-4247-ba5b-1d2dd27f3d71.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/zee_cinema_hd/playlist.m3u8?edge-cache-token=Expires=1793682363~Starts=1793682063~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=-02jVpVBNyvljsC-P0eRRQ2WT9lvuROA6gPDgMz9o6785Q40e-TqJ1y-G7WQbEeNuUc6or87gY__Bstf-eiaAg",
     "category": "Movies",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-64",
-    "order": 147
+    "order": 147,
+    "manual_override": true
   },
   {
     "name": "TLC HD",
     "logo": "https://assets-prod.services.toffeelive.com/7S6j-JQBv9knK3AHbzXC/posters/0973097c-bc5c-4b28-aaca-f04d6f6cb5e2.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/tlc_hd/playlist.m3u8?edge-cache-token=Expires=1793682363~Starts=1793682063~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=-02jVpVBNyvljsC-P0eRRQ2WT9lvuROA6gPDgMz9o6785Q40e-TqJ1y-G7WQbEeNuUc6or87gY__Bstf-eiaAg",
     "category": "Fantasy",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-65",
-    "order": 148
+    "order": 148,
+    "manual_override": true
   },
   {
     "name": "TLC",
     "logo": "https://assets-prod.services.toffeelive.com/7C6j-JQBv9knK3AHVzUA/posters/e8f84105-5efe-4e91-a0d4-18a0849cf2f2.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/tlc_sd/playlist.m3u8?edge-cache-token=Expires=1793682364~Starts=1793682064~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=3tr8AVJwbDdVi_5wJSjYPxN7OJqXna6wLQyepmiEc0YJfJ5ejTp1tc005-hECaQFIeY2ePkYnVoTWYpEL35ICg",
     "category": "Fantasy",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-66",
-    "order": 149
+    "order": 149,
+    "manual_override": true
   },
   {
     "name": "Animal Planet",
     "logo": "https://assets-prod.services.toffeelive.com/Ny61-JQBv9knK3AHgzZ7/posters/0909b36a-afd5-426a-93b3-4512800977db.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/animal_planet_sd/playlist.m3u8?edge-cache-token=Expires=1793682364~Starts=1793682064~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=3tr8AVJwbDdVi_5wJSjYPxN7OJqXna6wLQyepmiEc0YJfJ5ejTp1tc005-hECaQFIeY2ePkYnVoTWYpEL35ICg",
     "category": "Adventure",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-67",
-    "order": 150
+    "order": 150,
+    "manual_override": true
   },
   {
     "name": "Animal Planet HD",
     "logo": "https://assets-prod.services.toffeelive.com/Ni61-JQBv9knK3AHcDYc/posters/c16e8633-6b2a-401a-9cd6-ac26a4fcdedb.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/animal_planet_hd/playlist.m3u8?edge-cache-token=Expires=1793682364~Starts=1793682064~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=3tr8AVJwbDdVi_5wJSjYPxN7OJqXna6wLQyepmiEc0YJfJ5ejTp1tc005-hECaQFIeY2ePkYnVoTWYpEL35ICg",
     "category": "Adventure",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-68",
-    "order": 151
+    "order": 151,
+    "manual_override": true
   },
   {
     "name": "Sony BBC Earth HD",
     "logo": "https://assets-prod.services.toffeelive.com/MC6C-JQBv9knK3AHUzUT/posters/a8c32fd3-2ba7-437c-85ac-de2f1b2fa6ca.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/sonybbc_earth_hd/playlist.m3u8?edge-cache-token=Expires=1793685664~Starts=1793682064~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=kaEyGHzj89gVAlADk27U-vM-d9IvBw6gbLX3z0QMXc4mWkVq2EFcTA-taElo6s3IP5KFjQkKT_jnK9uNaY80Ag",
     "category": "Family",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-69",
-    "order": 152
+    "order": 152,
+    "manual_override": true
   },
   {
     "name": "Discovery HD",
     "logo": "https://assets-prod.services.toffeelive.com/KC6x-JQBv9knK3AHqjYc/posters/55e554f1-dbbb-47bd-97fe-fca878726c4c.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_hd/playlist.m3u8?edge-cache-token=Expires=1793682365~Starts=1793682065~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=-jm_DALXqnrzwxGzCiCO2HTQhY47m50X0GLVhw3ehD7kfOGhsvO0yO5ksuZd7XeZc2JmYHPH9p6HD0ZXd6g3Bg",
     "category": "Adventure",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-70",
-    "order": 153
+    "order": 153,
+    "manual_override": true
   },
   {
     "name": "Discovery",
     "logo": "https://assets-prod.services.toffeelive.com/KS6x-JQBv9knK3AHwDZy/posters/6594d216-aaca-4eee-b6f5-bbc6b80feb15.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_sd/playlist.m3u8?edge-cache-token=Expires=1793682365~Starts=1793682065~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=-jm_DALXqnrzwxGzCiCO2HTQhY47m50X0GLVhw3ehD7kfOGhsvO0yO5ksuZd7XeZc2JmYHPH9p6HD0ZXd6g3Bg",
     "category": "Adventure",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-71",
-    "order": 154
+    "order": 154,
+    "manual_override": true
   },
   {
     "name": "Discovery Science",
     "logo": "https://assets-prod.services.toffeelive.com/AS6s-JQBv9knK3AHDTZb/posters/eab8fd0f-9351-464c-b45e-332f38b49f4b.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_science/playlist.m3u8?edge-cache-token=Expires=1793682365~Starts=1793682065~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=-jm_DALXqnrzwxGzCiCO2HTQhY47m50X0GLVhw3ehD7kfOGhsvO0yO5ksuZd7XeZc2JmYHPH9p6HD0ZXd6g3Bg",
     "category": "Science Fiction",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-72",
-    "order": 155
+    "order": 155,
+    "manual_override": true
   },
   {
     "name": "Discovery Turbo",
     "logo": "https://assets-prod.services.toffeelive.com/Ay6s-JQBv9knK3AHJTY1/posters/e8f65578-e82d-4e4a-a1ff-073becc5bd71.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/discovery_turbo/playlist.m3u8?edge-cache-token=Expires=1793682367~Starts=1793682067~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=nqqKy29O90EOcjDlm1zitz2MdAuVNNioXXTyp7YO9o5u6u4s8JrHHgx0jmCilg5BmTHoeS4uu25t6jIFuNlyBQ",
     "category": "Adventure",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-73",
-    "order": 156
+    "order": 156,
+    "manual_override": true
   },
   {
     "name": "Investigation Discovery HD",
     "logo": "https://assets-prod.services.toffeelive.com/ay7uX5UBv9knK3AHs6TI/posters/deb3c186-b2e1-4a91-aafb-d86f9128b851.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/discovary_investigation_hd/playlist.m3u8?edge-cache-token=Expires=1793682366~Starts=1793682066~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=tzNVVwuUmSIXqMnl5uYoU8ydUxAWoWklL0nmAt6LiSratprWcmFOeeUKJTALVLyHRGQF8C_0sGrt8FIAP5DXDQ",
     "category": "Documentary",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-74",
-    "order": 157
+    "order": 157,
+    "manual_override": true
   },
   {
     "name": "&TV HD",
     "logo": "https://assets-prod.services.toffeelive.com/5cwRnZUBtpl-Sbt7wWrN/posters/5779ade3-e9ba-4107-b3da-bae6f891500a.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/and_tv_hd/playlist.m3u8?edge-cache-token=Expires=1793685666~Starts=1793682066~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=glTogbizix7wItb2dVDcR4F9QaoHtcT_7yaMMY0b52lKRBRUoT3TRlUMO7sYBewXqku4Fi6fs-e3HfnB5qFUDg",
     "category": "Drama",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-75",
-    "order": 158
+    "order": 158,
+    "manual_override": true
   },
   {
     "name": "& Pictures HD",
     "logo": "https://assets-prod.services.toffeelive.com/QMwWnZUBtpl-Sbt7S2sx/posters/8cad9a82-842a-47bf-a060-f17011f11c07.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/andpicture_hd/playlist.m3u8?edge-cache-token=Expires=1793682367~Starts=1793682067~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiMmYyNmEyZmYtODRkYS00NzRiLWJiN2EtMjFlY2VhZTIyNDBmIn0~Signature=nqqKy29O90EOcjDlm1zitz2MdAuVNNioXXTyp7YO9o5u6u4s8JrHHgx0jmCilg5BmTHoeS4uu25t6jIFuNlyBQ",
     "category": "Movies",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793685417262-76",
-    "order": 159
+    "order": 159,
+    "manual_override": true
   },
   {
     "name": "BFL | Live 5",
