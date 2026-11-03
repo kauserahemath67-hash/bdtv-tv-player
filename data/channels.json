@@ -1592,10 +1592,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2025/05/Copilot_20250530_180323-150x150.png?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/qurantvbangla.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-90",
-    "order": 155
+    "order": 155,
+    "manual_override": true
   },
   {
     "name": "RTV",
@@ -1612,10 +1613,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2017/01/rtvmusic-150x150.jpg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtvmusic.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-92",
-    "order": 157
+    "order": 157,
+    "manual_override": true
   },
   {
     "name": "Ruposhi Bangla TV",
@@ -1672,10 +1674,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/somoynews-150x150.jpg?x89217",
     "category": "bangla-channel",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/somoyt000011226615544544.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735815125-99",
-    "order": 163
+    "order": 163,
+    "manual_override": true
   },
   {
     "name": "Songsad TV",
