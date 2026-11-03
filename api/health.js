@@ -7,13 +7,18 @@
 // =========================================================
 const db = require('./_db');
 
-// Helper: verify admin session token (issued by /api/auth)
+// Helper: verify admin session token (issued by /api/auth) — checks signature + expiry
 function verifyAdminToken(req) {
   const authHeader = req.headers.authorization || '';
   if (!authHeader.startsWith('Bearer ')) return false;
   try {
     const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
-    return decoded.startsWith('admin-session-');
+    if (!decoded.startsWith('admin-session-')) return false;
+    // Check token expiry (format: admin-session-{expiresAt}-{email})
+    const parts = decoded.split('-');
+    const expiresAt = parseInt(parts[2] || '0', 10);
+    if (expiresAt && Date.now() > expiresAt) return false; // expired
+    return true;
   } catch (e) { return false; }
 }
 

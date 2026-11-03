@@ -23,7 +23,11 @@ module.exports = async (req, res) => {
       if (authHeader.startsWith('Bearer ')) {
         try {
           const decoded = Buffer.from(authHeader.replace('Bearer ', ''), 'base64').toString('utf8');
-          isAdmin = decoded.startsWith('admin-session-');
+          if (decoded.startsWith('admin-session-')) {
+            const parts = decoded.split('-');
+            const expiresAt = parseInt(parts[2] || '0', 10);
+            isAdmin = !expiresAt || Date.now() <= expiresAt;
+          }
         } catch (e) { isAdmin = false; }
       }
       if (!isAdmin) {

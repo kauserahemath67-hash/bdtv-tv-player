@@ -4,6 +4,12 @@
 
 class AdminDashboard {
   constructor() {
+    // Auto-clear expired token on load
+    const exp = parseInt(localStorage.getItem('bdtv_admin_token_exp') || '0', 10);
+    if (exp && Date.now() > exp) {
+      localStorage.removeItem('bdtv_admin_token');
+      localStorage.removeItem('bdtv_admin_token_exp');
+    }
     this.token = localStorage.getItem('bdtv_admin_token');
     this.channels  = [];
     this.customers = [];
@@ -66,6 +72,8 @@ class AdminDashboard {
         if (data.success && data.token) {
           this.token = data.token;
           localStorage.setItem('bdtv_admin_token', this.token);
+          // Store expiry so we can auto-logout
+          if (data.expiresAt) localStorage.setItem('bdtv_admin_token_exp', data.expiresAt);
           this.showDashboard();
         } else {
           errBox.textContent = data.message || 'ভুল ইমেইল বা পাসওয়ার্ড!';

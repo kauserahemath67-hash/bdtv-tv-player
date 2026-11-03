@@ -7,7 +7,10 @@
 
 const https = require('https');
 
-const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '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';
+const GITHUB_TOKEN = process.env.GITHUB_TOKEN || '';
+if (!process.env.GITHUB_TOKEN) {
+  console.warn('[_db.js] WARNING: GITHUB_TOKEN not set in environment. Set it in Vercel dashboard.');
+}
 const GITHUB_REPO  = 'kauserahemath67-hash/bdtv-tv-player';
 const GITHUB_BRANCH = 'data-storage';
 const GITHUB_CHANNELS_PATH  = 'data/channels.json';
@@ -33,8 +36,8 @@ const defaultChannels = [
 const defaultSettings = {
   site_title: 'BDTv Live - Premium IPTV Web Player',
   admin_email: 'kauserahemath67@gmail.com',
-  admin_password: 'admin',
-  admin_pin: '123456',
+  admin_password: 'BDTv@Admin2026!',
+  admin_pin: 'BDTv2026',
   notice_text: 'স্বাগতম BDTv লাইভ প্লেয়ারে! যেকোনো টিভি চ্যানেল সহজে উপভোগ করুন।',
   notice_active: true,
   subscription_restrictions_enabled: false,
