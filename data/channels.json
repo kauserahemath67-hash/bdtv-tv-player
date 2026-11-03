@@ -818,5 +818,125 @@
     "is_pinned": false,
     "id": "ch-1793718599247-81",
     "order": 82
+  },
+  {
+    "name": "DBC News (480p)",
+    "logo": "https://i.imgur.com/Qbt6q4z.png",
+    "category": "Bangladesh News",
+    "url": "http://tvn3.chowdhury-shaheb.com/dbc/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-0",
+    "order": 83
+  },
+  {
+    "name": "Ekushey TV (480p)",
+    "logo": "https://i.imgur.com/lRpkGHj.png",
+    "category": "Bangladesh News",
+    "url": "https://ekusheyserver.com/etvlivesn.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-1",
+    "order": 84
+  },
+  {
+    "name": "NAN TV",
+    "logo": "https://www.jagobd.com/wp-content/uploads/2019/11/NAN-TV-Logo-02.png",
+    "category": "Bangladesh News",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/nantv.stream/live-orgin/nantv.stream/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-2",
+    "order": 85
+  },
+  {
+    "name": "News 21 Bangla TV",
+    "logo": "https://i.imgur.com/ijuJfmd.png",
+    "category": "Bangladesh News",
+    "url": "http://103.190.133.68:1935/news21live/live/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-3",
+    "order": 86
+  },
+  {
+    "name": "Probashi TV News (1080p)",
+    "logo": "https://i.imgur.com/7oTsfQ4.png",
+    "category": "Bangladesh News",
+    "url": "http://158.69.24.53:8080/probashi_tv/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-4",
+    "order": 87
+  },
+  {
+    "name": "BTV News",
+    "logo": "https://s3.aynaott.com/storage/35ae3e7750a053925a0a1732e219dc7a",
+    "category": "Bangladesh News",
+    "url": "https://tvsen6.aynaott.com/tV8mB2zP7rX4kL1w/index.m3u8?e=1784102532&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=20448821bed8f397806d492c1b39da46",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-7",
+    "order": 88
+  },
+  {
+    "name": "Ekattor TV",
+    "logo": "https://s3.aynaott.com/storage/d91767995b2f2a54852c92bbbc20daa7",
+    "category": "Bangladesh News",
+    "url": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8?e=1784102532&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=3b9afdda2bd5332e8f49ed7dfa321a06",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-8",
+    "order": 89
+  },
+  {
+    "name": "News 24 BD",
+    "logo": "https://s3.aynaott.com/storage/7c002f22c02096b0d1ba833ae9ea6d5b",
+    "category": "Bangladesh News",
+    "url": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8?e=1784102534&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=ff40b53535a0e90b724ac25ff41c590c",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-9",
+    "order": 90
+  },
+  {
+    "name": "Channel 24",
+    "logo": "https://s3.aynaott.com/storage/129b0d0a02566999a0c164cd7d506e55",
+    "category": "Bangladesh News",
+    "url": "https://tvsen6.aynaott.com/YrVDF8gu/index.m3u8?e=1784102534&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=af07191085f18faa873302c2d8cdff28",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-10",
+    "order": 91
+  },
+  {
+    "name": "DBC News",
+    "logo": "https://s3.aynaott.com/storage/2c5a73ac3f9772a9cb2d18df1b152545",
+    "category": "Bangladesh News",
+    "url": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8?e=1784102535&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=d1848b7fd84cef719a89b61f0f5704ee",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-11",
+    "order": 92
+  },
+  {
+    "name": "Desh TV",
+    "logo": "https://s3.aynaott.com/storage/d10390e5434e8cb44172257abd714beb",
+    "category": "Bangladesh News",
+    "url": "https://tvsen6.aynaott.com/ryFkXfd1a4CQ7mMdc820/index.m3u8?e=1784102570&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=78b23c868a34420397be9c985d04db9b",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-14",
+    "order": 93
+  },
+  {
+    "name": "BTV World",
+    "logo": "https://s3.aynaott.com/storage/b30147b97d86754e4b97fc2989628391",
+    "category": "Bangladesh News",
+    "url": "https://tvsen6.aynaott.com/opREbXLqJ2HFYPCXTJBa/index.m3u8?e=1784102575&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=c85b53f4cee30af4a19d4b9ad0cd60c7",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793718715713-16",
+    "order": 94
   }
 ]
