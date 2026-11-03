@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="referrer" content="no-referrer">
   <title>BDTv Live - লাইভ টিভি প্লেয়ার</title>
-  <link rel="stylesheet" href="/css/player.css?v=2.3.8">
+  <link rel="stylesheet" href="/css/player.css?v=2.3.19">
   <!-- HLS.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
 </head>
@@ -99,27 +99,23 @@
 
   <!-- Subscriber Login Modal (Triggered when restricted) -->
   <div id="auth-modal" class="modal-backdrop hidden">
-    <div class="modal-card glass-panel">
+    <div class="modal-card glass-panel auth-card-compact">
       <div class="modal-header">
         <h2>🔒 গ্রাহক লগইন (VIP Access)</h2>
-        <p>লাইভ টিভি দেখতে আপনার গ্রাহক কোড ও পিন প্রবেশ করান</p>
+        <p>লাইভ টিভি দেখতে গ্রাহক কোড ও পিন লিখুন</p>
       </div>
-      <form id="auth-form">
+      <form id="auth-form" autocomplete="off">
         <div class="form-group">
-          <label>গ্রাহক কোড (Customer Code):</label>
-          <input type="text" id="input-customer-code" placeholder="উদা: BDTV-1001" required>
+          <label for="input-customer-code">গ্রাহক কোড (Customer Code):</label>
+          <input type="text" id="input-customer-code" placeholder="উদা: BDTV-1001" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
         </div>
         <div class="form-group">
-          <label>লগইন পিন (PIN):</label>
-          <input type="password" id="input-customer-pin" placeholder="****" required>
+          <label for="input-customer-pin">লগইন পিন (PIN):</label>
+          <input type="password" id="input-customer-pin" placeholder="****" autocomplete="off" required>
         </div>
         <div id="auth-error" class="form-error hidden"></div>
         <button type="submit" id="btn-auth-submit" class="btn-primary full-width">আনলক করুন</button>
       </form>
-      <div style="margin-top:18px;text-align:center;padding:12px 14px;background:rgba(0,210,255,0.08);border:1px solid rgba(0,210,255,0.25);border-radius:12px;">
-        <div style="font-size:13px;color:#cbd5e1;margin-bottom:4px;">📞 নতুন সংযোগ বা সহায়তার জন্য যোগাযোগ করুন:</div>
-        <a href="tel:01629666467" style="color:#00d2ff;font-weight:800;text-decoration:none;font-size:18px;letter-spacing:0.5px;">01629666467</a>
-      </div>
     </div>
   </div>
 
@@ -171,6 +167,6 @@
     </div>
   </div>
 
-  <script src="/js/player.js?v=2.3.18"></script>
+  <script src="/js/player.js?v=2.3.19"></script>
 </body>
 </html>

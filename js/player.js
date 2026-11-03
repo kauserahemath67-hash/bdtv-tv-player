@@ -195,7 +195,7 @@ class IPTVPlayer {
     this.authModal.classList.remove('hidden');
     const errorDiv = document.getElementById('auth-error');
     if (msg && errorDiv) {
-      errorDiv.innerHTML = msg + (msg.includes('01629666467') ? '' : '<br><span style="color:#00d2ff; font-weight:700; display:inline-block; margin-top:6px;">📞 যোগাযোগ: 01629666467</span>');
+      errorDiv.textContent = msg;
       errorDiv.classList.remove('hidden');
     }
     this.authModalFocusIndex = 0;
@@ -748,7 +748,7 @@ class IPTVPlayer {
       if (!el) return;
       if (index === this.authModalFocusIndex) {
         el.classList.add('focused');
-        el.focus();
+        try { el.focus(); } catch {}
         const bridge = window.AndroidBridge || window.AndroidApp;
         if (el.tagName === 'INPUT') {
           if (bridge && typeof bridge.showKeyboard === 'function') {
@@ -767,51 +767,55 @@ class IPTVPlayer {
 
   handleAuthModalKey(e) {
     const key = e.key;
-    if (key === 'ArrowUp') {
+    const keyCode = e.keyCode || e.which;
+
+    const isUp = key === 'ArrowUp' || keyCode === 19 || keyCode === 38;
+    const isDown = key === 'ArrowDown' || keyCode === 20 || keyCode === 40;
+    const isOk = key === 'Enter' || key === 'Select' || key === 'Go' || key === 'Accept' || keyCode === 13 || keyCode === 23 || keyCode === 66;
+    const isBack = key === 'Escape' || key === 'Back' || keyCode === 27 || keyCode === 4;
+
+    if (isUp) {
       e.preventDefault();
       this.authModalFocusIndex = Math.max(0, this.authModalFocusIndex - 1);
       this.updateAuthModalFocus();
       return true;
     }
-    if (key === 'ArrowDown') {
+    if (isDown) {
       e.preventDefault();
       this.authModalFocusIndex = Math.min(2, this.authModalFocusIndex + 1);
       this.updateAuthModalFocus();
       return true;
     }
-    if (key === 'ArrowLeft' || key === 'ArrowRight') {
-      // Allow natural text navigation inside input; do not change channels
+    if (key === 'ArrowLeft' || key === 'ArrowRight' || keyCode === 21 || keyCode === 22 || keyCode === 37 || keyCode === 39) {
+      // Allow natural cursor movement in text inputs
       return true;
     }
-    if (key === 'Enter' || key === 'Select') {
+    if (isOk) {
       e.preventDefault();
       if (this.authModalFocusIndex === 0) {
-        this.authModalFocusIndex = 1;
-        this.updateAuthModalFocus();
-      } else if (this.authModalFocusIndex === 1) {
         const codeInput = document.getElementById('input-customer-code');
-        const pinInput = document.getElementById('input-customer-pin');
-        if (codeInput && !codeInput.value.trim()) {
-          this.authModalFocusIndex = 0;
+        if (codeInput && codeInput.value.trim()) {
+          this.authModalFocusIndex = 1;
           this.updateAuthModalFocus();
-        } else if (pinInput && pinInput.value.trim()) {
-          const form = document.getElementById('auth-form');
-          if (form) {
-            form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true }));
-          }
+        } else {
+          this.updateAuthModalFocus();
+        }
+      } else if (this.authModalFocusIndex === 1) {
+        const pinInput = document.getElementById('input-customer-pin');
+        if (pinInput && pinInput.value.trim()) {
+          // Both code & pin entered, submit immediately!
+          this.submitAuthForm();
         } else {
           this.authModalFocusIndex = 2;
           this.updateAuthModalFocus();
         }
       } else {
-        const form = document.getElementById('auth-form');
-        if (form) {
-          form.requestSubmit ? form.requestSubmit() : form.dispatchEvent(new Event('submit', { cancelable: true }));
-        }
+        // Focus is on submit button
+        this.submitAuthForm();
       }
       return true;
     }
-    if (key === 'Escape' || key === 'Back') {
+    if (isBack) {
       const bridge = window.AndroidBridge || window.AndroidApp;
       if (bridge && typeof bridge.hideKeyboard === 'function') {
         bridge.hideKeyboard();
@@ -1217,59 +1221,150 @@ class IPTVPlayer {
     });
 
 
-    // VIP Login form
-    document.getElementById('auth-form').addEventListener('submit', async (e) => {
-      e.preventDefault();
-      const code = document.getElementById('input-customer-code').value.trim();
-      const pin = document.getElementById('input-customer-pin').value.trim();
-      const errorDiv = document.getElementById('auth-error');
+    // VIP Login form bindings & TV Remote OK support
+    const authForm = document.getElementById('auth-form');
+    if (authForm) {
+      authForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        this.submitAuthForm();
+      });
+    }
 
-      try {
-        const res = await fetch(`/api/customers?code=${encodeURIComponent(code)}&pin=${encodeURIComponent(pin)}`);
-        const json = await res.json();
-        if (json.success) {
-          const cust = json.data;
-          const devInfo = this.getDeviceInfo();
+    const submitBtn = document.getElementById('btn-auth-submit');
+    if (submitBtn) {
+      submitBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        this.submitAuthForm();
+      });
+    }
 
-          // Validate device limit with server
-          const devRes = await fetch('/api/devices', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              customer_id: cust.id,
-              customer_code: cust.customer_code,
-              fingerprint: devInfo.deviceId,
-              device_name: devInfo.deviceName,
-              os: devInfo.os,
-              browser: devInfo.browser
-            })
-          });
-          const devJson = await devRes.json();
+    const codeInput = document.getElementById('input-customer-code');
+    const pinInput = document.getElementById('input-customer-pin');
 
-          if (!devJson.success) {
-            errorDiv.innerHTML = (devJson.message || `সর্বোচ্চ ডিভাইস সীমা (${cust.max_devices || 2} টি) পূরণ হয়ে গেছে!`) + '<br><span style="color:#00d2ff; font-weight:700; display:inline-block; margin-top:6px;">📞 যোগাযোগ: 01629666467</span>';
+    if (codeInput) {
+      codeInput.addEventListener('keydown', (e) => {
+        const keyCode = e.keyCode || e.which;
+        if (e.key === 'Enter' || keyCode === 13 || keyCode === 23 || keyCode === 66) {
+          e.preventDefault();
+          this.authModalFocusIndex = 1;
+          this.updateAuthModalFocus();
+        }
+      });
+    }
+
+    if (pinInput) {
+      pinInput.addEventListener('keydown', (e) => {
+        const keyCode = e.keyCode || e.which;
+        if (e.key === 'Enter' || keyCode === 13 || keyCode === 23 || keyCode === 66) {
+          e.preventDefault();
+          this.submitAuthForm();
+        }
+      });
+    }
+  }
+
+  async submitAuthForm() {
+    const codeInput = document.getElementById('input-customer-code');
+    const pinInput = document.getElementById('input-customer-pin');
+    const submitBtn = document.getElementById('btn-auth-submit');
+    const errorDiv = document.getElementById('auth-error');
+
+    const code = (codeInput ? codeInput.value : '').trim();
+    const pin = (pinInput ? pinInput.value : '').trim();
+
+    if (!code) {
+      if (errorDiv) {
+        errorDiv.textContent = 'গ্রাহক কোড লিখুন।';
+        errorDiv.classList.remove('hidden');
+      }
+      this.authModalFocusIndex = 0;
+      this.updateAuthModalFocus();
+      return;
+    }
+
+    if (!pin) {
+      if (errorDiv) {
+        errorDiv.textContent = 'লগইন পিন লিখুন।';
+        errorDiv.classList.remove('hidden');
+      }
+      this.authModalFocusIndex = 1;
+      this.updateAuthModalFocus();
+      return;
+    }
+
+    // Hide soft keyboard on TV/Mobile
+    const bridge = window.AndroidBridge || window.AndroidApp;
+    if (bridge && typeof bridge.hideKeyboard === 'function') {
+      bridge.hideKeyboard();
+    }
+
+    // Set Loading state on submit button
+    const origBtnText = submitBtn ? submitBtn.textContent : 'আনলক করুন';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'যাচাই করা হচ্ছে...';
+    }
+    if (errorDiv) errorDiv.classList.add('hidden');
+
+    try {
+      const res = await fetch(`/api/customers?code=${encodeURIComponent(code)}&pin=${encodeURIComponent(pin)}`);
+      const json = await res.json();
+      if (json.success) {
+        const cust = json.data;
+        const devInfo = this.getDeviceInfo();
+
+        // Validate device limit with server
+        const devRes = await fetch('/api/devices', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            customer_id: cust.id,
+            customer_code: cust.customer_code,
+            fingerprint: devInfo.deviceId,
+            device_name: devInfo.deviceName,
+            os: devInfo.os,
+            browser: devInfo.browser
+          })
+        });
+        const devJson = await devRes.json();
+
+        if (!devJson.success) {
+          if (errorDiv) {
+            errorDiv.textContent = devJson.message || `সর্বোচ্চ ডিভাইস সীমা (${cust.max_devices || 2} টি) পূরণ হয়ে গেছে!`;
             errorDiv.classList.remove('hidden');
-            return;
           }
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.textContent = origBtnText;
+          }
+          return;
+        }
 
-          localStorage.setItem('bdtv_cust_code', code);
-          localStorage.setItem('bdtv_cust_pin', pin);
-          this.authModal.classList.add('hidden');
-          if (errorDiv) errorDiv.classList.add('hidden');
-          const bridge = window.AndroidBridge || window.AndroidApp;
-          if (bridge && typeof bridge.showToast === 'function') {
-            bridge.showToast('অভিনন্দন! আপনার ভিআইপি সাবস্ক্রিপশন সফলভাবে আনলক হয়েছে।');
-          }
-          await this.loadChannels();
-        } else {
-          errorDiv.innerHTML = (json.message || 'ভুল কোড বা পিন নম্বর।') + '<br><span style="color:#00d2ff; font-weight:700; display:inline-block; margin-top:6px;">📞 যোগাযোগ: 01629666467</span>';
+        localStorage.setItem('bdtv_cust_code', code);
+        localStorage.setItem('bdtv_cust_pin', pin);
+        this.authModal.classList.add('hidden');
+        if (errorDiv) errorDiv.classList.add('hidden');
+        if (bridge && typeof bridge.showToast === 'function') {
+          bridge.showToast('অভিনন্দন! আপনার ভিআইপি সাবস্ক্রিপশন সফলভাবে আনলক হয়েছে।');
+        }
+        await this.loadChannels();
+      } else {
+        if (errorDiv) {
+          errorDiv.textContent = json.message || 'ভুল কোড বা পিন নম্বর।';
           errorDiv.classList.remove('hidden');
         }
-      } catch (err) {
+      }
+    } catch (err) {
+      if (errorDiv) {
         errorDiv.textContent = 'সার্ভার সংযোগ সমস্যা। আবার চেষ্টা করুন।';
         errorDiv.classList.remove('hidden');
       }
-    });
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = origBtnText;
+      }
+    }
   }
 
   async checkSubscriptionLive() {

@@ -905,6 +905,76 @@ video::-webkit-media-controls-overlay-play-button {
   max-width: 390px;
 }
 
+/* Compact, perfectly responsive TV Auth Card */
+.auth-card-compact {
+  max-width: 380px;
+  width: 92%;
+  padding: 20px 22px;
+  border-radius: 18px;
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.9);
+}
+
+.auth-card-compact .modal-header {
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.auth-card-compact .modal-header h2 {
+  font-size: 19px;
+  margin: 0 0 4px 0;
+  font-weight: 700;
+}
+
+.auth-card-compact .modal-header p {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.auth-card-compact .form-group {
+  margin-bottom: 12px;
+}
+
+.auth-card-compact .form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.auth-card-compact .form-group input {
+  padding: 11px 14px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.auth-card-compact #btn-auth-submit {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+@media (max-height: 600px) {
+  .modal-backdrop {
+    padding: 8px;
+    overflow-y: auto;
+  }
+  .auth-card-compact {
+    padding: 14px 18px;
+    max-width: 360px;
+  }
+  .auth-card-compact .modal-header h2 {
+    font-size: 17px;
+  }
+  .auth-card-compact .form-group {
+    margin-bottom: 8px;
+  }
+  .auth-card-compact .form-group input {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
 /* Modern Responsive Update Modal (Glassmorphism Wide Card) */
 .update-card {
   width: 92%;
