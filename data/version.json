@@ -1,15 +1,15 @@
 {
-  "versionCode": 122,
-  "versionName": "2.3.14",
+  "versionCode": 123,
+  "versionName": "2.3.15",
   "minSupportedVersion": 100,
   "apkUrl": "https://bdtv-app.vercel.app/BDTv.apk",
-  "updateTitle": "স্থায়ী হার্ডওয়্যার ডিভাইস আইডি ও স্ট্যাবিলিটি আপডেট 🚀 (v2.3.14)",
+  "updateTitle": "TV কীবোর্ড ও রিমোট ফিক্স আপডেট 📺 (v2.3.15)",
   "changelog": [
-    "অ্যাপ আনইন্সটল করে আবার ইন্সটল করলেও স্থায়ী ডিভাইস আইডি একই থাকবে",
-    "নেটওয়ার্ক (ওয়াইফাই বা মোবাইল ডাটা) পরিবর্তনের পরেও ডিভাইস লক হবে না",
-    "সাবস্ক্রিপশন ডিভাইস লিমিট আরও নির্ভরযোগ্য ও নিখুঁত করা হয়েছে"
+    "TV রিমোট দিয়ে VIP লগইন: কীবোর্ড এখন সবসময় দেখাবে",
+    "Arrow key চাপলে keyboard লুকাবে না",
+    "আপডেট মোডাল, VIP মোডাল, Expiry screen — সব রিমোটে কাজ করবে",
+    "Android Back button সব screen এ সঠিকভাবে কাজ করবে"
   ],
-  "forceUpdate": false,
-  "updateMessage": "",
-  "updatedAt": "2026-11-03T17:35:39.654Z"
+  "forceUpdate": true,
+  "updatedAt": "2026-11-04T01:25:00.000Z"
 }
