@@ -11,18 +11,5 @@
     "status": "ACTIVE",
     "registered_at": "2026-11-03T14:10:13.503Z",
     "last_active": "2026-11-03T17:33:37.341Z"
-  },
-  {
-    "id": "dev-1793720748591-2uln",
-    "customer_id": "cust-1793714991373",
-    "customer_code": "kauser",
-    "fingerprint": "dev-r1t7qvz5-mvsa62s4",
-    "device_name": "App Player",
-    "os": "Android / TV",
-    "browser": "Webview",
-    "ip": "103.200.37.195",
-    "status": "ACTIVE",
-    "registered_at": "2026-11-03T15:45:48.591Z",
-    "last_active": "2026-11-03T17:33:30.655Z"
   }
 ]
