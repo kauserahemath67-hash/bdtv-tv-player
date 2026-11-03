@@ -111,11 +111,17 @@ class AdminDashboard {
         // Update badge in DOM without full re-render
         const badge = document.querySelector(`.status-badge[data-chid="${id}"]`);
         if (badge) {
-          badge.className = 'badge status-badge';
-          if (result === 'CHECKING') { badge.classList.add('badge-checking'); badge.textContent = '⏳ চেকিং...'; }
-          else if (result === 'ONLINE')  { badge.classList.add('badge-online');  badge.textContent = '✅ ONLINE'; }
-          else if (result === 'OFFLINE') { badge.classList.add('badge-offline'); badge.textContent = '❌ OFFLINE'; }
-          else if (result === 'TIMEOUT') { badge.classList.add('badge-timeout'); badge.textContent = '⏱ TIMEOUT'; }
+          if (result === 'CHECKING') {
+            badge.className = 'badge status-badge badge-checking';
+            badge.textContent = '⏳ চেকিং...';
+          } else if (result === 'ONLINE') {
+            badge.className = 'badge status-badge badge-online';
+            badge.textContent = '✅ ONLINE';
+          } else {
+            // Both OFFLINE and TIMEOUT are rendered as OFFLINE
+            badge.className = 'badge status-badge badge-offline';
+            badge.textContent = '❌ OFFLINE';
+          }
         }
       },
       async (id, finalStatus) => {
@@ -206,11 +212,17 @@ class AdminDashboard {
       const isOnline = ch.status === 'ONLINE';
       const scanStatus = this._scanResults && this._scanResults[ch.id];
       let statusBadgeClass = isOnline ? 'badge-online' : 'badge-offline';
-      let statusText = ch.status || 'ONLINE';
-      if (scanStatus === 'CHECKING') { statusBadgeClass = 'badge-checking'; statusText = '⏳ চেকিং...'; }
-      else if (scanStatus === 'ONLINE')  { statusBadgeClass = 'badge-online';  statusText = '✅ ONLINE'; }
-      else if (scanStatus === 'OFFLINE') { statusBadgeClass = 'badge-offline'; statusText = '❌ OFFLINE'; }
-      else if (scanStatus === 'TIMEOUT') { statusBadgeClass = 'badge-timeout'; statusText = '⏱ TIMEOUT'; }
+      let statusText = isOnline ? '✅ ONLINE' : '❌ OFFLINE';
+      if (scanStatus === 'CHECKING') {
+        statusBadgeClass = 'badge-checking';
+        statusText = '⏳ চেকিং...';
+      } else if (scanStatus === 'ONLINE') {
+        statusBadgeClass = 'badge-online';
+        statusText = '✅ ONLINE';
+      } else if (scanStatus === 'OFFLINE' || scanStatus === 'TIMEOUT') {
+        statusBadgeClass = 'badge-offline';
+        statusText = '❌ OFFLINE';
+      }
 
       tr.innerHTML = `
         <td><strong>#${ch.order || (idx + 1)}</strong></td>
@@ -249,8 +261,21 @@ class AdminDashboard {
         btn.textContent = '🔍';
         const finalStatus = (result === 'ONLINE') ? 'ONLINE' : 'OFFLINE';
         ch.status = finalStatus;
+        ch.manual_override = true;
+        if (this._scanResults) {
+          this._scanResults[ch.id] = finalStatus;
+        }
+        const badge = tr.querySelector('.status-badge');
+        if (badge) {
+          badge.className = `badge status-badge ${finalStatus === 'ONLINE' ? 'badge-online' : 'badge-offline'}`;
+          badge.textContent = finalStatus === 'ONLINE' ? '✅ ONLINE' : '❌ OFFLINE';
+        }
+        const statEl = document.getElementById('stat-online-channels');
+        if (statEl) {
+          statEl.textContent = this.channels.filter(c => c.status === 'ONLINE').length;
+        }
         await this.updateChannelStatus(ch.id, finalStatus);
-        this.renderChannelsTable();
+        this.showToast(`${ch.name}: ${finalStatus === 'ONLINE' ? '✅ ONLINE' : '❌ OFFLINE (টাইমআউট/বন্ধ)'}`, finalStatus === 'ONLINE' ? 'success' : 'info');
       });
 
       // Clickable status badge to toggle ONLINE/OFFLINE
@@ -854,9 +879,11 @@ class AdminDashboard {
   // 8. Health Scanner
   // 7. Health Scanner
   async runHealthScan() {
-    const btn = document.getElementById('btn-quick-scan');
-    btn.textContent = '⏳ স্ক্যান হচ্ছে...';
-    btn.disabled = true;
+    const btns = [
+      document.getElementById('btn-quick-scan'),
+      document.getElementById('btn-run-health-scan')
+    ].filter(Boolean);
+    btns.forEach(b => { b.textContent = '⏳ স্ক্যান হচ্ছে...'; b.disabled = true; });
 
     try {
       const res = await this.authFetch('/api/health?auto_scan=1');
@@ -868,8 +895,10 @@ class AdminDashboard {
     } catch (e) {
       this.showToast('স্ক্যান ব্যর্থ হয়েছে!', 'error');
     } finally {
-      btn.textContent = '⚡ হেলথ স্ক্যান চালান';
-      btn.disabled = false;
+      btns.forEach(b => {
+        b.textContent = '⚡ হেলথ স্ক্যান চালান';
+        b.disabled = false;
+      });
     }
   }
 
@@ -1574,20 +1603,26 @@ class AutoDetector {
 
       const result = await this.probeChannel(ch);
       this.counters.done++;
-      if (result === 'ONLINE')  this.counters.online++;
-      else if (result === 'OFFLINE') this.counters.offline++;
-      else                           this.counters.timeout++;
 
-      const finalStatus = (result === 'ONLINE') ? 'ONLINE' : 'OFFLINE';
-      if (result === 'ONLINE') {
+      const isOnline = (result === 'ONLINE');
+      const finalStatus = isOnline ? 'ONLINE' : 'OFFLINE';
+
+      if (isOnline) {
+        this.counters.online++;
         this._log('✅', `ONLINE — ${ch.name}`);
-      } else if (result === 'TIMEOUT') {
-        this._log('⏱', `TIMEOUT — ${ch.name} (OFFLINE হিসেবে চিহ্নিত)`);
       } else {
-        this._log('❌', `OFFLINE — ${ch.name}`);
+        // Both OFFLINE and TIMEOUT are strictly OFFLINE!
+        this.counters.offline++;
+        if (result === 'TIMEOUT') {
+          this.counters.timeout++;
+          this._log('⏱❌', `TIMEOUT — ${ch.name} (অফলাইন হিসেবে চিহ্নিত)`);
+        } else {
+          this._log('❌', `OFFLINE — ${ch.name}`);
+        }
       }
 
-      this.onProgress(ch.id, result);
+      // Always pass finalStatus ('ONLINE' or 'OFFLINE') so badge turns red ❌ OFFLINE immediately
+      this.onProgress(ch.id, finalStatus);
 
       if (ch.status !== finalStatus) {
         ch.status = finalStatus;
@@ -1596,8 +1631,8 @@ class AutoDetector {
 
       this._updateUI();
 
-      // Auto-flush every 10 channel changes to keep database updated in real-time
-      if (changedUpdates.length >= 10) {
+      // Auto-flush every 3 channel changes so changes are saved to cloud immediately
+      if (changedUpdates.length >= 3) {
         await flushUpdates();
       }
 

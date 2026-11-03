@@ -110,10 +110,10 @@ module.exports = async (req, res) => {
       // Always await — reads from GitHub when cache is cold
       let channels = await db.getChannels();
 
-      // For regular users: Hide OFFLINE channels so users are never annoyed by broken streams.
-      // Only ONLINE channels are shown to users. Admin with ?all=1 or token sees everything.
+      // For regular users: Hide any channel that is not strictly ONLINE.
+      // OFFLINE, TIMEOUT, or broken channels are NEVER served to end users.
       if (!isAdmin) {
-        channels = channels.filter(c => c.status !== 'OFFLINE' && (c.manual_override !== true || c.status !== 'HIDDEN'));
+        channels = channels.filter(c => c.status === 'ONLINE');
       }
 
       if (category && category !== 'All') {
