@@ -480,10 +480,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
     "url": "https://box.bbaria.net:8083/Channel9/video.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735680853-47",
-    "order": 48
+    "order": 48,
+    "manual_override": true
   },
   {
     "name": "DBC News HD",
@@ -540,10 +541,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
     "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8#skym3u.dev",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735680853-53",
-    "order": 54
+    "order": 54,
+    "manual_override": true
   },
   {
     "name": "Bangla Vision",
@@ -580,10 +582,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/channel_24_abr/live/channel_24_720/chunks.m3u8?nimblesessionid=238811623",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793735680853-57",
-    "order": 58
+    "order": 58,
+    "manual_override": true
   },
   {
     "name": "Channel 1",
