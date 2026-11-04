@@ -6692,30 +6692,33 @@
     "logo": "https://images.pluto.tv/channels/5dde47b63585b500099f74ec/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dde47b63585b500099f74ec.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-543",
-    "order": 625
+    "order": 625,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Kultfilmer",
     "logo": "https://images.pluto.tv/channels/63dbe80f60bc8f0008aa7c78/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-63dbe8c8a9957100087798a3.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-544",
-    "order": 626
+    "order": 626,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Kultfilmer NO",
     "logo": "https://images.pluto.tv/channels/63dbe80f60bc8f0008aa7c78/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-63dbe80f60bc8f0008aa7c78.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-545",
-    "order": 627
+    "order": 627,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Legami Letali",
