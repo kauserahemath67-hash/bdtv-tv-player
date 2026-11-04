@@ -8905,30 +8905,33 @@
     "logo": "https://i.imgur.com/oIQNddV.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/200/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-749",
-    "order": 831
+    "order": 831,
+    "manual_override": true
   },
   {
     "name": "viju+ Premiere HD (1080p)",
     "logo": "https://i.imgur.com/klRvhR5.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/202/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-750",
-    "order": 832
+    "order": 832,
+    "manual_override": true
   },
   {
     "name": "Vinh Long TV 3 (720p)",
     "logo": "https://i.imgur.com/OQXEhqu.png",
     "category": "Entertainment;Movies",
     "url": "https://dethich.pw/thvl3/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-751",
-    "order": 833
+    "order": 833,
+    "manual_override": true
   },
   {
     "name": "Warner Channel Colombia (1080p)",
