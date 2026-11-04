@@ -5900,30 +5900,33 @@
     "logo": "https://images.pluto.tv/channels/5f1ac8099c49f600076579b2/colorLogoPNG_1769092378955.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f1ac8099c49f600076579b2.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-471",
-    "order": 553
+    "order": 553,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Comedia (United States)",
     "logo": "https://images.pluto.tv/channels/5f12101f0b12f00007844c7c/colorLogoPNG_1732662798298.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f513564e4622a0007c578c0.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-472",
-    "order": 554
+    "order": 554,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Comedia (United States) BR",
     "logo": "https://images.pluto.tv/channels/5f12101f0b12f00007844c7c/colorLogoPNG_1732662798298.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f12101f0b12f00007844c7c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-473",
-    "order": 555
+    "order": 555,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Comedia (United States) LatAm",
