@@ -1755,30 +1755,33 @@
     "logo": "https://i.imgur.com/hGUXHuT.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a04n",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-84",
-    "order": 167
+    "order": 167,
+    "manual_override": true
   },
   {
     "name": "bTV Cinema",
     "logo": "https://i.imgur.com/uV81rS4.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a04i",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-85",
-    "order": 168
+    "order": 168,
+    "manual_override": true
   },
   {
     "name": "bTV Lady",
     "logo": "https://i.imgur.com/rXBPJ1e.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a05i",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-86",
-    "order": 169
+    "order": 169,
+    "manual_override": true
   },
   {
     "name": "Cafe Film",
