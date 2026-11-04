@@ -4980,10 +4980,11 @@
     "logo": "https://tele2.server-img.lfstrm.tv/images/channel_logos/logo_65c24031d8bec399a7aa2226.png",
     "category": "Movies",
     "url": "https://fs.uplink.kz/mirovoe_kino/mono.m3u8?token=onlinetv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-384",
-    "order": 467
+    "order": 467,
+    "manual_override": true
   },
   {
     "name": "Mix Hollywood (1080p)",
@@ -5010,20 +5011,22 @@
     "logo": "https://images.pluto.tv/channels/645e00d5d3fdde000829463a/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-645e00d5d3fdde000829463a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-387",
-    "order": 470
+    "order": 470,
+    "manual_override": true
   },
   {
     "name": "Mosfilm Gold Collection (576p)",
     "logo": "https://i.imgur.com/95Y8jb6.png",
     "category": "Movies",
     "url": "http://31.222.235.15/mosfilm/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-388",
-    "order": 471
+    "order": 471,
+    "manual_override": true
   },
   {
     "name": "Movie Punjab (720p)",
