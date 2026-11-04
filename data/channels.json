@@ -1021,20 +1021,22 @@
     "logo": "https://i.ibb.co/zfdbVSm/logo-1.png",
     "category": "Movies",
     "url": "https://live.relentlessinnovations.net:1936/afghannobel/afghannobel/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-16",
-    "order": 99
+    "order": 99,
+    "manual_override": true
   },
   {
     "name": "Aflam (1080p)",
     "logo": "https://i.imgur.com/cTLj7Yt.png",
     "category": "Movies",
     "url": "https://shd-amg-fast.edgenextcdn.net/tx001/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-17",
-    "order": 100
+    "order": 100,
+    "manual_override": true
   },
   {
     "name": "Afra Film",
@@ -1061,10 +1063,11 @@
     "logo": "https://yt3.googleusercontent.com/U4INXhwmEUOABHoemQBpI6C9t4jb9iBmDvZ3ZT3lAb9Au_jVl32NL8XDpy-9cBjRJ2LP69Ovzg=s900-c-k-c0x00ffffff-no-rj",
     "category": "Movies",
     "url": "https://tvsen6.aynaott.com/a2cKGQtB/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-20",
-    "order": 103
+    "order": 103,
+    "manual_override": true
   },
   {
     "name": "Allo Cine (1080p)",
