@@ -3065,30 +3065,33 @@
     "logo": "https://i.imgur.com/mDeTbaF.png",
     "category": "Animation;Movies",
     "url": "http://31.148.48.15/Fan/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-206",
-    "order": 289
+    "order": 289,
+    "manual_override": true
   },
   {
     "name": "Feniks plus Kino (576p)",
     "logo": "https://i.imgur.com/S9OPMLE.png",
     "category": "Movies",
     "url": "http://31.148.48.15/Feniks_plus_kino/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-207",
-    "order": 290
+    "order": 290,
+    "manual_override": true
   },
   {
     "name": "Film1 Action",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Film1_Action_SVG.svg/960px-Film1_Action_SVG.svg.png",
     "category": "Movies",
     "url": "http://86.87.15.10:8008/play/a01l/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-208",
-    "order": 291
+    "order": 291,
+    "manual_override": true
   },
   {
     "name": "Film1 Drama",
