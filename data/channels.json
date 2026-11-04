@@ -7187,20 +7187,22 @@
     "logo": "https://images.pluto.tv/channels/68c01732b3900870ec74766f/colorLogoPNG_1761917904777.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-68c01785b3900870ec7480e4.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-588",
-    "order": 670
+    "order": 670,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Zombies",
     "logo": "https://images.pluto.tv/channels/65786888b228b7000843ad9a/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-65786888b228b7000843ad9a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-589",
-    "order": 671
+    "order": 671,
+    "manual_override": true
   },
   {
     "name": "Pocket Films",
@@ -7217,10 +7219,11 @@
     "logo": "https://i.imgur.com/wGH6shZ.png",
     "category": "Movies",
     "url": "http://92.63.196.180:8080/live/74173747597177/7vfxky4rjx3j/10208.m3u8?token=Q0FaWEpZFFsXAwNWUFMEBwJXAwMDVlpTBgVTVwEHAQNeWgoACVVXVQAVGEZGFUdTUl9qWwIVAlBSAQBdGENHQ10RbVBdEwxDAgANUAJVFxoRRlxfAxUCUU4RQA1QQwheTQ9eFRtUThVQRVoFWT5RU0VbVldEDVYUDl8cRlsPbVRdDlNXXRMMQwQVGEZcEkUUCVxAXgobGgMLR0IFQAQQClYWXlUVE1UOQFlAFkxDDxRjfhceRFJAFQddQw1bDxAKGg4BTAETGkNcRGsWUBJBRFZTWFcUFQJDUhEcRlkASm9bDFxXXFJCCFpZR0YPQwQUHxBYXQheTA4QbEANUEMIXk0PXkQ=",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-591",
-    "order": 673
+    "order": 673,
+    "manual_override": true
   },
   {
     "name": "Popcorn Central (1080p)",
