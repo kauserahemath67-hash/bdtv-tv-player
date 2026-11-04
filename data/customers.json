@@ -14,7 +14,8 @@
     "expires_at": "2026-12-04",
     "payment_status": "PAID",
     "transaction_reference": "",
-    "createdAt": "2026-11-04T11:42:10.221Z"
+    "createdAt": "2026-11-04T11:42:10.221Z",
+    "updatedAt": "2026-11-04T11:56:29.730Z"
   },
   {
     "id": "cust-1793714991373",
