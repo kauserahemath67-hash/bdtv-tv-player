@@ -5109,10 +5109,11 @@
     "logo": "https://i.imgur.com/gAGn3mK.png",
     "category": "Movies",
     "url": "https://bozztv.com/dvrfl03/hdirect/hdirect-ovair1-movies!/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-397",
-    "order": 479
+    "order": 479,
+    "manual_override": true
   },
   {
     "name": "Movies! KPVM-LD",
@@ -5129,10 +5130,11 @@
     "logo": "https://i.imgur.com/DWN9ulT.png",
     "category": "Movies",
     "url": "http://playhdnewjj.xyz:8080/recc121412/KVqfhtdJ2nQ7/174",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-399",
-    "order": 481
+    "order": 481,
+    "manual_override": true
   },
   {
     "name": "MovieSphere (1080p)",
@@ -5159,10 +5161,11 @@
     "logo": "https://i.imgur.com/h1ejU90.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-64a3d96f060e830008af6745.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-402",
-    "order": 484
+    "order": 484,
+    "manual_override": true
   },
   {
     "name": "MovieSphere UK (1080p)",
