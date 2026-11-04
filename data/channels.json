@@ -4503,30 +4503,33 @@
     "logo": "https://i.imgur.com/Ge8vkQM.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/126/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-339",
-    "order": 422
+    "order": 422,
+    "manual_override": true
   },
   {
     "name": "Kinoliving (1080p)",
     "logo": "https://i.imgur.com/9XJcmBY.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/445/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-340",
-    "order": 423
+    "order": 423,
+    "manual_override": true
   },
   {
     "name": "Kinomix (576p)",
     "logo": "https://i.imgur.com/D4q2XUT.png",
     "category": "Movies",
     "url": "http://93.170.254.17/Kinomiks/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-341",
-    "order": 424
+    "order": 424,
+    "manual_override": true
   },
   {
     "name": "Kinopokaz (576p)",
