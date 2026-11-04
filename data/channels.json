@@ -2896,10 +2896,11 @@
     "logo": "https://i.imgur.com/rJpQtvK.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/108/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-190",
-    "order": 273
+    "order": 273,
+    "manual_override": true
   },
   {
     "name": "Dorama (576p)",
@@ -2916,10 +2917,11 @@
     "logo": "https://i.imgur.com/ZH5LuXU.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/412/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-192",
-    "order": 275
+    "order": 275,
+    "manual_override": true
   },
   {
     "name": "DUST (1080p)",
@@ -2936,10 +2938,11 @@
     "logo": "https://i.imgur.com/oUhYdea.png",
     "category": "Movies",
     "url": "http://111.59.139.85:11888/tsfile/live/1217_1.m3u8?key=txiptv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-194",
-    "order": 277
+    "order": 277,
+    "manual_override": true
   },
   {
     "name": "Ebony TV by Lionsgate (1080p)",
