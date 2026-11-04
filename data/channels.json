@@ -5533,20 +5533,22 @@
     "logo": "https://i.imgur.com/uOzyKup.png",
     "category": "Movies",
     "url": "http://116.90.120.151:8000/play/a0ax/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-437",
-    "order": 519
+    "order": 519,
+    "manual_override": true
   },
   {
     "name": "Ostrosyuzhetnoye HD (1080p)",
     "logo": "https://i.imgur.com/NwQ7GBy.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/214/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-438",
-    "order": 520
+    "order": 520,
+    "manual_override": true
   },
   {
     "name": "OuterSphere (1080p)",
@@ -5563,10 +5565,11 @@
     "logo": "https://i.imgur.com/mhbERF9.jpg",
     "category": "Movies;Series",
     "url": "https://live21.bozztv.com/akamaissh101/ssh101/pantallaclasics/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-440",
-    "order": 522
+    "order": 522,
+    "manual_override": true
   },
   {
     "name": "Paramount Movie Channel",
