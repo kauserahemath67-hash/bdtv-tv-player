@@ -2515,30 +2515,33 @@
     "logo": "https://i.imgur.com/cZWoJWD.png",
     "category": "Movies",
     "url": "http://38.65.175.84:8000/play/a093/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-154",
-    "order": 237
+    "order": 237,
+    "manual_override": true
   },
   {
     "name": "CineStar 1 Bulgaria",
     "logo": "https://i.imgur.com/t9vVTLH.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a05h",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-155",
-    "order": 238
+    "order": 238,
+    "manual_override": true
   },
   {
     "name": "CineStar Action Bulgaria",
     "logo": "https://i.imgur.com/bTf7A9J.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a06b",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-156",
-    "order": 239
+    "order": 239,
+    "manual_override": true
   },
   {
     "name": "Cinevault 80s (720p)",
