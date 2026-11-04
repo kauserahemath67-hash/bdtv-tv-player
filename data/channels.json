@@ -2969,10 +2969,11 @@
     "logo": "https://i.ibb.co/WNyssx28/Screenshot-2025-05-18-211143.png",
     "category": "Movies",
     "url": "https://ca-rt.onetv.app/EkranMovies/index-0.m3u8?token=onetv202",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-197",
-    "order": 280
+    "order": 280,
+    "manual_override": true
   },
   {
     "name": "Emotion L (1080p)",
@@ -2989,20 +2990,22 @@
     "logo": "https://i.imgur.com/wQbiGs6.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/322/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-199",
-    "order": 282
+    "order": 282,
+    "manual_override": true
   },
   {
     "name": "Epic Bhojpuri (576p)",
     "logo": "https://dtil.tmsimg.com/assets/GNLZZGG0032BVJ8.png?lock=720x540",
     "category": "Movies",
     "url": "https://mumt01.tangotv.in/O5aw8Zn3EPICBHOJPURI/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-200",
-    "order": 283
+    "order": 283,
+    "manual_override": true
   },
   {
     "name": "Epic Bhojpuri Digital (1080p)",
