@@ -4404,30 +4404,33 @@
     "logo": "https://i.imgur.com/zsCPLs4.png",
     "category": "Movies",
     "url": "http://kino-1.catcast.tv/content/38617/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-330",
-    "order": 413
+    "order": 413,
+    "manual_override": true
   },
   {
     "name": "Kino 1 (Ukraine) (1080p)",
     "logo": "https://i.imgur.com/FWVxBWI.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/395/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-331",
-    "order": 414
+    "order": 414,
+    "manual_override": true
   },
   {
     "name": "Kino 2 (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/uk/3/35/KINO_2_UA.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/465/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-332",
-    "order": 415
+    "order": 415,
+    "manual_override": true
   },
   {
     "name": "Kino 24 (720p)",
