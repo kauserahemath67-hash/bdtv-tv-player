@@ -3997,30 +3997,33 @@
     "logo": "https://static.wikia.nocookie.net/logopedia/images/a/a9/HBO_Silver_glossy_logo.svg/revision/latest?cb=20260529155924",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_hbo_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-292",
-    "order": 375
+    "order": 375,
+    "manual_override": true
   },
   {
     "name": "HBO (United States) (720p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png",
     "category": "Movies;Series",
     "url": "http://tvsen7.aynascope.net/hbo/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-293",
-    "order": 376
+    "order": 376,
+    "manual_override": true
   },
   {
     "name": "HBO Asia HD (1080p)",
     "logo": "https://i.imgur.com/cE2gBt6.png",
     "category": "Movies",
     "url": "http://202.150.165.66:8088/play/100-HBO/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-294",
-    "order": 377
+    "order": 377,
+    "manual_override": true
   },
   {
     "name": "HBO Asia SD (720p) [Geo-blocked]",
