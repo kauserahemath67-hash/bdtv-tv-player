@@ -2863,30 +2863,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png/960px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/236/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-187",
-    "order": 270
+    "order": 270,
+    "manual_override": true
   },
   {
     "name": "Dom kino International (576p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png/960px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png",
     "category": "Movies",
     "url": "https://fs.uplink.kz/dom_kino/mono.m3u8?token=onlinetv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-188",
-    "order": 271
+    "order": 271,
+    "manual_override": true
   },
   {
     "name": "Dom kino Premium (1080p)",
     "logo": "https://i.imgur.com/rJpQtvK.png",
     "category": "Movies",
     "url": "http://31.148.48.15/Dom_Kino_Premium_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-189",
-    "order": 272
+    "order": 272,
+    "manual_override": true
   },
   {
     "name": "Dom kino Premium HD (1080p)",
