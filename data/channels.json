@@ -5999,30 +5999,33 @@
     "logo": "https://images.pluto.tv/channels/5f1210d14ae1f80007bafb1d/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dcddfcb229eff00091b6bdf.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-480",
-    "order": 562
+    "order": 562,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Estelar",
     "logo": "https://images.pluto.tv/channels/5dcde437229eff00091b6c30/colorLogoPNG_1769014514491.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dcde437229eff00091b6c30.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-481",
-    "order": 563
+    "order": 563,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Familia",
     "logo": "https://images.pluto.tv/channels/5f171f032cd22e0007f17f3d/colorLogoPNG_1732045254120.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f171f032cd22e0007f17f3d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-482",
-    "order": 564
+    "order": 564,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Familia LatAm",
