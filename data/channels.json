@@ -6362,30 +6362,33 @@
     "logo": "https://images.pluto.tv/channels/699d87093d5dba980705cca8/colorLogoPNG_1777274173528.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-699d87093d5dba980705cca8.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-513",
-    "order": 595
+    "order": 595,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film Azione",
     "logo": "https://images.pluto.tv/channels/608aa20a2e7f270007c4878d/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-608aa20a2e7f270007c4878d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-514",
-    "order": 596
+    "order": 596,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film Commedia",
     "logo": "https://images.pluto.tv/channels/608aa512d67fd900072323db/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-608aa512d67fd900072323db.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-515",
-    "order": 597
+    "order": 597,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film Romantici",
