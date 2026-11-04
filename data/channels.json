@@ -1619,30 +1619,33 @@
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
     "url": "https://87f2e2e5e7624e3bad85da1ca2ed31a7.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6067/master.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793785743123-160",
-    "order": 161
+    "order": 161,
+    "manual_override": true
   },
   {
     "name": "Rakuten TV Action Movies UK (1080p)",
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
     "url": "https://54045f0c40fd442c8b06df076aaf1e85.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6065/master.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793785743123-161",
-    "order": 162
+    "order": 162,
+    "manual_override": true
   },
   {
     "name": "Rakuten TV Comedy Movies (1080p)",
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
     "url": "https://71db867f03ce4d71a29e92155f07ab87.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6180/master.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793785743123-162",
-    "order": 163
+    "order": 163,
+    "manual_override": true
   },
   {
     "name": "Rakuten TV Comedy Movies Germany (1080p)",
