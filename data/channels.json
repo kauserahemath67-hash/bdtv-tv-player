@@ -9011,10 +9011,11 @@
     "logo": "https://i.imgur.com/z5NwizH.png",
     "category": "Movies",
     "url": "https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-759",
-    "order": 841
+    "order": 841,
+    "manual_override": true
   },
   {
     "name": "Xtrema Cine Clasico",
