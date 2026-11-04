@@ -6131,30 +6131,33 @@
     "logo": "https://images.pluto.tv/channels/6786235bd648bf0008c2780a/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6786235bd648bf0008c2780a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-492",
-    "order": 574
+    "order": 574,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Comedias Romanticas",
     "logo": "https://images.pluto.tv/channels/655b5d865812e80008843bd1/colorLogoPNG_1747044085522.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-655b5d865812e80008843bd1.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-493",
-    "order": 575
+    "order": 575,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Comedies Cultes",
     "logo": "https://images.pluto.tv/channels/67b4b2d976a934282e92d71c/colorLogoPNG.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-67b4b2d976a934282e92d71c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-494",
-    "order": 576
+    "order": 576,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Comedy Movies",
