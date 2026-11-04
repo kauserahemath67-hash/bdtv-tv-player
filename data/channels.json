@@ -1312,30 +1312,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies;Series",
     "url": "http://202.150.165.66:8088/play/301-AXN/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-43",
-    "order": 126
+    "order": 126,
+    "manual_override": true
   },
   {
     "name": "AXN Asia Taiwan (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies;Series",
     "url": "http://125.227.210.55:4050/VideoInput/play.ts",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-44",
-    "order": 127
+    "order": 127,
+    "manual_override": true
   },
   {
     "name": "AXN Black (United States)",
     "logo": "https://i.imgur.com/Peo1QiZ.png",
     "category": "Movies",
     "url": "http://85.14.32.26:8800/udp/239.100.10.17:5000",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-45",
-    "order": 128
+    "order": 128,
+    "manual_override": true
   },
   {
     "name": "AXN Black (United States) Czech Republic",
