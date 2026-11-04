@@ -7022,30 +7022,33 @@
     "logo": "https://images.pluto.tv/channels/61c1979dfa307000070bbe4d/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-61c1979dfa307000070bbe4d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-573",
-    "order": 655
+    "order": 655,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Terror",
     "logo": "https://i.imgur.com/eWtoHDM.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5c6dc88fcd232425a6e0f06e.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-574",
-    "order": 656
+    "order": 656,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Terror Trash",
     "logo": "https://images.pluto.tv/channels/66aa67493a4ad2000806d91b/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-66aa67493a4ad2000806d91b.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-575",
-    "order": 657
+    "order": 657,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Thrillers",
