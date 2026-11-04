@@ -8674,30 +8674,33 @@
     "logo": "https://i.imgur.com/XxfET68.png",
     "category": "Movies",
     "url": "http://45.167.1.138:8000/play/a06m",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-728",
-    "order": 810
+    "order": 810,
+    "manual_override": true
   },
   {
     "name": "Universal Comedy (1080p)",
     "logo": "https://i.imgur.com/avBL8pQ.png",
     "category": "Comedy;Movies;Series",
     "url": "http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/universalcomedy/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-729",
-    "order": 811
+    "order": 811,
+    "manual_override": true
   },
   {
     "name": "USA Network (720p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png",
     "category": "Comedy;Movies;Series;Sports",
     "url": "http://190.197.41.183/USA_NETWORK/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-730",
-    "order": 812
+    "order": 812,
+    "manual_override": true
   },
   {
     "name": "Velvet. European Movies (1080p)",
