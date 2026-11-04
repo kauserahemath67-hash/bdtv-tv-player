@@ -7088,30 +7088,33 @@
     "logo": "https://images.pluto.tv/channels/642ad072283aa4000806148c/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-642ad072283aa4000806148c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-579",
-    "order": 661
+    "order": 661,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Western",
     "logo": "https://images.pluto.tv/channels/630dd3b2605f140007e002f5/colorLogoPNG_1732030684562.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-630dd3b2605f140007e002f5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-580",
-    "order": 662
+    "order": 662,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Western ES",
     "logo": "https://images.pluto.tv/channels/630dd3b2605f140007e002f5/colorLogoPNG_1732030684562.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6385e82900ab2e000768a058.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-581",
-    "order": 663
+    "order": 663,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Western IT",
