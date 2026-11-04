@@ -8165,30 +8165,33 @@
     "logo": "https://i.imgur.com/fjHcr9z.jpg",
     "category": "Movies",
     "url": "https://edge4-moblive.yuppcdn.net/trans1sd/smil:strtml19.smil/playlist.m3u8?dvr=",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-681",
-    "order": 763
+    "order": 763,
+    "manual_override": true
   },
   {
     "name": "Star Trek Movies",
     "logo": "https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6400c2a6cb41a40008dbe5bc.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-682",
-    "order": 764
+    "order": 764,
+    "manual_override": true
   },
   {
     "name": "Star Trek Movies DK",
     "logo": "https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6400c281dff38e00083f59da.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-683",
-    "order": 765
+    "order": 765,
+    "manual_override": true
   },
   {
     "name": "Star Trek Movies NO",
