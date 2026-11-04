@@ -3306,30 +3306,33 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bemotion.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a04r",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-228",
-    "order": 311
+    "order": 311,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Emotion Czechia",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bemotion.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_film_boxextra_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-229",
-    "order": 312
+    "order": 312,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Emotion Hungary (1080p)",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bemotion.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_filmbox_extra_hd_hun_atk_1200/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-230",
-    "order": 313
+    "order": 313,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Emotion Romania",
