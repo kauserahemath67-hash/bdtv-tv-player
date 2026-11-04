@@ -4536,30 +4536,33 @@
     "logo": "https://i.imgur.com/nNjMyAq.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/64/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-342",
-    "order": 425
+    "order": 425,
+    "manual_override": true
   },
   {
     "name": "Kinopremyera (1080p)",
     "logo": "https://i.imgur.com/s0UYT8T.png",
     "category": "Movies",
     "url": "http://5.188.159.128:8070/KINOPREMIERA/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-343",
-    "order": 426
+    "order": 426,
+    "manual_override": true
   },
   {
     "name": "Kinopremyera HD (1080p)",
     "logo": "https://i.imgur.com/s0UYT8T.png",
     "category": "Movies",
     "url": "https://fs.uplink.kz/kinopremiera_hd/mono.m3u8?token=onlinetv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-344",
-    "order": 427
+    "order": 427,
+    "manual_override": true
   },
   {
     "name": "KinoSat (576p)",
