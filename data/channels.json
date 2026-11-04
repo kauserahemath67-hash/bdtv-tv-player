@@ -2691,20 +2691,22 @@
     "logo": "https://images.pluto.tv/channels/61f33318210549000806a530/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-61f33318210549000806a530.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-171",
-    "order": 254
+    "order": 254,
+    "manual_override": true
   },
   {
     "name": "Classic Movies Channel",
     "logo": "https://i.imgur.com/pQJxov2.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-561c5b0dada51f8004c4d855.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-172",
-    "order": 255
+    "order": 255,
+    "manual_override": true
   },
   {
     "name": "Classique TV (360p)",
@@ -2721,10 +2723,11 @@
     "logo": "https://i.imgur.com/4uG8HsQ.png",
     "category": "Movies",
     "url": "http://live2.rxip.sc96655.com/live/zxs_4000.m3u8?A=&E=&K=&P=&S=&U=",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-174",
-    "order": 257
+    "order": 257,
+    "manual_override": true
   },
   {
     "name": "Colors Bangla Cinema (576p)",
