@@ -4851,20 +4851,22 @@
     "logo": "https://i.imgur.com/TTAGFHG.png",
     "category": "Movies",
     "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-372",
-    "order": 455
+    "order": 455,
+    "manual_override": true
   },
   {
     "name": "MBC+ Drama (1080p)",
     "logo": "https://i.imgur.com/lxWdjXG.png",
     "category": "Movies",
     "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-373",
-    "order": 456
+    "order": 456,
+    "manual_override": true
   },
   {
     "name": "MCI Television (1080p)",
@@ -4881,10 +4883,11 @@
     "logo": "https://images.pluto.tv/channels/6578808014fbe400086e21bc/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-6578808014fbe400086e21bc.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-375",
-    "order": 458
+    "order": 458,
+    "manual_override": true
   },
   {
     "name": "Mega Cine TV (1080p)",
