@@ -7668,10 +7668,11 @@
     "logo": "https://i.imgur.com/H70LxoZ.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/242/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-634",
-    "order": 716
+    "order": 716,
+    "manual_override": true
   },
   {
     "name": "Rotana Cinema Egypt (1080p) [Geo-blocked]",
@@ -7698,20 +7699,22 @@
     "logo": "https://i.imgur.com/88kRsW3.png",
     "category": "Movies",
     "url": "http://178.33.11.6:8696/live/rtshshqip/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-637",
-    "order": 719
+    "order": 719,
+    "manual_override": true
   },
   {
     "name": "Runtime (720p)",
     "logo": "https://i.imgur.com/2USCMvP.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6086d3f420fc8500075f8dbf.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-638",
-    "order": 720
+    "order": 720,
+    "manual_override": true
   },
   {
     "name": "Runtime Espanol (720p)",
