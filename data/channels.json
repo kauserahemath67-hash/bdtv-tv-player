@@ -902,30 +902,33 @@
     "logo": "https://i.imgur.com/mgXeEE4.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f4d878d3d19b30007d2e782.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-5",
-    "order": 88
+    "order": 88,
+    "manual_override": true
   },
   {
     "name": "80s Rewind",
     "logo": "https://i.imgur.com/nkEeYfI.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5ca525b650be2571e3943c63.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-6",
-    "order": 89
+    "order": 89,
+    "manual_override": true
   },
   {
     "name": "90s Throwback",
     "logo": "https://i.imgur.com/KoGko6M.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f4d86f519358a00072b978e.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-7",
-    "order": 90
+    "order": 90,
+    "manual_override": true
   },
   {
     "name": "312 Kino (406p)",
