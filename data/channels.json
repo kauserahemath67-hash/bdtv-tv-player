@@ -8297,30 +8297,33 @@
     "logo": "https://images.pluto.tv/channels/65787f2eb228b7000843fa5c/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-65cb73d33ba51e00084cabad.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-693",
-    "order": 775
+    "order": 775,
+    "manual_override": true
   },
   {
     "name": "Star Trek: Voyager (United States)",
     "logo": "https://images.pluto.tv/channels/634dacf51d90320007fcd5fa/colorLogoPNG_1758310287876.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-634dacf51d90320007fcd5fa.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-694",
-    "order": 776
+    "order": 776,
+    "manual_override": true
   },
   {
     "name": "START Air (1080p)",
     "logo": "https://images.iptv.rt.ru/images/d60qp8omife4gis72tk0.png",
     "category": "Movies",
     "url": "http://176.118.197.101/START_AIR/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-695",
-    "order": 777
+    "order": 777,
+    "manual_override": true
   },
   {
     "name": "START World (576p)",
