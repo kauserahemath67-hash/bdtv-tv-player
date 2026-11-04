@@ -7920,20 +7920,22 @@
     "logo": "https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540",
     "category": "Movies",
     "url": "http://103.151.60.162:2122/play/a014/index.m3u8?hls",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-658",
-    "order": 740
+    "order": 740,
+    "manual_override": true
   },
   {
     "name": "Sony Movies (Brazil) (720p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png",
     "category": "Movies",
     "url": "http://45.162.64.114/SONY_MOVIES/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-659",
-    "order": 741
+    "order": 741,
+    "manual_override": true
   },
   {
     "name": "Sony Movies (United States) (720p)",
@@ -7950,10 +7952,11 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png",
     "category": "Movies",
     "url": "http://38.252.238.18:8000/play/a01e/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-661",
-    "order": 743
+    "order": 743,
+    "manual_override": true
   },
   {
     "name": "Sony One Favoris (1080p)",
