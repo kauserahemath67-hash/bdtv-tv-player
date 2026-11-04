@@ -7764,10 +7764,11 @@
     "logo": "https://i.imgur.com/cQN0P2B.png",
     "category": "Movies",
     "url": "http://31.148.48.15/Russkiy_Roman_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-643",
-    "order": 725
+    "order": 725,
+    "manual_override": true
   },
   {
     "name": "ScreamIN (1080p)",
@@ -7784,20 +7785,22 @@
     "logo": "https://images.pluto.tv/channels/676e7b4a4bd636000819c6a7/colorLogoPNG_1748957675934.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-676e7b4a4bd636000819c6a7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-645",
-    "order": 727
+    "order": 727,
+    "manual_override": true
   },
   {
     "name": "ServusTV (576p)",
     "logo": "https://i.imgur.com/6W637Gn.png",
     "category": "Movies",
     "url": "https://s6.hopslan.com/servuz1/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-646",
-    "order": 728
+    "order": 728,
+    "manual_override": true
   },
   {
     "name": "Shemaroo Filmi Gaane (1080p)",
