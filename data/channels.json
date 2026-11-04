@@ -6725,30 +6725,33 @@
     "logo": "https://images.pluto.tv/channels/64808a8c536e0c0008a276d1/colorLogoPNG_1747395859514.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-64808a8c536e0c0008a276d1.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-546",
-    "order": 628
+    "order": 628,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Movies",
     "logo": "https://images.pluto.tv/channels/5c5c3b948002db3c3e0b262e/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5c5c3b948002db3c3e0b262e.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-547",
-    "order": 629
+    "order": 629,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Movies GB",
     "logo": "https://images.pluto.tv/channels/5c5c3b948002db3c3e0b262e/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5ad8d3a31b95267e225e4e09.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-548",
-    "order": 630
+    "order": 630,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Netmovies",
