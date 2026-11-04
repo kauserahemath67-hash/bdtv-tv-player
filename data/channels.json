@@ -4096,30 +4096,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/HBO_Xtreme.svg/960px-HBO_Xtreme.svg.png",
     "category": "Movies;Series",
     "url": "https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/HBO_Xtreme/chunks.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-301",
-    "order": 384
+    "order": 384,
+    "manual_override": true
   },
   {
     "name": "Hero (720p) [Not 24/7]",
     "logo": "https://i.imgur.com/4t5JQLY.png",
     "category": "Movies",
     "url": "https://live-fi.tvkaista.net/hero/live.m3u8?hd=true",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-302",
-    "order": 385
+    "order": 385,
+    "manual_override": true
   },
   {
     "name": "Hit HD (1080p)",
     "logo": "https://i.imgur.com/jl3MNPe.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/363/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-303",
-    "order": 386
+    "order": 386,
+    "manual_override": true
   },
   {
     "name": "HITS Movies (576p)",
