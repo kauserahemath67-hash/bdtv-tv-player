@@ -283,12 +283,12 @@
   {
     "name": "Nagorik Tv",
     "logo": "https://i.imgur.com/2cpHJKq.png",
-    "category": "Bangla",
+    "category": "General",
     "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793785743123-28",
-    "order": 29
+    "manual_override": false
   },
   {
     "name": "NTV",
