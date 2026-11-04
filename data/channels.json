@@ -3339,10 +3339,11 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bemotion.png",
     "category": "Movies",
     "url": "https://onyx1.mofta1.cfd/fboye/usergendlg8sl1ks0tv7sr8n.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-231",
-    "order": 314
+    "order": 314,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Festival",
@@ -3369,20 +3370,22 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bfestival.png",
     "category": "Movies",
     "url": "http://92.114.85.87:8018/play/a009/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-234",
-    "order": 317
+    "order": 317,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Hits (576i)",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bhits.png",
     "category": "Movies",
     "url": "http://92.114.85.87:8008/play/a00a/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-235",
-    "order": 318
+    "order": 318,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Hits Adria",
