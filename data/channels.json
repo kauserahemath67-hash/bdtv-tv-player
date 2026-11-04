@@ -1874,30 +1874,33 @@
     "logo": "https://i.imgur.com/rEttkKm.png",
     "category": "Movies",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-95",
-    "order": 178
+    "order": 178,
+    "manual_override": true
   },
   {
     "name": "CCTV-The First Theater (1080p)",
     "logo": "https://i.imgur.com/eFxD3hq.png",
     "category": "Movies",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-96",
-    "order": 179
+    "order": 179,
+    "manual_override": true
   },
   {
     "name": "Celestial Movies (576i)",
     "logo": "https://i.imgur.com/Mb5ssnu.png",
     "category": "Movies",
     "url": "http://103.58.160.157:8278/720-CELESTIALMOVIES/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-97",
-    "order": 180
+    "order": 180,
+    "manual_override": true
   },
   {
     "name": "Charge! (1080p)",
