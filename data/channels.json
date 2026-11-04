@@ -9031,10 +9031,11 @@
     "logo": "https://i.imgur.com/FcaTUym.png",
     "category": "Movies",
     "url": "https://stmv6.voxtvhd.com.br/cineterror/cineterror/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-761",
-    "order": 843
+    "order": 843,
+    "manual_override": true
   },
   {
     "name": "Yes Movies Action (1080p)",
