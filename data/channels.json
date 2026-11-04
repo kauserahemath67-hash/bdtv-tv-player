@@ -4937,20 +4937,22 @@
     "logo": "https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-63048147b09fd60007847a08.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-380",
-    "order": 463
+    "order": 463,
+    "manual_override": true
   },
   {
     "name": "Merry Christmas from Viafree NO",
     "logo": "https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-63047bd6b0726b000795341d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-381",
-    "order": 464
+    "order": 464,
+    "manual_override": true
   },
   {
     "name": "Meta Film TV",
@@ -4967,10 +4969,11 @@
     "logo": "",
     "category": "Movies",
     "url": "https://mumt03.tangotv.in/Dsly5z3HMHONEMOVIE/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-383",
-    "order": 466
+    "order": 466,
+    "manual_override": true
   },
   {
     "name": "Mirovoe kino (1080p)",
