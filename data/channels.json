@@ -6593,30 +6593,33 @@
     "logo": "https://images.pluto.tv/channels/64b585f84ea480000838e446/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-64b585f84ea480000838e446.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-534",
-    "order": 616
+    "order": 616,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Invasion Alien",
     "logo": "https://images.pluto.tv/channels/654a35ce346f420008d5c36e/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-654a35ce346f420008d5c36e.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-535",
-    "order": 617
+    "order": 617,
+    "manual_override": true
   },
   {
     "name": "Pluto TV John Wayne",
     "logo": "https://images.pluto.tv/channels/655ca7aa635c3c000855d655/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-655caaaac0fc8800086f5d99.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-536",
-    "order": 618
+    "order": 618,
+    "manual_override": true
   },
   {
     "name": "Pluto TV John Wayne DK",
