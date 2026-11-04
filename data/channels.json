@@ -2188,20 +2188,22 @@
     "logo": "https://images.pluto.tv/channels/5f12111c9e6c2c00078ef3bb/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dcddf1ed95e740009fef7ab.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-124",
-    "order": 207
+    "order": 207,
+    "manual_override": true
   },
   {
     "name": "Cine Thrillers by Pluto TV",
     "logo": "https://images.pluto.tv/channels/60c3472a51a2050008dad272/colorLogoPNG_1751272093012.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-60c3472a51a2050008dad272.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-125",
-    "order": 208
+    "order": 208,
+    "manual_override": true
   },
   {
     "name": "Cine Western (France) (1080p)",
@@ -2228,10 +2230,11 @@
     "logo": "https://images.pluto.tv/channels/65cca3e2ec452d0008af3a65/colorLogoPNG_1751272826143.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-65cca3e2ec452d0008af3a65.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-128",
-    "order": 211
+    "order": 211,
+    "manual_override": true
   },
   {
     "name": "Cine+",
