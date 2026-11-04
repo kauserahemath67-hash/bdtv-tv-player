@@ -6230,30 +6230,33 @@
     "logo": "https://images.pluto.tv/channels/67d2b814fe36d6e7b1d2318a/colorLogoPNG.png",
     "category": "Classic;Movies",
     "url": "https://jmp2.uk/plu-67d2b814fe36d6e7b1d2318a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-501",
-    "order": 583
+    "order": 583,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Drama",
     "logo": "https://i.imgur.com/PvhbHTZ.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5b4e92e4694c027be6ecece1.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-502",
-    "order": 584
+    "order": 584,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Drama Movies",
     "logo": "https://images.pluto.tv/channels/62bdb0bcd707b9000739d2e5/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62bdb0bcd707b9000739d2e5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-503",
-    "order": 585
+    "order": 585,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Estrellas de Accion",
