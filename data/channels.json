@@ -6956,30 +6956,33 @@
     "logo": "https://images.pluto.tv/channels/66166cb1307fa30008f275e7/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-66166cb1307fa30008f275e7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-567",
-    "order": 649
+    "order": 649,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Sci-Fi (United States) LatAm",
     "logo": "https://images.pluto.tv/channels/66166cb1307fa30008f275e7/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-5f2817d3d7573a00080f9175.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-568",
-    "order": 650
+    "order": 650,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Serie Sci-Fi",
     "logo": "https://images.pluto.tv/channels/67ed14aaf7c5d70b9089c3bf/colorLogoPNG_1750259768860.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-67ed14aaf7c5d70b9089c3bf.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-569",
-    "order": 651
+    "order": 651,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Spotlight",
