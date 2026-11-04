@@ -1,5 +1,15 @@
 [
   {
+    "name": "T Sports",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "category": "Sports",
+    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
+    "status": "ONLINE",
+    "is_pinned": true,
+    "id": "ch-1793819116937-3",
+    "manual_override": false
+  },
+  {
     "name": "A Sports",
     "logo": "https://i.postimg.cc/767hjG0z/channels4-profile-(1).jpg",
     "category": "Sports",
@@ -28,16 +38,6 @@
     "is_pinned": false,
     "id": "ch-1793819116937-2",
     "order": 3
-  },
-  {
-    "name": "T Sports",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "category": "Sports",
-    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1793819116937-3",
-    "manual_override": false
   },
   {
     "name": "Willow Sports",
@@ -282,12 +282,12 @@
   {
     "name": "Nagorik Tv",
     "logo": "https://i.imgur.com/2cpHJKq.png",
-    "category": "Bangla",
+    "category": "General",
     "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793819116937-28",
-    "order": 29
+    "manual_override": false
   },
   {
     "name": "NTV",
