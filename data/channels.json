@@ -7459,20 +7459,22 @@
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
     "url": "https://df1aa472ff5b4780a8d91fe319778b4d.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenTVShows-1/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-614",
-    "order": 696
+    "order": 696,
+    "manual_override": true
   },
   {
     "name": "Rakuten TV Drama Movies Finland (1080p)",
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
     "url": "https://d7e8ee3c924d4305a0c1840fe94c5d36.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6102/master.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-615",
-    "order": 697
+    "order": 697,
+    "manual_override": true
   },
   {
     "name": "Rakuten TV Drama Movies Germany (1080p)",
@@ -7519,10 +7521,11 @@
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Family;Movies",
     "url": "https://9fa8baba055e4a52b0a8d1ae7d78bed8.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenFamily-1/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-620",
-    "order": 702
+    "order": 702,
+    "manual_override": true
   },
   {
     "name": "Rakuten TV Family Movies Finland (1080p)",
