@@ -3511,20 +3511,22 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bone.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/filmbox_hungary/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-247",
-    "order": 330
+    "order": 330,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ One Nederland",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bone.png",
     "category": "Movies",
     "url": "http://46.149.191.219:9100/play/a015",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-248",
-    "order": 331
+    "order": 331,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ One Romania (576p)",
@@ -3541,10 +3543,11 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bone.png",
     "category": "Movies",
     "url": "https://s70378.cdn.ngenix.net/filmbox/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-250",
-    "order": 333
+    "order": 333,
+    "manual_override": true
   },
   {
     "name": "Filmes Suspense",
