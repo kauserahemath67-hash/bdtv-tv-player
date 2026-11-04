@@ -6395,30 +6395,33 @@
     "logo": "https://images.pluto.tv/channels/608aa4a4cc92820007b663af/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-608aa4a4cc92820007b663af.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-516",
-    "order": 598
+    "order": 598,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film Storici",
     "logo": "https://images.pluto.tv/channels/68750875759366af05a151ce/colorLogoPNG_1756144116606.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-68750875759366af05a151ce.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-517",
-    "order": 599
+    "order": 599,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film Thriller",
     "logo": "https://images.pluto.tv/channels/608aa5e995132a00075f7005/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-608aa5e995132a00075f7005.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-518",
-    "order": 600
+    "order": 600,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Filmes Acao",
