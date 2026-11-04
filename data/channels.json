@@ -8588,30 +8588,33 @@
     "logo": "https://ibb.co/BH6CZx3K",
     "category": "Movies",
     "url": "http://stream.mcquack.net/152/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-720",
-    "order": 802
+    "order": 802,
+    "manual_override": true
   },
   {
     "name": "TV1000",
     "logo": "https://i.imgur.com/GHNsctR.png",
     "category": "Movies",
     "url": "http://85.14.32.26:8800/udp/239.100.10.100:5000",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-721",
-    "order": 803
+    "order": 803,
+    "manual_override": true
   },
   {
     "name": "TV1000 Russian Kino Global",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TV1000_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B5_%D0%BA%D0%B8%D0%BD%D0%BE_2014.png/1280px-TV1000_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B5_%D0%BA%D0%B8%D0%BD%D0%BE_2014.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a0bx",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-722",
-    "order": 804
+    "order": 804,
+    "manual_override": true
   },
   {
     "name": "TV Land Drama",
