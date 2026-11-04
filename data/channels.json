@@ -3392,30 +3392,33 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bhits.png",
     "category": "Movies",
     "url": "https://webtvstream.bhtelecom.ba/filmbox_premium.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-236",
-    "order": 319
+    "order": 319,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Hits Czechia",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bhits.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_film_boxpremium_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-237",
-    "order": 320
+    "order": 320,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Hits Hungary",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bhits.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/fb_premium_hungary/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-238",
-    "order": 321
+    "order": 321,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Hits Romania (576p)",
