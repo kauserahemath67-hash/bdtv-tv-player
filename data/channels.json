@@ -6989,30 +6989,33 @@
     "logo": "https://i.imgur.com/UmuJkVB.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5ba3fb9c4b078e0f37ad34e8.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-570",
-    "order": 652
+    "order": 652,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Staff Picks",
     "logo": "https://i.imgur.com/JzwO8IO.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f4d863b98b41000076cd061.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-571",
-    "order": 653
+    "order": 653,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Star Trek (Germany)",
     "logo": "https://images.pluto.tv/channels/6152ee71bf99590007893a11/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-6152ee71bf99590007893a11.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-572",
-    "order": 654
+    "order": 654,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Star Trek (Sweden)",
