@@ -1444,30 +1444,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies",
     "url": "http://138.121.15.230:9002/AXN/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-55",
-    "order": 138
+    "order": 138,
+    "manual_override": true
   },
   {
     "name": "AXN Latin America Andes (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies",
     "url": "http://181.78.8.199:8000/play/a0cu/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-56",
-    "order": 139
+    "order": 139,
+    "manual_override": true
   },
   {
     "name": "AXN Latin America Mexico",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies",
     "url": "http://190.11.225.124:5000/live/axn_hd/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-57",
-    "order": 140
+    "order": 140,
+    "manual_override": true
   },
   {
     "name": "AXN Latin America South",
