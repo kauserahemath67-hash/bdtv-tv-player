@@ -2482,30 +2482,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Cinemax_Classics_Logo.png/960px-Cinemax_Classics_Logo.png",
     "category": "Movies",
     "url": "http://23.237.104.106:8080/USA_5STARMAX/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-151",
-    "order": 234
+    "order": 234,
+    "manual_override": true
   },
   {
     "name": "Cinemax Hits (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Cinemax_Hits_Logo.png/960px-Cinemax_Hits_Logo.png",
     "category": "Movies",
     "url": "http://23.237.104.106:8080/USA_MOREMAX/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-152",
-    "order": 235
+    "order": 235,
+    "manual_override": true
   },
   {
     "name": "Cinemax Latin America (720p)",
     "logo": "https://i.imgur.com/cZWoJWD.png",
     "category": "Movies",
     "url": "https://streaming.onnethn.com/CINEMAX/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-153",
-    "order": 236
+    "order": 236,
+    "manual_override": true
   },
   {
     "name": "Cinemax Latin America HD (1080p)",
