@@ -4437,30 +4437,33 @@
     "logo": "https://i.imgur.com/QAdDARF.png",
     "category": "Movies",
     "url": "http://sirius.greenhosting.ru/Kino24Ru/video.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-333",
-    "order": 416
+    "order": 416,
+    "manual_override": true
   },
   {
     "name": "Kino Barrandov",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kino_Barrandov_logo.png/960px-Kino_Barrandov_logo.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_kino_barrandov_sd_hevc50/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-334",
-    "order": 417
+    "order": 417,
+    "manual_override": true
   },
   {
     "name": "Kino Nova",
     "logo": "https://i.imgur.com/hMqEY0J.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a041",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-335",
-    "order": 418
+    "order": 418,
+    "manual_override": true
   },
   {
     "name": "Kino TV (720p)",
