@@ -8264,30 +8264,33 @@
     "logo": "https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-693add137e308621c051e733.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-690",
-    "order": 772
+    "order": 772,
+    "manual_override": true
   },
   {
     "name": "Star Trek: The Original Series (Sweden) NO",
     "logo": "https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-693addd62bf6cf7414c4b2fc.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-691",
-    "order": 773
+    "order": 773,
+    "manual_override": true
   },
   {
     "name": "Star Trek: Voyager (Germany)",
     "logo": "https://images.pluto.tv/channels/65787f2eb228b7000843fa5c/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-65787f2eb228b7000843fa5c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-692",
-    "order": 774
+    "order": 774,
+    "manual_override": true
   },
   {
     "name": "Star Trek: Voyager (Germany) IT",
