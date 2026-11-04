@@ -7240,30 +7240,33 @@
     "logo": "https://i.imgur.com/ck4aLBP.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/421/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-593",
-    "order": 675
+    "order": 675,
+    "manual_override": true
   },
   {
     "name": "Pro Cinema (1080p)",
     "logo": "https://static.wikia.nocookie.net/logopedia/images/a/a6/Pro_Cinema_logo_2022.svg/revision/latest/scale-to-width-down/1000?cb=20220419100521",
     "category": "Movies",
     "url": "http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-procinema/live_fullhd?offsetSeconds=0",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-594",
-    "order": 676
+    "order": 676,
+    "manual_override": true
   },
   {
     "name": "Prokino (360p)",
     "logo": "https://i.imgur.com/Vm9nbi8.png",
     "category": "Movies",
     "url": "http://dtv.vol.net.ua/ProKino/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-595",
-    "order": 677
+    "order": 677,
+    "manual_override": true
   },
   {
     "name": "Public Movies (576p)",
