@@ -5768,30 +5768,33 @@
     "logo": "https://images.pluto.tv/channels/62ea3c2e4823db00072788ed/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62ea3c2e4823db00072788ed.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-459",
-    "order": 541
+    "order": 541,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Alberto Sordi",
     "logo": "https://images.pluto.tv/channels/661f8f01801af800083d9d81/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-661f8f01801af800083d9d81.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-460",
-    "order": 542
+    "order": 542,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Bang Bang",
     "logo": "https://images.pluto.tv/channels/663b9dc7cb3ea10008f1a0ce/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-663b9dc7cb3ea10008f1a0ce.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-461",
-    "order": 543
+    "order": 543,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Bud & Terence (Germany)",
