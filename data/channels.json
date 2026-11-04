@@ -4569,20 +4569,22 @@
     "logo": "https://i.imgur.com/7KsNvBz.png",
     "category": "Movies",
     "url": "http://31.148.48.15/Kineko/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-345",
-    "order": 428
+    "order": 428,
+    "manual_override": true
   },
   {
     "name": "Kinosemja (576p)",
     "logo": "https://i.imgur.com/4BF5VeK.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/170/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-346",
-    "order": 429
+    "order": 429,
+    "manual_override": true
   },
   {
     "name": "Kinoseriya (576p)",
@@ -4599,10 +4601,11 @@
     "logo": "https://i.imgur.com/ZRaWqxj.png",
     "category": "Movies",
     "url": "http://5.188.159.128:8070/kinosvidanie/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-348",
-    "order": 431
+    "order": 431,
+    "manual_override": true
   },
   {
     "name": "Kinoteatr (1080p)",
