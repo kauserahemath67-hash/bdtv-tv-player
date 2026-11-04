@@ -3739,30 +3739,33 @@
     "logo": "https://gemgroup.tv/assets/images/channels/icon_17.png",
     "category": "Movies",
     "url": "https://ca-rt.onetv.app/gemtvplus/index-0.m3u8?token=onetv202",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-268",
-    "order": 351
+    "order": 351,
+    "manual_override": true
   },
   {
     "name": "Ghost TV (712p) [Not 24/7]",
     "logo": "https://i.imgur.com/ZVO8GVI.png",
     "category": "Movies",
     "url": "https://stmv.video.expressolider.com.br/ghostv/ghostv/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-269",
-    "order": 352
+    "order": 352,
+    "manual_override": true
   },
   {
     "name": "Girlfriends Films",
     "logo": "https://i.imgur.com/hCcdrOv.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-66ba1e4446762a000855cd87.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-270",
-    "order": 353
+    "order": 353,
+    "manual_override": true
   },
   {
     "name": "Gold Star",
