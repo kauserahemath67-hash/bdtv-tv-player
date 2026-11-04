@@ -5834,30 +5834,33 @@
     "logo": "https://images.pluto.tv/channels/64be7398e4391c0008cdedfe/colorLogoPNG_1776936976930.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-65b916ec3af63d00084c5841.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-465",
-    "order": 547
+    "order": 547,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Catastrofes",
     "logo": "https://images.pluto.tv/channels/645a309c5a0cd5000873f609/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-645a309c5a0cd5000873f609.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-466",
-    "order": 548
+    "order": 548,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Christmas tutto l'anno",
     "logo": "https://images.pluto.tv/channels/612e05b885183d0007958101/colorLogoPNG_1770018716998.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-612e05b885183d0007958101.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-467",
-    "order": 549
+    "order": 549,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Accion",
