@@ -670,30 +670,33 @@
     "logo": "https://i.imgur.com/9rKHwBV.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/41327/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793785743123-66",
-    "order": 67
+    "order": 67,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoDrama [Not 24/7]",
     "logo": "https://i.imgur.com/29ddffh.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/45269/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793785743123-67",
-    "order": 68
+    "order": 68,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoFantastika [Not 24/7]",
     "logo": "https://i.imgur.com/I64FeIO.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/45268/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793785743123-68",
-    "order": 69
+    "order": 69,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoKlassika [Not 24/7]",
