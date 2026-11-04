@@ -5192,30 +5192,33 @@
     "logo": "https://i.imgur.com/XIk5EJN.png",
     "category": "Classic;Movies",
     "url": "https://void.greenhosting.ru/MovifyKino_Mpeg4/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-405",
-    "order": 487
+    "order": 487,
+    "manual_override": true
   },
   {
     "name": "Mozi+",
     "logo": "https://i.imgur.com/LtCnPFJ.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/mozi_plusz/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-406",
-    "order": 488
+    "order": 488,
+    "manual_override": true
   },
   {
     "name": "Moziverzum",
     "logo": "https://i.imgur.com/NMifecQ.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/moziverzum/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-407",
-    "order": 489
+    "order": 489,
+    "manual_override": true
   },
   {
     "name": "MultiPremier (1080p)",
