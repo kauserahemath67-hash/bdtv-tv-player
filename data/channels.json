@@ -4622,30 +4622,33 @@
     "logo": "https://i.imgur.com/mAcAAQF.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/278/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-350",
-    "order": 433
+    "order": 433,
+    "manual_override": true
   },
   {
     "name": "Kinowood (1080p)",
     "logo": "https://i.imgur.com/PQcXNBI.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/446/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-351",
-    "order": 434
+    "order": 434,
+    "manual_override": true
   },
   {
     "name": "Klasik (576p) [Not 24/7]",
     "logo": "https://i.imgur.com/C90BYlb.png",
     "category": "Movies",
     "url": "https://178.253.194.105/klasiktv/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-352",
-    "order": 435
+    "order": 435,
+    "manual_override": true
   },
   {
     "name": "Komsan TV [Not 24/7]",
