@@ -6263,30 +6263,33 @@
     "logo": "https://i.imgur.com/GVOYX4L.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5e972a21ad709d00074195ba.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-504",
-    "order": 586
+    "order": 586,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Family Movie Club",
     "logo": "https://images.pluto.tv/channels/5dc3fc6b9133f500099c7d98/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dc3fc6b9133f500099c7d98.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-505",
-    "order": 587
+    "order": 587,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Fantasy & Horror",
     "logo": "https://images.pluto.tv/channels/685041d936c9361b1921c26c/colorLogoPNG_1753696741486.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-685041d936c9361b1921c26c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-506",
-    "order": 588
+    "order": 588,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Ferne Galaxien",
