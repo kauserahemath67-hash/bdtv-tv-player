@@ -8122,10 +8122,11 @@
     "logo": "https://i.imgur.com/xC460sj.png",
     "category": "Movies",
     "url": "http://103.185.24.134:3001/Star-Gold/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-677",
-    "order": 759
+    "order": 759,
+    "manual_override": true
   },
   {
     "name": "Star Maa Movies HD (720p)",
@@ -8142,20 +8143,22 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Star_Movies_2023.svg/960px-Star_Movies_2023.svg.png",
     "category": "Movies",
     "url": "http://znty.dyndns.org:5010/hls/foxm.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-679",
-    "order": 761
+    "order": 761,
+    "manual_override": true
   },
   {
     "name": "Star Movies (Slovenia)",
     "logo": "https://i.imgur.com/JcoAgDF.png",
     "category": "Movies",
     "url": "http://92.36.202.5:10001/play/a01o",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-680",
-    "order": 762
+    "order": 762,
+    "manual_override": true
   },
   {
     "name": "Star Tamil Television (360p)",
