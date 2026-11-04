@@ -4,18 +4,18 @@
     "customer_code": "kauser",
     "name": "kauser",
     "login_pin": "12345",
-    "account_status": "ACTIVE",
-    "manual_block": false,
+    "account_status": "SUSPENDED",
+    "manual_block": true,
     "block_reason": "",
     "max_devices": 2,
     "channels_enabled": true,
     "plan": "VIP",
-    "starts_at": "2026-11-03",
+    "starts_at": "2026-11-04",
     "expires_at": "2026-12-03",
     "payment_status": "PAID",
     "transaction_reference": "",
     "createdAt": "2026-11-03T14:09:51.373Z",
-    "updatedAt": "2026-11-03T17:41:38.994Z"
+    "updatedAt": "2026-11-04T08:25:12.304Z"
   },
   {
     "id": "cust-1793125203845",
