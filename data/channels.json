@@ -5702,30 +5702,33 @@
     "logo": "https://images.pluto.tv/channels/66b4990746762a00084c2f78/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-66b4990746762a00084c2f78.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-453",
-    "order": 535
+    "order": 535,
+    "manual_override": true
   },
   {
     "name": "Pluto TV A La Mexicana",
     "logo": "https://images.pluto.tv/channels/5dfcde52d28b09000a42d7a2/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dfcde52d28b09000a42d7a2.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-454",
-    "order": 536
+    "order": 536,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Action (Sweden)",
     "logo": "https://images.pluto.tv/channels/61c095861782bd000780e0ba/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-61c0b0688a80a4000703fbcb.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-455",
-    "order": 537
+    "order": 537,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Action (Sweden) DK",
