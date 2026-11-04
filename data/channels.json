@@ -74,10 +74,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
     "category": "News",
     "url": "https://drk6xq0vhn.gpcdn.net/live/channel_24_abr/live/channel_24_720/chunks.m3u8?nimblesessionid=238811623",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793785743123-6",
-    "order": 7
+    "order": 7,
+    "manual_override": true
   },
   {
     "name": "DBC News HD",
@@ -204,10 +205,11 @@
     "logo": "https://pbs.twimg.com/profile_images/1689620641283190784/GGbvbn-B_400x400.png",
     "category": "Bangla",
     "url": "https://drk6xq0vhn.gpcdn.net/live/bijoy_tv_abr/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793785743123-19",
-    "order": 20
+    "order": 20,
+    "manual_override": true
   },
   {
     "name": "Boishakhi Tv",
@@ -454,10 +456,11 @@
     "logo": "https://dtil.tmsimg.com/assets/s142695_ld_h15_aa.png?lock=720x540",
     "category": "Movies",
     "url": "https://streams.tangotv.in/B4UKADAK/ORIGIN/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793785743123-45",
-    "order": 46
+    "order": 46,
+    "manual_override": true
   },
   {
     "name": "B4U Movies (576p)",
