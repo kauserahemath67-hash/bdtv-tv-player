@@ -439,21 +439,21 @@ class IPTVPlayer {
     this.hls = new Hls({
       enableWorker: true,
       lowLatencyMode: false,
-      backBufferLength: 15,
-      maxBufferLength: 30,             // 30s buffer ahead for rock-solid smooth stream
-      maxMaxBufferLength: 60,          // Up to 60s max buffer
-      maxBufferSize: 60 * 1024 * 1024, // 60 MB buffer
-      liveSyncDurationCount: 5,        // 5 segments back from edge to avoid rate-limit drops
-      liveMaxLatencyDurationCount: 10, // Tolerance for network slowdowns
-      maxBufferHole: 0.8,              // Automatically jump over audio/video holes up to 0.8s
-      highBufferWatchdogPeriod: 2,
-      nudgeOffset: 0.3,
-      nudgeMaxRetry: 10,               // Auto un-stall video & audio
-      fragLoadingTimeOut: 30000,
-      manifestLoadingTimeOut: 20000,
-      fragLoadingMaxRetry: 6,
-      manifestLoadingMaxRetry: 6,
-      levelLoadingMaxRetry: 6,
+      backBufferLength: 10,
+      maxBufferLength: 15,             // Optimal 15s forward buffer to avoid choke on Android/TV
+      maxMaxBufferLength: 25,          // Cap to 25s max to maintain continuous segment downloads
+      maxBufferSize: 30 * 1024 * 1024, // 30 MB buffer limit to prevent memory stall on Android TV
+      liveSyncDurationCount: 3,        // Keep 3 segments behind live edge (smooth & instant start)
+      liveMaxLatencyDurationCount: 8,  // Relaxed tolerance for network jitter
+      maxBufferHole: 1.0,              // Automatically jump over audio/video timestamp gaps up to 1.0s
+      highBufferWatchdogPeriod: 1,     // Faster check for playback stalls
+      nudgeOffset: 0.2,
+      nudgeMaxRetry: 15,               // Aggressive auto un-stall for video & audio
+      fragLoadingTimeOut: 15000,       // Don't wait 30s on slow/dead chunk
+      manifestLoadingTimeOut: 15000,
+      fragLoadingMaxRetry: 8,
+      manifestLoadingMaxRetry: 8,
+      levelLoadingMaxRetry: 8,
       startFragPrefetch: true,
       capLevelToPlayerSize: true,
       autoStartLoad: true
@@ -469,6 +469,14 @@ class IPTVPlayer {
 
     this.hls.on(Hls.Events.FRAG_BUFFERED, () => {
       this.showBuffering(false);
+    });
+
+    // Auto un-stall buffer gap: If video gets stuck at a tiny fragment boundary
+    this.hls.on(Hls.Events.BUFFER_STALLED_ERROR, () => {
+      console.warn('HLS Buffer Stalled — fast un-stalling stream...');
+      if (this.video && !this.video.paused) {
+        this.video.currentTime += 0.2;
+      }
     });
 
     // Activate and ensure audio track is bound
@@ -492,12 +500,21 @@ class IPTVPlayer {
 
     this.hls.on(Hls.Events.ERROR, (event, data) => {
       console.warn('HLS Event Error:', data);
+
+      // Handle non-fatal buffer stalls gracefully
+      if (data.details === Hls.ErrorDetails.BUFFER_STALLED_ERROR) {
+        if (this.video && !this.video.paused) {
+          this.video.currentTime += 0.15;
+        }
+        return;
+      }
+
       if (data.fatal) {
         switch (data.type) {
           case Hls.ErrorTypes.NETWORK_ERROR:
             networkRecoveryCount++;
             console.log(`HLS Network error (${networkRecoveryCount}), retrying stream connection...`);
-            if (networkRecoveryCount <= 5) {
+            if (networkRecoveryCount <= 6) {
               this.hls.startLoad();
             } else {
               // Destroy and cleanly re-attach
@@ -506,7 +523,7 @@ class IPTVPlayer {
                 if (this.filteredChannels[this.currentIndex]) {
                   this.playChannel(this.currentIndex);
                 }
-              }, 2000);
+              }, 1500);
             }
             break;
           case Hls.ErrorTypes.MEDIA_ERROR:
