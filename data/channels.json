@@ -1993,30 +1993,33 @@
     "logo": "https://i.imgur.com/eAS86qH.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f5136317aedfb0007016f93.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-106",
-    "order": 189
+    "order": 189,
+    "manual_override": true
   },
   {
     "name": "Cine by Pluto TV",
     "logo": "https://images.pluto.tv/channels/5f8ed0f17564a300082b676a/colorLogoPNG_1775048900088.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f8ed0f17564a300082b676a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-107",
-    "order": 190
+    "order": 190,
+    "manual_override": true
   },
   {
     "name": "Cine Catastrophe by Pluto TV",
     "logo": "https://images.pluto.tv/channels/65a69ef53af63d000825e0ee/colorLogoPNG_1751272916058.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-65a69ef53af63d000825e0ee.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-108",
-    "order": 191
+    "order": 191,
+    "manual_override": true
   },
   {
     "name": "Cine d'Asie by Pluto TV",
