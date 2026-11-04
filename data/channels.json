@@ -3435,30 +3435,33 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Blove-and-crime.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_filmbox_plus_atk_1200/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-240",
-    "order": 323
+    "order": 323,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Love & Crime Adria",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Blove-and-crime.png",
     "category": "Movies",
     "url": "https://webtvstream.bhtelecom.ba/filmbox_stars.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-241",
-    "order": 324
+    "order": 324,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Love & Crime Bulgaria",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Blove-and-crime.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a066",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-242",
-    "order": 325
+    "order": 325,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Love & Crime Magyar",
