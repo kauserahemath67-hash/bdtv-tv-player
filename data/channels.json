@@ -8740,30 +8740,33 @@
     "logo": "https://interra-cdn-europe1.b-cdn.net/soviet.png",
     "category": "Classic;Movies",
     "url": "https://cdn.rostelekom-tv.xyz/live/nF4sFCa49nFPHSF_.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-734",
-    "order": 816
+    "order": 816,
+    "manual_override": true
   },
   {
     "name": "Viafree Movies",
     "logo": "https://images.pluto.tv/channels/62bebc3459624e00078209c3/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62f64ec9eb1045000728cad6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-735",
-    "order": 817
+    "order": 817,
+    "manual_override": true
   },
   {
     "name": "Viafree Movies DK",
     "logo": "https://images.pluto.tv/channels/62bebc3459624e00078209c3/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62bebc3459624e00078209c3.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-736",
-    "order": 818
+    "order": 818,
+    "manual_override": true
   },
   {
     "name": "Viafree Movies NO",
