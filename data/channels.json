@@ -1841,30 +1841,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Canal%2B_Action_2024.svg/1920px-Canal%2B_Action_2024.svg.png",
     "category": "Movies",
     "url": "http://151.80.18.177:86/Canal+_Family_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-92",
-    "order": 175
+    "order": 175,
+    "manual_override": true
   },
   {
     "name": "CCTV-6 [Geo-blocked]",
     "logo": "https://i.imgur.com/rFiaef7.png",
     "category": "Movies",
     "url": "https://live.eac-news.com/CCTV/streams/cctv6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-93",
-    "order": 176
+    "order": 176,
+    "manual_override": true
   },
   {
     "name": "CCTV-6 HD (1080p)",
     "logo": "https://i.imgur.com/rFiaef7.png",
     "category": "Movies",
     "url": "http://69.30.245.50/live/cctv6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-94",
-    "order": 177
+    "order": 177,
+    "manual_override": true
   },
   {
     "name": "CCTV-Storm Theater (1080p)",
