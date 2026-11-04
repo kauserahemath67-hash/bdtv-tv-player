@@ -6758,30 +6758,33 @@
     "logo": "https://images.pluto.tv/channels/663b9de4f999220008230fa8/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-663b9de4f999220008230fa8.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-549",
-    "order": 631
+    "order": 631,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Notti di Passione",
     "logo": "https://images.pluto.tv/channels/6911c9704316999535eb21cf/colorLogoPNG_1766041294522.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6911c9704316999535eb21cf.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-550",
-    "order": 632
+    "order": 632,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Notti di Sangue",
     "logo": "https://images.pluto.tv/channels/6911c92b4316999535eb1e08/colorLogoPNG_1766041125862.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6911c92b4316999535eb1e08.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-551",
-    "order": 633
+    "order": 633,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Notti di Terrore",
