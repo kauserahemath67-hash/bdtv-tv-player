@@ -8621,10 +8621,11 @@
     "logo": "https://i.imgur.com/y1rXIAS.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5d40bebc5e3d2750a2239d7e.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-723",
-    "order": 805
+    "order": 805,
+    "manual_override": true
   },
   {
     "name": "TVCARiB Cinema (720p) [Not 24/7]",
@@ -8651,20 +8652,22 @@
     "logo": "https://i.imgur.com/A4yWhQw.png",
     "category": "Movies",
     "url": "https://rpn.bozztv.com/trn01/gusa-TVSFilmNoir/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-726",
-    "order": 808
+    "order": 808,
+    "manual_override": true
   },
   {
     "name": "Twentyseven HD (1080p) [Geo-blocked]",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Twentyseven_logo.svg/960px-Twentyseven_logo.svg.png",
     "category": "Movies;Series",
     "url": "https://live03-col.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/manifest.mpd",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-727",
-    "order": 809
+    "order": 809,
+    "manual_override": true
   },
   {
     "name": "Universal Cinema (1080p)",
