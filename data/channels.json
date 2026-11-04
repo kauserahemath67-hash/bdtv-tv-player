@@ -6164,30 +6164,33 @@
     "logo": "https://images.pluto.tv/channels/62ea3d24b8e02600071fa296/colorLogoPNG.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-62ea3d24b8e02600071fa296.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-495",
-    "order": 577
+    "order": 577,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Crime Drama",
     "logo": "https://images.pluto.tv/channels/62e92708a7ce600007b2676a/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f31fd1b4c510e00071c3103.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-496",
-    "order": 578
+    "order": 578,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Crime Drama CA",
     "logo": "https://images.pluto.tv/channels/62e92708a7ce600007b2676a/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62e92708a7ce600007b2676a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-497",
-    "order": 579
+    "order": 579,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Crime Movies",
