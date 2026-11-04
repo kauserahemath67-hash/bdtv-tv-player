@@ -4030,30 +4030,33 @@
     "logo": "https://i.imgur.com/cE2gBt6.png",
     "category": "Movies",
     "url": "https://tinyurl.com/yn3d3rmd",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-295",
-    "order": 378
+    "order": 378,
+    "manual_override": true
   },
   {
     "name": "HBO Asia Taiwan (1080p)",
     "logo": "https://i.imgur.com/cE2gBt6.png",
     "category": "Movies",
     "url": "http://125.227.210.55:1003/VideoInput/play.ts",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-296",
-    "order": 379
+    "order": 379,
+    "manual_override": true
   },
   {
     "name": "HBO Hits (720p)",
     "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/HBO_Hits_Logo.svg/960px-HBO_Hits_Logo.svg.png",
     "category": "Movies;Series",
     "url": "http://tvsen7.aynascope.net/hbo2/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-297",
-    "order": 380
+    "order": 380,
+    "manual_override": true
   },
   {
     "name": "HBO Hits Asia HD (1080p)",
