@@ -8872,30 +8872,33 @@
     "logo": "https://i.imgur.com/TMmyuzh.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/100/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-746",
-    "order": 828
+    "order": 828,
+    "manual_override": true
   },
   {
     "name": "viju TV1000 novella HD (1080p)",
     "logo": "https://www.cableman.ru/sites/default/files/viju_TV1000_%D0%BD%D0%BE%D0%B2%D0%B5%D0%BB%D0%BB%D0%B0_color_rgb_02%20%281%29.png",
     "category": "Movies",
     "url": "http://46.53.200.153:7777/play/VIJU_TV_1000_novella/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-747",
-    "order": 829
+    "order": 829,
+    "manual_override": true
   },
   {
     "name": "viju TV1000 russkoe (576p)",
     "logo": "https://i.imgur.com/Meak2y4.png",
     "category": "Movies",
     "url": "https://fs.uplink.kz/viju_tv1000_russkoe/mono.m3u8?token=onlinetv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-748",
-    "order": 830
+    "order": 830,
+    "manual_override": true
   },
   {
     "name": "viju+ Megahit HD (1080p)",
