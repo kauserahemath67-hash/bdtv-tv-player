@@ -7293,20 +7293,22 @@
     "logo": "https://www.tvchinese.net/uploads/tv/qdtv3.jpg",
     "category": "Movies",
     "url": "http://video10.qtv.com.cn/drm/qtv3at/manifest.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-598",
-    "order": 680
+    "order": 680,
+    "manual_override": true
   },
   {
     "name": "Rai Movie HD (1080p)",
     "logo": "https://i.imgur.com/0FjxXU9.png",
     "category": "Movies",
     "url": "http://team-tv.co:81/raimovie/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-599",
-    "order": 681
+    "order": 681,
+    "manual_override": true
   },
   {
     "name": "Raj Digital Plus (1080p)",
@@ -7333,10 +7335,11 @@
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
     "url": "https://0f846627524f4dd2995e93581379db82.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenActionMovies-1/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-602",
-    "order": 684
+    "order": 684,
+    "manual_override": true
   },
   {
     "name": "Rakuten TV Action Movies Finland (1080p)",
