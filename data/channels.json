@@ -7807,10 +7807,11 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/0d5b07555b2d4415aa9f145273095ed7.png",
     "category": "Movies;Music",
     "url": "https://prod-runn.cdn.runn.tv/shemaroo/stream/smrfgn/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-647",
-    "order": 729
+    "order": 729,
+    "manual_override": true
   },
   {
     "name": "Shemaroo Josh (576p)",
@@ -7827,10 +7828,11 @@
     "logo": "https://i.imgur.com/UG63hZ0.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/75/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-649",
-    "order": 731
+    "order": 731,
+    "manual_override": true
   },
   {
     "name": "Shubh Cinema TV (720p)",
@@ -7907,10 +7909,11 @@
     "logo": "",
     "category": "Movies",
     "url": "https://a89829b8dca2471ab52ea9a57bc28a35.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/CanelaTV_SonyCanalNovelas/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-657",
-    "order": 739
+    "order": 739,
+    "manual_override": true
   },
   {
     "name": "Sony Max HD (1080p)",
