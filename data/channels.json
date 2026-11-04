@@ -2340,30 +2340,33 @@
     "logo": "https://i.imgur.com/2V0R0xT.png",
     "category": "Movies",
     "url": "http://206.135.11.174:8010/play/a0lq/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-138",
-    "order": 221
+    "order": 221,
+    "manual_override": true
   },
   {
     "name": "Cinema (Mongolia) (1080p)",
     "logo": "https://www.mongolsat.mn/assets/img/channel/914.png",
     "category": "Movies",
     "url": "https://cdn4.skygo.mn/live/disk1/CinemaTV/DASH-FTA/CinemaTV.mpd",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-139",
-    "order": 222
+    "order": 222,
+    "manual_override": true
   },
   {
     "name": "Cinema (Russia) (576p)",
     "logo": "https://i.imgur.com/b5e9qUA.png",
     "category": "Movies",
     "url": "http://flussonic.linkintel.ru/cinema/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-140",
-    "order": 223
+    "order": 223,
+    "manual_override": true
   },
   {
     "name": "Cinemaraton Plus (1080i)",
