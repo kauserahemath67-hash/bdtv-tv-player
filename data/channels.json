@@ -8938,30 +8938,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Warner_TV_logo.svg/960px-Warner_TV_logo.svg.png",
     "category": "Movies",
     "url": "http://38.134.250.110:8000/play/a029/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-752",
-    "order": 834
+    "order": 834,
+    "manual_override": true
   },
   {
     "name": "Warner Channel South",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Warner_TV_logo.svg/960px-Warner_TV_logo.svg.png",
     "category": "Movies",
     "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/68.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-753",
-    "order": 835
+    "order": 835,
+    "manual_override": true
   },
   {
     "name": "Warner TV",
     "logo": "https://static.wikia.nocookie.net/logopedia/images/c/c7/WarnerTV_2021.svg/revision/latest/scale-to-width-down/1000?cb=20230818123400",
     "category": "Movies",
     "url": "http://88.212.15.50/live/warner_tv/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-754",
-    "order": 836
+    "order": 836,
+    "manual_override": true
   },
   {
     "name": "Warner TV Asia (720p)",
