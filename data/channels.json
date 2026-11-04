@@ -8069,20 +8069,22 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "category": "Movies;Series",
     "url": "http://15.204.246.24:8080/STARCHANNELHD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-672",
-    "order": 754
+    "order": 754,
+    "manual_override": true
   },
   {
     "name": "Star Channel Latin America South",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "category": "Movies;Series",
     "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/51.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-673",
-    "order": 755
+    "order": 755,
+    "manual_override": true
   },
   {
     "name": "Star Cinema",
@@ -8109,10 +8111,11 @@
     "logo": "https://i.imgur.com/G0ZfzZr.png",
     "category": "Movies",
     "url": "http://103.151.60.162:2122/play/a01v/index.m3u8?hls",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-676",
-    "order": 758
+    "order": 758,
+    "manual_override": true
   },
   {
     "name": "Star Gold HD (1080p)",
