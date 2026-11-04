@@ -6032,30 +6032,33 @@
     "logo": "https://images.pluto.tv/channels/5f171f032cd22e0007f17f3d/colorLogoPNG_1732045254120.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dd6ddb30a1d8a000908ed4c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-483",
-    "order": 565
+    "order": 565,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Inspiracao",
     "logo": "https://images.pluto.tv/channels/5fa991b1f09e020007e78626/colorLogoPNG_1748874366972.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5fa991b1f09e020007e78626.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-484",
-    "order": 566
+    "order": 566,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Inspirador",
     "logo": "https://images.pluto.tv/channels/6806d519fea7414f33f57016/colorLogoPNG_1746817663597.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6806d519fea7414f33f57016.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-485",
-    "order": 567
+    "order": 567,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Romance",
