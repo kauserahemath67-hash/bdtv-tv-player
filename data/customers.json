@@ -4,8 +4,8 @@
     "customer_code": "kauser",
     "name": "kauser",
     "login_pin": "12345",
-    "account_status": "SUSPENDED",
-    "manual_block": true,
+    "account_status": "ACTIVE",
+    "manual_block": false,
     "block_reason": "",
     "max_devices": 2,
     "channels_enabled": true,
@@ -15,7 +15,7 @@
     "payment_status": "PAID",
     "transaction_reference": "",
     "createdAt": "2026-11-03T14:09:51.373Z",
-    "updatedAt": "2026-11-04T08:25:12.304Z"
+    "updatedAt": "2026-11-04T08:26:04.304Z"
   },
   {
     "id": "cust-1793125203845",
