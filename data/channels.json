@@ -2548,10 +2548,11 @@
     "logo": "https://i.imgur.com/xaCyyDd.png",
     "category": "Movies",
     "url": "https://aegis-cloudfront-1.tubi.video/ea1ab5d1-f554-4f6b-b03f-2611fcd94257/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-157",
-    "order": 240
+    "order": 240,
+    "manual_override": true
   },
   {
     "name": "CineWow (576i)",
@@ -2658,20 +2659,22 @@
     "logo": "https://i.imgur.com/YoWOZMx.png",
     "category": "Movies",
     "url": "https://v2.catcast.tv/content/38128/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-168",
-    "order": 251
+    "order": 251,
+    "manual_override": true
   },
   {
     "name": "Claro Cinema (1080p)",
     "logo": "https://i.imgur.com/SOLGQxQ.jpg",
     "category": "Movies",
     "url": "http://158.172.217.18:8000/play/a00d/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-169",
-    "order": 252
+    "order": 252,
+    "manual_override": true
   },
   {
     "name": "Classic Cinema (240p) [Not 24/7]",
