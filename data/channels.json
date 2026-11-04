@@ -3825,30 +3825,33 @@
     "logo": "https://yt3.googleusercontent.com/_X6U6bMLF-pTu5wBMFwsSI6aubGrXk2B0kUKdGiLIMqFLyDIne4Ot4ro76BS1S8fX3pWcCwS=s900-c-k-c0x00ffffff-no-rj",
     "category": "Movies",
     "url": "https://mumt03.tangotv.in/Dsly5z3HGOLDMINESACTION/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-276",
-    "order": 359
+    "order": 359,
+    "manual_override": true
   },
   {
     "name": "Goldmines Bollywood (576p)",
     "logo": "https://i.imgur.com/6mNQ9mM.png",
     "category": "Movies",
     "url": "https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-277",
-    "order": 360
+    "order": 360,
+    "manual_override": true
   },
   {
     "name": "Goldmines Movies (576p)",
     "logo": "https://dtil.tmsimg.com/assets/s142881_ld_h15_aa.png?lock=720x540",
     "category": "Movies",
     "url": "http://103.175.73.12:8080/live/51/51_0.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-278",
-    "order": 361
+    "order": 361,
+    "manual_override": true
   },
   {
     "name": "Grand Cinema",
