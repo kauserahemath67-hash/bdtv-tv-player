@@ -5321,30 +5321,33 @@
     "logo": "https://i.imgur.com/HYgxPVQ.png",
     "category": "Movies",
     "url": "https://appletree-mytimeau-samsung.amagi.tv/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-417",
-    "order": 499
+    "order": 499,
+    "manual_override": true
   },
   {
     "name": "Nash Kinopokaz HD (576p)",
     "logo": "https://i.imgur.com/iwTMl8O.png",
     "category": "Movies",
     "url": "http://46.53.200.153:7777/play/SRT_Nash_kinopokaz/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-418",
-    "order": 500
+    "order": 500,
+    "manual_override": true
   },
   {
     "name": "Nashe HD (576p)",
     "logo": "https://i.imgur.com/KO8dhi9.png",
     "category": "Movies;Series",
     "url": "http://stream.mcquack.net/217/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-419",
-    "order": 501
+    "order": 501,
+    "manual_override": true
   },
   {
     "name": "Nashe Lubimoe Kino Ukraine (1080p)",
