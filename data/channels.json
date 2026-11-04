@@ -5609,10 +5609,11 @@
     "logo": "https://patriotkanal.ru/assets/cached/2025/02/resize/264_112_q100_patriot-only-logo.png",
     "category": "Movies",
     "url": "https://stream.smotrim.ru/hls2/static/playlist_4.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-444",
-    "order": 526
+    "order": 526,
+    "manual_override": true
   },
   {
     "name": "Persiana Cinema",
@@ -5659,10 +5660,11 @@
     "logo": "",
     "category": "Movies",
     "url": "https://latinohls.persiana.live/hls/stream.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-449",
-    "order": 531
+    "order": 531,
+    "manual_override": true
   },
   {
     "name": "Persiana Plus",
@@ -5689,10 +5691,11 @@
     "logo": "https://images.pluto.tv/channels/66dad50215d2c60008d7afbd/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-66dad50215d2c60008d7afbd.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-452",
-    "order": 534
+    "order": 534,
+    "manual_override": true
   },
   {
     "name": "Pluto TV 90's Classics",
