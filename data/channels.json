@@ -2069,10 +2069,11 @@
     "logo": "https://images.pluto.tv/channels/66e1978babec540008ce41ac/colorLogoPNG_1751272165674.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-66e1978babec540008ce41ac.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-113",
-    "order": 196
+    "order": 196,
+    "manual_override": true
   },
   {
     "name": "Cine Nanar (1080p)",
@@ -2089,20 +2090,22 @@
     "logo": "https://i.imgur.com/PdhWTO6.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5cf968040ab7d8f181e6a68b.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-115",
-    "order": 198
+    "order": 198,
+    "manual_override": true
   },
   {
     "name": "Cine Premium (1080p)",
     "logo": "https://i.imgur.com/tC3jGd4.png",
     "category": "Movies",
     "url": "http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/cinepremium.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-116",
-    "order": 199
+    "order": 199,
+    "manual_override": true
   },
   {
     "name": "Cine Retro by Pluto TV",
