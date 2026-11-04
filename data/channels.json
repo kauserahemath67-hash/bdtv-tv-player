@@ -6197,30 +6197,33 @@
     "logo": "https://i.imgur.com/SJcqknt.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f4d8594eb979c0007706de7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-498",
-    "order": 580
+    "order": 580,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cult Films (Germany)",
     "logo": "https://images.pluto.tv/channels/5c5c31f2f21b553c1f673fb0/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5c5c31f2f21b553c1f673fb0.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-499",
-    "order": 581
+    "order": 581,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cult Films (United States)",
     "logo": "https://i.imgur.com/xoaIAus.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5c665db3e6c01b72c4977bc2.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-500",
-    "order": 582
+    "order": 582,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Danske klassikere",
