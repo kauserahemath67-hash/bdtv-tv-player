@@ -1712,20 +1712,22 @@
     "logo": "https://images.pluto.tv/channels/696e647b07ea70192d49f6a5/colorLogoPNG_1768842647658.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-68e9913c4a666b9054849832.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-80",
-    "order": 163
+    "order": 163,
+    "manual_override": true
   },
   {
     "name": "Bonanza CA",
     "logo": "https://images.pluto.tv/channels/696e647b07ea70192d49f6a5/colorLogoPNG_1768842647658.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-696e647b07ea70192d49f6a5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-81",
-    "order": 164
+    "order": 164,
+    "manual_override": true
   },
   {
     "name": "Boreal (720p) [Not 24/7]",
@@ -1742,10 +1744,11 @@
     "logo": "https://i.ibb.co/yynxRTS/Bravo-Farsi.jpg",
     "category": "Movies",
     "url": "https://bravoohls.wns.live/hls/stream.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-83",
-    "order": 166
+    "order": 166,
+    "manual_override": true
   },
   {
     "name": "bTV Action",
