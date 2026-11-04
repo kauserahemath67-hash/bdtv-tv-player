@@ -3098,30 +3098,33 @@
     "logo": "https://i.imgur.com/oqrnvib.png",
     "category": "Movies",
     "url": "http://86.87.15.10:8008/play/a01k/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-209",
-    "order": 292
+    "order": 292,
+    "manual_override": true
   },
   {
     "name": "Film1 Family",
     "logo": "https://i.imgur.com/8XRfXIa.png",
     "category": "Movies",
     "url": "http://86.87.15.10:8008/play/a01m/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-210",
-    "order": 293
+    "order": 293,
+    "manual_override": true
   },
   {
     "name": "Film1 Premiere",
     "logo": "https://i.imgur.com/Kn9LX8i.png",
     "category": "Movies",
     "url": "http://86.87.15.10:8008/play/a01n/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-211",
-    "order": 294
+    "order": 294,
+    "manual_override": true
   },
   {
     "name": "Film4",
