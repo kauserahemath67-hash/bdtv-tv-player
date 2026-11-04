@@ -8545,20 +8545,22 @@
     "logo": "https://images.pluto.tv/channels/664e640a0120f40008be4582/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-664e640a0120f40008be4582.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-716",
-    "order": 798
+    "order": 798,
+    "manual_override": true
   },
   {
     "name": "Thrill (540p)",
     "logo": "https://i.imgur.com/Y282owj.png",
     "category": "Movies",
     "url": "https://cdn10jtedge.indihometv.com/atm/DASH/thrill/manifest.mpd",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-717",
-    "order": 799
+    "order": 799,
+    "manual_override": true
   },
   {
     "name": "Tolly TV (1080p)",
@@ -8575,10 +8577,11 @@
     "logo": "https://i.imgur.com/nSmSnH6.png",
     "category": "Movies",
     "url": "http://178.134.1.158:8081/TVXXI/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-719",
-    "order": 801
+    "order": 801,
+    "manual_override": true
   },
   {
     "name": "TV 21 International (576p)",
