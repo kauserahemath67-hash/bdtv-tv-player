@@ -1543,10 +1543,11 @@
     "logo": "https://i.imgur.com/NwOQUDp.png",
     "category": "Movies",
     "url": "https://cdnb4u.wiseplayout.com/B4U_Bhojpuri/master.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-64",
-    "order": 147
+    "order": 147,
+    "manual_override": true
   },
   {
     "name": "B4U Bhojpuri Plus (1080p)",
@@ -1583,20 +1584,22 @@
     "logo": "https://images.pluto.tv/channels/69d7ebff029c431826bd328e/colorLogoPNG_1776982986391.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-69d7ebff029c431826bd328e.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-68",
-    "order": 151
+    "order": 151,
+    "manual_override": true
   },
   {
     "name": "BET Cinema",
     "logo": "https://images.pluto.tv/channels/58af4c093a41ca9d4ecabe96/colorLogoPNG_1759338280891.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-58af4c093a41ca9d4ecabe96.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-69",
-    "order": 152
+    "order": 152,
+    "manual_override": true
   },
   {
     "name": "BET Comedy Movies",
