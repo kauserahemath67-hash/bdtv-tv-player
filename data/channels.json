@@ -7993,20 +7993,22 @@
     "logo": "https://i.postimg.cc/Z5G8j67L/PIX-HD-WHITE.png",
     "category": "Movies",
     "url": "http://103.151.60.162:2122/play/a01d/index.m3u8?hls",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-665",
-    "order": 747
+    "order": 747,
+    "manual_override": true
   },
   {
     "name": "Sony Wah (1080p) [Geo-blocked]",
     "logo": "https://dtil.tmsimg.com/assets/s157974_ld_h15_aa.png?lock=720x540",
     "category": "Movies",
     "url": "https://sl.vodep39240327.workers.dev/channel/SONY+WAH.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-666",
-    "order": 748
+    "order": 748,
+    "manual_override": true
   },
   {
     "name": "South Station (1080p)",
@@ -8023,10 +8025,11 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a0c9",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-668",
-    "order": 750
+    "order": 750,
+    "manual_override": true
   },
   {
     "name": "Star Channel (Chile) (720p)",
