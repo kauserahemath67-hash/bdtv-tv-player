@@ -5966,30 +5966,33 @@
     "logo": "https://images.pluto.tv/channels/624af40c004f8000079b784d/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-624af40c004f8000079b784d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-477",
-    "order": 559
+    "order": 559,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine de autor",
     "logo": "https://images.pluto.tv/channels/60cc807324d60a0007708dc8/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-60cc807324d60a0007708dc8.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-478",
-    "order": 560
+    "order": 560,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Drama",
     "logo": "https://images.pluto.tv/channels/5f1210d14ae1f80007bafb1d/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f1210d14ae1f80007bafb1d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-479",
-    "order": 561
+    "order": 561,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Drama LatAm",
