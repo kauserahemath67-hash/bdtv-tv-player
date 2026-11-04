@@ -8373,30 +8373,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/SundanceTV_2014.svg/960px-SundanceTV_2014.svg.png",
     "category": "Movies",
     "url": "http://92.114.85.87:8003/play/a004/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-700",
-    "order": 782
+    "order": 782,
+    "manual_override": true
   },
   {
     "name": "Sundance TV (Spain)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/SundanceTV_2014.svg/960px-SundanceTV_2014.svg.png",
     "category": "Movies",
     "url": "https://cdn.stmify.com/zapitv/stream/SUNDANCE_TV/sundance_hd.mpd",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-701",
-    "order": 783
+    "order": 783,
+    "manual_override": true
   },
   {
     "name": "Suriyan TV (576p)",
     "logo": "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Suriyan-tv-logo_2000_X_1125_Transpharent.png",
     "category": "Movies",
     "url": "https://stream.sscloud7.com/live/suriyantv/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-702",
-    "order": 784
+    "order": 784,
+    "manual_override": true
   },
   {
     "name": "SYFY (720p)",
