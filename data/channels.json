@@ -6,7 +6,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-0",
+    "id": "ch-1793776031182-0",
     "order": 1
   },
   {
@@ -16,7 +16,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-1",
+    "id": "ch-1793776031182-1",
     "order": 2
   },
   {
@@ -26,7 +26,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-2",
+    "id": "ch-1793776031182-2",
     "order": 3
   },
   {
@@ -34,22 +34,20 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
     "url": "https://flussonic.defineatoz.com/PTV/index.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-3",
-    "order": 4,
-    "manual_override": true
+    "id": "ch-1793776031182-3",
+    "order": 4
   },
   {
     "name": "Star Sports 1",
     "logo": "https://i.postimg.cc/rmQ7XZg7/20241005-170805.png",
     "url": "https://footfytv.pro/proxy/direct?url=https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-4",
-    "order": 5,
-    "manual_override": true
+    "id": "ch-1793776031182-4",
+    "order": 5
   },
   {
     "name": "Star Sports 2",
@@ -58,7 +56,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-5",
+    "id": "ch-1793776031182-5",
     "order": 6
   },
   {
@@ -66,11 +64,10 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSDFd1LJqPQMhYnIIpskiG9muZ7WJbNJt3jcLxmAdbAgCs2pxLpww4N8k&s=10",
     "url": "https://warm-caverns-48629-92fab798385f.herokuapp.com/https://d36r8jifhgsk5j.cloudfront.net/Willow_TV540p.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-6",
-    "order": 7,
-    "manual_override": true
+    "id": "ch-1793776031182-6",
+    "order": 7
   },
   {
     "name": "Sony Sports 1",
@@ -79,7 +76,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-7",
+    "id": "ch-1793776031182-7",
     "order": 8
   },
   {
@@ -89,7 +86,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-8",
+    "id": "ch-1793776031182-8",
     "order": 9
   },
   {
@@ -99,7 +96,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-9",
+    "id": "ch-1793776031182-9",
     "order": 10
   },
   {
@@ -109,7 +106,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-10",
+    "id": "ch-1793776031182-10",
     "order": 11
   },
   {
@@ -119,7 +116,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-11",
+    "id": "ch-1793776031182-11",
     "order": 12
   },
   {
@@ -129,7 +126,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-12",
+    "id": "ch-1793776031182-12",
     "order": 13
   },
   {
@@ -137,11 +134,10 @@
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/6/69/Jalsha_Movies_HD_alt.png",
     "url": "https://robitv.com/rn/http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-13",
-    "order": 14,
-    "manual_override": true
+    "id": "ch-1793776031182-13",
+    "order": 14
   },
   {
     "name": "Colors Bangla",
@@ -150,7 +146,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-14",
+    "id": "ch-1793776031182-14",
     "order": 15
   },
   {
@@ -158,11 +154,10 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Colors_Bangla_Cinema.png",
     "url": "https://footfytv.pro/proxy/direct?url=https://footfytv.pro/proxy/direct?url=http://103.114.11.37:8081/Colors-bangla-cinema/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-15",
-    "order": 16,
-    "manual_override": true
+    "id": "ch-1793776031182-15",
+    "order": 16
   },
   {
     "name": "ZEE Bangla",
@@ -171,7 +166,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-16",
+    "id": "ch-1793776031182-16",
     "order": 17
   },
   {
@@ -181,7 +176,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-17",
+    "id": "ch-1793776031182-17",
     "order": 18
   },
   {
@@ -189,11 +184,10 @@
     "logo": "https://yt3.googleusercontent.com/dWloAb5aD9Jvz57fz6eZJmLoirWclDN6KOP6oWkmcJXsx6tseGedGxV90fYFgBGjV1KKly7yGg=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://drk6xq0vhn.gpcdn.net/live/sony_aath_abr/live/sony_aath_720/chunks.m3u8?nimblesessionid=227640839",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-18",
-    "order": 19,
-    "manual_override": true
+    "id": "ch-1793776031182-18",
+    "order": 19
   },
   {
     "name": "Enterr10",
@@ -202,7 +196,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-19",
+    "id": "ch-1793776031182-19",
     "order": 20
   },
   {
@@ -212,7 +206,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-20",
+    "id": "ch-1793776031182-20",
     "order": 21
   },
   {
@@ -222,7 +216,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-21",
+    "id": "ch-1793776031182-21",
     "order": 22
   },
   {
@@ -232,7 +226,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-22",
+    "id": "ch-1793776031182-22",
     "order": 23
   },
   {
@@ -240,11 +234,10 @@
     "logo": "https://imglink.cc/cdn/LmVOSdl3ku.png",
     "url": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-23",
-    "order": 24,
-    "manual_override": true
+    "id": "ch-1793776031182-23",
+    "order": 24
   },
   {
     "name": "Btv HD",
@@ -253,7 +246,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-24",
+    "id": "ch-1793776031182-24",
     "order": 25
   },
   {
@@ -263,7 +256,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-25",
+    "id": "ch-1793776031182-25",
     "order": 26
   },
   {
@@ -273,7 +266,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-26",
+    "id": "ch-1793776031182-26",
     "order": 27
   },
   {
@@ -283,7 +276,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-27",
+    "id": "ch-1793776031182-27",
     "order": 28
   },
   {
@@ -293,7 +286,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-28",
+    "id": "ch-1793776031182-28",
     "order": 29
   },
   {
@@ -303,7 +296,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-29",
+    "id": "ch-1793776031182-29",
     "order": 30
   },
   {
@@ -313,7 +306,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-30",
+    "id": "ch-1793776031182-30",
     "order": 31
   },
   {
@@ -323,7 +316,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-31",
+    "id": "ch-1793776031182-31",
     "order": 32
   },
   {
@@ -333,7 +326,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-32",
+    "id": "ch-1793776031182-32",
     "order": 33
   },
   {
@@ -343,7 +336,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-33",
+    "id": "ch-1793776031182-33",
     "order": 34
   },
   {
@@ -351,11 +344,10 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1784629064327.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/somoy_tv_abr/live/somoy_tv_720/chunks.m3u8?nimblesessionid=238809308",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-34",
-    "order": 35,
-    "manual_override": true
+    "id": "ch-1793776031182-34",
+    "order": 35
   },
   {
     "name": "Akhon Tv",
@@ -364,7 +356,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-35",
+    "id": "ch-1793776031182-35",
     "order": 36
   },
   {
@@ -374,7 +366,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-36",
+    "id": "ch-1793776031182-36",
     "order": 37
   },
   {
@@ -384,7 +376,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-37",
+    "id": "ch-1793776031182-37",
     "order": 38
   },
   {
@@ -394,7 +386,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-38",
+    "id": "ch-1793776031182-38",
     "order": 39
   },
   {
@@ -404,7 +396,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-39",
+    "id": "ch-1793776031182-39",
     "order": 40
   },
   {
@@ -414,7 +406,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-40",
+    "id": "ch-1793776031182-40",
     "order": 41
   },
   {
@@ -424,7 +416,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-41",
+    "id": "ch-1793776031182-41",
     "order": 42
   },
   {
@@ -434,7 +426,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-42",
+    "id": "ch-1793776031182-42",
     "order": 43
   },
   {
@@ -444,7 +436,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-43",
+    "id": "ch-1793776031182-43",
     "order": 44
   },
   {
@@ -454,7 +446,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-44",
+    "id": "ch-1793776031182-44",
     "order": 45
   },
   {
@@ -464,7 +456,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-45",
+    "id": "ch-1793776031182-45",
     "order": 46
   },
   {
@@ -474,7 +466,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-46",
+    "id": "ch-1793776031182-46",
     "order": 47
   },
   {
@@ -482,11 +474,10 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
     "url": "https://box.bbaria.net:8083/Channel9/video.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-47",
-    "order": 48,
-    "manual_override": true
+    "id": "ch-1793776031182-47",
+    "order": 48
   },
   {
     "name": "DBC News HD",
@@ -495,7 +486,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-48",
+    "id": "ch-1793776031182-48",
     "order": 49
   },
   {
@@ -505,7 +496,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-49",
+    "id": "ch-1793776031182-49",
     "order": 50
   },
   {
@@ -515,7 +506,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-50",
+    "id": "ch-1793776031182-50",
     "order": 51
   },
   {
@@ -525,7 +516,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-51",
+    "id": "ch-1793776031182-51",
     "order": 52
   },
   {
@@ -535,7 +526,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-52",
+    "id": "ch-1793776031182-52",
     "order": 53
   },
   {
@@ -543,11 +534,10 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
     "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8#skym3u.dev",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-53",
-    "order": 54,
-    "manual_override": true
+    "id": "ch-1793776031182-53",
+    "order": 54
   },
   {
     "name": "Bangla Vision",
@@ -556,7 +546,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-54",
+    "id": "ch-1793776031182-54",
     "order": 55
   },
   {
@@ -566,7 +556,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-55",
+    "id": "ch-1793776031182-55",
     "order": 56
   },
   {
@@ -576,7 +566,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-56",
+    "id": "ch-1793776031182-56",
     "order": 57
   },
   {
@@ -584,22 +574,20 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/channel_24_abr/live/channel_24_720/chunks.m3u8?nimblesessionid=238811623",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-57",
-    "order": 58,
-    "manual_override": true
+    "id": "ch-1793776031182-57",
+    "order": 58
   },
   {
     "name": "Channel 1",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1781163068414.png",
     "url": "https://akash-by-hady.srhady.workers.dev/live/299.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-58",
-    "order": 59,
-    "manual_override": true
+    "id": "ch-1793776031182-58",
+    "order": 59
   },
   {
     "name": "Star News",
@@ -608,7 +596,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-59",
+    "id": "ch-1793776031182-59",
     "order": 60
   },
   {
@@ -618,7 +606,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-60",
+    "id": "ch-1793776031182-60",
     "order": 61
   },
   {
@@ -626,55 +614,50 @@
     "logo": "https://i.postimg.cc/MK83K74Z/20260705-053736.jpg",
     "url": "https://jagroniakash.ncare.live/unmochontv/unmochontv.stream/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-61",
-    "order": 62,
-    "manual_override": true
+    "id": "ch-1793776031182-61",
+    "order": 62
   },
   {
     "name": "Al Jazeera",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1777454219313.png",
     "url": "https://akash-by-hady.srhady.workers.dev/ts?ep=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9vd3Jjb3ZjcnB5LmdwY2RuLm5ldC9icGstdHYvMTcyMS9vdXRwdXQvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiRWRnZVRpbWUiOjE3ODY4Mjc2NDJ9fX1dfQ&es=krTb1ISx2d02a7DZiOUUZk~aKxq7x4cg-B99bEhJM1o&url=https%3A%2F%2Fowrcovcrpy.gpcdn.net%2Fbpk-tv%2F1721%2Foutput%2F1721-audio_113512_eng%3D113200-video%3D2202800.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-62",
-    "order": 63,
-    "manual_override": true
+    "id": "ch-1793776031182-62",
+    "order": 63
   },
   {
     "name": "Sony Max",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyChyEkV9SuWsXb7A_EyU9YwOrMaxvty8msO7FTXvRuK7dFMGGHYUzr6g&s=10",
     "url": "https://drk6xq0vhn.gpcdn.net/live/max_hd_abr/live/max_hd_720/chunks.m3u8?nimblesessionid=206455791",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-63",
-    "order": 64,
-    "manual_override": true
+    "id": "ch-1793776031182-63",
+    "order": 64
   },
   {
     "name": "Sony Entertainment Hd",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/b02e7be82b9b488e5a79b0f7e8f7ca1c.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/sony_ent_hd_abr/live/sony_ent_hd_480/chunks.m3u8?nimblesessionid=206459882",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-64",
-    "order": 65,
-    "manual_override": true
+    "id": "ch-1793776031182-64",
+    "order": 65
   },
   {
     "name": "Sony Max 2",
     "logo": "https://yt3.googleusercontent.com/r7fi39b2G0g-xrHbziVK_V0rgQqwRqXRtSDuUaALPCL-41ayfqIs_m7tSGR1ZGXU76toUEU3wg=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://drk6xq0vhn.gpcdn.net/live/max_2_abr/live/max_2_720/chunks.m3u8?nimblesessionid=206458908",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-65",
-    "order": 66,
-    "manual_override": true
+    "id": "ch-1793776031182-65",
+    "order": 66
   },
   {
     "name": "Sony Movies",
@@ -683,7 +666,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-66",
+    "id": "ch-1793776031182-66",
     "order": 67
   },
   {
@@ -691,33 +674,30 @@
     "logo": "https://yt3.googleusercontent.com/ytc/AIdro_laNnznvidGadk1O6pI_FsGpRqKdrH6MsequORPttJsBNc=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-67",
-    "order": 68,
-    "manual_override": true
+    "id": "ch-1793776031182-67",
+    "order": 68
   },
   {
     "name": "Music India",
     "logo": "https://pbs.twimg.com/profile_images/618036953/music_india_400x400.png",
     "url": "https://cdn-2.pishow.tv/live/226/master.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-68",
-    "order": 69,
-    "manual_override": true
+    "id": "ch-1793776031182-68",
+    "order": 69
   },
   {
     "name": "B4U Music",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/e41d7120121fbc7f3fe1f07b30c737d2.png",
     "url": "https://stream.ottplus.bd/live/b4u_music_abr/index.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-69",
-    "order": 70,
-    "manual_override": true
+    "id": "ch-1793776031182-69",
+    "order": 70
   },
   {
     "name": "Gopal Bhar",
@@ -726,7 +706,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-70",
+    "id": "ch-1793776031182-70",
     "order": 71
   },
   {
@@ -734,11 +714,10 @@
     "logo": "https://mir-s3-cdn-cf.behance.net/projects/202/085a3357868699.Y3JvcCw3MTksNTYzLDMyMSw4Mw.jpg",
     "url": "https://box.bbaria.net/DurontoTV/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-71",
-    "order": 72,
-    "manual_override": true
+    "id": "ch-1793776031182-71",
+    "order": 72
   },
   {
     "name": "Pogo",
@@ -747,7 +726,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-72",
+    "id": "ch-1793776031182-72",
     "order": 73
   },
   {
@@ -757,7 +736,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-73",
+    "id": "ch-1793776031182-73",
     "order": 74
   },
   {
@@ -765,22 +744,20 @@
     "logo": "https://i.ibb.co.com/01gmWfz/images-1.webp",
     "url": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/chunklist_b2000000_DVR.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-74",
-    "order": 75,
-    "manual_override": true
+    "id": "ch-1793776031182-74",
+    "order": 75
   },
   {
     "name": "Khushboo Bangla",
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/c4/Khushboo_Bangla_logo_%282016-present%29.png",
     "url": "https://cdn-4.pishow.tv/live/1473/master.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-75",
-    "order": 76,
-    "manual_override": true
+    "id": "ch-1793776031182-75",
+    "order": 76
   },
   {
     "name": "Moto Patlu",
@@ -789,7 +766,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-76",
+    "id": "ch-1793776031182-76",
     "order": 77
   },
   {
@@ -799,7 +776,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-77",
+    "id": "ch-1793776031182-77",
     "order": 78
   },
   {
@@ -809,7 +786,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-78",
+    "id": "ch-1793776031182-78",
     "order": 79
   },
   {
@@ -819,7 +796,7 @@
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-79",
+    "id": "ch-1793776031182-79",
     "order": 80
   },
   {
@@ -827,984 +804,19 @@
     "logo": "https://logos-world.net/wp-content/uploads/2023/04/Animal-Planet-Logo.png",
     "url": "https://stream.ottplus.bd/live/animal_planet_hd_abr/playlist.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735680853-80",
-    "order": 81,
-    "manual_override": true
+    "id": "ch-1793776031182-80",
+    "order": 81
   },
   {
     "name": "Discovery",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqezFALo-LbtcS9LIbXWG88NFs5W5v99xfaYqrVOzs3oAzeHoTfXiTNdBs&s=10",
     "url": "https://stream.ottplus.bd/live/discovery_sd_abr/index.m3u8",
     "category": "General",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735680853-81",
-    "order": 82,
-    "manual_override": true
-  },
-  {
-    "name": "ATN Bangla UK",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/01/atnbanglauk11-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnbanglauk-off.stream/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
-    "id": "ch-1793735815125-4",
-    "order": 83
-  },
-  {
-    "name": "ATN Islamic TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/atnislamictv-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/atnislamictv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-5",
-    "order": 84,
-    "manual_override": true
-  },
-  {
-    "name": "Azan TV Canada",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2019/04/azantvs-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/azantv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-9",
-    "order": 85
-  },
-  {
-    "name": "Banglar kontho 24",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/06/banglar-kantho-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/banglarkontho.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-10",
-    "order": 86
-  },
-  {
-    "name": "Banglavision",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2015/10/bv-150x1501.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/banglav000.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-11",
-    "order": 87
-  },
-  {
-    "name": "BARTOMAN TELEVISION",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2025/02/bartoman-web-150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/bartomantv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-12",
-    "order": 88,
-    "manual_override": true
-  },
-  {
-    "name": "BD-আমার বাংলা ২৪",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/04/amr-bangla--150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/citizentv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-13",
-    "order": 89,
-    "manual_override": true
-  },
-  {
-    "name": "BiswaBangla 24",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2022/03/Logo-Still-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/biswabanglatv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-14",
-    "order": 90
-  },
-  {
-    "name": "Btv Chittagong",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/08/3WUFkD8.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvnational-ctg.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-16",
-    "order": 91,
-    "manual_override": true
-  },
-  {
-    "name": "BTV National",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/08/btvctg.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvnational1.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-17",
-    "order": 92,
-    "manual_override": true
-  },
-  {
-    "name": "BTV News",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/12/btv-news--150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/btvbd-office-sg.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-18",
-    "order": 93,
-    "manual_override": true
-  },
-  {
-    "name": "CB24 TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/01/CB24-PP-LOGO-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cb24.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-19",
-    "order": 94,
-    "manual_override": true
-  },
-  {
-    "name": "CGTN",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2022/10/CGTN-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cgtn.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-20",
-    "order": 95
-  },
-  {
-    "name": "CGTN Documentary",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2022/10/CGTN_Doc-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/cgtndoc.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-21",
-    "order": 96
-  },
-  {
-    "name": "Channel 16",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/01/channel16-150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel16bd.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-23",
-    "order": 97,
-    "manual_override": true
-  },
-  {
-    "name": "Channel 24",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/channel24-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel24-sg-e8e.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-24",
-    "order": 98
-  },
-  {
-    "name": "Channel 52 USA",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/12/ch52-1-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel25usa.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-25",
-    "order": 99
-  },
-  {
-    "name": "Channel 9",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2015/10/ch9-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channel9hd.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-26",
-    "order": 100
-  },
-  {
-    "name": "Channel S BD",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/chsbd-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channels.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-27",
-    "order": 101,
-    "manual_override": true
-  },
-  {
-    "name": "Channel S UK",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/01/channelsukup.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/chsukoff.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-28",
-    "order": 102
-  },
-  {
-    "name": "Channeli",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2015/10/chi-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channeli-8-org.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-29",
-    "order": 103,
-    "manual_override": true
-  },
-  {
-    "name": "DBC News",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/01/dbc-news-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/dbcnews.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-30",
-    "order": 104
-  },
-  {
-    "name": "Deen TV UK",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2021/05/Deentv-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deentv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-31",
-    "order": 105
-  },
-  {
-    "name": "Desh Bangla TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2025/11/Deshbangla-TV-final--150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deshbanglatv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-32",
-    "order": 106
-  },
-  {
-    "name": "Desh TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2022/12/DESH-TV1-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deshtv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-33",
-    "order": 107
-  },
-  {
-    "name": "DesheBideshe TV | Canada",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/08/deshebideshe-1-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/deshebideshe.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-34",
-    "order": 108
-  },
-  {
-    "name": "DIM",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/10/dim-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/dimtv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-35",
-    "order": 109
-  },
-  {
-    "name": "Discover Pakistan",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/09/discoverpakistan-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/discoverpakistan.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-36",
-    "order": 110
-  },
-  {
-    "name": "DW News",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2019/07/dwnews-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/dwnews.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-37",
-    "order": 111
-  },
-  {
-    "name": "Ekattor TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2015/10/ekattors-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ekattor.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-38",
-    "order": 112,
-    "manual_override": true
-  },
-  {
-    "name": "Ekhon TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/ekhontv-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/globaltv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-39",
-    "order": 113
-  },
-  {
-    "name": "EP TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/03/EPTV-Logo-400x400-1-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/eptv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-41",
-    "order": 114,
-    "manual_override": true
-  },
-  {
-    "name": "ESA WEB TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/11/ESA_Patch_2022-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/bartoman.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-42",
-    "order": 115,
-    "manual_override": true
-  },
-  {
-    "name": "France 24",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2019/07/francenews24-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/fr24.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-43",
-    "order": 116
-  },
-  {
-    "name": "G Bangla",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/09/G-Bangla-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/gbangla.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-44",
-    "order": 117,
-    "manual_override": true
-  },
-  {
-    "name": "Global TV Bangladesh",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2021/11/globaltv-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/Global-tv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-46",
-    "order": 118
-  },
-  {
-    "name": "IN – Aamar Bangla",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2022/07/Aamar-Bangla-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/amarbanglatv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-48",
-    "order": 119
-  },
-  {
-    "name": "IN – Bprimebangla",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/09/Bprimebangla-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/Bprimebangla.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-49",
-    "order": 120,
-    "manual_override": true
-  },
-  {
-    "name": "IN – Rana Cable Music",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/10/ranacablemusic-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ranacablemusic.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-50",
-    "order": 121
-  },
-  {
-    "name": "IN – Rana Cable TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/09/ranacabletv-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ranacabletv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-51",
-    "order": 122,
-    "manual_override": true
-  },
-  {
-    "name": "IN-Amar Digital",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/09/amardigital-1-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/amardigital.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-52",
-    "order": 123
-  },
-  {
-    "name": "IN-Ananda Barta",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/ANANDABARTA-150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/anandabarta.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-53",
-    "order": 124
-  },
-  {
-    "name": "IN-Express News",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/10/expressnews-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/expressnews.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-54",
-    "order": 125
-  },
-  {
-    "name": "IN-Zodiak TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/09/zodiaktv-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/zodiaktv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-55",
-    "order": 126
-  },
-  {
-    "name": "iON TV UK",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/10/iontvuk.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/iontvuk.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-57",
-    "order": 127
-  },
-  {
-    "name": "IPTV Channel Z",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/09/chzbd-150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channelzbd.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-58",
-    "order": 128,
-    "manual_override": true
-  },
-  {
-    "name": "IPTV – Alpona TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2020/06/alponatv-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/alponatv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-59",
-    "order": 129,
-    "manual_override": true
-  },
-  {
-    "name": "IPTV- Madhupur News 24",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/05/Madhupur-News24-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/modhupurnews.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-60",
-    "order": 130,
-    "manual_override": true
-  },
-  {
-    "name": "IQRA Bangla TV UK",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/01/IQRA-BANGLA-TV-150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/iqrabanglatvoffice.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-61",
-    "order": 131
-  },
-  {
-    "name": "Islam Ch Bangla",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/icb-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamchbangla.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-62",
-    "order": 132
-  },
-  {
-    "name": "Islamic TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/01/Islamictvbd-150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/islamictvbd.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-63",
-    "order": 133
-  },
-  {
-    "name": "Jago News 24",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/pran-RFL-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/jagonews24.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-64",
-    "order": 134
-  },
-  {
-    "name": "JaTV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/05/jatv-150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/jtvbd12.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-66",
-    "order": 135
-  },
-  {
-    "name": "JonmoBhumi TV |Australia",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/08/Jonmobhumi-Logo-2-150x120.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/jonmobhumitv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-67",
-    "order": 136,
-    "manual_override": true
-  },
-  {
-    "name": "Madani Ch. Bangla",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2020/05/Madani-Channel-Bangla-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/madanitvbangla.stream1/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-68",
-    "order": 137
-  },
-  {
-    "name": "Makkah Live",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2020/05/MakkahLive-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkah.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-69",
-    "order": 138
-  },
-  {
-    "name": "Makkah TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2021/04/makkahtv-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/makkahtv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-70",
-    "order": 139
-  },
-  {
-    "name": "Matri Bhumi TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/10/matribhumi-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/matribhumitv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-71",
-    "order": 140
-  },
-  {
-    "name": "Medina Live",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2020/05/Medina-Live-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/madina.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-72",
-    "order": 141
-  },
-  {
-    "name": "Millennium24 | USA",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2020/08/millennium24-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mnews24.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-73",
-    "order": 142,
-    "manual_override": true
-  },
-  {
-    "name": "MillenniumTV | USA",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/mileninumTV-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/millenniumtv-odr-up2.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-74",
-    "order": 143,
-    "manual_override": true
-  },
-  {
-    "name": "Music Bangla",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/12/mb-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/musicbangla2025.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-77",
-    "order": 144
-  },
-  {
-    "name": "NAN TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2019/11/NAN-TV-Logo-02-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/nantv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-80",
-    "order": 145
-  },
-  {
-    "name": "NEWS24 TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/08/news24.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/news24local.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-81",
-    "order": 146
-  },
-  {
-    "name": "Nexus TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2021/07/nexustv-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/nexustv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-82",
-    "order": 147,
-    "manual_override": true
-  },
-  {
-    "name": "Noborup TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2025/12/n-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/noboruptv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-83",
-    "order": 148,
-    "manual_override": true
-  },
-  {
-    "name": "Nondito TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2025/07/Nandito-TV-Logo-Orginal-File-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/toronitv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-84",
-    "order": 149,
-    "manual_override": true
-  },
-  {
-    "name": "NRB TV | Canada",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/08/nrb.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/nrb-eu.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-85",
-    "order": 150
-  },
-  {
-    "name": "Ntv Europe",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/ntveurope-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ntvuk00332211.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-86",
-    "order": 151
-  },
-  {
-    "name": "Open TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2021/06/OPEN-TV.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/boulive.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-87",
-    "order": 152,
-    "manual_override": true
-  },
-  {
-    "name": "Peace TV Bangla",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/logo_50-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/peacetvban.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-88",
-    "order": 153
-  },
-  {
-    "name": "Prime TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/Prime-Tv-Jagobd-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/primetv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-89",
-    "order": 154
-  },
-  {
-    "name": "Quran TV Bangla",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2025/05/Copilot_20250530_180323-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/qurantvbangla.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-90",
-    "order": 155,
-    "manual_override": true
-  },
-  {
-    "name": "RTV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/01/rtvbd-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtv-sg.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-91",
-    "order": 156
-  },
-  {
-    "name": "RTV Music",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/01/rtvmusic-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtvmusic.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-92",
-    "order": 157,
-    "manual_override": true
-  },
-  {
-    "name": "Ruposhi Bangla TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/09/unnamed-150x150.webp?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ruposhibangla.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-93",
-    "order": 158
-  },
-  {
-    "name": "SA TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2015/12/satvs-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/satvoff5666.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-94",
-    "order": 159
-  },
-  {
-    "name": "Salaam Channel",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/salaam-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/salamtvuk1.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-95",
-    "order": 160
-  },
-  {
-    "name": "Samay Kolkata",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/samaykolkata-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/samaykolkata.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-96",
-    "order": 161
-  },
-  {
-    "name": "Shikor TV Canada",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2025/09/shikortv1-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/shikortv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-98",
-    "order": 162
-  },
-  {
-    "name": "Somoy News",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/somoynews-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/somoyt000011226615544544.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-99",
-    "order": 163,
-    "manual_override": true
-  },
-  {
-    "name": "Songsad TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/01/songsodtv-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/songsodtv-world.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-100",
-    "order": 164,
-    "manual_override": true
-  },
-  {
-    "name": "Tehelka TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2021/03/TehelkaTV-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/tehelkatv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-102",
-    "order": 165
-  },
-  {
-    "name": "Time Televison | USA",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/timetv-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/timetvusa.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-103",
-    "order": 166
-  },
-  {
-    "name": "TIMES24 TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2020/04/TIMES-24-TV-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/times24tv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-104",
-    "order": 167,
-    "manual_override": true
-  },
-  {
-    "name": "TV ONE UK",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2016/02/TVONE-LOGO-Colour-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/tvoneuksni.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-105",
-    "order": 168
-  },
-  {
-    "name": "UN WEB TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2025/01/UNTV-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/untv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-106",
-    "order": 169
-  },
-  {
-    "name": "Unmochon Television",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2026/01/unmochon-TV-web-150x150.jpeg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/unmochon.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-107",
-    "order": 170,
-    "manual_override": true
-  },
-  {
-    "name": "V2BEAT TV Europe",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2020/05/V2BEATTV-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/v2beattv.stream/playlist.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-108",
-    "order": 171,
-    "manual_override": true
-  },
-  {
-    "name": "Varendra TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2017/01/varendro-tv-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/varendratv.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-109",
-    "order": 172
-  },
-  {
-    "name": "Vision HD",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2025/03/visionhd-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/visionhd.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-110",
-    "order": 173
-  },
-  {
-    "name": "VOA 52 Documentary",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2024/08/52doc-150x150.png?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/voadoc.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-111",
-    "order": 174
-  },
-  {
-    "name": "Voice of America | VOA TV",
-    "logo": "https://www.jagobd.com/wp-content/uploads/2019/10/vooa-150x150.jpg?x89217",
-    "category": "bangla-channel",
-    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/voa.stream/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793735815125-112",
-    "order": 175
+    "id": "ch-1793776031182-81",
+    "order": 82
   }
 ]
