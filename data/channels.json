@@ -7055,30 +7055,33 @@
     "logo": "https://i.imgur.com/ULKvDN7.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5b4e69e08291147bd04a9fd7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-576",
-    "order": 658
+    "order": 658,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Toto",
     "logo": "https://images.pluto.tv/channels/65253f9881f942000833ccd5/colorLogoPNG_1774617972809.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-65253f9881f942000833ccd5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-577",
-    "order": 659
+    "order": 659,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Trending Now",
     "logo": "https://images.pluto.tv/channels/673247127d5da5000817b4d6/colorLogoPNG_1732662634386.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-673247127d5da5000817b4d6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-578",
-    "order": 660
+    "order": 660,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Weihnachten im Sommer",
