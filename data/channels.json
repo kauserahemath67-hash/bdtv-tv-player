@@ -2155,30 +2155,33 @@
     "logo": "https://i.imgur.com/bZWoDTg.png",
     "category": "Movies",
     "url": "http://186.148.196.82:8001/play/a0a4",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-121",
-    "order": 204
+    "order": 204,
+    "manual_override": true
   },
   {
     "name": "Cine Terror",
     "logo": "https://images.pluto.tv/channels/5f12111c9e6c2c00078ef3bb/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5d8d180092e97a5e107638d3.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-122",
-    "order": 205
+    "order": 205,
+    "manual_override": true
   },
   {
     "name": "Cine Terror BR",
     "logo": "https://images.pluto.tv/channels/5f12111c9e6c2c00078ef3bb/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f12111c9e6c2c00078ef3bb.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-123",
-    "order": 206
+    "order": 206,
+    "manual_override": true
   },
   {
     "name": "Cine Terror LatAm",
