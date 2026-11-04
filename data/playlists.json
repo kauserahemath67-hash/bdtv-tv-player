@@ -1,14 +1,5 @@
 [
   {
-    "name": "https://raw.githubusercontent.com/sm-monirulislam/jago_bd_auto_update_playlist-/refs/heads/main/jago_bd_main.m3u?v=1793735694681",
-    "url": "https://raw.githubusercontent.com/sm-monirulislam/jago_bd_auto_update_playlist-/refs/heads/main/jago_bd_main.m3u?v=1793735694681",
-    "format": "M3U Playlist",
-    "channelCount": 113,
-    "active": true,
-    "id": "pl-1793735816206",
-    "savedAt": "2026-11-03T19:56:58.886Z"
-  },
-  {
     "name": "https://rslivetv.pages.dev/bd76t2s1w9.json",
     "url": "https://rslivetv.pages.dev/bd76t2s1w9.json",
     "format": "JSON Playlist",
