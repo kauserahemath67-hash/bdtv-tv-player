@@ -1808,30 +1808,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Canal%2B_Action_2024.svg/1920px-Canal%2B_Action_2024.svg.png",
     "category": "Movies",
     "url": "https://lb.iptvnetwork.net/ls28/10020/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-89",
-    "order": 172
+    "order": 172,
+    "manual_override": true
   },
   {
     "name": "Canal+ Action Europe Czechia",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Canal%2B_Action_2024.svg/1920px-Canal%2B_Action_2024.svg.png",
     "category": "Movies",
     "url": "http://46.149.191.219:9106/play/a01g",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-90",
-    "order": 173
+    "order": 173,
+    "manual_override": true
   },
   {
     "name": "Canal+ Action Europe Magyar",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Canal%2B_Action_2024.svg/1920px-Canal%2B_Action_2024.svg.png",
     "category": "Movies",
     "url": "http://193.33.39.108:9016/play/a02n",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-91",
-    "order": 174
+    "order": 174,
+    "manual_override": true
   },
   {
     "name": "Canal+ Action Europe Slovakia (720p)",
