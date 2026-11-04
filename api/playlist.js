@@ -157,7 +157,35 @@ module.exports = async (req, res) => {
     if (req.method === 'GET') {
       const q = req.query || {};
       const acceptHeader = req.headers['accept'] || '';
+      const isAdmin = verifyAdminToken(req);
+
+      // Check if Subscription Mode is enabled
+      const settings = await db.getSettings();
+      if (settings.subscription_restrictions_enabled && !isAdmin) {
+        const custCode = q.code || req.headers['x-customer-code'];
+        const custPin  = q.pin  || req.headers['x-customer-pin'];
+        const customer = await db.findCustomer(custCode, custPin);
+
+        if (!customer || customer.manual_block || customer.account_status !== 'ACTIVE') {
+          return res.status(403).json({
+            success: false,
+            vip_locked: true,
+            message: '🔒 ভিআইপি সাবস্ক্রিপশন সক্রিয়। প্লেলিস্ট ডাউনলোড করতে বৈধ কোড ও পিন প্রয়োজন।'
+          });
+        }
+        if (customer.expires_at && new Date(customer.expires_at) < new Date()) {
+          return res.status(403).json({
+            success: false,
+            vip_locked: true,
+            message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। যোগাযোগ: 01629666467'
+          });
+        }
+      }
+
       if (q.action === 'list' || q.format === 'json' || acceptHeader.includes('application/json')) {
+        if (!isAdmin) {
+          return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+        }
         const playlists = await db.getPlaylists();
         return res.status(200).json({ success: true, count: playlists.length, data: playlists });
       }

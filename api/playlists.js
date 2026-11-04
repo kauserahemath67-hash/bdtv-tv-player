@@ -28,8 +28,11 @@ module.exports = async (req, res) => {
   if (req.method === 'OPTIONS') return res.status(200).end();
 
   try {
-    // GET — return all saved playlists
+    // GET — return all saved playlists (Admin only)
     if (req.method === 'GET') {
+      if (!verifyAdminToken(req)) {
+        return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
+      }
       const playlists = await db.getPlaylists();
       return res.status(200).json({ success: true, count: playlists.length, data: playlists });
     }
