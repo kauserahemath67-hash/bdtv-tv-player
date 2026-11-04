@@ -6329,30 +6329,33 @@
     "logo": "https://images.pluto.tv/channels/61c09515fbb4b50007d221f5/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-61c0afa0a09bbe00078f8378.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-510",
-    "order": 592
+    "order": 592,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film (Sweden) DK",
     "logo": "https://images.pluto.tv/channels/61c09515fbb4b50007d221f5/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-61c09515fbb4b50007d221f5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-511",
-    "order": 593
+    "order": 593,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film (Sweden) NO",
     "logo": "https://images.pluto.tv/channels/61c09515fbb4b50007d221f5/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-61c1e1e55deef000075aed0c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-512",
-    "order": 594
+    "order": 594,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film Ancora Piu Romantici",
