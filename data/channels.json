@@ -3931,30 +3931,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/3/32/Hallmark_Mystery_2024.svg",
     "category": "Movies;Series",
     "url": "http://41.205.93.154/HALLMARK/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-286",
-    "order": 369
+    "order": 369,
+    "manual_override": true
   },
   {
     "name": "Harbin Movie Channel",
     "logo": "https://www.tvchinese.net/uploads/tv/haerbin.jpg",
     "category": "Movies",
     "url": "https://stream.hrbtv.net/yspd/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-287",
-    "order": 370
+    "order": 370,
+    "manual_override": true
   },
   {
     "name": "HBO 2 (Czech Republic)",
     "logo": "https://static.wikia.nocookie.net/logopedia/images/8/8f/HBO_2_%28Metallic%29.png/revision/latest/scale-to-width-down/1000?cb=20190715122226",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_hbo2_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-288",
-    "order": 371
+    "order": 371,
+    "manual_override": true
   },
   {
     "name": "HBO 2 (Poland) (1080p)",
