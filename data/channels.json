@@ -7154,30 +7154,33 @@
     "logo": "https://images.pluto.tv/channels/62bdacc96a3751000811842d/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62bdacc96a3751000811842d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-585",
-    "order": 667
+    "order": 667,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Wild West",
     "logo": "https://images.pluto.tv/channels/68c01732b3900870ec74766f/colorLogoPNG_1761917904777.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-68c017bf337652ee75db201f.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-586",
-    "order": 668
+    "order": 668,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Wild West DK",
     "logo": "https://images.pluto.tv/channels/68c01732b3900870ec74766f/colorLogoPNG_1761917904777.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-68c01732b3900870ec74766f.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480392-587",
-    "order": 669
+    "order": 669,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Wild West NO",
