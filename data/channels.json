@@ -3964,30 +3964,33 @@
     "logo": "https://i.imgur.com/2e3muOJ.png",
     "category": "Movies;Series",
     "url": "http://185.227.34.179:8080/hbo-2-hd/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-289",
-    "order": 372
+    "order": 372,
+    "manual_override": true
   },
   {
     "name": "HBO 2 Latin America HD (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png",
     "category": "Movies;Series",
     "url": "http://45.171.64.30:6060/play/a00i/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-290",
-    "order": 373
+    "order": 373,
+    "manual_override": true
   },
   {
     "name": "HBO 3 (Czech Republic)",
     "logo": "https://static.wikia.nocookie.net/logopedia/images/6/6f/HBO_3_%28Metallic%29.png/revision/latest/scale-to-width-down/1000?cb=20190715122202",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_hbo3_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-291",
-    "order": 374
+    "order": 374,
+    "manual_override": true
   },
   {
     "name": "HBO (Czech Republic)",
