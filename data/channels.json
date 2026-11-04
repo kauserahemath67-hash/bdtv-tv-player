@@ -2449,30 +2449,33 @@
     "logo": "https://i.imgur.com/c8crJfA.png",
     "category": "Movies",
     "url": "http://202.150.165.66:8088/play/104-Cinemax/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-148",
-    "order": 231
+    "order": 231,
+    "manual_override": true
   },
   {
     "name": "Cinemax Asia Taiwan (1080p)",
     "logo": "https://i.imgur.com/c8crJfA.png",
     "category": "Movies",
     "url": "http://125.227.210.55:1001/VideoInput/play.ts",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-149",
-    "order": 232
+    "order": 232,
+    "manual_override": true
   },
   {
     "name": "Cinemax Central Europe",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cinemax_2016.svg/960px-Cinemax_2016.svg.png",
     "category": "Movies",
     "url": "http://193.33.39.108:9023/play/a01b",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-150",
-    "order": 233
+    "order": 233,
+    "manual_override": true
   },
   {
     "name": "Cinemax Classics (1080p)",
