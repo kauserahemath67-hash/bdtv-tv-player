@@ -4904,30 +4904,33 @@
     "logo": "https://cdn.vaughnsoft.net/profile/1792355588/mega_extremo.jpg",
     "category": "Movies",
     "url": "https://stream-cdn-iad3.vaughnsoft.net/play/live_mega_extremo.flv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-377",
-    "order": 460
+    "order": 460,
+    "manual_override": true
   },
   {
     "name": "Mei Ah Movie Channel (1080p)",
     "logo": "https://i.imgur.com/laGiFM1.png",
     "category": "Movies",
     "url": "http://103.172.187.30:12000/stream/mytv/null-9/master.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-378",
-    "order": 461
+    "order": 461,
+    "manual_override": true
   },
   {
     "name": "Merry Christmas from Viafree",
     "logo": "https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6304854ac6073d0007259fe1.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-379",
-    "order": 462
+    "order": 462,
+    "manual_override": true
   },
   {
     "name": "Merry Christmas from Viafree DK",
