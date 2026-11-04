@@ -3230,30 +3230,33 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Baction.png",
     "category": "Movies",
     "url": "http://92.114.85.87:8008/play/a007/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-221",
-    "order": 304
+    "order": 304,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Comedy (720p)",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bcomedy.png",
     "category": "Movies",
     "url": "http://92.114.85.87:8008/play/a009/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-222",
-    "order": 305
+    "order": 305,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Comedy Czechia",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bcomedy.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_filmbox_family_atk_1200/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793781480391-223",
-    "order": 306
+    "order": 306,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Comedy Magyar (576p)",
