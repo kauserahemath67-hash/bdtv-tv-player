@@ -2608,5 +2608,655 @@
     "is_pinned": false,
     "id": "ch-1793875515586-260",
     "order": 261
+  },
+  {
+    "name": "T Sports",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-0",
+    "order": 262
+  },
+  {
+    "name": "Nagorik Tv",
+    "logo": "https://i.imgur.com/2cpHJKq.png",
+    "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-1",
+    "order": 263
+  },
+  {
+    "name": "A Sports",
+    "logo": "https://i.postimg.cc/767hjG0z/channels4-profile-(1).jpg",
+    "url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-2",
+    "order": 264
+  },
+  {
+    "name": "PTV Sports",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
+    "url": "https://flussonic.defineatoz.com/PTV/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-3",
+    "order": 265
+  },
+  {
+    "name": "Star Sports 1",
+    "logo": "https://i.postimg.cc/rmQ7XZg7/20241005-170805.png",
+    "url": "https://footfytv.pro/proxy/direct?url=https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-4",
+    "order": 266
+  },
+  {
+    "name": "Star Sports 2",
+    "logo": "https://i.postimg.cc/2yhw5M0c/20241005-170916.png",
+    "url": "https://tvsen7.aynaott.com/ssport2hd/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-5",
+    "order": 267
+  },
+  {
+    "name": "Willow Sports",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSDFd1LJqPQMhYnIIpskiG9muZ7WJbNJt3jcLxmAdbAgCs2pxLpww4N8k&s=10",
+    "url": "https://warm-caverns-48629-92fab798385f.herokuapp.com/https://d36r8jifhgsk5j.cloudfront.net/Willow_TV540p.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-6",
+    "order": 268
+  },
+  {
+    "name": "Sony Sports 1",
+    "logo": "https://images.toffeelive.com/images/program/603/logo/240x240/mobile_logo_237244001666780563.png",
+    "url": "https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-7",
+    "order": 269
+  },
+  {
+    "name": "Sony Sports 2",
+    "logo": "https://images.toffeelive.com/images/program/604/logo/240x240/mobile_logo_093449001666780976.png",
+    "url": "https://drk6xq0vhn.gpcdn.net/live/ten_2_hd_720/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-8",
+    "order": 270
+  },
+  {
+    "name": "Sony Sports 5",
+    "logo": "https://images.toffeelive.com/images/program/606/logo/240x240/mobile_logo_689539001672145843.png",
+    "url": "https://drk6xq0vhn.gpcdn.net/live/ten_5_hd_720/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-9",
+    "order": 271
+  },
+  {
+    "name": "Matribhumi Tv",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQttOoq1gC8VFet-OuGNB-kwAdoxMPCkgsEyh7DOQr0mLmXb6wRbE8-J22l&s=10",
+    "url": "https://live.playmax.live/matribhumi/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-10",
+    "order": 272
+  },
+  {
+    "name": "Star Jalsha HD",
+    "logo": "https://raw.githubusercontent.com/shamimpipon/ROAR/main/Star%20Jalsha.png",
+    "url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starjalsha.smil/chunklist_b1928000.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-11",
+    "order": 273
+  },
+  {
+    "name": "Jalsha Movies SD",
+    "logo": "https://png.pngitem.com/pimgs/s/520-5200384_jalsha-movies-live-tv-hd-png-download.png",
+    "url": "https://iptvlive-beta.vercel.app/jalsha-movies/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-12",
+    "order": 274
+  },
+  {
+    "name": "Jalsha Movies HD",
+    "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/6/69/Jalsha_Movies_HD_alt.png",
+    "url": "https://robitv.com/rn/http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-13",
+    "order": 275
+  },
+  {
+    "name": "Colors Bangla",
+    "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/8/83/Colors_Bangla_HD_%282016-present%29.png",
+    "url": "https://catchup.yuppcdn.net/amazonv2/36/preview/colorsbanglahd/master/chunklist.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-14",
+    "order": 276
+  },
+  {
+    "name": "Colors Bangla Cinema",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Colors_Bangla_Cinema.png",
+    "url": "https://footfytv.pro/proxy/direct?url=https://footfytv.pro/proxy/direct?url=http://103.114.11.37:8081/Colors-bangla-cinema/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-15",
+    "order": 277
+  },
+  {
+    "name": "Sananda Tv",
+    "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/4/48/Sananda_TV_logo_%282011%29.png",
+    "url": "https://live.sanandatelevision.in/sananda/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-17",
+    "order": 278
+  },
+  {
+    "name": "Enterr10",
+    "logo": "https://yt3.googleusercontent.com/ytc/AIdro_kUVgsElgaFpQZNYILWQ0HLa-MAmbEjWNRBRqKms5qML2Q=s900-c-k-c0x00ffffff-no-rj",
+    "url": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-19",
+    "order": 279
+  },
+  {
+    "name": "TaraTv",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWwUyv4yOvRJxQRRNROFj3e0LVNjDNNi1eE-OPjPeqW2FwSxfcoZSAM1A&s=10",
+    "url": "https://legitpro.co.in/taratv/taratv/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-20",
+    "order": 280
+  },
+  {
+    "name": "Zee Bangla Sonar",
+    "logo": "https://i.ytimg.com/vi/uJJaKXtOqsw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAZZk6nxkDN1SXg6HkPRsgqbF8QlQ",
+    "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-21",
+    "order": 281
+  },
+  {
+    "name": "Bangla Plus",
+    "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/9/9a/Bangla%2B_HD.png",
+    "url": "https://live-stream.utkalbongo.com/hls/livebanglatvstream.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-22",
+    "order": 282
+  },
+  {
+    "name": "Sangeet Bangla",
+    "logo": "https://imglink.cc/cdn/LmVOSdl3ku.png",
+    "url": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-23",
+    "order": 283
+  },
+  {
+    "name": "Btv HD",
+    "logo": "https://www.btvlive.gov.bd/_next/image?url=https%3A%2F%2Fd38ll44lbmt52p.cloudfront.net%2Fcms%2Fchannel_poster%2F1677040358634_BTVogo.png&w=3840&q=75",
+    "url": "https://nkafmbewiff.gpcdn.net/tile_2/master.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-24",
+    "order": 284
+  },
+  {
+    "name": "Me Tv",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk_1n5Uoqox8ej8hhdW_QapGYP3FqK3crkcHFmmYvd0qiuhTKcZaHpFb0O&s=10",
+    "url": "https://iptvbd.live/metv1080/1080.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-26",
+    "order": 285
+  },
+  {
+    "name": "G-Series",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/c/ce/G-Series_Logo.png",
+    "url": "https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-27",
+    "order": 286
+  },
+  {
+    "name": "Gazi Tv",
+    "logo": "https://imgur.com/Fzfkvqi.png",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/gazibdz.stream/playlist.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-29",
+    "order": 287
+  },
+  {
+    "name": "Ekushey Tv",
+    "logo": "https://s4.gifyu.com/images/image534fa27d7683f33d.png",
+    "url": "https://tvsen6.aynaott.com/y4mEVZNAbeNWTbd6Z2Pw/index.m3u8?e=1782665440&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=d46cb17c34e3a883a30eb49cf7b19ecf",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-32",
+    "order": 288
+  },
+  {
+    "name": "R Tv",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6uKE0hdd7BtnYIb9Y4gIihJpzcv_rjWyp0EMEg6OXEA&s",
+    "url": "https://tvsen5.aynaott.com/RtvHD/index.m3u8?e=1782665440&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=605ad8dafdde217716c99fb6bfacddb9",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-33",
+    "order": 289
+  },
+  {
+    "name": "Akhon Tv",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeN76tHPJpc-HkXgr4YsWm9e0yWIAar2FJ1B4Q3ox5FKP-zbfP8rCOxkEe&s=10",
+    "url": "https://stream.ottplus.live/live/ekhon_tv_abr/live/ekhon_tv_hd_720/chunks.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-35",
+    "order": 290
+  },
+  {
+    "name": "Boishakhi Tv",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Boishakhi_Tv_Logo.png",
+    "url": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/tracks-v1a1/mono.ts.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-36",
+    "order": 291
+  },
+  {
+    "name": "Atn Bangla",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhbqcsNitFCvE9tvpls4ytvF840p9M87Y2Ww1b50w_cNobHazh-HAvSLQ&s=10",
+    "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-37",
+    "order": 292
+  },
+  {
+    "name": "My Tv",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/Logo_of_My_TV_%28Bangladesh%29.svg/330px-Logo_of_My_TV_%28Bangladesh%29.svg.png",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mytv-up-off.stream/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-38",
+    "order": 293
+  },
+  {
+    "name": "ATN News",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1739962961772.png",
+    "url": "https://tvsen6.aynaott.com/da6WMXAk/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-39",
+    "order": 294
+  },
+  {
+    "name": "Global Channel HD",
+    "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-02/images_e58bddfe000aa3e5df9f7c2e90416d90_playmist_global_tv_400x400.jpg",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/Global-tv.stream/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-40",
+    "order": 295
+  },
+  {
+    "name": "Mohona Tv",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/9/94/Mohona_tv_Logo.svg/1280px-Mohona_tv_Logo.svg.png",
+    "url": "https://playztv-apps.pages.dev/mohona-tv/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-41",
+    "order": 296
+  },
+  {
+    "name": "Ayna Tv",
+    "logo": "https://i.ibb.co.com/F4QWxMQ1/ayna.jpg",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ayna.stream/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-43",
+    "order": 297
+  },
+  {
+    "name": "Green Tv",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/2/20/Green_TV_Logo.png",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/chunks.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-45",
+    "order": 298
+  },
+  {
+    "name": "Channel I HD",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png",
+    "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8?e=1782665440&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=e957d2959b2f3e041ef5f976b45f8055",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-46",
+    "order": 299
+  },
+  {
+    "name": "Channel 9 HD",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
+    "url": "https://box.bbaria.net:8083/Channel9/video.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-47",
+    "order": 300
+  },
+  {
+    "name": "DBC News HD",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186306600.png",
+    "url": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8?e=1782665441&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=e05103e2a730532e525ce6519210f3c9",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-48",
+    "order": 301
+  },
+  {
+    "name": "Ekattor HD",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1739963327549.png",
+    "url": "https://tvsen6.aynaott.com/EWDrV5QskgarZEUBb3pU/index.m3u8?e=1782665441&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=f81c7aaf2bdeda05aab6306b326b0ded",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-49",
+    "order": 302
+  },
+  {
+    "name": "Thikana Tv",
+    "logo": "https://yt3.googleusercontent.com/AbXfwy0BwAB4yjwV4gkMmSZizuTv30M9kZjO7V33LLvpy7CRVxK523zdvnZ3oTMtanUf9tHe=s900-c-k-c0x00ffffff-no-rj",
+    "url": "https://5dd3981940faa.streamlock.net/thikanatv/thikanatv/playlist.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-50",
+    "order": 303
+  },
+  {
+    "name": "Maasranga TV",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1773680325498.png",
+    "url": "https://mtv.sunplex.live/MAASRANGA/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-51",
+    "order": 304
+  },
+  {
+    "name": "News 24 HD",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186895850.png",
+    "url": "https://tvsen6.aynaott.com/cdgr3tw6WoG7JyRnLbi0/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-52",
+    "order": 305
+  },
+  {
+    "name": "Deepto TV HD",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
+    "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8#skym3u.dev",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-53",
+    "order": 306
+  },
+  {
+    "name": "Bangla Vision",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735561344354.png",
+    "url": "https://tvsen5.aynaott.com/banglavision/index.m3u8?e=1782665440&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=652fe511b67d02279e33719134efd949",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-54",
+    "order": 307
+  },
+  {
+    "name": "SRK TV",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1779607122445.png",
+    "url": "https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-56",
+    "order": 308
+  },
+  {
+    "name": "Channel 24 HD",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
+    "url": "https://drk6xq0vhn.gpcdn.net/live/channel_24_abr/live/channel_24_720/chunks.m3u8?nimblesessionid=238811623",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-57",
+    "order": 309
+  },
+  {
+    "name": "Channel 1",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1781163068414.png",
+    "url": "https://akash-by-hady.srhady.workers.dev/live/299.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-58",
+    "order": 310
+  },
+  {
+    "name": "Star News",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189826301.png",
+    "url": "https://footfytv.pro/proxy/direct?url=http://103.135.253.32:8080/Star-News/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-59",
+    "order": 311
+  },
+  {
+    "name": "Al Quran",
+    "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778086065071.png",
+    "url": "https://live.kwikmotion.com/sharjahtvquranlive/shqurantv.smil/sharjahtvquranpublish/shqurantv_source/chunks.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-60",
+    "order": 312
+  },
+  {
+    "name": "Unmochon Tv",
+    "logo": "https://i.postimg.cc/MK83K74Z/20260705-053736.jpg",
+    "url": "https://jagroniakash.ncare.live/unmochontv/unmochontv.stream/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-61",
+    "order": 313
+  },
+  {
+    "name": "Sony Entertainment Hd",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/b02e7be82b9b488e5a79b0f7e8f7ca1c.png",
+    "url": "https://drk6xq0vhn.gpcdn.net/live/sony_ent_hd_abr/live/sony_ent_hd_480/chunks.m3u8?nimblesessionid=206459882",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-64",
+    "order": 314
+  },
+  {
+    "name": "Sony Movies",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Sony_Movies_Logo.svg",
+    "url": "https://a-cdn.klowdtv.com/live1/smc_720p/chunks.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-66",
+    "order": 315
+  },
+  {
+    "name": "Atn Music",
+    "logo": "https://yt3.googleusercontent.com/ytc/AIdro_laNnznvidGadk1O6pI_FsGpRqKdrH6MsequORPttJsBNc=s900-c-k-c0x00ffffff-no-rj",
+    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-67",
+    "order": 316
+  },
+  {
+    "name": "Music India",
+    "logo": "https://pbs.twimg.com/profile_images/618036953/music_india_400x400.png",
+    "url": "https://cdn-2.pishow.tv/live/226/master.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-68",
+    "order": 317
+  },
+  {
+    "name": "Gopal Bhar",
+    "logo": "https://i.postimg.cc/T10jC1zQ/1000086945.jpg",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-70",
+    "order": 318
+  },
+  {
+    "name": "Duronto Tv",
+    "logo": "https://mir-s3-cdn-cf.behance.net/projects/202/085a3357868699.Y3JvcCw3MTksNTYzLDMyMSw4Mw.jpg",
+    "url": "https://footfytv.pro/proxy/direct?url=http://103.114.11.37:8081/Duronto/index.m3u8?token=sboxcast",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-71",
+    "order": 319
+  },
+  {
+    "name": "Tiny POP",
+    "logo": "https://i.ibb.co.com/PsfD8Vrn/images-2.webp",
+    "url": "https://amg01753-narrativeuk-amg01753c1-rakuten-uk-2339.playouts.now.amagi.tv/480p/index.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-73",
+    "order": 320
+  },
+  {
+    "name": "PBS Kids",
+    "logo": "https://i.ibb.co.com/01gmWfz/images-1.webp",
+    "url": "https://2-fss-2.streamhoster.com/pl_140/amlst:200914-1298290/chunklist_b2000000_DVR.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-74",
+    "order": 321
+  },
+  {
+    "name": "Khushboo Bangla",
+    "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/c4/Khushboo_Bangla_logo_%282016-present%29.png",
+    "url": "https://cdn-4.pishow.tv/live/1473/master.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-75",
+    "order": 322
+  },
+  {
+    "name": "Moto Patlu",
+    "logo": "https://i.postimg.cc/WbKqj0w3/1000086946.jpg",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-76",
+    "order": 323
+  },
+  {
+    "name": "Tom and Jerry",
+    "logo": "https://static.wikia.nocookie.net/cartoonnetwork/images/b/b5/SeriesTitle-TomandJerry.png",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-77",
+    "order": 324
+  },
+  {
+    "name": "ZB Cartoon",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyoiK0AGw4_tmNbbk1DVh0OD_DcCRGXQ45dNkYfD8Mw&s=10",
+    "url": "https://server.zillarbarta.com/zbcatun/video.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-78",
+    "order": 325
+  },
+  {
+    "name": "Batul The Great",
+    "logo": "https://i.postimg.cc/WbDWKcdF/20260715-150726.png",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209869/tracks-v1a1/mono.ts.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793875641058-79",
+    "order": 326
   }
 ]
