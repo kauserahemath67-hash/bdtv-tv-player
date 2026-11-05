@@ -2,7 +2,7 @@
   {
     "name": "T Sports",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
+    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8",
     "category": "General",
     "status": "ONLINE",
     "is_pinned": true,
@@ -220,10 +220,10 @@
     "order": 21
   },
   {
-    "name": "Zee Bangla Sonar",
-    "logo": "https://i.ytimg.com/vi/uJJaKXtOqsw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAZZk6nxkDN1SXg6HkPRsgqbF8QlQ",
+    "name": "Colors HD",
+    "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/8/83/Colors_Bangla_HD_%282016-present%29.png",
     "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8",
-    "category": "General",
+    "category": "Entertainment",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793852321672-21",
@@ -2690,9 +2690,9 @@
     "order": 266
   },
   {
-    "name": "Zee Cinema (576p)",
-    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png",
-    "category": "Movies",
+    "name": "National Geographic HD",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/National_Geographic_Channel_logo.svg/300px-National_Geographic_Channel_logo.svg.png",
+    "category": "Documentary",
     "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
