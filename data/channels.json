@@ -1879,20 +1879,22 @@
     "logo": "https://i.imgur.com/4uG8HsQ.png",
     "category": "Movies",
     "url": "http://live2.rxip.sc96655.com/live/zxs_4000.m3u8?A=&E=&K=&P=&S=&U=",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-174",
-    "order": 175
+    "order": 175,
+    "manual_override": true
   },
   {
     "name": "Colors Bangla Cinema (576p)",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_BANGLA_CINEMA/images/LOGO_HD/image.png",
     "category": "Movies",
     "url": "http://103.151.60.162:2122/play/a02m/index.m3u8?hls",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-175",
-    "order": 176
+    "order": 176,
+    "manual_override": true
   },
   {
     "name": "Colors Cineplex (576p)",
@@ -1909,10 +1911,11 @@
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_CINEPLEX_HD/images/LOGO_HD/image.png",
     "category": "Movies",
     "url": "http://103.151.60.162:2122/play/a02s/index.m3u8?hls",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-177",
-    "order": 178
+    "order": 178,
+    "manual_override": true
   },
   {
     "name": "Cosmos Tv",
