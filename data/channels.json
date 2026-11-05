@@ -1247,30 +1247,33 @@
     "logo": "https://i.imgur.com/PdhWTO6.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5cf968040ab7d8f181e6a68b.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-115",
-    "order": 116
+    "order": 116,
+    "manual_override": true
   },
   {
     "name": "Cine Premium (1080p)",
     "logo": "https://i.imgur.com/tC3jGd4.png",
     "category": "Movies",
     "url": "http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/cinepremium.stream/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-116",
-    "order": 117
+    "order": 117,
+    "manual_override": true
   },
   {
     "name": "Cine Retro by Pluto TV",
     "logo": "https://images.pluto.tv/channels/5f8ed168f72fcd0007e56269/colorLogoPNG_1751272859383.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f8ed168f72fcd0007e56269.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-117",
-    "order": 118
+    "order": 118,
+    "manual_override": true
   },
   {
     "name": "Cine Romance by Pluto TV",
