@@ -202,30 +202,33 @@
     "logo": "https://assets-prod.services.toffeelive.com/MyK__poBEef-9-uVmf5l/posters/1eadef5b-28e7-4dc2-b42f-c67a3357c9a0.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/asian_tv/playlist.m3u8?edge-cache-token=Expires=1793876450~Starts=1793872850~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=rVaFcff50jqitO0GLdrajHPZX4x_hP7nbnRyLmi4lulfhmm0mBFjGR9h3PezIom1bJlZ9dJ5vlllNe1oM5KCBw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-18",
-    "order": 19
+    "order": 19,
+    "manual_override": true
   },
   {
     "name": "Channel i",
     "logo": "https://assets-prod.services.toffeelive.com/qnv835oBcqxnFHJBuQcB/posters/348dfac3-c1e0-485d-a72b-3d282c9e2c73.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/channel_i/playlist.m3u8?edge-cache-token=Expires=1793876450~Starts=1793872850~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=rVaFcff50jqitO0GLdrajHPZX4x_hP7nbnRyLmi4lulfhmm0mBFjGR9h3PezIom1bJlZ9dJ5vlllNe1oM5KCBw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-19",
-    "order": 20
+    "order": 20,
+    "manual_override": true
   },
   {
     "name": "Movie Bangla",
     "logo": "https://assets-prod.services.toffeelive.com/CXz4PJwBcqxnFHJBPwrG/posters/2f913e34-3a6c-45e6-9f1f-97bf129a2ff5.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/movie_bangla/playlist.m3u8?edge-cache-token=Expires=1793876451~Starts=1793872851~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=X86s2hSRuzniug5v3Fv7gNMftt6uVYglmc5-ed_FM0GsOGZ9LT2guFrg0yQFmSQ4_cJAnw5aP2yK40QuzN_UDg",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-20",
-    "order": 21
+    "order": 21,
+    "manual_override": true
   },
   {
     "name": "Nexus TV",
