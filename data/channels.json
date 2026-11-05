@@ -3682,30 +3682,33 @@
     "logo": "https://i.imgur.com/D4q2XUT.png",
     "category": "Movies",
     "url": "http://93.170.254.17/Kinomiks/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-341",
-    "order": 342
+    "order": 342,
+    "manual_override": true
   },
   {
     "name": "Kinopokaz (576p)",
     "logo": "https://i.imgur.com/nNjMyAq.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/64/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-342",
-    "order": 343
+    "order": 343,
+    "manual_override": true
   },
   {
     "name": "Kinopremyera (1080p)",
     "logo": "https://i.imgur.com/s0UYT8T.png",
     "category": "Movies",
     "url": "http://5.188.159.128:8070/KINOPREMIERA/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-343",
-    "order": 344
+    "order": 344,
+    "manual_override": true
   },
   {
     "name": "Kinopremyera HD (1080p)",
