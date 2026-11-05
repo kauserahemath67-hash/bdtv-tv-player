@@ -90,30 +90,33 @@
     "logo": "https://i.ibb.co/3m9LrLj/k7gIibH.png",
     "category": "Movies",
     "url": "http://176.126.166.43:1935/live/312kino/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-8",
-    "order": 9
+    "order": 9,
+    "manual_override": true
   },
   {
     "name": "&TV (720p)",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png",
     "category": "Movies",
     "url": "https://drk6xq0vhn.gpcdn.net/live/and_tv_hd_abr/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-9",
-    "order": 10
+    "order": 10,
+    "manual_override": true
   },
   {
     "name": "&TV International (1080p)",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png",
     "category": "Movies",
     "url": "https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-10",
-    "order": 11
+    "order": 11,
+    "manual_override": true
   },
   {
     "name": "+MaisUm (720p)",
