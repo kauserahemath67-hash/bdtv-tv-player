@@ -425,6 +425,11 @@ class IPTVPlayer {
       }
       this.updateSoundButtonUI();
     });
+    this.video.addEventListener('timeupdate', () => {
+      if (this.video && this.video.currentTime > 0) {
+        this.showBuffering(false);
+      }
+    });
     this.video.addEventListener('volumechange', () => {
       this.updateSoundButtonUI();
     });
@@ -440,34 +445,36 @@ class IPTVPlayer {
       enableWorker: true,
       lowLatencyMode: false,
       backBufferLength: 10,
-      maxBufferLength: 30,             // 30s forward buffer — keeps smooth playback
-      maxMaxBufferLength: 60,          // Cap to 60s
-      maxBufferSize: 60 * 1024 * 1024, // 60 MB buffer — handles 6MB+ HD segments without chocking
-      liveSyncDurationCount: 3,        // Keep 3 segments behind live edge (smooth & stable distance)
-      liveMaxLatencyDurationCount: 10, // Relaxed tolerance (prevents constant buffer flushes and seeking freezes)
-      maxBufferHole: 0.5,              // Standard hole tolerance
+      maxBufferLength: 45,             // Pull up to 45s ahead at FULL internet bandwidth
+      maxMaxBufferLength: 90,          // Cap to 90s — non-stop full pipe downloading
+      maxBufferSize: 100 * 1024 * 1024,// 100 MB buffer — zero bottleneck for 6MB+ HD segments
+      liveSyncDurationCount: 1.5,      // FAST START: Starts playing after only 1-2 chunks instead of waiting 20s
+      liveMaxLatencyDurationCount: 10, // High tolerance — prevents unnecessary catch-up seeks
+      maxBufferHole: 0.5,
       highBufferWatchdogPeriod: 2,
       nudgeOffset: 0.1,
       nudgeMaxRetry: 5,
-      fragLoadingTimeOut: 20000,       // 20s timeout — gives high-bitrate segments time to download completely
+      fragLoadingTimeOut: 20000,       // 20s timeout so large segments finish downloading cleanly
       manifestLoadingTimeOut: 15000,
       fragLoadingMaxRetry: 6,
       manifestLoadingMaxRetry: 6,
       levelLoadingMaxRetry: 6,
-      startFragPrefetch: true,
+      startFragPrefetch: true,         // Aggressive prefetch: downloads next segment while current plays
       autoStartLoad: true
     });
 
     this.hls.attachMedia(this.video);
 
     this.hls.on(Hls.Events.MANIFEST_PARSED, () => {
-      this.showBuffering(false);
+      // Keep buffering overlay visible until video actually starts rendering
       this.hideError();
       this.attemptPlay();
     });
 
     this.hls.on(Hls.Events.FRAG_BUFFERED, () => {
-      this.showBuffering(false);
+      if (this.video && this.video.currentTime > 0) {
+        this.showBuffering(false);
+      }
     });
 
     // Activate and ensure audio track is bound
@@ -622,7 +629,8 @@ class IPTVPlayer {
     this.currentIndex = index;
     const channel = this.filteredChannels[index];
 
-    // 1. Instantly STOP old stream & destroy old HLS pipeline (Prevents audio bleed/overlap completely!)
+    // 1. Instantly STOP old stream & show buffering overlay immediately (no blank black freeze!)
+    this.showBuffering(true);
     this.video.pause();
     if (this.hls) {
       try {
@@ -631,8 +639,6 @@ class IPTVPlayer {
       } catch (e) {}
       this.hls = null;
     }
-    this.video.removeAttribute('src');
-    this.video.load(); // Flushes all hardware audio/video decoders & buffers!
 
     // 2. Update Top Bar & HUD
     document.getElementById('top-channel-name').textContent = channel.name;
