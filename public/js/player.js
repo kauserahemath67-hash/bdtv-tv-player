@@ -415,6 +415,10 @@ class IPTVPlayer {
   // 4. Video Events & HLS.js Live Streaming Engine
   bindVideoEvents() {
     this.video.addEventListener('waiting', () => this.showBuffering(true));
+    this.video.addEventListener('stalled', () => {
+      console.warn('HTML5 Video stalled event — triggering buffer un-stall...');
+      this.handleBufferStall();
+    });
     this.video.addEventListener('playing', () => {
       this.showBuffering(false);
       this.hideError();
@@ -429,8 +433,35 @@ class IPTVPlayer {
       this.updateSoundButtonUI();
     });
     this.video.addEventListener('error', () => {
-      this.showError('প্লেব্যাক এরর: ভিডিও প্লে করা যায়নি।');
+      console.warn('HTML5 Video error event');
+      this.handleBufferStall();
     });
+  }
+
+  // Smart buffer gap un-stall: detects buffer holes and jumps directly over them
+  handleBufferStall() {
+    if (!this.video) return;
+    try {
+      const current = this.video.currentTime;
+      const buffered = this.video.buffered;
+      let jumped = false;
+      for (let i = 0; i < buffered.length; i++) {
+        if (buffered.start(i) > current && (buffered.start(i) - current) < 3.5) {
+          console.warn(`Buffer hole detected. Jumping from ${current.toFixed(2)} to ${buffered.start(i).toFixed(2)}`);
+          this.video.currentTime = buffered.start(i) + 0.05;
+          jumped = true;
+          break;
+        }
+      }
+      if (!jumped && !this.video.paused) {
+        this.video.currentTime += 0.3;
+      }
+      if (this.hls) {
+        this.hls.startLoad();
+      }
+    } catch (e) {
+      console.warn('handleBufferStall exception:', e);
+    }
   }
 
   initHLS() {
@@ -440,21 +471,22 @@ class IPTVPlayer {
       enableWorker: true,
       lowLatencyMode: false,
       backBufferLength: 10,
-      maxBufferLength: 15,             // Optimal 15s forward buffer to avoid choke on Android/TV
-      maxMaxBufferLength: 25,          // Cap to 25s max to maintain continuous segment downloads
-      maxBufferSize: 30 * 1024 * 1024, // 30 MB buffer limit to prevent memory stall on Android TV
-      liveSyncDurationCount: 3,        // Keep 3 segments behind live edge (smooth & instant start)
-      liveMaxLatencyDurationCount: 8,  // Relaxed tolerance for network jitter
-      maxBufferHole: 1.0,              // Automatically jump over audio/video timestamp gaps up to 1.0s
-      highBufferWatchdogPeriod: 1,     // Faster check for playback stalls
-      nudgeOffset: 0.2,
-      nudgeMaxRetry: 15,               // Aggressive auto un-stall for video & audio
-      fragLoadingTimeOut: 15000,       // Don't wait 30s on slow/dead chunk
-      manifestLoadingTimeOut: 15000,
-      fragLoadingMaxRetry: 8,
-      manifestLoadingMaxRetry: 8,
-      levelLoadingMaxRetry: 8,
-      startFragPrefetch: true,
+      maxBufferLength: 20,             // 20s forward buffer — keeps downloads continuous
+      maxMaxBufferLength: 35,          // 35s max ceiling
+      maxBufferSize: 60 * 1024 * 1024, // 60 MB buffer — handles 6MB+ HD segments without memory stalls
+      liveSyncDurationCount: 2,        // Stay 2 segments behind live edge (avoids rolling off short 4-chunk windows)
+      liveMaxLatencyDurationCount: 4,  // Auto catch-up to live edge before chunks expire
+      maxBufferHole: 1.5,              // Jump audio/video timestamp gaps up to 1.5s automatically
+      highBufferWatchdogPeriod: 1,     // Check stalls every 1 second
+      nudgeOffset: 0.3,
+      nudgeMaxRetry: 20,               // High nudge retries
+      fragLoadingTimeOut: 12000,       // 12s timeout — never stall indefinitely on dead chunk
+      manifestLoadingTimeOut: 12000,
+      fragLoadingMaxRetry: 3,          // Don't waste time on deleted 404 segments
+      fragLoadingRetryDelay: 500,      // Quick retry
+      manifestLoadingMaxRetry: 5,
+      levelLoadingMaxRetry: 5,
+      startFragPrefetch: true,         // Prefetch next chunk during playback to prevent pauses
       capLevelToPlayerSize: true,
       autoStartLoad: true
     });
@@ -471,12 +503,10 @@ class IPTVPlayer {
       this.showBuffering(false);
     });
 
-    // Auto un-stall buffer gap: If video gets stuck at a tiny fragment boundary
+    // Auto un-stall buffer gap
     this.hls.on(Hls.Events.BUFFER_STALLED_ERROR, () => {
-      console.warn('HLS Buffer Stalled — fast un-stalling stream...');
-      if (this.video && !this.video.paused) {
-        this.video.currentTime += 0.2;
-      }
+      console.warn('HLS Buffer Stalled — triggering gap un-stall...');
+      this.handleBufferStall();
     });
 
     // Activate and ensure audio track is bound
@@ -499,12 +529,26 @@ class IPTVPlayer {
     let networkRecoveryCount = 0;
 
     this.hls.on(Hls.Events.ERROR, (event, data) => {
-      console.warn('HLS Event Error:', data);
+      console.warn('HLS Event Error:', data.details, data.fatal ? '[FATAL]' : '[non-fatal]');
 
-      // Handle non-fatal buffer stalls gracefully
-      if (data.details === Hls.ErrorDetails.BUFFER_STALLED_ERROR) {
-        if (this.video && !this.video.paused) {
-          this.video.currentTime += 0.15;
+      // Handle buffer stalls and holes
+      if (
+        data.details === Hls.ErrorDetails.BUFFER_STALLED_ERROR ||
+        data.details === Hls.ErrorDetails.BUFFER_SEEK_OVER_HOLE ||
+        data.details === Hls.ErrorDetails.BUFFER_NUDGE_ON_STALL
+      ) {
+        this.handleBufferStall();
+        return;
+      }
+
+      // Handle segment 404 / load error on live sliding window
+      if (
+        data.details === Hls.ErrorDetails.FRAG_LOAD_ERROR ||
+        data.details === Hls.ErrorDetails.FRAG_LOAD_TIMEOUT_ERROR
+      ) {
+        console.warn('HLS Fragment Error:', data.details, 're-syncing downloads...');
+        if (this.hls) {
+          try { this.hls.startLoad(); } catch (e) {}
         }
         return;
       }
@@ -514,16 +558,29 @@ class IPTVPlayer {
           case Hls.ErrorTypes.NETWORK_ERROR:
             networkRecoveryCount++;
             console.log(`HLS Network error (${networkRecoveryCount}), retrying stream connection...`);
-            if (networkRecoveryCount <= 6) {
-              this.hls.startLoad();
-            } else {
-              // Destroy and cleanly re-attach
+            if (networkRecoveryCount <= 4) {
+              setTimeout(() => { try { this.hls.startLoad(); } catch (e) {} }, 1000);
+            } else if (networkRecoveryCount <= 8) {
+              // Medium recovery — re-init HLS cleanly
               setTimeout(() => {
-                networkRecoveryCount = 0;
+                console.log('Medium recovery: re-attaching HLS...');
+                const ch = this.filteredChannels[this.currentIndex];
+                if (ch && this.hls) {
+                  try {
+                    const cleanUrl = ch.url.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+                    this.hls.loadSource(cleanUrl);
+                    this.hls.startLoad();
+                  } catch (e) {}
+                }
+              }, 2000);
+            } else {
+              // Clean channel restart
+              networkRecoveryCount = 0;
+              setTimeout(() => {
                 if (this.filteredChannels[this.currentIndex]) {
                   this.playChannel(this.currentIndex);
                 }
-              }, 1500);
+              }, 4000);
             }
             break;
           case Hls.ErrorTypes.MEDIA_ERROR:
@@ -640,6 +697,9 @@ class IPTVPlayer {
     this.currentIndex = index;
     const channel = this.filteredChannels[index];
 
+    // Stop watchdog during channel switch
+    this.stopPlaybackWatchdog();
+
     // 1. Instantly STOP old stream & destroy old HLS pipeline (Prevents audio bleed/overlap completely!)
     this.video.pause();
     if (this.hls) {
@@ -667,19 +727,81 @@ class IPTVPlayer {
     this.sendHeartbeat();
     this.hideError();
 
-    // 3. Start fresh clean stream
-    const isM3u8 = channel.url.includes('.m3u8') || channel.url.includes('/hls') || channel.url.includes('/mono') || channel.url.includes('playlist');
+    // 3. Clean stream URL & Start fresh clean stream
+    const cleanUrl = channel.url.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+    const isM3u8 = cleanUrl.includes('.m3u8') || cleanUrl.includes('/hls') || cleanUrl.includes('/mono') || cleanUrl.includes('playlist');
     if (Hls.isSupported() && isM3u8) {
       this.initHLS();
-      this.hls.loadSource(channel.url);
+      this.hls.loadSource(cleanUrl);
     } else {
-      this.video.src = channel.url;
+      this.video.src = cleanUrl;
       this.attemptPlay();
     }
+
+    // Start proactive freeze watchdog
+    this.startPlaybackWatchdog();
 
     // Update card highlights without full re-render (prevents wrong-channel visual bug)
     this.updateCardFocus();
     this.triggerTopBar();
+  }
+
+  // Proactive freeze watchdog: monitors video progression every 3 seconds
+  startPlaybackWatchdog() {
+    this.stopPlaybackWatchdog();
+    let lastTime = -1;
+    let stallCount = 0;
+
+    this._watchdog = setInterval(() => {
+      if (!this.video) return;
+      if (this.video.paused || this.video.ended || this.currentIndex < 0) {
+        stallCount = 0;
+        return;
+      }
+
+      const currentTime = this.video.currentTime;
+
+      if (currentTime === lastTime && currentTime > 0) {
+        stallCount++;
+        console.warn(`Watchdog: video frozen for ${stallCount * 3}s (currentTime=${currentTime.toFixed(2)})`);
+        this.showBuffering(true);
+
+        if (stallCount === 1) {
+          // 3s frozen: quick buffer un-stall & kickstart HLS loader
+          this.handleBufferStall();
+        } else if (stallCount === 3) {
+          // 9s frozen: re-sync live manifest
+          console.warn('Watchdog: 9s stall, reloading live manifest...');
+          const ch = this.filteredChannels[this.currentIndex];
+          if (ch && this.hls) {
+            try {
+              const cleanUrl = ch.url.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+              this.hls.loadSource(cleanUrl);
+              this.hls.startLoad();
+            } catch (e) {}
+          }
+        } else if (stallCount >= 6) {
+          // 18s frozen: channel restart
+          console.warn('Watchdog: 18s stall, restarting channel stream...');
+          stallCount = 0;
+          this.playChannel(this.currentIndex);
+        }
+      } else {
+        if (stallCount > 0) {
+          console.log('Watchdog: playback recovered smoothly.');
+          this.showBuffering(false);
+        }
+        stallCount = 0;
+        lastTime = currentTime;
+      }
+    }, 3000);
+  }
+
+  stopPlaybackWatchdog() {
+    if (this._watchdog) {
+      clearInterval(this._watchdog);
+      this._watchdog = null;
+    }
   }
 
   // 6. Flash TV Channel Switch HUD
