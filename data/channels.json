@@ -1009,30 +1009,33 @@
     "logo": "https://i.imgur.com/rFiaef7.png",
     "category": "Movies",
     "url": "https://live.eac-news.com/CCTV/streams/cctv6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-93",
-    "order": 94
+    "order": 94,
+    "manual_override": true
   },
   {
     "name": "CCTV-6 HD (1080p)",
     "logo": "https://i.imgur.com/rFiaef7.png",
     "category": "Movies",
     "url": "http://69.30.245.50/live/cctv6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-94",
-    "order": 95
+    "order": 95,
+    "manual_override": true
   },
   {
     "name": "CCTV-Storm Theater (1080p)",
     "logo": "https://i.imgur.com/rEttkKm.png",
     "category": "Movies",
     "url": "http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-95",
-    "order": 96
+    "order": 96,
+    "manual_override": true
   },
   {
     "name": "CCTV-The First Theater (1080p)",
