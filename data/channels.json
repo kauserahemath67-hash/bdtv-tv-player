@@ -840,9 +840,10 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqezFALo-LbtcS9LIbXWG88NFs5W5v99xfaYqrVOzs3oAzeHoTfXiTNdBs&s=10",
     "url": "https://stream.ottplus.bd/live/discovery_sd_abr/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793907496469-81",
-    "order": 82
+    "order": 82,
+    "manual_override": true
   }
 ]
