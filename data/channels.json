@@ -3308,20 +3308,22 @@
     "logo": "https://i.imgur.com/eVqPfRk.png",
     "category": "Movies",
     "url": "http://dtv.vol.net.ua/Hollywood-HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-306",
-    "order": 307
+    "order": 307,
+    "manual_override": true
   },
   {
     "name": "HomePlus",
     "logo": "",
     "category": "Movies",
     "url": "https://homeplushls.wns.live/hls/stream.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-307",
-    "order": 308
+    "order": 308,
+    "manual_override": true
   },
   {
     "name": "Horoshee Kino (720p)",
@@ -3338,10 +3340,11 @@
     "logo": "https://raw.githubusercontent.com/HaNoiIPTV/HaNoiIPTV.m3u/refs/heads/master/HTVC%20Phim%20HD.png",
     "category": "Movies;Series",
     "url": "https://dethich.pw/htvcphim/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-309",
-    "order": 310
+    "order": 310,
+    "manual_override": true
   },
   {
     "name": "ICC plus (1080p)",
