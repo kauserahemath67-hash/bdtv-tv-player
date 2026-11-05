@@ -794,30 +794,33 @@
     "logo": "https://biztv.uz/static/media/biz-cinema.286b83dc.png",
     "category": "Movies",
     "url": "https://fl.biztv.media/cinema_720_EMfSyXgoRdiIHgldXTZICucKTIeCKO/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-73",
-    "order": 74
+    "order": 74,
+    "manual_override": true
   },
   {
     "name": "Blokbaster HD (1080p)",
     "logo": "https://i.imgur.com/KcOi4Os.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/364/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-74",
-    "order": 75
+    "order": 75,
+    "manual_override": true
   },
   {
     "name": "Bollygold (1080p)",
     "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4000600Q_20260805T003941SQUARE.png",
     "category": "Movies",
     "url": "https://jmp2.uk/stvp-IN4000600Q",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-75",
-    "order": 76
+    "order": 76,
+    "manual_override": true
   },
   {
     "name": "Bollywood HD (576p)",
