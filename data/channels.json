@@ -2613,20 +2613,22 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Blove-and-crime.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a066",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-242",
-    "order": 243
+    "order": 243,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Love & Crime Magyar",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Blove-and-crime.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/test_filmbox_plus_hun_atk_1200/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-243",
-    "order": 244
+    "order": 244,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Love & Crime Romania",
@@ -2643,10 +2645,11 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bone.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a06i",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-245",
-    "order": 246
+    "order": 246,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ One Czechia",
