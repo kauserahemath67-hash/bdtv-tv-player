@@ -1,5 +1,14 @@
 [
   {
+    "name": "universal_player",
+    "url": "https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/main/universal_player.m3u",
+    "format": "M3U Playlist",
+    "channelCount": 1,
+    "active": true,
+    "id": "pl-1793907143962",
+    "savedAt": "2026-11-05T19:32:23.962Z"
+  },
+  {
     "name": "https://is.gd/ijN81u",
     "url": "https://is.gd/ijN81u",
     "format": "M3U Playlist",
