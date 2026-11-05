@@ -15,10 +15,9 @@
     "url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8",
     "category": "General",
     "status": "ONLINE",
-    "is_pinned": true,
+    "is_pinned": false,
     "id": "ch-1793852321672-2",
-    "manual_override": false,
-    "order": 1
+    "manual_override": false
   },
   {
     "name": "Nagorik Tv",
