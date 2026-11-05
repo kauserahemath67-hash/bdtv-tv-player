@@ -3616,30 +3616,33 @@
     "logo": "https://i.imgur.com/hMqEY0J.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a041",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-335",
-    "order": 336
+    "order": 336,
+    "manual_override": true
   },
   {
     "name": "Kino TV (720p)",
     "logo": "https://i.imgur.com/sMpamNO.png",
     "category": "Movies",
     "url": "http://31.148.48.15/Kino_TV_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-336",
-    "order": 337
+    "order": 337,
+    "manual_override": true
   },
   {
     "name": "Kino TV HD (1080p)",
     "logo": "https://i.imgur.com/sMpamNO.png",
     "category": "Movies",
     "url": "http://176.118.197.101/KinoTvHD/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-337",
-    "order": 338
+    "order": 338,
+    "manual_override": true
   },
   {
     "name": "KinoBoevik (1080p)",
