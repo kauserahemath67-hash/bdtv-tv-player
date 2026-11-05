@@ -4500,30 +4500,33 @@
     "logo": "https://i.imgur.com/iwTMl8O.png",
     "category": "Movies",
     "url": "http://46.53.200.153:7777/play/SRT_Nash_kinopokaz/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-418",
-    "order": 419
+    "order": 419,
+    "manual_override": true
   },
   {
     "name": "Nashe HD (576p)",
     "logo": "https://i.imgur.com/KO8dhi9.png",
     "category": "Movies;Series",
     "url": "http://stream.mcquack.net/217/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-419",
-    "order": 420
+    "order": 420,
+    "manual_override": true
   },
   {
     "name": "Nashe Lubimoe Kino Ukraine (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d0/%D0%9D%D0%B0%D1%88%D0%B5_%D0%A3%D0%BB%D1%8E%D0%B1%D0%BB%D0%B5%D0%BD%D0%B5_%D0%9A%D1%96%D0%BD%D0%BE.webp",
     "category": "Movies",
     "url": "http://stream.mcquack.net/456/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-420",
-    "order": 421
+    "order": 421,
+    "manual_override": true
   },
   {
     "name": "Nashe muzhskoe HD (1080p)",
