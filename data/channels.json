@@ -2998,20 +2998,22 @@
     "logo": "https://assets-prod.services.toffeelive.com/itdbVKEBalKyvLQI94RR/posters/7f266367-077c-4acb-b29a-73437a80419b.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/4.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793852339985-227",
-    "order": 298
+    "order": 298,
+    "manual_override": true
   },
   {
     "name": "SAFF Live 2",
     "logo": "https://assets-prod.services.toffeelive.com/9dijmqEBalKyvLQIIAFj/posters/9b491bef-7c6a-4ccf-90b6-a890e0152532.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793852339985-228",
-    "order": 299
+    "order": 299,
+    "manual_override": true
   },
   {
     "name": "Sony Ten Cricket",
