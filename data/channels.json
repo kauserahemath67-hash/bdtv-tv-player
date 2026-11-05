@@ -5343,30 +5343,33 @@
     "logo": "https://images.pluto.tv/channels/62e92708a7ce600007b2676a/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f31fd1b4c510e00071c3103.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-496",
-    "order": 497
+    "order": 497,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Crime Drama CA",
     "logo": "https://images.pluto.tv/channels/62e92708a7ce600007b2676a/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62e92708a7ce600007b2676a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-497",
-    "order": 498
+    "order": 498,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Crime Movies",
     "logo": "https://i.imgur.com/SJcqknt.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f4d8594eb979c0007706de7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-498",
-    "order": 499
+    "order": 499,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cult Films (Germany)",
