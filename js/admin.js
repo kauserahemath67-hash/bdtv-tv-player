@@ -394,20 +394,41 @@ class AdminDashboard {
       this.previewHls.destroy();
     }
 
-    if (Hls.isSupported() && ch.url.includes('.m3u8')) {
-      this.previewHls = new Hls();
-      this.previewHls.loadSource(ch.url);
+    const cleanUrl = ch.url.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+    if (Hls.isSupported() && cleanUrl.includes('.m3u8')) {
+      this.previewHls = new Hls({
+        enableWorker: true,
+        lowLatencyMode: false,
+        backBufferLength: 10,
+        maxBufferLength: 25,
+        maxBufferSize: 60 * 1024 * 1024,
+        liveSyncDurationCount: 3,
+        liveMaxLatencyDurationCount: 10,
+        fragLoadingTimeOut: 20000,
+        manifestLoadingTimeOut: 15000,
+        fragLoadingMaxRetry: 6,
+        manifestLoadingMaxRetry: 6
+      });
+      this.previewHls.loadSource(cleanUrl);
       this.previewHls.attachMedia(video);
       this.previewHls.on(Hls.Events.MANIFEST_PARSED, () => {
         statusText.textContent = '✅ লাইভ স্ট্রিম সফলভাবে চলছে!';
-        video.play();
+        video.play().catch(() => {});
       });
-      this.previewHls.on(Hls.Events.ERROR, () => {
-        statusText.textContent = '⚠️ লাইভ স্ট্রিম চালাতে সমস্যা হচ্ছে!';
+      this.previewHls.on(Hls.Events.ERROR, (event, data) => {
+        if (data && data.fatal) {
+          if (data.type === Hls.ErrorTypes.NETWORK_ERROR) {
+            try { this.previewHls.startLoad(); } catch (e) {}
+          } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
+            try { this.previewHls.recoverMediaError(); } catch (e) {}
+          } else {
+            statusText.textContent = '⚠️ লাইভ স্ট্রিম চালাতে সমস্যা হচ্ছে!';
+          }
+        }
       });
     } else {
-      video.src = ch.url;
-      video.play();
+      video.src = cleanUrl;
+      video.play().catch(() => {});
     }
 
     document.getElementById('preview-modal').classList.remove('hidden');
