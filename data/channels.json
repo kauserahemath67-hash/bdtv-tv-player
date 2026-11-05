@@ -7919,30 +7919,33 @@
     "logo": "https://images.pluto.tv/channels/62bebc3459624e00078209c3/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62f64ec9eb1045000728cad6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-735",
-    "order": 736
+    "order": 736,
+    "manual_override": true
   },
   {
     "name": "Viafree Movies DK",
     "logo": "https://images.pluto.tv/channels/62bebc3459624e00078209c3/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62bebc3459624e00078209c3.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-736",
-    "order": 737
+    "order": 737,
+    "manual_override": true
   },
   {
     "name": "Viafree Movies NO",
     "logo": "https://images.pluto.tv/channels/62bebc3459624e00078209c3/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62beb44e3afd120007915d1b.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-737",
-    "order": 738
+    "order": 738,
+    "manual_override": true
   },
   {
     "name": "Viasat Kino (576p)",
