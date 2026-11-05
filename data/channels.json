@@ -305,30 +305,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png",
     "category": "Movies",
     "url": "https://iron1.jarvisx1.cfd/amece/usergenrx3oq1kr.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-28",
-    "order": 29
+    "order": 29,
+    "manual_override": true
   },
   {
     "name": "AMC Latin America (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png",
     "category": "Movies",
     "url": "http://15.204.246.24:8080/AMCHD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-29",
-    "order": 30
+    "order": 30,
+    "manual_override": true
   },
   {
     "name": "AMC Latin America Brazil (720p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png",
     "category": "Movies",
     "url": "http://170.83.49.66:8083/AMCHD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-30",
-    "order": 31
+    "order": 31,
+    "manual_override": true
   },
   {
     "name": "Amedia Hit (1080p)",
