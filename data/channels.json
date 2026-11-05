@@ -1442,30 +1442,33 @@
     "logo": "https://i.imgur.com/QtOfzSH.png",
     "category": "Movies",
     "url": "http://777905.live.tvstitch.com/playlist.m3u8?source=aHR0cDovLzE3Ni4xMjIuMTAzLjI0MTo3MDAwL2NoMzQvdHJhY2tzLXYxYTEvbW9uby5tM3U4P2xpdmU9MSZpcD0xNzguMTM2LjQyLjIyMCZpZD05NDg4NjUmc2VjcmV0PW4xdTd1aTA2JnNzbD0xJjIxeW89MCZlPTE3OTA3NTI2Mzgmc3Q9RHdRc3AyN2l6V3J1dllqUEZ5aS1yUQ%3D%3D&master=568",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-133",
-    "order": 134
+    "order": 134,
+    "manual_override": true
   },
   {
     "name": "cine.box",
     "logo": "",
     "category": "Movies",
     "url": "http://212.70.131.37:8000/play/a08b",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-134",
-    "order": 135
+    "order": 135,
+    "manual_override": true
   },
   {
     "name": "Cinecanal (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png",
     "category": "Movies",
     "url": "http://15.204.246.24:8080/CinecanalHD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-135",
-    "order": 136
+    "order": 136,
+    "manual_override": true
   },
   {
     "name": "Cinecanal Pacific (1080p)",
