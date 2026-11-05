@@ -7552,30 +7552,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/SundanceTV_2014.svg/960px-SundanceTV_2014.svg.png",
     "category": "Movies",
     "url": "https://cdn.stmify.com/zapitv/stream/SUNDANCE_TV/sundance_hd.mpd",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-701",
-    "order": 702
+    "order": 702,
+    "manual_override": true
   },
   {
     "name": "Suriyan TV (576p)",
     "logo": "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Suriyan-tv-logo_2000_X_1125_Transpharent.png",
     "category": "Movies",
     "url": "https://stream.sscloud7.com/live/suriyantv/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-702",
-    "order": 703
+    "order": 703,
+    "manual_override": true
   },
   {
     "name": "SYFY (720p)",
     "logo": "https://i.imgur.com/4fMWhUE.png",
     "category": "Movies;Series",
     "url": "http://23.237.104.106:8080/USA_SYFY/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-703",
-    "order": 704
+    "order": 704,
+    "manual_override": true
   },
   {
     "name": "T2 Movies",
