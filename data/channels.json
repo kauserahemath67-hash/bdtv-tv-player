@@ -1,13 +1,24 @@
 [
   {
+    "name": "A Sports",
+    "logo": "https://i.postimg.cc/767hjG0z/channels4-profile-(1).jpg",
+    "url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": true,
+    "id": "ch-1793852321672-2",
+    "manual_override": false,
+    "order": 1
+  },
+  {
     "name": "T Sports",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8",
+    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793852321672-0",
-    "order": 1
+    "order": 2
   },
   {
     "name": "Nagorik Tv",
@@ -17,17 +28,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793852321672-1",
-    "order": 2
-  },
-  {
-    "name": "A Sports",
-    "logo": "https://i.postimg.cc/767hjG0z/channels4-profile-(1).jpg",
-    "url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8",
-    "category": "General",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1793852321672-2",
-    "manual_override": false
+    "order": 3
   },
   {
     "name": "PTV Sports",
