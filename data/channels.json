@@ -5739,30 +5739,33 @@
     "logo": "https://images.pluto.tv/channels/569546031a619b8f07ce6e25/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-62ea3f8a38acc80007072d26.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-532",
-    "order": 533
+    "order": 533,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Humor (Sweden)",
     "logo": "https://images.pluto.tv/channels/61c0974945b45d0007aaa5ac/colorLogoPNG.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-61c0974945b45d0007aaa5ac.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-533",
-    "order": 534
+    "order": 534,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Icons",
     "logo": "https://images.pluto.tv/channels/64b585f84ea480000838e446/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-64b585f84ea480000838e446.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-534",
-    "order": 535
+    "order": 535,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Invasion Alien",
