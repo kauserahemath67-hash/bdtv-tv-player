@@ -414,31 +414,8 @@ class IPTVPlayer {
 
   // 4. Video Events & HLS.js Live Streaming Engine
   bindVideoEvents() {
-    if (this.video) {
-      this.video.preservesPitch = true;
-      if ('mozPreservesPitch' in this.video) this.video.mozPreservesPitch = true;
-      if ('webkitPreservesPitch' in this.video) this.video.webkitPreservesPitch = true;
-    }
-
-    let bufferWaitTimeout = null;
-    this.video.addEventListener('waiting', () => {
-      this.showBuffering(true);
-      // If stalled, pause briefly (2s) to gather a healthy segment before resuming — stops 1-second stutter loop!
-      if (!bufferWaitTimeout) {
-        bufferWaitTimeout = setTimeout(() => {
-          bufferWaitTimeout = null;
-          if (this.video && this.video.paused) {
-            this.video.play().catch(() => {});
-          }
-        }, 2000);
-      }
-    });
-
+    this.video.addEventListener('waiting', () => this.showBuffering(true));
     this.video.addEventListener('playing', () => {
-      if (bufferWaitTimeout) {
-        clearTimeout(bufferWaitTimeout);
-        bufferWaitTimeout = null;
-      }
       this.showBuffering(false);
       this.hideError();
       if (this.video.muted && !this.isUserUnmuted) {
@@ -461,53 +438,6 @@ class IPTVPlayer {
     });
   }
 
-  // Feature 1: Dynamic Speed Catch-up Monitor (Adaptive Bandwidth Matching)
-  // Stream bitrate: ~980 KB/s
-  // User connection: ~900 KB/s
-  // At 0.88x speed: consumes 862 KB/s (< 900 KB/s) -> buffer GROWS instead of depleting!
-  startCatchupMonitor() {
-    this.stopCatchupMonitor();
-    if (this.video) {
-      this.video.preservesPitch = true;
-      if ('mozPreservesPitch' in this.video) this.video.mozPreservesPitch = true;
-      if ('webkitPreservesPitch' in this.video) this.video.webkitPreservesPitch = true;
-    }
-    this._catchupTimer = setInterval(() => {
-      if (!this.video || this.video.paused || this.video.ended) return;
-      let bufferAhead = 0;
-      const ct = this.video.currentTime;
-      const buf = this.video.buffered;
-      for (let i = 0; i < buf.length; i++) {
-        if (buf.start(i) <= ct && buf.end(i) > ct) {
-          bufferAhead = buf.end(i) - ct;
-          break;
-        }
-      }
-
-      let targetRate = 1.0;
-      if (bufferAhead < 6) {
-        targetRate = 0.88; // Emergency: saves 12% bandwidth, builds buffer back up
-      } else if (bufferAhead < 14) {
-        targetRate = 0.93; // Moderate: saves 7% bandwidth, keeps buffer stable
-      } else if (bufferAhead >= 18) {
-        targetRate = 1.0;  // Safe: full speed
-      }
-
-      if (this.video.playbackRate !== targetRate) {
-        console.log(`[CatchupMonitor] Buffer ${bufferAhead.toFixed(1)}s -> setting speed ${targetRate}x`);
-        this.video.playbackRate = targetRate;
-      }
-    }, 800);
-  }
-
-  stopCatchupMonitor() {
-    if (this._catchupTimer) {
-      clearInterval(this._catchupTimer);
-      this._catchupTimer = null;
-    }
-    if (this.video) this.video.playbackRate = 1.0;
-  }
-
   initHLS() {
     if (!Hls.isSupported()) return;
 
@@ -515,21 +445,18 @@ class IPTVPlayer {
       enableWorker: true,
       lowLatencyMode: false,
       backBufferLength: 10,
-      maxBufferLength: 60,
-      maxMaxBufferLength: 90,
-      maxBufferSize: 150 * 1024 * 1024,
-      liveSyncDurationCount: 2.5,      // Target 2.5 chunks (~16s) behind live edge (safe middle of sliding window)
-      liveMaxLatencyDurationCount: 3.5, // Auto-seek forward before chunks 404 if player drops > 22s behind!
+      maxBufferLength: 30,
+      maxMaxBufferLength: 60,
+      maxBufferSize: 60 * 1024 * 1024,
       maxBufferHole: 0.5,
-      highBufferWatchdogPeriod: 1,
-      nudgeOffset: 0.2,
+      highBufferWatchdogPeriod: 2,
+      nudgeOffset: 0.1,
       nudgeMaxRetry: 5,
       fragLoadingTimeOut: 20000,
       manifestLoadingTimeOut: 15000,
-      fragLoadingMaxRetry: 3,          // Don't spend 8 retries on a dead chunk! Fast recovery
-      fragLoadingRetryDelay: 300,
-      manifestLoadingMaxRetry: 6,
-      levelLoadingMaxRetry: 6,
+      fragLoadingMaxRetry: 5,
+      manifestLoadingMaxRetry: 5,
+      levelLoadingMaxRetry: 5,
       startFragPrefetch: true,
       autoStartLoad: true
     });
@@ -537,11 +464,8 @@ class IPTVPlayer {
     this.hls.attachMedia(this.video);
 
     this.hls.on(Hls.Events.MANIFEST_PARSED, () => {
-      // Keep buffering overlay visible until video actually starts rendering
       this.hideError();
       this.attemptPlay();
-      // Feature 1: Start dynamic speed catch-up monitor
-      this.startCatchupMonitor();
     });
 
     this.hls.on(Hls.Events.FRAG_BUFFERED, () => {
@@ -579,18 +503,6 @@ class IPTVPlayer {
 
     this.hls.on(Hls.Events.ERROR, (event, data) => {
       console.warn('HLS Event Error:', data.details, data.fatal ? '[FATAL]' : '[non-fatal]');
-
-      // Auto-skip 404 deleted segments: if a segment is deleted from server sliding window, skip to live edge!
-      if (data.details === Hls.ErrorDetails.FRAG_LOAD_ERROR || data.details === Hls.ErrorDetails.FRAG_LOAD_TIMEOUT) {
-        console.warn('[HLS] Fragment 404 or timeout, skipping to live edge to prevent freeze...');
-        if (this.hls && this.hls.liveSyncPosition) {
-          const gap = Math.abs(this.video.currentTime - this.hls.liveSyncPosition);
-          if (gap > 2) {
-            this.video.currentTime = this.hls.liveSyncPosition;
-          }
-        }
-        try { this.hls.startLoad(); } catch(e) {}
-      }
 
       if (data.fatal) {
         switch (data.type) {
@@ -742,9 +654,6 @@ class IPTVPlayer {
     if (index < 0 || index >= this.filteredChannels.length) return;
     this.currentIndex = index;
     const channel = this.filteredChannels[index];
-
-    // Stop catch-up monitor from previous channel first
-    this.stopCatchupMonitor();
 
     // 1. Instantly STOP old stream & show buffering overlay immediately (no blank black freeze!)
     this.showBuffering(true);
