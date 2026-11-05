@@ -4828,10 +4828,11 @@
     "logo": "",
     "category": "Movies",
     "url": "https://latinohls.persiana.live/hls/stream.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-449",
-    "order": 450
+    "order": 450,
+    "manual_override": true
   },
   {
     "name": "Persiana Plus",
@@ -4858,20 +4859,22 @@
     "logo": "https://images.pluto.tv/channels/66dad50215d2c60008d7afbd/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-66dad50215d2c60008d7afbd.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-452",
-    "order": 453
+    "order": 453,
+    "manual_override": true
   },
   {
     "name": "Pluto TV 90's Classics",
     "logo": "https://images.pluto.tv/channels/66b4990746762a00084c2f78/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-66b4990746762a00084c2f78.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-453",
-    "order": 454
+    "order": 454,
+    "manual_override": true
   },
   {
     "name": "Pluto TV A La Mexicana",
