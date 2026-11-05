@@ -5046,30 +5046,33 @@
     "logo": "https://images.pluto.tv/channels/609059dc63be6e0007b4eca6/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-609059dc63be6e0007b4eca6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-469",
-    "order": 470
+    "order": 470,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Classicos",
     "logo": "https://images.pluto.tv/channels/5fa1612a669ba0000702017b/colorLogoPNG_1733440556804.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5fa1612a669ba0000702017b.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-470",
-    "order": 471
+    "order": 471,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Comedia (Germany)",
     "logo": "https://images.pluto.tv/channels/5f1ac8099c49f600076579b2/colorLogoPNG_1769092378955.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f1ac8099c49f600076579b2.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-471",
-    "order": 472
+    "order": 472,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Comedia (United States)",
