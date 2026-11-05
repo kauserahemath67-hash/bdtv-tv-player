@@ -308,8 +308,8 @@ class AdminDashboard {
       });
 
       // Move Up / Down
-      tr.querySelector('.btn-move-up').addEventListener('click', () => this.moveChannel(idx, -1));
-      tr.querySelector('.btn-move-down').addEventListener('click', () => this.moveChannel(idx, 1));
+      tr.querySelector('.btn-move-up').addEventListener('click', () => this.moveChannelById(ch.id, -1));
+      tr.querySelector('.btn-move-down').addEventListener('click', () => this.moveChannelById(ch.id, 1));
 
       // Edit
       tr.querySelector('.btn-edit').addEventListener('click', () => this.openEditChannel(ch));
@@ -337,7 +337,9 @@ class AdminDashboard {
     }
   }
 
-  async moveChannel(index, delta) {
+  async moveChannelById(id, delta) {
+    const index = this.channels.findIndex(c => c.id === id);
+    if (index < 0) return;
     const newIdx = index + delta;
     if (newIdx < 0 || newIdx >= this.channels.length) return;
 
@@ -452,6 +454,7 @@ class AdminDashboard {
       e.preventDefault();
       const id = document.getElementById('channel-edit-id').value;
       const statusSelect = document.getElementById('form-ch-status');
+      const existingCh = id ? this.channels.find(c => c.id === id) : null;
       const data = {
         id: id || undefined,
         name: document.getElementById('form-ch-name').value.trim(),
@@ -460,7 +463,8 @@ class AdminDashboard {
         url: document.getElementById('form-ch-url').value.trim(),
         status: statusSelect ? statusSelect.value : 'ONLINE',
         is_pinned: document.getElementById('form-ch-pinned').checked,
-        manual_override: document.getElementById('form-ch-override').checked
+        manual_override: document.getElementById('form-ch-override').checked,
+        order: existingCh && existingCh.order !== undefined ? existingCh.order : undefined
       };
 
       try {

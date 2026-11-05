@@ -69,14 +69,15 @@ function parseUniversal(content, defaultName = 'Live Channel') {
       for (const item of list) {
         const name = item.name || item.title || item.channel || item.tvg_name || 'Unnamed Channel';
         const logo = item.image || item.logo || item.icon || item.tvg_logo || item.poster || '';
-        const url = item.url || item.stream || item.link || item.source || item.file || '';
+        let url = (item.url || item.stream || item.link || item.source || item.file || '').trim();
+        url = url.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
         const category = item.category || item.group || item.genre || 'General';
         if (url) {
           channels.push({
-            name,
-            logo,
+            name: name.trim(),
+            logo: (logo || '').trim(),
             url,
-            category,
+            category: category.trim(),
             status: 'ONLINE',
             is_pinned: false
           });
@@ -106,14 +107,18 @@ function parseUniversal(content, defaultName = 'Live Channel') {
           category: groupMatch ? groupMatch[1].trim() : 'General'
         };
       } else if (!line.startsWith('#') && current) {
-        channels.push({
-          name: current.name,
-          logo: current.logo,
-          category: current.category,
-          url: line,
-          status: 'ONLINE',
-          is_pinned: false
-        });
+        let streamUrl = line.trim();
+        streamUrl = streamUrl.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+        if (streamUrl.startsWith('http://') || streamUrl.startsWith('https://') || streamUrl.startsWith('hls://') || streamUrl.startsWith('rtmp://')) {
+          channels.push({
+            name: current.name.trim(),
+            logo: (current.logo || '').trim(),
+            category: (current.category || 'General').trim(),
+            url: streamUrl,
+            status: 'ONLINE',
+            is_pinned: false
+          });
+        }
         current = null;
       }
     }
@@ -261,35 +266,37 @@ module.exports = async (req, res) => {
 
         for (const incoming of parsed.channels) {
           if (!incoming.url) continue;
+          const incomingCleanUrl = (incoming.url || '').replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '').trim();
           const normIncomingName = (incoming.name || '').trim().toLowerCase();
+          if (!normIncomingName) continue;
 
-          // Find match by name or by URL
-          let match = null;
-          if (normIncomingName) {
-            match = existing.find(c => (c.name || '').trim().toLowerCase() === normIncomingName);
-          }
-          if (!match && incoming.url) {
-            match = existing.find(c => c.url && c.url.trim() === incoming.url.trim());
-          }
+          // STRICT MATCH BY NAME ONLY — NEVER match across different channel names by URL!
+          // Matching by URL was causing Channel A's logo and Channel B's link to cross-contaminate.
+          const match = existing.find(c => (c.name || '').trim().toLowerCase() === normIncomingName);
 
           if (match) {
-            // Update URL and other metadata if present, preserve existing id, order, is_pinned
-            if (match.url !== incoming.url) {
-              match.url = incoming.url;
+            // If admin set manual_override on this channel, protect it from automated playlist overwrites
+            if (match.manual_override) continue;
+
+            // Update stream URL safely
+            if (incomingCleanUrl && match.url !== incomingCleanUrl) {
+              match.url = incomingCleanUrl;
               updatedCount++;
             }
-            if (incoming.logo && !match.logo) match.logo = incoming.logo;
+            // Update logo ONLY if incoming has a valid logo and existing is missing or from the same channel
+            if (incoming.logo && (!match.logo || match.logo.includes('placeholder'))) {
+              match.logo = incoming.logo;
+            }
             if (incoming.category && (!match.category || match.category === 'General')) {
               match.category = incoming.category;
             }
-            // Preserve existing status: if channel was marked OFFLINE, keep it OFFLINE!
-            // Never automatically reactivate an OFFLINE channel.
+            // Preserve existing status and manual_override
           } else {
             // Genuinely new channel
             existing.push({
               id: 'ch-' + Date.now() + '-' + addedCount,
               name: incoming.name || 'Channel ' + (existing.length + 1),
-              url: incoming.url,
+              url: incomingCleanUrl,
               logo: incoming.logo || '',
               category: incoming.category || 'General',
               order: existing.length + 1,

@@ -173,7 +173,11 @@ async function saveChannel(channel) {
   if (!channel.id) channel.id = 'ch-' + Date.now();
   const idx = current.findIndex(c => c.id === channel.id);
   if (idx >= 0) {
+    const existingOrder = current[idx].order;
     current[idx] = { ...current[idx], ...channel };
+    if (channel.order === undefined && existingOrder !== undefined) {
+      current[idx].order = existingOrder;
+    }
   } else {
     channel.order  = channel.order  || current.length + 1;
     channel.status = channel.status || 'ONLINE';
@@ -255,10 +259,13 @@ async function importChannels(newChannels) {
 async function reorderChannels(orderedIds) {
   invalidateChannelCache();
   const current = await getChannels();
-  orderedIds.forEach((id, i) => {
-    const ch = current.find(c => c.id === id);
-    if (ch) ch.order = i + 1;
-  });
+  if (Array.isArray(orderedIds)) {
+    orderedIds.forEach((item, i) => {
+      const targetId = (item && typeof item === 'object') ? item.id : item;
+      const ch = current.find(c => c.id === targetId);
+      if (ch) ch.order = i + 1;
+    });
+  }
   const sorted = current.sort((a, b) => (a.order || 0) - (b.order || 0));
   await ghCommit(GITHUB_CHANNELS_PATH, sorted, 'Reorder channels');
   _channelCache.data    = sorted;
