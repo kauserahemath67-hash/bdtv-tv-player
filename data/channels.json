@@ -3434,10 +3434,11 @@
     "logo": "https://i.imgur.com/LL8GyCh.png",
     "category": "Movies",
     "url": "http://188.113.190.12/329/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-318",
-    "order": 319
+    "order": 319,
+    "manual_override": true
   },
   {
     "name": "Indywood TV (720p)",
@@ -3464,20 +3465,22 @@
     "logo": "https://www.tvchinese.net/uploads/tv/jsys.jpg",
     "category": "Movies",
     "url": "http://223.110.243.134/PLTV/4/224/3221225937/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-321",
-    "order": 322
+    "order": 322,
+    "manual_override": true
   },
   {
     "name": "Jiangxi Movie Channel",
     "logo": "https://www.tvchinese.net/uploads/tv/jiangxi.jpg",
     "category": "Movies",
     "url": "https://play-live-hls.jxtvcn.com.cn/live-city/tv_jxtv4.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-322",
-    "order": 323
+    "order": 323,
+    "manual_override": true
   },
   {
     "name": "Jilin Movie Channel",
