@@ -7215,30 +7215,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "category": "Movies;Series",
     "url": "http://190.61.47.54:8000/play/a035/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-670",
-    "order": 671
+    "order": 671,
+    "manual_override": true
   },
   {
     "name": "Star Channel (Slovenia)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "category": "Movies",
     "url": "http://92.36.202.5:10001/play/a01s",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-671",
-    "order": 672
+    "order": 672,
+    "manual_override": true
   },
   {
     "name": "Star Channel Latin America (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "category": "Movies;Series",
     "url": "http://15.204.246.24:8080/STARCHANNELHD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-672",
-    "order": 673
+    "order": 673,
+    "manual_override": true
   },
   {
     "name": "Star Channel Latin America South",
