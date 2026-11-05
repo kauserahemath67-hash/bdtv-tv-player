@@ -2408,20 +2408,22 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bcomedy.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_filmbox_family_atk_1200/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-223",
-    "order": 224
+    "order": 224,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Comedy Magyar (576p)",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bcomedy.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_filmbox_family_hun_atk_1200/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-224",
-    "order": 225
+    "order": 225,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Comedy Romania",
@@ -2438,10 +2440,11 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bemotion.png",
     "category": "Movies",
     "url": "http://92.114.85.87:8008/play/a008/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-226",
-    "order": 227
+    "order": 227,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Emotion Adria",
