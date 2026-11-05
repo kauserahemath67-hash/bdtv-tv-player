@@ -7377,30 +7377,33 @@
     "logo": "https://images.pluto.tv/channels/65c69bbfd77d450008c7ffee/colorLogoPNG_1758310416057.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-65c69bbfd77d450008c7ffee.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-685",
-    "order": 686
+    "order": 686,
+    "manual_override": true
   },
   {
     "name": "Star Trek: The Next Generation (Germany)",
     "logo": "https://images.pluto.tv/channels/69776ce979545c21a1220bff/colorLogoPNG_1769434849537.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-69776ce979545c21a1220bff.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-686",
-    "order": 687
+    "order": 687,
+    "manual_override": true
   },
   {
     "name": "Star Trek: The Next Generation (United States)",
     "logo": "https://images.pluto.tv/channels/695c32e61ca20bb8ca802eb9/colorLogoPNG_1768440087394.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-695c32e61ca20bb8ca802eb9.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-687",
-    "order": 688
+    "order": 688,
+    "manual_override": true
   },
   {
     "name": "Star Trek: The Original Series (Germany)",
