@@ -2884,30 +2884,33 @@
     "logo": "https://gemgroup.tv/assets/images/channels/icon_16.png",
     "category": "Movies",
     "url": "https://ca-rt.onetv.app/gem/index-0.m3u8?token=onetv202",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-267",
-    "order": 268
+    "order": 268,
+    "manual_override": true
   },
   {
     "name": "GEM TV +",
     "logo": "https://gemgroup.tv/assets/images/channels/icon_17.png",
     "category": "Movies",
     "url": "https://ca-rt.onetv.app/gemtvplus/index-0.m3u8?token=onetv202",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-268",
-    "order": 269
+    "order": 269,
+    "manual_override": true
   },
   {
     "name": "Ghost TV (712p) [Not 24/7]",
     "logo": "https://i.imgur.com/ZVO8GVI.png",
     "category": "Movies",
     "url": "https://stmv.video.expressolider.com.br/ghostv/ghostv/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-269",
-    "order": 270
+    "order": 270,
+    "manual_override": true
   },
   {
     "name": "Girlfriends Films",
