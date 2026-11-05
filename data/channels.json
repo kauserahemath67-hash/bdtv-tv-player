@@ -2276,30 +2276,33 @@
     "logo": "https://i.imgur.com/Kn9LX8i.png",
     "category": "Movies",
     "url": "http://86.87.15.10:8008/play/a01n/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-211",
-    "order": 212
+    "order": 212,
+    "manual_override": true
   },
   {
     "name": "Film4",
     "logo": "https://i.imgur.com/X5N8CHf.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/film4_hun/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-212",
-    "order": 213
+    "order": 213,
+    "manual_override": true
   },
   {
     "name": "Film & Arts (1080p)",
     "logo": "https://i.imgur.com/ukdmEKD.png",
     "category": "Movies",
     "url": "http://15.204.246.24:8080/FilmArtsHD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-213",
-    "order": 214
+    "order": 214,
+    "manual_override": true
   },
   {
     "name": "Film Cafe",
