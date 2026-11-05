@@ -6867,20 +6867,22 @@
     "logo": "https://i.imgur.com/88kRsW3.png",
     "category": "Movies",
     "url": "http://178.33.11.6:8696/live/rtshshqip/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-637",
-    "order": 638
+    "order": 638,
+    "manual_override": true
   },
   {
     "name": "Runtime (720p)",
     "logo": "https://i.imgur.com/2USCMvP.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6086d3f420fc8500075f8dbf.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-638",
-    "order": 639
+    "order": 639,
+    "manual_override": true
   },
   {
     "name": "Runtime Espanol (720p)",
@@ -6897,10 +6899,11 @@
     "logo": "https://i.imgur.com/w0ZE9QJ.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/208/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-640",
-    "order": 641
+    "order": 641,
+    "manual_override": true
   },
   {
     "name": "Russkiy Detektiv (576p)",
