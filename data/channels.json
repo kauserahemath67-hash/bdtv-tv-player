@@ -4947,30 +4947,33 @@
     "logo": "https://images.pluto.tv/channels/661f8f01801af800083d9d81/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-661f8f01801af800083d9d81.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-460",
-    "order": 461
+    "order": 461,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Bang Bang",
     "logo": "https://images.pluto.tv/channels/663b9dc7cb3ea10008f1a0ce/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-663b9dc7cb3ea10008f1a0ce.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-461",
-    "order": 462
+    "order": 462,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Bud & Terence (Germany)",
     "logo": "https://images.pluto.tv/channels/64be7398e4391c0008cdedfe/colorLogoPNG_1776936976930.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-64be7398e4391c0008cdedfe.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-462",
-    "order": 463
+    "order": 463,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Bud & Terence (Sweden)",
