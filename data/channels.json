@@ -5805,30 +5805,33 @@
     "logo": "https://images.pluto.tv/channels/655ca7aa635c3c000855d655/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-655ca99dfbc15b00081f209c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-538",
-    "order": 539
+    "order": 539,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Komedi",
     "logo": "https://images.pluto.tv/channels/61c0b36d18447e000717d686/colorLogoPNG.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-61c0b36d18447e000717d686.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-539",
-    "order": 540
+    "order": 540,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Komedie",
     "logo": "https://images.pluto.tv/channels/61c1e3a679a4390007c78136/colorLogoPNG.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-61c1e3a679a4390007c78136.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-540",
-    "order": 541
+    "order": 541,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Kult Comedies",
