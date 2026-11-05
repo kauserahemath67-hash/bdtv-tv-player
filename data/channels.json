@@ -3142,30 +3142,33 @@
     "logo": "https://static.wikia.nocookie.net/logopedia/images/6/6f/HBO_3_%28Metallic%29.png/revision/latest/scale-to-width-down/1000?cb=20190715122202",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_hbo3_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-291",
-    "order": 292
+    "order": 292,
+    "manual_override": true
   },
   {
     "name": "HBO (Czech Republic)",
     "logo": "https://static.wikia.nocookie.net/logopedia/images/a/a9/HBO_Silver_glossy_logo.svg/revision/latest?cb=20260529155924",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_hbo_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-292",
-    "order": 293
+    "order": 293,
+    "manual_override": true
   },
   {
     "name": "HBO (United States) (720p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png",
     "category": "Movies;Series",
     "url": "http://tvsen7.aynascope.net/hbo/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-293",
-    "order": 294
+    "order": 294,
+    "manual_override": true
   },
   {
     "name": "HBO Asia HD (1080p)",
