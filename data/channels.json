@@ -5277,30 +5277,33 @@
     "logo": "https://images.pluto.tv/channels/5ddc4e8bcbb9010009b4e84f/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5ddc4e8bcbb9010009b4e84f.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-490",
-    "order": 491
+    "order": 491,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cinema Italiano",
     "logo": "https://images.pluto.tv/channels/608aa7d8359b270007861489/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-608aa7d8359b270007861489.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-491",
-    "order": 492
+    "order": 492,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cinema Orientale",
     "logo": "https://images.pluto.tv/channels/6786235bd648bf0008c2780a/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6786235bd648bf0008c2780a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-492",
-    "order": 493
+    "order": 493,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Comedias Romanticas",
