@@ -3209,30 +3209,33 @@
     "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/HBO_Hits_Logo.svg/960px-HBO_Hits_Logo.svg.png",
     "category": "Movies;Series",
     "url": "http://tvsen7.aynascope.net/hbo2/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-297",
-    "order": 298
+    "order": 298,
+    "manual_override": true
   },
   {
     "name": "HBO Hits Asia HD (1080p)",
     "logo": "https://i.imgur.com/CTjmocc.png",
     "category": "Movies",
     "url": "http://202.150.165.66:8088/play/102-HBOHits/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-298",
-    "order": 299
+    "order": 299,
+    "manual_override": true
   },
   {
     "name": "HBO Mundi Latin America",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/960px-HBO_Mundi.svg.png",
     "category": "Movies",
     "url": "https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/cinemax.stream/chunks.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-299",
-    "order": 300
+    "order": 300,
+    "manual_override": true
   },
   {
     "name": "HBO Signature Asia HD (1080p)",
