@@ -6135,30 +6135,33 @@
     "logo": "https://images.pluto.tv/channels/66166cb1307fa30008f275e7/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-5f2817d3d7573a00080f9175.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-568",
-    "order": 569
+    "order": 569,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Serie Sci-Fi",
     "logo": "https://images.pluto.tv/channels/67ed14aaf7c5d70b9089c3bf/colorLogoPNG_1750259768860.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-67ed14aaf7c5d70b9089c3bf.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-569",
-    "order": 570
+    "order": 570,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Spotlight",
     "logo": "https://i.imgur.com/UmuJkVB.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5ba3fb9c4b078e0f37ad34e8.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-570",
-    "order": 571
+    "order": 571,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Staff Picks",
