@@ -5211,30 +5211,33 @@
     "logo": "https://images.pluto.tv/channels/5fa991b1f09e020007e78626/colorLogoPNG_1748874366972.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5fa991b1f09e020007e78626.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-484",
-    "order": 485
+    "order": 485,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Inspirador",
     "logo": "https://images.pluto.tv/channels/6806d519fea7414f33f57016/colorLogoPNG_1746817663597.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6806d519fea7414f33f57016.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-485",
-    "order": 486
+    "order": 486,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Romance",
     "logo": "https://images.pluto.tv/channels/5f171f988ab9780007fa95ea/colorLogoPNG_1771344977802.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f171f988ab9780007fa95ea.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-486",
-    "order": 487
+    "order": 487,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Romance LatAm",
