@@ -6366,10 +6366,11 @@
     "logo": "https://images.pluto.tv/channels/65786888b228b7000843ad9a/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-65786888b228b7000843ad9a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-589",
-    "order": 590
+    "order": 590,
+    "manual_override": true
   },
   {
     "name": "Pocket Films",
@@ -6386,10 +6387,11 @@
     "logo": "https://i.imgur.com/wGH6shZ.png",
     "category": "Movies",
     "url": "http://92.63.196.180:8080/live/74173747597177/7vfxky4rjx3j/10208.m3u8?token=Q0FaWEpZFFsXAwNWUFMEBwJXAwMDVlpTBgVTVwEHAQNeWgoACVVXVQAVGEZGFUdTUl9qWwIVAlBSAQBdGENHQ10RbVBdEwxDAgANUAJVFxoRRlxfAxUCUU4RQA1QQwheTQ9eFRtUThVQRVoFWT5RU0VbVldEDVYUDl8cRlsPbVRdDlNXXRMMQwQVGEZcEkUUCVxAXgobGgMLR0IFQAQQClYWXlUVE1UOQFlAFkxDDxRjfhceRFJAFQddQw1bDxAKGg4BTAETGkNcRGsWUBJBRFZTWFcUFQJDUhEcRlkASm9bDFxXXFJCCFpZR0YPQwQUHxBYXQheTA4QbEANUEMIXk0PXkQ=",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-591",
-    "order": 592
+    "order": 592,
+    "manual_override": true
   },
   {
     "name": "Popcorn Central (1080p)",
@@ -6406,10 +6408,11 @@
     "logo": "https://i.imgur.com/ck4aLBP.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/421/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-593",
-    "order": 594
+    "order": 594,
+    "manual_override": true
   },
   {
     "name": "Pro Cinema (1080p)",
