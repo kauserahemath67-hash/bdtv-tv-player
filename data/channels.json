@@ -5838,30 +5838,33 @@
     "logo": "https://images.pluto.tv/channels/66337de656fc840008ff7a65/colorLogoPNG.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-66337de656fc840008ff7a65.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-541",
-    "order": 542
+    "order": 542,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Kultfilm",
     "logo": "https://images.pluto.tv/channels/63dbe7ed51f5d000083e9499/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-63dbe7ed51f5d000083e9499.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-542",
-    "order": 543
+    "order": 543,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Kultfilme",
     "logo": "https://images.pluto.tv/channels/5dde47b63585b500099f74ec/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dde47b63585b500099f74ec.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-543",
-    "order": 544
+    "order": 544,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Kultfilmer",
