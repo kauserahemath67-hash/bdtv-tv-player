@@ -3198,8 +3198,9 @@
     "logo": "https://assets-prod.services.toffeelive.com/I4fIpqEBJIOHmUelirBF/posters/bfc44ba4-b36a-4742-92ce-cb148397bc07.png",
     "category": "Sports",
     "order": 317,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1793910394730-55",
