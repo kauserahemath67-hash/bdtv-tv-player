@@ -566,30 +566,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_axn/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-52",
-    "order": 53
+    "order": 53,
+    "manual_override": true
   },
   {
     "name": "AXN CEE Romania",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies",
     "url": "https://cronos.mangora1.cfd/axy/usergend3h5jkc9rnd.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-53",
-    "order": 54
+    "order": 54,
+    "manual_override": true
   },
   {
     "name": "AXN Crime",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/AXN_Crime_-_Logo.png/960px-AXN_Crime_-_Logo.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/viasat_film/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-54",
-    "order": 55
+    "order": 55,
+    "manual_override": true
   },
   {
     "name": "AXN Latin America (1080p)",
