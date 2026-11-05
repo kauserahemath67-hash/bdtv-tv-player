@@ -5508,30 +5508,33 @@
     "logo": "https://images.pluto.tv/channels/61c09515fbb4b50007d221f5/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-61c09515fbb4b50007d221f5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-511",
-    "order": 512
+    "order": 512,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film (Sweden) NO",
     "logo": "https://images.pluto.tv/channels/61c09515fbb4b50007d221f5/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-61c1e1e55deef000075aed0c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-512",
-    "order": 513
+    "order": 513,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film Ancora Piu Romantici",
     "logo": "https://images.pluto.tv/channels/699d87093d5dba980705cca8/colorLogoPNG_1777274173528.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-699d87093d5dba980705cca8.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-513",
-    "order": 514
+    "order": 514,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film Azione",
