@@ -4083,30 +4083,33 @@
     "logo": "https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6304854ac6073d0007259fe1.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-379",
-    "order": 380
+    "order": 380,
+    "manual_override": true
   },
   {
     "name": "Merry Christmas from Viafree DK",
     "logo": "https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-63048147b09fd60007847a08.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-380",
-    "order": 381
+    "order": 381,
+    "manual_override": true
   },
   {
     "name": "Merry Christmas from Viafree NO",
     "logo": "https://images.pluto.tv/channels/63048147b09fd60007847a08/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-63047bd6b0726b000795341d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-381",
-    "order": 382
+    "order": 382,
+    "manual_override": true
   },
   {
     "name": "Meta Film TV",
