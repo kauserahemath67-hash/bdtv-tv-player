@@ -374,10 +374,11 @@
     "logo": "https://i.imgur.com/2JzlorD.png",
     "category": "Sports",
     "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793907317858-37",
-    "order": 38
+    "order": 38,
+    "manual_override": true
   },
   {
     "name": "Vokta TV (720p)",
