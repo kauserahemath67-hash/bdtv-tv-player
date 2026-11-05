@@ -1,5 +1,15 @@
 [
   {
+    "name": "T Sports",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": true,
+    "id": "ch-1793851809313-0",
+    "manual_override": false
+  },
+  {
     "name": "Bijoy TV",
     "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
     "category": "Action",
@@ -793,24 +803,14 @@
     "order": 79
   },
   {
-    "name": "T Sports",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
-    "category": "General",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1793851809313-0",
-    "manual_override": false
-  },
-  {
     "name": "Nagorik Tv",
     "logo": "https://i.imgur.com/2cpHJKq.png",
     "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
     "category": "General",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793851809313-1",
-    "order": 81
+    "manual_override": false
   },
   {
     "name": "A Sports",
