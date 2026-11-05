@@ -1,5 +1,14 @@
 [
   {
+    "name": "bd76t2s1w9",
+    "url": "https://rslivetv.pages.dev/bd76t2s1w9.json",
+    "format": "JSON Playlist",
+    "channelCount": 82,
+    "active": true,
+    "id": "pl-1793872227989",
+    "savedAt": "2026-11-05T09:50:27.990Z"
+  },
+  {
     "name": "https://iptv-org.github.io/iptv/categories/movies.m3u",
     "url": "https://iptv-org.github.io/iptv/categories/movies.m3u",
     "format": "M3U Playlist",
