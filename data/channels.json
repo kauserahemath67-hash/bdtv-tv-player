@@ -5112,30 +5112,33 @@
     "logo": "https://images.pluto.tv/channels/62545ed3dab4380007582f7c/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62545ed3dab4380007582f7c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-475",
-    "order": 476
+    "order": 476,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Crime",
     "logo": "https://images.pluto.tv/channels/6479ff764f5ba5000878dfe2/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6479ff764f5ba5000878dfe2.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-476",
-    "order": 477
+    "order": 477,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Crimen",
     "logo": "https://images.pluto.tv/channels/624af40c004f8000079b784d/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-624af40c004f8000079b784d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-477",
-    "order": 478
+    "order": 478,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine de autor",
