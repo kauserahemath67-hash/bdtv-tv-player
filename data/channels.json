@@ -5013,30 +5013,33 @@
     "logo": "https://images.pluto.tv/channels/645a309c5a0cd5000873f609/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-645a309c5a0cd5000873f609.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-466",
-    "order": 467
+    "order": 467,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Christmas tutto l'anno",
     "logo": "https://images.pluto.tv/channels/612e05b885183d0007958101/colorLogoPNG_1770018716998.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-612e05b885183d0007958101.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-467",
-    "order": 468
+    "order": 468,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Accion",
     "logo": "https://images.pluto.tv/channels/5dcb62e63d4d8f0009f36881/colorLogoPNG_1760378798093.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dcb62e63d4d8f0009f36881.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-468",
-    "order": 469
+    "order": 469,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cine Clasico",
