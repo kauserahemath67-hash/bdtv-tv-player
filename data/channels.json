@@ -818,5 +818,2445 @@
     "is_pinned": false,
     "id": "ch-1793911241194-81",
     "order": 82
+  },
+  {
+    "name": "Animal Planet HD",
+    "logo": "https://assets-prod.services.toffeelive.com/Ni61-JQBv9knK3AHcDYc/posters/c16e8633-6b2a-401a-9cd6-ac26a4fcdedb.webp",
+    "category": "Adventure",
+    "url": "https://alixbd.com/playlistconfig/channel/72.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-2",
+    "order": 83
+  },
+  {
+    "name": "Discovery HD",
+    "logo": "https://assets-prod.services.toffeelive.com/KC6x-JQBv9knK3AHqjYc/posters/55e554f1-dbbb-47bd-97fe-fca878726c4c.webp",
+    "category": "Adventure",
+    "url": "https://alixbd.com/playlistconfig/channel/74.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-4",
+    "order": 84
+  },
+  {
+    "name": "Discovery Turbo",
+    "logo": "https://assets-prod.services.toffeelive.com/Ay6s-JQBv9knK3AHJTY1/posters/e8f65578-e82d-4e4a-a1ff-073becc5bd71.webp",
+    "category": "Adventure",
+    "url": "https://alixbd.com/playlistconfig/channel/77.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-5",
+    "order": 85
+  },
+  {
+    "name": "Zing",
+    "logo": "https://assets-prod.services.toffeelive.com/DK8dd5YBrjBfS2_Ru22e/posters/a4e57fd0-1853-4540-a9bc-0265ee43b5cb.png",
+    "category": "Comedy",
+    "url": "https://alixbd.com/playlistconfig/channel/49.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-6",
+    "order": 86
+  },
+  {
+    "name": "CGTN",
+    "logo": "https://assets-prod.services.toffeelive.com/DYMI_58BJIOHmUelm3aK/posters/d8436322-804a-47b6-9a3f-62764c4622d5.png",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/34.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-8",
+    "order": 87
+  },
+  {
+    "name": "Channel News Asia",
+    "logo": "https://assets-prod.services.toffeelive.com/rYOv_p8BJIOHmUelrnXh/posters/d537453f-7e5b-45f3-9b52-42f6f65950c8.png",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/28.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-9",
+    "order": 88
+  },
+  {
+    "name": "CNN",
+    "logo": "https://assets-prod.services.toffeelive.com/VC6Q-JQBv9knK3AHhTXt/posters/63e79814-8fcf-4c3e-bb66-408b2a402613.webp",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/9.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-10",
+    "order": 89
+  },
+  {
+    "name": "DW",
+    "logo": "https://assets-prod.services.toffeelive.com/7oPt_p8BJIOHmUelhXWj/posters/d6328092-9437-4806-8dc7-d00732d56832.png",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/30.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-11",
+    "order": 90
+  },
+  {
+    "name": "France 24",
+    "logo": "https://assets-prod.services.toffeelive.com/G4ML_58BJIOHmUelNXZr/posters/becc2fba-4ed5-4f43-af2d-3c1ea2b4ee57.png",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/33.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-12",
+    "order": 91
+  },
+  {
+    "name": "Investigation Discovery HD",
+    "logo": "https://assets-prod.services.toffeelive.com/ay7uX5UBv9knK3AHs6TI/posters/deb3c186-b2e1-4a91-aafb-d86f9128b851.png",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/78.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-13",
+    "order": 92
+  },
+  {
+    "name": "Russia Today",
+    "logo": "https://assets-prod.services.toffeelive.com/CNT2_p8BalKyvLQIBSUG/posters/1e937055-a014-4274-bb69-b1b56d18c434.png",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/32.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-14",
+    "order": 93
+  },
+  {
+    "name": "Saudi Quran",
+    "logo": "https://assets-prod.services.toffeelive.com/FdT9_p8BalKyvLQIpCUP/posters/6b39f2c6-6fe8-4720-a986-379e09968b5b.png",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/37.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-15",
+    "order": 94
+  },
+  {
+    "name": "Saudi Sunnah",
+    "logo": "https://assets-prod.services.toffeelive.com/JNQA_58BalKyvLQIhiVD/posters/11e764bf-7969-4dcb-a94c-937a3bde2a7f.png",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/36.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-16",
+    "order": 95
+  },
+  {
+    "name": "TRT World",
+    "logo": "https://assets-prod.services.toffeelive.com/1YPq_p8BJIOHmUelSHXc/posters/f65b0273-0f23-4b56-93dd-417224369105.png",
+    "category": "Documentary",
+    "url": "https://alixbd.com/playlistconfig/channel/29.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-17",
+    "order": 96
+  },
+  {
+    "name": "&TV HD",
+    "logo": "https://assets-prod.services.toffeelive.com/5cwRnZUBtpl-Sbt7wWrN/posters/5779ade3-e9ba-4107-b3da-bae6f891500a.png",
+    "category": "Drama",
+    "url": "https://alixbd.com/playlistconfig/channel/79.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-18",
+    "order": 97
+  },
+  {
+    "name": "HUM",
+    "logo": "https://assets-prod.services.toffeelive.com/0C63X5UBv9knK3AHxaOs/posters/6dce1143-1045-4fec-ac4f-86d2bfb32447.png",
+    "category": "Drama",
+    "url": "https://alixbd.com/playlistconfig/channel/50.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-19",
+    "order": 98
+  },
+  {
+    "name": "HUM Masala",
+    "logo": "https://assets-prod.services.toffeelive.com/T9O9X5UBm1RY_In7UXFv/posters/30e0f372-eb3e-4cf9-be1e-b196a40c2fc7.png",
+    "category": "Drama",
+    "url": "https://alixbd.com/playlistconfig/channel/51.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-20",
+    "order": 99
+  },
+  {
+    "name": "HUM Sitaray",
+    "logo": "https://assets-prod.services.toffeelive.com/WtPBX5UBm1RY_In7mXEU/posters/188d51f6-aeef-41ed-835b-e25ff911e209.png",
+    "category": "Drama",
+    "url": "https://alixbd.com/playlistconfig/channel/52.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-21",
+    "order": 100
+  },
+  {
+    "name": "Zee Anmol",
+    "logo": "https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f9c07bfc-9fde-40d0-91a1-e28c5840f400.png",
+    "category": "Drama",
+    "url": "https://alixbd.com/playlistconfig/channel/48.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-23",
+    "order": 101
+  },
+  {
+    "name": "Zee TV HD",
+    "logo": "https://assets-prod.services.toffeelive.com/ltPQX5UBm1RY_In7b3F1/posters/d039d9df-9877-4969-a0b6-56888ebe2385.png",
+    "category": "Drama",
+    "url": "https://alixbd.com/playlistconfig/channel/58.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-25",
+    "order": 102
+  },
+  {
+    "name": "Sony BBC Earth HD",
+    "logo": "https://assets-prod.services.toffeelive.com/MC6C-JQBv9knK3AHUzUT/posters/a8c32fd3-2ba7-437c-85ac-de2f1b2fa6ca.webp",
+    "category": "Family",
+    "url": "https://alixbd.com/playlistconfig/channel/73.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-26",
+    "order": 103
+  },
+  {
+    "name": "Sony Entertainment Television",
+    "logo": "https://assets-prod.services.toffeelive.com/2S5t-JQBv9knK3AHJTTW/posters/ae74f943-77c9-4395-a16c-8ed84b439080.webp",
+    "category": "Family",
+    "url": "https://alixbd.com/playlistconfig/channel/55.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-27",
+    "order": 104
+  },
+  {
+    "name": "Sony Entertainment Television HD",
+    "logo": "https://assets-prod.services.toffeelive.com/-y50-JQBv9knK3AHLzSn/posters/0ab48ac0-ec84-4ca2-9601-746ff3cb809e.webp",
+    "category": "Family",
+    "url": "https://alixbd.com/playlistconfig/channel/54.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-28",
+    "order": 105
+  },
+  {
+    "name": "Sony SAB HD",
+    "logo": "https://assets-prod.services.toffeelive.com/ES55-JQBv9knK3AHNDWC/posters/13411be9-62b9-4a99-a062-b6e91dfb1099.webp",
+    "category": "Family",
+    "url": "https://alixbd.com/playlistconfig/channel/57.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-29",
+    "order": 106
+  },
+  {
+    "name": "Sony YAY",
+    "logo": "https://assets-prod.services.toffeelive.com/IC5_-JQBv9knK3AHFDXh/posters/36df4012-80f2-4a98-9970-3b663f62093f.webp",
+    "category": "Family",
+    "url": "https://alixbd.com/playlistconfig/channel/46.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-30",
+    "order": 107
+  },
+  {
+    "name": "Toffee TV",
+    "logo": "https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",
+    "category": "Family",
+    "url": "https://alixbd.com/playlistconfig/channel/1.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-31",
+    "order": 108
+  },
+  {
+    "name": "TLC",
+    "logo": "https://assets-prod.services.toffeelive.com/7C6j-JQBv9knK3AHVzUA/posters/e8f84105-5efe-4e91-a0d4-18a0849cf2f2.webp",
+    "category": "Fantasy",
+    "url": "https://alixbd.com/playlistconfig/channel/70.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-32",
+    "order": 109
+  },
+  {
+    "name": "TLC HD",
+    "logo": "https://assets-prod.services.toffeelive.com/7S6j-JQBv9knK3AHbzXC/posters/0973097c-bc5c-4b28-aaca-f04d6f6cb5e2.webp",
+    "category": "Fantasy",
+    "url": "https://alixbd.com/playlistconfig/channel/69.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-33",
+    "order": 110
+  },
+  {
+    "name": "KidsFlix (1080p) [Not 24/7]",
+    "logo": "https://i.imgur.com/4Pn0ADQ.png",
+    "category": "Kids",
+    "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-34",
+    "order": 111
+  },
+  {
+    "name": "Maxcine Kids (720p)",
+    "logo": "https://gia.tv/streams/pptv/209909.png",
+    "category": "Kids",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209909/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-35",
+    "order": 112
+  },
+  {
+    "name": "AWSN TV",
+    "logo": "https://assets-prod.services.toffeelive.com/F9UM56ABalKyvLQIr9B1/posters/26081e64-671e-44a8-95ba-a692bfaae49c.jpeg",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/8.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-38",
+    "order": 113
+  },
+  {
+    "name": "Bangla TV",
+    "logo": "https://assets-prod.services.toffeelive.com/JiK-_poBEef-9-uVZv6L/posters/757a328e-70d6-45de-b093-0a843c69ade7.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/18.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-39",
+    "order": 114
+  },
+  {
+    "name": "Channel i",
+    "logo": "https://assets-prod.services.toffeelive.com/qnv835oBcqxnFHJBuQcB/posters/348dfac3-c1e0-485d-a72b-3d282c9e2c73.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/20.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-40",
+    "order": 115
+  },
+  {
+    "name": "Channel S",
+    "logo": "https://assets-prod.services.toffeelive.com/WyPuDJsBEef-9-uVUA_z/posters/ea20055c-a824-443c-8083-ce8e2da8b922.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/16.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-41",
+    "order": 116
+  },
+  {
+    "name": "Desh TV",
+    "logo": "https://assets-prod.services.toffeelive.com/6Hz1PJwBcqxnFHJBhgkV/posters/845f1e3f-987a-47cc-a48d-ee12d8f4d419.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/24.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-42",
+    "order": 117
+  },
+  {
+    "name": "Ekattor TV",
+    "logo": "https://assets-prod.services.toffeelive.com/PS_La5oBNnOkwJLWLRN_/posters/e8c444fd-ee3b-4bf3-bb0a-f969bc295f82.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/27.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-43",
+    "order": 118
+  },
+  {
+    "name": "Ekhon TV",
+    "logo": "https://assets-prod.services.toffeelive.com/o3v235oBcqxnFHJBkAdC/posters/159af631-796d-4342-a2a7-c272f32bcd32.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/26.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-44",
+    "order": 119
+  },
+  {
+    "name": "Global TV",
+    "logo": "https://assets-prod.services.toffeelive.com/0y_tDJsBNnOkwJLWNrdE/posters/2ff058e1-630f-4657-8dc6-b677e65642c5.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/15.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-45",
+    "order": 120
+  },
+  {
+    "name": "Islamic TV",
+    "logo": "https://assets-prod.services.toffeelive.com/jehEA54BIxFjn23xAmdw/posters/2c276556-cbcd-4467-b627-4394bb20f250.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/23.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-47",
+    "order": 121
+  },
+  {
+    "name": "Nexus TV",
+    "logo": "https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/22.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-50",
+    "order": 122
+  },
+  {
+    "name": "Rajdhani TV",
+    "logo": "https://assets-prod.services.toffeelive.com/KECGB54BuUSiBsg_dHyj/posters/58af9c58-ed80-458c-af13-cf381680cec6.png",
+    "category": "Live Action",
+    "url": "https://alixbd.com/playlistconfig/channel/17.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-52",
+    "order": 123
+  },
+  {
+    "name": "BFL | Live 5",
+    "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png",
+    "category": "Live TV",
+    "url": "https://alixbd.com/playlistconfig/channel/81.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-54",
+    "order": 124
+  },
+  {
+    "name": "& Pictures HD",
+    "logo": "https://assets-prod.services.toffeelive.com/QMwWnZUBtpl-Sbt7S2sx/posters/8cad9a82-842a-47bf-a060-f17011f11c07.png",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/80.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-55",
+    "order": 125
+  },
+  {
+    "name": "24 Hour Free Movies (720p)",
+    "logo": "https://i.imgur.com/iSVnzR1.png",
+    "category": "Movies",
+    "url": "https://d1j2u714xk898n.cloudfront.net/scheduler/scheduleMaster/145.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-56",
+    "order": 126
+  },
+  {
+    "name": "30A TV Classic Movies (720p)",
+    "logo": "",
+    "category": "Movies",
+    "url": "https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-57",
+    "order": 127
+  },
+  {
+    "name": "ABN Bible Movies Channel (720p)",
+    "logo": "https://i.imgur.com/NCqZdaL.png",
+    "category": "Movies",
+    "url": "https://mediaserver.abnvideos.com/streams/abnbiblemovies.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-58",
+    "order": 128
+  },
+  {
+    "name": "Afra Film",
+    "logo": "",
+    "category": "Movies",
+    "url": "https://afrafhls.wns.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-59",
+    "order": 129
+  },
+  {
+    "name": "Alankar TV (720p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ALANKAR/images/LOGO_HD/image.png",
+    "category": "Movies",
+    "url": "https://livetv.tarangplus.in/alankar-origin/live/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-60",
+    "order": 130
+  },
+  {
+    "name": "Allo Cine (1080p)",
+    "logo": "https://raw.githubusercontent.com/songwenhui239/Songwenhui239/refs/heads/main/Allo%20Cine.jpeg",
+    "category": "Movies",
+    "url": "https://d1yl6bf4hrzbr0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5km3zs4zs9sp0/allo.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-61",
+    "order": 131
+  },
+  {
+    "name": "ARTFLIX Movie Classics (720p)",
+    "logo": "https://i.imgur.com/5pOZQB4.png",
+    "category": "Movies",
+    "url": "https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-62",
+    "order": 132
+  },
+  {
+    "name": "Asianet Movies (396p)",
+    "logo": "https://i.imgur.com/cps67hs.png",
+    "category": "Movies",
+    "url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:asianetmovies.smil/chunklist_b1928000.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-63",
+    "order": 133
+  },
+  {
+    "name": "Aurora Media Films (720p)",
+    "logo": "https://i.imgur.com/DVC5w6H.png",
+    "category": "Movies",
+    "url": "https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-64",
+    "order": 134
+  },
+  {
+    "name": "B4U Bhojpuri Plus (1080p)",
+    "logo": "https://i.imgur.com/NwOQUDp.png",
+    "category": "Movies",
+    "url": "https://cc-t2mudtkmuz4wb.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t2mudtkmuz4wb/B4U_Bhojpuri/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-65",
+    "order": 135
+  },
+  {
+    "name": "B4U Movies (576p)",
+    "logo": "https://i.imgur.com/M9kMFJl.png",
+    "category": "Movies",
+    "url": "https://streams.tangotv.in/B4UMOVIES/ORIGIN/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-66",
+    "order": 136
+  },
+  {
+    "name": "B4U Movies APAC",
+    "logo": "https://assets-prod.services.toffeelive.com/PC6F-JQBv9knK3AHlTUO/posters/fb0243ba-39a0-4101-a78c-c197be550c6c.webp",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/66.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-67",
+    "order": 137
+  },
+  {
+    "name": "Bhojpuri Cinema (720p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BHOJPURI_CINEMA/images/LOGO_HD/image.png",
+    "category": "Movies",
+    "url": "https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-68",
+    "order": 138
+  },
+  {
+    "name": "Bollywood Classic Romania (576p)",
+    "logo": "https://i.imgur.com/ugPo6ca.png",
+    "category": "Movies",
+    "url": "https://hls02ns.antenaplay.ro/hls/bollywood-sd/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-69",
+    "order": 139
+  },
+  {
+    "name": "Bollywood HD Russia (576p)",
+    "logo": "https://i.imgur.com/scDKOLS.png",
+    "category": "Movies",
+    "url": "https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-70",
+    "order": 140
+  },
+  {
+    "name": "Boreal (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/KSquHTG.png",
+    "category": "Movies",
+    "url": "https://edge.essastream.com/borealtelevision/tracks-v1a1/mono.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-71",
+    "order": 141
+  },
+  {
+    "name": "Cafe Film",
+    "logo": "",
+    "category": "Movies",
+    "url": "https://cafefhls.wns.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-72",
+    "order": 142
+  },
+  {
+    "name": "Canal Cine Dios",
+    "logo": "https://i.imgur.com/S4xqZgV.png",
+    "category": "Movies",
+    "url": "https://canal.mediaserver.com.co/live/cinedios.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-73",
+    "order": 143
+  },
+  {
+    "name": "Charge! (1080p)",
+    "logo": "https://static.wikia.nocookie.net/logopedia/images/0/09/Charge!_network_logo.png/revision/latest/scale-to-width-down/512/",
+    "category": "Movies",
+    "url": "https://fast-channels.sinclairstoryline.com/CHARGE/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-74",
+    "order": 144
+  },
+  {
+    "name": "CINDIE TV (1080p)",
+    "logo": "https://a.jsrdn.com/hls/23208/cindie-tv/logo_20250225_222520_68.png",
+    "category": "Movies",
+    "url": "https://cc-hqw8u5r1nshjc.akamaized.net/scheduler/scheduleMaster/352.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-75",
+    "order": 145
+  },
+  {
+    "name": "Cine Friki (1080p)",
+    "logo": "https://i.imgur.com/b3Ospym.png",
+    "category": "Movies",
+    "url": "https://d2mr4fu91mjx9m.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-rb0tx75ojbc5u/CineFriki_ES.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-76",
+    "order": 146
+  },
+  {
+    "name": "Cine Nanar (1080p)",
+    "logo": "https://i.imgur.com/YnUZd3W.png",
+    "category": "Movies",
+    "url": "https://zylo-cinenanar-rakuten.amagi.tv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-77",
+    "order": 147
+  },
+  {
+    "name": "Cine Romantico (720p)",
+    "logo": "https://i.imgur.com/FUrrDrb.png",
+    "category": "Movies",
+    "url": "https://d1si3n1st4nkgb.cloudfront.net/10502/88886011/hls/master.m3u8?ads.xumo_channelId=88886011",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-78",
+    "order": 148
+  },
+  {
+    "name": "Cine Western (France) (1080p)",
+    "logo": "https://i.imgur.com/tteOFkL.png",
+    "category": "Movies",
+    "url": "https://amg00711-zylo-amg00711c8-rakuten-uk-2686.playouts.now.amagi.tv/playlist/amg00711-zylofast-cinewestern-rakutenuk/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-79",
+    "order": 149
+  },
+  {
+    "name": "Cine Western (Spain) (1080p)",
+    "logo": "https://i.imgur.com/2UROzSc.png",
+    "category": "Movies",
+    "url": "https://d2nq34q0i1r3la.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-awohw8g217ho8/CineWestern_ES.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-80",
+    "order": 150
+  },
+  {
+    "name": "Cinemaraton Plus (1080i)",
+    "logo": "https://assets.antenaplay.ro/2026/03/10/RMNdkVBCTNfsogsYqHaB.png",
+    "category": "Movies",
+    "url": "https://hls02ns.antenaplay.ro/hls/cinemaraton-plus-hd/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-81",
+    "order": 151
+  },
+  {
+    "name": "CineWow (576i)",
+    "logo": "https://cdn.gamma.app/tfnglu66dwji8hw/d36b2d5c45a544749b3739d46fb119cc/original/CineWow.png",
+    "category": "Movies",
+    "url": "https://hls01ns.antenaplay.ro/hls/cinewow-sd/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-82",
+    "order": 152
+  },
+  {
+    "name": "City Eden KinoAction [Not 24/7]",
+    "logo": "https://i.imgur.com/uuzuvD0.png",
+    "category": "Movies",
+    "url": "https://cityeden.catcast.tv/content/41333/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-83",
+    "order": 153
+  },
+  {
+    "name": "City Eden KinoArt [Not 24/7]",
+    "logo": "https://i.imgur.com/67CWCtz.png",
+    "category": "Movies",
+    "url": "https://cityeden.catcast.tv/content/38398/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-84",
+    "order": 154
+  },
+  {
+    "name": "City Eden KinoAsia [Not 24/7]",
+    "logo": "https://i.imgur.com/gaket4B.png",
+    "category": "Movies",
+    "url": "https://cityeden.catcast.tv/content/34393/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-85",
+    "order": 155
+  },
+  {
+    "name": "City Eden KinoDetektiv [Not 24/7]",
+    "logo": "https://i.imgur.com/9rKHwBV.png",
+    "category": "Movies",
+    "url": "https://cityeden.catcast.tv/content/41327/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-86",
+    "order": 156
+  },
+  {
+    "name": "City Eden KinoDrama [Not 24/7]",
+    "logo": "https://i.imgur.com/29ddffh.png",
+    "category": "Movies",
+    "url": "https://cityeden.catcast.tv/content/45269/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-87",
+    "order": 157
+  },
+  {
+    "name": "City Eden KinoFantastika [Not 24/7]",
+    "logo": "https://i.imgur.com/I64FeIO.png",
+    "category": "Movies",
+    "url": "https://cityeden.catcast.tv/content/45268/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-88",
+    "order": 158
+  },
+  {
+    "name": "City Eden KinoKlassika [Not 24/7]",
+    "logo": "https://i.imgur.com/0qGCS1S.png",
+    "category": "Movies",
+    "url": "https://cityeden.catcast.tv/content/34185/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-89",
+    "order": 159
+  },
+  {
+    "name": "City Eden KinoKomediya [Not 24/7]",
+    "logo": "https://i.imgur.com/Aga2XVA.png",
+    "category": "Movies",
+    "url": "https://cityeden.catcast.tv/content/41331/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-90",
+    "order": 160
+  },
+  {
+    "name": "City Eden KinoMistika [Not 24/7]",
+    "logo": "https://i.imgur.com/s1Pid0K.png",
+    "category": "Movies",
+    "url": "https://cityeden.catcast.tv/content/40783/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-91",
+    "order": 161
+  },
+  {
+    "name": "Classic Cinema (240p) [Not 24/7]",
+    "logo": "https://i.imgur.com/FJoPnTb.png",
+    "category": "Movies",
+    "url": "https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-92",
+    "order": 162
+  },
+  {
+    "name": "Classique TV (360p)",
+    "logo": "https://i.imgur.com/rHxcraT.png",
+    "category": "Movies",
+    "url": "https://stmv1.srvif.com/classique/classique/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-93",
+    "order": 163
+  },
+  {
+    "name": "Colors Cineplex (576p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_CINEPLEX/images/LOGO_HD/image.png",
+    "category": "Movies",
+    "url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-94",
+    "order": 164
+  },
+  {
+    "name": "Cosmos Tv",
+    "logo": "https://i0.wp.com/fmcosmos.com/wp-content/uploads/2021/11/COSMOS-TV.png",
+    "category": "Movies",
+    "url": "https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-95",
+    "order": 165
+  },
+  {
+    "name": "Cosmos Tv SD",
+    "logo": "https://i0.wp.com/fmcosmos.com/wp-content/uploads/2021/11/COSMOS-TV.png",
+    "category": "Movies",
+    "url": "https://canaletaplus.com:3922/live/cosmoslive.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-96",
+    "order": 166
+  },
+  {
+    "name": "Dorama (576p)",
+    "logo": "https://i.imgur.com/ZH5LuXU.png",
+    "category": "Movies",
+    "url": "https://fs.uplink.kz/dorama/mono.m3u8?token=onlinetv",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-97",
+    "order": 167
+  },
+  {
+    "name": "DUST (1080p)",
+    "logo": "https://i.imgur.com/FxYhME9.png",
+    "category": "Movies",
+    "url": "https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-98",
+    "order": 168
+  },
+  {
+    "name": "Ebony TV by Lionsgate (1080p)",
+    "logo": "https://provider-static.plex.tv/epg/cms/production/234d5377-ab07-41bf-acd6-34c17c1c051a/EbonyTV_Plex_Logo_Light_1500x1000.png",
+    "category": "Movies",
+    "url": "https://aegis-cloudfront-1.tubi.video/a0ad4b53-ab3a-48dd-be12-bc7f533c372c/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-99",
+    "order": 169
+  },
+  {
+    "name": "EBS Cinema (720p)",
+    "logo": "https://i.imgur.com/fewPTFE.png",
+    "category": "Movies",
+    "url": "https://rpn.bozztv.com/ebstv/ebscinema/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-100",
+    "order": 170
+  },
+  {
+    "name": "Emotion L (1080p)",
+    "logo": "https://i.imgur.com/MP34aaj.png",
+    "category": "Movies",
+    "url": "https://rakutenaa-zylo-emotional-rakuten-r1zkm.amagi.tv/playlist/rakutenAA-zylo-emotional-rakuten/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-101",
+    "order": 171
+  },
+  {
+    "name": "Epic Bhojpuri Digital (1080p)",
+    "logo": "https://dtil.tmsimg.com/assets/GNLZZGG0032BVJ8.png?lock=720x540",
+    "category": "Movies",
+    "url": "https://cc-8hy4a26pz2uos.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8hy4a26pz2uos/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-102",
+    "order": 172
+  },
+  {
+    "name": "ETV Cinema (396p)",
+    "logo": "https://dtil.tmsimg.com/assets/s143026_ld_h15_aa.png?lock=720x540",
+    "category": "Movies",
+    "url": "https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-103",
+    "order": 173
+  },
+  {
+    "name": "FILMBOX+ Comedy Romania",
+    "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bcomedy.png",
+    "category": "Movies",
+    "url": "https://nosignal1.antenaplay.ro/hls/fb-comedy-hd/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-104",
+    "order": 174
+  },
+  {
+    "name": "FILMBOX+ Festival",
+    "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bfestival.png",
+    "category": "Movies",
+    "url": "https://dash3.antik.sk/live/test_filmbox_arthouse_atk_1200/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-105",
+    "order": 175
+  },
+  {
+    "name": "FILMBOX+ Festival HD (1080p)",
+    "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bfestival.png",
+    "category": "Movies",
+    "url": "https://nosignal1.antenaplay.ro/hls/fb-festival-hd/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-106",
+    "order": 176
+  },
+  {
+    "name": "FILMBOX+ Hits Romania (576p)",
+    "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bhits.png",
+    "category": "Movies",
+    "url": "https://nosignal1.antenaplay.ro/hls/fb-hits-sd/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-107",
+    "order": 177
+  },
+  {
+    "name": "FILMBOX+ Love & Crime Romania",
+    "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Blove-and-crime.png",
+    "category": "Movies",
+    "url": "https://nosignal1.antenaplay.ro/hls/fb-love-and-crime-sd/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-108",
+    "order": 178
+  },
+  {
+    "name": "FILMBOX+ One Romania (576p)",
+    "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bone.png",
+    "category": "Movies",
+    "url": "https://nosignal1.antenaplay.ro/hls/fb-one-sd/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-109",
+    "order": 179
+  },
+  {
+    "name": "FilmUA Live",
+    "logo": "https://i.imgur.com/kizTBgS.png",
+    "category": "Movies",
+    "url": "https://dash2.antik.sk/live/test_film_life_atktv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-110",
+    "order": 180
+  },
+  {
+    "name": "FrightFlix (720p)",
+    "logo": "https://i.imgur.com/rgNQYAl.png",
+    "category": "Movies",
+    "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2229",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-111",
+    "order": 181
+  },
+  {
+    "name": "Gold Star",
+    "logo": "",
+    "category": "Movies",
+    "url": "https://moviethls.wns.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-112",
+    "order": 182
+  },
+  {
+    "name": "Goldmines (576p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOLDMINES/images/LOGO_HD/image.png",
+    "category": "Movies",
+    "url": "https://streams.tangotv.in/GOLDMINES/ORIGIN/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-113",
+    "order": 183
+  },
+  {
+    "name": "Grand Cinema",
+    "logo": "",
+    "category": "Movies",
+    "url": "https://gcinemahls.wns.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-114",
+    "order": 184
+  },
+  {
+    "name": "Gravitas Movies (1080p)",
+    "logo": "https://i.imgur.com/H2hD4vT.png",
+    "category": "Movies",
+    "url": "https://d6dg3ebeih71x.cloudfront.net/Gravitas_Movies.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-115",
+    "order": 185
+  },
+  {
+    "name": "Grjngo Western Movies (720p)",
+    "logo": "https://i.imgur.com/wFqhK3p.png",
+    "category": "Movies",
+    "url": "https://amogonetworx-grjngo-3-dk.samsung.wurl.tv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-116",
+    "order": 186
+  },
+  {
+    "name": "Hallmark Movies & More (1080p)",
+    "logo": "https://provider-static.plex.tv/epg/cms/production/29af70d1-d3ba-4a16-bc4d-bd99e7e7def4/hallmark-movies-and-more_color.png",
+    "category": "Movies",
+    "url": "https://dbrb49pjoymg4.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod_default_xumo-ams-aws/master.m3u8?ads.xumo_channelId=99991709",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-117",
+    "order": 187
+  },
+  {
+    "name": "Horoshee Kino (720p)",
+    "logo": "https://i.imgur.com/ZbOqfy4.png",
+    "category": "Movies",
+    "url": "https://live-rian.cdnvideo.ru/rian/rus-radio/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-118",
+    "order": 188
+  },
+  {
+    "name": "iFilm 2",
+    "logo": "https://upload.wikimedia.org/wikipedia/fa/c/ce/Ifilm2logo.png",
+    "category": "Movies",
+    "url": "https://live.presstv.co.uk/hls/ifilm2.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-119",
+    "order": 189
+  },
+  {
+    "name": "iFilm Arabic",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png",
+    "category": "Movies",
+    "url": "https://live.presstv.co.uk/hls/ifilmar.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-120",
+    "order": 190
+  },
+  {
+    "name": "iFilm English",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png",
+    "category": "Movies",
+    "url": "https://live.presstv.co.uk/hls/ifilmen.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-121",
+    "order": 191
+  },
+  {
+    "name": "iFilm Persian",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png",
+    "category": "Movies",
+    "url": "https://live.presstv.co.uk/hls/ifilmfa.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-122",
+    "order": 192
+  },
+  {
+    "name": "India Talkies (360p)",
+    "logo": "https://papaji.freetvindia.com/media/FreeTV_India_Talkies.png",
+    "category": "Movies",
+    "url": "https://samitaorigin.tangotv.in/INDIATALKIES/SAMITAORIGIN/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-123",
+    "order": 193
+  },
+  {
+    "name": "Indywood TV (720p)",
+    "logo": "https://i.ibb.co/jT3NCPp/logo-tv.png",
+    "category": "Movies",
+    "url": "https://43wrzjnpqoxe-hls-live.wmncdn.net/indywood/indywoodtv/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-124",
+    "order": 194
+  },
+  {
+    "name": "Itage TV (480p)",
+    "logo": "https://i.imgur.com/FP1aUPw.jpg",
+    "category": "Movies",
+    "url": "https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_011/Stream/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-125",
+    "order": 195
+  },
+  {
+    "name": "Kairali We (576p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_KAIRALI_WE/images/LOGO_HD/image.png",
+    "category": "Movies",
+    "url": "https://streams.tangotv.in/WETV/ORIGIN/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-126",
+    "order": 196
+  },
+  {
+    "name": "KCM India (1080p) [Geo-blocked]",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/KCM.png",
+    "category": "Movies",
+    "url": "https://amg02159-amg02159c7-samsung-in-4001.playouts.now.amagi.tv/playlist/amg02159-kcglobal-kcm-samsungin/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-127",
+    "order": 197
+  },
+  {
+    "name": "Kinoseriya (576p)",
+    "logo": "https://i.imgur.com/iao7zLZ.png",
+    "category": "Movies",
+    "url": "https://fs.uplink.kz/kinoseria/mono.m3u8?token=onlinetv",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-128",
+    "order": 198
+  },
+  {
+    "name": "Kinoteatr (1080p)",
+    "logo": "https://i.imgur.com/emH1BgC.png",
+    "category": "Movies",
+    "url": "https://stream8.cinerama.uz/1009/tracks-v1a1/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-129",
+    "order": 199
+  },
+  {
+    "name": "Kuriakos Cine (1080p)",
+    "logo": "https://i.imgur.com/CZViCwB.jpg",
+    "category": "Movies",
+    "url": "https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-130",
+    "order": 200
+  },
+  {
+    "name": "Maah TV (720p)",
+    "logo": "https://i.imgur.com/FkyueH6.png",
+    "category": "Movies",
+    "url": "https://hls.maahtv.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-131",
+    "order": 201
+  },
+  {
+    "name": "Made In Hollywood",
+    "logo": "https://i.imgur.com/p16HNIM.png",
+    "category": "Movies",
+    "url": "https://connection3-ent-nz.samsung.wurl.tv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-132",
+    "order": 202
+  },
+  {
+    "name": "Maha Movie (576p)",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Maha_Movies.png",
+    "category": "Movies",
+    "url": "https://fta.ektv.in/live/48/48_0.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-133",
+    "order": 203
+  },
+  {
+    "name": "Mahua Play (1080p)",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Mahua_Play.png",
+    "category": "Movies",
+    "url": "https://cdn.ottlive.co.in/mahuaplay/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-134",
+    "order": 204
+  },
+  {
+    "name": "Manoranjan Grand (720p)",
+    "logo": "https://dtil.tmsimg.com/assets/s143302_ld_h15_aa.png?lock=720x540",
+    "category": "Movies",
+    "url": "https://cdn.pishow.tv/ott/live/1011/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-135",
+    "order": 205
+  },
+  {
+    "name": "Manoranjan Movies (576p)",
+    "logo": "https://dtil.tmsimg.com/assets/s143303_ld_h15_aa.png?lock=720x540",
+    "category": "Movies",
+    "url": "https://mumt04.tangotv.in/m18aqlK4MANORANJANMOVIES/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-136",
+    "order": 206
+  },
+  {
+    "name": "Maverick Black Cinema (1080p)",
+    "logo": "https://images.fubo.tv/station_logos/maverick_black_cinema_c.png",
+    "category": "Movies",
+    "url": "https://maverick-maverick-black-cinema-3-us.roku.wurl.tv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-137",
+    "order": 207
+  },
+  {
+    "name": "Maxcine (720p)",
+    "logo": "https://gia.tv/streams/pptv/208138.png",
+    "category": "Movies",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208138/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-138",
+    "order": 208
+  },
+  {
+    "name": "Maxcine 2 (720p)",
+    "logo": "https://gia.tv/streams/pptv/209163.png",
+    "category": "Movies",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209163/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-139",
+    "order": 209
+  },
+  {
+    "name": "Maxcine Comedy (720p)",
+    "logo": "https://gia.tv/streams/pptv/208730.png",
+    "category": "Movies",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208730/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-140",
+    "order": 210
+  },
+  {
+    "name": "Maxcine Family (720p)",
+    "logo": "https://gia.tv/streams/pptv/208817.png",
+    "category": "Movies",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-208817/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-141",
+    "order": 211
+  },
+  {
+    "name": "MCI Television (1080p)",
+    "logo": "https://pbs.twimg.com/profile_images/1836009952420274177/FfYonU6r_400x400.jpg",
+    "category": "Movies",
+    "url": "https://video.ejeserver.com/live/mcitelevision.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-142",
+    "order": 212
+  },
+  {
+    "name": "Mega Cine TV (1080p)",
+    "logo": "https://www.vivalivetv.com/public/files/shows/0/1/2893-294x165-FFFFFF.jpg",
+    "category": "Movies",
+    "url": "https://cnn.hostlagarto.com/megacinetv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-143",
+    "order": 213
+  },
+  {
+    "name": "Meta Film TV",
+    "logo": "",
+    "category": "Movies",
+    "url": "https://metafilmhls.wns.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-144",
+    "order": 214
+  },
+  {
+    "name": "Mix Hollywood (1080p)",
+    "logo": "https://i.imgur.com/1ENdbZn.png",
+    "category": "Movies",
+    "url": "https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-145",
+    "order": 215
+  },
+  {
+    "name": "MN+",
+    "logo": "https://new.skytel.mn/uploads/channel/mn-676145a957d06.jpeg",
+    "category": "Movies",
+    "url": "https://cdn4.skygo.mn/live/disk1/MNplus91/HLSv3-FTA/MNplus91.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-146",
+    "order": 216
+  },
+  {
+    "name": "Movie Punjab (720p)",
+    "logo": "https://papaji.freetvindia.com/media/900_FreeTV_Movie_punjab.png",
+    "category": "Movies",
+    "url": "https://samitaorigin.tangotv.in/MOVIEPUNJAB/SAMITAORIGIN/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-147",
+    "order": 217
+  },
+  {
+    "name": "Movies! KPVM-LD",
+    "logo": "https://i.imgur.com/gAGn3mK.png",
+    "category": "Movies",
+    "url": "https://2-fss-2.streamhoster.com/pl_120/206858-4412962-1/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-148",
+    "order": 218
+  },
+  {
+    "name": "MovieSphere (1080p)",
+    "logo": "https://i.imgur.com/h1ejU90.png",
+    "category": "Movies",
+    "url": "https://amg00353-lionsgatestudio-moviesphere-xumo-zh5u0.amagi.tv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-149",
+    "order": 219
+  },
+  {
+    "name": "MovieSphere AU (1080p)",
+    "logo": "https://i.imgur.com/h1ejU90.png",
+    "category": "Movies",
+    "url": "https://amg00353-lionsgatefilmsi-moviesphereaus-samsungau-7qzhf.amagi.tv/playlist/amg00353-lionsgatefilmsi-moviesphereaus-samsungau/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-150",
+    "order": 220
+  },
+  {
+    "name": "MovieSphere Gold WFXT (1080p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MovieSphere_Gold_2025_logo.svg/500px-MovieSphere_Gold_2025_logo.svg.png",
+    "category": "Movies",
+    "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-ionmystery-tablo/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-151",
+    "order": 221
+  },
+  {
+    "name": "MovieSphere UK (1080p)",
+    "logo": "https://i.imgur.com/h1ejU90.png",
+    "category": "Movies",
+    "url": "https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-152",
+    "order": 222
+  },
+  {
+    "name": "My Cinema Europe",
+    "logo": "https://i.imgur.com/jz0d8tH.png",
+    "category": "Movies",
+    "url": "https://op-group1-densxvisionhd-1.dens.tv/h/h18/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-153",
+    "order": 223
+  },
+  {
+    "name": "MyTime Movie Network (Brazil) (720p)",
+    "logo": "https://i.imgur.com/aiGQtzI.png",
+    "category": "Movies",
+    "url": "https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-154",
+    "order": 224
+  },
+  {
+    "name": "MyTime Movie Network (Spain) (1080p)",
+    "logo": "https://i.imgur.com/pw4NZK1.png",
+    "category": "Movies",
+    "url": "https://appletree-mytimespain-rakuten.amagi.tv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-155",
+    "order": 225
+  },
+  {
+    "name": "Nashe Novoe Kino",
+    "logo": "https://i.imgur.com/IOxIsPj.png",
+    "category": "Movies",
+    "url": "https://stream8.cinerama.uz/1051/tracks-v1a1/mono.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-156",
+    "order": 226
+  },
+  {
+    "name": "NEW K.MOVIES (1080p)",
+    "logo": "https://i.imgur.com/wCgirjc.png",
+    "category": "Movies",
+    "url": "https://ads.its-newid.net/api/manifest.m3u8?ads.service_id=GB1700007PK&channel_id=newid_343&tp=samsung_tvplus",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-157",
+    "order": 227
+  },
+  {
+    "name": "NH BollyFlix (1080p)",
+    "logo": "https://i.ibb.co/yF9MPTDK/blyflx.png",
+    "category": "Movies",
+    "url": "https://jmp2.uk/stvp-IN46000140Q",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-158",
+    "order": 228
+  },
+  {
+    "name": "NH Tamil Gold (1080p)",
+    "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png",
+    "category": "Movies",
+    "url": "https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-159",
+    "order": 229
+  },
+  {
+    "name": "NOST (720p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/NOST-1080x1080.jpg/250px-NOST-1080x1080.jpg",
+    "category": "Movies",
+    "url": "https://a-cdn.klowdtv.com/live2/nost_720p/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-160",
+    "order": 230
+  },
+  {
+    "name": "Nostalgia TV (1080p)",
+    "logo": "https://assets.antenaplay.ro/2026/03/10/fX5tvuPLymvvR8lQmwO7.png",
+    "category": "Movies",
+    "url": "https://hls02ns.antenaplay.ro/hls/nostalgia-hd/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-161",
+    "order": 231
+  },
+  {
+    "name": "ON Movies (720p)",
+    "logo": "https://i.ibb.co/fdbgvtT8/IMG-2523.webp",
+    "category": "Movies",
+    "url": "https://freem3u.xyz/api/live/play.m3u8?vid=181",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-162",
+    "order": 232
+  },
+  {
+    "name": "Oscar Movies Bhojpuri (720p)",
+    "logo": "https://dtil.tmsimg.com/assets/s143638_ld_h9_ab.png?lock=720x540",
+    "category": "Movies",
+    "url": "https://cdn.pishow.tv/ott/live/233/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-163",
+    "order": 233
+  },
+  {
+    "name": "OuterSphere (1080p)",
+    "logo": "https://provider-static.plex.tv/epg/cms/production/f162df8b-6532-43fe-9202-83a658090651/OuterSphere_1500x1000_Logo_Dark_-_Chris_Connors__1_.png",
+    "category": "Movies",
+    "url": "https://d3o593mz1glx8d.cloudfront.net/OuterSphere_US.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-164",
+    "order": 234
+  },
+  {
+    "name": "Persiana Cinema",
+    "logo": "https://i.imgur.com/hgIro9r.png",
+    "category": "Movies",
+    "url": "https://cinehls.persiana.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-165",
+    "order": 235
+  },
+  {
+    "name": "Persiana Family",
+    "logo": "https://i.imgur.com/lMZsuWi.png",
+    "category": "Movies",
+    "url": "https://familyhls.persiana.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-166",
+    "order": 236
+  },
+  {
+    "name": "Persiana Iranian",
+    "logo": "https://i.imgur.com/vqrrpBi.png",
+    "category": "Movies",
+    "url": "https://irhls.persiana.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-167",
+    "order": 237
+  },
+  {
+    "name": "Persiana Korea",
+    "logo": "https://i.imgur.com/si2ZnIA.png",
+    "category": "Movies",
+    "url": "https://korhls.persiana.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-168",
+    "order": 238
+  },
+  {
+    "name": "Persiana Plus",
+    "logo": "https://i.imgur.com/0xttibX.png",
+    "category": "Movies",
+    "url": "https://euhls.persiana.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-169",
+    "order": 239
+  },
+  {
+    "name": "Pitaara (1080p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PITAARA/images/LOGO_HD/image.png",
+    "category": "Movies",
+    "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/500a6b45f5ae41dda445d912b59eaa09/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-170",
+    "order": 240
+  },
+  {
+    "name": "Pocket Films",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/p_pktflm.png",
+    "category": "Movies",
+    "url": "https://vglivessai.akamaized.net/sg/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/b8ada260-bb81-472b-b7c1-3a79213a84b8/e02a0ce5-6c42-4cca-bb53-e5cfecff74a9/0.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-171",
+    "order": 241
+  },
+  {
+    "name": "Popcorn Central (1080p)",
+    "logo": "https://i.imgur.com/ULGVjyC.png",
+    "category": "Movies",
+    "url": "https://oly-ftvpc.otteravision.com/oly/ftvpc/ftvpc.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-172",
+    "order": 242
+  },
+  {
+    "name": "Public Movies (576p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PUBLIC_MOVIES/images/LOGO_HD/image.png",
+    "category": "Movies",
+    "url": "https://mumt04.tangotv.in/m18aqlK4PUBLICMOVIES/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-173",
+    "order": 243
+  },
+  {
+    "name": "Punjabi Shorts (1080p)",
+    "logo": "https://www.thegtcnetwork.com/punjabi-shorts.jpg",
+    "category": "Movies",
+    "url": "https://vglivessai.akamaized.net/ptnr-yupptv/title-Punjabi_Shorts/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-174",
+    "order": 244
+  },
+  {
+    "name": "Raj Digital Plus (1080p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_DIGITAL_PLUS/images/LOGO_HD/image.png",
+    "category": "Movies",
+    "url": "https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-175",
+    "order": 245
+  },
+  {
+    "name": "Rakuten TV Action Movies (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://a9c57ec7ec5e4b7daeacc6316a0bb404.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6069/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-176",
+    "order": 246
+  },
+  {
+    "name": "Rakuten TV Action Movies Germany (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://284824cf70404fdfb6ddf9349009c710.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6066/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-177",
+    "order": 247
+  },
+  {
+    "name": "Rakuten TV Action Movies Italy (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://87f2e2e5e7624e3bad85da1ca2ed31a7.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6067/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-178",
+    "order": 248
+  },
+  {
+    "name": "Rakuten TV Action Movies UK (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://54045f0c40fd442c8b06df076aaf1e85.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6065/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-179",
+    "order": 249
+  },
+  {
+    "name": "Rakuten TV Comedy Movies (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://71db867f03ce4d71a29e92155f07ab87.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6180/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-180",
+    "order": 250
+  },
+  {
+    "name": "Rakuten TV Comedy Movies Germany (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://ecac08c9e2214375b907d6825aaf9a01.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6182/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-181",
+    "order": 251
+  },
+  {
+    "name": "Rakuten TV Comedy Movies Italy (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://b8bc6c4b9be64bd6aeb3b92aa8521ed4.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6184/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-182",
+    "order": 252
+  },
+  {
+    "name": "Rakuten TV Comedy Movies UK (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://9be783d652cd4b099cf63e1dc134c4a3.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6181/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-183",
+    "order": 253
+  },
+  {
+    "name": "Rakuten TV Drama Movies (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://a7089c89d85f453d850c4a1518b43076.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6092/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-184",
+    "order": 254
+  },
+  {
+    "name": "Rakuten TV Drama Movies Germany (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://968754c2483045c1a9a7f677caec35b6.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6096/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-185",
+    "order": 255
+  },
+  {
+    "name": "Rakuten TV Drama Movies Italy (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://f84e0b1628464fab846160df957f269e.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6094/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-186",
+    "order": 256
+  },
+  {
+    "name": "Rakuten TV Drama Movies UK (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://fee09fd665814f51b939b6d106cf5f66.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6093/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-187",
+    "order": 257
+  },
+  {
+    "name": "Rakuten TV Family Movies (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://b0d59c8c98974e708e5ccb9a27cdfdfc.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6205/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-188",
+    "order": 258
+  },
+  {
+    "name": "Rakuten TV Family Movies Germany (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://af230031eeac45f3b78d4f8a13265105.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6209/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-189",
+    "order": 259
+  },
+  {
+    "name": "Rakuten TV Family Movies Italy (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://3315fc3e7276420f895e19cf807dbee1.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6215/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-190",
+    "order": 260
+  },
+  {
+    "name": "Rakuten TV Family Movies UK (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://e3207568b726401995c25670faaf32e4.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6203/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-191",
+    "order": 261
+  },
+  {
+    "name": "Rakuten TV Top Movies (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://ff335120300e4742a2b135ee9a9e7df8.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5983/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-192",
+    "order": 262
+  },
+  {
+    "name": "Rakuten TV Top Movies Germany (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://cbb622b29f5d43b598991f3fa19de291.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5985/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-193",
+    "order": 263
+  },
+  {
+    "name": "Rakuten TV Top Movies Italy (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://d4a4999341764c67a67e9ec9eb3790ab.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5984/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-194",
+    "order": 264
+  },
+  {
+    "name": "Rakuten TV Top Movies UK (1080p)",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://0145451975a64b35866170fd2e8fa486.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5987/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-195",
+    "order": 265
+  },
+  {
+    "name": "Rotana Cinema Egypt (1080p) [Geo-blocked]",
+    "logo": "https://i.imgur.com/dGlKoLW.png",
+    "category": "Movies",
+    "url": "https://rotana.hibridcdn.net/rotananet/cinemamasr_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-196",
+    "order": 266
+  },
+  {
+    "name": "Rotana Cinema KSA (1080p) [Geo-blocked]",
+    "logo": "https://i.imgur.com/pGgp38I.png",
+    "category": "Movies",
+    "url": "https://rotana.hibridcdn.net/rotananet/cinema_net-7Y83PP5adWixDF93/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-197",
+    "order": 267
+  },
+  {
+    "name": "Runtime Espanol (720p)",
+    "logo": "https://i.imgur.com/OMQq19N.png",
+    "category": "Movies",
+    "url": "https://run-rt-uh-roku.otteravision.com/run/rt_uh/rt_uh.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-198",
+    "order": 268
+  },
+  {
+    "name": "ScreamIN (1080p)",
+    "logo": "https://i.imgur.com/tGmKbil.png",
+    "category": "Movies",
+    "url": "https://rakutenaa-zylo-screamin-rakuten-p11ej.amagi.tv/playlist/rakutenAA-zylo-screamin-rakuten/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-199",
+    "order": 269
+  },
+  {
+    "name": "Shemaroo Josh (576p)",
+    "logo": "https://dtil.tmsimg.com/assets/GNLZZGG00297P3E.png?lock=720x540",
+    "category": "Movies",
+    "url": "https://mumt04.tangotv.in/m18aqlK4SHEMAROOJOSH/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-200",
+    "order": 270
+  },
+  {
+    "name": "Shubh Cinema TV (720p)",
+    "logo": "https://i.imgur.com/RQhorAG.png",
+    "category": "Movies",
+    "url": "https://d393sxaxig6bax.cloudfront.net/out/v1/589cf2cf44bf42bb941e817a2240d62e/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-201",
+    "order": 271
+  },
+  {
+    "name": "Silk Way Cinema (1080p) [Geo-blocked]",
+    "logo": "https://www.cableman.ru/sites/default/files/Silk-way-CINEMA.png",
+    "category": "Movies",
+    "url": "https://stream.qazcdn.net/ex6r514/silkwaycinema/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-202",
+    "order": 272
+  },
+  {
+    "name": "SL 1",
+    "logo": "https://i.imgur.com/n9cuM2W.jpg",
+    "category": "Movies",
+    "url": "https://slonehls.wns.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-203",
+    "order": 273
+  },
+  {
+    "name": "SL 2",
+    "logo": "https://i.imgur.com/BVuUx5R.jpg",
+    "category": "Movies",
+    "url": "https://sltwohls.wns.live/hls/stream.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-204",
+    "order": 274
+  },
+  {
+    "name": "Smotrim 100% Klassika (720p)",
+    "logo": "https://i.imgur.com/aASNpKq.png",
+    "category": "Movies",
+    "url": "https://stream.smotrim.ru/hls/fasttv03/playlist_3.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-205",
+    "order": 275
+  },
+  {
+    "name": "Sonar Bangla (360p)",
+    "logo": "https://papaji.freetvindia.com/media/1518_FreeTV_Sonar_Bangla.png",
+    "category": "Movies",
+    "url": "https://samitaorigin.tangotv.in/SONARBANGLA/SAMITAORIGIN/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-206",
+    "order": 276
+  },
+  {
+    "name": "Soneri Cinema (360p)",
+    "logo": "https://papaji.freetvindia.com/media/1056_FreeTV_Soneri_Cinema.png",
+    "category": "Movies",
+    "url": "https://samitaorigin.tangotv.in/SONERICINEMA/SAMITAORIGIN/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-207",
+    "order": 277
+  },
+  {
+    "name": "Sony MAX HD",
+    "logo": "https://assets-prod.services.toffeelive.com/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/59.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-210",
+    "order": 278
+  },
+  {
+    "name": "Sony Movies (United States) (720p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png",
+    "category": "Movies",
+    "url": "https://a-cdn.klowdtv.com/live1/smc_720p/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-211",
+    "order": 279
+  },
+  {
+    "name": "Sony One Favoris (1080p)",
+    "logo": "https://i.imgur.com/RO4AM4b.png",
+    "category": "Movies",
+    "url": "https://49d735318d6b4c30a24a7997ea594e1b.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-820-FR-SONYONEFAVORIS-LG_FR/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-212",
+    "order": 280
+  },
+  {
+    "name": "Sony One Hits Action (1080p)",
+    "logo": "https://i.imgur.com/pXsZEsR.png",
+    "category": "Movies",
+    "url": "https://5098a8b860504a3690fd2e7c0a18d68f.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-817-FR-SONYONEHITSACTION-LG_FR/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-213",
+    "order": 281
+  },
+  {
+    "name": "Sony One Hits Comedie (1080p)",
+    "logo": "https://i.imgur.com/8sHuxxS.png",
+    "category": "Movies",
+    "url": "https://7aa9671895264ec9a384dfed1b992171.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-818-FR-SONYONEHITSCOMDIE-LG_FR/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-214",
+    "order": 282
+  },
+  {
+    "name": "Sony PIX HD",
+    "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/64.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-215",
+    "order": 283
+  },
+  {
+    "name": "South Station (1080p)",
+    "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3800008CX_20260325T012316SQUARE.png",
+    "category": "Movies",
+    "url": "https://cc-yw7ztecy8do3q.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yw7ztecy8do3q/SS_IN.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-216",
+    "order": 284
+  },
+  {
+    "name": "Star Cinema",
+    "logo": "https://i.imgur.com/5sis895.png",
+    "category": "Movies",
+    "url": "https://dash2.antik.sk/live/test_star_cinema_atktv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-217",
+    "order": 285
+  },
+  {
+    "name": "Star Family (1080p)",
+    "logo": "https://i.imgur.com/eGuGHnZ.png",
+    "category": "Movies",
+    "url": "https://dash2.antik.sk/live/test_star_family_atktv/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-218",
+    "order": 286
+  },
+  {
+    "name": "Star Maa Movies HD (720p)",
+    "logo": "https://dtil.tmsimg.com/assets/s143826_ld_h15_aa.png?lock=720x540",
+    "category": "Movies",
+    "url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b2628000.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-219",
+    "order": 287
+  },
+  {
+    "name": "Studio One + (720p)",
+    "logo": "https://i.imgur.com/yOPB7JB.png",
+    "category": "Movies",
+    "url": "https://cdn.pishow.tv/ott/live/276/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-220",
+    "order": 288
+  },
+  {
+    "name": "Tamasha",
+    "logo": "https://upload.wikimedia.org/wikipedia/fa/thumb/f/f2/IRIB_tamashaTV.svg/960px-IRIB_tamashaTV.svg.png",
+    "category": "Movies",
+    "url": "https://ncdn.telewebion.ir/hdtest/live/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-221",
+    "order": 289
+  },
+  {
+    "name": "Thalaa TV (1080p)",
+    "logo": "https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/thalaa-tv.png",
+    "category": "Movies",
+    "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/2069c593-3c07-4d62-9d44-746be5c3a5d6/manifest.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-222",
+    "order": 290
+  },
+  {
+    "name": "The Movie Club (1080p)",
+    "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN38000072R_20260325T012318SQUARE.png",
+    "category": "Movies",
+    "url": "https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-223",
+    "order": 291
+  },
+  {
+    "name": "The Movie Club +2 (1080p)",
+    "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN40000100Y_20260204T004058SQUARE.png",
+    "category": "Movies",
+    "url": "https://d3gnyty2vddhsg.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ytipwjqub3kf8/TMC2_IN.m3u8?ads.ads_cdn=cf&ads.cdn=cf",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-224",
+    "order": 292
+  },
+  {
+    "name": "Toffee Movies",
+    "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/2.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-225",
+    "order": 293
+  },
+  {
+    "name": "Tolly TV (1080p)",
+    "logo": "https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/aumnrs.png",
+    "category": "Movies",
+    "url": "https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/13b5735d-52c3-4be0-853d-e0ec0127e708/manifest.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-226",
+    "order": 294
+  },
+  {
+    "name": "TVCARiB Cinema (720p) [Not 24/7]",
+    "logo": "https://i.imgur.com/fvGlwKo.png",
+    "category": "Movies",
+    "url": "https://cdn.mycloudstream.io/hls/live/broadcast/l3vslw4i/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-227",
+    "order": 295
+  },
+  {
+    "name": "TVS Drive In Movie (360p)",
+    "logo": "https://i.imgur.com/OR9APjb.png",
+    "category": "Movies",
+    "url": "https://rpn.bozztv.com/gusa/gusa-tvsdriveinmovie/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-228",
+    "order": 296
+  },
+  {
+    "name": "Warner TV Asia (720p)",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warner2018LA.png/960px-Warner2018LA.png",
+    "category": "Movies",
+    "url": "https://cdn4.skygo.mn/live/disk1/Warner/HLSv3-FTA/Warner.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-229",
+    "order": 297
+  },
+  {
+    "name": "Watch it Scream! (720p)",
+    "logo": "https://i.imgur.com/bz3Caum.png",
+    "category": "Movies",
+    "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2246",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-230",
+    "order": 298
+  },
+  {
+    "name": "Whiplash Cinema (480p)",
+    "logo": "https://whiplash.cc/assets/img/channels/whiplashcinema.png",
+    "category": "Movies",
+    "url": "https://cdn.whiplash.cc/whiplash-cinema/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-231",
+    "order": 299
+  },
+  {
+    "name": "Wu Tang Collection (720p)",
+    "logo": "https://i.imgur.com/sz55sBl.png",
+    "category": "Movies",
+    "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991745/hls/master.m3u8?ads.xumo_channelId=99991745",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-232",
+    "order": 300
+  },
+  {
+    "name": "Xtrema Accion",
+    "logo": "https://i.imgur.com/z5NwizH.png",
+    "category": "Movies",
+    "url": "https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-233",
+    "order": 301
+  },
+  {
+    "name": "Xtrema Cine Clasico",
+    "logo": "https://i.imgur.com/j91M4Yf.png",
+    "category": "Movies",
+    "url": "https://stmv6.voxtvhd.com.br/cineclasico/cineclasico/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-234",
+    "order": 302
+  },
+  {
+    "name": "Xtrema Terror",
+    "logo": "https://i.imgur.com/FcaTUym.png",
+    "category": "Movies",
+    "url": "https://stmv6.voxtvhd.com.br/cineterror/cineterror/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-235",
+    "order": 303
+  },
+  {
+    "name": "ZB Cinema (1080p)",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/ZBCINEMA.png",
+    "category": "Movies",
+    "url": "https://server.zillarbarta.com/ZBCINEMA/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-236",
+    "order": 304
+  },
+  {
+    "name": "Zee Action",
+    "logo": "https://assets-prod.services.toffeelive.com/Pc3RD5YBtpl-Sbt7doxr/posters/33d667ae-bcc3-4f6b-b376-76c552136923.png",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/62.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-237",
+    "order": 305
+  },
+  {
+    "name": "Zee Bangla Cinema",
+    "logo": "https://assets-prod.services.toffeelive.com/-C7MX5UBv9knK3AHdKOi/posters/e37fef13-9bf3-4ecc-8b74-fca091874fa0.png",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/60.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-238",
+    "order": 306
+  },
+  {
+    "name": "Zee Bollywood",
+    "logo": "https://assets-prod.services.toffeelive.com/OnSlPJYBcqxnFHJB6lFX/posters/d9ccb2a6-227f-4a41-8714-efaddab5cf5e.png",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/61.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-239",
+    "order": 307
+  },
+  {
+    "name": "Zee Cafe",
+    "logo": "https://assets-prod.services.toffeelive.com/U3QEd5YBcqxnFHJBpYzc/posters/8bc7ae1b-1a46-4b76-bdb1-13c7dbd3a95c.png",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/65.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-240",
+    "order": 308
+  },
+  {
+    "name": "Zee Cinema (576p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png",
+    "category": "Movies",
+    "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-241",
+    "order": 309
+  },
+  {
+    "name": "Zee Cinema APAC (720p)",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png",
+    "category": "Movies",
+    "url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-242",
+    "order": 310
+  },
+  {
+    "name": "Zee Cinema HD",
+    "logo": "https://assets-prod.services.toffeelive.com/5y7HX5UBv9knK3AHs6Nk/posters/7582fb79-c15f-4247-ba5b-1d2dd27f3d71.png",
+    "category": "Movies",
+    "url": "https://alixbd.com/playlistconfig/channel/68.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-243",
+    "order": 311
+  },
+  {
+    "name": "+MaisUm (720p)",
+    "logo": "https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png",
+    "category": "Music",
+    "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-244",
+    "order": 312
+  },
+  {
+    "name": "Discovery Science",
+    "logo": "https://assets-prod.services.toffeelive.com/AS6s-JQBv9knK3AHDTZb/posters/eab8fd0f-9351-464c-b45e-332f38b49f4b.webp",
+    "category": "Science Fiction",
+    "url": "https://alixbd.com/playlistconfig/channel/76.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-246",
+    "order": 313
+  },
+  {
+    "name": "Eurosport HD",
+    "logo": "https://assets-prod.services.toffeelive.com/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/35.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-247",
+    "order": 314
+  },
+  {
+    "name": "SAFF Live 1",
+    "logo": "https://assets-prod.services.toffeelive.com/itdbVKEBalKyvLQI94RR/posters/7f266367-077c-4acb-b29a-73437a80419b.png",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/4.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-248",
+    "order": 315
+  },
+  {
+    "name": "SAFF Live 2",
+    "logo": "https://assets-prod.services.toffeelive.com/9dijmqEBalKyvLQIIAFj/posters/9b491bef-7c6a-4ccf-90b6-a890e0152532.png",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/6.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-249",
+    "order": 316
+  },
+  {
+    "name": "SAFF Live 3 Bangla",
+    "logo": "https://assets-prod.services.toffeelive.com/I4fIpqEBJIOHmUelirBF/posters/bfc44ba4-b36a-4742-92ce-cb148397bc07.png",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/5.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-250",
+    "order": 317
+  },
+  {
+    "name": "SAFF Live 4 Bangla",
+    "logo": "https://assets-prod.services.toffeelive.com/JdjLpqEBalKyvLQIrDPD/posters/344a2952-5030-4412-aec4-d1769acc45dd.png",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/7.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-251",
+    "order": 318
+  },
+  {
+    "name": "Sony Ten Cricket",
+    "logo": "https://assets-prod.services.toffeelive.com/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/41.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-252",
+    "order": 319
+  },
+  {
+    "name": "Sony Ten Sports 1 HD",
+    "logo": "https://assets-prod.services.toffeelive.com/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/38.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-253",
+    "order": 320
+  },
+  {
+    "name": "Sony Ten Sports 2 HD",
+    "logo": "https://assets-prod.services.toffeelive.com/sy5m-JQBv9knK3AHYTTk/posters/5e40bf0e-633f-4d37-a3b2-3d606f0ac19a.png",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/39.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-254",
+    "order": 321
+  },
+  {
+    "name": "Sony Ten Sports 5 HD",
+    "logo": "https://assets-prod.services.toffeelive.com/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/40.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-255",
+    "order": 322
+  },
+  {
+    "name": "WC Match Recap",
+    "logo": "https://assets-prod.services.toffeelive.com/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/3.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-256",
+    "order": 323
+  },
+  {
+    "name": "Cartoon Network",
+    "logo": "https://assets-prod.services.toffeelive.com/mC6W-JQBv9knK3AHfDWA/posters/d2a02d82-fde4-4769-a6d9-95c0560e2120.webp",
+    "category": "Teen",
+    "url": "https://alixbd.com/playlistconfig/channel/43.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-257",
+    "order": 324
+  },
+  {
+    "name": "Cartoon Network HD +",
+    "logo": "https://assets-prod.services.toffeelive.com/1y6e-JQBv9knK3AHNDWb/posters/ee9ba01b-1bcf-436b-b273-7b857f0810fb.webp",
+    "category": "Teen",
+    "url": "https://alixbd.com/playlistconfig/channel/42.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-258",
+    "order": 325
+  },
+  {
+    "name": "Discovery Kids",
+    "logo": "https://assets-prod.services.toffeelive.com/1i6e-JQBv9knK3AHHTXR/posters/325887a7-84ea-4cf9-a6fd-6111ddc25671.webp",
+    "category": "Teen",
+    "url": "https://alixbd.com/playlistconfig/channel/45.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793911256362-259",
+    "order": 326
   }
 ]
