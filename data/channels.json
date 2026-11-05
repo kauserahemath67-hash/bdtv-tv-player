@@ -1409,30 +1409,33 @@
     "logo": "https://i.imgur.com/y2zeLS3.jpeg",
     "category": "Movies",
     "url": "http://99.27.51.147/CineClassic/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-130",
-    "order": 131
+    "order": 131,
+    "manual_override": true
   },
   {
     "name": "Cine+ Frisson (1080p)",
     "logo": "https://i.imgur.com/MwFtbnR.jpeg",
     "category": "Movies",
     "url": "http://99.27.51.147:8080/CineFrisson/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-131",
-    "order": 132
+    "order": 132,
+    "manual_override": true
   },
   {
     "name": "Cine+ Hit",
     "logo": "https://i.imgur.com/b3FcLU1.png",
     "category": "Movies",
     "url": "http://777905.live.tvstitch.com/playlist.m3u8?source=aHR0cDovLzE3Ni4xMjIuMTAzLjI0MTo3MDAwL2NoNDAvdHJhY2tzLXYyYTEvbW9uby5tM3U4P2xpdmU9MSZpcD0xNzguMTM2LjQyLjIyMCZpZD05NDg4NjUmc2VjcmV0PW4xdTd1aTA2JnNzbD0xJjIxeW89MCZlPTE3OTA3NTI3NDUmc3Q9cVZaQ3Vpd2l3UzEwLW1tMzEwMktDZw%3D%3D&master=539",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-132",
-    "order": 133
+    "order": 133,
+    "manual_override": true
   },
   {
     "name": "Cine+ Legend",
