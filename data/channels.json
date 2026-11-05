@@ -1161,30 +1161,33 @@
     "logo": "https://images.pluto.tv/channels/5f8ed0f17564a300082b676a/colorLogoPNG_1775048900088.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f8ed0f17564a300082b676a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-107",
-    "order": 108
+    "order": 108,
+    "manual_override": true
   },
   {
     "name": "Cine Catastrophe by Pluto TV",
     "logo": "https://images.pluto.tv/channels/65a69ef53af63d000825e0ee/colorLogoPNG_1751272916058.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-65a69ef53af63d000825e0ee.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-108",
-    "order": 109
+    "order": 109,
+    "manual_override": true
   },
   {
     "name": "Cine d'Asie by Pluto TV",
     "logo": "https://images.pluto.tv/channels/62f3e2d000418d00070f7dbc/colorLogoPNG_1751272759694.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62f3e2d000418d00070f7dbc.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-109",
-    "order": 110
+    "order": 110,
+    "manual_override": true
   },
   {
     "name": "Cine Familiar (1080p)",
