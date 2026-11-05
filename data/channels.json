@@ -1475,30 +1475,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png",
     "category": "Movies",
     "url": "http://138.121.15.230:9002/CINECANAL/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-136",
-    "order": 137
+    "order": 137,
+    "manual_override": true
   },
   {
     "name": "Cinecanal South",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png",
     "category": "Movies",
     "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/17.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-137",
-    "order": 138
+    "order": 138,
+    "manual_override": true
   },
   {
     "name": "CineLatino (720p)",
     "logo": "https://i.imgur.com/2V0R0xT.png",
     "category": "Movies",
     "url": "http://206.135.11.174:8010/play/a0lq/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-138",
-    "order": 139
+    "order": 139,
+    "manual_override": true
   },
   {
     "name": "Cinema (Mongolia) (1080p)",
