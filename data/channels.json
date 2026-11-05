@@ -2570,10 +2570,11 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bhits.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/fb_premium_hungary/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-238",
-    "order": 239
+    "order": 239,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Hits Romania (576p)",
@@ -2590,20 +2591,22 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Blove-and-crime.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_filmbox_plus_atk_1200/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-240",
-    "order": 241
+    "order": 241,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Love & Crime Adria",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Blove-and-crime.png",
     "category": "Movies",
     "url": "https://webtvstream.bhtelecom.ba/filmbox_stars.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-241",
-    "order": 242
+    "order": 242,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Love & Crime Bulgaria",
