@@ -438,8 +438,41 @@ class IPTVPlayer {
     });
   }
 
-  initHLS() {
-    if (!Hls.isSupported()) return;
+  // Feature 1: Dynamic Speed Catch-up Monitor
+  // If buffer drains < 8s, slow to 0.95x — buffer rebuilds without freezing
+  // If buffer > 20s, restore 1.0x normal speed
+  startCatchupMonitor() {
+    this.stopCatchupMonitor();
+    this._catchupTimer = setInterval(() => {
+      if (!this.video || this.video.paused || this.video.ended) return;
+      let bufferAhead = 0;
+      const ct = this.video.currentTime;
+      const buf = this.video.buffered;
+      for (let i = 0; i < buf.length; i++) {
+        if (buf.start(i) <= ct && buf.end(i) > ct) {
+          bufferAhead = buf.end(i) - ct;
+          break;
+        }
+      }
+      if (bufferAhead > 0 && bufferAhead < 8 && this.video.playbackRate !== 0.95) {
+        console.log(`[CatchupMonitor] Buffer low (${bufferAhead.toFixed(1)}s) → slow to 0.95x`);
+        this.video.playbackRate = 0.95;
+      } else if (bufferAhead >= 20 && this.video.playbackRate !== 1.0) {
+        console.log(`[CatchupMonitor] Buffer OK (${bufferAhead.toFixed(1)}s) → restore 1.0x`);
+        this.video.playbackRate = 1.0;
+      }
+    }, 1000);
+  }
+
+  stopCatchupMonitor() {
+    if (this._catchupTimer) {
+      clearInterval(this._catchupTimer);
+      this._catchupTimer = null;
+    }
+    if (this.video) this.video.playbackRate = 1.0;
+  }
+
+  initHLS() {    if (!Hls.isSupported()) return;
 
     this.hls = new Hls({
       enableWorker: true,
@@ -469,6 +502,8 @@ class IPTVPlayer {
       // Keep buffering overlay visible until video actually starts rendering
       this.hideError();
       this.attemptPlay();
+      // Feature 1: Start dynamic speed catch-up monitor
+      this.startCatchupMonitor();
     });
 
     this.hls.on(Hls.Events.FRAG_BUFFERED, () => {
@@ -504,8 +539,29 @@ class IPTVPlayer {
           case Hls.ErrorTypes.NETWORK_ERROR:
             networkRecoveryCount++;
             console.log(`HLS Network error (${networkRecoveryCount}), retrying...`);
-            if (networkRecoveryCount <= 5) {
+            if (networkRecoveryCount <= 3) {
               this.hls.startLoad();
+            } else if (networkRecoveryCount === 4) {
+              // Feature 2: Auto-failover — try backup_url before full reload
+              const ch = this.filteredChannels[this.currentIndex];
+              const backupUrl = ch && (ch.backup_url || ch.backupUrl);
+              if (backupUrl) {
+                console.log('Switching to backup stream URL...');
+                networkRecoveryCount = 0;
+                const cleanBackup = backupUrl.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+                try { this.hls.destroy(); } catch(e) {}
+                this.hls = null;
+                this.initHLS();
+                this.hls.loadSource(cleanBackup);
+              } else {
+                // No backup URL — do a full channel reload after short delay
+                setTimeout(() => {
+                  networkRecoveryCount = 0;
+                  if (this.filteredChannels[this.currentIndex]) {
+                    this.playChannel(this.currentIndex);
+                  }
+                }, 2000);
+              }
             } else {
               setTimeout(() => {
                 networkRecoveryCount = 0;
@@ -628,6 +684,9 @@ class IPTVPlayer {
     if (index < 0 || index >= this.filteredChannels.length) return;
     this.currentIndex = index;
     const channel = this.filteredChannels[index];
+
+    // Stop catch-up monitor from previous channel first
+    this.stopCatchupMonitor();
 
     // 1. Instantly STOP old stream & show buffering overlay immediately (no blank black freeze!)
     this.showBuffering(true);
