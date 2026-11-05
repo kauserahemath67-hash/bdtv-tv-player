@@ -2917,10 +2917,11 @@
     "logo": "https://i.imgur.com/hCcdrOv.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-66ba1e4446762a000855cd87.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-270",
-    "order": 271
+    "order": 271,
+    "manual_override": true
   },
   {
     "name": "Gold Star",
@@ -2937,20 +2938,22 @@
     "logo": "https://i.imgur.com/GBlvQBI.png",
     "category": "Movies",
     "url": "http://200.229.147.210:9999/play/a00l/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-272",
-    "order": 273
+    "order": 273,
+    "manual_override": true
   },
   {
     "name": "Golden Premier (1080p)",
     "logo": "https://i.imgur.com/JMa7jws.png",
     "category": "Movies",
     "url": "http://200.229.147.210:9999/play/a00k/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-273",
-    "order": 274
+    "order": 274,
+    "manual_override": true
   },
   {
     "name": "Goldmines 2 (576p)",
