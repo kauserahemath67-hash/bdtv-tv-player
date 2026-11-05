@@ -87,20 +87,22 @@
     "logo": "https://images.toffeelive.com/images/program/604/logo/240x240/mobile_logo_093449001666780976.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/ten_2_hd_720/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793870575735-8",
-    "order": 9
+    "order": 9,
+    "manual_override": true
   },
   {
     "name": "Sony Sports 5",
     "logo": "https://images.toffeelive.com/images/program/606/logo/240x240/mobile_logo_689539001672145843.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/ten_5_hd_720/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793870575735-9",
-    "order": 10
+    "order": 10,
+    "manual_override": true
   },
   {
     "name": "Matribhumi Tv",
@@ -137,10 +139,11 @@
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/6/69/Jalsha_Movies_HD_alt.png",
     "url": "https://robitv.com/rn/http://livetv.akr4m.com:8080/bdtv/restrem/27.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793870575735-13",
-    "order": 14
+    "order": 14,
+    "manual_override": true
   },
   {
     "name": "Colors Bangla",
