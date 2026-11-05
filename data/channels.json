@@ -4222,30 +4222,33 @@
     "logo": "https://www.mongolsat.mn/assets/img/channel/909.png",
     "category": "Movies",
     "url": "https://cdn4.skygo.mn/live/disk1/Moviebox/DASH-FTA/Moviebox.mpd",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-392",
-    "order": 393
+    "order": 393,
+    "manual_override": true
   },
   {
     "name": "Moviedome (720p)",
     "logo": "https://i.imgur.com/8c54ycg.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-615c1e5ce3039400070a0547.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-393",
-    "order": 394
+    "order": 394,
+    "manual_override": true
   },
   {
     "name": "Movies Action (1080p)",
     "logo": "https://i.imgur.com/NIVhISa.png",
     "category": "Movies",
     "url": "https://shd-amg-fast.edgenextcdn.net/tx011/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-394",
-    "order": 395
+    "order": 395,
+    "manual_override": true
   },
   {
     "name": "Movies Now HD (1080p)",
