@@ -7691,30 +7691,33 @@
     "logo": "https://images.pluto.tv/channels/6512ec9f3a0d700008db4f0c/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-6512ec9f3a0d700008db4f0c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-714",
-    "order": 715
+    "order": 715,
+    "manual_override": true
   },
   {
     "name": "The Twilight Zone NO",
     "logo": "https://images.pluto.tv/channels/6512ec9f3a0d700008db4f0c/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-6512d3a0bdcb19000799cc82.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-715",
-    "order": 716
+    "order": 716,
+    "manual_override": true
   },
   {
     "name": "The Wild Wild West (United States)",
     "logo": "https://images.pluto.tv/channels/664e640a0120f40008be4582/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-664e640a0120f40008be4582.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-716",
-    "order": 717
+    "order": 717,
+    "manual_override": true
   },
   {
     "name": "Thrill (540p)",
