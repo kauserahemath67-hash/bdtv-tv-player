@@ -5310,30 +5310,33 @@
     "logo": "https://images.pluto.tv/channels/655b5d865812e80008843bd1/colorLogoPNG_1747044085522.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-655b5d865812e80008843bd1.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-493",
-    "order": 494
+    "order": 494,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Comedies Cultes",
     "logo": "https://images.pluto.tv/channels/67b4b2d976a934282e92d71c/colorLogoPNG.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-67b4b2d976a934282e92d71c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-494",
-    "order": 495
+    "order": 495,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Comedy Movies",
     "logo": "https://images.pluto.tv/channels/62ea3d24b8e02600071fa296/colorLogoPNG.png",
     "category": "Comedy;Movies",
     "url": "https://jmp2.uk/plu-62ea3d24b8e02600071fa296.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-495",
-    "order": 496
+    "order": 496,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Crime Drama",
