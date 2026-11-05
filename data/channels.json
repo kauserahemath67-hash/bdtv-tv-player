@@ -7628,20 +7628,22 @@
     "logo": "https://i.imgur.com/BHYWG0h.png",
     "category": "Movies",
     "url": "http://46.151.196.223:14326/",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-708",
-    "order": 709
+    "order": 709,
+    "manual_override": true
   },
   {
     "name": "TF1 Series Films",
     "logo": "https://i.imgur.com/4CJIDKQ.png",
     "category": "Movies",
     "url": "http://149.62.177.107:9999/TF1_Series_Films/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-709",
-    "order": 710
+    "order": 710,
+    "manual_override": true
   },
   {
     "name": "Thalaa TV (1080p)",
@@ -7678,10 +7680,11 @@
     "logo": "https://images.pluto.tv/channels/6512ec9f3a0d700008db4f0c/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-6512d6c92ce8e40008bd5c81.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-713",
-    "order": 714
+    "order": 714,
+    "manual_override": true
   },
   {
     "name": "The Twilight Zone DK",
