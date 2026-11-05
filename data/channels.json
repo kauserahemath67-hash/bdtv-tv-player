@@ -880,10 +880,11 @@
     "logo": "https://images.pluto.tv/channels/696e647b07ea70192d49f6a5/colorLogoPNG_1768842647658.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-696e647b07ea70192d49f6a5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-81",
-    "order": 82
+    "order": 82,
+    "manual_override": true
   },
   {
     "name": "Boreal (720p) [Not 24/7]",
@@ -900,20 +901,22 @@
     "logo": "https://i.ibb.co/yynxRTS/Bravo-Farsi.jpg",
     "category": "Movies",
     "url": "https://bravoohls.wns.live/hls/stream.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-83",
-    "order": 84
+    "order": 84,
+    "manual_override": true
   },
   {
     "name": "bTV Action",
     "logo": "https://i.imgur.com/hGUXHuT.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a04n",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-84",
-    "order": 85
+    "order": 85,
+    "manual_override": true
   },
   {
     "name": "bTV Cinema",
