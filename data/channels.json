@@ -263,10 +263,11 @@
     "logo": "https://pbs.twimg.com/profile_images/1689620641283190784/GGbvbn-B_400x400.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/bijoy_tv_abr/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793872258434-25",
-    "order": 26
+    "order": 26,
+    "manual_override": true
   },
   {
     "name": "Me Tv",
@@ -483,10 +484,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
     "url": "https://box.bbaria.net:8083/Channel9/video.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793872258434-47",
-    "order": 48
+    "order": 48,
+    "manual_override": true
   },
   {
     "name": "DBC News HD",
@@ -543,10 +545,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
     "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8#skym3u.dev",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793872258434-53",
-    "order": 54
+    "order": 54,
+    "manual_override": true
   },
   {
     "name": "Bangla Vision",
