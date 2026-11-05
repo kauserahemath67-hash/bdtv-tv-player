@@ -3139,20 +3139,22 @@
     "logo": "https://i.postimg.cc/MK83K74Z/20260705-053736.jpg",
     "url": "https://jagroniakash.ncare.live/unmochontv/unmochontv.stream/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793875641058-61",
-    "order": 313
+    "order": 313,
+    "manual_override": true
   },
   {
     "name": "Sony Entertainment Hd",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/b02e7be82b9b488e5a79b0f7e8f7ca1c.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/sony_ent_hd_abr/live/sony_ent_hd_480/chunks.m3u8?nimblesessionid=206459882",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793875641058-64",
-    "order": 314
+    "order": 314,
+    "manual_override": true
   },
   {
     "name": "Sony Movies",
@@ -3169,10 +3171,11 @@
     "logo": "https://yt3.googleusercontent.com/ytc/AIdro_laNnznvidGadk1O6pI_FsGpRqKdrH6MsequORPttJsBNc=s900-c-k-c0x00ffffff-no-rj",
     "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793875641058-67",
-    "order": 316
+    "order": 316,
+    "manual_override": true
   },
   {
     "name": "Music India",
