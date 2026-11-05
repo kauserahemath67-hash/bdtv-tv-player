@@ -7853,30 +7853,33 @@
     "logo": "https://i.imgur.com/avBL8pQ.png",
     "category": "Comedy;Movies;Series",
     "url": "http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/universalcomedy/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-729",
-    "order": 730
+    "order": 730,
+    "manual_override": true
   },
   {
     "name": "USA Network (720p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/USA_Network_logo_%282016%29.svg/960px-USA_Network_logo_%282016%29.svg.png",
     "category": "Comedy;Movies;Series;Sports",
     "url": "http://190.197.41.183/USA_NETWORK/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-730",
-    "order": 731
+    "order": 731,
+    "manual_override": true
   },
   {
     "name": "Velvet. European Movies (1080p)",
     "logo": "https://antiabuse-container.b-cdn.net/eurkino.png",
     "category": "Family;Movies",
     "url": "https://cdn.rostelekom-tv.xyz/live/LQ3j0n7j0Kq4OQm8.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-731",
-    "order": 732
+    "order": 732,
+    "manual_override": true
   },
   {
     "name": "Velvet. Golden Collection (1080p)",
