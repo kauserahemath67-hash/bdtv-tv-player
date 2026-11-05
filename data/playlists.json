@@ -1,5 +1,14 @@
 [
   {
+    "name": "bd",
+    "url": "https://iptv-org.github.io/iptv/countries/bd.m3u",
+    "format": "M3U Playlist",
+    "channelCount": 42,
+    "active": true,
+    "id": "pl-1793907318895",
+    "savedAt": "2026-11-05T19:35:18.895Z"
+  },
+  {
     "name": "https://is.gd/ijN81u",
     "url": "https://is.gd/ijN81u",
     "format": "M3U Playlist",
