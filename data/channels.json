@@ -3844,10 +3844,11 @@
     "logo": "https://i.imgur.com/fQhrsdr.png",
     "category": "Movies",
     "url": "https://stream.berosat.live/hls/lollywood-hd/lollywood-hd.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-356",
-    "order": 357
+    "order": 357,
+    "manual_override": true
   },
   {
     "name": "Maah TV (720p)",
@@ -3874,20 +3875,22 @@
     "logo": "https://i.imgur.com/CXjo8kn.png",
     "category": "Movies;Shop",
     "url": "https://mmn1-301f.kxcdn.com/hls/MMN-HLS.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-359",
-    "order": 360
+    "order": 360,
+    "manual_override": true
   },
   {
     "name": "Magyar Mozi TV",
     "logo": "https://i.imgur.com/cXajs8V.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/mozi/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-360",
-    "order": 361
+    "order": 361,
+    "manual_override": true
   },
   {
     "name": "Maha Movie (576p)",
