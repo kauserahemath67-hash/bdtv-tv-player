@@ -338,30 +338,33 @@
     "logo": "https://i.imgur.com/a8ZBGBw.png",
     "category": "Movies;Series",
     "url": "http://stream.mcquack.net/162/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-31",
-    "order": 32
+    "order": 32,
+    "manual_override": true
   },
   {
     "name": "Amedia Premium (720p)",
     "logo": "https://i.imgur.com/UUjehw9.png",
     "category": "Movies;Series",
     "url": "http://31.148.48.15/Amedia_Premium_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-32",
-    "order": 33
+    "order": 33,
+    "manual_override": true
   },
   {
     "name": "American Horrors (480p)",
     "logo": "https://image.roku.com/developer_channels/prod/16f5571a82819e8992a748c70b256cbe63105f4b546b73d129668dc2cb701d91.png",
     "category": "Movies",
     "url": "http://107.167.7.162:8081/playlist/amhor/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-33",
-    "order": 34
+    "order": 34,
+    "manual_override": true
   },
   {
     "name": "Aneflix Live (720p)",
