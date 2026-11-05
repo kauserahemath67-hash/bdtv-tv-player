@@ -4755,30 +4755,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png",
     "category": "Movies;Series",
     "url": "http://23.237.104.106:8080/USA_PARAMOUNT_NETWORK/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-442",
-    "order": 443
+    "order": 443,
+    "manual_override": true
   },
   {
     "name": "Paramount+ Picks",
     "logo": "https://images.pluto.tv/channels/5ff8c708653d080007361b14/featuredImage.jpg",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5ff8c708653d080007361b14.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-443",
-    "order": 444
+    "order": 444,
+    "manual_override": true
   },
   {
     "name": "Patriot (720p)",
     "logo": "https://patriotkanal.ru/assets/cached/2025/02/resize/264_112_q100_patriot-only-logo.png",
     "category": "Movies",
     "url": "https://stream.smotrim.ru/hls2/static/playlist_4.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-444",
-    "order": 445
+    "order": 445,
+    "manual_override": true
   },
   {
     "name": "Persiana Cinema",
