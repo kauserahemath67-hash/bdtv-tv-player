@@ -4533,10 +4533,11 @@
     "logo": "https://i.imgur.com/QRWKpmb.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/362/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-421",
-    "order": 422
+    "order": 422,
+    "manual_override": true
   },
   {
     "name": "Nashe Novoe Kino",
@@ -4563,20 +4564,22 @@
     "logo": "",
     "category": "Movies",
     "url": "https://newfhls.wns.live/hls/stream.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-424",
-    "order": 425
+    "order": 425,
+    "manual_override": true
   },
   {
     "name": "Next HD (480p)",
     "logo": "https://i.imgur.com/c2rF3SS.png",
     "category": "Movies;Music",
     "url": "https://live.enhdtv.com:19360/nexthd/nexthd.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-425",
-    "order": 426
+    "order": 426,
+    "manual_override": true
   },
   {
     "name": "NH BollyFlix (1080p)",
