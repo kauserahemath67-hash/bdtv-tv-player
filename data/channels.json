@@ -5376,30 +5376,33 @@
     "logo": "https://images.pluto.tv/channels/5c5c31f2f21b553c1f673fb0/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5c5c31f2f21b553c1f673fb0.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-499",
-    "order": 500
+    "order": 500,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Cult Films (United States)",
     "logo": "https://i.imgur.com/xoaIAus.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5c665db3e6c01b72c4977bc2.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-500",
-    "order": 501
+    "order": 501,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Danske klassikere",
     "logo": "https://images.pluto.tv/channels/67d2b814fe36d6e7b1d2318a/colorLogoPNG.png",
     "category": "Classic;Movies",
     "url": "https://jmp2.uk/plu-67d2b814fe36d6e7b1d2318a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-501",
-    "order": 502
+    "order": 502,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Drama",
