@@ -546,10 +546,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
     "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/index.m3u8#skym3u.dev",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793911241194-53",
-    "order": 54
+    "order": 54,
+    "manual_override": true
   },
   {
     "name": "Bangla Vision",
@@ -596,10 +597,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1781163068414.png",
     "url": "https://akash-by-hady.srhady.workers.dev/live/299.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793911241194-58",
-    "order": 59
+    "order": 59,
+    "manual_override": true
   },
   {
     "name": "Star News",
@@ -626,10 +628,11 @@
     "logo": "https://i.postimg.cc/MK83K74Z/20260705-053736.jpg",
     "url": "https://jagroniakash.ncare.live/unmochontv/unmochontv.stream/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793911241194-61",
-    "order": 62
+    "order": 62,
+    "manual_override": true
   },
   {
     "name": "Al Jazeera",
