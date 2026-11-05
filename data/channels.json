@@ -3758,10 +3758,11 @@
     "logo": "https://i.imgur.com/ZRaWqxj.png",
     "category": "Movies",
     "url": "http://5.188.159.128:8070/kinosvidanie/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-348",
-    "order": 349
+    "order": 349,
+    "manual_override": true
   },
   {
     "name": "Kinoteatr (1080p)",
@@ -3778,20 +3779,22 @@
     "logo": "https://i.imgur.com/mAcAAQF.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/278/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-350",
-    "order": 351
+    "order": 351,
+    "manual_override": true
   },
   {
     "name": "Kinowood (1080p)",
     "logo": "https://i.imgur.com/PQcXNBI.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/446/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-351",
-    "order": 352
+    "order": 352,
+    "manual_override": true
   },
   {
     "name": "Klasik (576p) [Not 24/7]",
