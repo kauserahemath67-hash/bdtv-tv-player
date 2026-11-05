@@ -10,6 +10,16 @@
     "manual_override": false
   },
   {
+    "name": "Nagorik Tv",
+    "logo": "https://i.imgur.com/2cpHJKq.png",
+    "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
+    "category": "General",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793851809313-1",
+    "manual_override": false
+  },
+  {
     "name": "Bijoy TV",
     "logo": "https://assets-prod.services.toffeelive.com/bns4l5sBcqxnFHJBVZ32/posters/feaf9f3d-cc3b-4a3d-81a3-2cb703e561eb.png",
     "category": "Action",
@@ -801,16 +811,6 @@
     "is_pinned": false,
     "id": "ch-1793851556122-78",
     "order": 79
-  },
-  {
-    "name": "Nagorik Tv",
-    "logo": "https://i.imgur.com/2cpHJKq.png",
-    "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
-    "category": "General",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1793851809313-1",
-    "manual_override": false
   },
   {
     "name": "A Sports",
