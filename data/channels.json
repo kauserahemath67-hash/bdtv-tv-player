@@ -7344,30 +7344,33 @@
     "logo": "https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6400c2a6cb41a40008dbe5bc.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-682",
-    "order": 683
+    "order": 683,
+    "manual_override": true
   },
   {
     "name": "Star Trek Movies DK",
     "logo": "https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6400c281dff38e00083f59da.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-683",
-    "order": 684
+    "order": 684,
+    "manual_override": true
   },
   {
     "name": "Star Trek Movies NO",
     "logo": "https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6400c228498393000878a9b7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-684",
-    "order": 685
+    "order": 685,
+    "manual_override": true
   },
   {
     "name": "Star Trek: Deep Space Nine",
