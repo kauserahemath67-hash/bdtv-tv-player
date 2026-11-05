@@ -827,10 +827,11 @@
     "logo": "https://i.imgur.com/YLQRnXt.png",
     "category": "Movies",
     "url": "http://176.118.197.101/Bollywood_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-76",
-    "order": 77
+    "order": 77,
+    "manual_override": true
   },
   {
     "name": "Bollywood Classic Romania (576p)",
@@ -857,20 +858,22 @@
     "logo": "https://i.imgur.com/YdIHXOR.png",
     "category": "Movies;Series",
     "url": "http://stream.mcquack.net/73/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-79",
-    "order": 80
+    "order": 80,
+    "manual_override": true
   },
   {
     "name": "Bonanza",
     "logo": "https://images.pluto.tv/channels/696e647b07ea70192d49f6a5/colorLogoPNG_1768842647658.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-68e9913c4a666b9054849832.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-80",
-    "order": 81
+    "order": 81,
+    "manual_override": true
   },
   {
     "name": "Bonanza CA",
