@@ -7,7 +7,8 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1793852321672-0",
-    "manual_override": false
+    "manual_override": false,
+    "order": 1
   },
   {
     "name": "A Sports",
@@ -17,7 +18,8 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793852321672-2",
-    "manual_override": false
+    "manual_override": false,
+    "order": 2
   },
   {
     "name": "Nagorik Tv",
@@ -27,7 +29,8 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793852321672-1",
-    "manual_override": false
+    "manual_override": false,
+    "order": 3
   },
   {
     "name": "PTV Sports",
