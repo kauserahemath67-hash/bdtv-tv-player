@@ -1,5 +1,22 @@
 [
   {
+    "id": "cust-1793907908821",
+    "customer_code": "miraj",
+    "name": "Miraj",
+    "login_pin": "1234",
+    "account_status": "ACTIVE",
+    "manual_block": false,
+    "block_reason": "",
+    "max_devices": 2,
+    "channels_enabled": true,
+    "plan": "Monthly VIP",
+    "starts_at": "2026-11-05",
+    "expires_at": "2026-12-05",
+    "payment_status": "PAID",
+    "transaction_reference": "",
+    "createdAt": "2026-11-05T19:45:08.821Z"
+  },
+  {
     "id": "cust-1793792530221",
     "customer_code": "admin",
     "name": "admin",
