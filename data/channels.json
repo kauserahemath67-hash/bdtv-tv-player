@@ -3487,10 +3487,11 @@
     "logo": "https://www.tvchinese.net/uploads/tv/jlyspd.jpg",
     "category": "Movies",
     "url": "https://lsfb.avap.jilintv.cn/zqvk7vpj/channel/906341e6f19b4c4bacdc89941eb85d12/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-323",
-    "order": 324
+    "order": 324,
+    "manual_override": true
   },
   {
     "name": "Kairali We (576p)",
@@ -3507,10 +3508,11 @@
     "logo": "https://i.imgur.com/EZUyzhG.jpg",
     "category": "Movies",
     "url": "https://ktvhdsg.ekantipur.com:8443/ktvmax2025/match2/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-325",
-    "order": 326
+    "order": 326,
+    "manual_override": true
   },
   {
     "name": "KCM India (1080p) [Geo-blocked]",
@@ -3527,10 +3529,11 @@
     "logo": "https://i.imgur.com/avFk0Tt.png",
     "category": "Kids;Movies",
     "url": "https://jmp2.uk/plu-5db0ad56edc89300090d2ebb.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-327",
-    "order": 328
+    "order": 328,
+    "manual_override": true
   },
   {
     "name": "KidsFlix (1080p) [Not 24/7]",
