@@ -2157,10 +2157,11 @@
     "logo": "https://dtil.tmsimg.com/assets/GNLZZGG0032BVJ8.png?lock=720x540",
     "category": "Movies",
     "url": "https://mumt01.tangotv.in/O5aw8Zn3EPICBHOJPURI/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-200",
-    "order": 201
+    "order": 201,
+    "manual_override": true
   },
   {
     "name": "Epic Bhojpuri Digital (1080p)",
@@ -2187,20 +2188,22 @@
     "logo": "https://dtil.tmsimg.com/assets/s143026_ld_h15_aa.png?lock=720x540",
     "category": "Movies",
     "url": "https://d27zlkxhgwrfgo.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_CINEMA_H264_cloud_in/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-203",
-    "order": 204
+    "order": 204,
+    "manual_override": true
   },
   {
     "name": "Evrokino (576p)",
     "logo": "https://i.imgur.com/8LPtPf6.png",
     "category": "Movies",
     "url": "https://fs.uplink.kz/eurokino/mono.m3u8?token=onlinetv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-204",
-    "order": 205
+    "order": 205,
+    "manual_override": true
   },
   {
     "name": "Evrokino HD (1080p)",
