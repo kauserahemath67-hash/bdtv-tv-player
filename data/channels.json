@@ -5706,30 +5706,33 @@
     "logo": "https://images.pluto.tv/channels/63a1c9790cc44a0007dc8857/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-63a1c9790cc44a0007dc8857.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-529",
-    "order": 530
+    "order": 530,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Horror (Sweden) NO",
     "logo": "https://images.pluto.tv/channels/63a1c9790cc44a0007dc8857/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-63a19cb7847a090007f230d7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-530",
-    "order": 531
+    "order": 531,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Horror (United States)",
     "logo": "https://images.pluto.tv/channels/569546031a619b8f07ce6e25/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-569546031a619b8f07ce6e25.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-531",
-    "order": 532
+    "order": 532,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Horror (United States) CA",
