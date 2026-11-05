@@ -1,14 +1,5 @@
 [
   {
-    "name": "Custom Playlist",
-    "url": "",
-    "format": "JSON Playlist",
-    "channelCount": 79,
-    "active": true,
-    "id": "pl-1793850971020",
-    "savedAt": "2026-11-05T03:56:11.020Z"
-  },
-  {
     "id": "pl-1793850938181",
     "name": "Raw Import",
     "url": "",
