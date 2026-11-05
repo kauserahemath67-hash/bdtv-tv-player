@@ -7767,30 +7767,33 @@
     "logo": "https://i.imgur.com/GHNsctR.png",
     "category": "Movies",
     "url": "http://85.14.32.26:8800/udp/239.100.10.100:5000",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-721",
-    "order": 722
+    "order": 722,
+    "manual_override": true
   },
   {
     "name": "TV1000 Russian Kino Global",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TV1000_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B5_%D0%BA%D0%B8%D0%BD%D0%BE_2014.png/1280px-TV1000_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B5_%D0%BA%D0%B8%D0%BD%D0%BE_2014.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a0bx",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-722",
-    "order": 723
+    "order": 723,
+    "manual_override": true
   },
   {
     "name": "TV Land Drama",
     "logo": "https://i.imgur.com/y1rXIAS.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5d40bebc5e3d2750a2239d7e.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-723",
-    "order": 724
+    "order": 724,
+    "manual_override": true
   },
   {
     "name": "TVCARiB Cinema (720p) [Not 24/7]",
