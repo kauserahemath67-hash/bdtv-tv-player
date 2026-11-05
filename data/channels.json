@@ -70,30 +70,33 @@
     "logo": "https://assets-prod.services.toffeelive.com/JdjLpqEBalKyvLQIrDPD/posters/344a2952-5030-4412-aec4-d1769acc45dd.png",
     "url": "https://prod-cdn01-live.toffeelive.com/live/SAFF-2026-4/index.m3u8?edge-cache-token=Expires=1793880047~Starts=1793872847~URLPrefix=aHR0cHM6Ly9wcm9kLWNkbjAxLWxpdmUudG9mZmVlbGl2ZS5jb20~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=0Hws70xWSwWfaKQFN15bmKLunutB9XF2XLaP-y3xWStG55Ufzvgt1ys0Dtax_lDTYt1PguJUVCR2nUG8bSUhAQ",
     "category": "Sports",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-6",
-    "order": 7
+    "order": 7,
+    "manual_override": true
   },
   {
     "name": "AWSN TV",
     "logo": "https://assets-prod.services.toffeelive.com/F9UM56ABalKyvLQIr9B1/posters/26081e64-671e-44a8-95ba-a692bfaae49c.jpeg",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/awsn/playlist.m3u8?edge-cache-token=Expires=1793876447~Starts=1793872847~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=OHG4mO49nMQ1vmLgJNP0X-WZId7R1TfW8jE3cEePjUXmHsHscTFL43vzGzqry53YJsaNHDd8waYTxYQy9VTYDw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-7",
-    "order": 8
+    "order": 8,
+    "manual_override": true
   },
   {
     "name": "CNN",
     "logo": "https://assets-prod.services.toffeelive.com/VC6Q-JQBv9knK3AHhTXt/posters/63e79814-8fcf-4c3e-bb66-408b2a402613.webp",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/cnn/playlist.m3u8?edge-cache-token=Expires=1793873148~Starts=1793872848~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=hN77INuQsPVU2drvkg3s6cZJpU-Jpe4uOXjpj5VX_u7WmdX2VEag-GeMVG42RGk_R5dqHOH9fCJJxwT59lrWAQ",
     "category": "Documentary",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-8",
-    "order": 9
+    "order": 9,
+    "manual_override": true
   },
   {
     "name": "Somoy TV",
