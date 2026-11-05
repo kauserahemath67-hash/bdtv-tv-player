@@ -4881,30 +4881,33 @@
     "logo": "https://images.pluto.tv/channels/5dfcde52d28b09000a42d7a2/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5dfcde52d28b09000a42d7a2.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-454",
-    "order": 455
+    "order": 455,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Action (Sweden)",
     "logo": "https://images.pluto.tv/channels/61c095861782bd000780e0ba/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-61c0b0688a80a4000703fbcb.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-455",
-    "order": 456
+    "order": 456,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Action (Sweden) DK",
     "logo": "https://images.pluto.tv/channels/61c095861782bd000780e0ba/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-61c095861782bd000780e0ba.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-456",
-    "order": 457
+    "order": 457,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Action (Sweden) NO",
