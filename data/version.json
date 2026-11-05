@@ -1,5 +1,5 @@
 {
-  "versionCode": 123,
+  "versionCode": 124,
   "versionName": "2.3.15",
   "minSupportedVersion": 100,
   "apkUrl": "https://bdtv-app.vercel.app/BDTv.apk",
@@ -12,5 +12,5 @@
   ],
   "forceUpdate": false,
   "updateMessage": "",
-  "updatedAt": "2026-11-03T19:31:33.458Z"
+  "updatedAt": "2026-11-05T13:27:08.878Z"
 }
