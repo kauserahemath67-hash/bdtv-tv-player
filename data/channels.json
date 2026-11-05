@@ -74,10 +74,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/S9bzFaEBalKyvLQIrh3b/posters/f400a8bc-d83c-40f8-93e8-206314ad332d.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/29.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793851556122-7",
-    "order": 8
+    "order": 8,
+    "manual_override": true
   },
   {
     "name": "CGTN",
@@ -684,20 +685,22 @@
     "logo": "https://assets-prod.services.toffeelive.com/itdbVKEBalKyvLQI94RR/posters/7f266367-077c-4acb-b29a-73437a80419b.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/4.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793851556122-68",
-    "order": 69
+    "order": 69,
+    "manual_override": true
   },
   {
     "name": "SAFF Live 2",
     "logo": "https://assets-prod.services.toffeelive.com/9dijmqEBalKyvLQIIAFj/posters/9b491bef-7c6a-4ccf-90b6-a890e0152532.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793851556122-69",
-    "order": 70
+    "order": 70,
+    "manual_override": true
   },
   {
     "name": "Sony Ten Cricket",
