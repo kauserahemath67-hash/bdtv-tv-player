@@ -1584,30 +1584,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cinemax_2016.svg/960px-Cinemax_2016.svg.png",
     "category": "Movies",
     "url": "http://23.237.104.106:8080/USA_CINEMAX_WEST/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-146",
-    "order": 147
+    "order": 147,
+    "manual_override": true
   },
   {
     "name": "Cinemax Asia (720p) [Geo-blocked]",
     "logo": "https://i.imgur.com/c8crJfA.png",
     "category": "Movies",
     "url": "https://tinyurl.com/44efw2rx",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-147",
-    "order": 148
+    "order": 148,
+    "manual_override": true
   },
   {
     "name": "Cinemax Asia HD (1080p)",
     "logo": "https://i.imgur.com/c8crJfA.png",
     "category": "Movies",
     "url": "http://202.150.165.66:8088/play/104-Cinemax/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-148",
-    "order": 149
+    "order": 149,
+    "manual_override": true
   },
   {
     "name": "Cinemax Asia Taiwan (1080p)",
