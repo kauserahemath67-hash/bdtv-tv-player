@@ -3801,20 +3801,22 @@
     "logo": "https://i.imgur.com/C90BYlb.png",
     "category": "Movies",
     "url": "https://178.253.194.105/klasiktv/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-352",
-    "order": 353
+    "order": 353,
+    "manual_override": true
   },
   {
     "name": "Komsan TV [Not 24/7]",
     "logo": "https://i.imgur.com/SNTf2r3.png",
     "category": "Movies",
     "url": "http://tv.cootel.com.kh:8077/streams/d/Komsan/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-353",
-    "order": 354
+    "order": 354,
+    "manual_override": true
   },
   {
     "name": "Kuriakos Cine (1080p)",
@@ -3831,10 +3833,11 @@
     "logo": "https://i.imgur.com/BWmqYTO.png",
     "category": "Movies",
     "url": "http://23.237.104.106:8080/USA_LMN/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-355",
-    "order": 356
+    "order": 356,
+    "manual_override": true
   },
   {
     "name": "Lollywood HD TV",
