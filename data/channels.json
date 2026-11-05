@@ -7509,10 +7509,11 @@
     "logo": "https://i.imgur.com/ghzzKoT.png",
     "category": "Movies",
     "url": "http://23.237.104.106:8080/USA_STARZ_CINEMA/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-697",
-    "order": 698
+    "order": 698,
+    "manual_override": true
   },
   {
     "name": "Studio One + (720p)",
@@ -7529,20 +7530,22 @@
     "logo": "https://images.pluto.tv/channels/6654adb1f99922000854388c/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6654adb1f99922000854388c.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-699",
-    "order": 700
+    "order": 700,
+    "manual_override": true
   },
   {
     "name": "Sundance TV (Poland) (576i)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/SundanceTV_2014.svg/960px-SundanceTV_2014.svg.png",
     "category": "Movies",
     "url": "http://92.114.85.87:8003/play/a004/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-700",
-    "order": 701
+    "order": 701,
+    "manual_override": true
   },
   {
     "name": "Sundance TV (Spain)",
