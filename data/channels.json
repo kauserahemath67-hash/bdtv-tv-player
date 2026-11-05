@@ -2699,30 +2699,33 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bone.png",
     "category": "Movies",
     "url": "https://s70378.cdn.ngenix.net/filmbox/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-250",
-    "order": 251
+    "order": 251,
+    "manual_override": true
   },
   {
     "name": "Filmes Suspense",
     "logo": "https://images.pluto.tv/channels/5f171d3442a0500007362f22/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f171d3442a0500007362f22.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-251",
-    "order": 252
+    "order": 252,
+    "manual_override": true
   },
   {
     "name": "Filmex (1080p) [Geo-blocked]",
     "logo": "https://i.imgur.com/Hiz2OyC.png",
     "category": "Movies",
     "url": "https://filmex-filmex-xumo.amagi.tv/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-252",
-    "order": 253
+    "order": 253,
+    "manual_override": true
   },
   {
     "name": "Filmex Clasico (1080p) [Geo-blocked]",
