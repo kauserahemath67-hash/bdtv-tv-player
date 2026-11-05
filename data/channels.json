@@ -4404,30 +4404,33 @@
     "logo": "https://i.imgur.com/8RN3tQC.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/107/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-409",
-    "order": 410
+    "order": 410,
+    "manual_override": true
   },
   {
     "name": "MWD Movies [Not 24/7]",
     "logo": "https://i.imgur.com/5KRsqeF.png",
     "category": "Movies",
     "url": "http://203.81.84.130/hls/mwd_movie/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-410",
-    "order": 411
+    "order": 411,
+    "manual_override": true
   },
   {
     "name": "My Cinema [Geo-blocked]",
     "logo": "https://i.imgur.com/BTmcTQO.png",
     "category": "Movies",
     "url": "https://op-group1-swiftservehd-1.dens.tv/h/h192/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-411",
-    "order": 412
+    "order": 412,
+    "manual_override": true
   },
   {
     "name": "My Cinema Europe",
