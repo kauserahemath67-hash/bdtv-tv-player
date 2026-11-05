@@ -3649,30 +3649,33 @@
     "logo": "https://kt.server-img.lfstrm.tv/images/channel_logos/logo_66b351f01f828dca40d006b3.png",
     "category": "Movies",
     "url": "https://fs.uplink.kz/kinoboevik/mono.m3u8?token=onlinetv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-338",
-    "order": 339
+    "order": 339,
+    "manual_override": true
   },
   {
     "name": "KinoHit (576p)",
     "logo": "https://i.imgur.com/Ge8vkQM.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/126/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-339",
-    "order": 340
+    "order": 340,
+    "manual_override": true
   },
   {
     "name": "Kinoliving (1080p)",
     "logo": "https://i.imgur.com/9XJcmBY.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/445/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-340",
-    "order": 341
+    "order": 341,
+    "manual_override": true
   },
   {
     "name": "Kinomix (576p)",
