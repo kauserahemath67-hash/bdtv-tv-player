@@ -2,12 +2,13 @@
   {
     "name": "Nagorik Tv",
     "logo": "https://i.imgur.com/2cpHJKq.png",
-    "category": "General",
+    "category": "Bangla",
     "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-28",
-    "manual_override": false
+    "manual_override": false,
+    "order": 1
   },
   {
     "name": "A Sports",
@@ -17,7 +18,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-0",
-    "order": 1
+    "order": 2
   },
   {
     "name": "Gazi Tv",
@@ -27,7 +28,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-1",
-    "order": 2
+    "order": 3
   },
   {
     "name": "Star Sports 2",
@@ -37,7 +38,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-2",
-    "order": 3
+    "order": 4
   },
   {
     "name": "Willow Sports",
@@ -287,7 +288,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-29",
-    "order": 30
+    "order": 29
   },
   {
     "name": "Sananda Tv",
@@ -297,7 +298,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-30",
-    "order": 31
+    "order": 30
   },
   {
     "name": "Star Jalsha HD",
@@ -307,7 +308,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-31",
-    "order": 32
+    "order": 31
   },
   {
     "name": "TaraTv",
@@ -317,7 +318,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-32",
-    "order": 33
+    "order": 32
   },
   {
     "name": "ZEE Bangla",
@@ -327,7 +328,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-33",
-    "order": 34
+    "order": 33
   },
   {
     "name": "Zee Bangla Sonar",
@@ -337,7 +338,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-34",
-    "order": 35
+    "order": 34
   },
   {
     "name": "24 Hour Free Movies (720p)",
@@ -347,7 +348,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-35",
-    "order": 36
+    "order": 35
   },
   {
     "name": "30A TV Classic Movies (720p)",
@@ -357,7 +358,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-36",
-    "order": 37
+    "order": 36
   },
   {
     "name": "ABN Bible Movies Channel (720p)",
@@ -367,7 +368,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-37",
-    "order": 38
+    "order": 37
   },
   {
     "name": "Afra Film",
@@ -377,7 +378,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-38",
-    "order": 39
+    "order": 38
   },
   {
     "name": "Alankar TV (720p)",
@@ -387,7 +388,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-39",
-    "order": 40
+    "order": 39
   },
   {
     "name": "Allo Cine (1080p)",
@@ -397,7 +398,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-40",
-    "order": 41
+    "order": 40
   },
   {
     "name": "ARTFLIX Movie Classics (720p)",
@@ -407,7 +408,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-41",
-    "order": 42
+    "order": 41
   },
   {
     "name": "Asianet Movies (396p)",
@@ -417,7 +418,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-42",
-    "order": 43
+    "order": 42
   },
   {
     "name": "Aurora Media Films (720p)",
@@ -427,7 +428,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-43",
-    "order": 44
+    "order": 43
   },
   {
     "name": "B4U Bhojpuri Plus (1080p)",
@@ -437,7 +438,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-44",
-    "order": 45
+    "order": 44
   },
   {
     "name": "B4U Kadak (576p)",
@@ -447,7 +448,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-45",
-    "order": 46
+    "order": 45
   },
   {
     "name": "B4U Movies (576p)",
@@ -457,7 +458,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-46",
-    "order": 47
+    "order": 46
   },
   {
     "name": "Bhojpuri Cinema (720p)",
@@ -467,7 +468,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-47",
-    "order": 48
+    "order": 47
   },
   {
     "name": "Bollygold (1080p)",
@@ -477,7 +478,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-48",
-    "order": 49
+    "order": 48
   },
   {
     "name": "Bollywood Classic Romania (576p)",
@@ -487,7 +488,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-49",
-    "order": 50
+    "order": 49
   },
   {
     "name": "Bollywood HD Russia (576p)",
@@ -497,7 +498,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-50",
-    "order": 51
+    "order": 50
   },
   {
     "name": "Boreal (720p) [Not 24/7]",
@@ -507,7 +508,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-51",
-    "order": 52
+    "order": 51
   },
   {
     "name": "Cafe Film",
@@ -517,7 +518,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-52",
-    "order": 53
+    "order": 52
   },
   {
     "name": "Canal Cine Dios",
@@ -527,7 +528,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-53",
-    "order": 54
+    "order": 53
   },
   {
     "name": "Charge! (1080p)",
@@ -537,7 +538,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-54",
-    "order": 55
+    "order": 54
   },
   {
     "name": "CINDIE TV (1080p)",
@@ -547,7 +548,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-55",
-    "order": 56
+    "order": 55
   },
   {
     "name": "Cine Friki (1080p)",
@@ -557,7 +558,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-56",
-    "order": 57
+    "order": 56
   },
   {
     "name": "Cine Nanar (1080p)",
@@ -567,7 +568,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-57",
-    "order": 58
+    "order": 57
   },
   {
     "name": "Cine Romantico (720p)",
@@ -577,7 +578,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-58",
-    "order": 59
+    "order": 58
   },
   {
     "name": "Cine Western (France) (1080p)",
@@ -587,7 +588,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-59",
-    "order": 60
+    "order": 59
   },
   {
     "name": "Cine Western (Spain) (1080p)",
@@ -597,7 +598,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-60",
-    "order": 61
+    "order": 60
   },
   {
     "name": "Cinemaraton Plus (1080i)",
@@ -607,7 +608,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-61",
-    "order": 62
+    "order": 61
   },
   {
     "name": "CineWow (576i)",
@@ -617,7 +618,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-62",
-    "order": 63
+    "order": 62
   },
   {
     "name": "City Eden KinoAction [Not 24/7]",
@@ -627,7 +628,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-63",
-    "order": 64
+    "order": 63
   },
   {
     "name": "City Eden KinoArt [Not 24/7]",
@@ -637,7 +638,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-64",
-    "order": 65
+    "order": 64
   },
   {
     "name": "City Eden KinoAsia [Not 24/7]",
@@ -647,7 +648,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-65",
-    "order": 66
+    "order": 65
   },
   {
     "name": "City Eden KinoDetektiv [Not 24/7]",
@@ -657,7 +658,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-66",
-    "order": 67
+    "order": 66
   },
   {
     "name": "City Eden KinoDrama [Not 24/7]",
@@ -667,7 +668,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-67",
-    "order": 68
+    "order": 67
   },
   {
     "name": "City Eden KinoFantastika [Not 24/7]",
@@ -677,7 +678,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-68",
-    "order": 69
+    "order": 68
   },
   {
     "name": "City Eden KinoKlassika [Not 24/7]",
@@ -687,7 +688,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-69",
-    "order": 70
+    "order": 69
   },
   {
     "name": "City Eden KinoKomediya [Not 24/7]",
@@ -697,7 +698,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-70",
-    "order": 71
+    "order": 70
   },
   {
     "name": "City Eden KinoMistika [Not 24/7]",
@@ -707,7 +708,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-71",
-    "order": 72
+    "order": 71
   },
   {
     "name": "Classic Cinema (240p) [Not 24/7]",
@@ -717,7 +718,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-72",
-    "order": 73
+    "order": 72
   },
   {
     "name": "Classique TV (360p)",
@@ -727,7 +728,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-73",
-    "order": 74
+    "order": 73
   },
   {
     "name": "Colors Cineplex (576p)",
@@ -737,7 +738,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-74",
-    "order": 75
+    "order": 74
   },
   {
     "name": "Cosmos Tv",
@@ -747,7 +748,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-75",
-    "order": 76
+    "order": 75
   },
   {
     "name": "Cosmos Tv SD",
@@ -757,7 +758,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-76",
-    "order": 77
+    "order": 76
   },
   {
     "name": "Dorama (576p)",
@@ -767,7 +768,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-77",
-    "order": 78
+    "order": 77
   },
   {
     "name": "DUST (1080p)",
@@ -777,7 +778,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-78",
-    "order": 79
+    "order": 78
   },
   {
     "name": "Ebony TV by Lionsgate (1080p)",
@@ -787,7 +788,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-79",
-    "order": 80
+    "order": 79
   },
   {
     "name": "EBS Cinema (720p)",
@@ -797,7 +798,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-80",
-    "order": 81
+    "order": 80
   },
   {
     "name": "Emotion L (1080p)",
@@ -807,7 +808,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-81",
-    "order": 82
+    "order": 81
   },
   {
     "name": "Epic Bhojpuri Digital (1080p)",
@@ -817,7 +818,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-82",
-    "order": 83
+    "order": 82
   },
   {
     "name": "ETV Cinema (396p)",
@@ -827,7 +828,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-83",
-    "order": 84
+    "order": 83
   },
   {
     "name": "FILMBOX+ Comedy Romania",
@@ -837,7 +838,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-84",
-    "order": 85
+    "order": 84
   },
   {
     "name": "FILMBOX+ Festival",
@@ -847,7 +848,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-85",
-    "order": 86
+    "order": 85
   },
   {
     "name": "FILMBOX+ Festival HD (1080p)",
@@ -857,7 +858,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-86",
-    "order": 87
+    "order": 86
   },
   {
     "name": "FILMBOX+ Hits Romania (576p)",
@@ -867,7 +868,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-87",
-    "order": 88
+    "order": 87
   },
   {
     "name": "FILMBOX+ Love & Crime Romania",
@@ -877,7 +878,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-88",
-    "order": 89
+    "order": 88
   },
   {
     "name": "FILMBOX+ One Romania (576p)",
@@ -887,7 +888,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-89",
-    "order": 90
+    "order": 89
   },
   {
     "name": "FilmUA Live",
@@ -897,7 +898,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-90",
-    "order": 91
+    "order": 90
   },
   {
     "name": "FrightFlix (720p)",
@@ -907,7 +908,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-91",
-    "order": 92
+    "order": 91
   },
   {
     "name": "Gold Star",
@@ -917,7 +918,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-92",
-    "order": 93
+    "order": 92
   },
   {
     "name": "Goldmines (576p)",
@@ -927,7 +928,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-93",
-    "order": 94
+    "order": 93
   },
   {
     "name": "Grand Cinema",
@@ -937,7 +938,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-94",
-    "order": 95
+    "order": 94
   },
   {
     "name": "Gravitas Movies (1080p)",
@@ -947,7 +948,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-95",
-    "order": 96
+    "order": 95
   },
   {
     "name": "Grjngo Western Movies (720p)",
@@ -957,7 +958,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-96",
-    "order": 97
+    "order": 96
   },
   {
     "name": "Hallmark Movies & More (1080p)",
@@ -967,7 +968,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-97",
-    "order": 98
+    "order": 97
   },
   {
     "name": "Horoshee Kino (720p)",
@@ -977,7 +978,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-98",
-    "order": 99
+    "order": 98
   },
   {
     "name": "iFilm 2",
@@ -987,7 +988,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-99",
-    "order": 100
+    "order": 99
   },
   {
     "name": "iFilm Arabic",
@@ -997,7 +998,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-100",
-    "order": 101
+    "order": 100
   },
   {
     "name": "iFilm English",
@@ -1007,7 +1008,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-101",
-    "order": 102
+    "order": 101
   },
   {
     "name": "iFilm Persian",
@@ -1017,7 +1018,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-102",
-    "order": 103
+    "order": 102
   },
   {
     "name": "India Talkies (360p)",
@@ -1027,7 +1028,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-103",
-    "order": 104
+    "order": 103
   },
   {
     "name": "Indywood TV (720p)",
@@ -1037,7 +1038,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-104",
-    "order": 105
+    "order": 104
   },
   {
     "name": "Itage TV (480p)",
@@ -1047,7 +1048,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-105",
-    "order": 106
+    "order": 105
   },
   {
     "name": "Jalsha Movies SD",
@@ -1057,7 +1058,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-106",
-    "order": 107
+    "order": 106
   },
   {
     "name": "Kairali We (576p)",
@@ -1067,7 +1068,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-107",
-    "order": 108
+    "order": 107
   },
   {
     "name": "KCM India (1080p) [Geo-blocked]",
@@ -1077,7 +1078,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-108",
-    "order": 109
+    "order": 108
   },
   {
     "name": "Kinoseriya (576p)",
@@ -1087,7 +1088,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-109",
-    "order": 110
+    "order": 109
   },
   {
     "name": "Kinoteatr (1080p)",
@@ -1097,7 +1098,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-110",
-    "order": 111
+    "order": 110
   },
   {
     "name": "Kuriakos Cine (1080p)",
@@ -1107,7 +1108,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-111",
-    "order": 112
+    "order": 111
   },
   {
     "name": "Maah TV (720p)",
@@ -1117,7 +1118,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-112",
-    "order": 113
+    "order": 112
   },
   {
     "name": "Made In Hollywood",
@@ -1127,7 +1128,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-113",
-    "order": 114
+    "order": 113
   },
   {
     "name": "Maha Movie (576p)",
@@ -1137,7 +1138,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-114",
-    "order": 115
+    "order": 114
   },
   {
     "name": "Mahua Play (1080p)",
@@ -1147,7 +1148,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-115",
-    "order": 116
+    "order": 115
   },
   {
     "name": "Manoranjan Grand (720p)",
@@ -1157,7 +1158,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-116",
-    "order": 117
+    "order": 116
   },
   {
     "name": "Manoranjan Movies (576p)",
@@ -1167,7 +1168,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-117",
-    "order": 118
+    "order": 117
   },
   {
     "name": "Maverick Black Cinema (1080p)",
@@ -1177,7 +1178,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-118",
-    "order": 119
+    "order": 118
   },
   {
     "name": "Maxcine (720p)",
@@ -1187,7 +1188,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-119",
-    "order": 120
+    "order": 119
   },
   {
     "name": "Maxcine 2 (720p)",
@@ -1197,7 +1198,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-120",
-    "order": 121
+    "order": 120
   },
   {
     "name": "Maxcine Comedy (720p)",
@@ -1207,7 +1208,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-121",
-    "order": 122
+    "order": 121
   },
   {
     "name": "Maxcine Family (720p)",
@@ -1217,7 +1218,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-122",
-    "order": 123
+    "order": 122
   },
   {
     "name": "MCI Television (1080p)",
@@ -1227,7 +1228,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-123",
-    "order": 124
+    "order": 123
   },
   {
     "name": "Mega Cine TV (1080p)",
@@ -1237,7 +1238,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-124",
-    "order": 125
+    "order": 124
   },
   {
     "name": "Meta Film TV",
@@ -1247,7 +1248,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-125",
-    "order": 126
+    "order": 125
   },
   {
     "name": "Mix Hollywood (1080p)",
@@ -1257,7 +1258,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-126",
-    "order": 127
+    "order": 126
   },
   {
     "name": "MN+",
@@ -1267,7 +1268,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-127",
-    "order": 128
+    "order": 127
   },
   {
     "name": "Movie Bangla",
@@ -1277,7 +1278,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-128",
-    "order": 129
+    "order": 128
   },
   {
     "name": "Movie Punjab (720p)",
@@ -1287,7 +1288,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-129",
-    "order": 130
+    "order": 129
   },
   {
     "name": "Movies! KPVM-LD",
@@ -1297,7 +1298,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-130",
-    "order": 131
+    "order": 130
   },
   {
     "name": "MovieSphere (1080p)",
@@ -1307,7 +1308,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-131",
-    "order": 132
+    "order": 131
   },
   {
     "name": "MovieSphere AU (1080p)",
@@ -1317,7 +1318,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-132",
-    "order": 133
+    "order": 132
   },
   {
     "name": "MovieSphere Gold WFXT (1080p)",
@@ -1327,7 +1328,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-133",
-    "order": 134
+    "order": 133
   },
   {
     "name": "MovieSphere UK (1080p)",
@@ -1337,7 +1338,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-134",
-    "order": 135
+    "order": 134
   },
   {
     "name": "My Cinema Europe",
@@ -1347,7 +1348,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-135",
-    "order": 136
+    "order": 135
   },
   {
     "name": "MyTime Movie Network (Brazil) (720p)",
@@ -1357,7 +1358,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-136",
-    "order": 137
+    "order": 136
   },
   {
     "name": "MyTime Movie Network (Spain) (1080p)",
@@ -1367,7 +1368,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-137",
-    "order": 138
+    "order": 137
   },
   {
     "name": "Nashe Novoe Kino",
@@ -1377,7 +1378,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-138",
-    "order": 139
+    "order": 138
   },
   {
     "name": "NEW K.MOVIES (1080p)",
@@ -1387,7 +1388,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-139",
-    "order": 140
+    "order": 139
   },
   {
     "name": "NH BollyFlix (1080p)",
@@ -1397,7 +1398,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-140",
-    "order": 141
+    "order": 140
   },
   {
     "name": "NH Tamil Gold (1080p)",
@@ -1407,7 +1408,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-141",
-    "order": 142
+    "order": 141
   },
   {
     "name": "NOST (720p)",
@@ -1417,7 +1418,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-142",
-    "order": 143
+    "order": 142
   },
   {
     "name": "Nostalgia TV (1080p)",
@@ -1427,7 +1428,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-143",
-    "order": 144
+    "order": 143
   },
   {
     "name": "ON Movies (720p)",
@@ -1437,7 +1438,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-144",
-    "order": 145
+    "order": 144
   },
   {
     "name": "Oscar Movies Bhojpuri (720p)",
@@ -1447,7 +1448,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-145",
-    "order": 146
+    "order": 145
   },
   {
     "name": "OuterSphere (1080p)",
@@ -1457,7 +1458,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-146",
-    "order": 147
+    "order": 146
   },
   {
     "name": "Persiana Cinema",
@@ -1467,7 +1468,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-147",
-    "order": 148
+    "order": 147
   },
   {
     "name": "Persiana Family",
@@ -1477,7 +1478,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-148",
-    "order": 149
+    "order": 148
   },
   {
     "name": "Persiana Iranian",
@@ -1487,7 +1488,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-149",
-    "order": 150
+    "order": 149
   },
   {
     "name": "Persiana Korea",
@@ -1497,7 +1498,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-150",
-    "order": 151
+    "order": 150
   },
   {
     "name": "Persiana Plus",
@@ -1507,7 +1508,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-151",
-    "order": 152
+    "order": 151
   },
   {
     "name": "Pitaara (1080p)",
@@ -1517,7 +1518,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-152",
-    "order": 153
+    "order": 152
   },
   {
     "name": "Pocket Films",
@@ -1527,7 +1528,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-153",
-    "order": 154
+    "order": 153
   },
   {
     "name": "Popcorn Central (1080p)",
@@ -1537,7 +1538,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-154",
-    "order": 155
+    "order": 154
   },
   {
     "name": "Public Movies (576p)",
@@ -1547,7 +1548,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-155",
-    "order": 156
+    "order": 155
   },
   {
     "name": "Punjabi Shorts (1080p)",
@@ -1557,7 +1558,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-156",
-    "order": 157
+    "order": 156
   },
   {
     "name": "Raj Digital Plus (1080p)",
@@ -1567,7 +1568,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-157",
-    "order": 158
+    "order": 157
   },
   {
     "name": "Rakuten TV Action Movies (1080p)",
@@ -1577,7 +1578,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-158",
-    "order": 159
+    "order": 158
   },
   {
     "name": "Rakuten TV Action Movies Germany (1080p)",
@@ -1587,7 +1588,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-159",
-    "order": 160
+    "order": 159
   },
   {
     "name": "Rakuten TV Action Movies Italy (1080p)",
@@ -1597,7 +1598,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-160",
-    "order": 161
+    "order": 160
   },
   {
     "name": "Rakuten TV Action Movies UK (1080p)",
@@ -1607,7 +1608,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-161",
-    "order": 162
+    "order": 161
   },
   {
     "name": "Rakuten TV Comedy Movies (1080p)",
@@ -1617,7 +1618,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-162",
-    "order": 163
+    "order": 162
   },
   {
     "name": "Rakuten TV Comedy Movies Germany (1080p)",
@@ -1627,7 +1628,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-163",
-    "order": 164
+    "order": 163
   },
   {
     "name": "Rakuten TV Comedy Movies Italy (1080p)",
@@ -1637,7 +1638,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-164",
-    "order": 165
+    "order": 164
   },
   {
     "name": "Rakuten TV Comedy Movies UK (1080p)",
@@ -1647,7 +1648,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-165",
-    "order": 166
+    "order": 165
   },
   {
     "name": "Rakuten TV Drama Movies (1080p)",
@@ -1657,7 +1658,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-166",
-    "order": 167
+    "order": 166
   },
   {
     "name": "Rakuten TV Drama Movies Germany (1080p)",
@@ -1667,7 +1668,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-167",
-    "order": 168
+    "order": 167
   },
   {
     "name": "Rakuten TV Drama Movies Italy (1080p)",
@@ -1677,7 +1678,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-168",
-    "order": 169
+    "order": 168
   },
   {
     "name": "Rakuten TV Drama Movies UK (1080p)",
@@ -1687,7 +1688,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-169",
-    "order": 170
+    "order": 169
   },
   {
     "name": "Rakuten TV Family Movies (1080p)",
@@ -1697,7 +1698,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-170",
-    "order": 171
+    "order": 170
   },
   {
     "name": "Rakuten TV Family Movies Germany (1080p)",
@@ -1707,7 +1708,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-171",
-    "order": 172
+    "order": 171
   },
   {
     "name": "Rakuten TV Family Movies Italy (1080p)",
@@ -1717,7 +1718,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-172",
-    "order": 173
+    "order": 172
   },
   {
     "name": "Rakuten TV Family Movies UK (1080p)",
@@ -1727,7 +1728,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-173",
-    "order": 174
+    "order": 173
   },
   {
     "name": "Rakuten TV Top Movies (1080p)",
@@ -1737,7 +1738,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-174",
-    "order": 175
+    "order": 174
   },
   {
     "name": "Rakuten TV Top Movies Germany (1080p)",
@@ -1747,7 +1748,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-175",
-    "order": 176
+    "order": 175
   },
   {
     "name": "Rakuten TV Top Movies Italy (1080p)",
@@ -1757,7 +1758,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-176",
-    "order": 177
+    "order": 176
   },
   {
     "name": "Rakuten TV Top Movies UK (1080p)",
@@ -1767,7 +1768,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-177",
-    "order": 178
+    "order": 177
   },
   {
     "name": "Rotana Cinema Egypt (1080p) [Geo-blocked]",
@@ -1777,7 +1778,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-178",
-    "order": 179
+    "order": 178
   },
   {
     "name": "Rotana Cinema KSA (1080p) [Geo-blocked]",
@@ -1787,7 +1788,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-179",
-    "order": 180
+    "order": 179
   },
   {
     "name": "Runtime Espanol (720p)",
@@ -1797,7 +1798,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-180",
-    "order": 181
+    "order": 180
   },
   {
     "name": "ScreamIN (1080p)",
@@ -1807,7 +1808,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-181",
-    "order": 182
+    "order": 181
   },
   {
     "name": "Shemaroo Josh (576p)",
@@ -1817,7 +1818,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-182",
-    "order": 183
+    "order": 182
   },
   {
     "name": "Shubh Cinema TV (720p)",
@@ -1827,7 +1828,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-183",
-    "order": 184
+    "order": 183
   },
   {
     "name": "Silk Way Cinema (1080p) [Geo-blocked]",
@@ -1837,7 +1838,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-184",
-    "order": 185
+    "order": 184
   },
   {
     "name": "SL 1",
@@ -1847,7 +1848,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-185",
-    "order": 186
+    "order": 185
   },
   {
     "name": "SL 2",
@@ -1857,7 +1858,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-186",
-    "order": 187
+    "order": 186
   },
   {
     "name": "Smotrim 100% Klassika (720p)",
@@ -1867,7 +1868,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-187",
-    "order": 188
+    "order": 187
   },
   {
     "name": "Sonar Bangla (360p)",
@@ -1877,7 +1878,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-188",
-    "order": 189
+    "order": 188
   },
   {
     "name": "Soneri Cinema (360p)",
@@ -1887,7 +1888,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-189",
-    "order": 190
+    "order": 189
   },
   {
     "name": "Sony Movies",
@@ -1897,7 +1898,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-190",
-    "order": 191
+    "order": 190
   },
   {
     "name": "Sony Movies (United States) (720p)",
@@ -1907,7 +1908,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-191",
-    "order": 192
+    "order": 191
   },
   {
     "name": "Sony One Favoris (1080p)",
@@ -1917,7 +1918,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-192",
-    "order": 193
+    "order": 192
   },
   {
     "name": "Sony One Hits Action (1080p)",
@@ -1927,7 +1928,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-193",
-    "order": 194
+    "order": 193
   },
   {
     "name": "Sony One Hits Comedie (1080p)",
@@ -1937,7 +1938,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-194",
-    "order": 195
+    "order": 194
   },
   {
     "name": "South Station (1080p)",
@@ -1947,7 +1948,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-195",
-    "order": 196
+    "order": 195
   },
   {
     "name": "Star Cinema",
@@ -1957,7 +1958,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-196",
-    "order": 197
+    "order": 196
   },
   {
     "name": "Star Family (1080p)",
@@ -1967,7 +1968,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-197",
-    "order": 198
+    "order": 197
   },
   {
     "name": "Star Maa Movies HD (720p)",
@@ -1977,7 +1978,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-198",
-    "order": 199
+    "order": 198
   },
   {
     "name": "Studio One + (720p)",
@@ -1987,7 +1988,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-199",
-    "order": 200
+    "order": 199
   },
   {
     "name": "Tamasha",
@@ -1997,7 +1998,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-200",
-    "order": 201
+    "order": 200
   },
   {
     "name": "Thalaa TV (1080p)",
@@ -2007,7 +2008,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-201",
-    "order": 202
+    "order": 201
   },
   {
     "name": "The Movie Club (1080p)",
@@ -2017,7 +2018,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-202",
-    "order": 203
+    "order": 202
   },
   {
     "name": "The Movie Club +2 (1080p)",
@@ -2027,7 +2028,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-203",
-    "order": 204
+    "order": 203
   },
   {
     "name": "Tolly TV (1080p)",
@@ -2037,7 +2038,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-204",
-    "order": 205
+    "order": 204
   },
   {
     "name": "TVCARiB Cinema (720p) [Not 24/7]",
@@ -2047,7 +2048,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-205",
-    "order": 206
+    "order": 205
   },
   {
     "name": "TVS Drive In Movie (360p)",
@@ -2057,7 +2058,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-206",
-    "order": 207
+    "order": 206
   },
   {
     "name": "Warner TV Asia (720p)",
@@ -2067,7 +2068,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-207",
-    "order": 208
+    "order": 207
   },
   {
     "name": "Watch it Scream! (720p)",
@@ -2077,7 +2078,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-208",
-    "order": 209
+    "order": 208
   },
   {
     "name": "Whiplash Cinema (480p)",
@@ -2087,7 +2088,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-209",
-    "order": 210
+    "order": 209
   },
   {
     "name": "Wu Tang Collection (720p)",
@@ -2097,7 +2098,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-210",
-    "order": 211
+    "order": 210
   },
   {
     "name": "Xtrema Cine Clasico",
@@ -2107,7 +2108,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-211",
-    "order": 212
+    "order": 211
   },
   {
     "name": "Zee Cinema (576p)",
@@ -2117,7 +2118,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-212",
-    "order": 213
+    "order": 212
   },
   {
     "name": "Zee Cinema APAC (720p)",
@@ -2127,7 +2128,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-213",
-    "order": 214
+    "order": 213
   },
   {
     "name": "KidsFlix (1080p) [Not 24/7]",
@@ -2137,7 +2138,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-214",
-    "order": 215
+    "order": 214
   },
   {
     "name": "Maxcine Kids (720p)",
@@ -2147,7 +2148,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-215",
-    "order": 216
+    "order": 215
   },
   {
     "name": "Pogo",
@@ -2157,7 +2158,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-216",
-    "order": 217
+    "order": 216
   },
   {
     "name": "ZB Cartoon",
@@ -2167,7 +2168,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-217",
-    "order": 218
+    "order": 217
   },
   {
     "name": "+MaisUm (720p)",
@@ -2177,7 +2178,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-218",
-    "order": 219
+    "order": 218
   },
   {
     "name": "Al Quran",
@@ -2187,7 +2188,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-219",
-    "order": 220
+    "order": 219
   },
   {
     "name": "Akhon Tv",
@@ -2197,7 +2198,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-220",
-    "order": 221
+    "order": 220
   },
   {
     "name": "Ayna Tv",
@@ -2207,7 +2208,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-221",
-    "order": 222
+    "order": 221
   },
   {
     "name": "Batul The Great",
@@ -2217,7 +2218,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-222",
-    "order": 223
+    "order": 222
   },
   {
     "name": "Channel I HD",
@@ -2227,7 +2228,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-223",
-    "order": 224
+    "order": 223
   },
   {
     "name": "Enterr10",
@@ -2237,7 +2238,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-224",
-    "order": 225
+    "order": 224
   },
   {
     "name": "G-Series",
@@ -2247,7 +2248,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-225",
-    "order": 226
+    "order": 225
   },
   {
     "name": "Global Channel HD",
@@ -2257,7 +2258,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-226",
-    "order": 227
+    "order": 226
   },
   {
     "name": "Gopal Bhar",
@@ -2267,7 +2268,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-227",
-    "order": 228
+    "order": 227
   },
   {
     "name": "Green Tv",
@@ -2277,7 +2278,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-228",
-    "order": 229
+    "order": 228
   },
   {
     "name": "Me Tv",
@@ -2287,7 +2288,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-229",
-    "order": 230
+    "order": 229
   },
   {
     "name": "Moto Patlu",
@@ -2297,7 +2298,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-230",
-    "order": 231
+    "order": 230
   },
   {
     "name": "R Tv",
@@ -2307,7 +2308,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-231",
-    "order": 232
+    "order": 231
   },
   {
     "name": "SRK TV",
@@ -2317,7 +2318,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-232",
-    "order": 233
+    "order": 232
   },
   {
     "name": "Thikana Tv",
@@ -2327,7 +2328,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-233",
-    "order": 234
+    "order": 233
   },
   {
     "name": "Tiny POP",
@@ -2337,7 +2338,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-234",
-    "order": 235
+    "order": 234
   },
   {
     "name": "Tom and Jerry",
@@ -2347,6 +2348,16 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793819116937-235",
-    "order": 236
+    "order": 235
+  },
+  {
+    "id": "ch-1793849111784-0",
+    "name": "T Sports",
+    "url": "https://s1.itcnbd.live/T-Sports-HD/tracks-v1a1/mono.m3u8?nocache=1783826412104",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "category": "Sports",
+    "order": 236,
+    "status": "ONLINE",
+    "is_pinned": false
   }
 ]
