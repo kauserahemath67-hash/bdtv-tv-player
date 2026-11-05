@@ -2630,9 +2630,10 @@
     "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
     "category": "General",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793875641058-1",
-    "order": 263
+    "order": 263,
+    "manual_override": false
   },
   {
     "name": "A Sports",
