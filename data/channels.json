@@ -3583,30 +3583,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/uk/3/35/KINO_2_UA.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/465/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-332",
-    "order": 333
+    "order": 333,
+    "manual_override": true
   },
   {
     "name": "Kino 24 (720p)",
     "logo": "https://i.imgur.com/QAdDARF.png",
     "category": "Movies",
     "url": "http://sirius.greenhosting.ru/Kino24Ru/video.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-333",
-    "order": 334
+    "order": 334,
+    "manual_override": true
   },
   {
     "name": "Kino Barrandov",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Kino_Barrandov_logo.png/960px-Kino_Barrandov_logo.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_kino_barrandov_sd_hevc50/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-334",
-    "order": 335
+    "order": 335,
+    "manual_override": true
   },
   {
     "name": "Kino Nova",
