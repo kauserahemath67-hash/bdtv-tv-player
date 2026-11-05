@@ -5607,30 +5607,33 @@
     "logo": "https://images.pluto.tv/channels/66c79a4262e5510008ff68a5/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-66c79a4262e5510008ff68a5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-520",
-    "order": 521
+    "order": 521,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Filmes de Luta",
     "logo": "https://images.pluto.tv/channels/6806d62369aec5b19cd628c0/colorLogoPNG_1746817781806.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-6806d62369aec5b19cd628c0.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-521",
-    "order": 522
+    "order": 522,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Filmes Nacionais",
     "logo": "https://images.pluto.tv/channels/5f5a545d0dbf7f0007c09408/colorLogoPNG_1732044719987.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5f5a545d0dbf7f0007c09408.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-522",
-    "order": 523
+    "order": 523,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Franchise Favorites",
