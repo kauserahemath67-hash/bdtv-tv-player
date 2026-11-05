@@ -272,30 +272,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png",
     "category": "Movies",
     "url": "http://212.70.131.37:8000/play/a05k",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-25",
-    "order": 26
+    "order": 26,
+    "manual_override": true
   },
   {
     "name": "AMC Europe Czech Republic",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/test_amc_25p/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-26",
-    "order": 27
+    "order": 27,
+    "manual_override": true
   },
   {
     "name": "AMC Europe Hungary",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/amc_hun/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-27",
-    "order": 28
+    "order": 28,
+    "manual_override": true
   },
   {
     "name": "AMC Europe Romania",
