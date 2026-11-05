@@ -1617,30 +1617,33 @@
     "logo": "https://i.imgur.com/c8crJfA.png",
     "category": "Movies",
     "url": "http://125.227.210.55:1001/VideoInput/play.ts",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-149",
-    "order": 150
+    "order": 150,
+    "manual_override": true
   },
   {
     "name": "Cinemax Central Europe",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cinemax_2016.svg/960px-Cinemax_2016.svg.png",
     "category": "Movies",
     "url": "http://193.33.39.108:9023/play/a01b",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-150",
-    "order": 151
+    "order": 151,
+    "manual_override": true
   },
   {
     "name": "Cinemax Classics (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Cinemax_Classics_Logo.png/960px-Cinemax_Classics_Logo.png",
     "category": "Movies",
     "url": "http://23.237.104.106:8080/USA_5STARMAX/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-151",
-    "order": 152
+    "order": 152,
+    "manual_override": true
   },
   {
     "name": "Cinemax Hits (1080p)",
