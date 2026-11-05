@@ -169,30 +169,33 @@
     "logo": "https://assets-prod.services.toffeelive.com/WyPuDJsBEef-9-uVUA_z/posters/ea20055c-a824-443c-8083-ce8e2da8b922.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/channel_s_tv/playlist.m3u8?edge-cache-token=Expires=1793876450~Starts=1793872850~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=rVaFcff50jqitO0GLdrajHPZX4x_hP7nbnRyLmi4lulfhmm0mBFjGR9h3PezIom1bJlZ9dJ5vlllNe1oM5KCBw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-15",
-    "order": 16
+    "order": 16,
+    "manual_override": true
   },
   {
     "name": "Rajdhani TV",
     "logo": "https://assets-prod.services.toffeelive.com/KECGB54BuUSiBsg_dHyj/posters/58af9c58-ed80-458c-af13-cf381680cec6.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/rajdhani_tv/playlist.m3u8?edge-cache-token=Expires=1793876450~Starts=1793872850~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=rVaFcff50jqitO0GLdrajHPZX4x_hP7nbnRyLmi4lulfhmm0mBFjGR9h3PezIom1bJlZ9dJ5vlllNe1oM5KCBw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-16",
-    "order": 17
+    "order": 17,
+    "manual_override": true
   },
   {
     "name": "Bangla TV",
     "logo": "https://assets-prod.services.toffeelive.com/JiK-_poBEef-9-uVZv6L/posters/757a328e-70d6-45de-b093-0a843c69ade7.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/bangla_tv/playlist.m3u8?edge-cache-token=Expires=1793876450~Starts=1793872850~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=rVaFcff50jqitO0GLdrajHPZX4x_hP7nbnRyLmi4lulfhmm0mBFjGR9h3PezIom1bJlZ9dJ5vlllNe1oM5KCBw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-17",
-    "order": 18
+    "order": 18,
+    "manual_override": true
   },
   {
     "name": "Asian TV",
