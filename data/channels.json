@@ -3550,30 +3550,33 @@
     "logo": "https://i.imgur.com/Otfvlmf.png",
     "category": "Movies",
     "url": "http://31.148.48.15/Kineko_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-329",
-    "order": 330
+    "order": 330,
+    "manual_override": true
   },
   {
     "name": "Kino 1 (Russia) [Not 24/7]",
     "logo": "https://i.imgur.com/zsCPLs4.png",
     "category": "Movies",
     "url": "http://kino-1.catcast.tv/content/38617/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-330",
-    "order": 331
+    "order": 331,
+    "manual_override": true
   },
   {
     "name": "Kino 1 (Ukraine) (1080p)",
     "logo": "https://i.imgur.com/FWVxBWI.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/395/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-331",
-    "order": 332
+    "order": 332,
+    "manual_override": true
   },
   {
     "name": "Kino 2 (1080p)",
