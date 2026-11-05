@@ -6069,30 +6069,33 @@
     "logo": "https://images.pluto.tv/channels/63a19bb5e6914b000721b5c0/colorLogoPNG_1767773376618.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-63a19bb5e6914b000721b5c0.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-562",
-    "order": 563
+    "order": 563,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Sci-Fi (Sweden)",
     "logo": "https://images.pluto.tv/channels/60ed498c4248a400077c0b9d/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-61f9597e78607000074f6c2a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-563",
-    "order": 564
+    "order": 564,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Sci-Fi (Sweden) DK",
     "logo": "https://images.pluto.tv/channels/60ed498c4248a400077c0b9d/colorLogoPNG.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-61f9598588f86000078ee7d6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-564",
-    "order": 565
+    "order": 565,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Sci-Fi (Sweden) NO",
