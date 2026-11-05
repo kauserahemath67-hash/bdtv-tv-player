@@ -6953,30 +6953,33 @@
     "logo": "https://images.pluto.tv/channels/676e7b4a4bd636000819c6a7/colorLogoPNG_1748957675934.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-676e7b4a4bd636000819c6a7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-645",
-    "order": 646
+    "order": 646,
+    "manual_override": true
   },
   {
     "name": "ServusTV (576p)",
     "logo": "https://i.imgur.com/6W637Gn.png",
     "category": "Movies",
     "url": "https://s6.hopslan.com/servuz1/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-646",
-    "order": 647
+    "order": 647,
+    "manual_override": true
   },
   {
     "name": "Shemaroo Filmi Gaane (1080p)",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/0d5b07555b2d4415aa9f145273095ed7.png",
     "category": "Movies;Music",
     "url": "https://prod-runn.cdn.runn.tv/shemaroo/stream/smrfgn/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-647",
-    "order": 648
+    "order": 648,
+    "manual_override": true
   },
   {
     "name": "Shemaroo Josh (576p)",
