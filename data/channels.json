@@ -4371,30 +4371,33 @@
     "logo": "https://i.imgur.com/LtCnPFJ.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/mozi_plusz/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-406",
-    "order": 407
+    "order": 407,
+    "manual_override": true
   },
   {
     "name": "Moziverzum",
     "logo": "https://i.imgur.com/NMifecQ.png",
     "category": "Movies",
     "url": "http://88.212.7.14/live/moziverzum/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-407",
-    "order": 408
+    "order": 408,
+    "manual_override": true
   },
   {
     "name": "MultiPremier (1080p)",
     "logo": "https://i.imgur.com/H3PzGZW.png",
     "category": "Movies",
     "url": "http://168.196.127.137:6001/play/a08n/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-408",
-    "order": 409
+    "order": 409,
+    "manual_override": true
   },
   {
     "name": "Muzhskoe kino (576p)",
