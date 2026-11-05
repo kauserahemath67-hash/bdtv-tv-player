@@ -5970,30 +5970,33 @@
     "logo": "https://images.pluto.tv/channels/5defde6d6c07b50009cf0757/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5defde6d6c07b50009cf0757.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-553",
-    "order": 554
+    "order": 554,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Paranormal (Sweden)",
     "logo": "https://images.pluto.tv/channels/62b30beb81f89900071fc7b9/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62b1e4189f5db20007ff03be.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-554",
-    "order": 555
+    "order": 555,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Paranormal (Sweden) DK",
     "logo": "https://images.pluto.tv/channels/62b30beb81f89900071fc7b9/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62b30beb81f89900071fc7b9.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-555",
-    "order": 556
+    "order": 556,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Psycho",
