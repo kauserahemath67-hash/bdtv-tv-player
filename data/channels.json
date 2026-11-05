@@ -3947,10 +3947,11 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Max4_logo.png/960px-Max4_logo.png",
     "category": "Movies",
     "url": "http://141.94.193.53:80/MAX4_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-366",
-    "order": 367
+    "order": 367,
+    "manual_override": true
   },
   {
     "name": "Maxcine 2 (720p)",
@@ -4007,20 +4008,22 @@
     "logo": "https://i.imgur.com/TTAGFHG.png",
     "category": "Movies",
     "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-bollywood/546eb40d7dcf9a209255dd2496903764/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-372",
-    "order": 373
+    "order": 373,
+    "manual_override": true
   },
   {
     "name": "MBC+ Drama (1080p)",
     "logo": "https://i.imgur.com/lxWdjXG.png",
     "category": "Movies",
     "url": "https://shd-gcp-live.edgenextcdn.net/live/bitmovin-mbc-plus-drama/e37251ec2aac8f6c98f75cd0fa37cd28/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-373",
-    "order": 374
+    "order": 374,
+    "manual_override": true
   },
   {
     "name": "MCI Television (1080p)",
