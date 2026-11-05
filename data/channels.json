@@ -7476,30 +7476,33 @@
     "logo": "https://images.pluto.tv/channels/634dacf51d90320007fcd5fa/colorLogoPNG_1758310287876.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-634dacf51d90320007fcd5fa.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-694",
-    "order": 695
+    "order": 695,
+    "manual_override": true
   },
   {
     "name": "START Air (1080p)",
     "logo": "https://images.iptv.rt.ru/images/d60qp8omife4gis72tk0.png",
     "category": "Movies",
     "url": "http://176.118.197.101/START_AIR/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-695",
-    "order": 696
+    "order": 696,
+    "manual_override": true
   },
   {
     "name": "START World (576p)",
     "logo": "https://images.iptv.rt.ru/images/d6iist8mifeailfopupg.png",
     "category": "Movies",
     "url": "https://fs.uplink.kz/start_world/mono.m3u8?token=onlinetv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-696",
-    "order": 697
+    "order": 697,
+    "manual_override": true
   },
   {
     "name": "Starz Cinema (720p)",
