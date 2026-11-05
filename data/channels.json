@@ -6300,30 +6300,33 @@
     "logo": "https://images.pluto.tv/channels/5d4bdb635ce813b38639e6a3/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5d4bdb635ce813b38639e6a3.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-583",
-    "order": 584
+    "order": 584,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Westerns (United States)",
     "logo": "https://images.pluto.tv/channels/62bdacc96a3751000811842d/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5b4e94282d4ec87bdcbb87cd.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-584",
-    "order": 585
+    "order": 585,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Westerns (United States) CA",
     "logo": "https://images.pluto.tv/channels/62bdacc96a3751000811842d/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62bdacc96a3751000811842d.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-585",
-    "order": 586
+    "order": 586,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Wild West",
