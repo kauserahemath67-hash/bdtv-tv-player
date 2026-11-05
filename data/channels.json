@@ -7985,30 +7985,33 @@
     "logo": "https://i.imgur.com/HwsNIDK.png",
     "category": "Movies",
     "url": "http://dtv.vol.net.ua/Viasat_Kino_Action_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-741",
-    "order": 742
+    "order": 742,
+    "manual_override": true
   },
   {
     "name": "Viasat Kino Comedy",
     "logo": "https://i.imgur.com/qVYt8kP.png",
     "category": "Comedy;Movies",
     "url": "http://777905.live.tvstitch.com/playlist.m3u8?source=aHR0cDovLzE3Ni4xMjIuMTAzLjI0MTo3MDAwL2NoNDQvdHJhY2tzLXYxYTEvbW9uby5tM3U4P2xpdmU9MSZpcD0xNzguMTM2LjQyLjIyMCZpZD05NDg4NjUmc2VjcmV0PW4xdTd1aTA2JnNzbD0xJjIxeW89MCZlPTE3OTA1OTk4Mzcmc3Q9UzRPS1VZemNocmREQWhnSTJkTDJ5QQ%3D%3D&master=249",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-742",
-    "order": 743
+    "order": 743,
+    "manual_override": true
   },
   {
     "name": "Viasat Kino World",
     "logo": "https://i.imgur.com/GPiE2Rb.png",
     "category": "Movies",
     "url": "http://777905.live.tvstitch.com/playlist.m3u8?source=aHR0cDovLzE3Ni4xMjIuMTAzLjI0MTo3MDAwL2NoNDgvdHJhY2tzLXYxYTEvbW9uby5tM3U4P2xpdmU9MSZpcD0xNzguMTM2LjQyLjIyMCZpZD05NDg4NjUmc2VjcmV0PW4xdTd1aTA2JnNzbD0xJjIxeW89MCZlPTE3OTA1OTk5NDcmc3Q9N3ROblpCZy02WTBka1RuekRIZjU0QQ%3D%3D&master=102",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-743",
-    "order": 744
+    "order": 744,
+    "manual_override": true
   },
   {
     "name": "Viasat Serial",
