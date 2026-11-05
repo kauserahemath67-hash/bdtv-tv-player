@@ -4255,30 +4255,33 @@
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MOVIES_NOW/images/LOGO_HD/image.png",
     "category": "Movies",
     "url": "http://103.151.60.162:2122/play/a02w/index.m3u8?hls",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-395",
-    "order": 396
+    "order": 396,
+    "manual_override": true
   },
   {
     "name": "Movies Thriller (1080p)",
     "logo": "https://i.imgur.com/JWihdcl.png",
     "category": "Movies",
     "url": "https://shd-amg-fast.edgenextcdn.net/tx012/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-396",
-    "order": 397
+    "order": 397,
+    "manual_override": true
   },
   {
     "name": "Movies! (480p)",
     "logo": "https://i.imgur.com/gAGn3mK.png",
     "category": "Movies",
     "url": "https://bozztv.com/dvrfl03/hdirect/hdirect-ovair1-movies!/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-397",
-    "order": 398
+    "order": 398,
+    "manual_override": true
   },
   {
     "name": "Movies! KPVM-LD",
