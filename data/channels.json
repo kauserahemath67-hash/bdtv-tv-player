@@ -243,10 +243,11 @@
     "logo": "https://imglink.cc/cdn/LmVOSdl3ku.png",
     "url": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793892736055-23",
-    "order": 24
+    "order": 24,
+    "manual_override": true
   },
   {
     "name": "Btv HD",
@@ -353,10 +354,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1784629064327.png",
     "url": "https://drk6xq0vhn.gpcdn.net/live/somoy_tv_abr/live/somoy_tv_720/chunks.m3u8?nimblesessionid=238809308",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793892736055-34",
-    "order": 35
+    "order": 35,
+    "manual_override": true
   },
   {
     "name": "Akhon Tv",
@@ -483,10 +485,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
     "url": "https://box.bbaria.net:8083/Channel9/video.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793892736055-47",
-    "order": 48
+    "order": 48,
+    "manual_override": true
   },
   {
     "name": "DBC News HD",
