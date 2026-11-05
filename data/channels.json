@@ -6910,30 +6910,33 @@
     "logo": "https://i.imgur.com/H3qhN8S.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/204/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-641",
-    "order": 642
+    "order": 642,
+    "manual_override": true
   },
   {
     "name": "Russkiy Illusion (576p)",
     "logo": "https://i.imgur.com/RlsqFN8.png",
     "category": "Movies",
     "url": "http://31.148.48.15/Russkiy_illusion/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-642",
-    "order": 643
+    "order": 643,
+    "manual_override": true
   },
   {
     "name": "Russkiy roman (1080p)",
     "logo": "https://i.imgur.com/cQN0P2B.png",
     "category": "Movies",
     "url": "http://31.148.48.15/Russkiy_Roman_HD/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-643",
-    "order": 644
+    "order": 644,
+    "manual_override": true
   },
   {
     "name": "ScreamIN (1080p)",
