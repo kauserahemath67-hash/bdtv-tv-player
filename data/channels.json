@@ -103,30 +103,33 @@
     "logo": "https://assets-prod.services.toffeelive.com/Xi_Ga5oBNnOkwJLWkhKP/posters/ef2899d5-1ae0-4fee-aee5-45f9b0b3ba80.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/somoy_tv/playlist.m3u8?edge-cache-token=Expires=1793876448~Starts=1793872848~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=KxzcNasfKRgbl0Up8hNJ2ava1lnBBwwK3ut2Ul9quz_M3kMtFiwOSk5uvbuclGlzDvN06UzHozBqaasZn65pDw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-9",
-    "order": 10
+    "order": 10,
+    "manual_override": true
   },
   {
     "name": "Jamuna TV",
     "logo": "https://assets-prod.services.toffeelive.com/PiL635oBEef-9-uV2uCe/posters/36f380e0-6c71-4b27-a73b-2afb3ce7e982.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/jamuna_tv/playlist.m3u8?edge-cache-token=Expires=1793876448~Starts=1793872848~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=KxzcNasfKRgbl0Up8hNJ2ava1lnBBwwK3ut2Ul9quz_M3kMtFiwOSk5uvbuclGlzDvN06UzHozBqaasZn65pDw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-10",
-    "order": 11
+    "order": 11,
+    "manual_override": true
   },
   {
     "name": "Ananda TV",
     "logo": "https://assets-prod.services.toffeelive.com/wCM3l5sBEef-9-uVXFvD/posters/d80f7aee-5bd7-4edc-97eb-ead0e3ebbe09.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/anandatv/playlist.m3u8?edge-cache-token=Expires=1793876448~Starts=1793872848~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=KxzcNasfKRgbl0Up8hNJ2ava1lnBBwwK3ut2Ul9quz_M3kMtFiwOSk5uvbuclGlzDvN06UzHozBqaasZn65pDw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793873591883-11",
-    "order": 12
+    "order": 12,
+    "manual_override": true
   },
   {
     "name": "Bijoy TV",
