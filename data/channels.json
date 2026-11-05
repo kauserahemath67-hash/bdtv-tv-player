@@ -1551,30 +1551,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Cinemax_2_%282016%29.png/960px-Cinemax_2_%282016%29.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_cinemax2_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-143",
-    "order": 144
+    "order": 144,
+    "manual_override": true
   },
   {
     "name": "Cinemax 2 Central Europe",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Cinemax_2_%282016%29.png/960px-Cinemax_2_%282016%29.png",
     "category": "Movies",
     "url": "http://193.33.39.108:9009/play/a024",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-144",
-    "order": 145
+    "order": 145,
+    "manual_override": true
   },
   {
     "name": "Cinemax (Czech Republic)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cinemax_2016.svg/960px-Cinemax_2016.svg.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_cinemax_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-145",
-    "order": 146
+    "order": 146,
+    "manual_override": true
   },
   {
     "name": "Cinemax (United States) West (720p)",
