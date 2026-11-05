@@ -2818,30 +2818,33 @@
     "logo": "https://gemgroup.tv/assets/images/channels/icon_7.png",
     "category": "Movies",
     "url": "https://ca-rt.onetv.app/gemdramaplus/index-0.m3u8?token=onetv202",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-261",
-    "order": 262
+    "order": 262,
+    "manual_override": true
   },
   {
     "name": "GEM Film",
     "logo": "https://i.imgur.com/nrFz3LU.png",
     "category": "Movies",
     "url": "https://ca-rt.onetv.app/gemfilm/index-0.m3u8?token=onetv202",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-262",
-    "order": 263
+    "order": 263,
+    "manual_override": true
   },
   {
     "name": "GEM Onyx",
     "logo": "https://i.imgur.com/gXRIAw4.png",
     "category": "Movies",
     "url": "https://ca-rt.onetv.app/gemonyx/index-0.m3u8?token=onetv202",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-263",
-    "order": 264
+    "order": 264,
+    "manual_override": true
   },
   {
     "name": "GEM Pixel",
