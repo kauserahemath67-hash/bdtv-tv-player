@@ -2451,30 +2451,33 @@
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bemotion.png",
     "category": "Movies",
     "url": "https://webtvstream.bhtelecom.ba/filmbox_extra.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-227",
-    "order": 228
+    "order": 228,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Emotion Bulgaria",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bemotion.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a04r",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-228",
-    "order": 229
+    "order": 229,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Emotion Czechia",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bemotion.png",
     "category": "Movies",
     "url": "http://88.212.15.50/live/test_film_boxextra_hd_hevc/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-229",
-    "order": 230
+    "order": 230,
+    "manual_override": true
   },
   {
     "name": "FILMBOX+ Emotion Hungary (1080p)",
