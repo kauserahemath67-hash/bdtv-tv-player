@@ -7248,10 +7248,11 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "category": "Movies;Series",
     "url": "http://45.184.109.10/live/69393EAE6ADBC65A68F942022362A202/51.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-673",
-    "order": 674
+    "order": 674,
+    "manual_override": true
   },
   {
     "name": "Star Cinema",
@@ -7278,20 +7279,22 @@
     "logo": "https://i.imgur.com/G0ZfzZr.png",
     "category": "Movies",
     "url": "http://103.151.60.162:2122/play/a01v/index.m3u8?hls",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-676",
-    "order": 677
+    "order": 677,
+    "manual_override": true
   },
   {
     "name": "Star Gold HD (1080p)",
     "logo": "https://i.imgur.com/xC460sj.png",
     "category": "Movies",
     "url": "http://103.185.24.134:3001/Star-Gold/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-677",
-    "order": 678
+    "order": 678,
+    "manual_override": true
   },
   {
     "name": "Star Maa Movies HD (720p)",
