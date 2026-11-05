@@ -7172,10 +7172,11 @@
     "logo": "https://dtil.tmsimg.com/assets/s157974_ld_h15_aa.png?lock=720x540",
     "category": "Movies",
     "url": "https://sl.vodep39240327.workers.dev/channel/SONY+WAH.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-666",
-    "order": 667
+    "order": 667,
+    "manual_override": true
   },
   {
     "name": "South Station (1080p)",
@@ -7192,20 +7193,22 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "category": "Movies",
     "url": "http://213.91.179.28:8000/play/a0c9",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-668",
-    "order": 669
+    "order": 669,
+    "manual_override": true
   },
   {
     "name": "Star Channel (Chile) (720p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png",
     "category": "Movies;Series",
     "url": "http://138.121.15.230:9002/STAR-CHANNEL/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-669",
-    "order": 670
+    "order": 670,
+    "manual_override": true
   },
   {
     "name": "Star Channel (Colombia) (1080p)",
