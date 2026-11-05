@@ -4457,10 +4457,11 @@
     "logo": "https://i.imgur.com/pw4NZK1.png",
     "category": "Movies",
     "url": "https://appletree-mytime-samsungmexico.amagi.tv/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-414",
-    "order": 415
+    "order": 415,
+    "manual_override": true
   },
   {
     "name": "MyTime Movie Network (Spain) (1080p)",
@@ -4477,20 +4478,22 @@
     "logo": "https://i.imgur.com/pw4NZK1.png",
     "category": "Movies",
     "url": "https://appletree-mytimeuk-rakuten.amagi.tv/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-416",
-    "order": 417
+    "order": 417,
+    "manual_override": true
   },
   {
     "name": "MyTime Movie Network East (1080p)",
     "logo": "https://i.imgur.com/HYgxPVQ.png",
     "category": "Movies",
     "url": "https://appletree-mytimeau-samsung.amagi.tv/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-417",
-    "order": 418
+    "order": 418,
+    "manual_override": true
   },
   {
     "name": "Nash Kinopokaz HD (576p)",
