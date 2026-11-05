@@ -169,30 +169,33 @@
     "logo": "https://assets-prod.services.toffeelive.com/JiK-_poBEef-9-uVZv6L/posters/757a328e-70d6-45de-b093-0a843c69ade7.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/bangla_tv/playlist.m3u8?edge-cache-token=Expires=1793851248~Starts=1793847648~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=hO_YA4EGSQpjD4vWk4NmR6S3TWdVpAVFre2vv7GPFC3X1o2xZa2aQo8vs9MjsEbDerwM-QtzjmbZRYCvDllNAw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793850934132-15",
-    "order": 16
+    "order": 16,
+    "manual_override": true
   },
   {
     "name": "Asian TV",
     "logo": "https://assets-prod.services.toffeelive.com/MyK__poBEef-9-uVmf5l/posters/1eadef5b-28e7-4dc2-b42f-c67a3357c9a0.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/asian_tv/playlist.m3u8?edge-cache-token=Expires=1793851248~Starts=1793847648~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=hO_YA4EGSQpjD4vWk4NmR6S3TWdVpAVFre2vv7GPFC3X1o2xZa2aQo8vs9MjsEbDerwM-QtzjmbZRYCvDllNAw",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793850934132-16",
-    "order": 17
+    "order": 17,
+    "manual_override": true
   },
   {
     "name": "Channel i",
     "logo": "https://assets-prod.services.toffeelive.com/qnv835oBcqxnFHJBuQcB/posters/348dfac3-c1e0-485d-a72b-3d282c9e2c73.png",
     "url": "https://prod-linear-media.toffeelive.com/cdn/live/channel_i/playlist.m3u8?edge-cache-token=Expires=1793851249~Starts=1793847649~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=nEPOPKT1Zl_i15Sx_H2W_TzZnM5gHHzZNp9IJERQn8Kg6MqYd9uNAHXy99tKUe7bQhBWOvFBOBezA3mTLYj-Bg",
     "category": "Live Action",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793850934132-17",
-    "order": 18
+    "order": 18,
+    "manual_override": true
   },
   {
     "name": "Movie Bangla",
