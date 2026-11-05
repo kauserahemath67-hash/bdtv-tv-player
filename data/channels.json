@@ -434,30 +434,33 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies",
     "url": "http://170.83.16.50/AXN/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-40",
-    "order": 41
+    "order": 41,
+    "manual_override": true
   },
   {
     "name": "AXN (Portugal) (1080p)",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies",
     "url": "http://188.115.15.121:8000/play/a02z",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-41",
-    "order": 42
+    "order": 42,
+    "manual_override": true
   },
   {
     "name": "AXN Adria",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png",
     "category": "Movies",
     "url": "http://5.57.74.130:8000/play/a0at/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-42",
-    "order": 43
+    "order": 43,
+    "manual_override": true
   },
   {
     "name": "AXN Asia Indonesia",
