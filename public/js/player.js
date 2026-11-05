@@ -438,9 +438,10 @@ class IPTVPlayer {
     });
   }
 
-  // Feature 1: Dynamic Speed Catch-up Monitor
-  // If buffer drains < 8s, slow to 0.95x — buffer rebuilds without freezing
-  // If buffer > 20s, restore 1.0x normal speed
+  // Feature 1: Dynamic Speed Catch-up Monitor (Two-tier aggressive)
+  // Tier 1: Buffer < 12s → slow to 0.95x (early warning)
+  // Tier 2: Buffer < 4s  → slow to 0.90x (critical — almost freezing)
+  // Restore: Buffer ≥ 15s → back to 1.0x normal
   startCatchupMonitor() {
     this.stopCatchupMonitor();
     this._catchupTimer = setInterval(() => {
@@ -454,10 +455,16 @@ class IPTVPlayer {
           break;
         }
       }
-      if (bufferAhead > 0 && bufferAhead < 8 && this.video.playbackRate !== 0.95) {
+      if (bufferAhead > 0 && bufferAhead < 4 && this.video.playbackRate !== 0.90) {
+        // Critical: almost no buffer — slow more aggressively
+        console.log(`[CatchupMonitor] CRITICAL buffer (${bufferAhead.toFixed(1)}s) → slow to 0.90x`);
+        this.video.playbackRate = 0.90;
+      } else if (bufferAhead >= 4 && bufferAhead < 12 && this.video.playbackRate !== 0.95) {
+        // Warning: buffer draining — slow gently
         console.log(`[CatchupMonitor] Buffer low (${bufferAhead.toFixed(1)}s) → slow to 0.95x`);
         this.video.playbackRate = 0.95;
-      } else if (bufferAhead >= 20 && this.video.playbackRate !== 1.0) {
+      } else if (bufferAhead >= 15 && this.video.playbackRate !== 1.0) {
+        // Safe: buffer rebuilt — restore normal speed
         console.log(`[CatchupMonitor] Buffer OK (${bufferAhead.toFixed(1)}s) → restore 1.0x`);
         this.video.playbackRate = 1.0;
       }
@@ -478,21 +485,22 @@ class IPTVPlayer {
       enableWorker: true,
       lowLatencyMode: false,
       backBufferLength: 10,
-      maxBufferLength: 45,             // Pull up to 45s ahead at FULL internet bandwidth
-      maxMaxBufferLength: 90,          // Cap to 90s — non-stop full pipe downloading
-      maxBufferSize: 100 * 1024 * 1024,// 100 MB buffer — zero bottleneck for 6MB+ HD segments
-      liveSyncDurationCount: 1.5,      // FAST START: Starts playing after only 1-2 chunks instead of waiting 20s
-      liveMaxLatencyDurationCount: 10, // High tolerance — prevents unnecessary catch-up seeks
+      maxBufferLength: 60,             // Increased: aggressively pull 60s ahead
+      maxMaxBufferLength: 120,         // Increased: allow up to 2 min buffer
+      maxBufferSize: 150 * 1024 * 1024,// 150 MB — handles multiple 6MB HD segments
+      liveSyncDurationCount: 1.5,      // FAST START: begin after 1-2 chunks, not 20s
+      liveMaxLatencyDurationCount: 12, // High tolerance — no unnecessary catch-up seeks
       maxBufferHole: 0.5,
-      highBufferWatchdogPeriod: 2,
-      nudgeOffset: 0.1,
-      nudgeMaxRetry: 5,
-      fragLoadingTimeOut: 20000,       // 20s timeout so large segments finish downloading cleanly
+      highBufferWatchdogPeriod: 1,     // Check buffer health every 1s (was 2s)
+      nudgeOffset: 0.2,                // Slightly larger nudge to skip micro-gaps
+      nudgeMaxRetry: 8,                // More retries before giving up
+      fragLoadingTimeOut: 25000,       // 25s — large 6MB segments need extra time
       manifestLoadingTimeOut: 15000,
-      fragLoadingMaxRetry: 6,
+      fragLoadingMaxRetry: 8,          // Retry up to 8x on segment fail (was 6)
+      fragLoadingRetryDelay: 500,      // 500ms between retries (fast recovery)
       manifestLoadingMaxRetry: 6,
       levelLoadingMaxRetry: 6,
-      startFragPrefetch: true,         // Aggressive prefetch: downloads next segment while current plays
+      startFragPrefetch: true,         // Download next segment while current plays
       autoStartLoad: true
     });
 
@@ -509,6 +517,14 @@ class IPTVPlayer {
     this.hls.on(Hls.Events.FRAG_BUFFERED, () => {
       if (this.video && this.video.currentTime > 0) {
         this.showBuffering(false);
+      }
+    });
+
+    // Buffer stall recovery: when HLS detects no progress, restart loading
+    this.hls.on(Hls.Events.ERROR, (event, data) => {
+      if (!data.fatal && data.details === Hls.ErrorDetails.BUFFER_STALLED_ERROR) {
+        console.log('[BufferStall] Non-fatal stall detected — restarting load');
+        try { this.hls.startLoad(); } catch(e) {}
       }
     });
 
