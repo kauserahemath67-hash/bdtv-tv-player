@@ -4298,10 +4298,11 @@
     "logo": "https://i.imgur.com/DWN9ulT.png",
     "category": "Movies",
     "url": "http://playhdnewjj.xyz:8080/recc121412/KVqfhtdJ2nQ7/174",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-399",
-    "order": 400
+    "order": 400,
+    "manual_override": true
   },
   {
     "name": "MovieSphere (1080p)",
@@ -4328,10 +4329,11 @@
     "logo": "https://i.imgur.com/h1ejU90.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-64a3d96f060e830008af6745.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-402",
-    "order": 403
+    "order": 403,
+    "manual_override": true
   },
   {
     "name": "MovieSphere UK (1080p)",
@@ -4358,10 +4360,11 @@
     "logo": "https://i.imgur.com/XIk5EJN.png",
     "category": "Classic;Movies",
     "url": "https://void.greenhosting.ru/MovifyKino_Mpeg4/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-405",
-    "order": 406
+    "order": 406,
+    "manual_override": true
   },
   {
     "name": "Mozi+",
