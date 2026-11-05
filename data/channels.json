@@ -6201,30 +6201,33 @@
     "logo": "https://i.imgur.com/eWtoHDM.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5c6dc88fcd232425a6e0f06e.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-574",
-    "order": 575
+    "order": 575,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Terror Trash",
     "logo": "https://images.pluto.tv/channels/66aa67493a4ad2000806d91b/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-66aa67493a4ad2000806d91b.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-575",
-    "order": 576
+    "order": 576,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Thrillers",
     "logo": "https://i.imgur.com/ULKvDN7.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5b4e69e08291147bd04a9fd7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-576",
-    "order": 577
+    "order": 577,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Toto",
