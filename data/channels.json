@@ -5475,30 +5475,33 @@
     "logo": "https://images.pluto.tv/channels/5fa15ad6367e170007cdd098/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5fa15ad6367e170007cdd098.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-508",
-    "order": 509
+    "order": 509,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film (Germany)",
     "logo": "https://images.pluto.tv/channels/608aa17fb9f4490007e6419a/colorLogoPNG_1733013735186.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-608aa17fb9f4490007e6419a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-509",
-    "order": 510
+    "order": 510,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film (Sweden)",
     "logo": "https://images.pluto.tv/channels/61c09515fbb4b50007d221f5/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-61c0afa0a09bbe00078f8378.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-510",
-    "order": 511
+    "order": 511,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Film (Sweden) DK",
