@@ -5409,30 +5409,33 @@
     "logo": "https://i.imgur.com/PvhbHTZ.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5b4e92e4694c027be6ecece1.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-502",
-    "order": 503
+    "order": 503,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Drama Movies",
     "logo": "https://images.pluto.tv/channels/62bdb0bcd707b9000739d2e5/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-62bdb0bcd707b9000739d2e5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-503",
-    "order": 504
+    "order": 504,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Estrellas de Accion",
     "logo": "https://i.imgur.com/GVOYX4L.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-5e972a21ad709d00074195ba.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-504",
-    "order": 505
+    "order": 505,
+    "manual_override": true
   },
   {
     "name": "Pluto TV Family Movie Club",
