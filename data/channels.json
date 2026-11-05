@@ -2094,10 +2094,11 @@
     "logo": "https://i.imgur.com/oUhYdea.png",
     "category": "Movies",
     "url": "http://111.59.139.85:11888/tsfile/live/1217_1.m3u8?key=txiptv",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-194",
-    "order": 195
+    "order": 195,
+    "manual_override": true
   },
   {
     "name": "Ebony TV by Lionsgate (1080p)",
@@ -2124,10 +2125,11 @@
     "logo": "https://i.ibb.co/WNyssx28/Screenshot-2025-05-18-211143.png",
     "category": "Movies",
     "url": "https://ca-rt.onetv.app/EkranMovies/index-0.m3u8?token=onetv202",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-197",
-    "order": 198
+    "order": 198,
+    "manual_override": true
   },
   {
     "name": "Emotion L (1080p)",
@@ -2144,10 +2146,11 @@
     "logo": "https://i.imgur.com/wQbiGs6.png",
     "category": "Movies",
     "url": "http://stream.mcquack.net/322/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-199",
-    "order": 200
+    "order": 200,
+    "manual_override": true
   },
   {
     "name": "Epic Bhojpuri (576p)",
