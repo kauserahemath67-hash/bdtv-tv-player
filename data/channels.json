@@ -1280,10 +1280,11 @@
     "logo": "https://images.pluto.tv/channels/60812fc8539963000707d1e1/colorLogoPNG_1775048649580.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-60812fc8539963000707d1e1.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-118",
-    "order": 119
+    "order": 119,
+    "manual_override": true
   },
   {
     "name": "Cine Romantico (720p)",
@@ -1300,20 +1301,22 @@
     "logo": "https://images.pluto.tv/channels/60c34592c911890007f29a73/colorLogoPNG.png",
     "category": "Movies",
     "url": "https://jmp2.uk/plu-60c34592c911890007f29a73.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-120",
-    "order": 121
+    "order": 121,
+    "manual_override": true
   },
   {
     "name": "Cine Sony (720p)",
     "logo": "https://i.imgur.com/bZWoDTg.png",
     "category": "Movies",
     "url": "http://186.148.196.82:8001/play/a0a4",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471285-121",
-    "order": 122
+    "order": 122,
+    "manual_override": true
   },
   {
     "name": "Cine Terror",
