@@ -7410,30 +7410,33 @@
     "logo": "https://images.pluto.tv/channels/69776b58036e883f39e5ab8a/colorLogoPNG_1769434091096.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-69776b58036e883f39e5ab8a.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-688",
-    "order": 689
+    "order": 689,
+    "manual_override": true
   },
   {
     "name": "Star Trek: The Original Series (Sweden)",
     "logo": "https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-693ade4d569386f93f235bb6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-689",
-    "order": 690
+    "order": 690,
+    "manual_override": true
   },
   {
     "name": "Star Trek: The Original Series (Sweden) DK",
     "logo": "https://images.pluto.tv/channels/693add137e308621c051e733/colorLogoPNG_1765465486347.png",
     "category": "Movies;Series",
     "url": "https://jmp2.uk/plu-693add137e308621c051e733.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-690",
-    "order": 691
+    "order": 691,
+    "manual_override": true
   },
   {
     "name": "Star Trek: The Original Series (Sweden) NO",
