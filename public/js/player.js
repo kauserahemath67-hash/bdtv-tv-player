@@ -448,7 +448,7 @@ class IPTVPlayer {
       maxBufferLength: 30,
       maxMaxBufferLength: 60,
       maxBufferSize: 60 * 1024 * 1024,
-      maxBufferHole: 0.5,
+      maxBufferHole: 0.8,              // Seamlessly bridges micro-gaps without freezing
       highBufferWatchdogPeriod: 2,
       nudgeOffset: 0.1,
       nudgeMaxRetry: 5,
