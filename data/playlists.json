@@ -16,14 +16,5 @@
     "active": true,
     "id": "pl-1793872227989",
     "savedAt": "2026-11-05T10:47:30.640Z"
-  },
-  {
-    "name": "https://iptv-org.github.io/iptv/categories/movies.m3u",
-    "url": "https://iptv-org.github.io/iptv/categories/movies.m3u",
-    "format": "M3U Playlist",
-    "channelCount": 769,
-    "active": true,
-    "id": "pl-1793871769586",
-    "savedAt": "2026-11-05T09:42:53.735Z"
   }
 ]
