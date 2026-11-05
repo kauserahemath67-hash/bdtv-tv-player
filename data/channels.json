@@ -7886,30 +7886,33 @@
     "logo": "https://interra-cdn-europe1.b-cdn.net/zolo.png",
     "category": "Classic;Movies",
     "url": "https://cdn.rostelekom-tv.xyz/live/v804qFZr0QVQ1s9Z.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-732",
-    "order": 733
+    "order": 733,
+    "manual_override": true
   },
   {
     "name": "Velvet. Scary (1080p)",
     "logo": "https://antiabuse-container.b-cdn.net/uzh1.png",
     "category": "Movies",
     "url": "https://cdn.rostelekom-tv.xyz/live/NImhIFLevxCbtcP-.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-733",
-    "order": 734
+    "order": 734,
+    "manual_override": true
   },
   {
     "name": "Velvet. Sovetskoe Kino (1080p)",
     "logo": "https://interra-cdn-europe1.b-cdn.net/soviet.png",
     "category": "Classic;Movies",
     "url": "https://cdn.rostelekom-tv.xyz/live/nF4sFCa49nFPHSF_.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793849471286-734",
-    "order": 735
+    "order": 735,
+    "manual_override": true
   },
   {
     "name": "Viafree Movies",
