@@ -899,13 +899,14 @@
     "logo": "https://i.postimg.cc/T10jC1zQ/1000086945.jpg",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-209611/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-70",
     "order": 71,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "Duronto Tv",
