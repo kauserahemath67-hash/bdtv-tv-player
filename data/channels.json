@@ -4,20 +4,22 @@
     "logo": "https://s4.gifyu.com/images/image534fa27d7683f33d.png",
     "category": "Akash Go",
     "url": "http://210.4.72.204/hls-live/livepkgr/_definst_/liveevent/livestream3.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938412575-1",
-    "order": 2
+    "order": 2,
+    "manual_override": true
   },
   {
     "name": "Deepto TV",
     "logo": "https://upload.wikimedia.org/wikipedia/en/3/31/Deepto_TV_logo.png",
     "category": "Akash Go",
     "url": "https://byphdgllyk.gpcdn.net/hls/deeptotv/0_1/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938412575-2",
-    "order": 3
+    "order": 3,
+    "manual_override": true
   },
   {
     "name": "Deshe Bideshe",
@@ -106,7 +108,7 @@
     "logo": "https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/refs/heads/main/images/images%20(6)%20(9).jpeg",
     "category": "Sports",
     "url": "http://103.135.253.32:8080/T-SPORTS-FULL-HD/tracks-v1a1/mono.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": true,
     "id": "ch-1793938412575-12",
     "order": 12,
