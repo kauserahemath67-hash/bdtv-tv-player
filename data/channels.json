@@ -585,7 +585,7 @@
   {
     "name": "Channel 9 HD",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
-    "url": "https://box.bbaria.net:8083/Channel9/video.m3u8",
+    "url": "https://ay-obiram.emonsa4.workers.dev/channel-9.m3u8",
     "category": "General",
     "status": "OFFLINE",
     "is_pinned": false,
