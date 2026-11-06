@@ -223,10 +223,11 @@
     "logo": "https://i.ytimg.com/vi/uJJaKXtOqsw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAZZk6nxkDN1SXg6HkPRsgqbF8QlQ",
     "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-21",
-    "order": 22
+    "order": 22,
+    "manual_override": true
   },
   {
     "name": "Bangla Plus",
@@ -243,10 +244,11 @@
     "logo": "https://imglink.cc/cdn/LmVOSdl3ku.png",
     "url": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-23",
-    "order": 24
+    "order": 24,
+    "manual_override": true
   },
   {
     "name": "Btv HD",
@@ -293,10 +295,11 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzqyiL8I9xUzHQaUNGuapozGukLxpqnfGmSZ_CEq-og&s=10",
     "url": "https://footfytv.pro/proxy/direct?url=http://alvetv.com/moviebanglatv/8080/index.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-28",
-    "order": 29
+    "order": 29,
+    "manual_override": true
   },
   {
     "name": "Gazi Tv",
