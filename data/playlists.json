@@ -1,14 +1,5 @@
 [
   {
-    "name": "https://rslivetv.pages.dev/bd76t2s1w9.json",
-    "url": "https://rslivetv.pages.dev/bd76t2s1w9.json",
-    "format": "JSON Playlist",
-    "channelCount": 82,
-    "active": true,
-    "id": "pl-1793938352771",
-    "savedAt": "2026-11-06T04:12:35.522Z"
-  },
-  {
     "name": "https://is.gd/mrgifytv",
     "url": "https://is.gd/mrgifytv",
     "format": "M3U Playlist",
