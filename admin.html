@@ -519,6 +519,17 @@
         <div class="checkbox-row">
           <label><input type="checkbox" id="form-ch-override"> ম্যানুয়াল ওভাররাইড (রোবট অফলাইন বললেও জোরপূর্বক চালু রাখুন)</label>
         </div>
+        <div class="checkbox-row">
+          <label><input type="checkbox" id="form-ch-use-proxy"> সার্ভার HLS প্রক্সি ব্যবহার করুন (Use Server HLS Proxy)</label>
+        </div>
+        <div class="form-group" id="proxy-referer-group">
+          <label>প্রক্সি Referer হেডার (Upstream Referer):</label>
+          <input type="text" id="form-ch-proxy-referer" placeholder="উদা: https://obiramtvlive.pages.dev/">
+        </div>
+        <div class="form-group" id="proxy-user-agent-group">
+          <label>প্রক্সি User-Agent হেডার (ঐচ্ছিক):</label>
+          <input type="text" id="form-ch-proxy-user-agent" placeholder="ঐচ্ছিক কাস্টম ব্রাউজার এজেন্ট">
+        </div>
         <button type="submit" class="btn-primary-admin full-btn">সংরক্ষণ করুন</button>
       </form>
     </div>
@@ -583,6 +594,6 @@
     </div>
   </div>
 
-  <script src="/js/admin.js?v=2319"></script>
+  <script src="/js/admin.js?v=2320"></script>
 </body>
 </html>

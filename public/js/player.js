@@ -682,8 +682,11 @@ class IPTVPlayer {
     this.hideError();
 
     // 3. Clean stream URL & Start fresh clean stream
-    const cleanUrl = channel.url.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
-    const isM3u8 = cleanUrl.includes('.m3u8') || cleanUrl.includes('/hls') || cleanUrl.includes('/mono') || cleanUrl.includes('playlist');
+    const rawUrl = (channel.use_proxy && channel.id)
+      ? (/^\/api\/proxy/.test(channel.url) ? channel.url : `/api/proxy?ch=${encodeURIComponent(channel.id)}`)
+      : channel.url;
+    const cleanUrl = rawUrl.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+    const isM3u8 = cleanUrl.includes('.m3u8') || cleanUrl.includes('/hls') || cleanUrl.includes('/mono') || cleanUrl.includes('playlist') || cleanUrl.includes('/api/proxy');
     if (Hls.isSupported() && isM3u8) {
       this.initHLS();
       this.hls.loadSource(cleanUrl);

@@ -381,6 +381,9 @@ class AdminDashboard {
     if (statusSelect) statusSelect.value = ch.status || 'ONLINE';
     document.getElementById('form-ch-pinned').checked = Boolean(ch.is_pinned);
     document.getElementById('form-ch-override').checked = Boolean(ch.manual_override);
+    document.getElementById('form-ch-use-proxy').checked = Boolean(ch.use_proxy);
+    document.getElementById('form-ch-proxy-referer').value = ch.proxy_referer || '';
+    document.getElementById('form-ch-proxy-user-agent').value = ch.proxy_user_agent || '';
 
     document.getElementById('channel-modal').classList.remove('hidden');
   }
@@ -390,14 +393,15 @@ class AdminDashboard {
     document.getElementById('preview-modal-title').textContent = `লাইভ টেস্ট: ${ch.name}`;
     const video = document.getElementById('admin-preview-player');
     const statusText = document.getElementById('preview-status-text');
-    statusText.textContent = `কানেক্ট হচ্ছে: ${ch.url}`;
+    const effectiveUrl = (ch.use_proxy && ch.id) ? `/api/proxy?ch=${encodeURIComponent(ch.id)}` : ch.url;
+    statusText.textContent = `কানেক্ট হচ্ছে: ${effectiveUrl}`;
 
     if (this.previewHls) {
       this.previewHls.destroy();
     }
 
-    const cleanUrl = ch.url.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
-    if (Hls.isSupported() && cleanUrl.includes('.m3u8')) {
+    const cleanUrl = effectiveUrl.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+    if (Hls.isSupported() && (cleanUrl.includes('.m3u8') || cleanUrl.includes('/api/proxy'))) {
       this.previewHls = new Hls({
         enableWorker: true,
         lowLatencyMode: false,
@@ -443,6 +447,9 @@ class AdminDashboard {
       document.getElementById('channel-modal-title').textContent = 'নতুন চ্যানেল যোগ করুন';
       document.getElementById('channel-form').reset();
       document.getElementById('channel-edit-id').value = '';
+      document.getElementById('form-ch-use-proxy').checked = false;
+      document.getElementById('form-ch-proxy-referer').value = '';
+      document.getElementById('form-ch-proxy-user-agent').value = '';
       document.getElementById('channel-modal').classList.remove('hidden');
     });
 
@@ -464,6 +471,9 @@ class AdminDashboard {
         status: statusSelect ? statusSelect.value : 'ONLINE',
         is_pinned: document.getElementById('form-ch-pinned').checked,
         manual_override: document.getElementById('form-ch-override').checked,
+        use_proxy: document.getElementById('form-ch-use-proxy').checked,
+        proxy_referer: document.getElementById('form-ch-proxy-referer').value.trim() || null,
+        proxy_user_agent: document.getElementById('form-ch-proxy-user-agent').value.trim() || null,
         order: existingCh && existingCh.order !== undefined ? existingCh.order : undefined
       };
 

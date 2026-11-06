@@ -14,8 +14,16 @@ CREATE TABLE IF NOT EXISTS channels (
   status TEXT DEFAULT 'ONLINE',
   response_time_ms INTEGER DEFAULT 100,
   manual_override BOOLEAN DEFAULT FALSE,
+  use_proxy BOOLEAN DEFAULT FALSE,
+  proxy_referer TEXT,
+  proxy_user_agent TEXT,
   created_at TIMESTAMPTZ DEFAULT NOW()
 );
+
+-- Migration for existing channels table:
+ALTER TABLE channels ADD COLUMN IF NOT EXISTS use_proxy BOOLEAN DEFAULT FALSE;
+ALTER TABLE channels ADD COLUMN IF NOT EXISTS proxy_referer TEXT;
+ALTER TABLE channels ADD COLUMN IF NOT EXISTS proxy_user_agent TEXT;
 
 -- 2. Customers Table
 CREATE TABLE IF NOT EXISTS customers (

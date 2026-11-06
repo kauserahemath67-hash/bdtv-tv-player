@@ -131,7 +131,22 @@ module.exports = async (req, res) => {
         return (a.order || 0) - (b.order || 0);
       });
 
-      return res.status(200).json({ success: true, count: channels.length, data: channels });
+      // Public sanitization: For non-admin, never expose proxy_referer or proxy_user_agent,
+      // and when use_proxy is true, give the player the proxy URL instead of raw stream_url.
+      let responseChannels = channels;
+      if (!isAdmin) {
+        responseChannels = channels.map(c => {
+          const item = { ...c };
+          if (item.use_proxy) {
+            item.url = `/api/proxy?ch=${encodeURIComponent(item.id)}`;
+          }
+          delete item.proxy_referer;
+          delete item.proxy_user_agent;
+          return item;
+        });
+      }
+
+      return res.status(200).json({ success: true, count: responseChannels.length, data: responseChannels });
     }
 
     // ── POST — add / update channel ─────────────────────
@@ -153,7 +168,10 @@ module.exports = async (req, res) => {
         is_pinned:       Boolean(body.is_pinned),
         order:           body.order ? Number(body.order) : undefined,
         status:          body.status || 'ONLINE',
-        manual_override: Boolean(body.manual_override)
+        manual_override: Boolean(body.manual_override),
+        use_proxy:        Boolean(body.use_proxy),
+        proxy_referer:    body.proxy_referer ? String(body.proxy_referer).trim() : null,
+        proxy_user_agent: body.proxy_user_agent ? String(body.proxy_user_agent).trim() : null
       });
 
       return res.status(200).json({ success: true, message: 'চ্যানেল সংরক্ষিত হয়েছে।', data: saved });

@@ -24,13 +24,13 @@ const CACHE_TTL_MS = 20000; // 20-second in-process cache (warm requests)
 
 // ── Default data ──────────────────────────────────────────
 const defaultChannels = [
-  { id: 'ch-1', name: 'Somoy TV',           category: 'News',            logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Somoy_TV_logo.svg/300px-Somoy_TV_logo.svg.png',          url: 'https://stream.somoynews.tv/live/somoy/playlist.m3u8',               is_pinned: true,  order: 1, status: 'ONLINE', response_time_ms: 120, manual_override: false },
-  { id: 'ch-2', name: 'Jamuna TV',           category: 'News',            logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Jamuna_TV_logo.png/300px-Jamuna_TV_logo.png',           url: 'https://stream.jamuna.tv/live/jamuna/playlist.m3u8',                 is_pinned: true,  order: 2, status: 'ONLINE', response_time_ms: 140, manual_override: false },
-  { id: 'ch-3', name: 'T Sports',            category: 'Sports',          logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/91/T_Sports_logo.svg/300px-T_Sports_logo.svg.png',         url: 'https://tsports.live/stream/playlist.m3u8',                          is_pinned: true,  order: 3, status: 'ONLINE', response_time_ms: 110, manual_override: false },
-  { id: 'ch-4', name: 'Channel i',           category: 'Entertainment',   logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Channel_i_logo.svg/300px-Channel_i_logo.svg.png',       url: 'https://stream.channeli.tv/live/playlist.m3u8',                      is_pinned: false, order: 4, status: 'ONLINE', response_time_ms: 160, manual_override: false },
-  { id: 'ch-5', name: 'Al Jazeera English',  category: 'International',   logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Al_Jazeera_English_logo.svg/300px-Al_Jazeera_English_logo.svg.png', url: 'https://live-hls-web-aje.getaj.net/AJE/03.m3u8',           is_pinned: false, order: 5, status: 'ONLINE', response_time_ms: 95,  manual_override: false },
-  { id: 'ch-6', name: 'NHK World Japan',     category: 'International',   logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/NHK_World-Japan_logo.svg/300px-NHK_World-Japan_logo.svg.png', url: 'https://b-nhkworld.akamaized.net/hls/live/2014412/nhkworld/playlist_720.m3u8', is_pinned: false, order: 6, status: 'ONLINE', response_time_ms: 85, manual_override: false },
-  { id: 'ch-7', name: 'Bangladesh Betar',    category: 'Music & Radio',   logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Bangladesh_Betar_Logo.svg/300px-Bangladesh_Betar_Logo.svg.png',   url: 'https://betarlive.teletalk.com.bd/live/betar.m3u8',                  is_pinned: false, order: 7, status: 'ONLINE', response_time_ms: 105, manual_override: false }
+  { id: 'ch-1', name: 'Somoy TV',           category: 'News',            logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Somoy_TV_logo.svg/300px-Somoy_TV_logo.svg.png',          url: 'https://stream.somoynews.tv/live/somoy/playlist.m3u8',               is_pinned: true,  order: 1, status: 'ONLINE', response_time_ms: 120, manual_override: false, use_proxy: false, proxy_referer: null, proxy_user_agent: null },
+  { id: 'ch-2', name: 'Jamuna TV',           category: 'News',            logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/07/Jamuna_TV_logo.png/300px-Jamuna_TV_logo.png',           url: 'https://stream.jamuna.tv/live/jamuna/playlist.m3u8',                 is_pinned: true,  order: 2, status: 'ONLINE', response_time_ms: 140, manual_override: false, use_proxy: false, proxy_referer: null, proxy_user_agent: null },
+  { id: 'ch-3', name: 'T Sports',            category: 'Sports',          logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/9/91/T_Sports_logo.svg/300px-T_Sports_logo.svg.png',         url: 'https://tsports.live/stream/playlist.m3u8',                          is_pinned: true,  order: 3, status: 'ONLINE', response_time_ms: 110, manual_override: false, use_proxy: false, proxy_referer: null, proxy_user_agent: null },
+  { id: 'ch-4', name: 'Channel i',           category: 'Entertainment',   logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Channel_i_logo.svg/300px-Channel_i_logo.svg.png',       url: 'https://stream.channeli.tv/live/playlist.m3u8',                      is_pinned: false, order: 4, status: 'ONLINE', response_time_ms: 160, manual_override: false, use_proxy: false, proxy_referer: null, proxy_user_agent: null },
+  { id: 'ch-5', name: 'Al Jazeera English',  category: 'International',   logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f2/Al_Jazeera_English_logo.svg/300px-Al_Jazeera_English_logo.svg.png', url: 'https://live-hls-web-aje.getaj.net/AJE/03.m3u8',           is_pinned: false, order: 5, status: 'ONLINE', response_time_ms: 95,  manual_override: false, use_proxy: false, proxy_referer: null, proxy_user_agent: null },
+  { id: 'ch-6', name: 'NHK World Japan',     category: 'International',   logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/NHK_World-Japan_logo.svg/300px-NHK_World-Japan_logo.svg.png', url: 'https://b-nhkworld.akamaized.net/hls/live/2014412/nhkworld/playlist_720.m3u8', is_pinned: false, order: 6, status: 'ONLINE', response_time_ms: 85, manual_override: false, use_proxy: false, proxy_referer: null, proxy_user_agent: null },
+  { id: 'ch-7', name: 'Bangladesh Betar',    category: 'Music & Radio',   logo: 'https://upload.wikimedia.org/wikipedia/en/thumb/1/15/Bangladesh_Betar_Logo.svg/300px-Bangladesh_Betar_Logo.svg.png',   url: 'https://betarlive.teletalk.com.bd/live/betar.m3u8',                  is_pinned: false, order: 7, status: 'ONLINE', response_time_ms: 105, manual_override: false, use_proxy: false, proxy_referer: null, proxy_user_agent: null }
 ];
 
 const defaultSettings = {
@@ -153,8 +153,22 @@ async function getChannels() {
     _channelCache.data    = result.data;
     _channelCache.loadedAt = Date.now();
   } else {
+    // Try local file fallback if available on disk (useful for local dev/testing)
+    try {
+      const fs = require('fs');
+      const path = require('path');
+      const localPath = path.join(__dirname, '..', GITHUB_CHANNELS_PATH);
+      if (fs.existsSync(localPath)) {
+        const localData = JSON.parse(fs.readFileSync(localPath, 'utf8'));
+        if (Array.isArray(localData) && localData.length > 0) {
+          _channelCache.data = localData;
+          _channelCache.loadedAt = Date.now();
+          return [..._channelCache.data].sort((a, b) => (a.order || 0) - (b.order || 0));
+        }
+      }
+    } catch (e) {}
+
     // GitHub file missing or empty — use defaults but don't cache
-    // (we want to retry next time)
     return [...defaultChannels];
   }
 
@@ -174,13 +188,22 @@ async function saveChannel(channel) {
   const idx = current.findIndex(c => c.id === channel.id);
   if (idx >= 0) {
     const existingOrder = current[idx].order;
-    current[idx] = { ...current[idx], ...channel };
+    current[idx] = {
+      ...current[idx],
+      ...channel,
+      use_proxy: channel.use_proxy !== undefined ? Boolean(channel.use_proxy) : Boolean(current[idx].use_proxy),
+      proxy_referer: channel.proxy_referer !== undefined ? (channel.proxy_referer ? String(channel.proxy_referer).trim() : null) : (current[idx].proxy_referer || null),
+      proxy_user_agent: channel.proxy_user_agent !== undefined ? (channel.proxy_user_agent ? String(channel.proxy_user_agent).trim() : null) : (current[idx].proxy_user_agent || null)
+    };
     if (channel.order === undefined && existingOrder !== undefined) {
       current[idx].order = existingOrder;
     }
   } else {
     channel.order  = channel.order  || current.length + 1;
     channel.status = channel.status || 'ONLINE';
+    channel.use_proxy = Boolean(channel.use_proxy);
+    channel.proxy_referer = channel.proxy_referer ? String(channel.proxy_referer).trim() : null;
+    channel.proxy_user_agent = channel.proxy_user_agent ? String(channel.proxy_user_agent).trim() : null;
     current.push(channel);
   }
 
@@ -190,6 +213,15 @@ async function saveChannel(channel) {
     _channelCache.data    = current;
     _channelCache.loadedAt = Date.now();
   } else {
+    // If running locally without GITHUB_TOKEN, also save to local file
+    try {
+      const fs = require('fs');
+      const path = require('path');
+      const localPath = path.join(__dirname, '..', GITHUB_CHANNELS_PATH);
+      fs.writeFileSync(localPath, JSON.stringify(current, null, 2), 'utf8');
+      _channelCache.data = current;
+      _channelCache.loadedAt = Date.now();
+    } catch (e) {}
     invalidateChannelCache(); // force re-read next time
   }
 

@@ -203,10 +203,12 @@ module.exports = async (req, res) => {
       }
 
       let m3u = '#EXTM3U url-tvg="http://epg.51zmt.top:8000/e.xml"\n';
+      const host = req.headers && req.headers.host ? ((req.headers['x-forwarded-proto'] || 'https') + '://' + req.headers.host) : 'https://bdtv-app.vercel.app';
 
       for (let ch of channels) {
         m3u += `#EXTINF:-1 tvg-id="${ch.id}" tvg-name="${ch.name}" tvg-logo="${ch.logo || ''}" group-title="${ch.category || 'General'}",${ch.name}\n`;
-        m3u += `${ch.url}\n`;
+        const streamUrl = ch.use_proxy ? `${host}/api/proxy?ch=${encodeURIComponent(ch.id)}` : ch.url;
+        m3u += `${streamUrl}\n`;
       }
 
       res.setHeader('Content-Type', 'audio/x-mpegurl; charset=utf-8');

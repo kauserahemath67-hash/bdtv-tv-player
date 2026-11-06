@@ -10,6 +10,7 @@ const apiRoutes = {
   '/api/channels': require('./api/channels'),
   '/api/playlist': require('./api/playlist'),
   '/api/playlists': require('./api/playlists'),
+  '/api/proxy': require('./api/proxy'),
   '/api/auth': require('./api/auth'),
   '/api/health': require('./api/health'),
   '/api/customers': require('./api/customers'),
