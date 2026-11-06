@@ -664,7 +664,7 @@
   {
     "name": "Deepto TV HD",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
-    "url": "https://ay-obiram.emonsa4.workers.dev/deepto-tv.m3u8",
+    "url": "https://ay-obiram.emonsa4.workers.dev/deepto-tv/var_H1EURklJBBBeWlkQHBhGQUBSVhYNITldCQUSHEQFMDJLByNYJj0AFRIAFRgIAgVeWEtQXEEaRQZZEgwtL10HRBIbRAtsKlxRREgBA0ZJQ0ZfSQkXCBAICE4.m3u8",
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
@@ -672,7 +672,7 @@
     "order": 54,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://obiramtvlive.pages.dev/",
     "proxy_user_agent": null
   },
   {
