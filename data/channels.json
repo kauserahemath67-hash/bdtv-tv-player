@@ -18,13 +18,14 @@
     "logo": "https://i.imgur.com/2cpHJKq.png",
     "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-1",
     "order": 2,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "A Sports",
