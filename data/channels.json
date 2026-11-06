@@ -135,16 +135,16 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Jalsha Movies HD",
-    "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/6/69/Jalsha_Movies_HD_alt.png",
-    "url": "https://live.dinesh29.com.np/stream/jiotvplus/jalshamovieshd/master.m3u8",
+    "name": "bangla kotho 24",
+    "logo": "",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/banglarkontho.stream/tracks-v1a1/mono.m3u8",
     "category": "General",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-13",
     "order": 14,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null
   },
