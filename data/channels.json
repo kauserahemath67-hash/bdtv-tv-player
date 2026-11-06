@@ -1031,15 +1031,15 @@
   {
     "name": "Animal Planet",
     "logo": "https://logos-world.net/wp-content/uploads/2023/04/Animal-Planet-Logo.png",
-    "url": "https://stream.ottplus.bd/live/animal_planet_hd_abr/playlist.m3u8",
+    "url": "https://ay-obiram.emonsa4.workers.dev/animal-planet-hd/var_H1EURklJBBBeWlkQHBhGQUBSVhANITldCQUSHEQFMDJLBBgLUUUxGFJLBxkNB0FZB1wCVgMYXlhWTA00Mx0FWRNQSEp9OhRRUkhGX0YWEkZJSU4Z.m3u8",
     "category": "General",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-80",
     "order": 81,
     "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
+    "use_proxy": true,
+    "proxy_referer": "https://obiramtvlive.pages.dev/",
     "proxy_user_agent": null
   },
   {
