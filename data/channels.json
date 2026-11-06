@@ -814,14 +814,14 @@
   {
     "name": "Sony Entertainment Hd",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/b02e7be82b9b488e5a79b0f7e8f7ca1c.png",
-    "url": "https://drk6xq0vhn.gpcdn.net/live/sony_ent_hd_abr/live/sony_ent_hd_480/chunks.m3u8?nimblesessionid=206459882",
+    "url": "https://alixbd.com/playlistconfig/channel/52.m3u8",
     "category": "General",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-64",
     "order": 65,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null
   },
@@ -923,6 +923,20 @@
     "proxy_user_agent": null
   },
   {
+    "name": "Khushboo Bangla",
+    "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/c4/Khushboo_Bangla_logo_%282016-present%29.png",
+    "url": "https://cdn-4.pishow.tv/live/1473/master.m3u8",
+    "category": "General",
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "id": "ch-1793938608079-75",
+    "order": 72,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
     "name": "Pogo",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD80Tvj2_ESehLOITsqiSg0KGsj_mSgLQ1UPXnkHLMM7sVKv-2Iz_YegeJ&s=10",
     "url": "https://stream.ottplus.live/live/pogo_sd_abr/index.m3u8",
@@ -959,20 +973,6 @@
     "order": 75,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "name": "Khushboo Bangla",
-    "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/c4/Khushboo_Bangla_logo_%282016-present%29.png",
-    "url": "https://cdn-4.pishow.tv/live/1473/master.m3u8",
-    "category": "General",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793938608079-75",
-    "order": 72,
-    "manual_override": true,
-    "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null
   },
