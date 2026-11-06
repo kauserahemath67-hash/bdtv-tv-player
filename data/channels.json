@@ -1300,7 +1300,7 @@
     "id": "ch-1793938736645-18",
     "order": 101,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null
   },
