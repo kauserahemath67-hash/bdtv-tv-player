@@ -821,7 +821,7 @@
     "id": "ch-1793938608079-64",
     "order": 65,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null
   },
