@@ -42,7 +42,7 @@
   {
     "name": "PTV Sports",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
-    "url": "https://ay-obiram.emonsa4.workers.dev/ptv-sports.m3u8",
+    "url": "https://mz01.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=WZvV4MiMdPn68KFmhmIrVg&expires=1793985283&ch=ptvskpr&s=f6e1d131fb59ca04fbfd4efda13343ae",
     "category": "General",
     "status": "ONLINE",
     "is_pinned": false,
