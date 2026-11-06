@@ -8,7 +8,10 @@
     "is_pinned": true,
     "id": "ch-1793938608079-0",
     "order": 1,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Nagorik Tv",
@@ -18,7 +21,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-1",
-    "order": 2
+    "order": 2,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "A Sports",
@@ -28,7 +34,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-2",
-    "order": 3
+    "order": 3,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "PTV Sports",
@@ -39,7 +48,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-3",
     "order": 4,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": "https://obiramtvlive.pages.dev/",
+    "proxy_user_agent": null
   },
   {
     "name": "Star Sports 1",
@@ -50,7 +62,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-4",
     "order": 5,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Star Sports 2",
@@ -60,7 +75,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-5",
-    "order": 6
+    "order": 6,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Willow Sports",
@@ -71,7 +89,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-6",
     "order": 7,
-    "manual_override": false
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Sports 1",
@@ -82,7 +103,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-7",
     "order": 8,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Sports 2",
@@ -93,7 +117,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-8",
     "order": 9,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Sports 5",
@@ -104,7 +131,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-9",
     "order": 10,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Matribhumi Tv",
@@ -114,7 +144,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-10",
-    "order": 11
+    "order": 11,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Star Jalsha HD",
@@ -124,7 +157,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-11",
-    "order": 12
+    "order": 12,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Jalsha Movies SD",
@@ -134,7 +170,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-12",
-    "order": 13
+    "order": 13,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Jalsha Movies HD",
@@ -145,7 +184,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-13",
     "order": 14,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Colors Bangla",
@@ -155,7 +197,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-14",
-    "order": 15
+    "order": 15,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Colors Bangla Cinema",
@@ -166,7 +211,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-15",
     "order": 16,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ZEE Bangla",
@@ -176,7 +224,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-16",
-    "order": 17
+    "order": 17,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sananda Tv",
@@ -186,7 +237,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-17",
-    "order": 18
+    "order": 18,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Aath",
@@ -197,7 +251,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-18",
     "order": 19,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Enterr10",
@@ -207,7 +264,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-19",
-    "order": 20
+    "order": 20,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "TaraTv",
@@ -217,7 +277,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-20",
-    "order": 21
+    "order": 21,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Bangla Sonar",
@@ -228,7 +291,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-21",
     "order": 22,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Bangla Plus",
@@ -238,7 +304,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-22",
-    "order": 23
+    "order": 23,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sangeet Bangla",
@@ -249,7 +318,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-23",
     "order": 24,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Btv HD",
@@ -259,7 +331,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-24",
-    "order": 25
+    "order": 25,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Bijoy Tv",
@@ -269,7 +344,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-25",
-    "order": 26
+    "order": 26,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Me Tv",
@@ -279,7 +357,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-26",
-    "order": 27
+    "order": 27,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "G-Series",
@@ -289,7 +370,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-27",
-    "order": 28
+    "order": 28,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Movie Bangla",
@@ -300,7 +384,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-28",
     "order": 29,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Gazi Tv",
@@ -311,7 +398,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-29",
     "order": 30,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Asian Tv",
@@ -321,7 +411,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-30",
-    "order": 31
+    "order": 31,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ananda Tv",
@@ -331,7 +424,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-31",
-    "order": 32
+    "order": 32,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ekushey Tv",
@@ -341,7 +437,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-32",
-    "order": 33
+    "order": 33,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "R Tv",
@@ -351,7 +450,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-33",
-    "order": 34
+    "order": 34,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Somoy Tv",
@@ -361,7 +463,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-34",
-    "order": 35
+    "order": 35,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Akhon Tv",
@@ -371,7 +476,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-35",
-    "order": 36
+    "order": 36,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Boishakhi Tv",
@@ -381,7 +489,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-36",
-    "order": 37
+    "order": 37,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Atn Bangla",
@@ -391,7 +502,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-37",
-    "order": 38
+    "order": 38,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "My Tv",
@@ -401,7 +515,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-38",
-    "order": 39
+    "order": 39,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ATN News",
@@ -411,7 +528,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-39",
-    "order": 40
+    "order": 40,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Global Channel HD",
@@ -421,7 +541,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-40",
-    "order": 41
+    "order": 41,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Mohona Tv",
@@ -431,7 +554,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-41",
-    "order": 42
+    "order": 42,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Independent TV",
@@ -441,7 +567,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-42",
-    "order": 43
+    "order": 43,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ayna Tv",
@@ -451,7 +580,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-43",
-    "order": 44
+    "order": 44,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Jamuna TV",
@@ -461,7 +593,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-44",
-    "order": 45
+    "order": 45,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Green Tv",
@@ -471,7 +606,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-45",
-    "order": 46
+    "order": 46,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel I HD",
@@ -481,7 +619,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-46",
-    "order": 47
+    "order": 47,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel 9 HD",
@@ -492,7 +633,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-47",
     "order": 48,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "DBC News HD",
@@ -502,7 +646,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-48",
-    "order": 49
+    "order": 49,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ekattor HD",
@@ -512,7 +659,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-49",
-    "order": 50
+    "order": 50,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Thikana Tv",
@@ -522,7 +672,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-50",
-    "order": 51
+    "order": 51,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maasranga TV",
@@ -532,7 +685,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-51",
-    "order": 52
+    "order": 52,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "News 24 HD",
@@ -542,7 +698,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-52",
-    "order": 53
+    "order": 53,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Deepto TV HD",
@@ -553,7 +712,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-53",
     "order": 54,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Bangla Vision",
@@ -563,7 +725,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-54",
-    "order": 55
+    "order": 55,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "NTV",
@@ -573,7 +738,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-55",
-    "order": 56
+    "order": 56,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "SRK TV",
@@ -583,7 +751,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-56",
-    "order": 57
+    "order": 57,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel 24 HD",
@@ -593,7 +764,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-57",
-    "order": 58
+    "order": 58,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel 1",
@@ -604,7 +778,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-58",
     "order": 59,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Star News",
@@ -615,7 +792,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-59",
     "order": 60,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Al Quran",
@@ -625,7 +805,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-60",
-    "order": 61
+    "order": 61,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Unmochon Tv",
@@ -636,7 +819,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-61",
     "order": 62,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Al Jazeera",
@@ -647,7 +833,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-62",
     "order": 63,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Max",
@@ -658,7 +847,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-63",
     "order": 64,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Entertainment Hd",
@@ -669,7 +861,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-64",
     "order": 65,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Max 2",
@@ -680,7 +875,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-65",
     "order": 66,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Movies",
@@ -690,7 +888,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-66",
-    "order": 67
+    "order": 67,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Atn Music",
@@ -701,7 +902,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-67",
     "order": 68,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Music India",
@@ -712,7 +916,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-68",
     "order": 69,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "B4U Music",
@@ -723,7 +930,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-69",
     "order": 70,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Gopal Bhar",
@@ -733,7 +943,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-70",
-    "order": 71
+    "order": 71,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Duronto Tv",
@@ -744,7 +957,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-71",
     "order": 72,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Pogo",
@@ -754,7 +970,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-72",
-    "order": 73
+    "order": 73,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Tiny POP",
@@ -764,7 +983,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-73",
-    "order": 74
+    "order": 74,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "PBS Kids",
@@ -775,7 +997,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-74",
     "order": 75,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Khushboo Bangla",
@@ -786,7 +1011,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-75",
     "order": 76,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Moto Patlu",
@@ -796,7 +1024,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-76",
-    "order": 77
+    "order": 77,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Tom and Jerry",
@@ -806,7 +1037,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-77",
-    "order": 78
+    "order": 78,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ZB Cartoon",
@@ -816,7 +1050,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-78",
-    "order": 79
+    "order": 79,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Batul The Great",
@@ -826,7 +1063,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-79",
-    "order": 80
+    "order": 80,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Animal Planet",
@@ -837,7 +1077,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-80",
     "order": 81,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Discovery",
@@ -848,7 +1091,10 @@
     "is_pinned": false,
     "id": "ch-1793938608079-81",
     "order": 82,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "KidsFlix (1080p) [Not 24/7]",
@@ -858,7 +1104,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-0",
-    "order": 83
+    "order": 83,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maxcine Kids (720p)",
@@ -868,7 +1117,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-1",
-    "order": 84
+    "order": 84,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "24 Hour Free Movies (720p)",
@@ -878,7 +1130,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-2",
-    "order": 85
+    "order": 85,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "30A TV Classic Movies (720p)",
@@ -888,7 +1143,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-3",
-    "order": 86
+    "order": 86,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ABN Bible Movies Channel (720p)",
@@ -898,7 +1156,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-4",
-    "order": 87
+    "order": 87,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Afra Film",
@@ -908,7 +1169,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-5",
-    "order": 88
+    "order": 88,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Alankar TV (720p)",
@@ -918,7 +1182,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-6",
-    "order": 89
+    "order": 89,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Allo Cine (1080p)",
@@ -928,7 +1195,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-7",
-    "order": 90
+    "order": 90,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ARTFLIX Movie Classics (720p)",
@@ -938,7 +1208,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-8",
-    "order": 91
+    "order": 91,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Asianet Movies (396p)",
@@ -948,7 +1221,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-9",
-    "order": 92
+    "order": 92,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Aurora Media Films (720p)",
@@ -958,7 +1234,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-10",
-    "order": 93
+    "order": 93,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "B4U Bhojpuri Plus (1080p)",
@@ -968,7 +1247,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-11",
-    "order": 94
+    "order": 94,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "B4U Movies (576p)",
@@ -978,7 +1260,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-12",
-    "order": 95
+    "order": 95,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Bhojpuri Cinema (720p)",
@@ -988,7 +1273,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-13",
-    "order": 96
+    "order": 96,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Bollywood Classic Romania (576p)",
@@ -998,7 +1286,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-14",
-    "order": 97
+    "order": 97,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Bollywood HD Russia (576p)",
@@ -1008,7 +1299,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-15",
-    "order": 98
+    "order": 98,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Boreal (720p) [Not 24/7]",
@@ -1018,7 +1312,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-16",
-    "order": 99
+    "order": 99,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cafe Film",
@@ -1028,7 +1325,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-17",
-    "order": 100
+    "order": 100,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Canal Cine Dios",
@@ -1039,7 +1339,10 @@
     "is_pinned": false,
     "id": "ch-1793938736645-18",
     "order": 101,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Charge! (1080p)",
@@ -1049,7 +1352,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-19",
-    "order": 102
+    "order": 102,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "CINDIE TV (1080p)",
@@ -1059,7 +1365,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-20",
-    "order": 103
+    "order": 103,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cine Friki (1080p)",
@@ -1069,7 +1378,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-21",
-    "order": 104
+    "order": 104,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cine Nanar (1080p)",
@@ -1079,7 +1391,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-22",
-    "order": 105
+    "order": 105,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cine Romantico (720p)",
@@ -1089,7 +1404,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-23",
-    "order": 106
+    "order": 106,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cine Western (France) (1080p)",
@@ -1099,7 +1417,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-24",
-    "order": 107
+    "order": 107,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cine Western (Spain) (1080p)",
@@ -1109,7 +1430,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-25",
-    "order": 108
+    "order": 108,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cinemaraton Plus (1080i)",
@@ -1119,7 +1443,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-26",
-    "order": 109
+    "order": 109,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "CineWow (576i)",
@@ -1129,7 +1456,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-27",
-    "order": 110
+    "order": 110,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoAction [Not 24/7]",
@@ -1139,7 +1469,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-28",
-    "order": 111
+    "order": 111,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoArt [Not 24/7]",
@@ -1149,7 +1482,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-29",
-    "order": 112
+    "order": 112,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoAsia [Not 24/7]",
@@ -1159,7 +1495,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-30",
-    "order": 113
+    "order": 113,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoDetektiv [Not 24/7]",
@@ -1169,7 +1508,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-31",
-    "order": 114
+    "order": 114,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoDrama [Not 24/7]",
@@ -1179,7 +1521,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-32",
-    "order": 115
+    "order": 115,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoFantastika [Not 24/7]",
@@ -1189,7 +1534,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-33",
-    "order": 116
+    "order": 116,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoKlassika [Not 24/7]",
@@ -1199,7 +1547,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-34",
-    "order": 117
+    "order": 117,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoKomediya [Not 24/7]",
@@ -1209,7 +1560,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-35",
-    "order": 118
+    "order": 118,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoMistika [Not 24/7]",
@@ -1219,7 +1573,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-36",
-    "order": 119
+    "order": 119,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Classic Cinema (240p) [Not 24/7]",
@@ -1229,7 +1586,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-37",
-    "order": 120
+    "order": 120,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Classique TV (360p)",
@@ -1239,7 +1599,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-38",
-    "order": 121
+    "order": 121,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Colors Cineplex (576p)",
@@ -1249,7 +1612,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-39",
-    "order": 122
+    "order": 122,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cosmos Tv",
@@ -1259,7 +1625,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-40",
-    "order": 123
+    "order": 123,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cosmos Tv SD",
@@ -1269,7 +1638,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-41",
-    "order": 124
+    "order": 124,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Dorama (576p)",
@@ -1279,7 +1651,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-42",
-    "order": 125
+    "order": 125,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "DUST (1080p)",
@@ -1289,7 +1664,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-43",
-    "order": 126
+    "order": 126,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ebony TV by Lionsgate (1080p)",
@@ -1299,7 +1677,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-44",
-    "order": 127
+    "order": 127,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "EBS Cinema (720p)",
@@ -1310,7 +1691,10 @@
     "is_pinned": false,
     "id": "ch-1793938736645-45",
     "order": 128,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Emotion L (1080p)",
@@ -1320,7 +1704,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-46",
-    "order": 129
+    "order": 129,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Epic Bhojpuri Digital (1080p)",
@@ -1330,7 +1717,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-47",
-    "order": 130
+    "order": 130,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ETV Cinema (396p)",
@@ -1340,7 +1730,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-48",
-    "order": 131
+    "order": 131,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "FILMBOX+ Comedy Romania",
@@ -1350,7 +1743,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-49",
-    "order": 132
+    "order": 132,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "FILMBOX+ Festival",
@@ -1360,7 +1756,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-50",
-    "order": 133
+    "order": 133,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "FILMBOX+ Festival HD (1080p)",
@@ -1370,7 +1769,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-51",
-    "order": 134
+    "order": 134,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "FILMBOX+ Hits Romania (576p)",
@@ -1380,7 +1782,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-52",
-    "order": 135
+    "order": 135,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "FILMBOX+ Love & Crime Romania",
@@ -1390,7 +1795,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-53",
-    "order": 136
+    "order": 136,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "FILMBOX+ One Romania (576p)",
@@ -1400,7 +1808,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-54",
-    "order": 137
+    "order": 137,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "FilmUA Live",
@@ -1410,7 +1821,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-55",
-    "order": 138
+    "order": 138,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "FrightFlix (720p)",
@@ -1420,7 +1834,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-56",
-    "order": 139
+    "order": 139,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Gold Star",
@@ -1430,7 +1847,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-57",
-    "order": 140
+    "order": 140,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Goldmines (576p)",
@@ -1440,7 +1860,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-58",
-    "order": 141
+    "order": 141,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Grand Cinema",
@@ -1450,7 +1873,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-59",
-    "order": 142
+    "order": 142,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Gravitas Movies (1080p)",
@@ -1460,7 +1886,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-60",
-    "order": 143
+    "order": 143,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Grjngo Western Movies (720p)",
@@ -1470,7 +1899,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-61",
-    "order": 144
+    "order": 144,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Hallmark Movies & More (1080p)",
@@ -1480,7 +1912,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-62",
-    "order": 145
+    "order": 145,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Horoshee Kino (720p)",
@@ -1490,7 +1925,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-63",
-    "order": 146
+    "order": 146,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "iFilm 2",
@@ -1500,7 +1938,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-64",
-    "order": 147
+    "order": 147,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "iFilm Arabic",
@@ -1510,7 +1951,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-65",
-    "order": 148
+    "order": 148,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "iFilm English",
@@ -1520,7 +1964,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-66",
-    "order": 149
+    "order": 149,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "iFilm Persian",
@@ -1530,7 +1977,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-67",
-    "order": 150
+    "order": 150,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "India Talkies (360p)",
@@ -1540,7 +1990,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-68",
-    "order": 151
+    "order": 151,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Indywood TV (720p)",
@@ -1550,7 +2003,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-69",
-    "order": 152
+    "order": 152,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Itage TV (480p)",
@@ -1560,7 +2016,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-70",
-    "order": 153
+    "order": 153,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Kairali We (576p)",
@@ -1570,7 +2029,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-71",
-    "order": 154
+    "order": 154,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "KCM India (1080p) [Geo-blocked]",
@@ -1580,7 +2042,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-72",
-    "order": 155
+    "order": 155,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Kinoseriya (576p)",
@@ -1590,7 +2055,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-73",
-    "order": 156
+    "order": 156,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Kinoteatr (1080p)",
@@ -1600,7 +2068,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-74",
-    "order": 157
+    "order": 157,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Kuriakos Cine (1080p)",
@@ -1610,7 +2081,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-75",
-    "order": 158
+    "order": 158,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maah TV (720p)",
@@ -1620,7 +2094,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-76",
-    "order": 159
+    "order": 159,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Made In Hollywood",
@@ -1630,7 +2107,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-77",
-    "order": 160
+    "order": 160,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maha Movie (576p)",
@@ -1640,7 +2120,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-78",
-    "order": 161
+    "order": 161,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Mahua Play (1080p)",
@@ -1650,7 +2133,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-79",
-    "order": 162
+    "order": 162,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Manoranjan Grand (720p)",
@@ -1660,7 +2146,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-80",
-    "order": 163
+    "order": 163,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Manoranjan Movies (576p)",
@@ -1670,7 +2159,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-81",
-    "order": 164
+    "order": 164,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maverick Black Cinema (1080p)",
@@ -1680,7 +2172,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-82",
-    "order": 165
+    "order": 165,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maxcine (720p)",
@@ -1690,7 +2185,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-83",
-    "order": 166
+    "order": 166,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maxcine 2 (720p)",
@@ -1700,7 +2198,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-84",
-    "order": 167
+    "order": 167,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maxcine Comedy (720p)",
@@ -1710,7 +2211,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-85",
-    "order": 168
+    "order": 168,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maxcine Family (720p)",
@@ -1720,7 +2224,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-86",
-    "order": 169
+    "order": 169,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "MCI Television (1080p)",
@@ -1730,7 +2237,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-87",
-    "order": 170
+    "order": 170,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Mega Cine TV (1080p)",
@@ -1740,7 +2250,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-88",
-    "order": 171
+    "order": 171,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Meta Film TV",
@@ -1750,7 +2263,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-89",
-    "order": 172
+    "order": 172,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Mix Hollywood (1080p)",
@@ -1760,7 +2276,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-90",
-    "order": 173
+    "order": 173,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "MN+",
@@ -1770,7 +2289,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-91",
-    "order": 174
+    "order": 174,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Movie Punjab (720p)",
@@ -1780,7 +2302,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-92",
-    "order": 175
+    "order": 175,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Movies! KPVM-LD",
@@ -1790,7 +2315,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-93",
-    "order": 176
+    "order": 176,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "MovieSphere (1080p)",
@@ -1800,7 +2328,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-94",
-    "order": 177
+    "order": 177,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "MovieSphere AU (1080p)",
@@ -1810,7 +2341,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-95",
-    "order": 178
+    "order": 178,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "MovieSphere Gold WFXT (1080p)",
@@ -1820,7 +2354,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-96",
-    "order": 179
+    "order": 179,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "MovieSphere UK (1080p)",
@@ -1830,7 +2367,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-97",
-    "order": 180
+    "order": 180,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "My Cinema Europe",
@@ -1840,7 +2380,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-98",
-    "order": 181
+    "order": 181,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "MyTime Movie Network (Brazil) (720p)",
@@ -1850,7 +2393,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-99",
-    "order": 182
+    "order": 182,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "MyTime Movie Network (Spain) (1080p)",
@@ -1860,7 +2406,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-100",
-    "order": 183
+    "order": 183,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Nashe Novoe Kino",
@@ -1870,7 +2419,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-101",
-    "order": 184
+    "order": 184,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "NEW K.MOVIES (1080p)",
@@ -1880,7 +2432,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-102",
-    "order": 185
+    "order": 185,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "NH BollyFlix (1080p)",
@@ -1890,7 +2445,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-103",
-    "order": 186
+    "order": 186,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "NH Tamil Gold (1080p)",
@@ -1900,7 +2458,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-104",
-    "order": 187
+    "order": 187,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "NOST (720p)",
@@ -1910,7 +2471,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-105",
-    "order": 188
+    "order": 188,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Nostalgia TV (1080p)",
@@ -1920,7 +2484,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-106",
-    "order": 189
+    "order": 189,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ON Movies (720p)",
@@ -1930,7 +2497,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-107",
-    "order": 190
+    "order": 190,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Oscar Movies Bhojpuri (720p)",
@@ -1940,7 +2510,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-108",
-    "order": 191
+    "order": 191,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "OuterSphere (1080p)",
@@ -1950,7 +2523,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-109",
-    "order": 192
+    "order": 192,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Persiana Cinema",
@@ -1960,7 +2536,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-110",
-    "order": 193
+    "order": 193,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Persiana Family",
@@ -1970,7 +2549,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-111",
-    "order": 194
+    "order": 194,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Persiana Iranian",
@@ -1980,7 +2562,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-112",
-    "order": 195
+    "order": 195,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Persiana Korea",
@@ -1990,7 +2575,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-113",
-    "order": 196
+    "order": 196,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Persiana Plus",
@@ -2000,7 +2588,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-114",
-    "order": 197
+    "order": 197,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Pitaara (1080p)",
@@ -2010,7 +2601,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-115",
-    "order": 198
+    "order": 198,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Pocket Films",
@@ -2020,7 +2614,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-116",
-    "order": 199
+    "order": 199,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Popcorn Central (1080p)",
@@ -2030,7 +2627,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-117",
-    "order": 200
+    "order": 200,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Public Movies (576p)",
@@ -2040,7 +2640,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-118",
-    "order": 201
+    "order": 201,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Punjabi Shorts (1080p)",
@@ -2050,7 +2653,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-119",
-    "order": 202
+    "order": 202,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Raj Digital Plus (1080p)",
@@ -2060,7 +2666,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-120",
-    "order": 203
+    "order": 203,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Action Movies (1080p)",
@@ -2070,7 +2679,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-121",
-    "order": 204
+    "order": 204,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Action Movies Germany (1080p)",
@@ -2080,7 +2692,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-122",
-    "order": 205
+    "order": 205,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Action Movies Italy (1080p)",
@@ -2090,7 +2705,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-123",
-    "order": 206
+    "order": 206,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Action Movies UK (1080p)",
@@ -2100,7 +2718,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-124",
-    "order": 207
+    "order": 207,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Comedy Movies (1080p)",
@@ -2110,7 +2731,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-125",
-    "order": 208
+    "order": 208,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Comedy Movies Germany (1080p)",
@@ -2120,7 +2744,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-126",
-    "order": 209
+    "order": 209,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Comedy Movies Italy (1080p)",
@@ -2130,7 +2757,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-127",
-    "order": 210
+    "order": 210,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Comedy Movies UK (1080p)",
@@ -2140,7 +2770,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-128",
-    "order": 211
+    "order": 211,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Drama Movies (1080p)",
@@ -2150,7 +2783,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-129",
-    "order": 212
+    "order": 212,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Drama Movies Germany (1080p)",
@@ -2160,7 +2796,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-130",
-    "order": 213
+    "order": 213,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Drama Movies Italy (1080p)",
@@ -2170,7 +2809,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-131",
-    "order": 214
+    "order": 214,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Drama Movies UK (1080p)",
@@ -2180,7 +2822,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-132",
-    "order": 215
+    "order": 215,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Family Movies (1080p)",
@@ -2190,7 +2835,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-133",
-    "order": 216
+    "order": 216,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Family Movies Germany (1080p)",
@@ -2200,7 +2848,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-134",
-    "order": 217
+    "order": 217,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Family Movies Italy (1080p)",
@@ -2210,7 +2861,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-135",
-    "order": 218
+    "order": 218,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Family Movies UK (1080p)",
@@ -2220,7 +2874,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-136",
-    "order": 219
+    "order": 219,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Top Movies (1080p)",
@@ -2230,7 +2887,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-137",
-    "order": 220
+    "order": 220,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Top Movies Germany (1080p)",
@@ -2240,7 +2900,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-138",
-    "order": 221
+    "order": 221,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Top Movies Italy (1080p)",
@@ -2250,7 +2913,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-139",
-    "order": 222
+    "order": 222,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Top Movies UK (1080p)",
@@ -2260,7 +2926,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-140",
-    "order": 223
+    "order": 223,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rotana Cinema Egypt (1080p) [Geo-blocked]",
@@ -2270,7 +2939,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-141",
-    "order": 224
+    "order": 224,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rotana Cinema KSA (1080p) [Geo-blocked]",
@@ -2280,7 +2952,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-142",
-    "order": 225
+    "order": 225,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Runtime Espanol (720p)",
@@ -2290,7 +2965,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-143",
-    "order": 226
+    "order": 226,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ScreamIN (1080p)",
@@ -2300,7 +2978,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-144",
-    "order": 227
+    "order": 227,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Shemaroo Josh (576p)",
@@ -2310,7 +2991,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-145",
-    "order": 228
+    "order": 228,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Shubh Cinema TV (720p)",
@@ -2320,7 +3004,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-146",
-    "order": 229
+    "order": 229,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Silk Way Cinema (1080p) [Geo-blocked]",
@@ -2330,7 +3017,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-147",
-    "order": 230
+    "order": 230,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "SL 1",
@@ -2340,7 +3030,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-148",
-    "order": 231
+    "order": 231,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "SL 2",
@@ -2350,7 +3043,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-149",
-    "order": 232
+    "order": 232,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Smotrim 100% Klassika (720p)",
@@ -2360,7 +3056,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-150",
-    "order": 233
+    "order": 233,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sonar Bangla (360p)",
@@ -2370,7 +3069,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-151",
-    "order": 234
+    "order": 234,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Soneri Cinema (360p)",
@@ -2380,7 +3082,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-152",
-    "order": 235
+    "order": 235,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Movies (United States) (720p)",
@@ -2390,7 +3095,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-153",
-    "order": 236
+    "order": 236,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony One Favoris (1080p)",
@@ -2400,7 +3108,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-154",
-    "order": 237
+    "order": 237,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony One Hits Action (1080p)",
@@ -2410,7 +3121,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-155",
-    "order": 238
+    "order": 238,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony One Hits Comedie (1080p)",
@@ -2420,7 +3134,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-156",
-    "order": 239
+    "order": 239,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "South Station (1080p)",
@@ -2430,7 +3147,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-157",
-    "order": 240
+    "order": 240,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Star Cinema",
@@ -2440,7 +3160,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-158",
-    "order": 241
+    "order": 241,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Star Family (1080p)",
@@ -2450,7 +3173,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-159",
-    "order": 242
+    "order": 242,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Star Maa Movies HD (720p)",
@@ -2460,7 +3186,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-160",
-    "order": 243
+    "order": 243,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Studio One + (720p)",
@@ -2470,7 +3199,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-161",
-    "order": 244
+    "order": 244,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Tamasha",
@@ -2480,7 +3212,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-162",
-    "order": 245
+    "order": 245,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Thalaa TV (1080p)",
@@ -2490,7 +3225,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-163",
-    "order": 246
+    "order": 246,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "The Movie Club (1080p)",
@@ -2500,7 +3238,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-164",
-    "order": 247
+    "order": 247,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "The Movie Club +2 (1080p)",
@@ -2510,7 +3251,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-165",
-    "order": 248
+    "order": 248,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Tolly TV (1080p)",
@@ -2520,7 +3264,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-166",
-    "order": 249
+    "order": 249,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "TVCARiB Cinema (720p) [Not 24/7]",
@@ -2530,7 +3277,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-167",
-    "order": 250
+    "order": 250,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "TVS Drive In Movie (360p)",
@@ -2540,7 +3290,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-168",
-    "order": 251
+    "order": 251,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Warner TV Asia (720p)",
@@ -2550,7 +3303,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-169",
-    "order": 252
+    "order": 252,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Watch it Scream! (720p)",
@@ -2560,7 +3316,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-170",
-    "order": 253
+    "order": 253,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Whiplash Cinema (480p)",
@@ -2570,7 +3329,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-171",
-    "order": 254
+    "order": 254,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Wu Tang Collection (720p)",
@@ -2580,7 +3342,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-172",
-    "order": 255
+    "order": 255,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Xtrema Accion",
@@ -2590,7 +3355,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-173",
-    "order": 256
+    "order": 256,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Xtrema Cine Clasico",
@@ -2600,7 +3368,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-174",
-    "order": 257
+    "order": 257,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Xtrema Terror",
@@ -2610,7 +3381,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-175",
-    "order": 258
+    "order": 258,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ZB Cinema (1080p)",
@@ -2620,7 +3394,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-176",
-    "order": 259
+    "order": 259,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Cinema (576p)",
@@ -2631,7 +3408,10 @@
     "is_pinned": false,
     "id": "ch-1793938736645-177",
     "order": 260,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Cinema APAC (720p)",
@@ -2641,7 +3421,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-178",
-    "order": 261
+    "order": 261,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "+MaisUm (720p)",
@@ -2651,7 +3434,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-179",
-    "order": 262
+    "order": 262,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Toffee TV",
@@ -2661,7 +3447,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-180",
-    "order": 263
+    "order": 263,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Toffee Movies",
@@ -2671,7 +3460,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-181",
-    "order": 264
+    "order": 264,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "WC Match Recap",
@@ -2681,7 +3473,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-182",
-    "order": 265
+    "order": 265,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "SAFF Live 1",
@@ -2692,7 +3487,10 @@
     "is_pinned": false,
     "id": "ch-1793938736645-183",
     "order": 266,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "SAFF Live 2",
@@ -2703,7 +3501,10 @@
     "is_pinned": false,
     "id": "ch-1793938736645-184",
     "order": 267,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "AWSN TV",
@@ -2713,7 +3514,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-185",
-    "order": 268
+    "order": 268,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "CNN",
@@ -2723,7 +3527,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-186",
-    "order": 269
+    "order": 269,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Global TV",
@@ -2733,7 +3540,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-192",
-    "order": 270
+    "order": 270,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel S",
@@ -2743,7 +3553,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-193",
-    "order": 271
+    "order": 271,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rajdhani TV",
@@ -2753,7 +3566,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-194",
-    "order": 272
+    "order": 272,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Bangla TV",
@@ -2763,7 +3579,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-195",
-    "order": 273
+    "order": 273,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel i",
@@ -2773,7 +3592,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-197",
-    "order": 274
+    "order": 274,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Nexus TV",
@@ -2783,7 +3605,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-199",
-    "order": 275
+    "order": 275,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Islamic TV",
@@ -2793,7 +3618,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-200",
-    "order": 276
+    "order": 276,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Desh TV",
@@ -2803,7 +3631,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-201",
-    "order": 277
+    "order": 277,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ekhon TV",
@@ -2813,7 +3644,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-203",
-    "order": 278
+    "order": 278,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ekattor TV",
@@ -2824,7 +3658,10 @@
     "is_pinned": false,
     "id": "ch-1793938736645-204",
     "order": 279,
-    "manual_override": false
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel News Asia",
@@ -2834,7 +3671,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-205",
-    "order": 280
+    "order": 280,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "TRT World",
@@ -2844,7 +3684,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-206",
-    "order": 281
+    "order": 281,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "DW",
@@ -2854,7 +3697,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-207",
-    "order": 282
+    "order": 282,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Russia Today",
@@ -2864,7 +3710,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-209",
-    "order": 283
+    "order": 283,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "France 24",
@@ -2874,7 +3723,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-210",
-    "order": 284
+    "order": 284,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "CGTN",
@@ -2884,7 +3736,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-211",
-    "order": 285
+    "order": 285,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Eurosport HD",
@@ -2894,7 +3749,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-212",
-    "order": 286
+    "order": 286,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Saudi Sunnah",
@@ -2904,7 +3762,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-213",
-    "order": 287
+    "order": 287,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Saudi Quran",
@@ -2914,7 +3775,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-214",
-    "order": 288
+    "order": 288,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Ten Sports 1 HD",
@@ -2924,7 +3788,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-215",
-    "order": 289
+    "order": 289,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Ten Sports 2 HD",
@@ -2934,7 +3801,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-216",
-    "order": 290
+    "order": 290,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Ten Sports 5 HD",
@@ -2944,7 +3814,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-217",
-    "order": 291
+    "order": 291,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Ten Cricket",
@@ -2954,7 +3827,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-218",
-    "order": 292
+    "order": 292,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cartoon Network HD +",
@@ -2964,7 +3840,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-219",
-    "order": 293
+    "order": 293,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Cartoon Network",
@@ -2974,7 +3853,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-220",
-    "order": 294
+    "order": 294,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Discovery Kids",
@@ -2984,7 +3866,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-222",
-    "order": 295
+    "order": 295,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony YAY",
@@ -2994,7 +3879,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-223",
-    "order": 296
+    "order": 296,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Anmol",
@@ -3004,7 +3892,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-225",
-    "order": 297
+    "order": 297,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zing",
@@ -3014,7 +3905,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-226",
-    "order": 298
+    "order": 298,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "HUM",
@@ -3024,7 +3918,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-227",
-    "order": 299
+    "order": 299,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "HUM Masala",
@@ -3034,7 +3931,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-228",
-    "order": 300
+    "order": 300,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "HUM Sitaray",
@@ -3044,7 +3944,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-229",
-    "order": 301
+    "order": 301,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Entertainment Television HD",
@@ -3054,7 +3957,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-231",
-    "order": 302
+    "order": 302,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Entertainment Television",
@@ -3064,7 +3970,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-232",
-    "order": 303
+    "order": 303,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony SAB HD",
@@ -3074,7 +3983,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-234",
-    "order": 304
+    "order": 304,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee TV HD",
@@ -3084,7 +3996,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-235",
-    "order": 305
+    "order": 305,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony MAX HD",
@@ -3094,7 +4009,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-236",
-    "order": 306
+    "order": 306,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Bangla Cinema",
@@ -3104,7 +4022,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-237",
-    "order": 307
+    "order": 307,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Bollywood",
@@ -3114,7 +4035,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-238",
-    "order": 308
+    "order": 308,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Action",
@@ -3124,7 +4048,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-239",
-    "order": 309
+    "order": 309,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony PIX HD",
@@ -3134,7 +4061,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-241",
-    "order": 310
+    "order": 310,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Cafe",
@@ -3144,7 +4074,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-242",
-    "order": 311
+    "order": 311,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "B4U Movies APAC",
@@ -3154,7 +4087,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-243",
-    "order": 312
+    "order": 312,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Cinema HD",
@@ -3164,7 +4100,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-245",
-    "order": 313
+    "order": 313,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "TLC HD",
@@ -3174,7 +4113,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-246",
-    "order": 314
+    "order": 314,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "TLC",
@@ -3184,7 +4126,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-247",
-    "order": 315
+    "order": 315,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Animal Planet HD",
@@ -3194,7 +4139,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-249",
-    "order": 316
+    "order": 316,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony BBC Earth HD",
@@ -3204,7 +4152,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-250",
-    "order": 317
+    "order": 317,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Discovery HD",
@@ -3214,7 +4165,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-251",
-    "order": 318
+    "order": 318,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Discovery Science",
@@ -3224,7 +4178,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-253",
-    "order": 319
+    "order": 319,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Discovery Turbo",
@@ -3234,7 +4191,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-254",
-    "order": 320
+    "order": 320,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Investigation Discovery HD",
@@ -3244,7 +4204,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-255",
-    "order": 321
+    "order": 321,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "&TV HD",
@@ -3254,7 +4217,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-256",
-    "order": 322
+    "order": 322,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "& Pictures HD",
@@ -3264,7 +4230,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-257",
-    "order": 323
+    "order": 323,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "BFL | Live 5",
@@ -3275,6 +4244,9 @@
     "is_pinned": false,
     "id": "ch-1793938736645-258",
     "order": 324,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
