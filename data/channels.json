@@ -117,10 +117,10 @@
     "category": "Sports",
     "url": "http://103.135.253.32:8080/T-SPORTS-FULL-HD/tracks-v1a1/mono.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793937965293-12",
     "order": 12,
-    "manual_override": false
+    "manual_override": true
   },
   {
     "name": "[BD] Zee Bangla",
