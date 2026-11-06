@@ -599,20 +599,22 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1781163068414.png",
     "url": "https://akash-by-hady.srhady.workers.dev/live/299.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-58",
-    "order": 59
+    "order": 59,
+    "manual_override": true
   },
   {
     "name": "Star News",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189826301.png",
     "url": "https://footfytv.pro/proxy/direct?url=http://103.135.253.32:8080/Star-News/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-59",
-    "order": 60
+    "order": 60,
+    "manual_override": true
   },
   {
     "name": "Al Quran",
@@ -629,10 +631,11 @@
     "logo": "https://i.postimg.cc/MK83K74Z/20260705-053736.jpg",
     "url": "https://jagroniakash.ncare.live/unmochontv/unmochontv.stream/tracks-v1a1/mono.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-61",
-    "order": 62
+    "order": 62,
+    "manual_override": true
   },
   {
     "name": "Al Jazeera",
