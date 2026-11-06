@@ -828,7 +828,7 @@
   {
     "name": "Sony Max 2",
     "logo": "https://yt3.googleusercontent.com/r7fi39b2G0g-xrHbziVK_V0rgQqwRqXRtSDuUaALPCL-41ayfqIs_m7tSGR1ZGXU76toUEU3wg=s900-c-k-c0x00ffffff-no-rj",
-    "url": "https://toffee-obiramtv.emonsa4.workers.dev/sony-max-2.m3u8",
+    "url": "https://alixbd.com/playlistconfig/channel/65.m3u8",
     "category": "General",
     "status": "OFFLINE",
     "is_pinned": false,
@@ -836,7 +836,7 @@
     "order": 66,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": "https://obiramtvlive.pages.dev/",
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
