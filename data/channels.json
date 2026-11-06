@@ -47,7 +47,7 @@
     "url": "https://mz02.bhalocast.com:7060/hls/star1kibich5.m3u8?md5=_0N0hIylDlrsTiI-TVeLMA&expires=1793941296&ch=star1kibich5&s=c6a06b7b5bdbd3348271b2f48af23fbf",
     "category": "General",
     "status": "ONLINE",
-    "is_pinned": true,
+    "is_pinned": false,
     "id": "ch-1793935297429-4",
     "order": 5,
     "manual_override": false
