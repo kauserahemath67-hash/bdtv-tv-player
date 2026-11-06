@@ -4215,20 +4215,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "BFL | Live 5",
-    "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png",
-    "category": "General",
-    "url": "https://alixbd.com/playlistconfig/channel/79.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1793938736645-258",
-    "order": 324,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "id": "ch-1793982021420",
     "name": "SONIC",
     "category": "News",
@@ -4237,6 +4223,20 @@
     "is_pinned": false,
     "order": 323,
     "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "name": "BFL | Live 5",
+    "logo": "https://assets-prod.services.toffeelive.com/f_png,w_300,q_85/nUB7JJ4BuUSiBsg_sKJF/posters/f5596ca8-8735-474d-bc6f-b48e3f90464d.png",
+    "category": "General",
+    "url": "https://alixbd.com/playlistconfig/channel/79.m3u8",
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "id": "ch-1793938736645-258",
+    "order": 324,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
