@@ -3972,7 +3972,8 @@
     "order": 306,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "Zee Bangla Cinema",
