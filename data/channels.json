@@ -79,7 +79,7 @@
     "id": "ch-1793938608079-3",
     "order": 7,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": "https://mz02.bhalocast.com",
     "proxy_user_agent": null
   },
