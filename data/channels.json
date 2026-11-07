@@ -978,7 +978,7 @@
     "id": "ch-1793938608079-71",
     "order": 74,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": "https://livetv.shamon-cable.net:8443/",
     "proxy_user_agent": null
   },
