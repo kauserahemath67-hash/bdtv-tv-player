@@ -3777,7 +3777,7 @@
     "category": "Sports",
     "url": "https://mz01.bhalocast.com:7060/hls/sony5c.m3u8?md5=KPY8JCsnM0RYl2PPo8JCJQ&expires=1794042200&ch=sony5c&s=ce50c8f4bfbd194c11d217f2db83b1a4",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793938736645-217",
     "order": 288,
     "use_proxy": true,
@@ -4219,20 +4219,6 @@
     "proxy_user_agent": null
   },
   {
-    "id": "ch-1793982021420",
-    "name": "SONIC",
-    "category": "News",
-    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONIC/images/LOGO_HD/image.png",
-    "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2260",
-    "is_pinned": false,
-    "order": 322,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "id": "ch-1794037842790",
     "name": "Sony Sports 3",
     "category": "News",
@@ -4244,6 +4230,20 @@
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": "https://playsza.st/player.php",
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1793982021420",
+    "name": "SONIC",
+    "category": "News",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONIC/images/LOGO_HD/image.png",
+    "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2260",
+    "is_pinned": false,
+    "order": 322,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
