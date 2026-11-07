@@ -50,7 +50,7 @@
     "is_pinned": true,
     "id": "ch-1793938736645-215",
     "order": 4,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": "https://prod-linear-media.toffeelive.com",
     "proxy_user_agent": null,
     "manual_override": true
