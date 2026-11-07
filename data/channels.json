@@ -45,7 +45,7 @@
     "name": "Sony Ten Sports 1",
     "logo": "https://assets-prod.services.toffeelive.com/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
     "category": "Sports",
-    "url": "https://mz01.bhalocast.com:7060/hls/sony1c.m3u8?md5=ztI26pgdLXkCN6KU8qE-pw&expires=1794048028&ch=sony1c&s=dd204b6b2f45588b512675e194a939e4",
+    "url": "https://prod-linear-media.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8?edge-cache-token=Expires=1794049552~Starts=1794049252~URLPrefix=aHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data=eyJzdWJzY3JpYmVyX2lkIjoiNTg0NmVmMTAtMzgzYS00YjlhLThhZTAtNGZiMTEzNWIxNTVkIn0~Signature=rA-YUhvH0T9_q-7LdV8Rbyzqcs7XqJAy7SDyTdX6MpD59CVlJbfx8Keh4mNfThyov7edmnhMqLckTmNRP4SEBg",
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1793938736645-215",
