@@ -3806,12 +3806,13 @@
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/39.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793938736645-218",
     "order": 290,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Cartoon Network HD +",
