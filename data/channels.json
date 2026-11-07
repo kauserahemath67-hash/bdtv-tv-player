@@ -202,8 +202,8 @@
     "id": "ch-1793938608079-13",
     "order": 15,
     "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
+    "use_proxy": false,
+    "proxy_referer": "https://app24.jagobd.com.bd/",
     "proxy_user_agent": null
   },
   {
