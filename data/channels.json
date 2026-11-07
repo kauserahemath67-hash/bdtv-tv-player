@@ -3749,7 +3749,7 @@
     "category": "Sports",
     "url": "https://mz02.bhalocast.com:7060/hls/sony1c.m3u8?md5=E38Q2yDqmErKglTeoWYbEQ&expires=1794042468&ch=sony1c&s=b754be4543b519615f978dfa4810d2ff",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793938736645-215",
     "order": 286,
     "use_proxy": true,
