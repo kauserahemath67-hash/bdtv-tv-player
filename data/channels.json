@@ -3809,7 +3809,7 @@
     "is_pinned": true,
     "id": "ch-1793938736645-218",
     "order": 290,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig",
     "proxy_user_agent": null,
     "manual_override": true
