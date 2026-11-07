@@ -3773,14 +3773,15 @@
     "name": "Sony Ten Sports 5 HD",
     "logo": "https://assets-prod.services.toffeelive.com/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
     "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/38.m3u8",
+    "url": "https://mz01.bhalocast.com:7060/hls/sony5c.m3u8?md5=KPY8JCsnM0RYl2PPo8JCJQ&expires=1794042200&ch=sony5c&s=ce50c8f4bfbd194c11d217f2db83b1a4",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-217",
     "order": 291,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null
+    "use_proxy": true,
+    "proxy_referer": "https://playsza.st/player.php",
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "Sony Ten Cricket",
