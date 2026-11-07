@@ -10,7 +10,7 @@
     "order": 1,
     "manual_override": true,
     "use_proxy": false,
-    "proxy_referer": null,
+    "proxy_referer": "http://103.135.253.32:8080/",
     "proxy_user_agent": null
   },
   {
