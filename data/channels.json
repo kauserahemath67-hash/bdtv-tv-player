@@ -9,8 +9,8 @@
     "id": "ch-1793938608079-0",
     "order": 1,
     "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": "http://103.135.253.32:8080/",
+    "use_proxy": true,
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
