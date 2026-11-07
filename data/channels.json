@@ -3763,7 +3763,7 @@
     "category": "Sports",
     "url": "https://mz01.bhalocast.com:7060/hls/ten2endia.m3u8?md5=RJY9Bq-ni2mo5PIiYsJ5tQ&expires=1794042322&ch=ten2endia&s=207578d1d5618a41507079aeb2bc3096",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793938736645-216",
     "order": 287,
     "use_proxy": true,
