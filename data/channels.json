@@ -70,20 +70,6 @@
     "manual_override": true
   },
   {
-    "id": "ch-1794037842790",
-    "name": "Sony Ten Sports 3",
-    "category": "News",
-    "logo": "https://dtil.tmsimg.com/assets/GNLZZGG0025TCMR.png?lock=720x540",
-    "url": "https://mz02.bhalocast.com:7060/hls/sony3c.m3u8?md5=CMSsPs-27O_-wejk9cavDA&expires=1794048126&ch=sony3c&s=ec1e8f200e206fbfd81f5d0a1930890f",
-    "is_pinned": true,
-    "order": 6,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": "https://playsza.st/player.php",
-    "proxy_user_agent": null
-  },
-  {
     "name": "PTV Sports",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
     "url": "https://mz01.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=OhpNSH2H7mGXjiPM0lG3dA&expires=1794048402&ch=ptvskpr&s=59a181c6b1b169671ec159ee312cc90b",
