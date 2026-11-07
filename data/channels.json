@@ -1107,7 +1107,7 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqezFALo-LbtcS9LIbXWG88NFs5W5v99xfaYqrVOzs3oAzeHoTfXiTNdBs&s=10",
     "url": "https://ay-obiram.emonsa4.workers.dev/discovery-hd/var_H1EURklJBBBeWlkQHBhGQUBSVhANITldCQUSHEQFMDJLKQAeUSUVMQNLBxkNB0FZB1wCVgMYXlhWTA00Mx0FWRNQSEp9OhRRUkhGX0YWEkZJSU4Z.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1793938608079-81",
     "order": 84,
