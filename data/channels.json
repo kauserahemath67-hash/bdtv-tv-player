@@ -107,7 +107,7 @@
     "id": "ch-1793938608079-4",
     "order": 9,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": "https://p4kp.rjmbts.workers.dev/",
     "proxy_user_agent": null
   },
