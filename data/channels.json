@@ -2701,8 +2701,9 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSDFd1LJqPQMhYnIIpskiG9muZ7WJbNJt3jcLxmAdbAgCs2pxLpww4N8k&s=10",
     "category": "General",
     "order": 268,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605192-7",
@@ -2711,8 +2712,9 @@
     "logo": "https://images.toffeelive.com/images/program/603/logo/240x240/mobile_logo_237244001666780563.png",
     "category": "General",
     "order": 269,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605192-8",
@@ -2721,8 +2723,9 @@
     "logo": "https://images.toffeelive.com/images/program/604/logo/240x240/mobile_logo_093449001666780976.png",
     "category": "General",
     "order": 270,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605192-9",
