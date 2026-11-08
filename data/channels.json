@@ -3149,13 +3149,16 @@
   {
     "id": "ch-1794162605194-52",
     "name": "Sony Entertainment Hd",
-    "url": "https://drk6xq0vhn.gpcdn.net/live/sony_ent_hd_abr/live/sony_ent_hd_480/chunks.m3u8?nimblesessionid=206459882",
+    "url": "http://38.96.178.205/SONYHD/index.m3u8",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/b02e7be82b9b488e5a79b0f7e8f7ca1c.png",
     "category": "General",
     "order": 314,
     "status": "OFFLINE",
     "is_pinned": false,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "id": "ch-1794162605194-53",
