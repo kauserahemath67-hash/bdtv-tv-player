@@ -339,7 +339,7 @@
     "id": "ch-1794162467445-31",
     "order": 32,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": "https://drk6xq0vhn.gpcdn.net/l",
     "proxy_user_agent": null
   },
