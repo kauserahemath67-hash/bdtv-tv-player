@@ -1,14 +1,13 @@
 {
-  "versionCode": 123,
-  "versionName": "2.3.15",
+  "versionCode": 125,
+  "versionName": "2.3.17",
   "minSupportedVersion": 100,
-  "apkUrl": "https://bdtv-app.vercel.app/bdtv-latest.apk",
-  "updateTitle": "New Update Available (v2.3.16)",
+  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.3.16/BDTv.apk",
+  "updateTitle": "App Update Available",
   "changelog": [
-    "Channels and player performance improved",
-    "Smoother live streaming and bug fixes"
+    "Channels, player, and app performance have been improved for a smoother experience."
   ],
   "forceUpdate": false,
   "updateMessage": "",
-  "updatedAt": "2026-11-08T12:14:50.205Z"
+  "updatedAt": "2026-11-08T12:44:00.000Z"
 }
