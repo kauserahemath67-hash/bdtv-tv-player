@@ -2686,7 +2686,11 @@
     "category": "General",
     "order": 264,
     "status": "ONLINE",
-    "is_pinned": false
+    "is_pinned": true,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "id": "ch-1794162605192-3",
