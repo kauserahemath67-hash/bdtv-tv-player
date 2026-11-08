@@ -346,12 +346,13 @@
     "url": "https://nkafmbewiff.gpcdn.net/tile_2/master.m3u8",
     "category": "General",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793938608079-24",
     "order": 27,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Bijoy Tv",
