@@ -774,7 +774,7 @@
     "category": "General",
     "url": "https://bein-xtra-bein.amagi.tv/playlist.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1794166482825-69",
     "order": 69,
     "manual_override": true,
