@@ -1594,7 +1594,7 @@
     "manual_override": false
   },
   {
-    "name": "Classique TV (360p)",
+    "name": "Classique TV",
     "logo": "https://i.imgur.com/rHxcraT.png",
     "category": "Movies",
     "url": "https://stmv1.srvif.com/classique/classique/playlist.m3u8",
@@ -1604,7 +1604,8 @@
     "order": 123,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Colors Cineplex (576p)",
