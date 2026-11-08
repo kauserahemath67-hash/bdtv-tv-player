@@ -2988,7 +2988,7 @@
     "manual_override": false
   },
   {
-    "name": "Runtime Espanol (720p)",
+    "name": "Runtime Espanol",
     "logo": "https://i.imgur.com/OMQq19N.png",
     "category": "Movies",
     "url": "https://run-rt-uh-roku.otteravision.com/run/rt_uh/rt_uh.m3u8",
@@ -2998,7 +2998,8 @@
     "order": 228,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "ScreamIN (1080p)",
