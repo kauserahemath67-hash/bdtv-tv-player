@@ -1831,7 +1831,7 @@
   },
   {
     "name": "Gold Star",
-    "logo": "",
+    "logo": "https://img.magnific.com/free-vector/modern-golden-star-background-glamourous-designs_1017-56399.jpg?semt=ais_hybrid&w=740&q=80",
     "category": "Movies",
     "url": "https://moviethls.wns.live/hls/stream.m3u8",
     "status": "ONLINE",
@@ -1840,7 +1840,8 @@
     "order": 142,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Goldmines (576p)",
