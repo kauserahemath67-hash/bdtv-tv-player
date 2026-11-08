@@ -2243,7 +2243,7 @@
     "manual_override": false
   },
   {
-    "name": "Maxcine Comedy (720p)",
+    "name": "Maxcine Comedy",
     "logo": "https://gia.tv/streams/pptv/208730.png",
     "category": "Movies",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-208730/playlist.m3u8",
@@ -2253,7 +2253,8 @@
     "order": 170,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Maxcine Family (720p)",
