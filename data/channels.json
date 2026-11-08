@@ -2408,7 +2408,7 @@
   },
   {
     "name": "Nashe Novoe Kino",
-    "logo": "https://i.imgur.com/IOxIsPj.png",
+    "logo": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Kino_Nova_Bulgaria_logo.svg/3840px-Kino_Nova_Bulgaria_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
     "category": "Movies",
     "url": "https://stream8.cinerama.uz/1051/tracks-v1a1/mono.m3u8",
     "status": "ONLINE",
@@ -2417,7 +2417,8 @@
     "order": 186,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "NEW K.MOVIES (1080p)",
