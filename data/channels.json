@@ -1734,7 +1734,7 @@
     "manual_override": false
   },
   {
-    "name": "ETV Cinema (396p)",
+    "name": "ETV Cinema",
     "logo": "https://dtil.tmsimg.com/assets/s143026_ld_h15_aa.png?lock=720x540",
     "category": "Movies",
     "url": "https://yupplivegcpusa.yuppcdn.net/100823/smil:etvcinema.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b",
@@ -1744,7 +1744,8 @@
     "order": 133,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "FILMBOX+ Comedy Romania",
