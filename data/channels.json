@@ -107,9 +107,13 @@
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/40.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1794162467445-9",
-    "order": 10
+    "order": 10,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "WC Match Recap",
