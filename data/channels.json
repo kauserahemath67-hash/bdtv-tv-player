@@ -174,17 +174,6 @@
     "order": 13
   },
   {
-    "name": "SAFF Live 1",
-    "logo": "https://assets-prod.services.toffeelive.com/itdbVKEBalKyvLQI94RR/posters/d990ee33-c37b-4806-86e1-f0998f7db239.png",
-    "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/5.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1794162467445-2",
-    "order": 14,
-    "manual_override": true
-  },
-  {
     "name": "SAFF Live 2",
     "logo": "https://assets-prod.services.toffeelive.com/9dijmqEBalKyvLQIIAFj/posters/c6ab0af9-2523-4693-994c-82e7bc1e5483.png",
     "category": "Sports",
