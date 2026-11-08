@@ -3529,7 +3529,7 @@
     "order": 269,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": "https://upload.wikimedia.org/",
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
