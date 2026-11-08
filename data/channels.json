@@ -1215,11 +1215,14 @@
     "logo": "https://i.imgur.com/0qGCS1S.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/34185/index.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-113",
     "order": 111,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "City Eden KinoKomediya",
