@@ -1541,13 +1541,14 @@
     "logo": "https://i.imgur.com/29ddffh.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/45269/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-32",
     "order": 117,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoFantastika [Not 24/7]",
@@ -1567,13 +1568,14 @@
     "logo": "https://i.imgur.com/0qGCS1S.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/34185/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-34",
     "order": 119,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoKomediya [Not 24/7]",
@@ -3535,13 +3537,14 @@
     "logo": "https://assets-prod.services.toffeelive.com/F9UM56ABalKyvLQIr9B1/posters/26081e64-671e-44a8-95ba-a692bfaae49c.jpeg",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-185",
     "order": 270,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "CNN",
