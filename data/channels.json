@@ -2576,7 +2576,7 @@
     "manual_override": false
   },
   {
-    "name": "OuterSphere (1080p)",
+    "name": "OuterSphere",
     "logo": "https://provider-static.plex.tv/epg/cms/production/f162df8b-6532-43fe-9202-83a658090651/OuterSphere_1500x1000_Logo_Dark_-_Chris_Connors__1_.png",
     "category": "Movies",
     "url": "https://d3o593mz1glx8d.cloudfront.net/OuterSphere_US.m3u8",
@@ -2586,7 +2586,8 @@
     "order": 194,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Persiana Cinema",
