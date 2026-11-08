@@ -223,10 +223,11 @@
     "logo": "https://i.ytimg.com/vi/uJJaKXtOqsw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAZZk6nxkDN1SXg6HkPRsgqbF8QlQ",
     "url": "https://d1g8wgjurz8via.cloudfront.net/bpk-tv/ColorsHD/default/ColorsHD.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794165964731-21",
-    "order": 22
+    "order": 22,
+    "manual_override": true
   },
   {
     "name": "Bangla Plus",
@@ -243,10 +244,11 @@
     "logo": "https://imglink.cc/cdn/LmVOSdl3ku.png",
     "url": "https://cdn-4.pishow.tv/live/1143/master.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794165964731-23",
-    "order": 24
+    "order": 24,
+    "manual_override": true
   },
   {
     "name": "Btv HD",
@@ -463,10 +465,11 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/2/20/Green_TV_Logo.png",
     "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/chunks.m3u8",
     "category": "General",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794165964731-45",
-    "order": 46
+    "order": 46,
+    "manual_override": true
   },
   {
     "name": "Channel I HD",
