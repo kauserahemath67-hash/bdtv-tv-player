@@ -1664,7 +1664,7 @@
     "manual_override": false
   },
   {
-    "name": "DUST (1080p)",
+    "name": "DUST",
     "logo": "https://i.imgur.com/FxYhME9.png",
     "category": "Movies",
     "url": "https://dqi7ayt2o24fn.cloudfront.net/playlist.m3u8",
@@ -1674,7 +1674,8 @@
     "order": 128,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Ebony TV by Lionsgate (1080p)",
