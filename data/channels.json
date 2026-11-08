@@ -2492,7 +2492,7 @@
     "manual_override": false
   },
   {
-    "name": "NH BollyFlix (1080p)",
+    "name": "NH BollyFlix",
     "logo": "https://i.ibb.co/yF9MPTDK/blyflx.png",
     "category": "Movies",
     "url": "https://jmp2.uk/stvp-IN46000140Q",
@@ -2502,7 +2502,8 @@
     "order": 188,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "NH Tamil Gold (1080p)",
