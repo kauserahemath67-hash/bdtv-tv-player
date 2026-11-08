@@ -100,15 +100,15 @@
   {
     "id": "ch-1794162605192-3",
     "name": "PTV Sports",
-    "url": "https://flussonic.defineatoz.com/PTV/index.m3u8",
+    "url": "https://mz01.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=vtp91ZAk45QzqvMOz5QuRA&expires=1794169331&ch=ptvskpr&s=6f822a2abeeb4be64d6f32fd52ebc91a",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
     "category": "General",
     "order": 8,
     "status": "OFFLINE",
     "is_pinned": true,
     "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
+    "use_proxy": true,
+    "proxy_referer": "https://playsza.st/player.php",
     "proxy_user_agent": null
   },
   {
