@@ -1608,7 +1608,7 @@
     "manual_override": false
   },
   {
-    "name": "Colors Cineplex (576p)",
+    "name": "Colors Cineplex",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_CINEPLEX/images/LOGO_HD/image.png",
     "category": "Movies",
     "url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/gb/YuppTV/ColorsCineplexUK.m3u8",
@@ -1618,7 +1618,8 @@
     "order": 124,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Cosmos Tv",
