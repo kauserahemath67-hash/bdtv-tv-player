@@ -1286,7 +1286,7 @@
     "manual_override": false
   },
   {
-    "name": "Bollywood HD Russia (576p)",
+    "name": "Bollywood HD Russia",
     "logo": "https://i.imgur.com/scDKOLS.png",
     "category": "Movies",
     "url": "https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8",
@@ -1296,7 +1296,8 @@
     "order": 100,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Boreal (720p) [Not 24/7]",
