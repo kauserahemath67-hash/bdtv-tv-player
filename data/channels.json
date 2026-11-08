@@ -2644,20 +2644,22 @@
     "logo": "https://assets-prod.services.toffeelive.com/F9UM56ABalKyvLQIr9B1/posters/26081e64-671e-44a8-95ba-a692bfaae49c.jpeg",
     "category": "Live Action",
     "url": "https://alixbd.com/playlistconfig/channel/6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-264",
-    "order": 262
+    "order": 262,
+    "manual_override": true
   },
   {
     "name": "CNN",
     "logo": "https://assets-prod.services.toffeelive.com/VC6Q-JQBv9knK3AHhTXt/posters/63e79814-8fcf-4c3e-bb66-408b2a402613.webp",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-265",
-    "order": 263
+    "order": 263,
+    "manual_override": true
   },
   {
     "name": "Global TV",
@@ -2804,10 +2806,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/G4ML_58BJIOHmUelNXZr/posters/becc2fba-4ed5-4f43-af2d-3c1ea2b4ee57.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/31.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-280",
-    "order": 278
+    "order": 278,
+    "manual_override": true
   },
   {
     "name": "CGTN",
