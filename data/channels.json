@@ -1384,7 +1384,7 @@
     "manual_override": false
   },
   {
-    "name": "Cine Nanar (1080p)",
+    "name": "Cine Nanar",
     "logo": "https://i.imgur.com/YnUZd3W.png",
     "category": "Movies",
     "url": "https://zylo-cinenanar-rakuten.amagi.tv/playlist.m3u8",
@@ -1394,7 +1394,8 @@
     "order": 107,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Cine Romantico (720p)",
