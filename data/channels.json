@@ -98,20 +98,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Fox Sports 1 US",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdtnHkHo0zPNEI-TmMMvJuMcTuhNV7QIl_aHz-d9m1w&s=10",
-    "category": "General",
-    "url": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1794166482825-58",
-    "order": 8,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "name": "PTV Sports",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
     "category": "General",
@@ -119,10 +105,24 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-5",
-    "order": 9,
+    "order": 8,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": "https://playsza.st/player.php",
+    "proxy_user_agent": null
+  },
+  {
+    "name": "Fox Sports 1 US",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdtnHkHo0zPNEI-TmMMvJuMcTuhNV7QIl_aHz-d9m1w&s=10",
+    "category": "General",
+    "url": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": true,
+    "id": "ch-1794166482825-58",
+    "order": 9,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
