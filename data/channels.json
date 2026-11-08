@@ -666,8 +666,8 @@
     "order": 59,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_referer": "https://www.jagobd.com/",
+    "proxy_user_agent": "Mozilla/5.0"
   },
   {
     "name": "Al Quran",
