@@ -14,6 +14,20 @@
     "proxy_user_agent": null
   },
   {
+    "id": "ch-1794162605192-2",
+    "name": "A Sports",
+    "url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8",
+    "logo": "https://i.postimg.cc/767hjG0z/channels4-profile-(1).jpg",
+    "category": "General",
+    "order": 2,
+    "status": "ONLINE",
+    "is_pinned": true,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
     "name": "Sony Ten Cricket",
     "logo": "https://assets-prod.services.toffeelive.com/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp",
     "category": "Sports",
@@ -21,24 +35,10 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794162467445-6",
-    "order": 2,
+    "order": 3,
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794162605192-2",
-    "name": "A Sports",
-    "url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8",
-    "logo": "https://i.postimg.cc/767hjG0z/channels4-profile-(1).jpg",
-    "category": "General",
-    "order": 3,
-    "status": "ONLINE",
-    "is_pinned": true,
-    "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
