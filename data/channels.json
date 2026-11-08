@@ -1088,20 +1088,22 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8ia0uk9Vnrv-_ht97ug5MqBhmO1SM97HSqDufjp2scIEVTRfCRWX5hyoZ&s=10",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/41333/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-108",
-    "order": 107
+    "order": 107,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoArt",
     "logo": "https://i.imgur.com/67CWCtz.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/38398/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-109",
-    "order": 108
+    "order": 108,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoAsia",
@@ -1138,10 +1140,11 @@
     "logo": "https://i.imgur.com/0qGCS1S.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/34185/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-113",
-    "order": 112
+    "order": 112,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoKomediya",
