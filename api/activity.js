@@ -48,13 +48,30 @@ module.exports = async (req, res) => {
       ).split(',')[0].trim();
 
       const userAgent = req.headers['user-agent'] || 'BDTv App / Web';
+      let customerCode = (body.customer_code && body.customer_code !== 'Guest' && body.customer_code !== 'Guest User')
+        ? body.customer_code
+        : null;
+
+      const deviceId = body.device_id || req.headers['x-device-fingerprint'];
+
+      // If customerCode is not provided in local storage, resolve automatically from hardware device fingerprint!
+      if (!customerCode && deviceId) {
+        try {
+          const devices = await db.getDevices();
+          const matched = devices.find(d => d.fingerprint === deviceId && d.status === 'ACTIVE');
+          if (matched && matched.customer_code) {
+            customerCode = matched.customer_code;
+          }
+        } catch (e) {}
+      }
 
       const entry = db.logActivity({
         ip: clientIp,
         userAgent: userAgent,
         channelName: body.channel_name || 'Live Player',
         streamUrl: body.stream_url || '—',
-        customerCode: body.customer_code || 'Guest User'
+        customerCode: customerCode || 'Guest User',
+        deviceId: deviceId || '—'
       });
 
       return res.status(200).json({ success: true, entry });

@@ -28,7 +28,25 @@ module.exports = async (req, res) => {
 
   try {
     if (req.method === 'GET') {
-      const { customer_id } = req.query || {};
+      const { customer_id, fingerprint } = req.query || {};
+
+      // Hardware Device Lookup: Allow device to auto-restore customer session by permanent hardware fingerprint
+      if (fingerprint) {
+        const allDevices = await db.getDevices();
+        const found = allDevices.find(d => d.fingerprint === String(fingerprint).trim() && d.status === 'ACTIVE');
+        if (found) {
+          const cust = await db.findCustomer(found.customer_code);
+          return res.status(200).json({
+            success: true,
+            registered: true,
+            device: found,
+            customer_code: found.customer_code,
+            pin: cust ? cust.pin : null
+          });
+        }
+        return res.status(200).json({ success: true, registered: false });
+      }
+
       // Admin-only: list all devices
       if (!customer_id && !verifyAdminToken(req)) {
         return res.status(401).json({ success: false, message: 'Unauthorized.' });

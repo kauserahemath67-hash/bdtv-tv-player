@@ -69,6 +69,7 @@ class IPTVPlayer {
     this.bindRemoteKeys();
     this.bindTouchGestures();
     this.bindAudioUnlock();
+    await this.autoRestoreSessionFromDevice();
     await this.loadSettings();
     await this.loadChannels();
     this.checkAppUpdate();
@@ -78,6 +79,25 @@ class IPTVPlayer {
 
     // Subscription + device block watcher — check every 30 seconds during playback
     setInterval(() => this.checkSubscriptionLive(), 30 * 1000);
+  }
+
+  // Auto-restore customer session if device hardware ID is already registered
+  async autoRestoreSessionFromDevice() {
+    const custCode = localStorage.getItem('bdtv_cust_code');
+    if (custCode && custCode.trim().length > 0) return;
+
+    try {
+      const devId = this.getDeviceId();
+      if (!devId) return;
+
+      const res = await fetch(`/api/devices?fingerprint=${encodeURIComponent(devId)}&_t=${Date.now()}`);
+      if (!res.ok) return;
+      const json = await res.json();
+      if (json && json.success && json.registered && json.customer_code) {
+        localStorage.setItem('bdtv_cust_code', json.customer_code);
+        if (json.pin) localStorage.setItem('bdtv_cust_pin', json.pin);
+      }
+    } catch (e) {}
   }
 
   // 1. Load Settings (Notice, Ads, Subscription switch)
@@ -1790,11 +1810,15 @@ class IPTVPlayer {
       const payload = {
         channel_name: currentCh ? currentCh.name : 'BDTv Player',
         stream_url: currentCh ? currentCh.url : '—',
-        customer_code: localStorage.getItem('bdtv_cust_code') || 'Guest'
+        customer_code: localStorage.getItem('bdtv_cust_code') || '',
+        device_id: this.getDeviceId()
       };
       fetch('/api/activity', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'X-Device-Fingerprint': payload.device_id
+        },
         body: JSON.stringify(payload)
       }).catch(() => {});
     } catch {}

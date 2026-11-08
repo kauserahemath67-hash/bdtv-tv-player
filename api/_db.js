@@ -519,12 +519,19 @@ async function findCustomer(code, pin) {
 // ── Real-Time Active Connections & Analytics ──────────────
 let _activeConnections = [];
 
-function logActivity({ ip, userAgent, streamUrl, channelName, customerCode }) {
+function logActivity({ ip, userAgent, streamUrl, channelName, customerCode, deviceId }) {
   const cleanIp = (ip || '127.0.0.1').split(',')[0].trim();
   const cleanUa = userAgent || 'BDTv App';
+  const cleanDevId = deviceId || '—';
   const now = Date.now();
 
-  const idx = _activeConnections.findIndex(c => c.ip === cleanIp && c.user_agent === cleanUa);
+  const idx = _activeConnections.findIndex(c => {
+    if (cleanDevId !== '—' && c.device_id && c.device_id !== '—') {
+      return c.device_id === cleanDevId;
+    }
+    return c.ip === cleanIp && c.user_agent === cleanUa;
+  });
+
   const entry = {
     id: idx >= 0 ? _activeConnections[idx].id : 'conn-' + now + '-' + Math.random().toString(36).substr(2, 4),
     ip: cleanIp,
@@ -532,6 +539,7 @@ function logActivity({ ip, userAgent, streamUrl, channelName, customerCode }) {
     stream_url: streamUrl || 'Live IPTV Stream',
     channel_name: channelName || 'Player Screen',
     customer_code: customerCode || 'Guest',
+    device_id: cleanDevId,
     last_ping: now,
     connected_at: idx >= 0 ? _activeConnections[idx].connected_at : new Date().toISOString()
   };
