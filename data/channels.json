@@ -3166,8 +3166,9 @@
     "logo": "https://i.postimg.cc/MK83K74Z/20260705-053736.jpg",
     "category": "General",
     "order": 313,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-52",
@@ -3176,8 +3177,9 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/b02e7be82b9b488e5a79b0f7e8f7ca1c.png",
     "category": "General",
     "order": 314,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-53",
@@ -3196,8 +3198,9 @@
     "logo": "https://yt3.googleusercontent.com/ytc/AIdro_laNnznvidGadk1O6pI_FsGpRqKdrH6MsequORPttJsBNc=s900-c-k-c0x00ffffff-no-rj",
     "category": "General",
     "order": 316,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-55",
