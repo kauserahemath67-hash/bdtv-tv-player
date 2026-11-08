@@ -76,12 +76,15 @@
     "name": "Sony Ten Sports 5",
     "logo": "https://assets-prod.services.toffeelive.com/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
     "category": "Sports",
-    "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938736645-217",
+    "url": "https://alixbd.com/playlistconfig/channel/40.m3u8",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-6",
     "order": 7,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_user_agent": null
   },
   {
     "name": "Star Sports 1",
