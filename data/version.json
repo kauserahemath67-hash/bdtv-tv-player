@@ -1,13 +1,13 @@
 {
-  "versionCode": 301,
-  "versionName": "3.0.1",
+  "versionCode": 302,
+  "versionName": "3.0.2",
   "minSupportedVersion": 100,
-  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.1/BDTv.apk",
+  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.2/BDTv.apk",
   "updateTitle": "App Update Available",
   "changelog": [
     "Channels, player, and app performance have been improved for a smoother experience."
   ],
-  "forceUpdate": false,
+  "forceUpdate": true,
   "updateMessage": "",
-  "updatedAt": "2026-11-08T13:30:00.000Z"
+  "updatedAt": "2026-11-08T17:52:53.888Z"
 }
