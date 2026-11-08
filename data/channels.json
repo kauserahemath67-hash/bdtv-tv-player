@@ -1426,7 +1426,7 @@
     "manual_override": false
   },
   {
-    "name": "Cine Western (Spain) (1080p)",
+    "name": "Cine Western",
     "logo": "https://i.imgur.com/2UROzSc.png",
     "category": "Movies",
     "url": "https://d2nq34q0i1r3la.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-awohw8g217ho8/CineWestern_ES.m3u8",
@@ -1436,7 +1436,8 @@
     "order": 110,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Cinemaraton Plus (1080i)",
