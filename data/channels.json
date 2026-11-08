@@ -104,7 +104,7 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
     "category": "General",
     "order": 8,
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": true,
     "manual_override": true,
     "use_proxy": true,
