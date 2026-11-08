@@ -1135,8 +1135,9 @@
     "logo": "https://i.imgur.com/29ddffh.png",
     "category": "Movies",
     "order": 112,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162576427-31",
@@ -1155,8 +1156,9 @@
     "logo": "https://i.imgur.com/0qGCS1S.png",
     "category": "Movies",
     "order": 114,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162576427-33",
@@ -1845,8 +1847,9 @@
     "logo": "https://i.ibb.co/yF9MPTDK/blyflx.png",
     "category": "Movies",
     "order": 183,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162576430-102",
