@@ -900,8 +900,8 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Crunchyroll",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiw4lxd8c4p4JvDaOOd1TgweLdDcFBXbX4Dtyj3fWlhQ&s",
+    "name": "Anime",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz9WQGA_vzYTD57ijnQFpufT4aA458RI128Ut0pO9-w&s=10",
     "url": "https://d2nqmwm1ndpgi2.cloudfront.net/playlist.m3u8",
     "category": "General",
     "status": "ONLINE",
