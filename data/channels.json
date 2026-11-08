@@ -2048,7 +2048,7 @@
     "manual_override": false
   },
   {
-    "name": "Kairali We (576p)",
+    "name": "Kairali We",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_KAIRALI_WE/images/LOGO_HD/image.png",
     "category": "Movies",
     "url": "https://streams.tangotv.in/WETV/ORIGIN/index.m3u8",
@@ -2058,7 +2058,8 @@
     "order": 156,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "KCM India (1080p) [Geo-blocked]",
