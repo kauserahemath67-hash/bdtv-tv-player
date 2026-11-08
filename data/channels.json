@@ -2806,7 +2806,7 @@
     "manual_override": false
   },
   {
-    "name": "Rakuten TV Drama Movies Germany (1080p)",
+    "name": "Rakuten TV Drama Movies Germany",
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
     "url": "https://968754c2483045c1a9a7f677caec35b6.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6096/master.m3u8",
@@ -2816,7 +2816,8 @@
     "order": 215,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Rakuten TV Drama Movies Italy (1080p)",
