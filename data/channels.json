@@ -259,7 +259,10 @@
     "is_pinned": false,
     "id": "ch-1794166482825-21",
     "order": 22,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Fox Sports",
