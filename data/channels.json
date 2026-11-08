@@ -384,20 +384,6 @@
     "order": 38
   },
   {
-    "name": "Sony MAX 2",
-    "logo": "https://assets-prod.services.toffeelive.com/Ii5_-JQBv9knK3AHLDV3/posters/d961cc87-81b6-4b30-8414-8c0af2774818.webp",
-    "category": "Movies",
-    "url": "https://drk6xq0vhn.gpcdn.net/live/max_2_abr/live/max_2_720/chunks.m3u8?nimblesessionid=206458908",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1794162467445-32",
-    "order": 40,
-    "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "name": "Sony MAX HD",
     "logo": "https://assets-prod.services.toffeelive.com/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
     "category": "Movies",
