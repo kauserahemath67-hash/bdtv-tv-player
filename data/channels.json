@@ -2988,7 +2988,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Shemaroo Josh (576p)",
+    "name": "Shemaroo Josh",
     "logo": "https://dtil.tmsimg.com/assets/GNLZZGG00297P3E.png?lock=720x540",
     "category": "Movies",
     "url": "https://mumt04.tangotv.in/m18aqlK4SHEMAROOJOSH/index.m3u8",
@@ -2998,7 +2998,8 @@
     "order": 230,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Shubh Cinema TV",
