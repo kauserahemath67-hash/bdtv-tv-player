@@ -463,10 +463,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/xi6xX5UBv9knK3AH9aMk/posters/f4db1c12-b10f-46e8-a09b-e0efb8820970.png",
     "category": "Drama",
     "url": "https://drk6xq0vhn.gpcdn.net/live/sony_aath_abr/live/sony_aath_720/chunks.m3u8?nimblesessionid=227640839",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794162467445-45",
-    "order": 46
+    "order": 46,
+    "manual_override": true
   },
   {
     "name": "Zee Anmol",
@@ -677,10 +678,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/Ny61-JQBv9knK3AHgzZ7/posters/0909b36a-afd5-426a-93b3-4512800977db.webp",
     "category": "Adventure",
     "url": "https://stream.ottplus.bd/live/animal_planet_hd_abr/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794162467445-66",
-    "order": 67
+    "order": 67,
+    "manual_override": true
   },
   {
     "name": "Animal Planet HD",
@@ -697,10 +699,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/KS6x-JQBv9knK3AHwDZy/posters/6594d216-aaca-4eee-b6f5-bbc6b80feb15.webp",
     "category": "Adventure",
     "url": "https://stream.ottplus.bd/live/discovery_sd_abr/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794162467445-68",
-    "order": 69
+    "order": 69,
+    "manual_override": true
   },
   {
     "name": "Discovery HD",
