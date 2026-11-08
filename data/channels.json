@@ -2020,7 +2020,7 @@
     "manual_override": true
   },
   {
-    "name": "Indywood TV (720p)",
+    "name": "Indywood TV",
     "logo": "https://i.ibb.co/jT3NCPp/logo-tv.png",
     "category": "Movies",
     "url": "https://43wrzjnpqoxe-hls-live.wmncdn.net/indywood/indywoodtv/index.m3u8",
@@ -2030,7 +2030,8 @@
     "order": 154,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Itage TV (480p)",
