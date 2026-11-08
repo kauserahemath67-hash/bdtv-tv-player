@@ -1,5 +1,14 @@
 [
   {
+    "name": "all",
+    "url": "https://raw.githubusercontent.com/kauserahamed424-debug/HDTV/main/playlists/all.m3u",
+    "format": "M3U Playlist",
+    "channelCount": 321,
+    "active": true,
+    "id": "pl-1794166483854",
+    "savedAt": "2026-11-08T19:34:43.854Z"
+  },
+  {
     "name": "https://rslivetv.pages.dev/bd76t2s1w9.json",
     "url": "https://rslivetv.pages.dev/bd76t2s1w9.json",
     "format": "JSON Playlist",
