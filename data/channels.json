@@ -3150,31 +3150,33 @@
     "logo": "https://i.imgur.com/v0BlxCa.png",
     "category": "News",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1794129503685",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-317",
-    "order": 312
+    "order": 312,
+    "manual_override": true
   },
   {
     "name": "SONIC",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONIC/images/LOGO_HD/image.png",
     "category": "News",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793982021420",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-318",
-    "order": 313
+    "order": 313,
+    "manual_override": true
   },
   {
     "name": "Hungama TV",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HUNGAMA/images/LOGO_HD/image.png",
     "category": "News",
     "url": "http://103.135.253.32:8080/HUNGAMA/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-319",
     "order": 314,
-    "manual_override": false,
+    "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null
