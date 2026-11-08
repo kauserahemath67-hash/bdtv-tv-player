@@ -1412,7 +1412,7 @@
     "manual_override": false
   },
   {
-    "name": "Cine Western (France) (1080p)",
+    "name": "Cine Western",
     "logo": "https://i.imgur.com/tteOFkL.png",
     "category": "Movies",
     "url": "https://amg00711-zylo-amg00711c8-rakuten-uk-2686.playouts.now.amagi.tv/playlist/amg00711-zylofast-cinewestern-rakutenuk/playlist.m3u8",
@@ -1422,7 +1422,8 @@
     "order": 109,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Cine Western (Spain) (1080p)",
