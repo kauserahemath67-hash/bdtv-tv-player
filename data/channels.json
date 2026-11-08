@@ -1870,7 +1870,7 @@
     "manual_override": false
   },
   {
-    "name": "Goldmines (576p)",
+    "name": "Goldmines",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOLDMINES/images/LOGO_HD/image.png",
     "category": "Movies",
     "url": "https://streams.tangotv.in/GOLDMINES/ORIGIN/index.m3u8",
@@ -1880,7 +1880,8 @@
     "order": 143,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Grand Cinema",
