@@ -1174,7 +1174,7 @@
     "manual_override": false
   },
   {
-    "name": "Allo Cine (1080p)",
+    "name": "Allo Cine",
     "logo": "https://raw.githubusercontent.com/songwenhui239/Songwenhui239/refs/heads/main/Allo%20Cine.jpeg",
     "category": "Movies",
     "url": "https://d1yl6bf4hrzbr0.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-5km3zs4zs9sp0/allo.m3u8",
@@ -1184,7 +1184,8 @@
     "order": 92,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "ARTFLIX Movie Classics (720p)",
