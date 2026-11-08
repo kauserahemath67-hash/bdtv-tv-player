@@ -1800,10 +1800,11 @@
     "logo": "https://i.imgur.com/29ddffh.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/45269/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166043555-30",
-    "order": 177
+    "order": 177,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoFantastika [Not 24/7]",
@@ -1820,10 +1821,11 @@
     "logo": "https://i.imgur.com/0qGCS1S.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/34185/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166043555-32",
-    "order": 179
+    "order": 179,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoKomediya [Not 24/7]",
@@ -2510,10 +2512,11 @@
     "logo": "https://i.ibb.co/yF9MPTDK/blyflx.png",
     "category": "Movies",
     "url": "https://jmp2.uk/stvp-IN46000140Q",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166043555-101",
-    "order": 248
+    "order": 248,
+    "manual_override": true
   },
   {
     "name": "NH Tamil Gold (1080p)",
