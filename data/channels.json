@@ -3522,7 +3522,7 @@
     "name": "SAFF Live 2",
     "logo": "https://assets-prod.services.toffeelive.com/9dijmqEBalKyvLQIIAFj/posters/c6ab0af9-2523-4693-994c-82e7bc1e5483.png",
     "category": "Sports",
-    "url": "https://toffee-obiramtv.emonsa4.workers.dev/saff-live-2.m3u8",
+    "url": "http://158.172.155.130:8000/play/a0ao/index.m3u8",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-184",
