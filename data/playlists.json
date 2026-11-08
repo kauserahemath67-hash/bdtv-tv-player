@@ -1,14 +1,5 @@
 [
   {
-    "id": "pl-1794162471154",
-    "name": "Raw Import",
-    "url": "",
-    "format": "M3U Playlist",
-    "channelCount": 81,
-    "active": true,
-    "savedAt": "2026-11-08T18:27:51.154Z"
-  },
-  {
     "name": "Custom Playlist",
     "url": "",
     "format": "M3U Playlist",
