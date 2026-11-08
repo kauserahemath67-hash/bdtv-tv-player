@@ -3800,39 +3800,42 @@
     "logo": "https://assets-prod.services.toffeelive.com/rYOv_p8BJIOHmUelrnXh/posters/d537453f-7e5b-45f3-9b52-42f6f65950c8.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/26.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-205",
     "order": 282,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "TRT World",
     "logo": "https://assets-prod.services.toffeelive.com/1YPq_p8BJIOHmUelSHXc/posters/f65b0273-0f23-4b56-93dd-417224369105.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/27.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-206",
     "order": 283,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "DW",
     "logo": "https://assets-prod.services.toffeelive.com/7oPt_p8BJIOHmUelhXWj/posters/d6328092-9437-4806-8dc7-d00732d56832.png",
     "category": "Documentary",
     "url": "https://alixbd.com/playlistconfig/channel/28.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1793938736645-207",
     "order": 284,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": true
   },
   {
     "name": "Russia Today",
