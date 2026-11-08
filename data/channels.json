@@ -3014,7 +3014,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Silk Way Cinema (1080p) [Geo-blocked]",
+    "name": "Silk Way Cinema",
     "logo": "https://www.cableman.ru/sites/default/files/Silk-way-CINEMA.png",
     "category": "Movies",
     "url": "https://stream.qazcdn.net/ex6r514/silkwaycinema/index.m3u8",
@@ -3024,7 +3024,8 @@
     "order": 232,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "SL 1",
