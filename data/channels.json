@@ -118,7 +118,7 @@
     "logo": "https://i.postimg.cc/rmQ7XZg7/20241005-170805.png",
     "category": "General",
     "order": 9,
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": true,
     "manual_override": true,
     "use_proxy": true,
