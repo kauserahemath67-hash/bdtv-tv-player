@@ -115,7 +115,11 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-9",
-    "order": 10
+    "order": 10,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_user_agent": null
   },
   {
     "name": "Nagorik Tv",
