@@ -1474,13 +1474,16 @@ video::-webkit-media-controls-overlay-play-button {
 }
 
 /* Hide and suppress any default video captions/subtitles across browsers & WebViews */
-video::cue {
+video::cue,
+::cue,
+video::-webkit-media-text-track-container,
+video::-webkit-media-text-track-display,
+video::-webkit-media-text-track-region {
   visibility: hidden !important;
   opacity: 0 !important;
   display: none !important;
-}
-::cue {
-  visibility: hidden !important;
-  opacity: 0 !important;
-  display: none !important;
+  font-size: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  pointer-events: none !important;
 }

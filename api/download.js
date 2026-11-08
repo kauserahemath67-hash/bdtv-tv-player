@@ -13,15 +13,21 @@ module.exports = async (req, res) => {
 
   try {
     const version = await db.getVersion();
-    const releaseUrl = (version && version.apkUrl && version.apkUrl.trim().length > 10)
+    let releaseUrl = (version && version.apkUrl && version.apkUrl.trim().length > 10)
       ? version.apkUrl.trim()
-      : 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.3.17/BDTv.apk';
+      : 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.1/BDTv.apk';
+
+    // If apkUrl accidentally points to vercel domain, resolve to authentic GitHub binary
+    if (releaseUrl.includes('bdtv-app.vercel.app')) {
+      const vName = (version && version.versionName) ? `v${version.versionName}` : 'v3.0.1';
+      releaseUrl = `https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/${vName}/BDTv.apk`;
+    }
 
     // Instant 302 redirect to authentic, un-cached GitHub Release binary
     res.setHeader('Location', releaseUrl);
     return res.status(302).end();
   } catch (e) {
-    res.setHeader('Location', 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.3.17/BDTv.apk');
+    res.setHeader('Location', 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.1/BDTv.apk');
     return res.status(302).end();
   }
 };

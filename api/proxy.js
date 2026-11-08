@@ -1,6 +1,17 @@
 const url = require('url');
 const db = require('./_db');
 
+function isPrivateHost(hostname) {
+  if (!hostname) return true;
+  const host = hostname.toLowerCase().trim();
+  if (host === 'localhost' || host === '127.0.0.1' || host === '::1' || host === '0.0.0.0' || host === 'metadata.google.internal') return true;
+  if (/^169\.254\./.test(host)) return true;
+  if (/^10\./.test(host)) return true;
+  if (/^172\.(1[6-9]|2[0-9]|3[0-1])\./.test(host)) return true;
+  if (/^192\.168\./.test(host)) return true;
+  return false;
+}
+
 /**
  * Rewrites an HLS manifest so that all relative and absolute URIs
  * are routed back through this proxy endpoint with channel id.
@@ -127,9 +138,17 @@ module.exports = async (req, res) => {
     targetUrl = rawTarget;
   }
 
-  // Guard against self-recursion or invalid protocols
+  // Guard against self-recursion, private network access (SSRF), or invalid protocols
   if (!targetUrl.startsWith('http://') && !targetUrl.startsWith('https://')) {
     return res.status(400).send('Invalid target stream URL');
+  }
+  try {
+    const targetParsed = new URL(targetUrl);
+    if (isPrivateHost(targetParsed.hostname)) {
+      return res.status(403).send('Forbidden: Access to private networks is restricted');
+    }
+  } catch (e) {
+    return res.status(400).send('Invalid target URL format');
   }
 
   // 3. Prepare upstream headers

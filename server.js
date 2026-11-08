@@ -17,6 +17,7 @@ const apiRoutes = {
   '/api/devices': require('./api/devices'),
   '/api/subscriptions': require('./api/subscriptions'),
   '/api/settings': require('./api/settings'),
+  '/api/download': require('./api/download'),
   '/api/version': require('./api/version'),
   '/api/activity': require('./api/activity'),
   '/api/report': require('./api/report')
@@ -77,6 +78,10 @@ const server = http.createServer(async (req, res) => {
   // Handle /version.json shortcut
   if (pathname === '/version.json') {
     return apiRoutes['/api/version'](req, res);
+  }
+  // Handle direct APK download shortcuts (redirects to latest release without caching)
+  if (pathname === '/BDTv.apk' || pathname === '/bdtv-latest.apk' || pathname === '/download.apk') {
+    return apiRoutes['/api/download'](req, res);
   }
   // Handle /admin
   if (pathname === '/admin' || pathname === '/admin/') {

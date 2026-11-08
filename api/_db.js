@@ -739,10 +739,10 @@ function resolveReport(id) {
 
 // Version (GitHub-backed with fallback)
 const defaultVersion = {
-  versionCode: 125,
-  versionName: '2.3.17',
+  versionCode: 301,
+  versionName: '3.0.1',
   minSupportedVersion: 100,
-  apkUrl: 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.3.17/BDTv.apk',
+  apkUrl: 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.1/BDTv.apk',
   updateTitle: 'App Update Available',
   changelog: [
     'Channels, player, and app performance have been improved for a smoother experience.'

@@ -534,9 +534,38 @@ class IPTVPlayer {
     this.renderChannelGrid();
   }
 
+  initLogoObserver() {
+    if (this.logoObserver) {
+      try { this.logoObserver.disconnect(); } catch (e) {}
+    }
+    const drawerInner = document.querySelector('.drawer-inner');
+    if ('IntersectionObserver' in window) {
+      this.logoObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const img = entry.target;
+            const dataSrc = img.dataset.src;
+            if (dataSrc && img.src !== dataSrc) {
+              img.src = dataSrc;
+              img.removeAttribute('data-src');
+            }
+            observer.unobserve(img);
+          }
+        });
+      }, {
+        root: drawerInner || null,
+        rootMargin: '350px 0px 350px 0px',
+        threshold: 0.01
+      });
+    } else {
+      this.logoObserver = null;
+    }
+  }
+
   renderChannelGrid() {
     this.channelGrid.innerHTML = '';
     const fragment = document.createDocumentFragment();
+    this.initLogoObserver();
 
     this.filteredChannels.forEach((ch, idx) => {
       const card = document.createElement('div');
@@ -544,11 +573,19 @@ class IPTVPlayer {
       card.tabIndex = 0;
       card.dataset.index = idx;
 
-      const logoSrc = (ch.logo && ch.logo.trim()) ? ch.logo : DEFAULT_TV_LOGO;
+      // Logo strictly bound 1-to-1 with channel data from /api/channels (prevents any logo mix-up)
+      const hasLogo = Boolean(ch.logo && ch.logo.trim());
+      const logoSrc = hasLogo ? ch.logo.trim() : DEFAULT_TV_LOGO;
+
+      // First 24 cards load immediately with their logo URL
+      // Remaining cards load on-demand as user scrolls drawer to conserve bandwidth
+      const isInitialBatch = idx < 24;
+      const initialSrc = isInitialBatch ? logoSrc : DEFAULT_TV_LOGO;
+      const dataSrcAttr = (!isInitialBatch && hasLogo) ? `data-src="${logoSrc}"` : '';
 
       card.innerHTML = `
         <div class="ch-logo-wrap">
-          <img src="${logoSrc}" alt="${ch.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='${DEFAULT_TV_LOGO}'">
+          <img src="${initialSrc}" ${dataSrcAttr} alt="${ch.name}" referrerpolicy="no-referrer" decoding="async" onerror="this.onerror=null;this.src='${DEFAULT_TV_LOGO}'">
         </div>
         <div class="ch-title">${ch.name}</div>
       `;
@@ -559,6 +596,11 @@ class IPTVPlayer {
         this.playChannel(idx);
         this.closeDrawer();
       });
+
+      if (!isInitialBatch && this.logoObserver && hasLogo) {
+        const img = card.querySelector('img');
+        if (img) this.logoObserver.observe(img);
+      }
 
       fragment.appendChild(card);
     });
@@ -575,6 +617,7 @@ class IPTVPlayer {
         }
       }
       if (this.hls) {
+        this.hls.subtitleDisplay = false;
         this.hls.subtitleTrack = -1;
       }
     } catch (e) {}
@@ -621,6 +664,9 @@ class IPTVPlayer {
     this.hls = new Hls({
       enableWorker: true,
       lowLatencyMode: false,
+      enableWebVTT: false,
+      enableCEA708Captions: false,
+      renderTextTracksNatively: false,
       backBufferLength: 10,
       maxBufferLength: 30,
       maxMaxBufferLength: 60,
@@ -864,8 +910,8 @@ class IPTVPlayer {
     document.getElementById('top-channel-name').textContent = channel.name;
     const topLogo = document.getElementById('top-channel-logo');
     if (channel.logo && channel.logo.trim()) {
-      topLogo.src = channel.logo;
-      topLogo.loading = 'lazy';
+      topLogo.referrerPolicy = 'no-referrer';
+      topLogo.src = channel.logo.trim();
       topLogo.onerror = function() { this.src = DEFAULT_TV_LOGO; };
       topLogo.classList.remove('hidden');
     } else {
@@ -903,8 +949,8 @@ class IPTVPlayer {
     document.getElementById('hud-channel-cat').textContent = channel.category || 'Live TV';
     const hudLogo = document.getElementById('hud-channel-logo');
     if (channel.logo && channel.logo.trim()) {
-      hudLogo.src = channel.logo;
-      hudLogo.loading = 'lazy';
+      hudLogo.referrerPolicy = 'no-referrer';
+      hudLogo.src = channel.logo.trim();
       hudLogo.onerror = function() { this.src = DEFAULT_TV_LOGO; };
       hudLogo.classList.remove('hidden');
     } else {
@@ -1156,8 +1202,30 @@ class IPTVPlayer {
       this.focusedIndex = 0;
     }
     this.updateCardFocus();
+    this.triggerVisibleLogos();
     setTimeout(() => this.updateCardFocus(), 100);
     setTimeout(() => this.updateCardFocus(), 300);
+  }
+
+  triggerVisibleLogos() {
+    const unobservedImgs = this.channelGrid.querySelectorAll('img[data-src]');
+    if (!unobservedImgs.length) return;
+    const drawerInner = document.querySelector('.drawer-inner');
+    const containerTop = drawerInner ? drawerInner.scrollTop : 0;
+    const containerBottom = containerTop + (drawerInner ? drawerInner.clientHeight : window.innerHeight) + 400;
+
+    unobservedImgs.forEach(img => {
+      const card = img.closest('.channel-card');
+      if (!card) return;
+      const top = card.offsetTop;
+      if (top <= containerBottom) {
+        img.src = img.dataset.src;
+        img.removeAttribute('data-src');
+        if (this.logoObserver) {
+          try { this.logoObserver.unobserve(img); } catch (e) {}
+        }
+      }
+    });
   }
 
   closeDrawer() {

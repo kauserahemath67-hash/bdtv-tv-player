@@ -1366,15 +1366,18 @@ class AdminDashboard {
   // 12. App Version & APK
   async loadVersion() {
     try {
-      const res = await this.authFetch('/api/version');
+      const res = await this.authFetch('/api/version?_t=' + Date.now());
       const v = await res.json();
-      document.getElementById('ver-code').value = v.versionCode || 100;
-      document.getElementById('ver-name').value = v.versionName || '1.0.0';
+      document.getElementById('ver-code').value = v.versionCode || 125;
+      document.getElementById('ver-name').value = v.versionName || '2.3.17';
       document.getElementById('ver-apk-url').value = v.apkUrl || '';
       document.getElementById('ver-title').value = v.updateTitle || '';
       document.getElementById('ver-changelog').value = Array.isArray(v.changelog) ? v.changelog.join('\n') : '';
       document.getElementById('ver-force').checked = Boolean(v.forceUpdate);
     } catch (e) {}
+
+    if (this._versionFormBound) return;
+    this._versionFormBound = true;
 
     document.getElementById('version-form').addEventListener('submit', async (e) => {
       e.preventDefault();
