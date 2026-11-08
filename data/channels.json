@@ -1304,12 +1304,15 @@
     "name": "Dorama",
     "logo": "https://i.imgur.com/ZH5LuXU.png",
     "category": "Movies",
-    "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938736645-42",
+    "url": "https://stream8.cinerama.uz/1273/tracks-v1a1/mono.m3u8",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-121",
     "order": 119,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "DUST",
