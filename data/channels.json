@@ -2738,7 +2738,7 @@
     "category": "General",
     "url": "https://alixbd.com/playlistconfig/channel/8.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1794166482825-264",
     "order": 261,
     "manual_override": true,
