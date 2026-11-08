@@ -113,8 +113,8 @@ module.exports = async (req, res) => {
     return res.status(502).send('Bad Gateway: Database lookup failed');
   }
 
-  if (!channel || !channel.use_proxy) {
-    return res.status(404).send('Channel not found or proxy disabled');
+  if (!channel) {
+    return res.status(404).send('Channel not found');
   }
 
   // 2. Determine target URL
@@ -125,6 +125,11 @@ module.exports = async (req, res) => {
       return res.status(400).send('Invalid target URL');
     }
     targetUrl = rawTarget;
+  }
+
+  // Guard against self-recursion or invalid protocols
+  if (!targetUrl.startsWith('http://') && !targetUrl.startsWith('https://')) {
+    return res.status(400).send('Invalid target stream URL');
   }
 
   // 3. Prepare upstream headers

@@ -3,6 +3,7 @@
 // ==========================================
 
 const INSTALLED_APP_VERSION = 123;
+const DEFAULT_TV_LOGO = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Crect width='60' height='60' rx='12' fill='%231e293b'/%3E%3Ctext x='50%25' y='54%25' font-size='13' font-weight='bold' fill='%2394a3b8' text-anchor='middle' dominant-baseline='middle' font-family='sans-serif'%3ETV%3C/text%3E%3C/svg%3E";
 
 const FALLBACK_CHANNELS = [
   {
@@ -245,6 +246,13 @@ class IPTVPlayer {
       const dlBtn = document.getElementById('btn-download-app');
       if (dlBtn) {
         dlBtn.href = json.apkUrl || '/BDTv.apk';
+        dlBtn.onclick = (e) => {
+          const b = window.AndroidApp || window.AndroidBridge;
+          if (b && typeof b.startAppUpdate === 'function') {
+            e.preventDefault();
+            b.startAppUpdate(json.apkUrl || 'https://bdtv-app.vercel.app/BDTv.apk');
+          }
+        };
         dlBtn.classList.remove('hidden');
       }
 
@@ -386,8 +394,14 @@ class IPTVPlayer {
           try { localStorage.setItem('_bdtv_secure_ch_v2', cacheStr); } catch (e) {}
         }
 
-        const isDifferent = JSON.stringify(this.channels) !== JSON.stringify(serverChannels);
-        if (isDifferent || !hasLoadedFromCache) {
+        const hasRealChanges = !hasLoadedFromCache ||
+          this.channels.length !== serverChannels.length ||
+          this.channels.some((c, i) => {
+            const sc = serverChannels[i];
+            return !sc || c.id !== sc.id || c.url !== sc.url || c.logo !== sc.logo || c.name !== sc.name;
+          });
+
+        if (hasRealChanges) {
           this.channels = serverChannels;
           this.filterChannels(this.currentCategory || 'All');
 
@@ -404,6 +418,9 @@ class IPTVPlayer {
           } else if (!hasLoadedFromCache && this.channels.length > 0) {
             this.playChannel(0);
           }
+        } else {
+          // Channels are identical to local cache — keep data reference without re-rendering DOM
+          this.channels = serverChannels;
         }
       } else {
         if (!hasLoadedFromCache) throw new Error('No channels from API');
@@ -456,15 +473,19 @@ class IPTVPlayer {
 
   renderChannelGrid() {
     this.channelGrid.innerHTML = '';
+    const fragment = document.createDocumentFragment();
+
     this.filteredChannels.forEach((ch, idx) => {
       const card = document.createElement('div');
       card.className = `channel-card ${idx === this.focusedIndex ? 'focused' : ''} ${idx === this.currentIndex ? 'active-playing' : ''}`;
       card.tabIndex = 0;
       card.dataset.index = idx;
 
+      const logoSrc = (ch.logo && ch.logo.trim()) ? ch.logo : DEFAULT_TV_LOGO;
+
       card.innerHTML = `
         <div class="ch-logo-wrap">
-          <img src="${ch.logo || 'https://via.placeholder.com/60x60?text=TV'}" alt="${ch.name}" onerror="this.src='https://via.placeholder.com/60x60?text=TV'">
+          <img src="${logoSrc}" alt="${ch.name}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='${DEFAULT_TV_LOGO}'">
         </div>
         <div class="ch-title">${ch.name}</div>
       `;
@@ -476,8 +497,10 @@ class IPTVPlayer {
         this.closeDrawer();
       });
 
-      this.channelGrid.appendChild(card);
+      fragment.appendChild(card);
     });
+
+    this.channelGrid.appendChild(fragment);
   }
 
   // Disable auto captions/subtitles across video element and HLS
@@ -777,8 +800,10 @@ class IPTVPlayer {
     // 2. Update Top Bar & HUD
     document.getElementById('top-channel-name').textContent = channel.name;
     const topLogo = document.getElementById('top-channel-logo');
-    if (channel.logo) {
+    if (channel.logo && channel.logo.trim()) {
       topLogo.src = channel.logo;
+      topLogo.loading = 'lazy';
+      topLogo.onerror = function() { this.src = DEFAULT_TV_LOGO; };
       topLogo.classList.remove('hidden');
     } else {
       topLogo.classList.add('hidden');
@@ -814,8 +839,10 @@ class IPTVPlayer {
     document.getElementById('hud-channel-name').textContent = channel.name;
     document.getElementById('hud-channel-cat').textContent = channel.category || 'Live TV';
     const hudLogo = document.getElementById('hud-channel-logo');
-    if (channel.logo) {
+    if (channel.logo && channel.logo.trim()) {
       hudLogo.src = channel.logo;
+      hudLogo.loading = 'lazy';
+      hudLogo.onerror = function() { this.src = DEFAULT_TV_LOGO; };
       hudLogo.classList.remove('hidden');
     } else {
       hudLogo.classList.add('hidden');
