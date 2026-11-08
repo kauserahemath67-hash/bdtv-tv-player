@@ -3246,12 +3246,15 @@
     "name": "Anime",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz9WQGA_vzYTD57ijnQFpufT4aA458RI128Ut0pO9-w&s=10",
     "category": "News",
-    "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1794129440800",
+    "url": "https://d2nqmwm1ndpgi2.cloudfront.net/playlist.m3u8",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-316",
     "order": 310,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Anime x HIDIVE",
