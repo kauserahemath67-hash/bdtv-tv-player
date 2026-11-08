@@ -2436,7 +2436,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "MyTime Movie Network (Brazil) (720p)",
+    "name": "MyTime Movie Network",
     "logo": "https://i.imgur.com/aiGQtzI.png",
     "category": "Movies",
     "url": "https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8",
@@ -2446,7 +2446,8 @@
     "order": 184,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "MyTime Movie Network (Spain) (1080p)",
