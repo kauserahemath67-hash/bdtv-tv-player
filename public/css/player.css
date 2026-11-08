@@ -7,6 +7,27 @@
   -webkit-backface-visibility: hidden;
   will-change: transform, opacity;
 }
+
+/* Part 3: Native Hardware-Accelerated ExoPlayer Transparency */
+html, body,
+html.native-player, body.native-player,
+#video-wrapper,
+body.native-player #video-wrapper {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+body.native-player #player,
+#player {
+  background: transparent !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+body:not(.native-player) #player {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
 /* =========================================================
    BDTv Live IPTV Web Player - Master Responsive Stylesheet
    Supports: Mobile (Portrait/Landscape), Tablet, Desktop, Android TV
@@ -54,7 +75,8 @@ html, body {
   left: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
-  background-color: #000;
+  background-color: transparent !important;
+  background: transparent !important;
   color: var(--text-main);
   font-family: var(--font-family);
   touch-action: manipulation;
@@ -116,7 +138,7 @@ html, body {
   left: 0 !important;
   width: 100vw !important;
   height: 100vh !important;
-  background: #000 !important;
+  background: transparent !important;
   overflow: hidden !important;
   z-index: 10;
   display: flex;
@@ -128,7 +150,7 @@ html, body {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background: #000 !important;
+  background: transparent !important;
   display: block;
 }
 
@@ -429,29 +451,11 @@ video::-webkit-media-controls-overlay-play-button {
 /* ---------------------------------------------------------
    4. TV Channel Switch Banner / HUD
    --------------------------------------------------------- */
-.channel-hud {
-  position: fixed !important;
-  top: 50% !important;
-  left: 50% !important;
-  transform: translate(-50%, -50%) !important;
-  background: rgba(10, 15, 30, 0.92) !important;
-  border: 1.5px solid rgba(0, 229, 255, 0.4) !important;
-  padding: 16px 28px !important;
-  border-radius: 20px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  gap: 16px !important;
-  box-shadow: 0 12px 40px rgba(0,0,0,0.85), 0 0 20px rgba(0, 102, 255, 0.3) !important;
-  z-index: 9999 !important;
-  transition: opacity 0.3s ease, visibility 0.3s ease !important;
-  max-width: 85vw !important;
-  pointer-events: none !important;
-}
-
-.channel-hud.hidden {
-  opacity: 0 !important;
+.channel-hud,
+#channel-hud {
+  display: none !important;
   visibility: hidden !important;
+  opacity: 0 !important;
   pointer-events: none !important;
 }
 
@@ -764,6 +768,24 @@ video::-webkit-media-controls-overlay-play-button {
 /* ---------------------------------------------------------
    8. Overlays (Buffering, Error & VIP Modal)
    --------------------------------------------------------- */
+#buffering-overlay {
+  background: transparent !important;
+  pointer-events: none !important;
+}
+
+#buffering-overlay .spinner {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.85));
+}
+
+#buffering-overlay .buffering-text {
+  background: rgba(0, 0, 0, 0.65);
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  margin-top: 14px;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -820,6 +842,22 @@ video::-webkit-media-controls-overlay-play-button {
   max-width: 420px;
   width: 100%;
   text-align: center;
+}
+
+/* Permanently disable all error toasts & banners for a clean, professional TV app */
+#error-toast,
+.error-toast,
+.error-toast-icon,
+.error-toast-body,
+.error-toast-title,
+.error-toast-hint {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  overflow: hidden !important;
 }
 
 .error-icon {
