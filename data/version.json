@@ -2,12 +2,12 @@
   "versionCode": 125,
   "versionName": "2.3.17",
   "minSupportedVersion": 100,
-  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.3.17/BDTv.apk",
+  "apkUrl": "https://tvapp.free.je/BDTv.apk",
   "updateTitle": "App Update Available",
   "changelog": [
     "Channels, player, and app performance have been improved for a smoother experience."
   ],
-  "forceUpdate": false,
+  "forceUpdate": true,
   "updateMessage": "",
-  "updatedAt": "2026-11-08T12:49:30.247Z"
+  "updatedAt": "2026-11-08T13:11:05.197Z"
 }
