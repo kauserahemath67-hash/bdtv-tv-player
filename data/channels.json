@@ -2313,7 +2313,7 @@
     "manual_override": false
   },
   {
-    "name": "Mix Hollywood (1080p)",
+    "name": "Mix Hollywood",
     "logo": "https://i.imgur.com/1ENdbZn.png",
     "category": "Movies",
     "url": "https://ml-pull-hwc.myco.io/MixTV/hls/index.m3u8",
@@ -2323,7 +2323,8 @@
     "order": 175,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "MN+",
