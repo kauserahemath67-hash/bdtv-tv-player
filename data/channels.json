@@ -38,7 +38,7 @@
     "order": 3,
     "manual_override": true,
     "use_proxy": false,
-    "proxy_referer": null,
+    "proxy_referer": "https://alixbd.com/playlistconfig/",
     "proxy_user_agent": null
   },
   {
