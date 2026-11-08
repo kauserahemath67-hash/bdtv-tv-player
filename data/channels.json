@@ -2694,7 +2694,7 @@
     "manual_override": false
   },
   {
-    "name": "Rakuten TV Action Movies Germany (1080p)",
+    "name": "Rakuten TV Action Movies Germany",
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
     "url": "https://284824cf70404fdfb6ddf9349009c710.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6066/master.m3u8",
@@ -2704,7 +2704,8 @@
     "order": 207,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Rakuten TV Action Movies Italy (1080p)",
