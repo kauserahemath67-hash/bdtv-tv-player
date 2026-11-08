@@ -1434,7 +1434,7 @@
   },
   {
     "name": "Cinemaraton Plus (1080i)",
-    "logo": "https://assets.antenaplay.ro/2026/03/10/RMNdkVBCTNfsogsYqHaB.png",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-cCcgxalvLjaqQPnjBzc1Pwh8cAemZHC6WjvxLqke7i0RYBE4pW0_vdo&s=10",
     "category": "Movies",
     "url": "https://hls02ns.antenaplay.ro/hls/cinemaraton-plus-hd/index.m3u8",
     "status": "ONLINE",
@@ -1443,7 +1443,8 @@
     "order": 111,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "CineWow (576i)",
