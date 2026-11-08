@@ -1678,7 +1678,7 @@
     "manual_override": false
   },
   {
-    "name": "Ebony TV by Lionsgate (1080p)",
+    "name": "Ebony TV",
     "logo": "https://provider-static.plex.tv/epg/cms/production/234d5377-ab07-41bf-acd6-34c17c1c051a/EbonyTV_Plex_Logo_Light_1500x1000.png",
     "category": "Movies",
     "url": "https://aegis-cloudfront-1.tubi.video/a0ad4b53-ab3a-48dd-be12-bc7f533c372c/playlist.m3u8",
@@ -1688,7 +1688,8 @@
     "order": 129,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "EBS Cinema (720p)",
