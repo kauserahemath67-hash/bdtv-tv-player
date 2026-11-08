@@ -1496,7 +1496,7 @@
     "manual_override": true
   },
   {
-    "name": "City Eden KinoAsia [Not 24/7]",
+    "name": "City Eden KinoAsia",
     "logo": "https://i.imgur.com/gaket4B.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/34393/index.m3u8",
@@ -1506,7 +1506,8 @@
     "order": 115,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "City Eden KinoDetektiv [Not 24/7]",
