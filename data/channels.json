@@ -3514,8 +3514,8 @@
     "id": "ch-1793938736645-183",
     "order": 268,
     "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
+    "use_proxy": true,
+    "proxy_referer": "http://181.78.197.59:8000/",
     "proxy_user_agent": null
   },
   {
