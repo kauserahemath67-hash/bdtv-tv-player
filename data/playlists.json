@@ -18,12 +18,12 @@
     "savedAt": "2026-11-08T19:27:10.273Z"
   },
   {
-    "name": "live",
+    "name": "https://raw.githubusercontent.com/kauserahamed424-debug/HDTV/main/playlists/live.m3u",
     "url": "https://raw.githubusercontent.com/kauserahamed424-debug/HDTV/main/playlists/live.m3u",
     "format": "M3U Playlist",
     "channelCount": 180,
     "active": true,
     "id": "pl-1794165872040",
-    "savedAt": "2026-11-08T19:27:24.692Z"
+    "savedAt": "2026-11-08T19:27:27.605Z"
   }
 ]
