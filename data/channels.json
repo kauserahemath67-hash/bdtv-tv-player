@@ -1533,7 +1533,7 @@
     "is_pinned": false,
     "id": "ch-1793938736645-32",
     "order": 117,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
     "manual_override": true
