@@ -2960,7 +2960,7 @@
     "manual_override": false
   },
   {
-    "name": "Rotana Cinema Egypt (1080p) [Geo-blocked]",
+    "name": "Rotana Cinema Egypt",
     "logo": "https://i.imgur.com/dGlKoLW.png",
     "category": "Movies",
     "url": "https://rotana.hibridcdn.net/rotananet/cinemamasr_net-7Y83PP5adWixDF93/playlist.m3u8",
@@ -2970,7 +2970,8 @@
     "order": 226,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Rotana Cinema KSA (1080p) [Geo-blocked]",
