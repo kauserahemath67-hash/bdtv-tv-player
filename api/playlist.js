@@ -207,12 +207,30 @@ module.exports = async (req, res) => {
 
       for (let ch of channels) {
         m3u += `#EXTINF:-1 tvg-id="${ch.id}" tvg-name="${ch.name}" tvg-logo="${ch.logo || ''}" group-title="${ch.category || 'General'}",${ch.name}\n`;
-        const streamUrl = ch.use_proxy ? `${host}/api/proxy?ch=${encodeURIComponent(ch.id)}` : ch.url;
+        if (ch.proxy_referer && String(ch.proxy_referer).trim().length > 0) {
+          m3u += `#EXTVLCOPT:http-referrer=${String(ch.proxy_referer).trim()}\n`;
+        }
+        if (ch.proxy_user_agent && String(ch.proxy_user_agent).trim().length > 0) {
+          m3u += `#EXTVLCOPT:http-user-agent=${String(ch.proxy_user_agent).trim()}\n`;
+        }
+        const streamUrl = (ch.proxy_referer || ch.proxy_user_agent) ? ch.url : (ch.use_proxy ? `${host}/api/proxy?ch=${encodeURIComponent(ch.id)}` : ch.url);
         m3u += `${streamUrl}\n`;
       }
 
+      const crypto = require('crypto');
+      const hash = crypto.createHash('sha1').update(m3u).digest('hex');
+      const etag = `W/"${hash}"`;
+
       res.setHeader('Content-Type', 'audio/x-mpegurl; charset=utf-8');
       res.setHeader('Content-Disposition', 'inline; filename="playlist.m3u"');
+      res.setHeader('ETag', etag);
+      res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+
+      const ifNoneMatch = req.headers['if-none-match'];
+      if (ifNoneMatch && (ifNoneMatch === etag || ifNoneMatch === hash || ifNoneMatch === `"${hash}"`)) {
+        return res.status(304).end();
+      }
+
       return res.status(200).send(m3u);
     }
 

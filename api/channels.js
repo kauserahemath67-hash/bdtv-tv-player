@@ -131,22 +131,54 @@ module.exports = async (req, res) => {
         return (a.order || 0) - (b.order || 0);
       });
 
-      // Public sanitization: For non-admin, never expose proxy_referer or proxy_user_agent,
-      // and when use_proxy is true, give the player the proxy URL instead of raw stream_url.
-      let responseChannels = channels;
-      if (!isAdmin) {
-        responseChannels = channels.map(c => {
-          const item = { ...c };
+      // Part 1: App Direct Play config with per-channel headers & raw play_url
+      // Preserves 100% web fallback behavior for browser player
+      const responseChannels = channels.map(c => {
+        const headers = {};
+        if (c.proxy_referer && String(c.proxy_referer).trim().length > 0) {
+          headers['Referer'] = String(c.proxy_referer).trim();
+        }
+        if (c.proxy_user_agent && String(c.proxy_user_agent).trim().length > 0) {
+          headers['User-Agent'] = String(c.proxy_user_agent).trim();
+        }
+
+        const item = {
+          ...c,
+          play_url: c.url, // ALWAYS the raw, direct stream_url (never /api/proxy)
+          headers: headers
+        };
+
+        // For website / browser player fallback: if use_proxy is true, url points to /api/proxy
+        if (!isAdmin) {
           if (item.use_proxy) {
             item.url = `/api/proxy?ch=${encodeURIComponent(item.id)}`;
           }
           delete item.proxy_referer;
           delete item.proxy_user_agent;
-          return item;
-        });
+        }
+
+        return item;
+      });
+
+      // Cheap change detection: ETag & top-level version
+      const crypto = require('crypto');
+      const hash = crypto.createHash('sha1').update(JSON.stringify(responseChannels)).digest('hex');
+      const etag = `W/"${hash}"`;
+
+      res.setHeader('ETag', etag);
+      res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+
+      const ifNoneMatch = req.headers['if-none-match'];
+      if (ifNoneMatch && (ifNoneMatch === etag || ifNoneMatch === hash || ifNoneMatch === `"${hash}"`)) {
+        return res.status(304).end();
       }
 
-      return res.status(200).json({ success: true, count: responseChannels.length, data: responseChannels });
+      return res.status(200).json({
+        success: true,
+        version: hash.substring(0, 16),
+        count: responseChannels.length,
+        data: responseChannels
+      });
     }
 
     // ── POST — add / update channel ─────────────────────
