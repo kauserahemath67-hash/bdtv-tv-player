@@ -1,42 +1,27 @@
-const fs = require('fs');
-const path = require('path');
+const db = require('./_db');
 
-module.exports = (req, res) => {
+module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, HEAD, OPTIONS');
+  res.setHeader('Cache-Control', 'no-store, no-cache, must-revalidate, max-age=0, proxy-revalidate');
+  res.setHeader('Pragma', 'no-cache');
+  res.setHeader('Expires', '0');
 
   if (req.method === 'OPTIONS') {
     return res.status(200).end();
   }
 
-  // Look for BDTv.apk in root or public folder
-  const possiblePaths = [
-    path.join(process.cwd(), 'BDTv.apk'),
-    path.join(process.cwd(), 'public', 'BDTv.apk'),
-    path.join(__dirname, '..', 'BDTv.apk'),
-    path.join(__dirname, '..', 'public', 'BDTv.apk')
-  ];
+  try {
+    const version = await db.getVersion();
+    const releaseUrl = (version && version.apkUrl && version.apkUrl.trim().length > 10)
+      ? version.apkUrl.trim()
+      : 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.3.17/BDTv.apk';
 
-  let targetPath = null;
-  for (const p of possiblePaths) {
-    if (fs.existsSync(p)) {
-      targetPath = p;
-      break;
-    }
+    // Instant 302 redirect to authentic, un-cached GitHub Release binary
+    res.setHeader('Location', releaseUrl);
+    return res.status(302).end();
+  } catch (e) {
+    res.setHeader('Location', 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.3.17/BDTv.apk');
+    return res.status(302).end();
   }
-
-  if (!targetPath) {
-    return res.status(404).send('APK file not found on server.');
-  }
-
-  const stat = fs.statSync(targetPath);
-  res.writeHead(200, {
-    'Content-Type': 'application/vnd.android.package-archive',
-    'Content-Length': stat.size,
-    'Content-Disposition': 'attachment; filename="BDTv.apk"',
-    'Cache-Control': 'public, max-age=3600'
-  });
-
-  const stream = fs.createReadStream(targetPath);
-  stream.pipe(res);
 };
