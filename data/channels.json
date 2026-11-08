@@ -2726,17 +2726,6 @@
     "manual_override": true
   },
   {
-    "id": "ch-1794162605192-7",
-    "name": "Sony Sports 1",
-    "url": "https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8",
-    "logo": "https://images.toffeelive.com/images/program/603/logo/240x240/mobile_logo_237244001666780563.png",
-    "category": "General",
-    "order": 269,
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "manual_override": true
-  },
-  {
     "id": "ch-1794162605192-8",
     "name": "Sony Sports 2",
     "url": "https://drk6xq0vhn.gpcdn.net/live/ten_2_hd_720/index.m3u8",
