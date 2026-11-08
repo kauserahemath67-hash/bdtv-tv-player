@@ -86,7 +86,7 @@
     "order": 7,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://playsza.st/player.php",
     "proxy_user_agent": null
   },
   {
