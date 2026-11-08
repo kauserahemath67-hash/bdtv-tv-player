@@ -4204,6 +4204,20 @@
     "proxy_user_agent": null
   },
   {
+    "id": "ch-1794129503685",
+    "name": "Anime x HIDIVE",
+    "category": "News",
+    "logo": "https://i.imgur.com/v0BlxCa.png",
+    "url": "https://d3f088nnrrvkwf.cloudfront.net/v1/amc_anime_x_hidive_1/samsungheadend_us/latest/main/hls/playlist.m3u8",
+    "is_pinned": false,
+    "order": 322,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
     "id": "ch-1793982021420",
     "name": "SONIC",
     "category": "News",
@@ -4232,13 +4246,13 @@
     "proxy_user_agent": null
   },
   {
-    "id": "ch-1794129503685",
-    "name": "Anime x HIDIVE",
+    "id": "ch-1794129712091",
+    "name": "Hungama TV",
     "category": "News",
-    "logo": "https://i.imgur.com/v0BlxCa.png",
-    "url": "https://d3f088nnrrvkwf.cloudfront.net/v1/amc_anime_x_hidive_1/samsungheadend_us/latest/main/hls/playlist.m3u8",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HUNGAMA/images/LOGO_HD/image.png",
+    "url": "http://103.135.253.32:8080/HUNGAMA/index.m3u8",
     "is_pinned": false,
-    "order": 322,
+    "order": 323,
     "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
