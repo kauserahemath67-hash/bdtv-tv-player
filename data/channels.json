@@ -1650,7 +1650,7 @@
     "manual_override": false
   },
   {
-    "name": "Dorama (576p)",
+    "name": "Dorama",
     "logo": "https://i.imgur.com/ZH5LuXU.png",
     "category": "Movies",
     "url": "https://fs.uplink.kz/dorama/mono.m3u8?token=onlinetv",
@@ -1660,7 +1660,8 @@
     "order": 127,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "DUST (1080p)",
