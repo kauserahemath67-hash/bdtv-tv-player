@@ -1146,7 +1146,7 @@
     "manual_override": false
   },
   {
-    "name": "ABN Bible Movies Channel (720p)",
+    "name": "ABN Bible Movies",
     "logo": "https://i.imgur.com/NCqZdaL.png",
     "category": "Movies",
     "url": "https://mediaserver.abnvideos.com/streams/abnbiblemovies.m3u8",
@@ -1156,7 +1156,8 @@
     "order": 89,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Afra Film",
