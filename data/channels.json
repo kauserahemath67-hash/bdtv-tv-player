@@ -3219,15 +3219,18 @@
     "order": 307
   },
   {
-    "name": "Channel 1",
+    "name": "Channel i",
     "logo": "https://assets-prod.services.toffeelive.com/JS1AqZgBNnOkwJLWlwg-/posters/74a3b409-4bc6-4055-8960-cd27cb7ccc1f.png",
     "category": "News",
-    "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793981668004",
+    "url": "https://alixbd.com/playlistconfig/channel/20.m3u8",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-314",
     "order": 308,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_user_agent": null
   },
   {
     "name": "& Pictures HD",
