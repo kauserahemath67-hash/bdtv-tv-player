@@ -14,6 +14,14 @@
   ],
   "headers": [
     {
+      "source": "/BDTv.apk",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate, max-age=0" },
+        { "key": "Content-Type", "value": "application/vnd.android.package-archive" },
+        { "key": "Content-Disposition", "value": "inline; filename=\"BDTv.apk\"" }
+      ]
+    },
+    {
       "source": "/api/(.*)",
       "headers": [
         { "key": "Access-Control-Allow-Origin", "value": "*" },
