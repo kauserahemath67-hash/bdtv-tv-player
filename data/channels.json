@@ -907,10 +907,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/JdjLpqEBalKyvLQIrDPD/posters/dede2169-1b5e-4342-bf55-4fd72cb596f3.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/6.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166026224-5",
-    "order": 88
+    "order": 88,
+    "manual_override": true
   },
   {
     "name": "Sony Ten Cricket",
@@ -1757,20 +1758,22 @@
     "logo": "https://i.imgur.com/uuzuvD0.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/41333/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166043555-26",
-    "order": 173
+    "order": 173,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoArt [Not 24/7]",
     "logo": "https://i.imgur.com/67CWCtz.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/38398/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166043555-27",
-    "order": 174
+    "order": 174,
+    "manual_override": true
   },
   {
     "name": "City Eden KinoAsia [Not 24/7]",
