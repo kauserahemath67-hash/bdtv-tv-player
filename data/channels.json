@@ -2145,7 +2145,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Maha Movie (576p)",
+    "name": "Maha Movie",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Maha_Movies.png",
     "category": "Movies",
     "url": "https://fta.ektv.in/live/48/48_0.m3u8",
@@ -2155,7 +2155,8 @@
     "order": 163,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Mahua Play (1080p)",
