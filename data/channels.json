@@ -1147,17 +1147,6 @@
     "is_pinned": false
   },
   {
-    "id": "ch-1794162576427-32",
-    "name": "City Eden KinoKlassika [Not 24/7]",
-    "url": "https://cityeden.catcast.tv/content/34185/index.m3u8",
-    "logo": "https://i.imgur.com/0qGCS1S.png",
-    "category": "Movies",
-    "order": 121,
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "manual_override": true
-  },
-  {
     "id": "ch-1794162576427-33",
     "name": "City Eden KinoKomediya [Not 24/7]",
     "url": "https://cityeden.catcast.tv/content/41331/index.m3u8",
