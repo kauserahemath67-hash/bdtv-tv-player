@@ -159,7 +159,7 @@
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/41.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1794166482825-9",
     "order": 12,
     "manual_override": false,
