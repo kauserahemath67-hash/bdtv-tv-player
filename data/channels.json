@@ -310,7 +310,7 @@
     "order": 24,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": "http://138.59.227.20:8000",
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
