@@ -105,7 +105,11 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-8",
-    "order": 9
+    "order": 9,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Ten Cricket",
