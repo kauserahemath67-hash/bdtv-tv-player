@@ -1511,20 +1511,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Anime x HIDIVE",
-    "logo": "https://i.imgur.com/v0BlxCa.png",
-    "category": "Movies",
-    "url": "https://d3f088nnrrvkwf.cloudfront.net/v1/amc_anime_x_hidive_1/samsungheadend_us/latest/main/hls/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793938736645-32",
-    "order": 117,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "manual_override": true
-  },
-  {
     "name": "City Eden KinoFantastika [Not 24/7]",
     "logo": "https://i.imgur.com/I64FeIO.png",
     "category": "Movies",
@@ -4204,6 +4190,20 @@
     "proxy_user_agent": null
   },
   {
+    "id": "ch-1794129440800",
+    "name": "Anime",
+    "category": "News",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz9WQGA_vzYTD57ijnQFpufT4aA458RI128Ut0pO9-w&s=10",
+    "url": "https://d2nqmwm1ndpgi2.cloudfront.net/playlist.m3u8",
+    "is_pinned": false,
+    "order": 322,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
     "id": "ch-1793982021420",
     "name": "SONIC",
     "category": "News",
@@ -4226,20 +4226,6 @@
     "is_pinned": false,
     "id": "ch-1793938736645-258",
     "order": 324,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794129440800",
-    "name": "Anime",
-    "category": "News",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz9WQGA_vzYTD57ijnQFpufT4aA458RI128Ut0pO9-w&s=10",
-    "url": "https://d2nqmwm1ndpgi2.cloudfront.net/playlist.m3u8",
-    "is_pinned": false,
-    "order": 322,
-    "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
