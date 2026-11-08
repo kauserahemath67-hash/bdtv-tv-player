@@ -64,8 +64,8 @@
     "is_pinned": true,
     "id": "ch-1793938736645-216",
     "order": 5,
-    "use_proxy": false,
-    "proxy_referer": "http://103.135.253.32:8080/",
+    "use_proxy": true,
+    "proxy_referer": null,
     "proxy_user_agent": null,
     "manual_override": true
   },
