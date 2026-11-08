@@ -2395,7 +2395,7 @@
     "manual_override": false
   },
   {
-    "name": "MovieSphere Gold WFXT (1080p)",
+    "name": "MovieSphere Gold WFXT",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/MovieSphere_Gold_2025_logo.svg/500px-MovieSphere_Gold_2025_logo.svg.png",
     "category": "Movies",
     "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01438-ewscrippscompan-ionmystery-tablo/playlist.m3u8",
@@ -2405,7 +2405,8 @@
     "order": 181,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "MovieSphere UK (1080p)",
