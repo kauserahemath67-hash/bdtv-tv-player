@@ -1510,7 +1510,7 @@
     "manual_override": false
   },
   {
-    "name": "City Eden KinoDetektiv [Not 24/7]",
+    "name": "City Eden KinoDetektiv",
     "logo": "https://i.imgur.com/9rKHwBV.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/41327/index.m3u8",
@@ -1520,7 +1520,8 @@
     "order": 116,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "City Eden KinoFantastika [Not 24/7]",
