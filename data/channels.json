@@ -3314,5 +3314,19 @@
     "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794170219383",
+    "name": "FilmRise Anime",
+    "category": "Entertainment",
+    "logo": "https://image.roku.com/developer_channels/prod/1455341b423d13d644edde109522e423732367a2169f552322aa14a614e2654d.png",
+    "url": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8",
+    "is_pinned": false,
+    "order": 315,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
