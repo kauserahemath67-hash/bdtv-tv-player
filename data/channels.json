@@ -2478,7 +2478,7 @@
     "manual_override": false
   },
   {
-    "name": "NEW K.MOVIES (1080p)",
+    "name": "NEW K.MOVIES",
     "logo": "https://i.imgur.com/wCgirjc.png",
     "category": "Movies",
     "url": "https://ads.its-newid.net/api/manifest.m3u8?ads.service_id=GB1700007PK&channel_id=newid_343&tp=samsung_tvplus",
@@ -2488,7 +2488,8 @@
     "order": 187,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "NH BollyFlix (1080p)",
