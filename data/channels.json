@@ -3300,7 +3300,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Warner TV Asia (720p)",
+    "name": "Warner TV Asia",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warner2018LA.png/960px-Warner2018LA.png",
     "category": "Movies",
     "url": "https://cdn4.skygo.mn/live/disk1/Warner/HLSv3-FTA/Warner.m3u8",
@@ -3310,7 +3310,8 @@
     "order": 254,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Watch it Scream!",
