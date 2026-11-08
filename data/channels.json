@@ -3326,7 +3326,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Whiplash Cinema (480p)",
+    "name": "Whiplash Cinema",
     "logo": "https://whiplash.cc/assets/img/channels/whiplashcinema.png",
     "category": "Movies",
     "url": "https://cdn.whiplash.cc/whiplash-cinema/index.m3u8",
@@ -3336,7 +3336,8 @@
     "order": 256,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Wu Tang Collection",
