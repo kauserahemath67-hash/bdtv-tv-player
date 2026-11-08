@@ -2974,7 +2974,7 @@
     "manual_override": false
   },
   {
-    "name": "Rotana Cinema KSA (1080p) [Geo-blocked]",
+    "name": "Rotana Cinema KSA",
     "logo": "https://i.imgur.com/pGgp38I.png",
     "category": "Movies",
     "url": "https://rotana.hibridcdn.net/rotananet/cinema_net-7Y83PP5adWixDF93/playlist.m3u8",
@@ -2984,7 +2984,8 @@
     "order": 227,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Runtime Espanol (720p)",
