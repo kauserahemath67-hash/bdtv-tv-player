@@ -2042,7 +2042,7 @@
   },
   {
     "name": "Kinoseriya (576p)",
-    "logo": "https://i.imgur.com/iao7zLZ.png",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCn_Bh6wFOZec7oJ9VA9bVXiyqqfTI145__AisihWzRw&s",
     "category": "Movies",
     "url": "https://fs.uplink.kz/kinoseria/mono.m3u8?token=onlinetv",
     "status": "ONLINE",
@@ -2051,7 +2051,8 @@
     "order": 158,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Kinoteatr (1080p)",
