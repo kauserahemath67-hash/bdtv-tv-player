@@ -2450,7 +2450,7 @@
     "manual_override": false
   },
   {
-    "name": "MyTime Movie Network (Spain) (1080p)",
+    "name": "MyTime Movie",
     "logo": "https://i.imgur.com/pw4NZK1.png",
     "category": "Movies",
     "url": "https://appletree-mytimespain-rakuten.amagi.tv/playlist.m3u8",
@@ -2460,7 +2460,8 @@
     "order": 185,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Nashe Novoe Kino",
