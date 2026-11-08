@@ -1104,9 +1104,9 @@
     "manual_override": false
   },
   {
-    "name": "Maxcine Kids (720p)",
+    "name": "Maxcine Kids",
     "logo": "https://gia.tv/streams/pptv/209909.png",
-    "category": "Kids",
+    "category": "General",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-209909/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -1114,7 +1114,8 @@
     "order": 86,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "24 Hour Free Movies (720p)",
