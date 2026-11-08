@@ -3053,7 +3053,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Smotrim 100% Klassika (720p)",
+    "name": "Smotrim 100% Klassika",
     "logo": "https://i.imgur.com/aASNpKq.png",
     "category": "Movies",
     "url": "https://stream.smotrim.ru/hls/fasttv03/playlist_3.m3u8",
@@ -3063,7 +3063,8 @@
     "order": 235,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Sonar Bangla",
