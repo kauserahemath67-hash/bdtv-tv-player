@@ -1774,7 +1774,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "FILMBOX+ Festival HD (1080p)",
+    "name": "FILMBOX+ Festival HD",
     "logo": "https://spiintl.com/data/files/kcfinderUploadDir/images/filmboxplus/filmbox%2Bfestival.png",
     "category": "Movies",
     "url": "https://nosignal1.antenaplay.ro/hls/fb-festival-hd/index.m3u8",
@@ -1784,7 +1784,8 @@
     "order": 136,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "FILMBOX+ Hits Romania (576p)",
