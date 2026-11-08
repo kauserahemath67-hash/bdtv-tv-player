@@ -2251,7 +2251,7 @@
   },
   {
     "name": "Meta Film TV",
-    "logo": "",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuzERqOQHZFVWKXWsVbvWnwuAmswrxjoRw4yBGn53IzckLvHjqFbtKdVo&s=10",
     "category": "Movies",
     "url": "https://metafilmhls.wns.live/hls/stream.m3u8",
     "status": "ONLINE",
@@ -2260,7 +2260,8 @@
     "order": 174,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Mix Hollywood (1080p)",
