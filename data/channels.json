@@ -618,20 +618,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "DSports",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DirecTV_Sports_Latin_America_%282018%29.png/960px-DirecTV_Sports_Latin_America_%282018%29.png",
-    "url": "http://15.204.146.163:8002/play/a00g/index.m3u8",
-    "category": "General",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1793938608079-45",
-    "order": 48,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "manual_override": true
-  },
-  {
     "name": "Channel I HD",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png",
     "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8?e=1782665440&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=e957d2959b2f3e041ef5f976b45f8055",
