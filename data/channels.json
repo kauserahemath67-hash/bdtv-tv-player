@@ -2562,7 +2562,7 @@
     "manual_override": false
   },
   {
-    "name": "Oscar Movies Bhojpuri (720p)",
+    "name": "Bhojpuri Movies",
     "logo": "https://dtil.tmsimg.com/assets/s143638_ld_h9_ab.png?lock=720x540",
     "category": "Movies",
     "url": "https://cdn.pishow.tv/ott/live/233/master.m3u8",
@@ -2572,7 +2572,8 @@
     "order": 193,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "OuterSphere (1080p)",
