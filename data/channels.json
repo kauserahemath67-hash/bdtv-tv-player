@@ -3079,7 +3079,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Soneri Cinema (360p)",
+    "name": "Soneri Cinema",
     "logo": "https://papaji.freetvindia.com/media/1056_FreeTV_Soneri_Cinema.png",
     "category": "Movies",
     "url": "https://samitaorigin.tangotv.in/SONERICINEMA/SAMITAORIGIN/index.m3u8",
@@ -3089,7 +3089,8 @@
     "order": 237,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Sony Movies",
