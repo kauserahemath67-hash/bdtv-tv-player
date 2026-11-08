@@ -3326,7 +3326,7 @@
     "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://dvu7aia8rjlfm.cloudfront.net/",
     "proxy_user_agent": null
   }
 ]
