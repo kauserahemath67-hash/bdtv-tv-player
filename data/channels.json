@@ -4025,10 +4025,10 @@
     "is_pinned": false,
     "id": "ch-1793938736645-231",
     "order": 300,
-    "use_proxy": false,
-    "proxy_referer": null,
+    "use_proxy": true,
+    "proxy_referer": "https://alixbd.com/playlistconfig",
     "proxy_user_agent": null,
-    "manual_override": false
+    "manual_override": true
   },
   {
     "name": "Sony Entertainment Television",
