@@ -1,6 +1,6 @@
 {
   "versionCode": 124,
-  "versionName": "2.3.16",
+  "versionName": "2.3.1",
   "minSupportedVersion": 100,
   "apkUrl": "https://bdtv-app.vercel.app/BDTv.apk",
   "updateTitle": "New Update Available (v2.3.16)",
@@ -8,7 +8,7 @@
     "Channels and player performance improved",
     "Smoother live streaming and bug fixes"
   ],
-  "forceUpdate": true,
+  "forceUpdate": false,
   "updateMessage": "",
-  "updatedAt": "2026-11-08T10:57:20.044Z"
+  "updatedAt": "2026-11-08T11:15:23.349Z"
 }
