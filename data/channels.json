@@ -3418,7 +3418,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Zee Cinema APAC (720p)",
+    "name": "Zee Cinema APAC",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png",
     "category": "Movies",
     "url": "https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeCinemaAPAC.m3u8",
@@ -3428,7 +3428,8 @@
     "order": 263,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "+MaisUm",
