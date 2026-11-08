@@ -245,13 +245,9 @@ class IPTVPlayer {
       // 4. নতুন ভার্সন আছে → টপ বার বাটন দেখাও
       const dlBtn = document.getElementById('btn-download-app');
       if (dlBtn) {
-        dlBtn.href = json.apkUrl || '/BDTv.apk';
         dlBtn.onclick = (e) => {
-          const b = window.AndroidApp || window.AndroidBridge;
-          if (b && typeof b.startAppUpdate === 'function') {
-            e.preventDefault();
-            b.startAppUpdate(json.apkUrl || 'https://bdtv-app.vercel.app/BDTv.apk');
-          }
+          e.preventDefault();
+          this.performSecureAppDownload(json.apkUrl, dlBtn);
         };
         dlBtn.classList.remove('hidden');
       }
@@ -267,6 +263,58 @@ class IPTVPlayer {
     }
   }
 
+  performSecureAppDownload(targetUrl, feedbackBtn) {
+    const originalText = feedbackBtn ? feedbackBtn.textContent : '';
+    if (feedbackBtn) {
+      feedbackBtn.textContent = '⏳ ডাউনলোড হচ্ছে...';
+      feedbackBtn.disabled = true;
+    }
+
+    try {
+      const bridge = window.AndroidApp || window.AndroidBridge;
+      if (bridge && typeof bridge.startAppUpdate === 'function') {
+        bridge.startAppUpdate(targetUrl || 'https://bdtv-app.vercel.app/BDTv.apk');
+        const modal = document.getElementById('update-modal');
+        if (modal) modal.classList.add('hidden');
+        if (feedbackBtn) {
+          setTimeout(() => {
+            feedbackBtn.textContent = originalText;
+            feedbackBtn.disabled = false;
+          }, 3000);
+        }
+        return;
+      }
+    } catch (err) {
+      console.warn('Native bridge trigger error');
+    }
+
+    // Fallback for browser mode: Invisible programmatic download (strictly no link shown to user)
+    try {
+      const a = document.createElement('a');
+      a.style.display = 'none';
+      a.href = targetUrl || '/BDTv.apk';
+      a.setAttribute('download', 'BDTv.apk');
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(() => {
+        try { document.body.removeChild(a); } catch (e) {}
+      }, 1000);
+
+      const modal = document.getElementById('update-modal');
+      if (modal) modal.classList.add('hidden');
+    } catch (err) {
+      // Security: Under NO circumstance show raw URL or link to the user
+      alert('ডাউনলোড শুরু করা সম্ভব হয়নি। অনুগ্রহ করে কিছুক্ষণ পর আবার চেষ্টা করুন।');
+    } finally {
+      if (feedbackBtn) {
+        setTimeout(() => {
+          feedbackBtn.textContent = originalText;
+          feedbackBtn.disabled = false;
+        }, 3000);
+      }
+    }
+  }
+
   showUpdateModal(info) {
     const modal = document.getElementById('update-modal');
     if (!modal) return;
@@ -277,7 +325,6 @@ class IPTVPlayer {
 
     if (titleEl && info.updateTitle) titleEl.textContent = info.updateTitle;
     if (verEl && info.versionName) verEl.textContent = `v${info.versionName}`;
-    if (dlBtn && info.apkUrl) dlBtn.href = info.apkUrl;
 
     if (listEl && info.changelog && Array.isArray(info.changelog)) {
       listEl.innerHTML = info.changelog.map(item => `<li>${item}</li>`).join('');
@@ -309,13 +356,9 @@ class IPTVPlayer {
 
     if (dlBtn) {
       dlBtn.onclick = (e) => {
+        e.preventDefault();
         localStorage.setItem('bdtv_update_dismissed', info.versionCode);
-        const bridge = window.AndroidApp || window.AndroidBridge;
-        if (bridge && typeof bridge.startAppUpdate === 'function') {
-          e.preventDefault();
-          bridge.startAppUpdate(info.apkUrl || 'https://bdtv-app.vercel.app/BDTv.apk');
-        }
-        modal.classList.add('hidden');
+        this.performSecureAppDownload(info.apkUrl, dlBtn);
       };
     }
   }

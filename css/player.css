@@ -1157,6 +1157,9 @@ video::-webkit-media-controls-overlay-play-button {
   font-weight: 700 !important;
   padding: 12px 28px !important;
   border-radius: 14px !important;
+  border: none !important;
+  cursor: pointer !important;
+  font-family: inherit !important;
   text-decoration: none !important;
   box-shadow: 0 4px 18px rgba(0, 102, 255, 0.45);
   transition: all 0.2s ease !important;
