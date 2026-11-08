@@ -3001,7 +3001,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Shubh Cinema TV (720p)",
+    "name": "Shubh Cinema TV",
     "logo": "https://i.imgur.com/RQhorAG.png",
     "category": "Movies",
     "url": "https://d393sxaxig6bax.cloudfront.net/out/v1/589cf2cf44bf42bb941e817a2240d62e/index.m3u8",
@@ -3011,7 +3011,8 @@
     "order": 231,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Silk Way Cinema",
