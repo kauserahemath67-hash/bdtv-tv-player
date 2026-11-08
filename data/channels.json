@@ -3147,6 +3147,10 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-320",
-    "order": 315
+    "order": 315,
+    "manual_override": false,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
