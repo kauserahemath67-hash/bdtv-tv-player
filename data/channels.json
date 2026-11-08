@@ -1566,7 +1566,7 @@
     "manual_override": false
   },
   {
-    "name": "City Eden KinoMistika [Not 24/7]",
+    "name": "City Eden KinoMistika",
     "logo": "https://i.imgur.com/s1Pid0K.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/40783/index.m3u8",
@@ -1576,7 +1576,8 @@
     "order": 121,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Classic Cinema (240p) [Not 24/7]",
