@@ -3209,8 +3209,9 @@
     "logo": "https://pbs.twimg.com/profile_images/618036953/music_india_400x400.png",
     "category": "General",
     "order": 317,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-56",
@@ -3249,8 +3250,9 @@
     "logo": "https://i.ibb.co.com/01gmWfz/images-1.webp",
     "category": "General",
     "order": 321,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-60",
@@ -3259,8 +3261,9 @@
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/c/c4/Khushboo_Bangla_logo_%282016-present%29.png",
     "category": "General",
     "order": 322,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-61",
