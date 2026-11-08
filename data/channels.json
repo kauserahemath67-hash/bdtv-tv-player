@@ -1524,7 +1524,7 @@
     "manual_override": false
   },
   {
-    "name": "City Eden KinoFantastika [Not 24/7]",
+    "name": "City Eden KinoFantastika",
     "logo": "https://i.imgur.com/I64FeIO.png",
     "category": "Movies",
     "url": "https://cityeden.catcast.tv/content/45268/index.m3u8",
@@ -1534,7 +1534,8 @@
     "order": 118,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "City Eden KinoKlassika [Not 24/7]",
