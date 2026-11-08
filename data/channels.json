@@ -4230,5 +4230,19 @@
     "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794129440800",
+    "name": "Anime",
+    "category": "News",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz9WQGA_vzYTD57ijnQFpufT4aA458RI128Ut0pO9-w&s=10",
+    "url": "https://d2nqmwm1ndpgi2.cloudfront.net/playlist.m3u8",
+    "is_pinned": false,
+    "order": 322,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
