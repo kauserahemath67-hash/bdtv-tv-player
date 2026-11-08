@@ -305,7 +305,7 @@
     "url": "http://138.59.227.20:8000/play/a085/index.m3u8",
     "category": "General",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793938608079-21",
     "order": 24,
     "manual_override": true,
