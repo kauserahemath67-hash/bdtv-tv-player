@@ -322,7 +322,10 @@
     "is_pinned": false,
     "id": "ch-1794162467445-31",
     "order": 32,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony MAX 2",
