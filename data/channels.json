@@ -874,30 +874,33 @@
     "logo": "https://assets-prod.services.toffeelive.com/itdbVKEBalKyvLQI94RR/posters/d990ee33-c37b-4806-86e1-f0998f7db239.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/5.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166026224-2",
-    "order": 85
+    "order": 85,
+    "manual_override": true
   },
   {
     "name": "SAFF Live 2",
     "logo": "https://assets-prod.services.toffeelive.com/9dijmqEBalKyvLQIIAFj/posters/c6ab0af9-2523-4693-994c-82e7bc1e5483.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/7.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166026224-3",
-    "order": 86
+    "order": 86,
+    "manual_override": true
   },
   {
     "name": "SAFF Live 3 Bangla",
     "logo": "https://assets-prod.services.toffeelive.com/I4fIpqEBJIOHmUelirBF/posters/da8ffef4-f109-4dcc-a430-8020a21b81ce.png",
     "category": "Sports",
     "url": "https://alixbd.com/playlistconfig/channel/4.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166026224-4",
-    "order": 87
+    "order": 87,
+    "manual_override": true
   },
   {
     "name": "SAFF Live 4 Bangla",
