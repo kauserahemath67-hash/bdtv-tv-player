@@ -3010,8 +3010,9 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/2/20/Green_TV_Logo.png",
     "category": "General",
     "order": 298,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-37",
@@ -3030,8 +3031,9 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770188008067.png",
     "category": "General",
     "order": 300,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-39",
@@ -3090,8 +3092,9 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1742713000749.png",
     "category": "General",
     "order": 306,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-45",
