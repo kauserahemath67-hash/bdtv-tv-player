@@ -2932,7 +2932,7 @@
     "manual_override": false
   },
   {
-    "name": "Rakuten TV Top Movies Italy (1080p)",
+    "name": "Rakuten TV Top Movies Italy",
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
     "url": "https://d4a4999341764c67a67e9ec9eb3790ab.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5984/master.m3u8",
@@ -2942,7 +2942,8 @@
     "order": 224,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Rakuten TV Top Movies UK (1080p)",
