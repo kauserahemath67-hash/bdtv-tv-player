@@ -2734,8 +2734,9 @@
     "logo": "https://images.toffeelive.com/images/program/606/logo/240x240/mobile_logo_689539001672145843.png",
     "category": "General",
     "order": 271,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605192-10",
@@ -2774,8 +2775,9 @@
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/6/69/Jalsha_Movies_HD_alt.png",
     "category": "General",
     "order": 275,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605192-14",
@@ -2794,8 +2796,9 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Colors_Bangla_Cinema.png",
     "category": "General",
     "order": 277,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605192-16",
