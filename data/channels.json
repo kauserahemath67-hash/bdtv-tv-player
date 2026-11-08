@@ -2409,7 +2409,7 @@
     "manual_override": false
   },
   {
-    "name": "MovieSphere UK (1080p)",
+    "name": "MovieSphere UK",
     "logo": "https://i.imgur.com/h1ejU90.png",
     "category": "Movies",
     "url": "https://moviesphereuk-samsunguk.amagi.tv/playlist.m3u8",
@@ -2419,7 +2419,8 @@
     "order": 182,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "My Cinema Europe",
