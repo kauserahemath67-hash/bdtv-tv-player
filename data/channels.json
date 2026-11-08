@@ -1230,7 +1230,7 @@
     "manual_override": false
   },
   {
-    "name": "B4U Bhojpuri Plus (1080p)",
+    "name": "B4U Bhojpuri Plus",
     "logo": "https://i.imgur.com/NwOQUDp.png",
     "category": "Movies",
     "url": "https://cc-t2mudtkmuz4wb.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-t2mudtkmuz4wb/B4U_Bhojpuri/master.m3u8",
@@ -1240,7 +1240,8 @@
     "order": 96,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "B4U Movies (576p)",
