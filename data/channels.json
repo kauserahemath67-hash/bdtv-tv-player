@@ -1720,7 +1720,7 @@
     "manual_override": false
   },
   {
-    "name": "Epic Bhojpuri Digital (1080p)",
+    "name": "Epic Bhojpuri Digital",
     "logo": "https://dtil.tmsimg.com/assets/GNLZZGG0032BVJ8.png?lock=720x540",
     "category": "Movies",
     "url": "https://cc-8hy4a26pz2uos.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8hy4a26pz2uos/playlist.m3u8",
@@ -1730,7 +1730,8 @@
     "order": 132,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "ETV Cinema (396p)",
