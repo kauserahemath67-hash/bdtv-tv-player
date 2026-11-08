@@ -731,15 +731,14 @@ function resolveReport(id) {
 
 // Version (GitHub-backed with fallback)
 const defaultVersion = {
-  versionCode: 108,
-  versionName: '2.3.0',
+  versionCode: 124,
+  versionName: '2.3.16',
   minSupportedVersion: 100,
   apkUrl: 'https://bdtv-app.vercel.app/BDTv.apk',
-  updateTitle: 'নতুন আপডেট উপলব্ধ!',
+  updateTitle: 'New Update Available (v2.3.16)',
   changelog: [
-    'প্লেয়ারের পারফরম্যান্স বৃদ্ধি ও বাফারিং অপ্টিমাইজেশন',
-    'সাউন্ড ডিলে ও চ্যানেল সুইচ সম্পূর্ণ ফিক্স',
-    'অটো-প্লে এবং ইন-অ্যাপ আপডেট সিস্টেম সক্রিয়'
+    'Channels and player performance improved',
+    'Smoother live streaming and bug fixes'
   ],
   forceUpdate: false,
   updateMessage: ''

@@ -1,15 +1,14 @@
 {
-  "versionCode": 123,
-  "versionName": "2.3.15",
+  "versionCode": 124,
+  "versionName": "2.3.16",
   "minSupportedVersion": 100,
   "apkUrl": "https://bdtv-app.vercel.app/BDTv.apk",
-  "updateTitle": "TV কীবোর্ড ও রিমোট ফিক্স আপডেট 📺 (v2.3.15)",
+  "updateTitle": "New Update Available (v2.3.16)",
   "changelog": [
-    "TV রিমোট দিয়ে VIP লগইন: কীবোর্ড এখন সবসময় দেখাবে",
-    "Arrow key চাপলে keyboard লুকাবে না",
-    "আপডেট মোডাল, VIP মোডাল, Expiry screen — সব রিমোটে কাজ করবে",
-    "Android Back button সব screen এ সঠিকভাবে কাজ করবে"
+    "Channels and player performance improved",
+    "Smoother live streaming and bug fixes"
   ],
-  "forceUpdate": true,
-  "updatedAt": "2026-11-04T01:18:00.000Z"
+  "forceUpdate": false,
+  "updateMessage": "",
+  "updatedAt": "2026-11-08T10:45:00.000Z"
 }

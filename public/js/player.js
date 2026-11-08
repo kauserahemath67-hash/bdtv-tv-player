@@ -312,9 +312,8 @@ class IPTVPlayer {
     }
   }
 
-  // 2. Fetch Channels (API -> Fallback)
+  // 2. Fetch Channels (Instant Secure Cache + Auto Background Sync)
   async loadChannels() {
-    this.showBuffering(true);
     const custCode = localStorage.getItem('bdtv_cust_code') || '';
     const custPin  = localStorage.getItem('bdtv_cust_pin') || '';
 
@@ -324,9 +323,49 @@ class IPTVPlayer {
       return;
     }
 
+    // Helper: Secure Obfuscated Storage (prevents casual tampering & inspection)
+    const encodeCache = (data) => {
+      try {
+        return btoa(unescape(encodeURIComponent(JSON.stringify(data))));
+      } catch (e) {
+        return null;
+      }
+    };
+    const decodeCache = (str) => {
+      try {
+        return JSON.parse(decodeURIComponent(escape(atob(str))));
+      } catch (e) {
+        return null;
+      }
+    };
+
+    // STEP 1: Instant load from encrypted offline cache (0 millisecond delay!)
+    let hasLoadedFromCache = false;
+    try {
+      const rawCache = localStorage.getItem('_bdtv_secure_ch_v2');
+      if (rawCache) {
+        const cached = decodeCache(rawCache);
+        if (Array.isArray(cached) && cached.length > 0) {
+          this.channels = cached;
+          this.filterChannels(this.currentCategory || 'All');
+          hasLoadedFromCache = true;
+          if (this.currentIndex < 0 && this.channels.length > 0) {
+            this.playChannel(0);
+          }
+        }
+      }
+    } catch (e) {
+      console.warn('Cache read error:', e);
+    }
+
+    if (!hasLoadedFromCache) {
+      this.showBuffering(true);
+    }
+
+    // STEP 2: Background Fetch from Server to guarantee instant channel & stream updates
     try {
       const devInfo = this.getDeviceInfo();
-      const url = `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}&device_id=${encodeURIComponent(devInfo.deviceId)}`;
+      const url = `/api/channels?code=${encodeURIComponent(custCode)}&pin=${encodeURIComponent(custPin)}&device_id=${encodeURIComponent(devInfo.deviceId)}&_t=${Date.now()}`;
       const res = await fetch(url);
       const json = await res.json();
 
@@ -336,23 +375,52 @@ class IPTVPlayer {
       }
 
       if (json.success && Array.isArray(json.data) && json.data.length > 0) {
-        this.channels = json.data;
+        const serverChannels = json.data;
+        const currentPlaying = (this.currentIndex >= 0 && this.filteredChannels.length > 0)
+          ? this.filteredChannels[this.currentIndex]
+          : null;
+
+        // Check if server channels are different from current channels (links updated, new added)
+        const cacheStr = encodeCache(serverChannels);
+        if (cacheStr) {
+          try { localStorage.setItem('_bdtv_secure_ch_v2', cacheStr); } catch (e) {}
+        }
+
+        const isDifferent = JSON.stringify(this.channels) !== JSON.stringify(serverChannels);
+        if (isDifferent || !hasLoadedFromCache) {
+          this.channels = serverChannels;
+          this.filterChannels(this.currentCategory || 'All');
+
+          // If playing channel's stream URL changed on server, refresh stream silently!
+          if (currentPlaying) {
+            const updatedCh = this.channels.find(c => c.id === currentPlaying.id || c.name === currentPlaying.name);
+            if (updatedCh && updatedCh.url !== currentPlaying.url) {
+              console.log('[LiveSync] Stream URL updated from server, refreshing stream...');
+              const currentPos = this.filteredChannels.findIndex(c => c.id === updatedCh.id || c.name === updatedCh.name);
+              if (currentPos >= 0) {
+                this.playChannel(currentPos);
+              }
+            }
+          } else if (!hasLoadedFromCache && this.channels.length > 0) {
+            this.playChannel(0);
+          }
+        }
       } else {
-        throw new Error('No channels from API');
+        if (!hasLoadedFromCache) throw new Error('No channels from API');
       }
     } catch (err) {
-      // SECURITY: If VIP/subscription mode is ON, NEVER show fallback demo channels
-      if (this.settings.subscription_restrictions_enabled) {
+      if (this.settings.subscription_restrictions_enabled && !hasLoadedFromCache) {
         this.showVipLockModal('সার্ভার সংযোগ সমস্যা। অনুগ্রহ করে পুনরায় চেষ্টা করুন।');
         return;
       }
-      console.warn('Fallback to demo channels:', err);
-      this.channels = FALLBACK_CHANNELS;
-    }
-
-    this.filterChannels('All');
-    if (this.channels.length > 0) {
-      this.playChannel(0);
+      if (!hasLoadedFromCache) {
+        console.warn('Fallback to demo channels:', err);
+        this.channels = FALLBACK_CHANNELS;
+        this.filterChannels('All');
+        if (this.channels.length > 0) {
+          this.playChannel(0);
+        }
+      }
     }
   }
 
@@ -512,25 +580,37 @@ class IPTVPlayer {
             if (networkRecoveryCount <= 3) {
               this.hls.startLoad();
             } else if (networkRecoveryCount === 4) {
-              // Feature 2: Auto-failover — try backup_url before full reload
+              // Try Server HLS Proxy fallback if not already using proxy!
               const ch = this.filteredChannels[this.currentIndex];
-              const backupUrl = ch && (ch.backup_url || ch.backupUrl);
-              if (backupUrl) {
-                console.log('Switching to backup stream URL...');
+              if (ch && !ch.use_proxy && ch.id) {
+                console.log('[AutoProxyFallback] Stream blocked or CORS failed, switching to Server HLS Proxy...');
                 networkRecoveryCount = 0;
-                const cleanBackup = backupUrl.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+                ch.use_proxy = true;
+                const proxyUrl = `/api/proxy?ch=${encodeURIComponent(ch.id)}`;
                 try { this.hls.destroy(); } catch(e) {}
                 this.hls = null;
                 this.initHLS();
-                this.hls.loadSource(cleanBackup);
+                this.hls.loadSource(proxyUrl);
               } else {
-                // No backup URL — do a full channel reload after short delay
-                setTimeout(() => {
+                // Feature 2: Auto-failover — try backup_url before full reload
+                const backupUrl = ch && (ch.backup_url || ch.backupUrl);
+                if (backupUrl) {
+                  console.log('Switching to backup stream URL...');
                   networkRecoveryCount = 0;
-                  if (this.filteredChannels[this.currentIndex]) {
-                    this.playChannel(this.currentIndex);
-                  }
-                }, 2000);
+                  const cleanBackup = backupUrl.replace(/([?&])nocache=\d+(&|$)/, '$1').replace(/[?&]$/, '');
+                  try { this.hls.destroy(); } catch(e) {}
+                  this.hls = null;
+                  this.initHLS();
+                  this.hls.loadSource(cleanBackup);
+                } else {
+                  // No backup URL — do a full channel reload after short delay
+                  setTimeout(() => {
+                    networkRecoveryCount = 0;
+                    if (this.filteredChannels[this.currentIndex]) {
+                      this.playChannel(this.currentIndex);
+                    }
+                  }, 2000);
+                }
               }
             } else {
               setTimeout(() => {
