@@ -5,9 +5,13 @@
     "category": "General",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938608079-0",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1794165492004-0",
-    "order": 1
+    "order": 1,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "A Sports",
