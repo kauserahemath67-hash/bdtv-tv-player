@@ -1940,7 +1940,7 @@
     "manual_override": false
   },
   {
-    "name": "Horoshee Kino (720p)",
+    "name": "Horoshee Kino",
     "logo": "https://i.imgur.com/ZbOqfy4.png",
     "category": "Movies",
     "url": "https://live-rian.cdnvideo.ru/rian/rus-radio/playlist.m3u8",
@@ -1950,7 +1950,8 @@
     "order": 148,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "iFilm 2",
