@@ -3205,8 +3205,12 @@
     "logo": "https://i.postimg.cc/T10jC1zQ/1000086945.jpg",
     "category": "General",
     "order": 314,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "id": "ch-1794162605194-57",
