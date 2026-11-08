@@ -2474,7 +2474,7 @@
   },
   {
     "name": "Nostalgia TV (1080p)",
-    "logo": "https://assets.antenaplay.ro/2026/03/10/fX5tvuPLymvvR8lQmwO7.png",
+    "logo": "https://yt3.googleusercontent.com/PQ4-0skFIjYDATNr8uuXPsdPDhRfVlvZM-jzvEvsf780eb9RJr7oaRT7a5O0PZ--F1CplAv3HA=s900-c-k-c0x00ffffff-no-rj",
     "category": "Movies",
     "url": "https://hls02ns.antenaplay.ro/hls/nostalgia-hd/index.m3u8",
     "status": "ONLINE",
@@ -2483,7 +2483,8 @@
     "order": 191,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "ON Movies (720p)",
