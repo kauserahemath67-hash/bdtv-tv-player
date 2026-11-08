@@ -2215,7 +2215,7 @@
     "manual_override": false
   },
   {
-    "name": "Maxcine (720p)",
+    "name": "Maxcine",
     "logo": "https://gia.tv/streams/pptv/208138.png",
     "category": "Movies",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-208138/playlist.m3u8",
@@ -2225,7 +2225,8 @@
     "order": 168,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Maxcine 2 (720p)",
