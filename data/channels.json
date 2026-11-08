@@ -1258,7 +1258,7 @@
     "manual_override": false
   },
   {
-    "name": "Bhojpuri Cinema (720p)",
+    "name": "Bhojpuri Cinema",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BHOJPURI_CINEMA/images/LOGO_HD/image.png",
     "category": "Movies",
     "url": "https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8",
@@ -1268,7 +1268,8 @@
     "order": 98,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Bollywood Classic Romania (576p)",
