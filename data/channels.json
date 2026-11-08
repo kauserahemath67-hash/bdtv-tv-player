@@ -146,7 +146,7 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSDFd1LJqPQMhYnIIpskiG9muZ7WJbNJt3jcLxmAdbAgCs2pxLpww4N8k&s=10",
     "category": "General",
     "order": 11,
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": true,
     "manual_override": true,
     "use_proxy": false,
