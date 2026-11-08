@@ -910,7 +910,7 @@
     "order": 70,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://jmp2.uk/",
     "proxy_user_agent": null
   },
   {
