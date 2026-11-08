@@ -1314,7 +1314,7 @@
   },
   {
     "name": "Cafe Film",
-    "logo": "",
+    "logo": "https://www.logo-designer.co/storage/2013/06/Cafe-Kino-coffee-cinema-logo-design-identity-052B-creative-agency.jpg",
     "category": "Movies",
     "url": "https://cafefhls.wns.live/hls/stream.m3u8",
     "status": "ONLINE",
@@ -1323,7 +1323,8 @@
     "order": 102,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Canal Cine Dios",
@@ -4232,20 +4233,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "CCTV-8",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBO8UqIs3A2Qx9wEU-jnSP4kx5MjvZOfk3ICZjHjOlng&s=10",
-    "category": "General",
-    "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1793938736645-258",
-    "order": 324,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "id": "ch-1794129712091",
     "name": "Hungama TV",
     "category": "News",
@@ -4254,6 +4241,20 @@
     "is_pinned": false,
     "order": 323,
     "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "name": "CCTV-8",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBO8UqIs3A2Qx9wEU-jnSP4kx5MjvZOfk3ICZjHjOlng&s=10",
+    "category": "General",
+    "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1793938736645-258",
+    "order": 324,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
