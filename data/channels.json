@@ -72,7 +72,7 @@
   {
     "name": "PTV Sports",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
-    "url": "https://mz01.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=lZRdjmtk_qlubMetMJwwdw&expires=1794137273&ch=ptvskpr&s=40eaf8c8e4bbe3cf4eb0cc4d1ed29d57",
+    "url": "https://mz02.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=hmj7JVZurJp6SpH5OJsR4Q&expires=1794166470&ch=ptvskpr&s=182cee06a8026bc104660910c5be1114",
     "category": "General",
     "status": "OFFLINE",
     "is_pinned": true,
