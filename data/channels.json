@@ -618,12 +618,12 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Green Tv",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/2/20/Green_TV_Logo.png",
-    "url": "https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/chunks.m3u8",
+    "name": "DSports",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DirecTV_Sports_Latin_America_%282018%29.png/960px-DirecTV_Sports_Latin_America_%282018%29.png",
+    "url": "http://38.187.7.252:8000/play/a03d/index.m3u8",
     "category": "General",
     "status": "OFFLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793938608079-45",
     "order": 48,
     "use_proxy": true,
