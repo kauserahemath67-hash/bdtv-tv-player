@@ -1221,10 +1221,11 @@
     "logo": "https://i.imgur.com/ZH5LuXU.png",
     "category": "Movies",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938736645-42",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-121",
-    "order": 120
+    "order": 120,
+    "manual_override": true
   },
   {
     "name": "DUST",
@@ -2621,20 +2622,22 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ESPN3_Logo.png/960px-ESPN3_Logo.png",
     "category": "Sports",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938736645-183",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-262",
-    "order": 260
+    "order": 260,
+    "manual_override": true
   },
   {
     "name": "ESPN Premium",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png",
     "category": "Sports",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938736645-184",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-263",
-    "order": 261
+    "order": 261,
+    "manual_override": true
   },
   {
     "name": "AWSN TV",
