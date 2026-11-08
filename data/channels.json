@@ -3002,7 +3002,7 @@
     "manual_override": false
   },
   {
-    "name": "ScreamIN (1080p)",
+    "name": "ScreamIN",
     "logo": "https://i.imgur.com/tGmKbil.png",
     "category": "Movies",
     "url": "https://rakutenaa-zylo-screamin-rakuten-p11ej.amagi.tv/playlist/rakutenAA-zylo-screamin-rakuten/playlist.m3u8",
@@ -3012,7 +3012,8 @@
     "order": 229,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Shemaroo Josh",
