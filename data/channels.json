@@ -42,6 +42,20 @@
     "proxy_user_agent": null
   },
   {
+    "id": "ch-1794162605192-2",
+    "name": "A Sports",
+    "url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8",
+    "logo": "https://i.postimg.cc/767hjG0z/channels4-profile-(1).jpg",
+    "category": "General",
+    "order": 4,
+    "status": "ONLINE",
+    "is_pinned": true,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
     "name": "Sony Ten Sports 2 HD",
     "logo": "https://assets-prod.services.toffeelive.com/sy5m-JQBv9knK3AHYTTk/posters/5e40bf0e-633f-4d37-a3b2-3d606f0ac19a.png",
     "category": "Sports",
@@ -49,24 +63,10 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794162467445-8",
-    "order": 4,
+    "order": 5,
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794162605192-2",
-    "name": "A Sports",
-    "url": "https://tvsen6.aynaott.com/zv68oqPDu7MZZwmHhRxt/tracks-v1a1/mono.ts.m3u8",
-    "logo": "https://i.postimg.cc/767hjG0z/channels4-profile-(1).jpg",
-    "category": "General",
-    "order": 5,
-    "status": "ONLINE",
-    "is_pinned": true,
-    "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
