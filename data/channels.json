@@ -14,20 +14,6 @@
     "proxy_user_agent": null
   },
   {
-    "id": "ch-1794162605192-0",
-    "name": "T Sports",
-    "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/tracks-v1a1/mono.ts.m3u8",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "category": "General",
-    "order": 2,
-    "status": "ONLINE",
-    "is_pinned": true,
-    "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "name": "Sony Ten Sports 1 HD",
     "logo": "https://assets-prod.services.toffeelive.com/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
     "category": "Sports",
@@ -35,7 +21,21 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794162467445-7",
+    "order": 2,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794162605192-0",
+    "name": "T Sports",
+    "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/tracks-v1a1/mono.ts.m3u8",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "category": "General",
     "order": 3,
+    "status": "ONLINE",
+    "is_pinned": true,
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
