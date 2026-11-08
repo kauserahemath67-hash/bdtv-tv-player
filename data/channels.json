@@ -114,14 +114,14 @@
   {
     "id": "ch-1794162605192-4",
     "name": "Star Sports 1",
-    "url": "https://footfytv.pro/proxy/direct?url=https://flussonic.defineatoz.com/Starsports1/tracks-v1a1/mono.m3u8",
+    "url": "https://p4kp.rjmbts.workers.dev/25121.m3u8",
     "logo": "https://i.postimg.cc/rmQ7XZg7/20241005-170805.png",
     "category": "General",
     "order": 9,
     "status": "OFFLINE",
     "is_pinned": true,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null
   },
