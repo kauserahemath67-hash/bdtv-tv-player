@@ -734,7 +734,7 @@ const defaultVersion = {
   versionCode: 124,
   versionName: '2.3.16',
   minSupportedVersion: 100,
-  apkUrl: 'https://bdtv-app.vercel.app/bdtv-latest.apk',
+  apkUrl: 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.3.16/BDTv.apk',
   updateTitle: 'New Update Available (v2.3.16)',
   changelog: [
     'Channels and player performance improved',
