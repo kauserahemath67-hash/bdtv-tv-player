@@ -2947,10 +2947,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/ltPQX5UBm1RY_In7b3F1/posters/d039d9df-9877-4969-a0b6-56888ebe2385.png",
     "category": "General",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938736645-235",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-296",
-    "order": 292
+    "order": 292,
+    "manual_override": true
   },
   {
     "name": "Sony MAX HD",
@@ -3117,10 +3118,11 @@
     "logo": "https://assets-prod.services.toffeelive.com/JS1AqZgBNnOkwJLWlwg-/posters/74a3b409-4bc6-4055-8960-cd27cb7ccc1f.png",
     "category": "News",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793981668004",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-314",
-    "order": 309
+    "order": 309,
+    "manual_override": true
   },
   {
     "name": "& Pictures HD",
@@ -3137,10 +3139,11 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHz9WQGA_vzYTD57ijnQFpufT4aA458RI128Ut0pO9-w&s=10",
     "category": "News",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1794129440800",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-316",
-    "order": 311
+    "order": 311,
+    "manual_override": true
   },
   {
     "name": "Anime x HIDIVE",
