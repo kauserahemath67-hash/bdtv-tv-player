@@ -1143,8 +1143,8 @@
     "proxy_user_agent": null
   },
   {
-    "name": "30A TV Classic Movies (720p)",
-    "logo": "",
+    "name": "30A TV Classic Movies",
+    "logo": "https://30a.media/wp-content/uploads/2023/05/30atvmovies-300x300-mometu.jpg",
     "category": "Movies",
     "url": "https://30a-tv.com/feeds/pzaz/30atvmovies.m3u8",
     "status": "ONLINE",
@@ -1153,7 +1153,8 @@
     "order": 88,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "ABN Bible Movies Channel (720p)",
