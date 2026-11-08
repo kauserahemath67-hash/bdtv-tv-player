@@ -1454,7 +1454,7 @@
     "manual_override": false
   },
   {
-    "name": "CineWow (576i)",
+    "name": "CineWow",
     "logo": "https://cdn.gamma.app/tfnglu66dwji8hw/d36b2d5c45a544749b3739d46fb119cc/original/CineWow.png",
     "category": "Movies",
     "url": "https://hls01ns.antenaplay.ro/hls/cinewow-sd/index.m3u8",
@@ -1464,7 +1464,8 @@
     "order": 112,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "City Eden KinoAction [Not 24/7]",
