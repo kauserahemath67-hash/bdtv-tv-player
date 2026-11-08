@@ -140,20 +140,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Fox Sports 1 US",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdtnHkHo0zPNEI-TmMMvJuMcTuhNV7QIl_aHz-d9m1w&s=10",
-    "category": "General",
-    "url": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1794166482825-58",
-    "order": 11,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "name": "Sony Ten Cricket",
     "logo": "https://assets-prod.services.toffeelive.com/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp",
     "category": "Sports",
@@ -161,10 +147,24 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-9",
-    "order": 12,
+    "order": 11,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_user_agent": null
+  },
+  {
+    "name": "Fox Sports 1 US",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdtnHkHo0zPNEI-TmMMvJuMcTuhNV7QIl_aHz-d9m1w&s=10",
+    "category": "General",
+    "url": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": true,
+    "id": "ch-1794166482825-58",
+    "order": 12,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
