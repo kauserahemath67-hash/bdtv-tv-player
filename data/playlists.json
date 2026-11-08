@@ -1,5 +1,14 @@
 [
   {
+    "name": "alixbd",
+    "url": "https://raw.githubusercontent.com/kauserahamed424-debug/HDTV/main/playlists/alixbd.m3u",
+    "format": "M3U Playlist",
+    "channelCount": 81,
+    "active": true,
+    "id": "pl-1794165933844",
+    "savedAt": "2026-11-08T19:25:33.844Z"
+  },
+  {
     "name": "https://raw.githubusercontent.com/kauserahamed424-debug/HDTV/main/playlists/live.m3u",
     "url": "https://raw.githubusercontent.com/kauserahamed424-debug/HDTV/main/playlists/live.m3u",
     "format": "M3U Playlist",
