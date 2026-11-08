@@ -665,7 +665,7 @@
     "id": "ch-1794166482825-59",
     "order": 59,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": "https://www.jagobd.com/",
     "proxy_user_agent": "Mozilla/5.0"
   },
