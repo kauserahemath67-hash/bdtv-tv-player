@@ -2624,7 +2624,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Popcorn Central (1080p)",
+    "name": "Popcorn Central",
     "logo": "https://i.imgur.com/ULGVjyC.png",
     "category": "Movies",
     "url": "https://oly-ftvpc.otteravision.com/oly/ftvpc/ftvpc.m3u8",
@@ -2634,7 +2634,8 @@
     "order": 202,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Public Movies (576p)",
