@@ -2604,8 +2604,12 @@
     "logo": "https://i.imgur.com/FcaTUym.png",
     "category": "Movies",
     "order": 256,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "id": "ch-1794162576432-174",
