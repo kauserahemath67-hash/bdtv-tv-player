@@ -2118,7 +2118,7 @@
     "manual_override": false
   },
   {
-    "name": "Maah TV (720p)",
+    "name": "Maah TV",
     "logo": "https://i.imgur.com/FkyueH6.png",
     "category": "Movies",
     "url": "https://hls.maahtv.live/hls/stream.m3u8",
@@ -2128,7 +2128,8 @@
     "order": 161,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Made In Hollywood",
