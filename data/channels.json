@@ -300,9 +300,9 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Zee Bangla Sonar",
-    "logo": "https://i.ytimg.com/vi/uJJaKXtOqsw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAZZk6nxkDN1SXg6HkPRsgqbF8QlQ",
-    "url": "https://ay-obiram.emonsa4.workers.dev/zee-bangla-sonar.m3u8",
+    "name": "Fox Sports",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/960px-FOX_Sports_logo.svg.png",
+    "url": "http://138.59.227.20:8000/play/a085/index.m3u8",
     "category": "General",
     "status": "OFFLINE",
     "is_pinned": false,
