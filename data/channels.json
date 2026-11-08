@@ -3431,9 +3431,9 @@
     "proxy_user_agent": null
   },
   {
-    "name": "+MaisUm (720p)",
+    "name": "+MaisUm",
     "logo": "https://i.ibb.co/ZRDvqJcf/Logo-Mais-Um-original-sem-fundo.png",
-    "category": "Music",
+    "category": "General",
     "url": "https://stream.ichibansys.com:3230/hybrid/play.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -3441,7 +3441,8 @@
     "order": 264,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Toffee TV",
