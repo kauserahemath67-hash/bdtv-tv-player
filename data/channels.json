@@ -150,10 +150,11 @@
     "logo": "https://www.jagobd.com/wp-content/uploads/2026/06/banglar-kantho.png",
     "category": "General",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938608079-13",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-14",
-    "order": 15
+    "order": 15,
+    "manual_override": true
   },
   {
     "name": "Colors Bangla",
@@ -170,10 +171,11 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Colors_Bangla_Cinema.png",
     "category": "General",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938608079-15",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-16",
-    "order": 17
+    "order": 17,
+    "manual_override": true
   },
   {
     "name": "ZEE Bangla",
@@ -200,10 +202,11 @@
     "logo": "https://yt3.googleusercontent.com/dWloAb5aD9Jvz57fz6eZJmLoirWclDN6KOP6oWkmcJXsx6tseGedGxV90fYFgBGjV1KKly7yGg=s900-c-k-c0x00ffffff-no-rj",
     "category": "General",
     "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1793938608079-18",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-19",
-    "order": 20
+    "order": 20,
+    "manual_override": true
   },
   {
     "name": "Enterr10",
