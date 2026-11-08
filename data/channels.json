@@ -1858,7 +1858,7 @@
   },
   {
     "name": "Grand Cinema",
-    "logo": "",
+    "logo": "https://e7.pngegg.com/pngimages/202/882/png-clipart-the-grand-cinema-logo-the-movie-masters-cinema-group-kuwait-logo-mobile-phones.png",
     "category": "Movies",
     "url": "https://gcinemahls.wns.live/hls/stream.m3u8",
     "status": "ONLINE",
@@ -1867,7 +1867,8 @@
     "order": 144,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Gravitas Movies (1080p)",
