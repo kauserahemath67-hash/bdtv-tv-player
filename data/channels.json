@@ -3280,7 +3280,7 @@
     "id": "ch-1794166482825-318",
     "order": 312,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null
   },
