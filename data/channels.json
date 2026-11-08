@@ -1580,7 +1580,7 @@
     "manual_override": false
   },
   {
-    "name": "Classic Cinema (240p) [Not 24/7]",
+    "name": "Classic Cinema",
     "logo": "https://i.imgur.com/FJoPnTb.png",
     "category": "Movies",
     "url": "https://rpn.bozztv.com/gusa/gusa-classiccinema/index.m3u8",
@@ -1590,7 +1590,8 @@
     "order": 122,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Classique TV (360p)",
