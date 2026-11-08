@@ -2340,7 +2340,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Movie Punjab (720p)",
+    "name": "Movie Punjab",
     "logo": "https://papaji.freetvindia.com/media/900_FreeTV_Movie_punjab.png",
     "category": "Movies",
     "url": "https://samitaorigin.tangotv.in/MOVIEPUNJAB/SAMITAORIGIN/index.m3u8",
@@ -2350,7 +2350,8 @@
     "order": 177,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Movies! KPVM-LD",
