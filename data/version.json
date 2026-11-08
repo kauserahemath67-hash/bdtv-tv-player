@@ -1,6 +1,6 @@
 {
-  "versionCode": 125,
-  "versionName": "2.3.17",
+  "versionCode": 123,
+  "versionName": "2.3.15",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v2.3.17/BDTv.apk",
   "updateTitle": "App Update Available",
@@ -9,5 +9,5 @@
   ],
   "forceUpdate": false,
   "updateMessage": "",
-  "updatedAt": "2026-11-08T13:22:13.651Z"
+  "updatedAt": "2026-11-08T13:24:45.852Z"
 }
