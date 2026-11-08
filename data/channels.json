@@ -2187,7 +2187,7 @@
     "manual_override": false
   },
   {
-    "name": "Manoranjan Movies (576p)",
+    "name": "Manoranjan Movies",
     "logo": "https://dtil.tmsimg.com/assets/s143303_ld_h15_aa.png?lock=720x540",
     "category": "Movies",
     "url": "https://mumt04.tangotv.in/m18aqlK4MANORANJANMOVIES/index.m3u8",
@@ -2197,7 +2197,8 @@
     "order": 166,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Maverick Black Cinema (1080p)",
