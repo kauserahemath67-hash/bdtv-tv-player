@@ -3524,7 +3524,7 @@
     "category": "Sports",
     "url": "http://158.172.155.130:8000/play/a0ao/index.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1793938736645-184",
     "order": 269,
     "manual_override": true,
