@@ -626,7 +626,7 @@
     "category": "General",
     "url": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1794166482825-58",
     "order": 59,
     "manual_override": true,
