@@ -3287,7 +3287,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "TVS Drive In Movie (360p)",
+    "name": "TVS Drive In Movie",
     "logo": "https://i.imgur.com/OR9APjb.png",
     "category": "Movies",
     "url": "https://rpn.bozztv.com/gusa/gusa-tvsdriveinmovie/index.m3u8",
@@ -3297,7 +3297,8 @@
     "order": 253,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Warner TV Asia",
