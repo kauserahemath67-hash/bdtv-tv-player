@@ -1621,7 +1621,7 @@
   },
   {
     "name": "Cosmos Tv SD",
-    "logo": "https://i0.wp.com/fmcosmos.com/wp-content/uploads/2021/11/COSMOS-TV.png",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsox0eMYPYYDA1CFk8F0QP4vEoaF-wsHb9T3pdH7M7KFibh0J1pTIYzQ4&s=10",
     "category": "Movies",
     "url": "https://canaletaplus.com:3922/live/cosmoslive.m3u8",
     "status": "ONLINE",
@@ -1630,7 +1630,8 @@
     "order": 126,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Dorama (576p)",
