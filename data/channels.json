@@ -3105,7 +3105,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Sony One Favoris (1080p)",
+    "name": "Sony One Favoris",
     "logo": "https://i.imgur.com/RO4AM4b.png",
     "category": "Movies",
     "url": "https://49d735318d6b4c30a24a7997ea594e1b.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-820-FR-SONYONEFAVORIS-LG_FR/playlist.m3u8",
@@ -3115,7 +3115,8 @@
     "order": 239,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Sony One Hits Action",
