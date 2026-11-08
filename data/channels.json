@@ -3123,8 +3123,9 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
     "category": "General",
     "order": 309,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-48",
@@ -3133,8 +3134,9 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1781163068414.png",
     "category": "General",
     "order": 310,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-49",
@@ -3143,8 +3145,9 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770189826301.png",
     "category": "General",
     "order": 311,
-    "status": "ONLINE",
-    "is_pinned": false
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "manual_override": true
   },
   {
     "id": "ch-1794162605194-50",
