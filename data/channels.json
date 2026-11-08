@@ -1117,17 +1117,6 @@
     "is_pinned": false
   },
   {
-    "id": "ch-1794162576427-26",
-    "name": "City Eden KinoAction [Not 24/7]",
-    "url": "https://cityeden.catcast.tv/content/41333/index.m3u8",
-    "logo": "https://i.imgur.com/uuzuvD0.png",
-    "category": "Movies",
-    "order": 115,
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "manual_override": true
-  },
-  {
     "id": "ch-1794162576427-27",
     "name": "City Eden KinoArt [Not 24/7]",
     "url": "https://cityeden.catcast.tv/content/38398/index.m3u8",
