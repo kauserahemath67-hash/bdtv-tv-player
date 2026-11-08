@@ -3235,7 +3235,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "The Movie Club (1080p)",
+    "name": "The Movie Club",
     "logo": "https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN38000072R_20260325T012318SQUARE.png",
     "category": "Movies",
     "url": "https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8",
@@ -3245,7 +3245,8 @@
     "order": 249,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "The Movie Club +2",
