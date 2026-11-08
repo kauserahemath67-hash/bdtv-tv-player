@@ -4017,9 +4017,9 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Sony Entertainment Television HD",
+    "name": "Sony Entertainment",
     "logo": "https://assets-prod.services.toffeelive.com/-y50-JQBv9knK3AHLzSn/posters/0ab48ac0-ec84-4ca2-9601-746ff3cb809e.webp",
-    "category": "Family",
+    "category": "General",
     "url": "https://alixbd.com/playlistconfig/channel/52.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -4027,7 +4027,8 @@
     "order": 300,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Sony Entertainment Television",
