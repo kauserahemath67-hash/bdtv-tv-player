@@ -333,15 +333,15 @@
     "name": "Sony MAX",
     "logo": "https://assets-prod.services.toffeelive.com/Ay52-JQBv9knK3AHFDWt/posters/00afb30b-3c19-4c4c-abd8-891db94e4767.webp",
     "category": "Movies",
-    "url": "https://drk6xq0vhn.gpcdn.net/live/max_hd_abr/live/max_hd_720/chunks.m3u8?nimblesessionid=206455791",
+    "url": "https://prod-linear-media.toffeelive.com/cdn/live/sonymax_2/playlist.m3u8?edge-cache-token=<redacted>",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794162467445-31",
     "order": 32,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": "https://drk6xq0vhn.gpcdn.net/l",
-    "proxy_user_agent": null
+    "proxy_referer": null,
+    "proxy_user_agent": "Toffee (Linux;Android 14) AndroidXMedia3/1.1.1/64100410/4d2ec9b8c3502383"
   },
   {
     "name": "Sony MAX 2",
