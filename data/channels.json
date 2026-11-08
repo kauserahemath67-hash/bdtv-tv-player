@@ -2655,7 +2655,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Pitaara (1080p)",
+    "name": "Pitaara",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PITAARA/images/LOGO_HD/image.png",
     "category": "Movies",
     "url": "https://d2lk5u59tns74c.cloudfront.net/out/v1/500a6b45f5ae41dda445d912b59eaa09/index.m3u8",
@@ -2665,7 +2665,8 @@
     "order": 200,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Pocket Films",
