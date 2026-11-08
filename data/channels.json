@@ -2159,7 +2159,7 @@
     "manual_override": false
   },
   {
-    "name": "Mahua Play (1080p)",
+    "name": "Mahua Play",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Mahua_Play.png",
     "category": "Movies",
     "url": "https://cdn.ottlive.co.in/mahuaplay/index.m3u8",
@@ -2169,7 +2169,8 @@
     "order": 164,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Manoranjan Grand (720p)",
