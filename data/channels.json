@@ -117,7 +117,7 @@
     "category": "General",
     "url": "https://mz01.bhalocast.com:7060/hls/ptvskpr.m3u8?md5=nQzEM-2fmrzA4zhbL87klw&expires=1794172132&ch=ptvskpr&s=e7a68a3f5d9615929900b84f3e8b0551",
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "id": "ch-1794166482825-5",
     "order": 9,
     "manual_override": true,
