@@ -1469,3 +1469,15 @@ video::-webkit-media-controls-overlay-play-button {
     height: 60px;
   }
 }
+
+/* Hide and suppress any default video captions/subtitles across browsers & WebViews */
+video::cue {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  display: none !important;
+}
+::cue {
+  visibility: hidden !important;
+  opacity: 0 !important;
+  display: none !important;
+}

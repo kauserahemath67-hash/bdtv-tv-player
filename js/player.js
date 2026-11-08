@@ -480,12 +480,27 @@ class IPTVPlayer {
     });
   }
 
+  // Disable auto captions/subtitles across video element and HLS
+  disableCaptions() {
+    try {
+      if (this.video && this.video.textTracks) {
+        for (let i = 0; i < this.video.textTracks.length; i++) {
+          this.video.textTracks[i].mode = 'disabled';
+        }
+      }
+      if (this.hls) {
+        this.hls.subtitleTrack = -1;
+      }
+    } catch (e) {}
+  }
+
   // 4. Video Events & HLS.js Live Streaming Engine
   bindVideoEvents() {
     this.video.addEventListener('waiting', () => this.showBuffering(true));
     this.video.addEventListener('playing', () => {
       this.showBuffering(false);
       this.hideError();
+      this.disableCaptions();
       if (this.video.muted && !this.isUserUnmuted) {
         this.showUnmuteBanner(true);
       } else {
@@ -493,6 +508,14 @@ class IPTVPlayer {
       }
       this.updateSoundButtonUI();
     });
+    this.video.addEventListener('loadedmetadata', () => {
+      this.disableCaptions();
+    });
+    if (this.video.textTracks) {
+      this.video.textTracks.addEventListener('addtrack', () => {
+        this.disableCaptions();
+      });
+    }
     this.video.addEventListener('timeupdate', () => {
       if (this.video && this.video.currentTime > 0) {
         this.showBuffering(false);
@@ -532,8 +555,13 @@ class IPTVPlayer {
     this.hls.attachMedia(this.video);
 
     this.hls.on(Hls.Events.MANIFEST_PARSED, () => {
+      this.disableCaptions();
       this.hideError();
       this.attemptPlay();
+    });
+
+    this.hls.on(Hls.Events.SUBTITLE_TRACKS_UPDATED, () => {
+      this.disableCaptions();
     });
 
     this.hls.on(Hls.Events.FRAG_BUFFERED, () => {
@@ -762,6 +790,7 @@ class IPTVPlayer {
     this.hideError();
 
     // 3. Clean stream URL & Start fresh clean stream
+    this.disableCaptions();
     const rawUrl = (channel.use_proxy && channel.id)
       ? (/^\/api\/proxy/.test(channel.url) ? channel.url : `/api/proxy?ch=${encodeURIComponent(channel.id)}`)
       : channel.url;
