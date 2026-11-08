@@ -622,7 +622,7 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DirecTV_Sports_Latin_America_%282018%29.png/960px-DirecTV_Sports_Latin_America_%282018%29.png",
     "url": "http://38.187.7.252:8000/play/a03d/index.m3u8",
     "category": "General",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1793938608079-45",
     "order": 48,
