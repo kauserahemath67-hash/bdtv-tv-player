@@ -3154,11 +3154,15 @@
     "name": "Hungama TV",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HUNGAMA/images/LOGO_HD/image.png",
     "category": "News",
-    "url": "https://bdtv-app.vercel.app/api/proxy?ch=ch-1794129712091",
+    "url": "http://103.135.253.32:8080/HUNGAMA/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-319",
-    "order": 314
+    "order": 314,
+    "manual_override": false,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "CCTV-8",
