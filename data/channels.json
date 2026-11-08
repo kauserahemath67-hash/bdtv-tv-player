@@ -3196,7 +3196,7 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Studio One + (720p)",
+    "name": "Studio One +",
     "logo": "https://i.imgur.com/yOPB7JB.png",
     "category": "Movies",
     "url": "https://cdn.pishow.tv/ott/live/276/master.m3u8",
@@ -3206,7 +3206,8 @@
     "order": 246,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Tamasha",
