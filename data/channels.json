@@ -2520,7 +2520,7 @@
     "manual_override": false
   },
   {
-    "name": "NOST (720p)",
+    "name": "NOST",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/NOST-1080x1080.jpg/250px-NOST-1080x1080.jpg",
     "category": "Movies",
     "url": "https://a-cdn.klowdtv.com/live2/nost_720p/playlist.m3u8",
@@ -2530,7 +2530,8 @@
     "order": 190,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "manual_override": false
   },
   {
     "name": "Nostalgia TV (1080p)",
