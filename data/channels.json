@@ -373,7 +373,7 @@
     "id": "ch-1794166482825-30",
     "order": 31,
     "manual_override": false,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": "https://app24.jagobd.com.bd/",
     "proxy_user_agent": null
   },
