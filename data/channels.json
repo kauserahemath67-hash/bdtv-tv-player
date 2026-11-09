@@ -3212,12 +3212,16 @@
   {
     "name": "Investigation Discovery HD",
     "logo": "https://assets-prod.services.toffeelive.com/ay7uX5UBv9knK3AHs6TI/posters/deb3c186-b2e1-4a91-aafb-d86f9128b851.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/76.m3u8",
+    "category": "General",
+    "url": "http://88.212.15.50/live/test_id_hevc_atktv/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-312",
-    "order": 306
+    "order": 306,
+    "manual_override": false,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "&TV HD",
