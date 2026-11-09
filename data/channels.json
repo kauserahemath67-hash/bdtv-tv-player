@@ -135,7 +135,7 @@
     "id": "ch-1794166482825-9",
     "order": 10,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": "https://obiramtvlive.pages.dev/",
     "proxy_user_agent": null
   },
