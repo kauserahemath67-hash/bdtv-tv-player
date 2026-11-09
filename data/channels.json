@@ -134,8 +134,8 @@
     "is_pinned": true,
     "id": "ch-1794166482825-9",
     "order": 10,
-    "manual_override": false,
-    "use_proxy": true,
+    "manual_override": true,
+    "use_proxy": false,
     "proxy_referer": "https://obiramtvlive.pages.dev/",
     "proxy_user_agent": null
   },
