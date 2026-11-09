@@ -397,14 +397,14 @@
     "name": "Ananda Tv",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Logo_of_Ananda_TV.svg/1280px-Logo_of_Ananda_TV.svg.png",
     "category": "General",
-    "url": "https://playztv-apps.pages.dev/ananda-tv/index.m3u8",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/anandatv.stream/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-32",
     "order": 33,
     "manual_override": false,
-    "use_proxy": false,
-    "proxy_referer": null,
+    "use_proxy": true,
+    "proxy_referer": "https://app24.jagobd.com.bd/",
     "proxy_user_agent": null
   },
   {
