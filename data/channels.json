@@ -136,7 +136,7 @@
     "order": 10,
     "manual_override": true,
     "use_proxy": false,
-    "proxy_referer": "https://obiramtvlive.pages.dev/?channel=sony-ten-cricket",
+    "proxy_referer": "https://obiramtvlive.pages.dev/",
     "proxy_user_agent": null
   },
   {
