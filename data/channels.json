@@ -3222,12 +3222,16 @@
   {
     "name": "&TV HD",
     "logo": "https://assets-prod.services.toffeelive.com/5cwRnZUBtpl-Sbt7wWrN/posters/5779ade3-e9ba-4107-b3da-bae6f891500a.png",
-    "category": "Drama",
-    "url": "https://alixbd.com/playlistconfig/channel/77.m3u8",
+    "category": "General",
+    "url": "https://3f56f997.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/U2Ftc3VuZy1nYl9BbmRUVl9ITFM/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-313",
-    "order": 307
+    "order": 307,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel i",
