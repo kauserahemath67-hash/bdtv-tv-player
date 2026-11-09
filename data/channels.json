@@ -3162,12 +3162,16 @@
   {
     "name": "Animal Planet HD",
     "logo": "https://assets-prod.services.toffeelive.com/Ni61-JQBv9knK3AHcDYc/posters/c16e8633-6b2a-401a-9cd6-ac26a4fcdedb.webp",
-    "category": "Adventure",
-    "url": "https://alixbd.com/playlistconfig/channel/70.m3u8",
+    "category": "General",
+    "url": "http://88.212.15.50/live/test_animal_planet_hd_hevc/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-307",
-    "order": 301
+    "order": 301,
+    "manual_override": false,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony BBC Earth HD",
