@@ -1814,14 +1814,11 @@
     "logo": "https://gia.tv/streams/pptv/208138.png",
     "category": "Movies",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-208138/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-162",
     "order": 160,
-    "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null
+    "manual_override": true
   },
   {
     "name": "Maxcine 2",
@@ -1850,11 +1847,14 @@
     "logo": "https://gia.tv/streams/pptv/208817.png",
     "category": "Movies",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-208817/playlist.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-165",
     "order": 163,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "MCI Television",
