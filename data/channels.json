@@ -108,7 +108,7 @@
     "order": 8,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://p4kp.rjmbts.workers.dev",
     "proxy_user_agent": null
   },
   {
