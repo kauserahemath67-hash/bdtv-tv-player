@@ -749,20 +749,22 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/b02e7be82b9b488e5a79b0f7e8f7ca1c.png",
     "category": "General",
     "url": "https://alixbd.com/playlistconfig/channel/52.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-64",
-    "order": 64
+    "order": 64,
+    "manual_override": true
   },
   {
     "name": "Sony Max 2",
     "logo": "https://yt3.googleusercontent.com/r7fi39b2G0g-xrHbziVK_V0rgQqwRqXRtSDuUaALPCL-41ayfqIs_m7tSGR1ZGXU76toUEU3wg=s900-c-k-c0x00ffffff-no-rj",
     "category": "General",
     "url": "https://alixbd.com/playlistconfig/channel/65.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-65",
-    "order": 65
+    "order": 65,
+    "manual_override": true
   },
   {
     "name": "Sony Movies",
@@ -865,10 +867,11 @@
     "logo": "https://i.postimg.cc/WbKqj0w3/1000086946.jpg",
     "category": "General",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-75",
-    "order": 74
+    "order": 74,
+    "manual_override": true
   },
   {
     "name": "Tom and Jerry",
