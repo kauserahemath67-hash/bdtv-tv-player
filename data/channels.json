@@ -45,15 +45,15 @@
     "name": "Sony Ten Sports 1",
     "logo": "https://assets-prod.services.toffeelive.com/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
     "category": "Sports",
-    "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_1_hd/playlist.m3u8",
+    "url": "https://drk6xq0vhn.gpcdn.net/live/ten_1_hd_720/index.m3u8",
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-3",
     "order": 4,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
-    "proxy_user_agent": "Toffee (Linux;Android 14) AndroidXMedia3/1.1.1/64100410/4d2ec9b8c3502383"
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Ten Sports 2",
