@@ -878,30 +878,33 @@
     "logo": "https://static.wikia.nocookie.net/cartoonnetwork/images/b/b5/SeriesTitle-TomandJerry.png",
     "category": "General",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-208314/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-76",
-    "order": 75
+    "order": 75,
+    "manual_override": true
   },
   {
     "name": "ZB Cartoon",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfyoiK0AGw4_tmNbbk1DVh0OD_DcCRGXQ45dNkYfD8Mw&s=10",
     "category": "General",
     "url": "https://server.zillarbarta.com/zbcatun/video.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-77",
-    "order": 76
+    "order": 76,
+    "manual_override": true
   },
   {
     "name": "Batul The Great",
     "logo": "https://i.postimg.cc/WbDWKcdF/20260715-150726.png",
     "category": "General",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-209869/tracks-v1a1/mono.ts.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-78",
-    "order": 77
+    "order": 77,
+    "manual_override": true
   },
   {
     "name": "Animal Planet",
