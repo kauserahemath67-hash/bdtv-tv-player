@@ -3148,13 +3148,16 @@
   {
     "name": "Zing",
     "logo": "https://assets-prod.services.toffeelive.com/DK8dd5YBrjBfS2_Ru22e/posters/a4e57fd0-1853-4540-a9bc-0265ee43b5cb.png",
-    "category": "Comedy",
-    "url": "https://alixbd.com/playlistconfig/channel/47.m3u8",
+    "category": "General",
+    "url": "https://stream.ottlive.co.in/zingabad/index.m3u8",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-290",
     "order": 286,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "HUM",
