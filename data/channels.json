@@ -74,7 +74,7 @@
     "logo": "https://assets-prod.services.toffeelive.com/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
     "category": "Sports",
     "url": "https://mz01.bhalocast.com:7060/hls/sony5c.m3u8?md5=CCEi5JWDJCVOtVHvbdbU7A&expires=1794223188&ch=sony5c&s=e409fa41eba866a1d1d2e4cd4113cee0",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-6",
     "order": 6,
