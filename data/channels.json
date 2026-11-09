@@ -888,12 +888,15 @@
     "name": "Moto Patlu",
     "logo": "https://i.postimg.cc/WbKqj0w3/1000086946.jpg",
     "category": "General",
-    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8",
+    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209622/tracks-v1a1/mono.ts.m3u8",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-75",
     "order": 74,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Tom and Jerry",
