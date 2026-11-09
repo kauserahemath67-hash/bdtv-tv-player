@@ -1771,30 +1771,33 @@
     "logo": "https://gia.tv/streams/pptv/208138.png",
     "category": "Movies",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-208138/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-162",
-    "order": 160
+    "order": 160,
+    "manual_override": true
   },
   {
     "name": "Maxcine 2",
     "logo": "https://gia.tv/streams/pptv/209163.png",
     "category": "Movies",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-209163/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-163",
-    "order": 161
+    "order": 161,
+    "manual_override": true
   },
   {
     "name": "Maxcine Comedy",
     "logo": "https://gia.tv/streams/pptv/208730.png",
     "category": "Movies",
     "url": "https://live20.bozztv.com/giatvplayout7/giatv-208730/playlist.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-164",
-    "order": 162
+    "order": 162,
+    "manual_override": true
   },
   {
     "name": "Maxcine Family",
