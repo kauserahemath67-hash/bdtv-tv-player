@@ -3230,12 +3230,15 @@
     "name": "Sony MAX HD",
     "logo": "https://assets-prod.services.toffeelive.com/Ai51-JQBv9knK3AH_jWs/posters/663e52a6-1a9f-4458-b4aa-7c03d84972f1.webp",
     "category": "Movies",
-    "url": "https://alixbd.com/playlistconfig/channel/57.m3u8",
+    "url": "https://allinonereborn2.online/sony-new/playlists/sony_max2.m3u8",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-297",
     "order": 292,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": "https://allinonereborn2.online/",
+    "proxy_user_agent": null
   },
   {
     "name": "Zee Bangla Cinema",
