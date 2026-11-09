@@ -2924,12 +2924,16 @@
   {
     "name": "DW",
     "logo": "https://assets-prod.services.toffeelive.com/7oPt_p8BJIOHmUelhXWj/posters/d6328092-9437-4806-8dc7-d00732d56832.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/28.m3u8",
+    "category": "General",
+    "url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-278",
-    "order": 275
+    "order": 275,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Russia Today",
