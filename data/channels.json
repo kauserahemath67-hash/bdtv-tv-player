@@ -2960,7 +2960,7 @@
     "order": 277,
     "manual_override": true,
     "use_proxy": false,
-    "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
