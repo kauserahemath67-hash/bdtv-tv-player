@@ -42,10 +42,7 @@ module.exports = async (req, res) => {
 
       // Check if Subscription Mode (VIP Lock) is enabled
       const settings = await db.getSettings();
-      const userAgent = (req.headers && (req.headers['user-agent'] || req.headers['User-Agent'])) || '';
-      const appKey = (req.headers && (req.headers['x-app-key'] || req.headers['x_app_key'])) || (req.query && req.query.app_key) || '';
-      const isNativeApp = userAgent.toLowerCase().includes('bdtv-native-app') || (appKey === 'bdtv-secure-native-sync-2026');
-      if (settings.subscription_restrictions_enabled && !isAdmin && !isNativeApp) {
+      if (settings.subscription_restrictions_enabled && !isAdmin) {
         const custCode = code || req.headers['x-customer-code'];
         const custPin  = pin  || req.headers['x-customer-pin'];
 
