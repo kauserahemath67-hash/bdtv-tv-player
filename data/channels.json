@@ -753,12 +753,15 @@
     "name": "Sony Max",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyChyEkV9SuWsXb7A_EyU9YwOrMaxvty8msO7FTXvRuK7dFMGGHYUzr6g&s=10",
     "category": "General",
-    "url": "https://alixbd.com/playlistconfig/channel/61.m3u8",
+    "url": "https://allinonereborn2.online/sony-new/playlists/sony_max.m3u8",
     "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-63",
     "order": 63,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sony Entertainment Hd",
