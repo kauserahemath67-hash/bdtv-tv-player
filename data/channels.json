@@ -984,7 +984,10 @@
     "is_pinned": false,
     "id": "ch-1794166482825-82",
     "order": 81,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": "https://live20.bozztv.com/",
+    "proxy_user_agent": null
   },
   {
     "name": "24 Hour Free Movies",
