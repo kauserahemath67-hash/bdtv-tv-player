@@ -477,13 +477,17 @@
   },
   {
     "name": "My Tv",
-    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/Logo_of_My_TV_%28Bangladesh%29.svg/330px-Logo_of_My_TV_%28Bangladesh%29.svg.png",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCK600FM2ijHiL91-fQ60GM7TEvdFDa3WwY0UV1JWf7OqzpsC0T3ykWfs&s=10",
     "category": "General",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/mytv-up-off.stream/tracks-v1a1/mono.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-39",
-    "order": 40
+    "order": 40,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "ATN News",
