@@ -18,8 +18,8 @@ module.exports = async (req, res) => {
       : 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.1/BDTv.apk';
 
     // If apkUrl accidentally points to vercel domain, resolve to authentic GitHub binary
-    if (releaseUrl.includes('bdtv-app.vercel.app')) {
-      const vName = (version && version.versionName) ? `v${version.versionName}` : 'v3.0.1';
+    if (releaseUrl.includes('bdtv-app.vercel.app') || releaseUrl.includes('bdtvfree.vercel.app')) {
+      const vName = (version && version.versionName) ? `v${version.versionName}` : 'v3.0.3';
       releaseUrl = `https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/${vName}/BDTv.apk`;
     }
 

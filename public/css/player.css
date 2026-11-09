@@ -8,23 +8,28 @@
   will-change: transform, opacity;
 }
 
-/* Part 3: Native Hardware-Accelerated ExoPlayer Transparency */
-html, body,
+/* Part 3: Native Hardware-Accelerated ExoPlayer Transparency vs Web Player Black Letterboxing */
+html, body {
+  background: #000000 !important;
+  background-color: #000000 !important;
+}
+
 html.native-player, body.native-player,
-#video-wrapper,
 body.native-player #video-wrapper {
   background: transparent !important;
   background-color: transparent !important;
 }
 
-body.native-player #player,
-#player {
+body.native-player #player {
   background: transparent !important;
   opacity: 0 !important;
   pointer-events: none !important;
 }
 
+body:not(.native-player) #video-wrapper,
 body:not(.native-player) #player {
+  background: #000000 !important;
+  background-color: #000000 !important;
   opacity: 1 !important;
   pointer-events: auto !important;
 }
@@ -138,7 +143,7 @@ html, body {
   left: 0 !important;
   width: 100vw !important;
   height: 100vh !important;
-  background: transparent !important;
+  background: #000000 !important;
   overflow: hidden !important;
   z-index: 10;
   display: flex;
@@ -146,12 +151,21 @@ html, body {
   justify-content: center;
 }
 
-#player {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+body.native-player #video-wrapper {
   background: transparent !important;
+}
+
+#player {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: fill !important;
+  background: #000000 !important;
   display: block;
+}
+
+body.native-player #player {
+  background: transparent !important;
+  opacity: 0 !important;
 }
 
 video::-webkit-media-controls,

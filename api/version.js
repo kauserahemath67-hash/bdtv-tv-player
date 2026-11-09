@@ -35,7 +35,7 @@ module.exports = async (req, res) => {
         versionCode: Number(body.versionCode) || 100,
         versionName: body.versionName || '1.0.0',
         minSupportedVersion: Number(body.minSupportedVersion) || 100,
-        apkUrl: body.apkUrl || 'https://bdtv-app.vercel.app/BDTv.apk',
+        apkUrl: body.apkUrl || 'https://bdtvfree.vercel.app/BDTv.apk',
         updateTitle: body.updateTitle || 'নতুন আপডেট উপলব্ধ!',
         changelog: Array.isArray(body.changelog) ? body.changelog : (body.changelog ? body.changelog.split('\n').filter(Boolean) : []),
         forceUpdate: Boolean(body.forceUpdate)
