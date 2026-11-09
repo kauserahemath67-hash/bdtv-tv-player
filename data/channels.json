@@ -2788,12 +2788,16 @@
   {
     "name": "Channel S",
     "logo": "https://assets-prod.services.toffeelive.com/WyPuDJsBEef-9-uVUA_z/posters/ea20055c-a824-443c-8083-ce8e2da8b922.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/14.m3u8",
+    "category": "General",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channels.stream/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-267",
-    "order": 264
+    "order": 264,
+    "manual_override": false,
+    "use_proxy": true,
+    "proxy_referer": "https://app24.jagobd.com.bd/",
+    "proxy_user_agent": null
   },
   {
     "name": "Rajdhani TV",
