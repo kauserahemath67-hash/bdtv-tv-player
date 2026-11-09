@@ -1994,11 +1994,14 @@
     "logo": "https://i.ibb.co/yF9MPTDK/blyflx.png",
     "category": "Movies",
     "url": "https://jmp2.uk/stvp-IN46000140Q",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-182",
     "order": 180,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "NH Tamil Gold",
