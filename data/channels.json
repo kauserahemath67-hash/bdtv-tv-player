@@ -73,15 +73,15 @@
     "name": "Sony Ten Sports 5",
     "logo": "https://assets-prod.services.toffeelive.com/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
     "category": "Sports",
-    "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8",
+    "url": "https://mz01.bhalocast.com:7060/hls/sony5c.m3u8?md5=dMm5wKUBOYcz1DQLOjm_bw&expires=1794207811&ch=sony5c&s=1ab9517e7dc42783c5fae6580f47398f",
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-6",
     "order": 6,
     "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": "Toffee (Linux;Android 14) AndroidXMedia3/1.1.1/64100410/4d2ec9b8c3502383"
+    "use_proxy": true,
+    "proxy_referer": "https://playsza.st/player.php",
+    "proxy_user_agent": null
   },
   {
     "name": "PTV Sports",
