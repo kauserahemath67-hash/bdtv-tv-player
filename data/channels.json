@@ -528,7 +528,7 @@
     "order": 44,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://owrcovcrpy.gpcdn.net/",
     "proxy_user_agent": null
   },
   {
