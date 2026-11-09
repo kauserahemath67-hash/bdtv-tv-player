@@ -383,7 +383,11 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-31",
-    "order": 32
+    "order": 32,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ananda Tv",
