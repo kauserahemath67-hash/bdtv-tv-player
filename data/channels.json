@@ -366,7 +366,7 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQzqyiL8I9xUzHQaUNGuapozGukLxpqnfGmSZ_CEq-og&s=10",
     "category": "General",
     "url": "https://alixbd.com/playlistconfig/channel/19.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-29",
     "order": 30,
@@ -434,11 +434,11 @@
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1784629064327.png",
     "category": "General",
     "url": "https://toffee-obiramtv.emonsa4.workers.dev/somoy-tv.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-35",
     "order": 36,
-    "manual_override": false,
+    "manual_override": true,
     "use_proxy": true,
     "proxy_referer": "https://obiramtvlive.pages.dev/",
     "proxy_user_agent": null
@@ -448,10 +448,11 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeN76tHPJpc-HkXgr4YsWm9e0yWIAar2FJ1B4Q3ox5FKP-zbfP8rCOxkEe&s=10",
     "category": "General",
     "url": "https://stream.ottplus.live/live/ekhon_tv_abr/live/ekhon_tv_hd_720/chunks.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-36",
-    "order": 37
+    "order": 37,
+    "manual_override": true
   },
   {
     "name": "Boishakhi Tv",
