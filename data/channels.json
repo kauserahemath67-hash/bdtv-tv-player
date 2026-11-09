@@ -401,7 +401,11 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-32",
-    "order": 33
+    "order": 33,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ekushey Tv",
