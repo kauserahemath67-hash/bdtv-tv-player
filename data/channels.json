@@ -3233,14 +3233,14 @@
     "name": "Channel i",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0xZoU-Sjiu-MF1zIQDUnei-VwYuJMQ2sxXNHFm9XgtQ&s=10",
     "category": "News",
-    "url": "https://alixbd.com/playlistconfig/channel/20.m3u8",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/channeli-8-org.stream/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-314",
     "order": 308,
     "manual_override": true,
     "use_proxy": false,
-    "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
