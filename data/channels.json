@@ -79,7 +79,7 @@
     "id": "ch-1794166482825-6",
     "order": 6,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": "Toffee (Linux;Android 14) AndroidXMedia3/1.1.1/64100410/4d2ec9b8c3502383",
     "proxy_user_agent": null
   },
