@@ -454,7 +454,7 @@
     "order": 37,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://obiramtvlive.pages.dev/",
     "proxy_user_agent": null
   },
   {
