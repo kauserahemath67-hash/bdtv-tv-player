@@ -372,7 +372,7 @@
     "order": 30,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "http://alvetv.com/",
     "proxy_user_agent": null
   },
   {
