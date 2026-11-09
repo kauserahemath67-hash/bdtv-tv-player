@@ -2910,12 +2910,16 @@
   {
     "name": "TRT World",
     "logo": "https://assets-prod.services.toffeelive.com/1YPq_p8BJIOHmUelSHXc/posters/f65b0273-0f23-4b56-93dd-417224369105.png",
-    "category": "Documentary",
-    "url": "https://alixbd.com/playlistconfig/channel/27.m3u8",
+    "category": "General",
+    "url": "https://tv-trtworld.medya.trt.com.tr/master.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-277",
-    "order": 274
+    "order": 274,
+    "manual_override": false,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "DW",
