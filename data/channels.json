@@ -2830,12 +2830,16 @@
   {
     "name": "Nexus TV",
     "logo": "https://assets-prod.services.toffeelive.com/FHz5PJwBcqxnFHJBdAqW/posters/419869ac-8ddf-4909-86c1-b69f0a3adf13.png",
-    "category": "Live Action",
-    "url": "https://alixbd.com/playlistconfig/channel/20.m3u8",
+    "category": "General",
+    "url": "https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-271",
-    "order": 268
+    "order": 268,
+    "manual_override": false,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Islamic TV",
