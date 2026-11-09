@@ -3182,12 +3182,16 @@
   {
     "name": "Discovery HD",
     "logo": "https://assets-prod.services.toffeelive.com/KC6x-JQBv9knK3AHqjYc/posters/55e554f1-dbbb-47bd-97fe-fca878726c4c.webp",
-    "category": "Adventure",
-    "url": "https://alixbd.com/playlistconfig/channel/72.m3u8",
+    "category": "General",
+    "url": "http://88.212.15.50/live/test_discovery_hd_hevc/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-309",
-    "order": 303
+    "order": 303,
+    "manual_override": false,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Discovery Science",
