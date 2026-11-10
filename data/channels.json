@@ -203,10 +203,11 @@
     "logo": "https://png.pngitem.com/pimgs/s/520-5200384_jalsha-movies-live-tv-hd-png-download.png",
     "category": "General",
     "url": "https://iptvlive-beta.vercel.app/jalsha-movies/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-13",
-    "order": 16
+    "order": 16,
+    "manual_override": true
   },
   {
     "name": "Colors Bangla",
@@ -247,7 +248,7 @@
     "logo": "https://yt3.googleusercontent.com/dWloAb5aD9Jvz57fz6eZJmLoirWclDN6KOP6oWkmcJXsx6tseGedGxV90fYFgBGjV1KKly7yGg=s900-c-k-c0x00ffffff-no-rj",
     "category": "General",
     "url": "https://livetv.shamon-cable.net:8443/Sony-8/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-19",
     "order": 21,
@@ -319,7 +320,7 @@
     "logo": "https://pbs.twimg.com/profile_images/1689620641283190784/GGbvbn-B_400x400.png",
     "category": "General",
     "url": "https://ay-obiram.emonsa4.workers.dev/bijoy-tv.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-26",
     "order": 27,
