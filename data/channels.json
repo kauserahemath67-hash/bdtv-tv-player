@@ -66,9 +66,10 @@
     "id": "ch-1794166482825-4",
     "order": 5,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Sony Ten Sports 5",
