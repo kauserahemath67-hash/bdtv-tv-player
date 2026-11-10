@@ -36,6 +36,13 @@
    - 📢 **বিজ্ঞাপন ও সাইট সেটিংস:** ৫টি স্লটে বিজ্ঞাপন কোড বসানো এবং স্ক্রলিং নোটিশ বার।
    - 🚀 **অ্যাপ ভার্সন কন্ট্রোল:** সরাসরি ড্যাশবোর্ড থেকে `version.json` ও APK আপডেট।
 
+### Android app data flow (v3.0.6+)
+
+- The Android app downloads channel records, stream URLs, and logo URLs directly from the public `data-storage` GitHub branch.
+- The Vercel Admin Panel writes channel changes to that branch; the app syncs changes automatically.
+- VIP/customer/device validation, settings, app-version checks, and user-activity heartbeats continue to use `bdtvfree.vercel.app`.
+- Logo image files and video streams are fetched from the URLs listed in the GitHub channel data.
+
 ---
 
 ## 🚀 গিটহাব ও ভার্সেলে ডেপ্লয় করার নিয়ম (GitHub ➔ Vercel)
