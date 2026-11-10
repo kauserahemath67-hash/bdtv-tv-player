@@ -1,5 +1,5 @@
 {
-  "versionCode": 308,
+  "versionCode": 306,
   "versionName": "3.0.6",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.6/BDTv.apk",
@@ -11,5 +11,5 @@
   ],
   "forceUpdate": true,
   "updateMessage": "Please update to v3.0.7 for reliable in-app update checks.",
-  "updatedAt": "2026-11-10T21:16:46.456Z"
+  "updatedAt": "2026-11-10T21:17:07.837Z"
 }
