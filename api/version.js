@@ -36,11 +36,11 @@ module.exports = async (req, res) => {
         versionName: body.versionName || '1.0.0',
         minSupportedVersion: Number(body.minSupportedVersion) || 100,
         apkUrl: body.apkUrl || 'https://bdtvfree.vercel.app/BDTv.apk',
-        updateTitle: body.updateTitle || 'নতুন আপডেট উপলব্ধ!',
+        updateTitle: body.updateTitle || 'New update available!',
         changelog: Array.isArray(body.changelog) ? body.changelog : (body.changelog ? body.changelog.split('\n').filter(Boolean) : []),
         forceUpdate: Boolean(body.forceUpdate)
       });
-      return res.status(200).json({ success: true, message: 'অ্যাপ ভার্সন আপডেট হয়েছে।', data: updated });
+      return res.status(200).json({ success: true, message: 'App version updated successfully.', data: updated });
     }
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });

@@ -76,11 +76,11 @@ class AdminDashboard {
           if (data.expiresAt) localStorage.setItem('bdtv_admin_token_exp', data.expiresAt);
           this.showDashboard();
         } else {
-          errBox.textContent = data.message || 'ভুল ইমেইল বা পাসওয়ার্ড!';
+          errBox.textContent = data.message || 'Invalid email or password.';
           errBox.classList.remove('hidden');
         }
       } catch (err) {
-        errBox.textContent = 'সার্ভার এরর!';
+        errBox.textContent = 'Server error. Please try again.';
         errBox.classList.remove('hidden');
       }
     });
@@ -113,7 +113,7 @@ class AdminDashboard {
         if (badge) {
           if (result === 'CHECKING') {
             badge.className = 'badge status-badge badge-checking';
-            badge.textContent = '⏳ চেকিং...';
+            badge.textContent = '⏳ Checking...';
           } else if (result === 'ONLINE') {
             badge.className = 'badge status-badge badge-online';
             badge.textContent = '✅ ONLINE';
@@ -135,9 +135,44 @@ class AdminDashboard {
     this.bindAutoDetectorUI();
   }
 
-  // 2. Navigation
+  // 2. Navigation & Mobile Drawer
   bindNav() {
     const tabs = document.querySelectorAll('.nav-item');
+    const sidebar = document.getElementById('admin-sidebar') || document.querySelector('.sidebar');
+    const backdrop = document.getElementById('sidebar-backdrop');
+    const btnMobileMenu = document.getElementById('btn-mobile-menu');
+    const btnCloseSidebar = document.getElementById('btn-close-sidebar');
+
+    const closeMobileSidebar = () => {
+      if (sidebar) sidebar.classList.remove('open');
+      if (backdrop) backdrop.classList.remove('active');
+    };
+
+    if (btnMobileMenu) {
+      btnMobileMenu.addEventListener('click', () => {
+        if (sidebar) sidebar.classList.toggle('open');
+        if (backdrop) backdrop.classList.toggle('active');
+      });
+    }
+
+    if (btnCloseSidebar) {
+      btnCloseSidebar.addEventListener('click', closeMobileSidebar);
+    }
+
+    if (backdrop) {
+      backdrop.addEventListener('click', closeMobileSidebar);
+    }
+
+    const subtitles = {
+      'tab-overview': 'Real-time IPTV & server statistics',
+      'tab-channels': 'Manage live channels, streams, and categories',
+      'tab-playlist': 'Import and export dynamic M3U/JSON playlists',
+      'tab-customers': 'Customer accounts, login credentials, and VIP plans',
+      'tab-devices': 'Active real-time streams and registered devices',
+      'tab-settings': 'Notice bar, admin credentials, and ad banners',
+      'tab-version': 'Android TV & mobile app OTA update manager'
+    };
+
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
         tabs.forEach(t => t.classList.remove('active'));
@@ -145,11 +180,20 @@ class AdminDashboard {
 
         tab.classList.add('active');
         const target = tab.dataset.tab;
-        document.getElementById(target).classList.add('active');
+        const targetPane = document.getElementById(target);
+        if (targetPane) targetPane.classList.add('active');
 
         // Update header
         const pageTitle = document.getElementById('page-title');
-        pageTitle.textContent = tab.textContent.trim();
+        if (pageTitle) pageTitle.textContent = tab.textContent.replace(/^[^\s]+\s+/, '').trim();
+
+        const pageSubtitle = document.getElementById('page-subtitle');
+        if (pageSubtitle && subtitles[target]) {
+          pageSubtitle.textContent = subtitles[target];
+        }
+
+        // Auto close mobile drawer
+        closeMobileSidebar();
       });
     });
 
@@ -215,7 +259,7 @@ class AdminDashboard {
       let statusText = isOnline ? '✅ ONLINE' : '❌ OFFLINE';
       if (scanStatus === 'CHECKING') {
         statusBadgeClass = 'badge-checking';
-        statusText = '⏳ চেকিং...';
+        statusText = '⏳ Checking...';
       } else if (scanStatus === 'ONLINE') {
         statusBadgeClass = 'badge-online';
         statusText = '✅ ONLINE';
@@ -232,19 +276,19 @@ class AdminDashboard {
           ${ch.manual_override ? '<span class="badge" style="background:#555;color:#fff;font-size:9px;">MANUAL</span>' : ''}
         </td>
         <td><span class="badge" style="background:rgba(255,255,255,0.08);">${ch.category || 'General'}</span></td>
-        <td>${ch.is_pinned ? '⭐ পিনড' : '—'}</td>
+        <td>${ch.is_pinned ? '⭐ Pinned' : '—'}</td>
         <td>
-          <span class="badge status-badge ${statusBadgeClass}" title="ক্লিক করে ONLINE/OFFLINE টগল করুন" style="cursor:pointer;" data-chid="${ch.id}" data-status="${ch.status || 'ONLINE'}">
+          <span class="badge status-badge ${statusBadgeClass}" title="Click to toggle ONLINE/OFFLINE" style="cursor:pointer;" data-chid="${ch.id}" data-status="${ch.status || 'ONLINE'}">
             ${statusText} ${(!scanStatus && ch.response_time_ms) ? `(${ch.response_time_ms}ms)` : ''}
           </span>
         </td>
         <td>
-          <button class="btn-action btn-preview" title="লাইভ টেস্ট করুন">▶️</button>
-          <button class="btn-action btn-auto-detect" title="স্ট্রিম চেক করুন">🔍</button>
-          <button class="btn-action btn-move-up" title="উপরে নিন">⬆️</button>
-          <button class="btn-action btn-move-down" title="নিচে নিন">⬇️</button>
-          <button class="btn-action btn-edit" title="এডিট">✏️</button>
-          <button class="btn-action btn-delete" title="ডিলিট">🗑️</button>
+          <button class="btn-action btn-preview" title="Live Preview">▶️</button>
+          <button class="btn-action btn-auto-detect" title="Probe Stream">🔍</button>
+          <button class="btn-action btn-move-up" title="Move Up">⬆️</button>
+          <button class="btn-action btn-move-down" title="Move Down">⬇️</button>
+          <button class="btn-action btn-edit" title="Edit">✏️</button>
+          <button class="btn-action btn-delete" title="Delete">🗑️</button>
         </td>
       `;
 
@@ -275,7 +319,7 @@ class AdminDashboard {
           statEl.textContent = this.channels.filter(c => c.status === 'ONLINE').length;
         }
         await this.updateChannelStatus(ch.id, finalStatus);
-        this.showToast(`${ch.name}: ${finalStatus === 'ONLINE' ? '✅ ONLINE' : '❌ OFFLINE (টাইমআউট/বন্ধ)'}`, finalStatus === 'ONLINE' ? 'success' : 'info');
+        this.showToast(`${ch.name}: ${finalStatus === 'ONLINE' ? '✅ ONLINE' : '❌ OFFLINE (Timed out/Unreachable)'}`, finalStatus === 'ONLINE' ? 'success' : 'info');
       });
 
       // Clickable status badge to toggle ONLINE/OFFLINE
@@ -303,7 +347,7 @@ class AdminDashboard {
           statEl.textContent = this.channels.filter(c => c.status === 'ONLINE').length;
         }
 
-        this.showToast(`${ch.name} স্ট্যাটাস ${newStatus} করা হয়েছে`, 'success');
+        this.showToast(`${ch.name} status updated to ${newStatus}`, 'success');
         await this.updateChannelStatus(ch.id, newStatus);
       });
 
@@ -356,22 +400,22 @@ class AdminDashboard {
       });
       await this.loadChannels();
     } catch (e) {
-      alert('ক্রম পরিবর্তন ব্যর্থ হয়েছে');
+      alert('Failed to reorder channels.');
     }
   }
 
   async deleteChannel(id, name) {
-    if (!confirm(`আপনি কি নিশ্চিতভাবে '${name}' চ্যানেলটি মুছে ফেলতে চান?`)) return;
+    if (!confirm(`Are you sure you want to delete "${name}"?`)) return;
     try {
       await this.authFetch(`/api/channels?id=${id}`, { method: 'DELETE' });
       await this.loadChannels();
     } catch (e) {
-      alert('চ্যানেল মুছে ফেলা যায়নি');
+      alert('Failed to delete channel.');
     }
   }
 
   openEditChannel(ch) {
-    document.getElementById('channel-modal-title').textContent = 'চ্যানেল এডিট করুন';
+    document.getElementById('channel-modal-title').textContent = 'Edit Channel';
     document.getElementById('channel-edit-id').value = ch.id;
     document.getElementById('form-ch-name').value = ch.name;
     document.getElementById('form-ch-category').value = ch.category || 'News';
@@ -384,17 +428,19 @@ class AdminDashboard {
     document.getElementById('form-ch-use-proxy').checked = Boolean(ch.use_proxy);
     document.getElementById('form-ch-proxy-referer').value = ch.proxy_referer || '';
     document.getElementById('form-ch-proxy-user-agent').value = ch.proxy_user_agent || '';
+    // Show/hide proxy advanced group based on current state
+    document.getElementById('proxy-advanced-group').style.display = Boolean(ch.use_proxy) ? 'block' : 'none';
 
     document.getElementById('channel-modal').classList.remove('hidden');
   }
 
   // 5. Live Preview Modal
   openPreview(ch) {
-    document.getElementById('preview-modal-title').textContent = `লাইভ টেস্ট: ${ch.name}`;
+    document.getElementById('preview-modal-title').textContent = `Live Stream: ${ch.name}`;
     const video = document.getElementById('admin-preview-player');
     const statusText = document.getElementById('preview-status-text');
     const effectiveUrl = (ch.use_proxy && ch.id) ? `/api/proxy?ch=${encodeURIComponent(ch.id)}` : ch.url;
-    statusText.textContent = `কানেক্ট হচ্ছে: ${effectiveUrl}`;
+    statusText.textContent = `Connecting: ${effectiveUrl}`;
 
     if (this.previewHls) {
       this.previewHls.destroy();
@@ -418,7 +464,7 @@ class AdminDashboard {
       this.previewHls.loadSource(cleanUrl);
       this.previewHls.attachMedia(video);
       this.previewHls.on(Hls.Events.MANIFEST_PARSED, () => {
-        statusText.textContent = '✅ লাইভ স্ট্রিম সফলভাবে চলছে!';
+        statusText.textContent = '✅ Live stream playing smoothly!';
         video.play().catch(() => {});
       });
       this.previewHls.on(Hls.Events.ERROR, (event, data) => {
@@ -428,7 +474,7 @@ class AdminDashboard {
           } else if (data.type === Hls.ErrorTypes.MEDIA_ERROR) {
             try { this.previewHls.recoverMediaError(); } catch (e) {}
           } else {
-            statusText.textContent = '⚠️ লাইভ স্ট্রিম চালাতে সমস্যা হচ্ছে!';
+            statusText.textContent = '⚠️ Stream playback error or offline.';
           }
         }
       });
@@ -444,17 +490,23 @@ class AdminDashboard {
   bindModals() {
     // Channel Modal
     document.getElementById('btn-add-channel').addEventListener('click', () => {
-      document.getElementById('channel-modal-title').textContent = 'নতুন চ্যানেল যোগ করুন';
+      document.getElementById('channel-modal-title').textContent = 'Add New Channel';
       document.getElementById('channel-form').reset();
       document.getElementById('channel-edit-id').value = '';
       document.getElementById('form-ch-use-proxy').checked = false;
       document.getElementById('form-ch-proxy-referer').value = '';
       document.getElementById('form-ch-proxy-user-agent').value = '';
+      document.getElementById('proxy-advanced-group').style.display = 'none';
       document.getElementById('channel-modal').classList.remove('hidden');
     });
 
     document.getElementById('btn-close-channel-modal').addEventListener('click', () => {
       document.getElementById('channel-modal').classList.add('hidden');
+    });
+
+    // Proxy toggle: show/hide advanced proxy fields
+    document.getElementById('form-ch-use-proxy').addEventListener('change', function() {
+      document.getElementById('proxy-advanced-group').style.display = this.checked ? 'block' : 'none';
     });
 
     document.getElementById('channel-form').addEventListener('submit', async (e) => {
@@ -486,7 +538,7 @@ class AdminDashboard {
         document.getElementById('channel-modal').classList.add('hidden');
         await this.loadChannels();
       } catch (err) {
-        alert('চ্যানেল সেভ করা যায়নি!');
+        alert('Failed to save channel.');
       }
     });
 
@@ -494,7 +546,7 @@ class AdminDashboard {
     const btnAddCustomer = document.getElementById('btn-add-customer');
     if (btnAddCustomer) {
       btnAddCustomer.addEventListener('click', () => {
-        document.getElementById('customer-modal-title').textContent = 'নতুন গ্রাহক যোগ করুন';
+        document.getElementById('customer-modal-title').textContent = 'Add New Customer';
         document.getElementById('customer-form').reset();
         document.getElementById('cust-edit-id').value = '';
         document.getElementById('form-cust-code').value = 'BDTV-' + Math.floor(1000 + Math.random() * 9000);
@@ -539,13 +591,13 @@ class AdminDashboard {
           const json = await res.json();
           if (json.success) {
             document.getElementById('customer-modal').classList.add('hidden');
-            alert('গ্রাহক সফলভাবে সংরক্ষণ করা হয়েছে!');
+            alert('Customer saved successfully!');
             await this.loadCustomers();
           } else {
-            alert(json.message || 'গ্রাহক সংরক্ষণ ব্যর্থ হয়েছে!');
+            alert(json.message || 'Failed to save customer.');
           }
         } catch (err) {
-          alert('সার্ভার এরর! গ্রাহক সংরক্ষণ করা যায়নি।');
+          alert('Server error! Failed to save customer.');
         }
       });
     }
@@ -602,16 +654,16 @@ class AdminDashboard {
       const rawContent = rawInput ? rawInput.value.trim() : '';
 
       if (!isRaw && !url) {
-        alert('দয়া করে একটি বৈধ Stream বা Playlist URL লিখুন!');
+        alert('Please enter a valid Stream or Playlist URL.');
         return;
       }
       if (isRaw && !rawContent) {
-        alert('দয়া করে M3U বা JSON কনটেন্ট পেস্ট করুন!');
+        alert('Please paste M3U or JSON playlist content.');
         return;
       }
 
       diagnoseBox.classList.remove('hidden');
-      diagnoseContent.innerHTML = `<span style="color:var(--yellow)">⏳ সার্ভার সংযোগ ও স্ট্রিম পরীক্ষা করা হচ্ছে... দয়া করে অপেক্ষা করুন...</span>`;
+      diagnoseContent.innerHTML = `<span style="color:var(--yellow)">⏳ Testing server connection and streams... Please wait...</span>`;
 
       try {
         const res = await this.authFetch('/api/playlist', {
@@ -630,7 +682,7 @@ class AdminDashboard {
           if (json.sampleChannels && json.sampleChannels.length > 0) {
             samplesHtml = `
               <div style="margin-top: 10px; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px;">
-                <strong style="color:#fff;">নমুনা চ্যানেলসমূহ (${json.sampleChannels.length} টি):</strong>
+                <strong style="color:#fff;">Sample Channels (${json.sampleChannels.length}):</strong>
                 <ul style="margin: 6px 0 0 18px; padding: 0;">
                   ${json.sampleChannels.map(c => `<li><strong>${c.name}</strong> (${c.category || 'General'}) - <span style="color:var(--green)">${c.url.substring(0, 45)}...</span></li>`).join('')}
                 </ul>
@@ -640,19 +692,19 @@ class AdminDashboard {
 
           diagnoseContent.innerHTML = `
             <div style="display:flex; gap:16px; flex-wrap:wrap; margin-bottom:8px;">
-              <div>✅ <strong>স্ট্যাটাস:</strong> <span style="color:var(--green)">HTTP ${json.httpStatus || 200} OK</span></div>
-              <div>⚡ <strong>রেসপন্স টাইম:</strong> ${json.responseTimeMs || 0} ms</div>
-              <div>📁 <strong>শনাক্ত ফরম্যাট:</strong> <span style="color:#ff3b30; font-weight:700;">${json.format}</span></div>
-              <div>📺 <strong>পাওয়া গেছে:</strong> <span style="color:var(--green); font-weight:700;">${json.channelCount} টি চ্যানেল</span></div>
+              <div>✅ <strong>Status:</strong> <span style="color:var(--green)">HTTP ${json.httpStatus || 200} OK</span></div>
+              <div>⚡ <strong>Response Time:</strong> ${json.responseTimeMs || 0} ms</div>
+              <div>📁 <strong>Detected Format:</strong> <span style="color:#00d2ff; font-weight:700;">${json.format}</span></div>
+              <div>📺 <strong>Channels Found:</strong> <span style="color:var(--green); font-weight:700;">${json.channelCount}</span></div>
             </div>
             <p style="color:#fff;">${json.message}</p>
             ${samplesHtml}
           `;
         } else {
-          diagnoseContent.innerHTML = `<span style="color:var(--red)">❌ ত্রুটি: ${json.message || 'সংযোগ স্থাপন ব্যর্থ হয়েছে।'}</span>`;
+          diagnoseContent.innerHTML = `<span style="color:var(--red)">❌ Error: ${json.message || 'Connection failed.'}</span>`;
         }
       } catch (err) {
-        diagnoseContent.innerHTML = `<span style="color:var(--red)">❌ ত্রুটি: সার্ভার রিকোয়েস্ট পাঠাতে ব্যর্থ হয়েছে।</span>`;
+        diagnoseContent.innerHTML = `<span style="color:var(--red)">❌ Error: Failed to send request to server.</span>`;
       }
     };
 
@@ -676,16 +728,16 @@ class AdminDashboard {
       const replaceExisting = document.getElementById('replace-existing-m3u').checked;
 
       if (!isRaw && !url) {
-        alert('দয়া করে Playlist বা Stream URL লিখুন!');
+        alert('Please enter a Playlist or Stream URL.');
         return;
       }
       if (isRaw && !rawContent) {
-        alert('দয়া করে M3U বা JSON টেক্সট পেস্ট করুন!');
+        alert('Please paste M3U or JSON text.');
         return;
       }
 
       const submitBtn = document.getElementById('btn-import-submit');
-      submitBtn.textContent = '⏳ ইমপোর্ট হচ্ছে...';
+      submitBtn.textContent = '⏳ Importing...';
       submitBtn.disabled = true;
 
       try {
@@ -724,9 +776,9 @@ class AdminDashboard {
           document.getElementById('group-playlist-raw').classList.add('hidden');
         }
       } catch (err) {
-        alert('ইমপোর্ট ব্যর্থ হয়েছে! সার্ভার সংযোগ পরীক্ষা করুন।');
+        alert('Import failed! Please check your server connection.');
       } finally {
-        submitBtn.textContent = '+ প্লেলিস্ট সেভ ও চ্যানেল ইমপোর্ট করুন';
+        submitBtn.textContent = '+ Save & Import Playlist';
         submitBtn.disabled = false;
       }
     });
@@ -740,7 +792,7 @@ class AdminDashboard {
     if (btnCopy) {
       btnCopy.addEventListener('click', () => {
         navigator.clipboard.writeText(m3uUrl);
-        this.showToast('✅ M3U প্লেলিস্ট লিংক কপি করা হয়েছে!', 'success');
+        this.showToast('✅ Dynamic M3U playlist link copied!', 'success');
       });
     }
   }
@@ -788,19 +840,19 @@ class AdminDashboard {
     if (!container) return;
 
     const list = this.playlists || [];
-    if (countEl) countEl.textContent = list.length + ' টি প্লেলিস্ট';
+    if (countEl) countEl.textContent = list.length + ' Playlists';
 
     if (list.length === 0) {
       container.innerHTML = `
         <div style="text-align:center; padding:32px 0; color:var(--text-muted);">
           <div style="font-size:40px; margin-bottom:10px;">\u{1F4C2}</div>
-          <p>এখনো কোনো প্লেলিস্ট সংরক্ষিত নেই।<br>উপরের ফর্মে URL দিয়ে ইমপোর্ট করুন।</p>
+          <p>No playlists saved yet.<br>Import one using the URL form above.</p>
         </div>`;
       return;
     }
 
     container.innerHTML = list.map(pl => {
-      const savedDate = pl.savedAt ? new Date(pl.savedAt).toLocaleString('bn-BD') : '—';
+      const savedDate = pl.savedAt ? new Date(pl.savedAt).toLocaleString('en-GB') : '—';
       const displayUrl = pl.url
         ? '<a href="' + pl.url + '" target="_blank" style="color:var(--primary-light); word-break:break-all; font-size:12px;">' + pl.url + '</a>'
         : '<span style="color:var(--text-muted); font-size:12px;">Raw/Manual Import</span>';
@@ -819,23 +871,23 @@ class AdminDashboard {
 
           <div style="flex:1; min-width:200px;">
             <div style="font-weight:700; font-size:14px; color:#fff; margin-bottom:4px;">
-              ${pl.name || 'অজানা প্লেলিস্ট'}
+              ${pl.name || 'Unknown Playlist'}
               <span style="margin-left:8px; font-size:11px; font-weight:500;
                 background:rgba(0,210,255,0.15); color:#00d2ff;
                 padding:2px 8px; border-radius:10px;">${pl.format || 'AUTO'}</span>
             </div>
             <div style="margin-bottom:3px;">${displayUrl}</div>
             <div style="font-size:11px; color:var(--text-muted);">
-              \u{1F4FA} ${pl.channelCount || 0} টি চ্যানেল &nbsp;\u00B7&nbsp; \u{1F550} ${savedDate}
+              \u{1F4FA} ${pl.channelCount || 0} Channels &nbsp;\u00B7&nbsp; \u{1F550} ${savedDate}
             </div>
           </div>
 
           <div style="display:flex; gap:8px; flex-shrink:0;">
             <button class="btn-refresh-pl btn-secondary-admin" data-id="${pl.id}" data-url="${encodeURIComponent(pl.url || '')}" data-name="${encodeURIComponent(pl.name || '')}" style="padding:6px 12px; font-size:12px;">
-              🔄 রিফ্রেশ
+              🔄 Refresh
             </button>
-            <button class="btn-delete-pl" data-id="${pl.id}" data-name="${encodeURIComponent(pl.name || 'প্লেলিস্ট')}" style="padding:6px 12px; font-size:12px; background:rgba(255,59,48,0.15); border:1px solid rgba(255,59,48,0.4); color:#ff3b30; border-radius:8px; cursor:pointer;">
-              🗑 মুছুন
+            <button class="btn-delete-pl" data-id="${pl.id}" data-name="${encodeURIComponent(pl.name || 'Playlist')}" style="padding:6px 12px; font-size:12px; background:rgba(255,59,48,0.15); border:1px solid rgba(255,59,48,0.4); color:#ff3b30; border-radius:8px; cursor:pointer;">
+              🗑 Delete
             </button>
           </div>
         </div>`;
@@ -854,38 +906,38 @@ class AdminDashboard {
     container.querySelectorAll('.btn-delete-pl').forEach(btn => {
       btn.addEventListener('click', () => {
         const id = btn.dataset.id;
-        const name = decodeURIComponent(btn.dataset.name || 'প্লেলিস্ট');
+        const name = decodeURIComponent(btn.dataset.name || 'Playlist');
         this.deletePlaylist(id, name);
       });
     });
   }
 
   async deletePlaylist(id, name) {
-    if (!confirm('"' + name + '" প্লেলিস্টটি তালিকা থেকে মুছে ফেলবেন?\n(চ্যানেলগুলো অপরিবর্তিত থাকবে)')) return;
+    if (!confirm('"' + name + '" will be removed from the list.\n(Channels will remain unchanged)')) return;
     try {
       const res = await this.authFetch('/api/playlists?id=' + encodeURIComponent(id), { method: 'DELETE' });
       const json = await res.json();
       if (json.success) {
         this.playlists = this.playlists.filter(p => p.id !== id);
         this.renderPlaylistsList();
-        this.showToast('প্লেলিস্ট সফলভাবে মুছে ফেলা হয়েছে।', 'success');
+        this.showToast('Playlist deleted successfully.', 'success');
       } else {
-        this.showToast('মুছতে ব্যর্থ: ' + json.message, 'error');
+        this.showToast('Delete failed: ' + json.message, 'error');
       }
     } catch (e) {
-      this.showToast('সংযোগ সমস্যা!', 'error');
+      this.showToast('Connection error!', 'error');
     }
   }
 
   async refreshPlaylist(id, url, name) {
     if (!url) {
-      this.showToast('এই প্লেলিস্টটির কোনো অনলাইন URL নেই।', 'error');
+      this.showToast('This playlist has no online URL.', 'error');
       return;
     }
     const btn = document.querySelector(`.btn-refresh-pl[data-id="${id}"]`);
     if (btn) {
       btn.disabled = true;
-      btn.textContent = '⏳ রিফ্রেশ হচ্ছে...';
+      btn.textContent = '⏳ Refreshing...';
     }
     try {
       const res = await this.authFetch('/api/playlist', {
@@ -895,18 +947,18 @@ class AdminDashboard {
       });
       const json = await res.json();
       if (json.success) {
-        this.showToast(json.message || `✅ ${json.updated || 0} টি চ্যানেল আপডেট, ${json.added || 0} টি নতুন যোগ হয়েছে।`, 'success');
+        this.showToast(json.message || `✅ ${json.updated || 0} channels updated, ${json.added || 0} new added.`, 'success');
         await this.loadChannels();
         await this.loadPlaylists();
       } else {
-        this.showToast('রিফ্রেশ ব্যর্থ: ' + (json.message || 'অজানা ত্রুটি'), 'error');
+        this.showToast('Refresh failed: ' + (json.message || 'Unknown error'), 'error');
       }
     } catch (e) {
-      this.showToast('সার্ভার সংযোগ সমস্যা!', 'error');
+      this.showToast('Server connection error!', 'error');
     } finally {
       if (btn) {
         btn.disabled = false;
-        btn.textContent = '🔄 রিফ্রেশ';
+        btn.textContent = '🔄 Refresh';
       }
     }
   }
@@ -918,20 +970,20 @@ class AdminDashboard {
       document.getElementById('btn-quick-scan'),
       document.getElementById('btn-run-health-scan')
     ].filter(Boolean);
-    btns.forEach(b => { b.textContent = '⏳ স্ক্যান হচ্ছে...'; b.disabled = true; });
+    btns.forEach(b => { b.textContent = '⏳ Scanning...'; b.disabled = true; });
 
     try {
       const res = await this.authFetch('/api/health?auto_scan=1');
       const data = await res.json();
       if (data.success) {
-        this.showToast(`✅ স্ক্যান সম্পন্ন! মোট ${data.total_scanned} টি চ্যানেল যাচাই করা হয়েছে।`, 'success');
+        this.showToast(`✅ Scan complete! ${data.total_scanned} channels checked.`, 'success');
         await this.loadChannels();
       }
     } catch (e) {
-      this.showToast('স্ক্যান ব্যর্থ হয়েছে!', 'error');
+      this.showToast('Health scan failed!', 'error');
     } finally {
       btns.forEach(b => {
-        b.textContent = '⚡ হেলথ স্ক্যান চালান';
+        b.textContent = '⚡ Health Scan';
         b.disabled = false;
       });
     }
@@ -982,16 +1034,16 @@ class AdminDashboard {
         <td>${c.plan || 'Standard'}</td>
         <td>${c.expires_at || '—'}</td>
         <td><span class="badge ${isBlocked ? 'badge-offline' : 'badge-online'}">${c.account_status}</span></td>
-        <td>${c.max_devices || 2} টি</td>
+        <td>${c.max_devices || 2}</td>
         <td>
-          <button class="btn-action btn-edit-cust" title="এডিট">✏️</button>
-          <button class="btn-action btn-extend" title="+৩০ দিন মেয়াদ বাড়ান">➕৩০ দিন</button>
-          <button class="btn-action btn-delete-cust" title="মুছে ফেলুন">🗑️</button>
+          <button class="btn-action btn-edit-cust" title="Edit">✏️</button>
+          <button class="btn-action btn-extend" title="+30 Days">➕ +30 Days</button>
+          <button class="btn-action btn-delete-cust" title="Delete">🗑️</button>
         </td>
       `;
 
       tr.querySelector('.btn-edit-cust').addEventListener('click', () => {
-        document.getElementById('customer-modal-title').textContent = 'গ্রাহক তথ্য পরিবর্তন করুন';
+        document.getElementById('customer-modal-title').textContent = 'Edit Customer';
         document.getElementById('cust-edit-id').value = c.id;
         document.getElementById('form-cust-code').value = c.customer_code || '';
         document.getElementById('form-cust-name').value = c.name || '';
@@ -1016,22 +1068,22 @@ class AdminDashboard {
           });
           const json = await res.json();
           if (json.success) {
-            this.showToast(`✅ ${c.name} — মেয়াদ ৩০ দিন বাড়ানো হয়েছে! নতুন মেয়াদ: ${json.new_expiry}`, 'success');
+            this.showToast(`✅ ${c.name} — Extended by 30 days! New expiry: ${json.new_expiry}`, 'success');
             await this.loadCustomers();
           } else {
-            this.showToast(`❌ ত্রুটি: ${json.message || 'মেয়াদ বাড়ানো যায়নি।'}`, 'error');
+            this.showToast(`❌ Error: ${json.message || 'Could not extend subscription.'}`, 'error');
             btn.disabled = false;
-            btn.textContent = '➕৩০ দিন';
+            btn.textContent = '➕ +30 Days';
           }
         } catch (err) {
-          this.showToast('❌ নেটর্঵ার্ক ত্রুটি। পুনরায় চেষ্টা করুন।', 'error');
+          this.showToast('❌ Network error. Please try again.', 'error');
           btn.disabled = false;
-          btn.textContent = '➕৩০ দিন';
+          btn.textContent = '➕ +30 Days';
         }
       });;
 
       tr.querySelector('.btn-delete-cust').addEventListener('click', async () => {
-        if (!confirm(`'${c.name}' অ্যাকাউন্টটি মুছে ফেলতে চান?`)) return;
+        if (!confirm(`'${c.name}' Delete account '${c.name}'?`)) return;
         await this.authFetch(`/api/customers?id=${c.id}`, { method: 'DELETE' });
         await this.loadCustomers();
       });
@@ -1059,14 +1111,14 @@ class AdminDashboard {
     tbody.innerHTML = '';
 
     if (!activities || activities.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:18px; color:#94A3B8;">কোনো সক্রিয় কানেকশন নেই।</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:18px; color:#94A3B8;">No active connections.</td></tr>';
       return;
     }
 
     activities.forEach(item => {
       const tr = document.createElement('tr');
       const secondsAgo = Math.max(1, Math.round((Date.now() - (item.last_ping || Date.now())) / 1000));
-      const timeStr = secondsAgo < 60 ? `${secondsAgo} সেকেন্ড আগে` : `${Math.round(secondsAgo / 60)} মিনিট আগে`;
+      const timeStr = secondsAgo < 60 ? `${secondsAgo} s ago` : `${Math.round(secondsAgo / 60)} m ago`;
 
       let uaLabel = item.user_agent;
       if (item.user_agent.includes('BDTv-Android-App') || item.user_agent.includes('BDTv-App')) {
@@ -1111,7 +1163,7 @@ class AdminDashboard {
     tbody.innerHTML = '';
 
     if (!this.devices || this.devices.length === 0) {
-      tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; padding:18px; color:#94A3B8;">কোনো নিবন্ধিত ডিভাইস পাওয়া যায়নি।</td></tr>`;
+      tbody.innerHTML = `<tr><td colspan="7" style="text-align:center; padding:18px; color:#94A3B8;">No registered devices found.</td></tr>`;
       return;
     }
 
@@ -1127,17 +1179,17 @@ class AdminDashboard {
         <td>
           <span class="badge ${isBlocked ? 'badge-offline' : 'badge-online'}" 
                 style="cursor:pointer; user-select:none;" 
-                title="${isBlocked ? 'ক্লিক করে আনব্লক (Unblock) করুন' : 'ক্লিক করে ব্লক (Block) করুন'}">
-            ${isBlocked ? '🚫 BLOCKED (আনব্লক)' : '✅ ACTIVE (ব্লক)'}
+                title="${isBlocked ? 'Click to Unblock' : 'Click to Block'}">
+            ${isBlocked ? '🚫 BLOCKED (Unblock)' : '✅ ACTIVE (Block)'}
           </span>
         </td>
         <td>${d.last_active ? new Date(d.last_active).toLocaleString() : '—'}</td>
         <td>
           <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
             <button class="btn-toggle-dev" style="padding:6px 14px; font-size:12px; border-radius:6px; border:1px solid ${isBlocked ? '#22c55e' : '#f59e0b'}; background:${isBlocked ? 'rgba(34,197,94,0.15)' : 'rgba(245,158,11,0.15)'}; color:${isBlocked ? '#22c55e' : '#f59e0b'}; cursor:pointer; font-weight:600; white-space:nowrap;">
-              ${isBlocked ? '🔓 আনব্লক' : '🚫 ব্লক'}
+              ${isBlocked ? '🔓 Unblock' : '🚫 Block'}
             </button>
-            <button class="btn-delete-dev" title="ডিভাইস মুছে ফেলুন" style="padding:6px 10px; font-size:14px; border-radius:6px; border:1px solid #ef4444; background:rgba(239,68,68,0.15); color:#ef4444; cursor:pointer;">
+            <button class="btn-delete-dev" title="Delete Device" style="padding:6px 10px; font-size:14px; border-radius:6px; border:1px solid #ef4444; background:rgba(239,68,68,0.15); color:#ef4444; cursor:pointer;">
               🗑️
             </button>
           </div>
@@ -1158,10 +1210,10 @@ class AdminDashboard {
             body: JSON.stringify({ device_id: d.id, action: newAction })
           });
           const json = await res.json();
-          this.showToast(json.message || (isBlocked ? 'ডিভাইস আনব্লক করা হয়েছে!' : 'ডিভাইস ব্লক করা হয়েছে!'));
+          this.showToast(json.message || (isBlocked ? 'Device unblocked!' : 'Device blocked!'));
           await this.loadDevices();
         } catch (err) {
-          this.showToast('সার্ভার এরর! স্ট্যাটাস পরিবর্তন করা যায়নি।');
+          this.showToast('Server error! Could not change status.');
         }
       };
 
@@ -1173,10 +1225,10 @@ class AdminDashboard {
         try {
           const res = await this.authFetch(`/api/devices?device_id=${d.id}&action=delete`, { method: 'DELETE' });
           const json = await res.json();
-          this.showToast(json.message || 'ডিভাইস মুছে ফেলা হয়েছে!');
+          this.showToast(json.message || 'Device deleted!');
           await this.loadDevices();
         } catch (err) {
-          this.showToast('ডিভাইস মুছতে সমস্যা হয়েছে!');
+          this.showToast('Failed to delete device!');
         }
       });
 
@@ -1203,14 +1255,14 @@ class AdminDashboard {
     tbody.innerHTML = '';
 
     if (!activities || activities.length === 0) {
-      tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:18px; color:#94A3B8;">কোনো সক্রিয় কানেকশন নেই।</td></tr>';
+      tbody.innerHTML = '<tr><td colspan="7" style="text-align:center; padding:18px; color:#94A3B8;">No active connections.</td></tr>';
       return;
     }
 
     activities.forEach(item => {
       const tr = document.createElement('tr');
       const secondsAgo = Math.max(1, Math.round((Date.now() - (item.last_ping || Date.now())) / 1000));
-      const timeStr = secondsAgo < 60 ? `${secondsAgo} সেকেন্ড আগে` : `${Math.round(secondsAgo / 60)} মিনিট আগে`;
+      const timeStr = secondsAgo < 60 ? `${secondsAgo} s ago` : `${Math.round(secondsAgo / 60)} m ago`;
 
       let uaLabel = item.user_agent;
       if (item.user_agent.includes('BDTv-Android-App') || item.user_agent.includes('BDTv-App')) {
@@ -1290,7 +1342,7 @@ class AdminDashboard {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ subscription_restrictions_enabled: e.target.checked })
       });
-      alert('সাবস্ক্রিপশন মোড আপডেট হয়েছে!');
+      alert('VIP subscription mode updated!');
     });
 
     document.getElementById('toggle-notice-active').addEventListener('change', async (e) => {
@@ -1323,13 +1375,13 @@ class AdminDashboard {
         });
         const json = await res.json();
         if (json.success) {
-          alert('জিমেইল ও পাসওয়ার্ড সফলভাবে সংরক্ষিত হয়েছে!');
+          alert('Settings saved successfully!');
           document.getElementById('setting-admin-password').value = '';
         } else {
-          alert('সেভ ব্যর্থ: ' + (json.error || json.message));
+          alert('Save failed: ' + (json.error || json.message));
         }
       } catch (err) {
-        alert('সার্ভার এরর!');
+        alert('Server error!');
       }
     });
 
@@ -1359,7 +1411,7 @@ class AdminDashboard {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ads })
       });
-      alert('বিজ্ঞাপন কনফিগারেশন সংরক্ষিত হয়েছে!');
+      alert('Ad configuration saved!');
     });
   }
 
@@ -1395,7 +1447,7 @@ class AdminDashboard {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload)
       });
-      alert('অ্যাপ ভার্সন আপডেট সফল হয়েছে!');
+      alert('App version updated successfully!');
     });
   }
 
@@ -1500,7 +1552,7 @@ class AutoDetector {
 
     const statusEl = document.getElementById('ad-status-text');
     if (statusEl) {
-      const map = { IDLE:'💤 প্রস্তুত', RUNNING:'🔄 স্ক্যান চলছে...', PAUSED:'⏸ বিরতি', STOPPED:'⏹ বন্ধ', DONE:'✅ সম্পন্ন' };
+      const map = { IDLE:'💤 Ready', RUNNING:'🔄 Scanning...', PAUSED:'⏸ Paused', STOPPED:'⏹ Stopped', DONE:'✅ Completed' };
       statusEl.textContent = map[s] || s;
     }
   }
@@ -1589,7 +1641,7 @@ class AutoDetector {
     this.counters  = { total: channels.length, done: 0, online: 0, offline: 0, timeout: 0 };
     this._updateUI();
 
-    this._log('🚀', `স্ক্যান শুরু হয়েছে — মোট ${channels.length} টি চ্যানেল`);
+    this._log('🚀', `Scan started — ${channels.length} channels total`);
 
     const changedUpdates = [];
 
@@ -1597,7 +1649,7 @@ class AutoDetector {
       if (changedUpdates.length === 0) return;
       const toSend = [...changedUpdates];
       changedUpdates.length = 0;
-      this._log('💾', `${toSend.length} টি পরিবর্তিত চ্যানেলের স্ট্যাটাস ক্লাউডে সেভ হচ্ছে...`);
+      this._log('💾', `Saving ${toSend.length} changed channel statuses to cloud...`);
       try {
         const fetcher = this.authFetch || (window.adminApp ? window.adminApp.authFetch.bind(window.adminApp) : fetch);
         const res = await fetcher('/api/channels', {
@@ -1607,12 +1659,12 @@ class AutoDetector {
         });
         const json = await res.json();
         if (json.success) {
-          this._log('☁️', 'ডাটাবেস সফলভাবে আপডেট হয়েছে!');
+          this._log('☁️', 'Database updated successfully!');
         } else {
-          this._log('⚠️', 'ডাটাবেস সেভ ব্যর্থ: ' + (json.message || ''));
+          this._log('⚠️', 'Database save failed: ' + (json.message || ''));
         }
       } catch (err) {
-        this._log('⚠️', 'ডাটাবেস সেভ করতে সমস্যা হয়েছে: ' + err.message);
+        this._log('⚠️', 'Database save error: ' + err.message);
       }
     };
 
@@ -1629,13 +1681,23 @@ class AutoDetector {
       if (ch.status === 'OFFLINE') {
         this.counters.done++;
         this.counters.offline++;
-        this._log('🔒', `[${i+1}/${channels.length}] ${ch.name} — অফলাইন (লকড: এডমিন ম্যানুয়ালি অন না করা পর্যন্ত অফলাইন থাকবে)`);
+        this._log('🔒', `[${i+1}/${channels.length}] ${ch.name} — OFFLINE (Locked: stays offline until admin manually enables)`);
         this.onProgress(ch.id, 'OFFLINE');
         this._updateUI();
         continue;
       }
 
-      this._log('⏳', `[${i+1}/${channels.length}] চেক করছি: ${ch.name}`);
+      // MANUAL OVERRIDE: Skip scanning — keep this channel ONLINE regardless of probe result.
+      if (ch.manual_override) {
+        this.counters.done++;
+        this.counters.online++;
+        this._log('🛡️', `[${i+1}/${channels.length}] ${ch.name} — SKIPPED (Manual Override ON: always stays ONLINE)`);
+        this.onProgress(ch.id, 'ONLINE');
+        this._updateUI();
+        continue;
+      }
+
+      this._log('⏳', `[${i+1}/${channels.length}] Checking: ${ch.name}`);
       this.onProgress(ch.id, 'CHECKING');
       this._updateUI();
 
@@ -1653,7 +1715,7 @@ class AutoDetector {
         this.counters.offline++;
         if (result === 'TIMEOUT') {
           this.counters.timeout++;
-          this._log('⏱❌', `TIMEOUT — ${ch.name} (অফলাইন হিসেবে চিহ্নিত)`);
+          this._log('⏱❌', `TIMEOUT — ${ch.name} (marked OFFLINE)`);
         } else {
           this._log('❌', `OFFLINE — ${ch.name}`);
         }
@@ -1685,10 +1747,10 @@ class AutoDetector {
 
     if (!this._stopped) {
       this.status = 'DONE';
-      this._log('🏁', `স্ক্যান সম্পন্ন! Online: ${this.counters.online} | Offline: ${this.counters.offline} | Timeout: ${this.counters.timeout}`);
+      this._log('🏁', `Scan complete! Online: ${this.counters.online} | Offline: ${this.counters.offline} | Timeout: ${this.counters.timeout}`);
     } else {
       this.status = 'STOPPED';
-      this._log('⏹', 'ব্যবহারকারী স্ক্যান বন্ধ করেছেন।');
+      this._log('⏹', 'Scan stopped by user.');
     }
     this._updateUI();
 
@@ -1701,7 +1763,7 @@ class AutoDetector {
     if (this.status !== 'RUNNING') return;
     this._paused = true;
     this.status  = 'PAUSED';
-    this._log('⏸', 'স্ক্যান বিরতিতে রাখা হয়েছে।');
+    this._log('⏸', 'Scan paused.');
     this._updateUI();
   }
 
@@ -1709,7 +1771,7 @@ class AutoDetector {
     if (this.status !== 'PAUSED') return;
     this._paused = false;
     this.status  = 'RUNNING';
-    this._log('▶️', 'স্ক্যান পুনরায় শুরু হয়েছে।');
+    this._log('▶️', 'Scan resumed.');
     if (this._pauseResolve) { this._pauseResolve(); this._pauseResolve = null; }
     this._updateUI();
   }
@@ -1719,7 +1781,7 @@ class AutoDetector {
     this._paused  = false;
     if (this._pauseResolve) { this._pauseResolve(); this._pauseResolve = null; }
     this.status = 'STOPPED';
-    this._log('⏹', 'স্ক্যান থামানো হয়েছে।');
+    this._log('⏹', 'Scan stopped.');
     this._updateUI();
   }
 }

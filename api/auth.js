@@ -57,7 +57,8 @@ module.exports = async (req, res) => {
   // Must await getSettings() to get current GitHub-persisted settings
   const settings = await db.getSettings();
   const validEmail = (settings.admin_email || 'kauserahemath67@gmail.com').trim().toLowerCase();
-  const validPassword = (settings.admin_password || settings.admin_pin || 'BDTv@Admin2026!').trim();
+  // Only use the saved password — no hardcoded fallback, no PIN alternative
+  const validPassword = (settings.admin_password || '').trim();
 
   if (req.method === 'POST') {
     // ── Brute force check ──
@@ -65,7 +66,7 @@ module.exports = async (req, res) => {
     if (bf.blocked) {
       return res.status(429).json({
         success: false,
-        message: `অনেকবার ভুল চেষ্টা করা হয়েছে। ${bf.remainMin} মিনিট পর আবার চেষ্টা করুন।`
+        message: `Too many failed attempts. Try again in ${bf.remainMin} minutes.`
       });
     }
 
@@ -74,13 +75,12 @@ module.exports = async (req, res) => {
     const inputPass  = (password || pin || '').trim();
 
     if (!inputPass) {
-      return res.status(400).json({ success: false, message: 'পাসওয়ার্ড প্রদান করুন।' });
+      return res.status(400).json({ success: false, message: 'Please enter your password.' });
     }
 
     // Strict email check — must match exactly, no 'admin' shortcut
     const emailMatch = !inputEmail || inputEmail === validEmail;
-    const passMatch  = inputPass === validPassword ||
-                       (settings.admin_pin && inputPass === settings.admin_pin.trim());
+    const passMatch  = validPassword.length > 0 && inputPass === validPassword;
 
     if (emailMatch && passMatch) {
       clearAttempts(clientIp);
@@ -90,7 +90,7 @@ module.exports = async (req, res) => {
       const token = Buffer.from(payload).toString('base64');
       return res.status(200).json({
         success: true,
-        message: 'লগইন সফল হয়েছে।',
+        message: 'Login successful.',
         token,
         expiresAt
       });
@@ -101,8 +101,8 @@ module.exports = async (req, res) => {
       return res.status(401).json({
         success: false,
         message: remaining > 0
-          ? `ভুল ইমেইল অথবা পাসওয়ার্ড! আর ${remaining}টি সুযোগ বাকি।`
-          : 'অ্যাকাউন্ট ১৫ মিনিটের জন্য লক করা হয়েছে।'
+          ? `Wrong email or password! ${remaining} attempt(s) remaining.`
+          : 'Account locked for 15 minutes.'
       });
     }
   }
@@ -118,7 +118,7 @@ module.exports = async (req, res) => {
           const ts = parseInt(parts[2] || '0', 10);
           if (ts) {
             if (ts <= Date.now() && (Date.now() - ts >= 24 * 60 * 60 * 1000)) {
-              return res.status(401).json({ success: false, authenticated: false, message: 'সেশন মেয়াদ শেষ। আবার লগইন করুন।' });
+              return res.status(401).json({ success: false, authenticated: false, message: 'Session expired. Please log in again.' });
             }
           }
           return res.status(200).json({ success: true, authenticated: true });

@@ -64,11 +64,11 @@ module.exports = async (req, res) => {
       }
       // Renew or extend subscription
       const { customer_id, days_to_add, plan, payment_method, transaction_reference } = req.body || {};
-      if (!customer_id) return res.status(400).json({ success: false, message: 'Customer ID আবশ্যক।' });
+      if (!customer_id) return res.status(400).json({ success: false, message: 'Customer ID is required.' });
 
       const customers = await db.getCustomers();   // ✅ await
       const cust = customers.find(c => c.id === customer_id);
-      if (!cust) return res.status(404).json({ success: false, message: 'গ্রাহক পাওয়া যায়নি।' });
+      if (!cust) return res.status(404).json({ success: false, message: 'Customer not found.' });
 
       // If subscription is already active, extend from current expiry; otherwise from today
       const currentExpiry = new Date(cust.expires_at) > new Date()
@@ -88,7 +88,7 @@ module.exports = async (req, res) => {
 
       return res.status(200).json({
         success: true,
-        message: `সাবস্ক্রিপশনের মেয়াদ ${addDays} দিন বৃদ্ধি করা হয়েছে।`,
+        message: `Subscription extended by ${addDays} days.`,
         new_expiry: cust.expires_at
       });
     }

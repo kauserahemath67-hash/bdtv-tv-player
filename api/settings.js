@@ -35,7 +35,7 @@ module.exports = async (req, res) => {
       }
       const body = req.body || {};
       const updated = await db.updateSettings(body);
-      return res.status(200).json({ success: true, message: 'সেটিংস সংরক্ষিত হয়েছে।', data: updated });
+      return res.status(200).json({ success: true, message: 'Settings saved successfully.', data: updated });
     }
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });

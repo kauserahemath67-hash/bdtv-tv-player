@@ -43,7 +43,7 @@ module.exports = async (req, res) => {
         return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
       }
       const body = req.body || {};
-      if (!body.name) return res.status(400).json({ success: false, message: 'প্লেলিস্টের নাম দিন।' });
+      if (!body.name) return res.status(400).json({ success: false, message: 'Please provide a playlist name.' });
       const saved = await db.savePlaylist({
         id:           body.id,
         name:         body.name,
@@ -52,7 +52,7 @@ module.exports = async (req, res) => {
         channelCount: body.channelCount || 0,
         active:       body.active !== false
       });
-      return res.status(200).json({ success: true, message: 'প্লেলিস্ট সেভ হয়েছে।', data: saved });
+      return res.status(200).json({ success: true, message: 'Playlist saved successfully.', data: saved });
     }
 
     // DELETE — remove a saved playlist by id
@@ -61,10 +61,10 @@ module.exports = async (req, res) => {
         return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
       }
       const { id } = req.query || req.body || {};
-      if (!id) return res.status(400).json({ success: false, message: 'Playlist ID প্রয়োজন।' });
+      if (!id) return res.status(400).json({ success: false, message: 'Playlist ID is required.' });
       const ok = await db.deletePlaylist(id);
-      if (!ok) return res.status(404).json({ success: false, message: 'প্লেলিস্ট পাওয়া যায়নি।' });
-      return res.status(200).json({ success: true, message: 'প্লেলিস্ট মুছে ফেলা হয়েছে।' });
+      if (!ok) return res.status(404).json({ success: false, message: 'Playlist not found.' });
+      return res.status(200).json({ success: true, message: 'Playlist deleted successfully.' });
     }
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });

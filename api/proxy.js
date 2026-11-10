@@ -186,28 +186,60 @@ module.exports = async (req, res) => {
     const rawContentType = (upstreamRes.headers.get('content-type') || '').toLowerCase();
     const isMpegUrl = rawContentType.includes('mpegurl') || rawContentType.includes('x-mpegurl');
 
-    // Read response body as buffer
-    const arrayBuf = await upstreamRes.arrayBuffer();
-    const buffer = Buffer.from(arrayBuf);
+    // --- Playlists (.m3u8): buffer to rewrite sub-URLs, then send ---
+    if (isMpegUrl) {
+      const arrayBuf = await upstreamRes.arrayBuffer();
+      const buffer = Buffer.from(arrayBuf);
+      const head = buffer.slice(0, 32).toString('utf8').trimStart();
+      if (head.startsWith('#EXTM3U') || isMpegUrl) {
+        const playlistText = buffer.toString('utf8');
+        const rewritten = rewritePlaylist(playlistText, finalUrl, channel.id);
+        res.setHeader('Content-Type', 'application/vnd.apple.mpegurl; charset=utf-8');
+        res.setHeader('Access-Control-Allow-Origin', '*');
+        res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
+        return res.status(upstreamRes.status === 200 ? 200 : upstreamRes.status).send(rewritten);
+      }
+    }
 
-    // Check if body starts with #EXTM3U
-    const head = buffer.slice(0, 32).toString('utf8').trimStart();
-    const isPlaylist = isMpegUrl || head.startsWith('#EXTM3U');
+    // --- Peek first 32 bytes to detect #EXTM3U without content-type ---
+    // For non-mpegurl content-type, check first chunk for playlist marker
+    const { Readable } = require('stream');
+    const reader = upstreamRes.body.getReader();
+    let firstChunk = null;
+    let isPlaylist = false;
+
+    const { value: firstValue, done: firstDone } = await reader.read();
+    if (!firstDone && firstValue) {
+      firstChunk = Buffer.from(firstValue);
+      const head = firstChunk.slice(0, 32).toString('utf8').trimStart();
+      isPlaylist = head.startsWith('#EXTM3U');
+    }
 
     if (isPlaylist) {
+      // Buffer rest and rewrite
+      const chunks = [firstChunk];
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        chunks.push(Buffer.from(value));
+      }
+      const buffer = Buffer.concat(chunks);
       const playlistText = buffer.toString('utf8');
       const rewritten = rewritePlaylist(playlistText, finalUrl, channel.id);
-
       res.setHeader('Content-Type', 'application/vnd.apple.mpegurl; charset=utf-8');
       res.setHeader('Access-Control-Allow-Origin', '*');
       res.setHeader('Cache-Control', 'no-cache, no-store, must-revalidate');
       return res.status(upstreamRes.status === 200 ? 200 : upstreamRes.status).send(rewritten);
     }
 
-    // Binary segment / Key / Other media
-    res.status(upstreamRes.status);
+    // --- Binary segments (.ts, .aac, .mp4, keys) — STREAM PIPE ---
+    // No buffering: pipe upstream directly to client to save RAM & latency
+    res.statusCode = upstreamRes.status;
     if (upstreamRes.headers.get('content-type')) {
       res.setHeader('Content-Type', upstreamRes.headers.get('content-type'));
+    }
+    if (upstreamRes.headers.get('content-length')) {
+      res.setHeader('Content-Length', upstreamRes.headers.get('content-length'));
     }
     if (upstreamRes.headers.get('content-range')) {
       res.setHeader('Content-Range', upstreamRes.headers.get('content-range'));
@@ -215,11 +247,22 @@ module.exports = async (req, res) => {
     if (upstreamRes.headers.get('accept-ranges')) {
       res.setHeader('Accept-Ranges', upstreamRes.headers.get('accept-ranges'));
     }
-    res.setHeader('Content-Length', buffer.length);
     res.setHeader('Access-Control-Allow-Origin', '*');
-    res.setHeader('Cache-Control', 'public, max-age=60');
-    return res.end(buffer);
+    res.setHeader('Cache-Control', 'public, max-age=10');
+
+    // Send first already-read chunk, then pipe the rest
+    if (firstChunk) res.write(firstChunk);
+    while (true) {
+      const { value, done } = await reader.read();
+      if (done) break;
+      res.write(Buffer.from(value));
+    }
+    return res.end();
+
   } catch (err) {
-    return res.status(502).send('Bad Gateway: Stream processing error');
+    if (!res.headersSent) {
+      return res.status(502).send('Bad Gateway: Stream processing error');
+    }
+    res.end();
   }
 };

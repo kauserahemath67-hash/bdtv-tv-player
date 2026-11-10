@@ -51,21 +51,21 @@ module.exports = async (req, res) => {
           return res.status(403).json({
             success: false,
             vip_locked: true,
-            message: '🔒 ভিআইপি সাবস্ক্রিপশন মোড সক্রিয়। চ্যানেল দেখতে বৈধ গ্রাহক কোড ও পিন প্রয়োজন।'
+            message: '🔒 VIP subscription mode active. Valid customer code and PIN required to watch channels.'
           });
         }
         if (customer.manual_block || customer.account_status !== 'ACTIVE') {
           return res.status(403).json({
             success: false,
             vip_locked: true,
-            message: `অ্যাকাউন্ট স্থগিত: ${customer.block_reason || 'অ্যাডমিন দ্বারা সাময়িক স্থগিত'}। যোগাযোগ: 01629666467`
+            message: `Account suspended: ${customer.block_reason || 'Temporarily suspended by admin'}. Contact: 01629666467`
           });
         }
         if (customer.expires_at && new Date(customer.expires_at) < new Date()) {
           return res.status(403).json({
             success: false,
             vip_locked: true,
-            message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। নবায়ন করতে যোগাযোগ করুন: 01629666467'
+            message: 'Subscription expired. Contact to renew: 01629666467'
           });
         }
 
@@ -75,7 +75,7 @@ module.exports = async (req, res) => {
           return res.status(403).json({
             success: false,
             vip_locked: true,
-            message: 'ডিভাইস আইডি পাওয়া যায়নি। অ্যাপ রিস্টার্ট করুন।'
+            message: 'Device ID not found. Please restart the app.'
           });
         }
         {
@@ -101,7 +101,7 @@ module.exports = async (req, res) => {
               success: false,
               vip_locked: true,
               device_blocked: true,
-              message: devValidation.message || `সর্বোচ্চ ডিভাইস সীমা (${customer.max_devices || 2} টি) অতিক্রম করেছে!`
+              message: devValidation.message || `Maximum device limit (${customer.max_devices || 2}) exceeded!`
             });
           }
         }
@@ -188,7 +188,7 @@ module.exports = async (req, res) => {
       }
       const body = req.body || {};
       if (!body.name || !body.url) {
-        return res.status(400).json({ success: false, message: 'চ্যানেলের নাম এবং স্ট্রিমিং URL বাধ্যতামূলক।' });
+        return res.status(400).json({ success: false, message: 'Channel name and streaming URL are required.' });
       }
 
       const saved = await db.saveChannel({
@@ -206,7 +206,7 @@ module.exports = async (req, res) => {
         proxy_user_agent: body.proxy_user_agent ? String(body.proxy_user_agent).trim() : null
       });
 
-      return res.status(200).json({ success: true, message: 'চ্যানেল সংরক্ষিত হয়েছে।', data: saved });
+      return res.status(200).json({ success: true, message: 'Channel saved successfully.', data: saved });
     }
 
     // ── PUT — reorder channels OR update single/batch channel status ──
@@ -220,24 +220,24 @@ module.exports = async (req, res) => {
       // Batch status update (used by in-built Auto-Detector)
       if (Array.isArray(batchUpdates) && batchUpdates.length > 0) {
         await db.batchUpdateChannels(batchUpdates);
-        return res.status(200).json({ success: true, message: `${batchUpdates.length} টি চ্যানেলের স্ট্যাটাস আপডেট হয়েছে।`, count: batchUpdates.length });
+        return res.status(200).json({ success: true, message: `${batchUpdates.length} channel(s) status updated.`, count: batchUpdates.length });
       }
 
       // Single channel status update
       if (id && status) {
         const channels = await db.getChannels();
         const ch = channels.find(c => c.id === id);
-        if (!ch) return res.status(404).json({ success: false, message: 'চ্যানেল পাওয়া যায়নি।' });
+        if (!ch) return res.status(404).json({ success: false, message: 'Channel not found.' });
         ch.status = status;
         if (manual_override !== undefined) ch.manual_override = Boolean(manual_override);
         await db.saveChannel(ch);
-        return res.status(200).json({ success: true, message: `স্ট্যাটাস ${status} করা হয়েছে।`, data: ch });
+        return res.status(200).json({ success: true, message: `Status set to ${status}.`, data: ch });
       }
 
       // Bulk reorder
       if (Array.isArray(orderList)) {
         const updated = await db.reorderChannels(orderList);
-        return res.status(200).json({ success: true, message: 'চ্যানেলের ক্রম পরিবর্তিত হয়েছে।', data: updated });
+        return res.status(200).json({ success: true, message: 'Channel order updated.', data: updated });
       }
       return res.status(400).json({ success: false, message: 'Invalid request body' });
     }
@@ -249,14 +249,14 @@ module.exports = async (req, res) => {
       }
       const { id } = req.query || req.body || {};
       if (!id) {
-        return res.status(400).json({ success: false, message: 'চ্যানেল ID প্রয়োজন।' });
+        return res.status(400).json({ success: false, message: 'Channel ID required.' });
       }
 
       const deleted = await db.deleteChannel(id);
       if (!deleted) {
-        return res.status(404).json({ success: false, message: 'চ্যানেল পাওয়া যায়নি।' });
+        return res.status(404).json({ success: false, message: 'Channel not found.' });
       }
-      return res.status(200).json({ success: true, message: 'চ্যানেল স্থায়ীভাবে মুছে ফেলা হয়েছে।' });
+      return res.status(200).json({ success: true, message: 'Channel permanently deleted.' });
     }
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });

@@ -38,7 +38,7 @@ module.exports = async (req, res) => {
     if (req.method === 'POST') {
       const { channel_id, channel_name, error_message, user_agent } = req.body || {};
       if (!channel_id && !channel_name) {
-        return res.status(400).json({ success: false, message: 'চ্যানেলের তথ্য প্রয়োজন।' });
+        return res.status(400).json({ success: false, message: 'Channel info is required.' });
       }
 
       const report = db.addReport({
@@ -48,7 +48,7 @@ module.exports = async (req, res) => {
         user_agent: user_agent || req.headers['user-agent']
       });
 
-      return res.status(200).json({ success: true, message: 'রিপোর্ট গৃহীত হয়েছে। ধন্যবাদ!', data: report });
+      return res.status(200).json({ success: true, message: 'Report received. Thank you!', data: report });
     }
 
     if (req.method === 'PUT') {
@@ -56,10 +56,10 @@ module.exports = async (req, res) => {
         return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
       }
       const { id } = req.body || {};
-      if (!id) return res.status(400).json({ success: false, message: 'Report ID প্রয়োজন।' });
+      if (!id) return res.status(400).json({ success: false, message: 'Report ID is required.' });
 
       const resolved = db.resolveReport(id);
-      return res.status(200).json({ success: true, message: 'রিপোর্ট সমাধান চিহ্নিত করা হয়েছে।', data: resolved });
+      return res.status(200).json({ success: true, message: 'Report marked as resolved.', data: resolved });
     }
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });

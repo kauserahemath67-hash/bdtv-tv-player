@@ -24,7 +24,7 @@ const http = require('http');
 // Helper to fetch URL with SSL ignore and redirect follow
 function fetchUrl(url, maxRedirects = 5) {
   return new Promise((resolve, reject) => {
-    if (maxRedirects <= 0) return reject(new Error('অতিরিক্ত রিডাইরেক্ট হয়েছে।'));
+    if (maxRedirects <= 0) return reject(new Error('Too many redirects.'));
     const isHttps = url.startsWith('https:');
     const client = isHttps ? https : http;
     const req = client.get(url, {
@@ -52,7 +52,7 @@ function fetchUrl(url, maxRedirects = 5) {
       }));
     });
     req.on('error', reject);
-    req.setTimeout(12000, () => { req.destroy(new Error('অনলাইন সার্ভারে সংযোগ সময়সীমা পার হয়েছে (Timeout)')); });
+    req.setTimeout(12000, () => { req.destroy(new Error('Online server connection timed out (Timeout)')); });
   });
 }
 
@@ -175,14 +175,14 @@ module.exports = async (req, res) => {
           return res.status(403).json({
             success: false,
             vip_locked: true,
-            message: '🔒 ভিআইপি সাবস্ক্রিপশন সক্রিয়। প্লেলিস্ট ডাউনলোড করতে বৈধ কোড ও পিন প্রয়োজন।'
+            message: '🔒 VIP subscription active. Valid code required to download playlist.'
           });
         }
         if (customer.expires_at && new Date(customer.expires_at) < new Date()) {
           return res.status(403).json({
             success: false,
             vip_locked: true,
-            message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। যোগাযোগ: 01629666467'
+            message: 'Subscription expired. Contact: 01629666467'
           });
         }
       }
@@ -251,7 +251,7 @@ module.exports = async (req, res) => {
       }
 
       if (!content) {
-        return res.status(400).json({ success: false, message: 'URL অথবা প্লেলিস্ট কনটেন্ট প্রদান করুন।' });
+        return res.status(400).json({ success: false, message: 'URL or playlist content is required.' });
       }
 
       const parsed = parseUniversal(content, playlistName);
@@ -267,7 +267,7 @@ module.exports = async (req, res) => {
           responseTimeMs: fetchMeta ? fetchMeta.duration : 0,
           contentType: fetchMeta ? fetchMeta.contentType : 'text/plain',
           sampleChannels: parsed.channels.slice(0, 5),
-          message: `${parsed.format} শনাক্ত হয়েছে। মোট ${parsed.channels.length} টি চ্যানেল পাওয়া গেছে।`
+          message: `${parsed.format} detected. Total ${parsed.channels.length} channels found.`
         });
       }
 
@@ -276,7 +276,7 @@ module.exports = async (req, res) => {
         if (parsed.channels.length === 0) {
           return res.status(400).json({
             success: false,
-            message: 'প্লেলিস্ট থেকে কোনো বৈধ চ্যানেল বা স্ট্রিম লিংক পাওয়া যায়নি।'
+            message: 'No valid channels or stream links found in this playlist.'
           });
         }
 
@@ -345,7 +345,7 @@ module.exports = async (req, res) => {
         return res.status(200).json({
           success: true,
           action: 'refresh',
-          message: `প্লেলিস্ট রিফ্রেশ সম্পন্ন! ${updatedCount} টি চ্যানেল আপডেট ও ${addedCount} টি নতুন চ্যানেল যুক্ত হয়েছে। মোট চ্যানেল: ${existing.length}`,
+          message: `Playlist refreshed! ${updatedCount} channel(s) updated and ${addedCount} new channel(s) added. Total channels: ${existing.length}`,
           format: parsed.format,
           updated: updatedCount,
           added: addedCount,
@@ -358,7 +358,7 @@ module.exports = async (req, res) => {
       if (parsed.channels.length === 0) {
         return res.status(400).json({
           success: false,
-          message: 'প্লেলিস্ট থেকে কোনো বৈধ চ্যানেল বা স্ট্রিম লিংক পাওয়া যায়নি।'
+          message: 'No valid channels or stream links found in this playlist.'
         });
       }
 
@@ -396,7 +396,7 @@ module.exports = async (req, res) => {
 
       return res.status(200).json({
         success: true,
-        message: `${parsed.format} থেকে মোট ${count} টি চ্যানেল সফলভাবে ইমপোর্ট হয়েছে এবং স্থায়ীভাবে সেভ হয়েছে।`,
+        message: `${count} channels imported from ${parsed.format} and saved successfully.`,
         format: parsed.format,
         importedCount: count,
         totalChannels: finalList.length
@@ -405,6 +405,6 @@ module.exports = async (req, res) => {
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });
   } catch (err) {
-    return res.status(500).json({ success: false, message: 'প্লেলিস্ট প্রসেস করতে ব্যর্থ হয়েছে: ' + err.message });
+    return res.status(500).json({ success: false, message: 'Failed to process playlist: ' + err.message });
   }
 };

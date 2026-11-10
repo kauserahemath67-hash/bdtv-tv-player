@@ -58,7 +58,7 @@ module.exports = async (req, res) => {
     if (req.method === 'POST') {
       const { customer_id, customer_code, fingerprint, device_name, os, browser } = req.body || {};
       if ((!customer_id && !customer_code) || !fingerprint) {
-        return res.status(400).json({ success: false, message: 'গ্রাহক তথ্য ও ডিভাইস ফিঙ্গারপ্রিন্ট আবশ্যক।' });
+        return res.status(400).json({ success: false, message: 'Customer info and device fingerprint are required.' });
       }
 
       const clientIp = (
@@ -90,18 +90,18 @@ module.exports = async (req, res) => {
         return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
       }
       const { device_id, action } = req.body || req.query || {};
-      if (!device_id) return res.status(400).json({ success: false, message: 'Device ID আবশ্যক।' });
+      if (!device_id) return res.status(400).json({ success: false, message: 'Device ID is required.' });
 
       if (action === 'unblock') {
         const unblocked = await db.unblockDevice(device_id);
-        if (!unblocked) return res.status(404).json({ success: false, message: 'ডিভাইস পাওয়া যায়নি।' });
-        return res.status(200).json({ success: true, message: 'ডিভাইস আনব্লক করা হয়েছে।', device: unblocked });
+        if (!unblocked) return res.status(404).json({ success: false, message: 'Device not found.' });
+        return res.status(200).json({ success: true, message: 'Device unblocked successfully.', device: unblocked });
       } else if (action === 'block') {
         const revoked = await db.revokeDevice(device_id);
-        if (!revoked) return res.status(404).json({ success: false, message: 'ডিভাইস পাওয়া যায়নি।' });
-        return res.status(200).json({ success: true, message: 'ডিভাইস ব্লক করা হয়েছে।', device: revoked });
+        if (!revoked) return res.status(404).json({ success: false, message: 'Device not found.' });
+        return res.status(200).json({ success: true, message: 'Device blocked successfully.', device: revoked });
       }
-      return res.status(400).json({ success: false, message: 'অজানা অ্যাকশন।' });
+      return res.status(400).json({ success: false, message: 'Unknown action.' });
     }
 
     if (req.method === 'DELETE') {
@@ -109,21 +109,21 @@ module.exports = async (req, res) => {
         return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
       }
       const { device_id, action } = req.query || req.body || {};
-      if (!device_id) return res.status(400).json({ success: false, message: 'Device ID আবশ্যক।' });
+      if (!device_id) return res.status(400).json({ success: false, message: 'Device ID is required.' });
 
       // If permanent delete is requested
       if (action === 'delete') {
         const deleted = await db.deleteDevice(device_id);
-        if (!deleted) return res.status(404).json({ success: false, message: 'ডিভাইস পাওয়া যায়নি।' });
-        return res.status(200).json({ success: true, message: 'ডিভাইস মুছে ফেলা হয়েছে।' });
+        if (!deleted) return res.status(404).json({ success: false, message: 'Device not found.' });
+        return res.status(200).json({ success: true, message: 'Device deleted successfully.' });
       }
 
       // Default DELETE action is revoke/block
       const revoked = await db.revokeDevice(device_id);
       if (!revoked) {
-        return res.status(404).json({ success: false, message: 'ডিভাইস পাওয়া যায়নি।' });
+        return res.status(404).json({ success: false, message: 'Device not found.' });
       }
-      return res.status(200).json({ success: true, message: 'ডিভাইস অ্যাক্সেস বাতিল করা হয়েছে।', device: revoked });
+      return res.status(200).json({ success: true, message: 'Device access revoked successfully.', device: revoked });
     }
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });

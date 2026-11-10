@@ -37,8 +37,8 @@ const defaultSettings = {
   site_title: 'BDTv Live - Premium IPTV Web Player',
   admin_email: 'kauserahemath67@gmail.com',
   admin_password: 'BDTv@Admin2026!',
-  admin_pin: 'BDTv2026',
-  notice_text: 'স্বাগতম BDTv লাইভ প্লেয়ারে! যেকোনো টিভি চ্যানেল সহজে উপভোগ করুন।',
+  // admin_pin intentionally removed — only admin_password is used for login
+  notice_text: 'Welcome to BDTv Live Player! Enjoy any TV channel easily.',
   notice_active: true,
   subscription_restrictions_enabled: false,
   default_max_devices: 2,
@@ -581,7 +581,7 @@ async function getDevices(customerId = null) {
 
 async function registerOrValidateDevice({ customer_id, customer_code, fingerprint, device_name, os, browser, ip }) {
   if (!fingerprint) {
-    return { allowed: false, message: 'ডিভাইস ফিঙ্গারপ্রিন্ট পাওয়া যায়নি।' };
+    return { allowed: false, message: 'Device fingerprint not found.' };
   }
 
   // 1. Get customer
@@ -595,15 +595,15 @@ async function registerOrValidateDevice({ customer_id, customer_code, fingerprin
   }
 
   if (!cust) {
-    return { allowed: false, message: 'গ্রাহক অ্যাকাউন্ট পাওয়া যায়নি।' };
+    return { allowed: false, message: 'Customer account not found.' };
   }
 
   if (cust.manual_block || cust.account_status !== 'ACTIVE') {
-    return { allowed: false, message: `অ্যাকাউন্ট স্থগিত: ${cust.block_reason || 'অ্যাডমিন দ্বারা সাময়িক স্থগিত'}। যোগাযোগ করুন: 01629666467` };
+    return { allowed: false, message: `Account suspended: ${cust.block_reason || 'Temporarily suspended by admin'}. Contact: 01629666467` };
   }
 
   if (cust.expires_at && new Date(cust.expires_at) < new Date()) {
-    return { allowed: false, message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। নবায়ন করতে যোগাযোগ করুন: 01629666467' };
+    return { allowed: false, message: 'Subscription expired. Contact to renew: 01629666467' };
   }
 
   const maxAllowed = Number(cust.max_devices) || 2;
@@ -624,7 +624,7 @@ async function registerOrValidateDevice({ customer_id, customer_code, fingerprin
     // Already registered device
     const dev = allDevices[existingIndex];
     if (dev.status === 'BLOCKED') {
-      return { allowed: false, message: 'এই ডিভাইসটি অ্যাডমিন দ্বারা ব্লক করা হয়েছে। যোগাযোগ করুন: 01629666467' };
+      return { allowed: false, message: 'This device has been blocked by admin. Contact: 01629666467' };
     }
     // Update last_active and details
     const lastActiveMs = dev.last_active ? new Date(dev.last_active).getTime() : 0;
@@ -645,7 +645,7 @@ async function registerOrValidateDevice({ customer_id, customer_code, fingerprin
     }
     _devicesCache.data = allDevices;
     _devicesCache.loadedAt = Date.now();
-    return { allowed: true, message: 'ডিভাইস অনুমোদিত।', device: allDevices[existingIndex] };
+    return { allowed: true, message: 'Device authorized.', device: allDevices[existingIndex] };
   }
 
   // New device trying to register - check limit
@@ -653,7 +653,7 @@ async function registerOrValidateDevice({ customer_id, customer_code, fingerprin
   if (activeCount >= maxAllowed) {
     return {
       allowed: false,
-      message: `সর্বোচ্চ অনুমোদিত ডিভাইস সীমা (${maxAllowed} টি) অতিক্রম করেছে! যোগাযোগ করুন: 01629666467`
+      message: `Maximum device limit (${maxAllowed}) exceeded! Contact: 01629666467`
     };
   }
 
@@ -678,7 +678,7 @@ async function registerOrValidateDevice({ customer_id, customer_code, fingerprin
   _devicesCache.data = allDevices;
   _devicesCache.loadedAt = Date.now();
 
-  return { allowed: true, message: 'নতুন ডিভাইস সফলভাবে যুক্ত হয়েছে।', device: newDev };
+  return { allowed: true, message: 'New device registered successfully.', device: newDev };
 }
 
 async function revokeDevice(deviceId) {

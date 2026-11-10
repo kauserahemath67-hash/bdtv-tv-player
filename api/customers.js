@@ -33,12 +33,12 @@ module.exports = async (req, res) => {
       if (code) {
         const customer = await db.findCustomer(code, pin);
         if (!customer) {
-          return res.status(404).json({ success: false, message: 'গ্রাহক কোড অথবা পিন ভুল।' });
+          return res.status(404).json({ success: false, message: 'Customer code or PIN is incorrect.' });
         }
         if (customer.manual_block || customer.account_status !== 'ACTIVE') {
           return res.status(403).json({
             success: false,
-            message: `অ্যাকাউন্ট স্থগিত করা হয়েছে। কারণ: ${customer.block_reason || 'অ্যাডমিন দ্বারা ব্লক'}`
+            message: `Account suspended. Reason: ${customer.block_reason || 'Suspended by admin'}`
           });
         }
 
@@ -46,7 +46,7 @@ module.exports = async (req, res) => {
         if (customer.expires_at && new Date(customer.expires_at) < new Date()) {
           return res.status(403).json({
             success: false,
-            message: 'সাবস্ক্রিপশনের মেয়াদ শেষ হয়ে গেছে। অনুগ্রহ করে প্যাকেজটি নবায়ন করুন।'
+            message: 'Subscription expired. Please renew your package.'
           });
         }
 
@@ -79,7 +79,7 @@ module.exports = async (req, res) => {
       }
       const body = req.body || {};
       if (!body.customer_code) {
-        return res.status(400).json({ success: false, message: 'Customer Code আবশ্যক।' });
+        return res.status(400).json({ success: false, message: 'Customer Code is required.' });
       }
 
       const saved = await db.saveCustomer({
@@ -99,7 +99,7 @@ module.exports = async (req, res) => {
         transaction_reference: body.transaction_reference || ''
       });
 
-      return res.status(200).json({ success: true, message: 'গ্রাহকের তথ্য সংরক্ষিত হয়েছে।', data: saved });
+      return res.status(200).json({ success: true, message: 'Customer info saved successfully.', data: saved });
     }
 
     if (req.method === 'DELETE') {
@@ -107,9 +107,9 @@ module.exports = async (req, res) => {
         return res.status(401).json({ success: false, message: 'Unauthorized: Admin login required.' });
       }
       const { id } = req.query || req.body || {};
-      if (!id) return res.status(400).json({ success: false, message: 'Customer ID আবশ্যক।' });
+      if (!id) return res.status(400).json({ success: false, message: 'Customer ID is required.' });
       await db.deleteCustomer(id);
-      return res.status(200).json({ success: true, message: 'গ্রাহক মুছে ফেলা হয়েছে।' });
+      return res.status(200).json({ success: true, message: 'Customer deleted successfully.' });
     }
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });

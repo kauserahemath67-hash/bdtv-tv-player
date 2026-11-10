@@ -93,7 +93,7 @@ module.exports = async (req, res) => {
       const channels = await db.getChannels();
       const ch = channels.find(c => c.id === channel_id);
       if (!ch) {
-        return res.status(404).json({ success: false, message: 'চ্যানেল পাওয়া যায়নি।' });
+        return res.status(404).json({ success: false, message: 'Channel not found.' });
       }
 
       const result = await pingStream(ch.url);
@@ -153,7 +153,7 @@ module.exports = async (req, res) => {
     // 3. Manual override
     if (req.method === 'POST') {
       const { id, manual_override, status } = req.body || {};
-      if (!id) return res.status(400).json({ success: false, message: 'চ্যানেল ID প্রদান করুন।' });
+      if (!id) return res.status(400).json({ success: false, message: 'Please provide a Channel ID.' });
 
       const channels = await db.getChannels();
       const ch = channels.find(c => c.id === id);
@@ -161,9 +161,9 @@ module.exports = async (req, res) => {
         ch.manual_override = Boolean(manual_override);
         if (status) ch.status = status;
         await db.saveChannel(ch);
-        return res.status(200).json({ success: true, message: 'স্ট্যাটাস ওভাররাইড সফল হয়েছে।', channel: ch });
+        return res.status(200).json({ success: true, message: 'Status override applied successfully.', channel: ch });
       }
-      return res.status(404).json({ success: false, message: 'চ্যানেল পাওয়া যায়নি।' });
+      return res.status(404).json({ success: false, message: 'Channel not found.' });
     }
 
     return res.status(405).json({ success: false, message: 'Method Not Allowed' });

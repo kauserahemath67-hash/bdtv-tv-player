@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="referrer" content="no-referrer">
-  <title>BDTv Live - লাইভ টিভি প্লেয়ার</title>
+  <title>BDTv Live - Live TV Player</title>
   <link rel="stylesheet" href="/css/player.css?v=2.3.25">
   <!-- HLS.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
@@ -15,7 +15,7 @@
   <div id="notice-bar" class="notice-bar hidden">
     <div class="notice-icon">📢</div>
     <div class="notice-content">
-      <span id="notice-text">স্বাগতম BDTv লাইভ প্লেয়ারে!</span>
+      <span id="notice-text">Welcome to BDTv Live Player!</span>
     </div>
   </div>
 
@@ -33,12 +33,12 @@
       </div>
       <div class="top-center channel-info-header">
         <img id="top-channel-logo" src="" alt="" class="top-logo hidden">
-        <span id="top-channel-name">লোডিং...</span>
+        <span id="top-channel-name">Loading...</span>
       </div>
       <div class="top-right">
-        <button id="btn-download-app" class="btn-top-action btn-apk-download hidden" type="button" title="অ্যাপ আপডেট বা ডাউনলোড করুন">⬇️ অ্যাপ আপডেট</button>
-        <button id="btn-toggle-channels" class="btn-channels-pill" title="চ্যানেল তালিকা দেখুন">Channels</button>
-        <button id="btn-pip" class="btn-top-action" title="পিকচার ইন পিকচার">⧉ মিনিমাইজ</button>
+        <button id="btn-download-app" class="btn-top-action btn-apk-download hidden" type="button" title="Download or Update App">⬇️ App Update</button>
+        <button id="btn-toggle-channels" class="btn-channels-pill" title="Show channel list">Channels</button>
+        <button id="btn-pip" class="btn-top-action" title="Picture in Picture">⧉ Minimize</button>
       </div>
     </div>
 
@@ -46,8 +46,8 @@
     <div id="channel-hud" class="channel-hud hidden">
       <img id="hud-channel-logo" src="" alt="" class="hud-logo hidden">
       <div class="hud-text">
-        <div id="hud-channel-name" class="hud-name">চ্যানেল নাম</div>
-        <div id="hud-channel-cat" class="hud-cat">ক্যাটাগরি</div>
+        <div id="hud-channel-name" class="hud-name">Channel Name</div>
+        <div id="hud-channel-cat" class="hud-cat">Category</div>
       </div>
       <span class="hud-tag">LIVE</span>
     </div>
@@ -55,18 +55,18 @@
     <!-- Smart Buffering Overlay -->
     <div id="buffering-overlay" class="overlay hidden">
       <div class="spinner"></div>
-      <div class="buffering-text">বাফারিং হচ্ছে, অপেক্ষা করুন...</div>
+      <div class="buffering-text">Buffering, please wait...</div>
     </div>
 
     <!-- Error & Retry Overlay -->
     <div id="error-overlay" class="overlay hidden">
       <div class="error-card glass-panel">
         <div class="error-icon">⚠️</div>
-        <div class="error-title">স্ট্রিমটি সাময়িকভাবে বন্ধ আছে</div>
-        <div id="error-message" class="error-desc">দয়া করে অন্য চ্যানেল দেখুন অথবা রিকানেক্ট করুন।</div>
+        <div class="error-title">Stream temporarily unavailable</div>
+        <div id="error-message" class="error-desc">Please try another channel or reconnect।</div>
         <div class="error-actions">
-          <button id="btn-retry" class="btn-primary">🔄 Retry (পুনরায় চেষ্টা)</button>
-          <button id="btn-next-channel" class="btn-secondary">পরের চ্যানেল ⏭</button>
+          <button id="btn-retry" class="btn-primary">🔄 Retry</button>
+          <button id="btn-next-channel" class="btn-secondary">Next Channel ⏭</button>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@
     <!-- Pull Tab Handle -->
     <div id="drawer-handle" class="drawer-handle">
       <div class="handle-bar"></div>
-      <span class="handle-text">চ্যানেল তালিকা দেখতে ওপরে টানুন (Swipe Up / Press Up)</span>
+      <span class="handle-text">Swipe Up / Press Up to see channel list</span>
     </div>
 
     <div class="drawer-inner">
@@ -101,20 +101,20 @@
   <div id="auth-modal" class="modal-backdrop hidden">
     <div class="modal-card glass-panel auth-card-compact">
       <div class="modal-header">
-        <h2>🔒 গ্রাহক লগইন (VIP Access)</h2>
-        <p>লাইভ টিভি দেখতে গ্রাহক কোড ও পিন লিখুন</p>
+        <h2>🔒 Customer Login (VIP Access)</h2>
+        <p>Enter your customer code and PIN to watch Live TV</p>
       </div>
       <form id="auth-form" autocomplete="off">
         <div class="form-group">
-          <label for="input-customer-code">গ্রাহক কোড (Customer Code):</label>
-          <input type="text" id="input-customer-code" placeholder="উদা: BDTV-1001" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
+          <label for="input-customer-code">Customer Code:</label>
+          <input type="text" id="input-customer-code" placeholder="e.g. BDTV-1001" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" required>
         </div>
         <div class="form-group">
-          <label for="input-customer-pin">লগইন পিন (PIN):</label>
+          <label for="input-customer-pin">Login PIN:</label>
           <input type="password" id="input-customer-pin" placeholder="****" autocomplete="off" required>
         </div>
         <div id="auth-error" class="form-error hidden"></div>
-        <button type="submit" id="btn-auth-submit" class="btn-primary full-width">আনলক করুন</button>
+        <button type="submit" id="btn-auth-submit" class="btn-primary full-width">Unlock</button>
       </form>
     </div>
   </div>
@@ -127,14 +127,14 @@
         <div class="update-title-group">
           <span class="update-icon">🚀</span>
           <div>
-            <h2 id="update-modal-title" class="update-title">নতুন আপডেট উপলব্ধ!</h2>
+            <h2 id="update-modal-title" class="update-title">New Update Available!</h2>
             <div class="update-subtitle">
               <span id="update-modal-version" class="version-badge">v2.3.1</span>
-              <span class="update-tag">সর্বশেষ সংস্করণ</span>
+              <span class="update-tag">Latest Version</span>
             </div>
           </div>
         </div>
-        <button id="btn-close-update" class="btn-icon-close" title="বন্ধ করুন">✕</button>
+        <button id="btn-close-update" class="btn-icon-close" title="Close">✕</button>
       </div>
 
       <!-- Content / 2-Column Responsive Body -->
@@ -159,8 +159,8 @@
 
       <!-- Action Buttons -->
       <div class="update-actions">
-        <button id="btn-update-later" class="btn-secondary">পরে করুন</button>
-        <button id="btn-update-download" class="btn-primary btn-update-cta" type="button">🚀 আপডেট করুন</button>
+        <button id="btn-update-later" class="btn-secondary">Later</button>
+        <button id="btn-update-download" class="btn-primary btn-update-cta" type="button">🚀 Update Now</button>
       </div>
     </div>
   </div>
