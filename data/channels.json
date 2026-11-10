@@ -1028,7 +1028,7 @@
     "order": 84,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://afrafhls.wns.live/",
     "proxy_user_agent": null
   },
   {
