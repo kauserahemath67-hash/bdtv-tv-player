@@ -2724,7 +2724,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/ZBCINEMA.png",
     "category": "Movies",
     "url": "https://server.zillarbarta.com/ZBCINEMA/index.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-255",
     "order": 252,
