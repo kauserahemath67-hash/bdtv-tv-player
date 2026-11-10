@@ -52,9 +52,9 @@
     "order": 4,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/playlistconfig/channel/38.m3u8"
+    "backup_url": "https://alixbd.com/playlistconfig/"
   },
   {
     "name": "Sony Ten Sports 2",
