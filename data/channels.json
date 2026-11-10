@@ -121,7 +121,7 @@
     "id": "ch-1794166482825-8",
     "order": 9,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": "https://real-vk.proxy.nellaiiptv.com/",
     "proxy_user_agent": null
   },
