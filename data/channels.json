@@ -51,7 +51,7 @@
     "id": "ch-1794166482825-3",
     "order": 4,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
     "proxy_user_agent": null,
     "backup_url": null
