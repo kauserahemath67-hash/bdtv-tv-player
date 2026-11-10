@@ -3541,6 +3541,20 @@
     "proxy_user_agent": null
   },
   {
+    "id": "ch-1794305021976",
+    "name": "Cartoon Network",
+    "category": "News",
+    "logo": "https://assets-prod.services.toffeelive.com/1y6e-JQBv9knK3AHNDWb/posters/ee9ba01b-1bcf-436b-b273-7b857f0810fb.webp",
+    "url": "https://alixbd.com/playlistconfig/channel/43.m3u8",
+    "is_pinned": false,
+    "order": 313,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_user_agent": null
+  },
+  {
     "name": "CCTV-8",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBO8UqIs3A2Qx9wEU-jnSP4kx5MjvZOfk3ICZjHjOlng&s=10",
     "category": "General",
@@ -3580,20 +3594,6 @@
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794305021976",
-    "name": "Cartoon Network",
-    "category": "News",
-    "logo": "",
-    "url": "https://alixbd.com/playlistconfig/channel/43.m3u8",
-    "is_pinned": false,
-    "order": 313,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": false,
-    "proxy_referer": "https://alixbd.com/playlistconfig/",
     "proxy_user_agent": null
   }
 ]
