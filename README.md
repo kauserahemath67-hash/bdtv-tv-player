@@ -42,6 +42,7 @@
 - The Vercel Admin Panel writes channel changes to that branch; the app syncs changes automatically.
 - VIP/customer/device validation, settings, app-version checks, and user-activity heartbeats continue to use `bdtvfree.vercel.app`.
 - Logo image files and video streams are fetched from the URLs listed in the GitHub channel data.
+- In-app update checks run at startup, when the app returns to the foreground, and every 60 seconds while open.
 
 ---
 
