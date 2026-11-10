@@ -1,15 +1,15 @@
 {
-  "versionCode": 307,
-  "versionName": "3.0.7",
+  "versionCode": 308,
+  "versionName": "3.0.6",
   "minSupportedVersion": 100,
-  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.7/BDTv.apk",
-  "updateTitle": "BDTv v3.0.7 Update Required",
+  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.6/BDTv.apk",
+  "updateTitle": "BDTv v3.0.6 Update Required",
   "changelog": [
-    "Update checks run immediately and repeat while the app is open",
-    "Channel and logo data sync directly from GitHub",
-    "VIP access, app settings, and activity remain on Vercel"
+    "Channel and logo data now sync directly from GitHub",
+    "VIP access, app settings, updates, and activity remain on the Vercel server",
+    "Automatic channel refresh while the app is running"
   ],
   "forceUpdate": true,
   "updateMessage": "Please update to v3.0.7 for reliable in-app update checks.",
-  "updatedAt": "2026-11-10T20:50:00.000Z"
+  "updatedAt": "2026-11-10T21:16:46.456Z"
 }
