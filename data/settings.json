@@ -2,10 +2,9 @@
   "site_title": "BDTv Live - Premium IPTV Web Player",
   "admin_email": "kauserahamed424@gmail.com",
   "admin_password": "42431967",
-  "admin_pin": "42431967",
   "notice_text": "স্বাগতম BDTv লাইভ প্লেয়ারে! যেকোনো টিভি চ্যানেল সহজে উপভোগ করুন।",
   "notice_active": false,
-  "subscription_restrictions_enabled": false,
+  "subscription_restrictions_enabled": true,
   "default_max_devices": 2,
   "expiry_warning_days": 3,
   "ads": {
@@ -26,6 +25,7 @@
       "code": ""
     }
   },
+  "admin_pin": "42431967",
   "playlists": [
     {
       "id": "pl-master-live",
