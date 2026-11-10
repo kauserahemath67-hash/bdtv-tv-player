@@ -11,10 +11,11 @@
     "channels_enabled": true,
     "plan": "Monthly VIP",
     "starts_at": "2026-11-05",
-    "expires_at": "2026-12-05",
+    "expires_at": "2027-01-04",
     "payment_status": "PAID",
     "transaction_reference": "",
-    "createdAt": "2026-11-05T19:45:08.821Z"
+    "createdAt": "2026-11-05T19:45:08.821Z",
+    "updatedAt": "2026-11-10T21:57:46.860Z"
   },
   {
     "id": "cust-1793792530221",
