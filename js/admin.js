@@ -426,6 +426,7 @@ class AdminDashboard {
     document.getElementById('form-ch-pinned').checked = Boolean(ch.is_pinned);
     document.getElementById('form-ch-override').checked = Boolean(ch.manual_override);
     document.getElementById('form-ch-use-proxy').checked = Boolean(ch.use_proxy);
+    document.getElementById('form-ch-backup-url').value = ch.backup_url || '';
     document.getElementById('form-ch-proxy-referer').value = ch.proxy_referer || '';
     document.getElementById('form-ch-proxy-user-agent').value = ch.proxy_user_agent || '';
     // Show/hide proxy advanced group based on current state
@@ -494,6 +495,7 @@ class AdminDashboard {
       document.getElementById('channel-form').reset();
       document.getElementById('channel-edit-id').value = '';
       document.getElementById('form-ch-use-proxy').checked = false;
+      document.getElementById('form-ch-backup-url').value = '';
       document.getElementById('form-ch-proxy-referer').value = '';
       document.getElementById('form-ch-proxy-user-agent').value = '';
       document.getElementById('proxy-advanced-group').style.display = 'none';
@@ -524,6 +526,7 @@ class AdminDashboard {
         is_pinned: document.getElementById('form-ch-pinned').checked,
         manual_override: document.getElementById('form-ch-override').checked,
         use_proxy: document.getElementById('form-ch-use-proxy').checked,
+        backup_url: document.getElementById('form-ch-backup-url').value.trim() || null,
         proxy_referer: document.getElementById('form-ch-proxy-referer').value.trim() || null,
         proxy_user_agent: document.getElementById('form-ch-proxy-user-agent').value.trim() || null,
         order: existingCh && existingCh.order !== undefined ? existingCh.order : undefined

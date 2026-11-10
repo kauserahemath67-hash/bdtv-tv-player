@@ -1,15 +1,15 @@
 {
-  "versionCode": 307,
-  "versionName": "3.0.7",
+  "versionCode": 308,
+  "versionName": "3.0.8",
   "minSupportedVersion": 100,
-  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.7/BDTv.apk",
-  "updateTitle": "BDTv v3.0.7 Update Required",
+  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.8/BDTv.apk",
+  "updateTitle": "BDTv v3.0.8 Update Required",
   "changelog": [
-    "Update checks run immediately and repeat while the app is open",
-    "Channel and logo data sync directly from GitHub",
-    "VIP access, app settings, and activity remain on Vercel"
+    "Video playback and configured backup streams stay on the user's device",
+    "Vercel proxy fallback is disabled in the Android app",
+    "Stream URLs and custom headers are redacted from playback logs"
   ],
   "forceUpdate": true,
-  "updateMessage": "Please update to v3.0.7 for reliable in-app update checks.",
-  "updatedAt": "2026-11-10T20:50:00.000Z"
+  "updateMessage": "Please update to v3.0.8 for device-side playback without Vercel video proxy traffic.",
+  "updatedAt": "2026-11-10T21:15:00.000Z"
 }

@@ -40,9 +40,12 @@
 
 - The Android app downloads channel records, stream URLs, and logo URLs directly from the public `data-storage` GitHub branch.
 - The Vercel Admin Panel writes channel changes to that branch; the app syncs changes automatically.
+- The Admin channel form can store an optional direct fallback stream URL and stream headers in GitHub; the APK tries that URL from the user's device if the primary stream fails.
 - VIP/customer/device validation, settings, app-version checks, and user-activity heartbeats continue to use `bdtvfree.vercel.app`.
 - Logo image files and video streams are fetched from the URLs listed in the GitHub channel data.
 - In-app update checks run at startup, when the app returns to the foreground, and every 60 seconds while open.
+- Android playback and any configured backup stream are fetched directly by the device; the app does not fall back to the Vercel video proxy.
+- If direct playback and the configured backup both fail, playback reports an error instead of sending video traffic through Vercel.
 
 ---
 

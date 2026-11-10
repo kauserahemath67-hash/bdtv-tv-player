@@ -596,7 +596,7 @@
             <i class="fa-solid fa-shield-halved proxy-shield-icon"></i>
             <div>
               <span class="proxy-toggle-title">Device-Side Proxy</span>
-              <span class="proxy-toggle-desc">Stream via user device — zero server bandwidth</span>
+            <span class="proxy-toggle-desc">Use stream headers and fallback directly on the user’s device</span>
             </div>
           </div>
           <label class="switch"><input type="checkbox" id="form-ch-use-proxy"><span class="slider"></span></label>
@@ -604,11 +604,16 @@
         <!-- Proxy advanced fields — hidden unless toggle ON -->
         <div id="proxy-advanced-group" style="display:none;">
           <div class="form-group">
-            <label><i class="fa-solid fa-link" style="color:var(--cyan);margin-right:6px;"></i>Proxy Referer Header <span style="opacity:.6;font-size:11px;">(optional)</span></label>
+            <label><i class="fa-solid fa-rotate" style="color:var(--cyan);margin-right:6px;"></i>Device-Side Fallback Stream URL <span style="opacity:.6;font-size:11px;">(optional)</span></label>
+            <input type="url" id="form-ch-backup-url" placeholder="https://backup-provider.example/live.m3u8">
+            <small>Used directly by the app if the main stream fails. Do not enter a Vercel /api/proxy URL.</small>
+          </div>
+          <div class="form-group">
+            <label><i class="fa-solid fa-link" style="color:var(--cyan);margin-right:6px;"></i>Stream Referer Header <span style="opacity:.6;font-size:11px;">(optional; applies to main and fallback URLs)</span></label>
             <input type="text" id="form-ch-proxy-referer" placeholder="https://source-site.com/">
           </div>
           <div class="form-group">
-            <label><i class="fa-solid fa-robot" style="color:var(--cyan);margin-right:6px;"></i>Proxy User-Agent <span style="opacity:.6;font-size:11px;">(optional)</span></label>
+            <label><i class="fa-solid fa-robot" style="color:var(--cyan);margin-right:6px;"></i>Stream User-Agent <span style="opacity:.6;font-size:11px;">(optional; applies to main and fallback URLs)</span></label>
             <input type="text" id="form-ch-proxy-user-agent" placeholder="Custom User-Agent string">
           </div>
         </div>
@@ -677,6 +682,6 @@
     </div>
   </div>
 
-  <script src="/js/admin.js?v=3400"></script>
+  <script src="/js/admin.js?v=3401"></script>
 </body>
 </html>

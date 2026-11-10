@@ -195,6 +195,27 @@ module.exports = async (req, res) => {
         return res.status(400).json({ success: false, message: 'Channel name and streaming URL are required.' });
       }
 
+      const backupUrl = body.backup_url ? String(body.backup_url).trim() : null;
+      if (backupUrl) {
+        let parsedBackupUrl;
+        try {
+          parsedBackupUrl = new URL(backupUrl);
+        } catch (_e) {
+          return res.status(400).json({ success: false, message: 'Fallback stream URL must be a valid absolute URL.' });
+        }
+        const host = parsedBackupUrl.hostname.toLowerCase();
+        const isVercelHost = host === 'bdtvfree.vercel.app' ||
+          host.endsWith('.bdtvfree.vercel.app') ||
+          host === 'bdtv-app.vercel.app' ||
+          host.endsWith('.bdtv-app.vercel.app');
+        if (!['http:', 'https:'].includes(parsedBackupUrl.protocol) || isVercelHost) {
+          return res.status(400).json({
+            success: false,
+            message: 'Fallback must be an HTTP(S) stream URL outside the app’s Vercel domains.'
+          });
+        }
+      }
+
       const saved = await db.saveChannel({
         id:              body.id,
         name:            body.name,
@@ -206,6 +227,7 @@ module.exports = async (req, res) => {
         status:          body.status || 'ONLINE',
         manual_override: Boolean(body.manual_override),
         use_proxy:        Boolean(body.use_proxy),
+        backup_url:       backupUrl,
         proxy_referer:    body.proxy_referer ? String(body.proxy_referer).trim() : null,
         proxy_user_agent: body.proxy_user_agent ? String(body.proxy_user_agent).trim() : null
       });
