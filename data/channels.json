@@ -709,7 +709,7 @@
     "id": "ch-1794166482825-57",
     "order": 58,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": "https://owrcovcrpy.gpcdn.net/",
     "proxy_user_agent": null
   },
