@@ -2766,7 +2766,10 @@
     "is_pinned": false,
     "id": "ch-1794166482825-258",
     "order": 255,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": "https://stream.ichibansys.com:3230/",
+    "proxy_user_agent": null
   },
   {
     "name": "Toffee TV",
