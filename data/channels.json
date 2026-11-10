@@ -3311,8 +3311,8 @@
     "id": "ch-1794166482825-301",
     "order": 296,
     "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
+    "use_proxy": false,
+    "proxy_referer": "https://alixbd.com/playlistconfig/",
     "proxy_user_agent": null
   },
   {
