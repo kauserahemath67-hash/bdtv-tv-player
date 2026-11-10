@@ -172,10 +172,11 @@
     "logo": "https://i.imgur.com/2cpHJKq.png",
     "category": "General",
     "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-10",
-    "order": 13
+    "order": 13,
+    "manual_override": true
   },
   {
     "name": "Matribhumi Tv",
@@ -2782,7 +2783,7 @@
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ESPN3_Logo.png/960px-ESPN3_Logo.png",
     "category": "Sports",
     "url": "http://181.78.197.59:8000/play/a081/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-262",
     "order": 259,
@@ -2796,7 +2797,7 @@
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMWF9cKi_6w6ni8bx4jWZi5-sn2NbYzuzdQov068INkk26pNze_XOGOSZ&s=10",
     "category": "Sports",
     "url": "http://158.172.155.130:8000/play/a0ao/index.m3u8",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-263",
     "order": 260,
