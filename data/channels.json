@@ -38,7 +38,7 @@
     "order": 3,
     "manual_override": false,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://d36r8jifhgsk5j.cloudfront.net",
     "proxy_user_agent": null
   },
   {
