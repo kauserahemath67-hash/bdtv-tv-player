@@ -3,12 +3,12 @@
   "versionName": "3.0.4",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.4/BDTv.apk",
-  "updateTitle": "App Update Available",
+  "updateTitle": "BDTv v3.0.4 Update Required",
   "changelog": [
     "Auto-update fix",
     "Bug fixes and stability improvements"
   ],
-  "forceUpdate": false,
-  "updateMessage": "",
-  "updatedAt": "2026-11-10T19:27:46.353Z"
+  "forceUpdate": true,
+  "updateMessage": "Please update to continue using BDTv.",
+  "updatedAt": "2026-11-10T19:50:40.265Z"
 }
