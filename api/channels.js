@@ -28,7 +28,7 @@ module.exports = async (req, res) => {
   try {
     // ── GET — list channels ──────────────────────────────
     if (req.method === 'GET') {
-      const { category, search, code, pin } = req.query || {};
+      const { category, search, code, pin, validate_only: validateOnly } = req.query || {};
       const authHeader = req.headers.authorization || '';
 
       // SECURE admin check: must have a valid base64 admin-session token (issued by /api/auth)
@@ -105,6 +105,10 @@ module.exports = async (req, res) => {
             });
           }
         }
+      }
+
+      if (validateOnly === '1') {
+        return res.status(200).json({ success: true, vip_authorized: true });
       }
 
       // Always await — reads from GitHub when cache is cold
