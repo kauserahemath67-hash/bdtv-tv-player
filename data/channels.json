@@ -2714,7 +2714,10 @@
     "is_pinned": false,
     "id": "ch-1794166482825-252",
     "order": 249,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": "https://stmv6.voxtvhd.com.br/",
+    "proxy_user_agent": null
   },
   {
     "name": "ZB Cinema",
