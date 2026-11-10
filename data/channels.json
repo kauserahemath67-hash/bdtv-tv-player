@@ -622,7 +622,10 @@
     "is_pinned": false,
     "id": "ch-1794166482825-50",
     "order": 51,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Maasranga TV",
