@@ -3329,7 +3329,7 @@
     "logo": "https://assets-prod.services.toffeelive.com/7S6j-JQBv9knK3AHbzXC/posters/0973097c-bc5c-4b28-aaca-f04d6f6cb5e2.webp",
     "category": "General",
     "url": "http://88.212.15.50/live/test_tlc_1200_atk/playlist.m3u8",
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-305",
     "order": 299,
