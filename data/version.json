@@ -1,14 +1,14 @@
 {
-  "versionCode": 305,
-  "versionName": "3.0.5",
+  "versionCode": 304,
+  "versionName": "3.0.4",
   "minSupportedVersion": 100,
-  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.5/BDTv.apk",
+  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.4/BDTv.apk",
   "updateTitle": "App Update Available",
   "changelog": [
-    "Channels, player, and app performance have been improved for a smoother experience.",
-    "Fixed video lag and stutter on all channels."
+    "Auto-update fix",
+    "Bug fixes and stability improvements"
   ],
-  "forceUpdate": true,
+  "forceUpdate": false,
   "updateMessage": "",
-  "updatedAt": "2026-11-10T19:21:07.405Z"
+  "updatedAt": "2026-11-10T19:27:46.353Z"
 }
