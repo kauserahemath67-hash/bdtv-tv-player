@@ -148,6 +148,21 @@
     "backup_url": null
   },
   {
+    "id": "ch-1794408808436",
+    "name": "T sports",
+    "category": "Sports",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "url": "https://ay-obiram.emonsa4.workers.dev/t-sports-hd.m3u8",
+    "is_pinned": true,
+    "order": 11,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": "https://obiramtvlive.pages.dev/",
+    "proxy_user_agent": null
+  },
+  {
     "name": "Sony Ten Cricket",
     "logo": "https://assets-prod.services.toffeelive.com/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp",
     "category": "Sports",
@@ -155,27 +170,12 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-9",
-    "order": 11,
+    "order": 12,
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
     "proxy_user_agent": null,
     "backup_url": null
-  },
-  {
-    "id": "ch-1794408808436",
-    "name": "T sports",
-    "category": "Sports",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://ay-obiram.emonsa4.workers.dev/t-sports-hd.m3u8",
-    "is_pinned": true,
-    "order": 12,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": "https://obiramtvlive.pages.dev/",
-    "proxy_user_agent": null
   },
   {
     "name": "Fox Sports",
