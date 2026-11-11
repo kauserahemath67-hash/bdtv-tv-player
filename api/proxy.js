@@ -232,32 +232,14 @@ module.exports = async (req, res) => {
       return res.status(upstreamRes.status === 200 ? 200 : upstreamRes.status).send(rewritten);
     }
 
-    // --- Binary segments (.ts, .aac, .mp4, keys) — STREAM PIPE ---
-    // No buffering: pipe upstream directly to client to save RAM & latency
-    res.statusCode = upstreamRes.status;
-    if (upstreamRes.headers.get('content-type')) {
-      res.setHeader('Content-Type', upstreamRes.headers.get('content-type'));
-    }
-    if (upstreamRes.headers.get('content-length')) {
-      res.setHeader('Content-Length', upstreamRes.headers.get('content-length'));
-    }
-    if (upstreamRes.headers.get('content-range')) {
-      res.setHeader('Content-Range', upstreamRes.headers.get('content-range'));
-    }
-    if (upstreamRes.headers.get('accept-ranges')) {
-      res.setHeader('Accept-Ranges', upstreamRes.headers.get('accept-ranges'));
-    }
+    // --- Binary segments (.ts, .aac, .mp4, keys) — 302 REDIRECT ---
+    // Instead of piping video data through Vercel (which costs bandwidth),
+    // redirect the client directly to the upstream source URL.
+    // This means ZERO Vercel bandwidth for video segments!
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Cache-Control', 'public, max-age=10');
-
-    // Send first already-read chunk, then pipe the rest
-    if (firstChunk) res.write(firstChunk);
-    while (true) {
-      const { value, done } = await reader.read();
-      if (done) break;
-      res.write(Buffer.from(value));
-    }
-    return res.end();
+    res.setHeader('Location', finalUrl);
+    return res.status(302).end();
 
   } catch (err) {
     if (!res.headersSent) {
