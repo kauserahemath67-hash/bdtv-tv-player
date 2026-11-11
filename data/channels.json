@@ -177,6 +177,21 @@
     "proxy_user_agent": null
   },
   {
+    "id": "ch-1794408808436",
+    "name": "T sports",
+    "category": "Sports",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "url": "https://ay-obiram.emonsa4.workers.dev/t-sports-hd.m3u8",
+    "is_pinned": true,
+    "order": 13,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": "https://obiramtvlive.pages.dev/",
+    "proxy_user_agent": null
+  },
+  {
     "name": "Fox Sports 1 US",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdtnHkHo0zPNEI-TmMMvJuMcTuhNV7QIl_aHz-d9m1w&s=10",
     "category": "General",
@@ -184,25 +199,10 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-58",
-    "order": 13,
+    "order": 14,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794408808436",
-    "name": "T sports",
-    "category": "Sports",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://ay-obiram.emonsa4.workers.dev/t-sports-hd.m3u8",
-    "is_pinned": true,
-    "order": 14,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": "https://obiramtvlive.pages.dev/",
     "proxy_user_agent": null
   },
   {
