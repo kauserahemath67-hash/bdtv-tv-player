@@ -3620,5 +3620,20 @@
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794415515812",
+    "name": "Dangal TV",
+    "category": "Entertainment",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/b/bf/DangalTVLogo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
+    "url": "https://live-dangal.akamaized.net/liveabr/playlist.m3u8",
+    "is_pinned": false,
+    "order": 309,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
