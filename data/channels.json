@@ -425,9 +425,10 @@
     "id": "ch-1794166482825-29",
     "order": 32,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": "http://alvetv.com/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Gazi Tv",
