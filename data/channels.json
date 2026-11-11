@@ -3596,14 +3596,14 @@
     "name": "T Sports",
     "category": "Sports",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://live.tsports.com/mobile_hls/tsports_live_1/playlist.m3u8",
+    "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/tracks-v1a1/mono.ts.m3u8",
     "is_pinned": false,
     "order": 307,
     "status": "ONLINE",
     "manual_override": false,
     "use_proxy": true,
     "backup_url": null,
-    "proxy_referer": "https://live.tsports.com/",
-    "proxy_user_agent": "Abu-Saeeidx/5.0.6 (Linux;Android 11) AndroidXMedia"
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
