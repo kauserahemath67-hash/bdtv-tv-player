@@ -10,7 +10,7 @@
     "order": 1,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://swradioafrica.com/",
     "proxy_user_agent": null,
     "backup_url": null
   },
