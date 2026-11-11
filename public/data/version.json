@@ -1,15 +1,16 @@
 {
-  "versionCode": 308,
-  "versionName": "3.0.8",
+  "versionCode": 309,
+  "versionName": "3.0.9",
   "minSupportedVersion": 100,
-  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.8/BDTv.apk",
-  "updateTitle": "BDTv v3.0.8 Update Required",
+  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.9/BDTv.apk",
+  "updateTitle": "BDTv v3.0.9 Update Required",
   "changelog": [
-    "Video playback and configured backup streams stay on the user's device",
+    "Failed native playback retries with direct device-side HLS",
+    "Configured backup streams stay on the user's device",
     "Vercel proxy fallback is disabled in the Android app",
     "Stream URLs and custom headers are redacted from playback logs"
   ],
   "forceUpdate": true,
-  "updateMessage": "Please update to v3.0.8 for device-side playback without Vercel video proxy traffic.",
-  "updatedAt": "2026-11-10T21:15:00.000Z"
+  "updateMessage": "Please update to v3.0.9 for device-side HLS recovery without Vercel video proxy traffic.",
+  "updatedAt": "2026-11-11T09:20:00.000Z"
 }

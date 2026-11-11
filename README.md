@@ -45,7 +45,8 @@
 - Logo image files and video streams are fetched from the URLs listed in the GitHub channel data.
 - In-app update checks run at startup, when the app returns to the foreground, and every 60 seconds while open.
 - Android playback and any configured backup stream are fetched directly by the device; the app does not fall back to the Vercel video proxy.
-- If direct playback and the configured backup both fail, playback reports an error instead of sending video traffic through Vercel.
+- If native playback fails, Android retries the primary stream with the device's WebView HLS player before reporting an error.
+- If native playback, the configured backup, and direct WebView HLS recovery all fail, playback reports an error instead of sending video traffic through Vercel.
 
 ---
 
