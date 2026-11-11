@@ -37,7 +37,7 @@
     "url": "https://ay-obiram.emonsa4.workers.dev/t-sports-hd.m3u8",
     "is_pinned": true,
     "order": 3,
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "manual_override": true,
     "use_proxy": true,
     "backup_url": null,
