@@ -117,20 +117,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Star Sports 2",
-    "logo": "https://i.postimg.cc/2yhw5M0c/20241005-170916.png",
-    "category": "General",
-    "url": "https://real-vk.proxy.nellaiiptv.com/SDMEDIA/index.m3u8",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1794166482825-8",
-    "order": 9,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": "https://real-vk.proxy.nellaiiptv.com/",
-    "proxy_user_agent": null
-  },
-  {
     "name": "Btv HD",
     "logo": "https://www.btvlive.gov.bd/_next/image?url=https%3A%2F%2Fd38ll44lbmt52p.cloudfront.net%2Fcms%2Fchannel_poster%2F1677040358634_BTVogo.png&w=3840&q=75",
     "category": "General",
@@ -138,10 +124,24 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-25",
-    "order": 10,
+    "order": 9,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "name": "Star Sports 2",
+    "logo": "https://i.postimg.cc/2yhw5M0c/20241005-170916.png",
+    "category": "General",
+    "url": "https://real-vk.proxy.nellaiiptv.com/SDMEDIA/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": true,
+    "id": "ch-1794166482825-8",
+    "order": 10,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": "https://real-vk.proxy.nellaiiptv.com/",
     "proxy_user_agent": null
   },
   {
