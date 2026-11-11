@@ -3552,7 +3552,7 @@
   {
     "name": "CCTV-8",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBO8UqIs3A2Qx9wEU-jnSP4kx5MjvZOfk3ICZjHjOlng&s=10",
-    "category": "General",
+    "category": "Entertainment",
     "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -3561,7 +3561,8 @@
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "id": "ch-1794170219383",
