@@ -1047,6 +1047,15 @@ input:checked + .slider:before {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 12px;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.ad-slot-header .switch {
+  flex-shrink: 0;
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .ad-toggle-label {
