@@ -3580,7 +3580,7 @@
   {
     "id": "ch-1794252486660",
     "name": "YRF Music",
-    "category": "News",
+    "category": "Music & Radio",
     "logo": "https://static.vecteezy.com/system/resources/previews/009/020/540/non_2x/yaf-logo-yaf-letter-yaf-letter-logo-design-initials-yaf-logo-linked-with-circle-and-uppercase-monogram-logo-yaf-typography-for-technology-business-and-real-estate-brand-vector.jpg",
     "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8",
     "is_pinned": false,
@@ -3589,7 +3589,8 @@
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "id": "ch-1794415058701",
