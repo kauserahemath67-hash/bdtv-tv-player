@@ -25,7 +25,7 @@
     "order": 2,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": "https://live2.jorvakstreamcache.com/l",
+    "proxy_referer": "https://live2.jorvakstreamcache.com/",
     "proxy_user_agent": null,
     "backup_url": null
   },
