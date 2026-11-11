@@ -160,20 +160,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Fox Sports 1 US",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdtnHkHo0zPNEI-TmMMvJuMcTuhNV7QIl_aHz-d9m1w&s=10",
-    "category": "General",
-    "url": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1794166482825-58",
-    "order": 12,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "name": "Btv HD",
     "logo": "https://www.btvlive.gov.bd/_next/image?url=https%3A%2F%2Fd38ll44lbmt52p.cloudfront.net%2Fcms%2Fchannel_poster%2F1677040358634_BTVogo.png&w=3840&q=75",
     "category": "General",
@@ -181,9 +167,23 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-25",
-    "order": 13,
+    "order": 12,
     "manual_override": false,
     "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "name": "Fox Sports 1 US",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWdtnHkHo0zPNEI-TmMMvJuMcTuhNV7QIl_aHz-d9m1w&s=10",
+    "category": "General",
+    "url": "http://85.237.89.160:9590/usa-s/FOX-SPORTS-1/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": true,
+    "id": "ch-1794166482825-58",
+    "order": 13,
+    "manual_override": true,
+    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null
   },
