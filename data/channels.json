@@ -43,21 +43,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Sony Ten Sports 1",
-    "logo": "https://assets-prod.services.toffeelive.com/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
-    "category": "Sports",
-    "url": "https://alixbd.com/playlistconfig/channel/38.m3u8",
-    "status": "ONLINE",
-    "is_pinned": true,
-    "id": "ch-1794166482825-3",
-    "order": 4,
-    "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
     "name": "Btv HD",
     "logo": "https://www.btvlive.gov.bd/_next/image?url=https%3A%2F%2Fd38ll44lbmt52p.cloudfront.net%2Fcms%2Fchannel_poster%2F1677040358634_BTVogo.png&w=3840&q=75",
     "category": "General",
@@ -65,11 +50,26 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-25",
-    "order": 5,
+    "order": 4,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "name": "Sony Ten Sports 1",
+    "logo": "https://assets-prod.services.toffeelive.com/py5j-JQBv9knK3AHxDTY/posters/ea3358b9-2bec-4615-a889-daa2e396c74c.webp",
+    "category": "Sports",
+    "url": "https://alixbd.com/playlistconfig/channel/38.m3u8",
+    "status": "ONLINE",
+    "is_pinned": true,
+    "id": "ch-1794166482825-3",
+    "order": 5,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Sony Ten Sports 2",
