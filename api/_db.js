@@ -95,21 +95,74 @@ function githubRequest(method, path, bodyObj) {
   });
 }
 
+function fetchRawGitHub(filePath) {
+  return new Promise((resolve) => {
+    const rawUrl = `https://raw.githubusercontent.com/${GITHUB_REPO}/${GITHUB_BRANCH}/${filePath}`;
+    const req = https.get(rawUrl, {
+      headers: { 'User-Agent': 'BDTv-DB/3.0' }
+    }, (res) => {
+      if (res.statusCode !== 200) return resolve(null);
+      let raw = '';
+      res.on('data', d => { raw += d; });
+      res.on('end', () => {
+        try { resolve(JSON.parse(raw)); }
+        catch { resolve(null); }
+      });
+    });
+    req.on('error', () => resolve(null));
+    req.setTimeout(6000, () => {
+      req.destroy();
+      resolve(null);
+    });
+  });
+}
+
 /**
  * Fetch a JSON file from GitHub.
  * Returns { data, sha } or null on failure.
  */
 async function ghFetch(filePath) {
-  try {
-    const res = await githubRequest('GET', `${filePath}?ref=${GITHUB_BRANCH}`);
-    if (res.status !== 200 || !res.body || !res.body.content) return null;
-    const decoded = Buffer.from(res.body.content, 'base64').toString('utf8');
-    const data = JSON.parse(decoded);
-    return { data, sha: res.body.sha };
-  } catch (e) {
-    console.error('[BDTv DB] ghFetch error:', e.message);
-    return null;
+  // 1. Try Authenticated API first (if GITHUB_TOKEN is available)
+  if (GITHUB_TOKEN) {
+    try {
+      const res = await githubRequest('GET', `${filePath}?ref=${GITHUB_BRANCH}`);
+      if (res.status === 200 && res.body && res.body.content) {
+        const decoded = Buffer.from(res.body.content, 'base64').toString('utf8');
+        const data = JSON.parse(decoded);
+        return { data, sha: res.body.sha };
+      }
+    } catch (e) {
+      console.warn('[BDTv DB] ghFetch API failed, falling back to public raw:', e.message);
+    }
   }
+
+  // 2. Fallback: Public Raw GitHub UserContent (Works WITHOUT GITHUB_TOKEN for public repo!)
+  try {
+    const rawData = await fetchRawGitHub(filePath);
+    if (rawData) {
+      return { data: rawData, sha: null };
+    }
+  } catch (e) {
+    console.warn('[BDTv DB] Raw GitHub fetch fallback error:', e.message);
+  }
+
+  // 3. Fallback: Local pre-bundled file if exists
+  try {
+    const fs = require('fs');
+    const path = require('path');
+    const candidates = [
+      path.join(__dirname, '..', filePath),
+      path.join(__dirname, '..', 'public', filePath)
+    ];
+    for (const p of candidates) {
+      if (fs.existsSync(p)) {
+        const localData = JSON.parse(fs.readFileSync(p, 'utf8'));
+        return { data: localData, sha: null };
+      }
+    }
+  } catch (e) {}
+
+  return null;
 }
 
 /**
@@ -739,16 +792,18 @@ function resolveReport(id) {
 
 // Version (GitHub-backed with fallback)
 const defaultVersion = {
-  versionCode: 301,
-  versionName: '3.0.1',
+  versionCode: 309,
+  versionName: '3.0.9',
   minSupportedVersion: 100,
-  apkUrl: 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.1/BDTv.apk',
-  updateTitle: 'App Update Available',
+  apkUrl: 'https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.0.9/BDTv.apk',
+  updateTitle: 'BDTv v3.0.9 Update Available',
   changelog: [
-    'Channels, player, and app performance have been improved for a smoother experience.'
+    'Fixed video playback for custom M3U playlists',
+    'Permissive SSL support for all IPTV stream providers',
+    'Automatic server migration to latest high-speed endpoints'
   ],
-  forceUpdate: false,
-  updateMessage: ''
+  forceUpdate: true,
+  updateMessage: 'Please update to v3.0.9 for smooth video playback and server connection.'
 };
 
 async function getVersion() {
