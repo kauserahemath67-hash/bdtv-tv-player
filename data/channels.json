@@ -3,7 +3,7 @@
     "name": "Btv HD",
     "logo": "https://www.btvlive.gov.bd/_next/image?url=https%3A%2F%2Fd38ll44lbmt52p.cloudfront.net%2Fcms%2Fchannel_poster%2F1677040358634_BTVogo.png&w=3840&q=75",
     "category": "General",
-    "url": "https://nkafmbewiff.gpcdn.net/tile_2/master.m3u8",
+    "url": "https://nkafmbewiff.gpcdn.net/tile_2/1080p.m3u8",
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-25",
@@ -11,7 +11,8 @@
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "T Sports",
