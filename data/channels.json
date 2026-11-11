@@ -99,7 +99,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Star Sports 1",
