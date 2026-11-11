@@ -3601,9 +3601,9 @@
     "order": 307,
     "status": "ONLINE",
     "manual_override": false,
-    "use_proxy": false,
+    "use_proxy": true,
     "backup_url": null,
-    "proxy_referer": null,
+    "proxy_referer": "https://tvsen5.aynaott.com",
     "proxy_user_agent": null
   }
 ]
