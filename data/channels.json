@@ -3601,7 +3601,7 @@
     "order": 307,
     "status": "ONLINE",
     "manual_override": false,
-    "use_proxy": false,
+    "use_proxy": true,
     "backup_url": null,
     "proxy_referer": "https://live.tsports.com/",
     "proxy_user_agent": "Abu-Saeeidx/5.0.6 (Linux;Android 11) AndroidXMedia"
