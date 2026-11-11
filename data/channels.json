@@ -3590,20 +3590,5 @@
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794410727427",
-    "name": "T Sports",
-    "category": "Sports",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://live2.jorvakstreamcache.com/live/channel14.m3u8",
-    "is_pinned": false,
-    "order": 307,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
   }
 ]
