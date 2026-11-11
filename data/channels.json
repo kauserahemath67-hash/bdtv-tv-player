@@ -10,7 +10,7 @@
     "order": 1,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": "https://swradioafrica.com/",
+    "proxy_referer": "https://live2.jorvakstreamcache.com",
     "proxy_user_agent": null,
     "backup_url": null
   },
