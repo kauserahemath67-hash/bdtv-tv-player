@@ -74,6 +74,21 @@
     "backup_url": null
   },
   {
+    "id": "ch-1794408808436",
+    "name": "T sports",
+    "category": "Sports",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "url": "https://ay-obiram.emonsa4.workers.dev/t-sports-hd.m3u8",
+    "is_pinned": true,
+    "order": 6,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": "https://obiramtvlive.pages.dev/",
+    "proxy_user_agent": null
+  },
+  {
     "name": "Sony Ten Sports 2",
     "logo": "https://assets-prod.services.toffeelive.com/sy5m-JQBv9knK3AHYTTk/posters/5e40bf0e-633f-4d37-a3b2-3d606f0ac19a.png",
     "category": "Sports",
@@ -81,27 +96,12 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-4",
-    "order": 6,
+    "order": 7,
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
     "proxy_user_agent": null,
     "backup_url": null
-  },
-  {
-    "id": "ch-1794408808436",
-    "name": "T sports",
-    "category": "Sports",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://ay-obiram.emonsa4.workers.dev/t-sports-hd.m3u8",
-    "is_pinned": true,
-    "order": 7,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": "https://obiramtvlive.pages.dev/",
-    "proxy_user_agent": null
   },
   {
     "name": "Sony Ten Sports 5",
