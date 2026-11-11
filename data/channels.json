@@ -205,6 +205,21 @@
     "proxy_user_agent": null
   },
   {
+    "id": "ch-1794408808436",
+    "name": "T sports",
+    "category": "Sports",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "url": "https://ay-obiram.emonsa4.workers.dev/t-sports-hd.m3u8",
+    "is_pinned": true,
+    "order": 15,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": "https://obiramtvlive.pages.dev/",
+    "proxy_user_agent": null
+  },
+  {
     "name": "ESPN 3",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ESPN3_Logo.png/960px-ESPN3_Logo.png",
     "category": "Sports",
@@ -212,27 +227,12 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-262",
-    "order": 15,
+    "order": 16,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
     "backup_url": null
-  },
-  {
-    "id": "ch-1794408808436",
-    "name": "T sports",
-    "category": "Sports",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "url": "https://ay-obiram.emonsa4.workers.dev/t-sports-hd.m3u8",
-    "is_pinned": true,
-    "order": 16,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": "https://obiramtvlive.pages.dev/",
-    "proxy_user_agent": null
   },
   {
     "name": "ESPN Premium",
