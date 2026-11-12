@@ -1114,11 +1114,16 @@
     "name": "B4U Movies",
     "logo": "https://i.imgur.com/M9kMFJl.png",
     "category": "Movies",
-    "url": "https://streams.tangotv.in/B4UMOVIES/ORIGIN/index.m3u8",
+    "url": "https://amg00877-b4unew-amg00877c2-xiaomi-in-5489.playouts.now.amagi.tv/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-92",
-    "order": 88
+    "order": 88,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Bhojpuri Cinema",
