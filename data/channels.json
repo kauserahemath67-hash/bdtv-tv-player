@@ -3766,11 +3766,11 @@
     "proxy_user_agent": null
   },
   {
-    "id": "ch-1794495162971",
-    "name": "9X Jalwa",
+    "id": "ch-1794507501306",
+    "name": "Dangal 2",
     "category": "Entertainment",
-    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png",
-    "url": "https://wiselp.wiseplayout.com/9X_Jalwa/master.m3u8",
+    "logo": "https://i.imgur.com/BEr1r7L.png",
+    "url": "https://live-dangal2.akamaized.net/liveabr/playlist.m3u8",
     "is_pinned": false,
     "order": 309,
     "status": "ONLINE",
@@ -3781,11 +3781,11 @@
     "proxy_user_agent": null
   },
   {
-    "id": "ch-1794507501306",
-    "name": "Dangal 2",
+    "id": "ch-1794495162971",
+    "name": "9X Jalwa",
     "category": "Entertainment",
-    "logo": "https://i.imgur.com/BEr1r7L.png",
-    "url": "https://live-dangal2.akamaized.net/liveabr/playlist.m3u8",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png",
+    "url": "https://wiselp.wiseplayout.com/9X_Jalwa/master.m3u8",
     "is_pinned": false,
     "order": 310,
     "status": "ONLINE",
