@@ -23,7 +23,7 @@
     "is_pinned": true,
     "id": "ch-1794166482825-25",
     "order": 2,
-    "manual_override": false,
+    "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null,
