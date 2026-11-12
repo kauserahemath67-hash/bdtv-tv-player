@@ -758,15 +758,16 @@
     "name": "Channel 24 HD",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735556516924.png",
     "category": "General",
-    "url": "https://owrcovcrpy.gpcdn.net/bpk-tv/1703/output/index.m3u8",
+    "url": "https://tvsen6.aynaott.com/YrVDF8gujkdh/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-57",
     "order": 60,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": "https://owrcovcrpy.gpcdn.net/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Star News",
