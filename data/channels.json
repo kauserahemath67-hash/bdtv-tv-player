@@ -3820,7 +3820,7 @@
     "order": 312,
     "status": "ONLINE",
     "manual_override": false,
-    "use_proxy": true,
+    "use_proxy": false,
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
