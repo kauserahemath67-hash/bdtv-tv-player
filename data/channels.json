@@ -3779,5 +3779,20 @@
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794506998688",
+    "name": "One Piece",
+    "category": "Entertainment",
+    "logo": "https://images.pluto.tv/channels/5f7790b3ed0c88000720b241/colorLogoPNG_1731837233662.png",
+    "url": "https://jmp2.uk/plu-69affcad8940750a23a7231a.m3u8",
+    "is_pinned": false,
+    "order": 310,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
