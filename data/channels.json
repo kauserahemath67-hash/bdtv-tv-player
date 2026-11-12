@@ -3194,16 +3194,17 @@
   {
     "name": "Sony YAY",
     "logo": "https://assets-prod.services.toffeelive.com/IC5_-JQBv9knK3AHFDXh/posters/36df4012-80f2-4a98-9970-3b663f62093f.webp",
-    "category": "Family",
-    "url": "https://alixbd.com/playlistconfig/channel/44.m3u8",
+    "category": "General",
+    "url": "http://138.121.15.230:9002/SONY/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-288",
     "order": 271,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Zee Anmol",
