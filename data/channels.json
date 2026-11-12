@@ -3759,5 +3759,20 @@
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794495162971",
+    "name": "MAX Anime",
+    "category": "Entertainment",
+    "logo": "https://i.imgur.com/Oj3hEBh.jpg",
+    "url": "https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8",
+    "is_pinned": false,
+    "order": 310,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
