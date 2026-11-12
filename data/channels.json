@@ -2235,7 +2235,11 @@
     "is_pinned": false,
     "id": "ch-1794166482825-199",
     "order": 191,
-    "manual_override": true
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Rakuten TV Action Movies",
