@@ -2983,7 +2983,7 @@
     "name": "TRT World",
     "logo": "https://assets-prod.services.toffeelive.com/1YPq_p8BJIOHmUelSHXc/posters/f65b0273-0f23-4b56-93dd-417224369105.png",
     "category": "General",
-    "url": "https://cdn.pishow.tv/ott/live/266/master.m3u8",
+    "url": "https://dash2.antik.sk/live/test_trt_world_atktv/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-277",
@@ -2991,7 +2991,8 @@
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "DW",
