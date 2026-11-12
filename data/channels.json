@@ -3748,14 +3748,14 @@
   {
     "id": "ch-1794495123851",
     "name": "Naruto",
-    "category": "News",
+    "category": "Entertainment",
     "logo": "https://i.imgur.com/M8X3Kvc.png",
     "url": "https://d21vn5eki5qsdi.cloudfront.net/playlist.m3u8",
     "is_pinned": false,
     "order": 309,
     "status": "ONLINE",
     "manual_override": false,
-    "use_proxy": false,
+    "use_proxy": true,
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
