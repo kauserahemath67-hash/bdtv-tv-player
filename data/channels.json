@@ -2436,11 +2436,16 @@
     "name": "Shemaroo Josh",
     "logo": "https://dtil.tmsimg.com/assets/GNLZZGG00297P3E.png?lock=720x540",
     "category": "Movies",
-    "url": "https://mumt04.tangotv.in/m18aqlK4SHEMAROOJOSH/index.m3u8",
+    "url": "https://airtelapp.shemaroo.com/shemarooChumbakTV/smil:shemarooChumbakTVadp.smil/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-224",
-    "order": 216
+    "order": 216,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Shubh Cinema TV",
