@@ -3841,21 +3841,6 @@
     "proxy_user_agent": null
   },
   {
-    "id": "ch-1794507191276",
-    "name": "Doremon",
-    "category": "News",
-    "logo": "",
-    "url": "https://live20.bozztv.com/giatvplayout7/giatv-209902/tracks-v1a1/mono.ts.m3u8",
-    "is_pinned": false,
-    "order": 314,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "id": "ch-1794507536125",
     "name": "Pitaara",
     "category": "Entertainment",
