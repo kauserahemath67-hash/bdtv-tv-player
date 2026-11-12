@@ -3736,11 +3736,11 @@
     "proxy_user_agent": null
   },
   {
-    "id": "ch-1794480848276",
-    "name": "Ekhon TV",
-    "category": "News",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzSqeBMmDsd6AnUBfC04BB53KLEqrgoYWwBMuWKCtNylNvgfh_2lRGLvf&s=10",
-    "url": "https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8",
+    "id": "ch-1794507501306",
+    "name": "Dangal 2",
+    "category": "Entertainment",
+    "logo": "https://i.imgur.com/BEr1r7L.png",
+    "url": "https://live-dangal2.akamaized.net/liveabr/playlist.m3u8",
     "is_pinned": false,
     "order": 307,
     "status": "ONLINE",
@@ -3751,11 +3751,11 @@
     "proxy_user_agent": null
   },
   {
-    "id": "ch-1794507501306",
-    "name": "Dangal 2",
-    "category": "Entertainment",
-    "logo": "https://i.imgur.com/BEr1r7L.png",
-    "url": "https://live-dangal2.akamaized.net/liveabr/playlist.m3u8",
+    "id": "ch-1794480848276",
+    "name": "Ekhon TV",
+    "category": "News",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxzSqeBMmDsd6AnUBfC04BB53KLEqrgoYWwBMuWKCtNylNvgfh_2lRGLvf&s=10",
+    "url": "https://tvsen6.aynaott.com/fbgZV3X17hwWcyfZ4pdb/index.m3u8",
     "is_pinned": false,
     "order": 308,
     "status": "ONLINE",
