@@ -1,12 +1,12 @@
 [
   {
-    "name": "universal_player",
+    "name": "https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/main/universal_player.m3u",
     "url": "https://raw.githubusercontent.com/abusaeeidx/T-Sports-Playlist-Auto-Update/main/universal_player.m3u",
     "format": "M3U Playlist",
     "channelCount": 1,
     "active": true,
     "id": "pl-1794475253694",
-    "savedAt": "2026-11-12T09:20:53.694Z"
+    "savedAt": "2026-11-12T09:20:56.311Z"
   },
   {
     "name": "https://raw.githubusercontent.com/kauserahamed424-debug/HDTV/main/playlists/all.m3u",
