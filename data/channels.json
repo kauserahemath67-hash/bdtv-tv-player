@@ -958,7 +958,7 @@
     "id": "ch-1794166482825-72",
     "order": 73,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
