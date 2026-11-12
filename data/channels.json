@@ -764,8 +764,8 @@
     "id": "ch-1794166482825-57",
     "order": 60,
     "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": "https://owrcovcrpy.gpcdn.net/",
+    "use_proxy": true,
+    "proxy_referer": null,
     "proxy_user_agent": null,
     "backup_url": null
   },
