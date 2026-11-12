@@ -3869,5 +3869,20 @@
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794507563689",
+    "name": "Balle Balle HD",
+    "category": "Entertainment",
+    "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Balle_Balle_TV.png",
+    "url": "https://mcncdndigital.com/balleballetv/index.m3u8",
+    "is_pinned": false,
+    "order": 316,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
