@@ -3634,5 +3634,20 @@
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794480957543",
+    "name": "TNT Sport 1",
+    "category": "Sports",
+    "logo": "https://static.wikia.nocookie.net/logopedia/images/3/30/TNT_Sports_1_Stacked.svg/revision/latest/scale-to-width-down/250?cb=20260225232947",
+    "url": "https://tvsen5.aynaott.com/asdfadsf/index.m3u8",
+    "is_pinned": false,
+    "order": 308,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
