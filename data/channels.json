@@ -1710,11 +1710,16 @@
     "name": "Kairali We",
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_KAIRALI_WE/images/LOGO_HD/image.png",
     "category": "Movies",
-    "url": "https://streams.tangotv.in/WETV/ORIGIN/index.m3u8",
+    "url": "https://cdn.pishow.tv/ott/live/1530/master.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-150",
-    "order": 145
+    "order": 145,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "KCM India",
