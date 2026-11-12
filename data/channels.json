@@ -830,7 +830,7 @@
     "id": "ch-1794166482825-62",
     "order": 64,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": "https://app24.jagobd.com.bd/",
     "proxy_user_agent": null,
     "backup_url": null
