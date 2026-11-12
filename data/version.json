@@ -1,5 +1,5 @@
 {
-  "versionCode": 310,
+  "versionCode": 311,
   "versionName": "3.1.0",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.0/BDTv.apk",
@@ -11,5 +11,5 @@
   ],
   "forceUpdate": true,
   "updateMessage": "Please update to v3.1.0 for smooth video playback across all channels.",
-  "updatedAt": "2026-11-11T10:36:00.000Z"
+  "updatedAt": "2026-11-12T09:00:58.462Z"
 }
