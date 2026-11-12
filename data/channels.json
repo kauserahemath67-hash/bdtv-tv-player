@@ -3809,5 +3809,20 @@
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794507158320",
+    "name": "Crunchyroll",
+    "category": "Entertainment",
+    "logo": "https://i.imgur.com/2FlIQUO.png",
+    "url": "https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8",
+    "is_pinned": false,
+    "order": 312,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
