@@ -2631,11 +2631,16 @@
     "name": "Studio One +",
     "logo": "https://i.imgur.com/yOPB7JB.png",
     "category": "Movies",
-    "url": "https://cdn.pishow.tv/ott/live/276/master.m3u8",
+    "url": "https://2-fss-1.streamhoster.com/pl_148/201830-1293592-1/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-240",
-    "order": 231
+    "order": 231,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Tamasha",
