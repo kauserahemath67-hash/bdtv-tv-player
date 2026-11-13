@@ -5,10 +5,10 @@
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.2/BDTv.apk",
   "updateTitle": "BDTv v3.1.2 Update Available",
   "changelog": [
-    "channel loading ও buffering solved ",
+    "channel loading & buffering solved ",
     "Android TV remote control support "
   ],
   "forceUpdate": true,
   "updateMessage": "Please update to v3.1.2 for improved Android TV channel loading.",
-  "updatedAt": "2026-11-13T17:37:17.887Z"
+  "updatedAt": "2026-11-13T17:37:53.769Z"
 }
