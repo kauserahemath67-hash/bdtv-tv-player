@@ -4,7 +4,7 @@
   "admin_password": "42431967",
   "notice_text": "T Sports এ লাইভ দেখুন একটু সময় লাগবে প্লে হতে প্লে হয়ে গেলে আর বাফারিং করবে  না",
   "notice_active": false,
-  "subscription_restrictions_enabled": false,
+  "subscription_restrictions_enabled": true,
   "default_max_devices": 2,
   "expiry_warning_days": 3,
   "ads": {
