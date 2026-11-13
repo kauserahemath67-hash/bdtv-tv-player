@@ -1,13 +1,21 @@
 {
-  "versionCode": 311,
-  "versionName": "3.1.1",
+  "versionCode": 312,
+  "versionName": "3.1.2",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.2/BDTv.apk",
   "updateTitle": "BDTv v3.1.2 Update Available",
   "changelog": [
-    "channel loading & buffering solved "
+    "মোটা TV neon text buffering animation; T থেকে V-তে glow যায়, অতিরিক্ত blur ও loading লেখা কমানো হয়েছে",
+    "চ্যানেল এখন GitHub data-storage branch থেকে লোড হয়",
+    "অকার্যকর cache হলে channel feed থেকে পুনরায় channel load করা হয়",
+    "offline অবস্থায় Android cache fallback ও channel loading diagnostic যোগ",
+    "কম RAM-এর TV-তে startup logo download সীমিত",
+    "TV-তে GitHub channel loading ও update check উন্নত",
+    "VIP/device validation Vercel-এ অক্ষত রাখা হয়েছে",
+    "Android TV remote control support বজায় রাখা হয়েছে",
+    "Wi-Fi ও mobile network-এ startup crash ঠিক করা হয়েছে"
   ],
-  "forceUpdate": true,
-  "updateMessage": "Please update to v3.1.2 for a startup crash fix and improved Android TV channel loading.",
-  "updatedAt": "2026-11-13T17:52:27.341Z"
+  "forceUpdate": false,
+  "updateMessage": "The v3.1.2 APK includes a compact TV neon buffering animation with reduced glow.",
+  "updatedAt": "2026-11-13T20:10:42.000Z"
 }
