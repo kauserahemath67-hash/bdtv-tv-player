@@ -12,9 +12,10 @@
     "কম RAM-এর TV-তে startup logo download সীমিত",
     "TV-তে GitHub channel loading ও update check উন্নত",
     "VIP/device validation Vercel-এ অক্ষত রাখা হয়েছে",
-    "Android TV remote control support বজায় রাখা হয়েছে"
+    "Android TV remote control support বজায় রাখা হয়েছে",
+    "Wi-Fi ও mobile network-এ startup crash ঠিক করা হয়েছে"
   ],
   "forceUpdate": false,
-  "updateMessage": "Please update to v3.1.2 for improved Android TV channel loading.",
-  "updatedAt": "2026-11-13T17:26:43.000Z"
+  "updateMessage": "Please update to v3.1.2 for a startup crash fix and improved Android TV channel loading.",
+  "updatedAt": "2026-11-13T17:46:22.000Z"
 }
