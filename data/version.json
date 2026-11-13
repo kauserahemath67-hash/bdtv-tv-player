@@ -1,6 +1,6 @@
 {
-  "versionCode": 312,
-  "versionName": "3.1.2",
+  "versionCode": 311,
+  "versionName": "3.1.1",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.2/BDTv.apk",
   "updateTitle": "BDTv v3.1.2 Update Available",
@@ -8,7 +8,7 @@
     "channel loading & buffering solved ",
     "Android TV remote control support "
   ],
-  "forceUpdate": true,
+  "forceUpdate": false,
   "updateMessage": "Please update to v3.1.2 for improved Android TV channel loading.",
-  "updatedAt": "2026-11-13T17:37:53.769Z"
+  "updatedAt": "2026-11-13T17:38:46.301Z"
 }
