@@ -1,104 +1,84 @@
-# BDTv Live IPTV Player & Admin Dashboard (Vercel Ready)
+<div align="center">
 
-একটি পূর্ণাঙ্গ ও আধুনিক **Single-Page Live IPTV Web Player**, **Android TV Remote Optimized** ইন্টারফেস এবং সম্পূর্ণ **Admin Dashboard** যা সরাসরি GitHub হয়ে Vercel-এ ডেপ্লয় করার জন্য প্রস্তুত।
+# BDTv TV Player
 
----
+**Live TV Player · Android TV App · Admin Dashboard**
 
-## 🌟 মূল বৈশিষ্ট্যসমূহ (Features)
+বাংলা টিভি চ্যানেল দেখুন, Android TV রিমোট দিয়ে নিয়ন্ত্রণ করুন এবং Admin Panel থেকে চ্যানেল ও app release পরিচালনা করুন।
 
-1. **ফুলস্ক্রিন লাইভ ভিডিও প্লেয়ার:**
-   - HLS.js লাইভ স্ট্রিমিং ইঞ্জিন (Low-Latency Mode সহ)।
-   - অটো-হাইড টপ বার (৩.৫ সেকেন্ড পর অদৃশ্য হয়ে যায়)।
-   - গ্লাস-মরফিজম চ্যানেল HUD ব্যানার।
-   - নিচে ড্রয়ার হ্যান্ডেল ও স্লাইডার চ্যানেল ড্রয়ার।
-   - স্মার্ট বাফারিং ও এরর অটো-রিকভারি।
+<a href="https://bdtvfree.vercel.app/"><img src="https://img.shields.io/badge/Live%20Player-Open-0B7285?style=for-the-badge" alt="Open live player"></a>
+<a href="https://bdtvfree.vercel.app/admin"><img src="https://img.shields.io/badge/Admin%20Panel-Open-6741D9?style=for-the-badge" alt="Open admin panel"></a>
+<a href="https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/latest/download/BDTv.apk"><img src="https://img.shields.io/github/v/release/kauserahemath67-hash/bdtv-tv-player?label=Download%20Android%20APK&style=for-the-badge" alt="Download latest Android APK"></a>
+<a href="https://github.com/kauserahemath67-hash/bdtv-tv-player"><img src="https://img.shields.io/badge/GitHub-Source%20Code-181717?style=for-the-badge&logo=github" alt="View source on GitHub"></a>
 
-2. **অ্যান্ড্রয়েড টিভি রিমোট সাপোর্ট (Android TV Remote Control):**
-   - **↑ / ↓ বাটন:** চ্যানেল ড্রয়ার ওপেন ও ফোকাস নেভিগেশন।
-   - **ফোকাস হাইলাইট:** লাল বর্ডার, `scale(1.08)` জুম এবং অটো-সেন্টার স্ক্রোল।
-   - **◀ / ▶ বাটন:** ড্রয়ার না খুলেই তাত্ক্ষণিক চ্যানেল সুইচ ও HUD ফ্ল্যাশ।
-   - **OK / Enter বাটন:** চ্যানেল নির্বাচন অথবা প্লে/পজ।
-   - **Back বাটন:** ভিডিও চালু রেখেই শুধু ড্রয়ার বন্ধ হয়।
+</div>
 
-3. **মোবাইল ও অ্যান্ড্রয়েড অ্যাপ অপ্টিমাইজেশন:**
-   - সোয়াইপ আপ (Swipe Up) দিয়ে ড্রয়ার খোলা, সোয়াইপ ডাউন দিয়ে বন্ধ করা।
-   - পিকচার-ইন-পিকচার (PiP) মোড।
-   - নেটিভ অ্যান্ড্রয়েড ব্যাক বাটন ব্রিজ (`window.handleAndroidBack`).
-   - নো-রেফারার বাইপাস (`no-referrer`).
+## 🔗 সরাসরি লিংক
 
-4. **সম্পূর্ণ সুরক্ষিত অ্যাডমিন ড্যাশবোর্ড (`/admin`):**
-   - 🔒 **পিন প্রটেক্টেড লগইন** (ডিফল্ট পিন: `123456`)
-   - 📺 **চ্যানেল ম্যানেজার:** নতুন চ্যানেল যুক্ত, এডিট, ডিলিট, ড্র্যাগ-অ্যান্ড-ড্রপ ক্রম এবং **লাইভ প্রিভিউ টেস্ট প্লেয়ার**।
-   - 📋 **M3U প্লেলিস্ট ম্যানেজার:** অনলাইন লিঙ্ক বা টেক্সট থেকে এক ক্লিকে বাল্ক ইমপোর্ট এবং নিজস্ব `/playlist.m3u` জেনারেট।
-   - 🤖 **অটোমেটেড হেলথ স্ক্যানার ও এরর রিপোর্ট:** অনলাইন/অফলাইন পিং টেস্ট এবং ইউজারদের রিপোর্ট সমাধান।
-   - 👥 **গ্রাহক ও সাবস্ক্রিপশন নিয়ন্ত্রণ:** গ্রাহক কোড, পিন, পেইড/ফ্রি মোড সুইচ, বিকাশ/নগদ পেমেন্ট ট্র্যাকিং।
-   - 📱 **ডিভাইস লক সিস্টেম:** সর্বোচ্চ ডিভাইস লিমিট (ডিফল্ট: ২টি) এবং আনঅথরাইজড ডিভাইস ব্লক।
-   - 📢 **বিজ্ঞাপন ও সাইট সেটিংস:** ৫টি স্লটে বিজ্ঞাপন কোড বসানো এবং স্ক্রলিং নোটিশ বার।
-   - 🚀 **অ্যাপ ভার্সন কন্ট্রোল:** সরাসরি ড্যাশবোর্ড থেকে `version.json` ও APK আপডেট।
+| কী খুলবেন | লিংক |
+|---|---|
+| 📺 Live Player | [bdtvfree.vercel.app](https://bdtvfree.vercel.app/) |
+| 🛠️ Admin Dashboard | [bdtvfree.vercel.app/admin](https://bdtvfree.vercel.app/admin) |
+| 📃 M3U Playlist | [playlist.m3u](https://bdtvfree.vercel.app/playlist.m3u) |
+| 📥 সর্বশেষ Android APK | [GitHub থেকে ডাউনলোড](https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/latest/download/BDTv.apk) |
+| 🗂️ সব App Release | [GitHub Releases](https://github.com/kauserahemath67-hash/bdtv-tv-player/releases) |
+| 💻 Source Code | [GitHub Repository](https://github.com/kauserahemath67-hash/bdtv-tv-player) |
 
-### Android app data flow (v3.0.6+)
+APK লিংকটি GitHub-এ প্রকাশিত সর্বশেষ release-এর দিকে যায়। `ONLINE` status থাকলেও সব TV বা network-এ stream চলবে—এমন নিশ্চয়তা নেই; stream URL, provider, internet এবং device codec-এর ওপর playback নির্ভর করে।
 
-- The Android app downloads channel records, stream URLs, and logo URLs directly from the public `data-storage` GitHub branch.
-- The Vercel Admin Panel writes channel changes to that branch; the app syncs changes automatically.
-- The Admin channel form can store an optional direct fallback stream URL and stream headers in GitHub; the APK tries that URL from the user's device if the primary stream fails.
-- VIP/customer/device validation, settings, app-version checks, and user-activity heartbeats continue to use `bdtvfree.vercel.app`.
-- Logo image files and video streams are fetched from the URLs listed in the GitHub channel data.
-- In-app update checks run at startup, when the app returns to the foreground, and every 60 seconds while open.
-- Android playback and any configured backup stream are fetched directly by the device; the app does not fall back to the Vercel video proxy.
-- If native playback fails, Android retries the primary stream with the device's WebView HLS player before reporting an error.
-- If native playback, the configured backup, and direct WebView HLS recovery all fail, playback reports an error instead of sending video traffic through Vercel.
+## ✨ প্রধান বৈশিষ্ট্য
 
----
+- HLS.js-ভিত্তিক web player এবং playback recovery।
+- Android TV remote দিয়ে channel navigation, selection, play/pause এবং Back control।
+- Mobile-friendly controls, swipe gesture ও picture-in-picture support।
+- Admin Dashboard থেকে channel/playlist management, health check, report, device setting ও app version পরিচালনা।
+- `/playlist.m3u` থেকে M3U playlist access।
 
-## 🚀 গিটহাব ও ভার্সেলে ডেপ্লয় করার নিয়ম (GitHub ➔ Vercel)
+## 📡 Channel data ও Android playback
 
-### ধাপ ১: গিটহাবে পুশ করুন (Push to GitHub)
-আপনার কম্পিউটারের টার্মিনালে এই ফোল্ডারে এসে নিচের কমান্ডগুলো রান করুন:
+- Android app-এর channel list: [`channels.json`](https://raw.githubusercontent.com/kauserahemath67-hash/bdtv-tv-player/data-storage/data/channels.json) — `data-storage` branch।
+- App update metadata: [`version.json`](https://raw.githubusercontent.com/kauserahemath67-hash/bdtv-tv-player/data-storage/data/version.json)।
+- Admin Panel-এর channel পরিবর্তন GitHub-এর `data-storage` branch-এ প্রকাশিত হয়; APK update প্রকাশিত হয় [GitHub Releases](https://github.com/kauserahemath67-hash/bdtv-tv-player/releases)-এ।
+- VIP/customer/device validation, settings ও activity heartbeat Vercel service ব্যবহার করে।
+- Android native player সাধারণত device থেকেই stream নেয়। কিছু recovery/fallback অবস্থায় Vercel proxy ব্যবহৃত হতে পারে।
+- Channel `ONLINE` দেখালেও link মেয়াদোত্তীর্ণ/blocked হতে পারে, অথবা নির্দিষ্ট TV-তে codec/network সমস্যা হতে পারে। গুরুত্বপূর্ণ channel TV-তে পরীক্ষা করুন এবং সম্ভব হলে backup URL রাখুন।
+
+## 🚀 GitHub-এ পরিবর্তন Push
+
+এই repository আগে থেকেই GitHub-এ আছে: [kauserahemath67-hash/bdtv-tv-player](https://github.com/kauserahemath67-hash/bdtv-tv-player)।
+
+Existing local clone-এর project folder থেকে README পরিবর্তন push করতে:
 
 ```bash
-cd "/Users/kauserahamed/.gemini/antigravity/scratch/vercel tv"
-git init
-git add .
-git commit -m "Initial commit of BDTv Live IPTV and Admin Panel"
+git status
+git diff -- README.md
+git add README.md
+git commit -m "docs: update README"
+git push origin main
 ```
 
-এখন আপনার [GitHub.com](https://github.com)-এ গিয়ে একটি নতুন রিপোজিটরি (New Repository) তৈরি করুন (যেমন: `bdtv-live-tv`), তারপর:
+অন্য file-ও পরিবর্তন করলে `git add README.md`-এর বদলে review করে নির্দিষ্ট file যোগ করুন। নতুন computer-এ প্রথমে clone করুন:
 
 ```bash
-git branch -M main
-git remote add origin https://github.com/আপনার_ইউজারনেম/bdtv-live-tv.git
-git push -u origin main
+git clone https://github.com/kauserahemath67-hash/bdtv-tv-player.git
+cd bdtv-tv-player
 ```
 
----
+## ☁️ Vercel-এ Deploy
 
-### ধাপ ২: Vercel-এ ডেপ্লয় করুন (Deploy on Vercel)
+1. [Vercel](https://vercel.com/)-এ GitHub account দিয়ে sign in করুন।
+2. **Add New → Project** থেকে `bdtv-tv-player` repository import করুন।
+3. Framework preset **Other** রেখে project deploy করুন।
+4. Admin Dashboard-এর default PIN বদলে নিজের PIN সেট করুন—public deployment-এর আগে এটি অবশ্যই করুন।
+5. Repository-র production branch-এ push করলে GitHub integration থাকলে Vercel স্বয়ংক্রিয়ভাবে নতুন deployment চালাতে পারে।
 
-1. [Vercel.com](https://vercel.com)-এ লগইন করুন।
-2. **"Add New..." ➔ "Project"** এ ক্লিক করুন।
-3. আপনার গিটহাব একাউন্ট থেকে `bdtv-live-tv` রিপোজিটরিটি সিলেক্ট করে **"Import"** চাপুন।
-4. Framework Preset-এ **"Other"** থাকবে। কোনো সেটিংস পরিবর্তন করার প্রয়োজন নেই।
-5. শুধু **"Deploy"** বাটনে ক্লিক করুন!
+## 💻 Local-এ চালান
 
-🎉 মাত্র ১ মিনিটের মধ্যে আপনার ওয়েবসাইট লাইভ হয়ে যাবে এবং আপনি একটি লাইভ লিংক পাবেন (যেমন: `https://bdtv-live-tv.vercel.app`)।
-
----
-
-## 🔑 গুরুত্বপূর্ণ ইউআরএল ও অ্যাক্সেস (URLs & Credentials)
-
-- **লাইভ প্লেয়ার:** `https://আপনার-ডোমেইন.vercel.app/`
-- **অ্যাডমিন ড্যাশবোর্ড:** `https://আপনার-ডোমেইন.vercel.app/admin`
-- **অ্যাডমিন ডিফল্ট পিন (Default PIN):** `123456` *(ড্যাশবোর্ডের সেটিংস থেকে যেকোনো সময় পরিবর্তন করা যাবে)*
-- **ডায়নামিক M3U প্লেলিস্ট:** `https://আপনার-ডোমেইন.vercel.app/playlist.m3u`
-- **অ্যাপ আপডেট এপিআই:** `https://আপনার-ডোমেইন.vercel.app/version.json`
-
----
-
-## 💻 লোকাল কম্পিউটারে টেস্ট করার নিয়ম (Local Test)
-
-আপনি চাইলে গিটহাবে দেওয়ার আগেই আপনার কম্পিউটারে চালিয়ে দেখতে পারেন:
+Project root folder-এ Node.js server চালান:
 
 ```bash
 node server.js
 ```
-ব্রাউজারে গিয়ে দেখুন: `http://localhost:3000` এবং অ্যাডমিন প্যানেল: `http://localhost:3000/admin`
+
+- Player: [http://localhost:3000/](http://localhost:3000/)
+- Admin: [http://localhost:3000/admin](http://localhost:3000/admin)
