@@ -1,15 +1,16 @@
 {
-  "versionCode": 310,
-  "versionName": "3.1.0",
+  "versionCode": 311,
+  "versionName": "3.1.1",
   "minSupportedVersion": 100,
-  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.0/BDTv.apk",
-  "updateTitle": "BDTv v3.1.0 Update Available",
+  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.1/BDTv.apk",
+  "updateTitle": "BDTv v3.1.1 Update Available",
   "changelog": [
-    "Fixed video playback for custom M3U streams (including alixbd)",
-    "Permissive SSL enabled for all IPTV servers and proxies",
-    "Old version auto-update fix across all domains"
+    "চ্যানেল এখন Vercel থেকে সরাসরি লোড হয়",
+    "HLS proxy ও stream device এই রান হয়",
+    "Android TV সাপোর্ট উন্নত",
+    "Bug fixes"
   ],
   "forceUpdate": true,
-  "updateMessage": "Please update to v3.1.0 for smooth video playback across all channels.",
-  "updatedAt": "2026-11-12T09:01:06.510Z"
+  "updateMessage": "Please update to v3.1.1 for best experience.",
+  "updatedAt": "2026-11-13T15:21:00.000Z"
 }
