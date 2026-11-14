@@ -1106,7 +1106,7 @@
   {
     "name": "Animal Planet",
     "logo": "https://logos-world.net/wp-content/uploads/2023/04/Animal-Planet-Logo.png",
-    "category": "General",
+    "category": "International",
     "url": "https://vodzong.mjunoon.tv:8087/streamtest/Animal-Planet-158-3/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -1115,7 +1115,8 @@
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Discovery",
