@@ -376,12 +376,17 @@
   {
     "name": "Enterr10",
     "logo": "https://yt3.googleusercontent.com/ytc/AIdro_kUVgsElgaFpQZNYILWQ0HLa-MAmbEjWNRBRqKms5qML2Q=s900-c-k-c0x00ffffff-no-rj",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://live-bangla.akamaized.net/liveabr/pub-iobanglakp3sff/live_720p/chunks.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-20",
-    "order": 26
+    "order": 26,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "TaraTv",
