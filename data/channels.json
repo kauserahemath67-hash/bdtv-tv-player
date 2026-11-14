@@ -986,7 +986,7 @@
   {
     "name": "Sony Max 2",
     "logo": "https://yt3.googleusercontent.com/r7fi39b2G0g-xrHbziVK_V0rgQqwRqXRtSDuUaALPCL-41ayfqIs_m7tSGR1ZGXU76toUEU3wg=s900-c-k-c0x00ffffff-no-rj",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://alixbd.com/playlistconfig/channel/67.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -995,7 +995,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Sony Movies",
