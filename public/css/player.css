@@ -100,13 +100,14 @@ html, body {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(90deg, #0052cc 0%, #00a2ff 100%);
+  background: linear-gradient(90deg, #060813 0%, #0c1328 72%, #11233d 100%);
+  border-bottom: 1px solid var(--surface-border);
   color: #fff;
   padding: 6px calc(16px + var(--safe-right)) 6px calc(16px + var(--safe-left));
   padding-top: max(6px, var(--safe-top));
   font-size: 13px;
   font-weight: 600;
-  box-shadow: 0 4px 16px rgba(0, 102, 255, 0.35);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
   /* backdrop-filter optimized */
   
 }
