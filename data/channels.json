@@ -601,12 +601,17 @@
   {
     "name": "Atn Bangla",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhbqcsNitFCvE9tvpls4ytvF840p9M87Y2Ww1b50w_cNobHazh-HAvSLQ&s=10",
-    "category": "General",
+    "category": "News",
     "url": "https://tvsen5.aynaott.com/P3y2URgG7LDe/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-38",
-    "order": 42
+    "order": 42,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "My Tv",
