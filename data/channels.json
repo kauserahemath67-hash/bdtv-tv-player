@@ -721,12 +721,17 @@
   {
     "name": "Channel I HD",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1740567626692.png",
-    "category": "General",
+    "category": "News",
     "url": "https://tvsen6.aynaott.com/FNHpYvGZ7FkCE10PwTHm/index.m3u8?e=1782665440&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=e957d2959b2f3e041ef5f976b45f8055",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-46",
-    "order": 50
+    "order": 50,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel 9",
