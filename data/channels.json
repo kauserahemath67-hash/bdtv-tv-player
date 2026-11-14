@@ -706,12 +706,17 @@
   {
     "name": "Jamuna TV",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560213832.png",
-    "category": "General",
+    "category": "News",
     "url": "https://tvsen6.aynaott.com/KGdZEdA7qQ43dmPkgk1j/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-45",
-    "order": 49
+    "order": 49,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Channel I HD",
