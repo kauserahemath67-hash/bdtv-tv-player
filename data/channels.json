@@ -1608,7 +1608,7 @@
     "url": "https://jmp2.uk/plu-69affcad8940750a23a7231a.m3u8",
     "is_pinned": false,
     "order": 108,
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
     "backup_url": null,
