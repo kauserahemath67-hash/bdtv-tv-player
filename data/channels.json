@@ -676,7 +676,7 @@
   {
     "name": "Independent TV",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1778087037971.png",
-    "category": "General",
+    "category": "News",
     "url": "https://alixbd.com/playlistconfig/channel/25.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -685,7 +685,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Ayna Tv",
