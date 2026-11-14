@@ -3057,7 +3057,7 @@
   {
     "name": "AWSN TV",
     "logo": "https://assets-prod.services.toffeelive.com/F9UM56ABalKyvLQIr9B1/posters/26081e64-671e-44a8-95ba-a692bfaae49c.jpeg",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://alixbd.com/playlistconfig/channel/4.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -3066,7 +3066,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "CNN",
