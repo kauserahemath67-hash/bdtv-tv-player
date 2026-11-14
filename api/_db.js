@@ -426,10 +426,9 @@ async function updateSettings(newSettings) {
   const current = await getSettings();
   const merged  = { ...current, ...newSettings };
   const ok = await ghCommit(GITHUB_SETTINGS_PATH, merged, 'Update settings');
-  if (ok) {
-    _settingsCache.data    = merged;
-    _settingsCache.loadedAt = Date.now();
-  }
+  if (!ok) throw new Error('Failed to persist settings to GitHub.');
+  _settingsCache.data    = merged;
+  _settingsCache.loadedAt = Date.now();
   return merged;
 }
 

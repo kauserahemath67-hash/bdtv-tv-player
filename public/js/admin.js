@@ -1405,11 +1405,24 @@ class AdminDashboard {
     });
 
     document.getElementById('toggle-notice-active').addEventListener('change', async (e) => {
-      await this.authFetch('/api/settings', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ notice_active: e.target.checked })
-      });
+      const checkbox = e.target;
+      const isActive = checkbox.checked;
+      try {
+        const res = await this.authFetch('/api/settings', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ notice_active: isActive })
+        });
+        const json = await res.json();
+        if (!res.ok || !json.success) {
+          throw new Error(json.message || json.error || 'Announcement setting update failed.');
+        }
+        this.showToast(isActive ? 'Announcement bar enabled.' : 'Announcement bar disabled.', 'success');
+      } catch (error) {
+        checkbox.checked = !isActive;
+        console.error('Failed to update announcement setting:', error);
+        this.showToast('Could not save announcement setting.', 'error');
+      }
     });
 
     // Save Settings
