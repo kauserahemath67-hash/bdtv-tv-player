@@ -361,7 +361,7 @@
   {
     "name": "Sony Aath",
     "logo": "https://yt3.googleusercontent.com/dWloAb5aD9Jvz57fz6eZJmLoirWclDN6KOP6oWkmcJXsx6tseGedGxV90fYFgBGjV1KKly7yGg=s900-c-k-c0x00ffffff-no-rj",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://alixbd.com/playlistconfig/channel/53.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -370,7 +370,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Enterr10",
