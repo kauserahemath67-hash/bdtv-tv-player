@@ -331,12 +331,17 @@
   {
     "name": "ZEE Bangla",
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/b/b1/Zee_Bangla_English_Int%27l_%282017%29.png",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://d1rc86nwwc9fag.cloudfront.net/260723/smil:zeebangla.smil/chunklist_b896000.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-17",
-    "order": 23
+    "order": 23,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Sananda Tv",
