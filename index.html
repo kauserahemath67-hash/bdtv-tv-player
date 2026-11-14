@@ -11,9 +11,17 @@
 </head>
 <body>
 
-  <!-- Notice Bar (Ticker) -->
+  <!-- Notice Bar (Live Broadcast Ticker) -->
   <div id="notice-bar" class="notice-bar hidden">
-    <div class="notice-icon">📢</div>
+    <div class="notice-badge">
+      <span class="notice-live-dot"></span>
+      <svg class="notice-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+        <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+      </svg>
+      <span class="notice-badge-text">ঘোষণা</span>
+    </div>
     <div class="notice-content">
       <span id="notice-text">Welcome to BDTv Live Player!</span>
     </div>
