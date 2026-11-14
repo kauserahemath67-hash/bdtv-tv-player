@@ -248,7 +248,29 @@ class AdminDashboard {
     tbody.innerHTML = '';
 
     const searchTerm = (document.getElementById('channel-search').value || '').toLowerCase();
-    const filtered = this.channels.filter(c => c.name.toLowerCase().includes(searchTerm) || c.category.toLowerCase().includes(searchTerm));
+    const categoryKey = channel => (channel.category || 'General').trim().toLowerCase();
+    const categoryOrder = new Map();
+    this.channels.forEach(channel => {
+      const key = categoryKey(channel);
+      if (key !== 'sports' && !categoryOrder.has(key)) {
+        categoryOrder.set(key, categoryOrder.size + 1);
+      }
+    });
+    categoryOrder.set('sports', 0);
+
+    const filtered = this.channels
+      .map((channel, index) => ({ channel, index }))
+      .filter(({ channel }) =>
+        (channel.name || '').toLowerCase().includes(searchTerm) ||
+        (channel.category || '').toLowerCase().includes(searchTerm)
+      )
+      .sort((a, b) =>
+        Number(Boolean(b.channel.is_pinned)) - Number(Boolean(a.channel.is_pinned)) ||
+        (categoryOrder.get(categoryKey(a.channel)) ?? Number.MAX_SAFE_INTEGER) -
+          (categoryOrder.get(categoryKey(b.channel)) ?? Number.MAX_SAFE_INTEGER) ||
+        a.index - b.index
+      )
+      .map(({ channel }) => channel);
 
     filtered.forEach((ch, idx) => {
       const tr = document.createElement('tr');
