@@ -586,12 +586,17 @@
   {
     "name": "Boishakhi Tv",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Boishakhi_Tv_Logo.png",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://tvsen6.aynaott.com/1d3uG9VCgrR9DRtWZM57/tracks-v1a1/mono.ts.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-37",
-    "order": 41
+    "order": 41,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Atn Bangla",
