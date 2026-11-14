@@ -1573,7 +1573,7 @@
   {
     "name": "Dorama",
     "logo": "https://i.imgur.com/ZH5LuXU.png",
-    "category": "Movies",
+    "category": "International",
     "url": "https://stream8.cinerama.uz/1273/tracks-v1a1/mono.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -1582,7 +1582,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "DUST",
