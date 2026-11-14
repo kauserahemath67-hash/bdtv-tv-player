@@ -1,6 +1,6 @@
 {
-  "versionCode": 312,
-  "versionName": "3.1.2",
+  "versionCode": 313,
+  "versionName": "3.1.3",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.3/BDTv.apk",
   "updateTitle": "BDTv v3.1.3 Update Available",
@@ -9,7 +9,7 @@
     "Instant Admin Link Sync",
     "Android 7.0 TV & Low RAM: Memory leak & freeze fixes."
   ],
-  "forceUpdate": false,
+  "forceUpdate": true,
   "updateMessage": "v3.1.3 আপডেট: কম RAM টিভিতে মসৃণ প্লেব্যাক ও অ্যাডমিন লিঙ্ক রিয়েল-টাইম সিঙ্ক।",
-  "updatedAt": "2026-11-14T10:51:47.128Z"
+  "updatedAt": "2026-11-14T11:05:39.087Z"
 }
