@@ -256,7 +256,7 @@
   {
     "name": "Nagorik Tv",
     "logo": "https://i.imgur.com/2cpHJKq.png",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://box.bbaria.net/Nagorik_TV/tracks-v1a1/mono.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -265,7 +265,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Matribhumi Tv",
