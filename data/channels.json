@@ -571,7 +571,7 @@
   {
     "name": "Somoy Tv",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1784629064327.png",
-    "category": "General",
+    "category": "News",
     "url": "http://116.204.149.16/somoytv/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
