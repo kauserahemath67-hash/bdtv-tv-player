@@ -1995,7 +1995,7 @@
   },
   {
     "name": "Afra Film",
-    "logo": "https://www.afratv.com/images/Logo3.png",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9Sc_2FsHQLGcRlwqsmKB7dAtxzWL4gmIhCPBrzQO5bw&s=10",
     "category": "Movies",
     "url": "https://afrafhls.wns.live/hls/stream.m3u8",
     "status": "ONLINE",
@@ -2005,7 +2005,8 @@
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": "https://afrafhls.wns.live/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Alankar TV",
