@@ -228,6 +228,28 @@ async function getChannels() {
   return [..._channelCache.data].sort((a, b) => (a.order || 0) - (b.order || 0));
 }
 
+async function persistChannels(channels, message) {
+  const saved = await ghCommit(GITHUB_CHANNELS_PATH, channels, message);
+  if (!saved) {
+    invalidateChannelCache();
+    if (GITHUB_TOKEN || process.env.VERCEL) {
+      throw new Error('Failed to persist channels to GitHub.');
+    }
+
+    try {
+      const fs = require('fs');
+      const path = require('path');
+      const localPath = path.join(__dirname, '..', GITHUB_CHANNELS_PATH);
+      fs.writeFileSync(localPath, JSON.stringify(channels, null, 2), 'utf8');
+    } catch (error) {
+      throw new Error(`Failed to save channels locally: ${error.message}`);
+    }
+  }
+
+  _channelCache.data = channels;
+  _channelCache.loadedAt = Date.now();
+}
+
 /**
  * Save (create or update) a channel. Persists to GitHub.
  */
@@ -261,28 +283,7 @@ async function saveChannel(channel) {
   }
 
   // 3. Persist
-  const ok = await ghCommit(GITHUB_CHANNELS_PATH, current, `Save channel: ${channel.name}`);
-  if (ok) {
-    _channelCache.data    = current;
-    _channelCache.loadedAt = Date.now();
-  } else {
-    invalidateChannelCache();
-    if (GITHUB_TOKEN || process.env.VERCEL) {
-      throw new Error('Failed to persist channel to GitHub.');
-    }
-
-    // If running locally without GITHUB_TOKEN, also save to local file
-    try {
-      const fs = require('fs');
-      const path = require('path');
-      const localPath = path.join(__dirname, '..', GITHUB_CHANNELS_PATH);
-      fs.writeFileSync(localPath, JSON.stringify(current, null, 2), 'utf8');
-      _channelCache.data = current;
-      _channelCache.loadedAt = Date.now();
-    } catch (error) {
-      throw new Error(`Failed to save channel locally: ${error.message}`);
-    }
-  }
+  await persistChannels(current, `Save channel: ${channel.name}`);
 
   return idx >= 0 ? current[idx] : channel;
 }
@@ -301,13 +302,7 @@ async function deleteChannel(id) {
   current.splice(idx, 1);
 
   // 3. Persist
-  const ok = await ghCommit(GITHUB_CHANNELS_PATH, current, `Delete channel: ${id}`);
-  if (ok) {
-    _channelCache.data    = current;
-    _channelCache.loadedAt = Date.now();
-  } else {
-    invalidateChannelCache();
-  }
+  await persistChannels(current, `Delete channel: ${id}`);
 
   return true;
 }
@@ -334,14 +329,8 @@ async function importChannels(newChannels) {
     newChannels.forEach((c, idx) => { c.order = idx + 1; });
   }
 
-  const ok = await ghCommit(GITHUB_CHANNELS_PATH, newChannels, `Bulk import: ${newChannels.length} channels`);
-  if (ok) {
-    _channelCache.data    = newChannels;
-    _channelCache.loadedAt = Date.now();
-  } else {
-    invalidateChannelCache();
-  }
-  return ok;
+  await persistChannels(newChannels, `Bulk import: ${newChannels.length} channels`);
+  return true;
 }
 
 /**
@@ -358,10 +347,7 @@ async function reorderChannels(orderedIds) {
     });
   }
   const sorted = current.sort((a, b) => (a.order || 0) - (b.order || 0));
-  const saved = await ghCommit(GITHUB_CHANNELS_PATH, sorted, 'Reorder channels');
-  if (!saved) throw new Error('Failed to persist channel order to GitHub.');
-  _channelCache.data    = sorted;
-  _channelCache.loadedAt = Date.now();
+  await persistChannels(sorted, 'Reorder channels');
   return sorted;
 }
 
@@ -375,9 +361,7 @@ async function updateChannelHealth(id, status, responseTimeMs) {
   if (ch) {
     ch.status = status;
     if (responseTimeMs !== undefined) ch.response_time_ms = responseTimeMs;
-    await ghCommit(GITHUB_CHANNELS_PATH, current, `Update health: ${ch.name} -> ${status}`);
-    _channelCache.data = current;
-    _channelCache.loadedAt = Date.now();
+    await persistChannels(current, `Update health: ${ch.name} -> ${status}`);
     return ch;
   }
   return null;
@@ -406,9 +390,7 @@ async function batchUpdateChannels(updates) {
   }
 
   if (changedCount > 0 || updates.length > 0) {
-    await ghCommit(GITHUB_CHANNELS_PATH, current, `Batch update channels status (${updates.length} items)`);
-    _channelCache.data = current;
-    _channelCache.loadedAt = Date.now();
+    await persistChannels(current, `Batch update channels status (${updates.length} items)`);
   }
   return current;
 }
