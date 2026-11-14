@@ -3087,7 +3087,7 @@
   {
     "name": "Global TV",
     "logo": "https://assets-prod.services.toffeelive.com/0y_tDJsBNnOkwJLWNrdE/posters/2ff058e1-630f-4657-8dc6-b677e65642c5.png",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/globaltv.stream/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -3096,7 +3096,8 @@
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": "https://app24.jagobd.com.bd/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Channel S",
