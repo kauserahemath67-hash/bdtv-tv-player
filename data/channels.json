@@ -856,7 +856,7 @@
   {
     "name": "NTV",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1735560841094.png",
-    "category": "General",
+    "category": "News",
     "url": "https://tvsen5.aynaott.com/JHPxHAWonztVucyc4GzF/index.m3u8?e=1782665440&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=7f955e1c0f7b6e3afa3d8b92c3f19359",
     "status": "ONLINE",
     "is_pinned": false,
@@ -865,7 +865,8 @@
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "SRK TV",
