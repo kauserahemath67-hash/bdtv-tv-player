@@ -1875,7 +1875,7 @@
     "logo": "https://image.tsports.com/images/mobile_thumbnail/1761718928-1750064430-LIVE.jpg",
     "category": "General",
     "order": 127,
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "is_pinned": false,
     "manual_override": true,
     "use_proxy": true,
