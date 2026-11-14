@@ -3,7 +3,7 @@
   "admin_email": "kauserahamed424@gmail.com",
   "admin_password": "42431967",
   "notice_text": "পুরোনো BDTv apps আপডেট করে নিনঃ https://tvapp.free.je/",
-  "notice_active": false,
+  "notice_active": true,
   "subscription_restrictions_enabled": false,
   "default_max_devices": 2,
   "expiry_warning_days": 3,
