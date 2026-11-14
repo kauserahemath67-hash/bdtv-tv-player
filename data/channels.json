@@ -197,7 +197,7 @@
   {
     "name": "bein xtra",
     "logo": "https://web.aynaott.com/storage/019dd92f-107c-7056-9e79-e5233f6e51d9/uploads/images/2026-07-09/images_d42ab13fe207d824670f04d717bfd88b_playmist_mbein_sports_m.jpg",
-    "category": "General",
+    "category": "Sports",
     "url": "https://bein-xtra-bein.amagi.tv/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": true,
@@ -206,7 +206,8 @@
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "ESPN 3",
