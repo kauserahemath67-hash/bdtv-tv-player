@@ -1121,7 +1121,7 @@
   {
     "name": "Discovery",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqezFALo-LbtcS9LIbXWG88NFs5W5v99xfaYqrVOzs3oAzeHoTfXiTNdBs&s=10",
-    "category": "General",
+    "category": "International",
     "url": "http://88.212.15.50/live/test_discovery_hd_hevc/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -1130,7 +1130,8 @@
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "KidsFlix",
