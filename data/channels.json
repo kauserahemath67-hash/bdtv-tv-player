@@ -3981,5 +3981,20 @@
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794677674974",
+    "name": "RetroCrush",
+    "category": "International",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ulG85jTQOgbHuZ-7aKeSxxq9OFEL1LaXzZ9XEQ06ZlpPd0IMc2FB4V9X&s=10",
+    "url": "https://d2nqmwm1ndpgi2.cloudfront.net/playlist.m3u8",
+    "is_pinned": false,
+    "order": 311,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
