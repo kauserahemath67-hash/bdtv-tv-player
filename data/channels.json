@@ -511,7 +511,7 @@
   {
     "name": "Asian Tv",
     "logo": "https://yt3.googleusercontent.com/eMcIPmI9hKQIHua9lU7l7AnELALHsP_1EwIkZ8tJa-FV-epwPdiX0zxb5gnUuH2-R0t8hpxHxA=s900-c-k-c0x00ffffff-no-rj",
-    "category": "General",
+    "category": "News",
     "url": "https://tvsen6.aynaott.com/pKb5k6NnzxsKpWUs6E8M/index.m3u8?e=1784102565&u=ee5437a7-c16b-4700-b317-a41b77d5cba9&token=e4293f68c5bc8aa8e6ac3e088ca754f4",
     "status": "ONLINE",
     "is_pinned": false,
@@ -520,7 +520,8 @@
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Ananda Tv",
