@@ -755,9 +755,9 @@
     "id": "ch-1794166482825-18",
     "order": 51,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "backup_url": null,
-    "proxy_referer": "https://alixbd.com/proxy/",
+    "proxy_referer": null,
     "proxy_user_agent": null
   },
   {
