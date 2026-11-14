@@ -261,7 +261,7 @@
     "category": "Sports",
     "order": 18,
     "status": "ONLINE",
-    "is_pinned": false,
+    "is_pinned": true,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
