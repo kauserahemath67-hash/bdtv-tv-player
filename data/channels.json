@@ -70,7 +70,7 @@
     "order": 5,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
+    "proxy_referer": "https://alixbd.com/proxy/",
     "proxy_user_agent": null,
     "backup_url": null
   },
