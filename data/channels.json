@@ -871,7 +871,7 @@
   {
     "name": "SRK TV",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1779607122445.png",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://srktv.net/srktvhls/cdnlive_srktv.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -880,7 +880,8 @@
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": "https://srktv.net/",
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Channel 24 HD",
