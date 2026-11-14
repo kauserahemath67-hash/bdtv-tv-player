@@ -4056,5 +4056,20 @@
     "backup_url": "http://1204786.2734260009.growthtry.com/live/YqXTywueEV/damp2purchase/66162.ts",
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794679748350",
+    "name": "RTV",
+    "category": "News",
+    "logo": "https://cdn.dribbble.com/userupload/16153765/file/original-c44e5b4aaf2ca2f2d772cf7df32a6e79.jpg",
+    "url": "https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtv-sg.stream/index.m3u8",
+    "is_pinned": false,
+    "order": 316,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
