@@ -4011,5 +4011,20 @@
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794677954483",
+    "name": "Pokémon",
+    "category": "International",
+    "logo": "https://images.pluto.tv/channels/6675c7868768aa0008d7f1c7/colorLogoPNG.png",
+    "url": "https://jmp2.uk/plu-6675c7868768aa0008d7f1c7.m3u8",
+    "is_pinned": false,
+    "order": 313,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   }
 ]
