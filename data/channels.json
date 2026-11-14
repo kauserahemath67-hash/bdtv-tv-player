@@ -3030,7 +3030,7 @@
   {
     "name": "Toffee Movies",
     "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
-    "category": "Movies",
+    "category": "Entertainment",
     "url": "https://alixbd.com/playlistconfig/channel/2.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -3039,7 +3039,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "WC Match Recap",
