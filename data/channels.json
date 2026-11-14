@@ -2488,10 +2488,11 @@
     "logo": "https://i.imgur.com/rgNQYAl.png",
     "category": "Movies",
     "url": "https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2229",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-135",
-    "order": 182
+    "order": 182,
+    "manual_override": true
   },
   {
     "name": "Gold Star",
@@ -3008,10 +3009,11 @@
     "logo": "https://i.ibb.co/fdbgvtT8/IMG-2523.webp",
     "category": "Movies",
     "url": "https://freem3u.xyz/api/live/play.m3u8?vid=181",
-    "status": "ONLINE",
+    "status": "OFFLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-186",
-    "order": 230
+    "order": 230,
+    "manual_override": true
   },
   {
     "name": "Bhojpuri Movies",
@@ -3950,8 +3952,8 @@
     "url": "https://jmp2.uk/plu-64c92f965580090008084968.m3u8",
     "is_pinned": false,
     "order": 309,
-    "status": "ONLINE",
-    "manual_override": false,
+    "status": "OFFLINE",
+    "manual_override": true,
     "use_proxy": true,
     "backup_url": null,
     "proxy_referer": null,
