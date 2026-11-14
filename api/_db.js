@@ -352,7 +352,8 @@ async function reorderChannels(orderedIds) {
     });
   }
   const sorted = current.sort((a, b) => (a.order || 0) - (b.order || 0));
-  await ghCommit(GITHUB_CHANNELS_PATH, sorted, 'Reorder channels');
+  const saved = await ghCommit(GITHUB_CHANNELS_PATH, sorted, 'Reorder channels');
+  if (!saved) throw new Error('Failed to persist channel order to GitHub.');
   _channelCache.data    = sorted;
   _channelCache.loadedAt = Date.now();
   return sorted;

@@ -236,6 +236,12 @@ class AdminDashboard {
       const json = await res.json();
       if (json && json.success) {
         this.channels = json.data || [];
+        try {
+          await this.persistChannelDisplayOrder();
+        } catch (e) {
+          console.error('Failed to persist channel order:', e);
+          this.showToast('Channel order could not be saved to GitHub.', 'error');
+        }
         this.renderChannelsTable();
       }
     } catch (e) {
@@ -243,12 +249,8 @@ class AdminDashboard {
     }
   }
 
-  renderChannelsTable() {
-    const tbody = document.getElementById('channels-table-body');
-    tbody.innerHTML = '';
-
-    const searchTerm = (document.getElementById('channel-search').value || '').toLowerCase();
-    const categoryKey = channel => (channel.category || 'General').trim().toLowerCase();
+  getSortedChannels() {
+    const categoryKey = channel => String(channel.category || 'General').trim().toLowerCase();
     const categoryOrder = new Map();
     this.channels.forEach(channel => {
       const key = categoryKey(channel);
@@ -258,12 +260,8 @@ class AdminDashboard {
     });
     categoryOrder.set('sports', 0);
 
-    const filtered = this.channels
+    return this.channels
       .map((channel, index) => ({ channel, index }))
-      .filter(({ channel }) =>
-        (channel.name || '').toLowerCase().includes(searchTerm) ||
-        (channel.category || '').toLowerCase().includes(searchTerm)
-      )
       .sort((a, b) =>
         Number(Boolean(b.channel.is_pinned)) - Number(Boolean(a.channel.is_pinned)) ||
         (categoryOrder.get(categoryKey(a.channel)) ?? Number.MAX_SAFE_INTEGER) -
@@ -271,6 +269,42 @@ class AdminDashboard {
         a.index - b.index
       )
       .map(({ channel }) => channel);
+  }
+
+  async persistChannelDisplayOrder() {
+    const sorted = this.getSortedChannels();
+    const isAlreadySorted = sorted.every((channel, index) =>
+      this.channels[index]?.id === channel.id && Number(channel.order) === index + 1
+    );
+    if (isAlreadySorted) return;
+
+    const res = await this.authFetch('/api/channels', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        orderList: sorted.map((channel, index) => ({ id: channel.id, order: index + 1 }))
+      })
+    });
+    const result = await res.json();
+    if (!res.ok || !result.success) {
+      throw new Error(result.message || 'Channel order update failed.');
+    }
+
+    sorted.forEach((channel, index) => {
+      channel.order = index + 1;
+    });
+    this.channels = sorted;
+  }
+
+  renderChannelsTable() {
+    const tbody = document.getElementById('channels-table-body');
+    tbody.innerHTML = '';
+
+    const searchTerm = (document.getElementById('channel-search').value || '').toLowerCase();
+    const filtered = this.getSortedChannels().filter(channel =>
+      (channel.name || '').toLowerCase().includes(searchTerm) ||
+      (channel.category || '').toLowerCase().includes(searchTerm)
+    );
 
     filtered.forEach((ch, idx) => {
       const tr = document.createElement('tr');
