@@ -167,7 +167,7 @@
   {
     "name": "Fox Sports",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv93kQYTHu5kcQi3Gp21Dk6yKFhsefjd_ZGh1c2kvOCFgyP1cwqhf6AC0&s=10",
-    "category": "General",
+    "category": "Sports",
     "url": "https://d1jzu95oc8fgt3.cloudfront.net/FOX_Sports.m3u8",
     "status": "ONLINE",
     "is_pinned": true,
@@ -176,7 +176,8 @@
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Fox Sports 1 US",
