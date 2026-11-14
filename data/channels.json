@@ -1046,7 +1046,7 @@
   {
     "name": "Duronto Tv",
     "logo": "https://mir-s3-cdn-cf.behance.net/projects/202/085a3357868699.Y3JvcCw3MTksNTYzLDMyMSw4Mw.jpg",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://livetv.shamon-cable.net:8443/Duronto/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -1055,7 +1055,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Khushboo Bangla",
