@@ -3382,7 +3382,7 @@
   {
     "name": "Zee Anmol",
     "logo": "https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f9c07bfc-9fde-40d0-91a1-e28c5840f400.png",
-    "category": "Drama",
+    "category": "Entertainment",
     "url": "https://alixbd.com/playlistconfig/channel/46.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -3391,7 +3391,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Zing",
