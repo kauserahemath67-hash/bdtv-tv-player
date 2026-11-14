@@ -757,7 +757,7 @@
     "manual_override": true,
     "use_proxy": true,
     "backup_url": null,
-    "proxy_referer": "https://alixbd.com/",
+    "proxy_referer": "https://alixbd.com/proxy/",
     "proxy_user_agent": null
   },
   {
