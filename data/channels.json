@@ -150,6 +150,21 @@
     "backup_url": null
   },
   {
+    "id": "ch-1794659697502-0",
+    "name": "T Sports",
+    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "category": "Sports",
+    "order": 11,
+    "status": "ONLINE",
+    "is_pinned": true,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": null
+  },
+  {
     "name": "Sony Ten Cricket",
     "logo": "https://assets-prod.services.toffeelive.com/ra2x_pQBrjBfS2_RWG9l/posters/795170c2-ec78-457e-9fa0-54a23d23361c.webp",
     "category": "Sports",
@@ -157,24 +172,9 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-9",
-    "order": 11,
+    "order": 12,
     "manual_override": true,
     "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
-    "id": "ch-1794659697502-0",
-    "name": "T Sports",
-    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "category": "Sports",
-    "order": 12,
-    "status": "ONLINE",
-    "is_pinned": true,
-    "manual_override": true,
-    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
     "backup_url": null
