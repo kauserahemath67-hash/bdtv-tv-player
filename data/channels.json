@@ -3969,15 +3969,16 @@
   {
     "id": "ch-1794659697502-0",
     "name": "T Sports Live 01",
-    "url": "https://live.tsports.com/mobile_hls/tsports_live_1/playlist.m3u8?|Origin=https://live.tsports.com&referer=https://live.tsports.com/&cookie=&user-agent=Abu-Saeeidx/5.0.6 (Linux;Android 11) AndroidXMedia",
+    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
     "logo": "https://image.tsports.com/images/mobile_thumbnail/1761718928-1750064430-LIVE.jpg",
-    "category": "LIVE",
+    "category": "General",
     "order": 310,
     "status": "OFFLINE",
     "is_pinned": false,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   }
 ]
