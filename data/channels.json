@@ -105,6 +105,21 @@
     "backup_url": null
   },
   {
+    "id": "ch-1794659697502-0",
+    "name": "T Sports",
+    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "category": "Sports",
+    "order": 8,
+    "status": "ONLINE",
+    "is_pinned": true,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": null
+  },
+  {
     "name": "PTV Sports",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e4/PTV_Sports.png/250px-PTV_Sports.png?utm_source=en.wikipedia.org&utm_campaign=parser&utm_content=thumbnail",
     "category": "Sports",
@@ -112,24 +127,9 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-5",
-    "order": 8,
+    "order": 9,
     "manual_override": true,
     "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
-    "id": "ch-1794659697502-0",
-    "name": "T Sports",
-    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "category": "Sports",
-    "order": 9,
-    "status": "ONLINE",
-    "is_pinned": true,
-    "manual_override": true,
-    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
     "backup_url": null
