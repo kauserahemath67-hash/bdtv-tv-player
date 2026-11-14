@@ -2949,12 +2949,17 @@
   {
     "name": "Wu Tang Collection",
     "logo": "https://i.imgur.com/sz55sBl.png",
-    "category": "Movies",
+    "category": "International",
     "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991745/hls/master.m3u8?ads.xumo_channelId=99991745",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-251",
-    "order": 242
+    "order": 242,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Xtrema Accion",
