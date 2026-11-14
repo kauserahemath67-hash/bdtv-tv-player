@@ -1580,7 +1580,7 @@
     "order": 106,
     "status": "OFFLINE",
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
