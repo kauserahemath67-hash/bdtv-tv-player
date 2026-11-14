@@ -661,7 +661,7 @@
   {
     "name": "Mohona Tv",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Pb6yg4i886Qh0vDP83f3_rT0Buik2Sp3Q9Rc6BpUEwJU2wEX5bFTPg&s=10",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://playztv-apps.pages.dev/mohona-tv/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -670,7 +670,8 @@
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Independent TV",
