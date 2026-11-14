@@ -283,21 +283,6 @@
     "proxy_user_agent": null
   },
   {
-    "id": "ch-1794659697502-0",
-    "name": "T Sports",
-    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "category": "Sports",
-    "order": 20,
-    "status": "ONLINE",
-    "is_pinned": false,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
     "name": "Eurosport HD",
     "logo": "https://assets-prod.services.toffeelive.com/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",
     "category": "Sports",
@@ -305,11 +290,26 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-282",
-    "order": 21,
+    "order": 20,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794659697502-0",
+    "name": "T Sports",
+    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "category": "Sports",
+    "order": 21,
+    "status": "ONLINE",
+    "is_pinned": false,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Nagorik Tv",
