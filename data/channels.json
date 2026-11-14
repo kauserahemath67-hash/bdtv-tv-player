@@ -30,6 +30,21 @@
     "backup_url": "https://live2.jorvakstreamcache.com/live/channel7.m3u8"
   },
   {
+    "id": "ch-1794659697502-0",
+    "name": "T Sports",
+    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
+    "category": "Sports",
+    "order": 3,
+    "status": "ONLINE",
+    "is_pinned": true,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": null
+  },
+  {
     "name": "A Sports",
     "logo": "https://i.postimg.cc/767hjG0z/channels4-profile-(1).jpg",
     "category": "Sports",
@@ -37,24 +52,9 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-1",
-    "order": 3,
+    "order": 4,
     "manual_override": false,
     "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
-    "id": "ch-1794659697502-0",
-    "name": "T Sports",
-    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
-    "category": "Sports",
-    "order": 4,
-    "status": "ONLINE",
-    "is_pinned": true,
-    "manual_override": true,
-    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
     "backup_url": null
