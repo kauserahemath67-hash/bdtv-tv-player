@@ -239,6 +239,21 @@
     "proxy_user_agent": null
   },
   {
+    "id": "ch-1794480957543",
+    "name": "TNT Sport 1",
+    "category": "Sports",
+    "logo": "https://static.wikia.nocookie.net/logopedia/images/3/30/TNT_Sports_1_Stacked.svg/revision/latest/scale-to-width-down/250?cb=20260225232947",
+    "url": "https://tvsen5.aynaott.com/asdfadsf/index.m3u8",
+    "is_pinned": true,
+    "order": 17,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
     "name": "Fox Sports Argentina",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/5/54/Fox_Sports_Argentina_2026.webp?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
     "category": "Sports",
@@ -246,27 +261,12 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-61",
-    "order": 17,
+    "order": 18,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
     "backup_url": null
-  },
-  {
-    "id": "ch-1794480957543",
-    "name": "TNT Sport 1",
-    "category": "Sports",
-    "logo": "https://static.wikia.nocookie.net/logopedia/images/3/30/TNT_Sports_1_Stacked.svg/revision/latest/scale-to-width-down/250?cb=20260225232947",
-    "url": "https://tvsen5.aynaott.com/asdfadsf/index.m3u8",
-    "is_pinned": true,
-    "order": 18,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": false,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
   },
   {
     "name": "WC Match Recap",
