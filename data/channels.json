@@ -1623,7 +1623,7 @@
     "url": "https://jmp2.uk/plu-629a066860ef810008267b70.m3u8",
     "is_pinned": false,
     "order": 109,
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
     "backup_url": null,
