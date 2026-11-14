@@ -3600,9 +3600,10 @@
     "id": "ch-1794166482825-241",
     "order": 284,
     "manual_override": false,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Thalaa TV (1080p)",
