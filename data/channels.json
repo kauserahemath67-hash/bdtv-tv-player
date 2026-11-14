@@ -286,12 +286,17 @@
   {
     "name": "Star Jalsha HD",
     "logo": "https://raw.githubusercontent.com/shamimpipon/ROAR/main/Star%20Jalsha.png",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starjalsha.smil/chunklist_b1928000.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-12",
-    "order": 20
+    "order": 20,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Jalsha Movies SD",
