@@ -756,7 +756,7 @@
     "order": 51,
     "manual_override": true,
     "use_proxy": true,
-    "backup_url": null,
+    "backup_url": "https://alixbd.com/",
     "proxy_referer": null,
     "proxy_user_agent": null
   },
