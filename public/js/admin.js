@@ -589,15 +589,21 @@ class AdminDashboard {
       };
 
       try {
-        await this.authFetch('/api/channels', {
+        const res = await this.authFetch('/api/channels', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
         });
+        const result = await res.json();
+        if (!res.ok || !result.success) {
+          throw new Error(result.message || result.error || 'Channel save failed.');
+        }
         document.getElementById('channel-modal').classList.add('hidden');
         await this.loadChannels();
-      } catch (err) {
-        alert('Failed to save channel.');
+        this.showToast('Channel saved.', 'success');
+      } catch (error) {
+        console.error('Failed to save channel:', error);
+        this.showToast(error.message || 'Failed to save channel.', 'error');
       }
     });
 

@@ -266,6 +266,11 @@ async function saveChannel(channel) {
     _channelCache.data    = current;
     _channelCache.loadedAt = Date.now();
   } else {
+    invalidateChannelCache();
+    if (GITHUB_TOKEN || process.env.VERCEL) {
+      throw new Error('Failed to persist channel to GitHub.');
+    }
+
     // If running locally without GITHUB_TOKEN, also save to local file
     try {
       const fs = require('fs');
@@ -274,8 +279,9 @@ async function saveChannel(channel) {
       fs.writeFileSync(localPath, JSON.stringify(current, null, 2), 'utf8');
       _channelCache.data = current;
       _channelCache.loadedAt = Date.now();
-    } catch (e) {}
-    invalidateChannelCache(); // force re-read next time
+    } catch (error) {
+      throw new Error(`Failed to save channel locally: ${error.message}`);
+    }
   }
 
   return idx >= 0 ? current[idx] : channel;
