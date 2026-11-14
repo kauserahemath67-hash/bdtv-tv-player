@@ -466,7 +466,7 @@
   {
     "name": "G-Series",
     "logo": "https://upload.wikimedia.org/wikipedia/en/c/ce/G-Series_Logo.png",
-    "category": "General",
+    "category": "Entertainment",
     "url": "https://vods2.aynaott.com/gseriesDrama/tracks-v1a1/mono.ts.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
@@ -475,7 +475,8 @@
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
-    "proxy_user_agent": null
+    "proxy_user_agent": null,
+    "backup_url": null
   },
   {
     "name": "Movie Bangla",
