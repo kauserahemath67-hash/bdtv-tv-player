@@ -52,8 +52,13 @@ hasChannelListChanged(channels) {
 }
 applyNoticeSettings() {
   const text = String(this.settings.notice_text || '').trim();
+  const isActive = this.settings.notice_active === true ||
+    this.settings.notice_active === 1 ||
+    this.settings.notice_active === 'true';
+  const isVisible = isActive && Boolean(text);
   this.noticeText.textContent = text;
-  this.noticeBar.classList.toggle('hidden', !this.settings.notice_active || !text);
+  this.noticeBar.classList.toggle('hidden', !isVisible);
+  this.noticeBar.style.display = isVisible ? '' : 'none';
 }
 startLiveRefresh() {
   if (this._liveRefreshTimer) return;
