@@ -751,12 +751,17 @@
   {
     "name": "DBC News HD",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1770186306600.png",
-    "category": "General",
+    "category": "News",
     "url": "https://tvsen6.aynaott.com/pF66Tkz0qFwP2aMMqHyt/index.m3u8?e=1782665441&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=e05103e2a730532e525ce6519210f3c9",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-48",
-    "order": 52
+    "order": 52,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
   },
   {
     "name": "Ekattor HD",
