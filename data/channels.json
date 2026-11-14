@@ -33,7 +33,7 @@
     "name": "T Sports",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
     "category": "Sports",
-    "url": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8",
+    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-0",
@@ -42,7 +42,7 @@
     "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox"
+    "backup_url": "https://tvsen5.aynaott.com/TnMn5kZz8aLmjklkk/index.m3u8"
   },
   {
     "name": "A Sports",
