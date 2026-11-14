@@ -1,21 +1,17 @@
 {
-  "versionCode": 312,
-  "versionName": "3.1.2",
+  "versionCode": 313,
+  "versionName": "3.1.3",
   "minSupportedVersion": 100,
-  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.2/BDTv.apk",
-  "updateTitle": "BDTv v3.1.2 Update Available",
+  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.3/BDTv.apk",
+  "updateTitle": "BDTv v3.1.3 Update Available",
   "changelog": [
-    "মোটা TV neon text buffering animation; T থেকে V-তে glow যায়, অতিরিক্ত blur ও loading লেখা কমানো হয়েছে",
-    "চ্যানেল এখন GitHub data-storage branch থেকে লোড হয়",
-    "অকার্যকর cache হলে channel feed থেকে পুনরায় channel load করা হয়",
-    "offline অবস্থায় Android cache fallback ও channel loading diagnostic যোগ",
-    "কম RAM-এর TV-তে startup logo download সীমিত",
-    "TV-তে GitHub channel loading ও update check উন্নত",
-    "VIP/device validation Vercel-এ অক্ষত রাখা হয়েছে",
-    "Android TV remote control support বজায় রাখা হয়েছে",
-    "Wi-Fi ও mobile network-এ startup crash ঠিক করা হয়েছে"
+    "অ্যাডমিন প্যানেল থেকে চ্যানেল লিঙ্ক পরিবর্তন করলে অ্যাপে তাৎক্ষণিক লাইভ আপডেট",
+    "ExoPlayer লাইভ স্ট্রিমিং বাফার ব্যালেন্স (12-25 সেকেন্ড) যাতে স্ক্রিন আটকে না যায়",
+    "1GB RAM ও Android 7.0 TV-তে ব্ল্যাক স্ক্রিন ও লোডিং আটকে থাকার সমস্যা সমাধান",
+    "চ্যানেল ক্যাশিং ও অফলাইন ফলব্যাক অপ্টিমাইজেশন",
+    "অটো আপডেট ও পারফরম্যান্স স্থিতিশীলতা উন্নয়ন"
   ],
   "forceUpdate": false,
-  "updateMessage": "The v3.1.2 APK includes a compact TV neon buffering animation with reduced glow.",
-  "updatedAt": "2026-11-13T20:10:42.000Z"
+  "updateMessage": "v3.1.3 আপডেট: কম RAM টিভিতে মসৃণ প্লেব্যাক ও অ্যাডমিন লিঙ্ক রিয়েল-টাইম সিঙ্ক।",
+  "updatedAt": "2026-11-14T16:15:00.000Z"
 }
