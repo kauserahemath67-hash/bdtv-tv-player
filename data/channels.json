@@ -2,7 +2,7 @@
   {
     "id": "ch-1794659697502-0",
     "name": "Bangladesh vs pakistan",
-    "url": "https://pull.niues.live/live/stream-9912138_lhd.m3u8?auth_key=1794670377-0-0-afc2eb3d6e8aa3576da658d10cce3e88",
+    "url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiJzpZAcltkRfl83OhkAi9zQDG3nYvrGYXBcNQVslMHGh9_mz0rc43oPBd&s=10",
     "category": "Sports",
     "order": 1,
@@ -12,7 +12,7 @@
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": "http://103.114.11.37:8081/T-Sports-FHD/index.m3u8?token=sbox"
+    "backup_url": null
   },
   {
     "name": "Btv HD",
