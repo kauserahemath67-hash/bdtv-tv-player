@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""Refresh ONLY the alixbd-linked channel URLs inside data/channels.json. (v2)
+"""Refresh ONLY the alixbd-linked channel URLs inside data/channels.json. (v3)
 
 Safety rules:
 - Only channels whose `url` contains "alixbd.com/proxy/proxy.php" or
   "alixbd.com/playlistconfig/" are ever considered. If Kauser replaces a
   channel's link with a non-alixbd source, this script never touches that
   channel again.
-- A replacement URL is written ONLY after it passes a live check
-  (playlist loads AND a media segment answers). If no candidate for a
+- A replacement URL is written ONLY after it passes a STRONG live
+  check: playlist loads, first+last segments answer, and the live
+  media sequence is actually advancing (not a frozen edge). If no candidate for a
   channel passes, the channel keeps its existing URL — a dead link is
   never written.
 - If alixbd itself is unreachable or the parse looks wrong (<100 channels),
@@ -100,18 +101,32 @@ def ordered(cands):
 
 
 def stream_alive(url: str) -> bool:
-    """True only if the playlist loads AND a media segment answers 200/206."""
+    """STRONG check: the stream must be genuinely flowing, not just answering.
+
+    master loads -> variant loads -> at least the first AND last media
+    segments answer 200/206 -> and, when the playlist carries a media
+    sequence number, it must ADVANCE between two reads ~6s apart (a stuck
+    sequence means a frozen/dead edge even if old segments still answer).
+    """
+    import time
+
+    def get(u, rng=False):
+        h = {"User-Agent": "Mozilla/5.0"}
+        if rng:
+            h["Range"] = "bytes=0-1023"
+        req = urllib.request.Request(u, headers=h)
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            return resp.status, resp.read().decode("utf-8", errors="ignore")
+
     try:
-        body = fetch(url, timeout=15)
+        _, body = get(url)
     except Exception:
         return False
     if "#EXTM3U" not in body:
         # Not a playlist (e.g. a raw .ts feed): probe the bytes directly.
         try:
-            req = urllib.request.Request(
-                url, headers={"User-Agent": "Mozilla/5.0", "Range": "bytes=0-1023"})
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                return resp.status in (200, 206)
+            st, _ = get(url, rng=True)
+            return st in (200, 206)
         except Exception:
             return False
     targets = [l.strip() for l in body.splitlines()
@@ -120,24 +135,26 @@ def stream_alive(url: str) -> bool:
         return False
     try:
         variant = urllib.parse.urljoin(url, targets[0])
-        vbody = fetch(variant, timeout=15)
-        if "#EXTM3U" in vbody:
-            segs = [l.strip() for l in vbody.splitlines()
-                    if l.strip() and not l.startswith("#")]
-            if not segs:
+        _, vbody = get(variant)
+        if "#EXTM3U" not in vbody:
+            st, _ = get(variant, rng=True)
+            return st in (200, 206)
+        segs = [l.strip() for l in vbody.splitlines()
+                if l.strip() and not l.startswith("#")]
+        if len(segs) < 2:
+            return False
+        for s in (segs[0], segs[-1]):
+            st, _ = get(urllib.parse.urljoin(variant, s), rng=True)
+            if st not in (200, 206):
                 return False
-            seg_url = urllib.parse.urljoin(variant, segs[-1])
-        else:
-            seg_url = variant  # single-level playlist: target IS media/playlist
-            req = urllib.request.Request(
-                seg_url, headers={"User-Agent": "Mozilla/5.0",
-                                  "Range": "bytes=0-1023"})
-            with urllib.request.urlopen(req, timeout=15) as resp:
-                return resp.status in (200, 206)
-        req = urllib.request.Request(
-            seg_url, headers={"User-Agent": "Mozilla/5.0", "Range": "bytes=0-1023"})
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            return resp.status in (200, 206)
+        m1 = re.search(r"#EXT-X-MEDIA-SEQUENCE:(\d+)", vbody)
+        if m1:  # live playlist: the edge must be advancing
+            time.sleep(6)
+            _, vbody2 = get(variant)
+            m2 = re.search(r"#EXT-X-MEDIA-SEQUENCE:(\d+)", vbody2)
+            if not m2 or int(m2.group(1)) <= int(m1.group(1)):
+                return False
+        return True
     except Exception:
         return False
 
