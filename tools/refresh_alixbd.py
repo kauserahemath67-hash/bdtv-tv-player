@@ -1,41 +1,55 @@
 #!/usr/bin/env python3
-"""Refresh ONLY the alixbd-linked channel URLs inside data/channels.json. (v5)
+"""Refresh the alixbd-linked channel URLs inside data/channels.json. (v6)
 
-Safety rules:
+Upgrades over v5:
+- PARALLEL: channels are processed concurrently (6 workers), so a run
+  takes minutes, not half an hour.
+- SOURCE MEMORY: tools/source_stats.json (kept next to this script)
+  records, per channel and per source label, how often each source
+  passed the strong check. Candidates are tried in order of their
+  proven track record for that channel first.
+- BACKUP LINK: for every in-scope channel the bot also maintains
+  `backup_url` with a second, twice-proven active source (approved by
+  Kauser 2026-11-15), so the app has a spare when the main link dies.
+
+Safety rules (unchanged in spirit):
 - Only channels whose `url` contains "alixbd.com/proxy/proxy.php" or
-  "alixbd.com/playlistconfig/" are ever considered. If Kauser replaces a
-  channel's link with a non-alixbd source, this script never touches that
-  channel again.
-- The CURRENT url of a channel is replaced ONLY when it shows NO
-  proof of life: three separate fetches of its master playlist never
-  once return a valid playlist. The alixbd proxy flaps per-request
-  (the same id can answer 403/000 one minute and 200 the next), so a
-  single failure proves nothing — but a link that cannot produce one
-  valid playlist in three tries is treated as gone, while any link
-  that answers even once (including one Kauser verified himself from
-  Bangladesh) is kept untouched.
-- A replacement URL is written ONLY after it proves itself the
-  ACTIVE source: it must pass the STRONG live check (playlist loads,
-  first+last segments answer, live media sequence advancing) TWICE
-  in a row. All of the channel's sources compete; the first one to
-  pass twice is picked. If none does, the channel keeps its URL.
-- If alixbd itself is unreachable or the parse looks wrong (<100 channels),
+  "alixbd.com/playlistconfig/" are ever considered. If Kauser replaces
+  a channel's link with a non-alixbd source, this script never touches
+  that channel again (neither url nor backup_url).
+- The CURRENT url is replaced ONLY when it shows NO proof of life:
+  three fetches of its master playlist never once return a valid
+  playlist. Any link that answers even once (including one Kauser
+  verified himself from Bangladesh) is kept untouched.
+- A written link (main or backup) must prove itself ACTIVE: pass the
+  STRONG live check (playlist loads, first+last segments answer, live
+  media sequence advancing) TWICE in a row.
+- backup_url is only ever REPLACED by a twice-proven link, and only
+  when the existing backup is lifeless or missing. A backup Kauser set
+  himself is never deleted without a proven replacement.
+- If alixbd is unreachable or the parse looks wrong (<100 channels),
   the script aborts and writes NOTHING.
-- Only the `url` field changes; every other field and channel is untouched.
+- Only `url` and `backup_url` of in-scope channels ever change.
 
 Usage: python3 refresh_alixbd.py data/channels.json
-Exit code 0 = done (updated or already fresh); 2 = aborted, nothing changed.
+Exit code 0 = done; 2 = aborted, nothing changed.
 """
+import concurrent.futures
 import html as htmlmod
 import json
+import os
 import re
 import sys
+import threading
+import time
 import urllib.parse
 import urllib.request
 
 HOME = "http://alixbd.com/"
 PROXY = "http://alixbd.com/proxy/proxy.php?id="
 LABEL_ORDER = ["server 1", "toffee", "ayna"]
+STATS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                          "source_stats.json")
 
 # His channel name (normalised) -> alixbd's name (normalised), for channels
 # whose names differ between the two lists. Verified against alixbd 2026-11-15.
@@ -50,6 +64,9 @@ ALIASES = {
     "sony sab hd": "sony sab",
     "zee cafe": "zee cafe hd",
 }
+
+_stats_lock = threading.Lock()
+_stats = {}
 
 
 def fetch(url: str, timeout: int = 60) -> str:
@@ -97,49 +114,53 @@ def parse_alixbd(raw: str):
     return by_name
 
 
-def ordered(cands):
-    """Candidates in preference order: direct URLs first, then label order."""
-    direct = [c for c in cands if not c[1].startswith(PROXY)]
-    rest = [c for c in cands if c[1].startswith(PROXY)]
-    by_label = []
-    for want in LABEL_ORDER:
-        by_label += [c for c in rest if c[0].strip().lower() == want]
-    by_label += [c for c in rest if c[0].strip().lower() not in LABEL_ORDER]
-    return direct + by_label
+def record(ch_key: str, label: str, ok: bool):
+    with _stats_lock:
+        entry = _stats.setdefault(ch_key, {}).setdefault(
+            label.strip().lower(), {"pass": 0, "fail": 0})
+        entry["pass" if ok else "fail"] += 1
+
+
+def ordered(cands, ch_key: str):
+    """Direct URLs first; within each group, sources with the best
+    proven track record for THIS channel come first, then label order."""
+    def rank(item):
+        label, url = item
+        st = _stats.get(ch_key, {}).get(label.strip().lower(),
+                                        {"pass": 0, "fail": 0})
+        total = st["pass"] + st["fail"]
+        rate = (st["pass"] / total) if total else -1
+        try:
+            label_idx = LABEL_ORDER.index(label.strip().lower())
+        except ValueError:
+            label_idx = len(LABEL_ORDER)
+        return (0 if not url.startswith(PROXY) else 1,
+                -st["pass"], -rate, label_idx)
+
+    return sorted(cands, key=rank)
+
+
+def proof_of_life(url: str) -> bool:
+    try:
+        return "#EXTM3U" in fetch(url, timeout=15)
+    except Exception:
+        return False
 
 
 def current_replaceable(url: str) -> bool:
-    """True only if the current link shows NO proof of life: three
-    fetches of its master playlist, none returning a valid playlist.
-
-    The alixbd proxy flaps per-request, so one failure proves nothing;
-    a single valid playlist response in any attempt means the link is
-    alive (however flaky) and must be kept.
-    """
-    import time
-
+    """True only if the current link shows NO proof of life in three
+    fetches. A single valid playlist in any attempt means: keep it."""
     for attempt in range(3):
-        try:
-            body = fetch(url, timeout=15)
-            if "#EXTM3U" in body:
-                return False
-        except Exception:
-            pass
+        if proof_of_life(url):
+            return False
         if attempt < 2:
             time.sleep(5)
     return True
 
 
 def stream_alive(url: str) -> bool:
-    """STRONG check: the stream must be genuinely flowing, not just answering.
-
-    master loads -> variant loads -> at least the first AND last media
-    segments answer 200/206 -> and, when the playlist carries a media
-    sequence number, it must ADVANCE between two reads ~6s apart (a stuck
-    sequence means a frozen/dead edge even if old segments still answer).
-    """
-    import time
-
+    """STRONG check: playlist loads, first AND last segments answer
+    200/206, and the live media sequence ADVANCES between two reads."""
     def get(u, rng=False):
         h = {"User-Agent": "Mozilla/5.0"}
         if rng:
@@ -153,7 +174,6 @@ def stream_alive(url: str) -> bool:
     except Exception:
         return False
     if "#EXTM3U" not in body:
-        # Not a playlist (e.g. a raw .ts feed): probe the bytes directly.
         try:
             st, _ = get(url, rng=True)
             return st in (200, 206)
@@ -178,7 +198,7 @@ def stream_alive(url: str) -> bool:
             if st not in (200, 206):
                 return False
         m1 = re.search(r"#EXT-X-MEDIA-SEQUENCE:(\d+)", vbody)
-        if m1:  # live playlist: the edge must be advancing
+        if m1:
             time.sleep(6)
             _, vbody2 = get(variant)
             m2 = re.search(r"#EXT-X-MEDIA-SEQUENCE:(\d+)", vbody2)
@@ -189,7 +209,61 @@ def stream_alive(url: str) -> bool:
         return False
 
 
+def twice_proven(ch_key: str, label: str, url: str) -> bool:
+    ok1 = stream_alive(url)
+    record(ch_key, label, ok1)
+    if not ok1:
+        return False
+    ok2 = stream_alive(url)
+    record(ch_key, label, ok2)
+    return ok2
+
+
+def process_channel(ch, by_name):
+    """Returns a short log line. Mutates ch in place (url/backup_url)."""
+    url = ch.get("url") or ""
+    name = ch.get("name")
+    key = norm(name or "")
+    cands = by_name.get(ALIASES.get(key, key))
+    if not cands:
+        return f"  unmatched (kept): {name}"
+    cands = ordered(cands, key)
+    notes = []
+
+    # --- main link ---
+    if current_replaceable(url):
+        winner = None
+        for label, cand in cands:
+            if cand != url and twice_proven(key, label, cand):
+                winner = cand
+                break
+        if winner:
+            ch["url"] = winner
+            url = winner
+            notes.append("main updated")
+        else:
+            notes.append("main lifeless, no proven replacement")
+
+    # --- backup link ---
+    backup = ch.get("backup_url") or ""
+    if not backup or backup == url or not proof_of_life(backup):
+        spare = None
+        for label, cand in cands:
+            if cand != url and cand != backup and \
+               twice_proven(key, label, cand):
+                spare = cand
+                break
+        if spare:
+            ch["backup_url"] = spare
+            notes.append("backup set")
+        elif backup and backup != url and not proof_of_life(backup):
+            notes.append("backup lifeless, no proven spare (kept)")
+
+    return f"  {name}: " + ("; ".join(notes) if notes else "ok")
+
+
 def main() -> int:
+    global _stats
     path = sys.argv[1] if len(sys.argv) > 1 else "data/channels.json"
 
     try:
@@ -201,48 +275,34 @@ def main() -> int:
         print(f"ABORT: only {len(by_name)} channels parsed from alixbd")
         return 2
 
+    if os.path.exists(STATS_PATH):
+        try:
+            with open(STATS_PATH, encoding="utf-8") as f:
+                _stats = json.load(f)
+        except Exception:
+            _stats = {}
+
     with open(path, encoding="utf-8") as f:
         channels = json.load(f)
+    before = json.dumps(channels, ensure_ascii=False, sort_keys=True)
 
-    updated = unchanged = unmatched = kept_dead = 0
-    for ch in channels:
-        url = ch.get("url") or ""
-        if "alixbd.com/proxy/proxy.php" not in url and \
-           "alixbd.com/playlistconfig/" not in url:
-            continue  # not an alixbd channel — never touched
-        key = norm(ch.get("name", ""))
-        cands = by_name.get(ALIASES.get(key, key))
-        if not cands:
-            unmatched += 1
-            print(f"  unmatched (kept old URL): {ch.get('name')}")
-            continue
-        cands = ordered(cands)
-        if not current_replaceable(url):
-            # Current link is not provably dead (it may be flaky, or
-            # only failing from this network) — never overwrite it.
-            unchanged += 1
-            continue
-        urls = [u for _l, u in cands if u != url]
-        fresh = None
-        for cand in urls:
-            # The picked source must prove itself active TWICE in a
-            # row — one lucky pass is not enough on this flaky proxy.
-            if stream_alive(cand) and stream_alive(cand):
-                fresh = cand
-                break
-        if fresh is None:
-            kept_dead += 1
-            print(f"  dead, no twice-proven candidate (kept old URL): {ch.get('name')}")
-            continue
-        ch["url"] = fresh
-        updated += 1
-        print(f"  updated (was lifeless): {ch.get('name')}")
-    print(f"alixbd channels: updated={updated} unchanged={unchanged} "
-          f"unmatched={unmatched} kept-no-live={kept_dead}")
-    if updated:
+    scoped = [c for c in channels
+              if "alixbd.com/proxy/proxy.php" in (c.get("url") or "")
+              or "alixbd.com/playlistconfig/" in (c.get("url") or "")]
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
+        for line in ex.map(lambda c: process_channel(c, by_name), scoped):
+            print(line, flush=True)
+
+    after = json.dumps(channels, ensure_ascii=False, sort_keys=True)
+    changed = before != after
+    print(f"in-scope channels: {len(scoped)} | channels.json changed: {changed}")
+    if changed:
         with open(path, "w", encoding="utf-8") as f:
             json.dump(channels, f, ensure_ascii=False, indent=2)
             f.write("\n")
+    with open(STATS_PATH, "w", encoding="utf-8") as f:
+        json.dump(_stats, f, ensure_ascii=False, indent=1, sort_keys=True)
+        f.write("\n")
     return 0
 
 
