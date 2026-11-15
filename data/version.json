@@ -5,12 +5,12 @@
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.5/BDTv.apk",
   "updateTitle": "BDTv v3.1.5 Update Available",
   "changelog": [
-    "First-load instant channel grid with embedded seed snapshot",
-    "Dual-stage sync fallback (Vercel & GitHub) with silent retry",
-    "TV splash loading animation without any loading text",
-    "Google Play Protect clean audit & minimum permissions"
+    "Versatile, ultra-smooth live buffering",
+    "Perfect audio-video synchronization ",
+    "Fixes for frame-freezing and black screens in IPTV streams",
+    "Performance optimization "
   ],
   "forceUpdate": false,
   "updateMessage": "v3.1.5 আপডেট: ফার্স্ট লোড ফিক্স ও প্লে প্রোটেক্ট অপ্টিমাইজেশন।",
-  "updatedAt": "2026-11-15T18:35:00.000Z"
+  "updatedAt": "2026-11-15T12:49:12.693Z"
 }
