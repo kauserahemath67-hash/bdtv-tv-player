@@ -652,7 +652,7 @@
     "id": "ch-1794166482825-275",
     "order": 44,
     "manual_override": false,
-    "use_proxy": false,
+    "use_proxy": true,
     "backup_url": "https://alixbd.com/proxy/proxy.php?id=45450fa8af0626dfa3c48103663697de2cca",
     "proxy_referer": null,
     "proxy_user_agent": null
