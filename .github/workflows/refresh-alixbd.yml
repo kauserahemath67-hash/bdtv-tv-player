@@ -24,10 +24,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git diff --quiet -- data/channels.json; then
+          if [ -z "$(git status --porcelain -- data/channels.json tools/source_stats.json)" ]; then
             echo "No changes — all alixbd links already fresh."
           else
-            git add data/channels.json
+            git add data/channels.json tools/source_stats.json
             git commit -m "chore: refresh alixbd links"
             git push origin HEAD:data-storage
           fi
