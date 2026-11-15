@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
-"""Refresh ONLY the alixbd-linked channel URLs inside data/channels.json. (v3)
+"""Refresh ONLY the alixbd-linked channel URLs inside data/channels.json. (v4)
 
 Safety rules:
 - Only channels whose `url` contains "alixbd.com/proxy/proxy.php" or
   "alixbd.com/playlistconfig/" are ever considered. If Kauser replaces a
   channel's link with a non-alixbd source, this script never touches that
   channel again.
+- The CURRENT url of a channel is replaced ONLY when it shows NO
+  proof of life: three separate fetches of its master playlist never
+  once return a valid playlist. The alixbd proxy flaps per-request
+  (the same id can answer 403/000 one minute and 200 the next), so a
+  single failure proves nothing — but a link that cannot produce one
+  valid playlist in three tries is treated as gone, while any link
+  that answers even once (including one Kauser verified himself from
+  Bangladesh) is kept untouched.
 - A replacement URL is written ONLY after it passes a STRONG live
-  check: playlist loads, first+last segments answer, and the live
-  media sequence is actually advancing (not a frozen edge). If no candidate for a
-  channel passes, the channel keeps its existing URL — a dead link is
-  never written.
+  check, with retries: playlist loads, first+last segments answer,
+  and the live media sequence is actually advancing (not a frozen
+  edge). If no candidate passes, the channel keeps its existing URL.
 - If alixbd itself is unreachable or the parse looks wrong (<100 channels),
   the script aborts and writes NOTHING.
 - Only the `url` field changes; every other field and channel is untouched.
@@ -100,6 +107,28 @@ def ordered(cands):
     return direct + by_label
 
 
+def current_replaceable(url: str) -> bool:
+    """True only if the current link shows NO proof of life: three
+    fetches of its master playlist, none returning a valid playlist.
+
+    The alixbd proxy flaps per-request, so one failure proves nothing;
+    a single valid playlist response in any attempt means the link is
+    alive (however flaky) and must be kept.
+    """
+    import time
+
+    for attempt in range(3):
+        try:
+            body = fetch(url, timeout=15)
+            if "#EXTM3U" in body:
+                return False
+        except Exception:
+            pass
+        if attempt < 2:
+            time.sleep(5)
+    return True
+
+
 def stream_alive(url: str) -> bool:
     """STRONG check: the stream must be genuinely flowing, not just answering.
 
@@ -187,13 +216,12 @@ def main() -> int:
             print(f"  unmatched (kept old URL): {ch.get('name')}")
             continue
         cands = ordered(cands)
-        # Test the currently stored link first: if it is still live, keep it
-        # (no needless churn). Otherwise pick the first candidate that is
-        # verified live right now — the ACTIVE link always wins.
-        urls = [u for _l, u in cands]
-        if url in urls:
-            urls.remove(url)
-            urls.insert(0, url)
+        if not current_replaceable(url):
+            # Current link is not provably dead (it may be flaky, or
+            # only failing from this network) — never overwrite it.
+            unchanged += 1
+            continue
+        urls = [u for _l, u in cands if u != url]
         fresh = None
         for cand in urls:
             if stream_alive(cand):
@@ -201,15 +229,11 @@ def main() -> int:
                 break
         if fresh is None:
             kept_dead += 1
-            print(f"  no live candidate (kept old URL): {ch.get('name')}")
+            print(f"  dead, no live candidate (kept old URL): {ch.get('name')}")
             continue
-        if fresh != url:
-            ch["url"] = fresh
-            updated += 1
-            print(f"  updated: {ch.get('name')}")
-        else:
-            unchanged += 1
-
+        ch["url"] = fresh
+        updated += 1
+        print(f"  updated (was lifeless): {ch.get('name')}")
     print(f"alixbd channels: updated={updated} unchanged={unchanged} "
           f"unmatched={unmatched} kept-no-live={kept_dead}")
     if updated:
