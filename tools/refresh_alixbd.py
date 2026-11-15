@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refresh ONLY the alixbd-linked channel URLs inside data/channels.json. (v4)
+"""Refresh ONLY the alixbd-linked channel URLs inside data/channels.json. (v5)
 
 Safety rules:
 - Only channels whose `url` contains "alixbd.com/proxy/proxy.php" or
@@ -14,10 +14,11 @@ Safety rules:
   valid playlist in three tries is treated as gone, while any link
   that answers even once (including one Kauser verified himself from
   Bangladesh) is kept untouched.
-- A replacement URL is written ONLY after it passes a STRONG live
-  check, with retries: playlist loads, first+last segments answer,
-  and the live media sequence is actually advancing (not a frozen
-  edge). If no candidate passes, the channel keeps its existing URL.
+- A replacement URL is written ONLY after it proves itself the
+  ACTIVE source: it must pass the STRONG live check (playlist loads,
+  first+last segments answer, live media sequence advancing) TWICE
+  in a row. All of the channel's sources compete; the first one to
+  pass twice is picked. If none does, the channel keeps its URL.
 - If alixbd itself is unreachable or the parse looks wrong (<100 channels),
   the script aborts and writes NOTHING.
 - Only the `url` field changes; every other field and channel is untouched.
@@ -224,12 +225,14 @@ def main() -> int:
         urls = [u for _l, u in cands if u != url]
         fresh = None
         for cand in urls:
-            if stream_alive(cand):
+            # The picked source must prove itself active TWICE in a
+            # row — one lucky pass is not enough on this flaky proxy.
+            if stream_alive(cand) and stream_alive(cand):
                 fresh = cand
                 break
         if fresh is None:
             kept_dead += 1
-            print(f"  dead, no live candidate (kept old URL): {ch.get('name')}")
+            print(f"  dead, no twice-proven candidate (kept old URL): {ch.get('name')}")
             continue
         ch["url"] = fresh
         updated += 1
