@@ -10,7 +10,7 @@
     "Fixes for frame-freezing and black screens in IPTV streams",
     "Performance optimization "
   ],
-  "forceUpdate": false,
+  "forceUpdate": true,
   "updateMessage": "v3.1.5 আপডেট: ফার্স্ট লোড ফিক্স ও প্লে প্রোটেক্ট অপ্টিমাইজেশন।",
-  "updatedAt": "2026-11-15T12:49:12.693Z"
+  "updatedAt": "2026-11-15T12:49:16.490Z"
 }
