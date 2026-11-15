@@ -124,13 +124,13 @@
  "toffee movies": {
   "toffee": {
    "fail": 0,
-   "pass": 2
+   "pass": 4
   }
  },
  "toffee tv": {
   "toffee": {
    "fail": 0,
-   "pass": 2
+   "pass": 4
   }
  },
  "wc match recap": {
