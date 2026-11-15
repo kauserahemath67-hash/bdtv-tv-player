@@ -1,0 +1,154 @@
+{
+ "& pictures hd": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "24/7 anime": {
+  "server 1": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "atn news": {
+  "ayna": {
+   "fail": 0,
+   "pass": 2
+  },
+  "jagobd": {
+   "fail": 1,
+   "pass": 0
+  }
+ },
+ "awsn tv": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "cartoon network hd +": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "discovery science": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "ekattor tv": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "ekhon tv": {
+  "jagobd": {
+   "fail": 1,
+   "pass": 0
+  },
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "independent tv": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "ntv": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "sananda tv": {
+  "server 1": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "somoy tv": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "sony max": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "sony max 2": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "sony pix hd": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "sony sab hd": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "sony ten cricket": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "sony ten sports 1": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "sony ten sports 5": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "toffee movies": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "toffee tv": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "wc match recap": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "zee anmol": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ },
+ "zee cafe": {
+  "toffee": {
+   "fail": 0,
+   "pass": 2
+  }
+ }
+}
