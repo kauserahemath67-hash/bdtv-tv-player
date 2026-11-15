@@ -725,7 +725,7 @@
     "order": 49,
     "status": "ONLINE",
     "manual_override": false,
-    "use_proxy": false,
+    "use_proxy": true,
     "backup_url": null,
     "proxy_referer": "https://app24.jagobd.com.bd/",
     "proxy_user_agent": null
