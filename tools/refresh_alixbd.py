@@ -1,5 +1,15 @@
 #!/usr/bin/env python3
-"""Refresh the alixbd-linked channel URLs inside data/channels.json. (v6)
+"""Refresh the alixbd-linked channel URLs inside data/channels.json. (v7)
+
+Upgrades over v6:
+- HTTPS STORAGE: alixbd's https is unreachable from foreign networks
+  (the bot verifies over http) but Kauser's app needs https links —
+  his original hand-set links were all https and played in the app,
+  while the bot's http links did not. So: all liveness checks run on
+  the http twin of a URL, but proxy.php URLs are always WRITTEN as
+  https:// (same id — the resource is identical, only the scheme the
+  app uses to reach it differs). Existing http proxy URLs (main and
+  backup) are migrated to https in place, id unchanged.
 
 Upgrades over v5:
 - PARALLEL: channels are processed concurrently (6 workers), so a run
@@ -48,6 +58,22 @@ import urllib.request
 HOME = "http://alixbd.com/"
 PROXY = "http://alixbd.com/proxy/proxy.php?id="
 LABEL_ORDER = ["server 1", "toffee", "ayna"]
+HTTPS_PROXY = "https://alixbd.com/proxy/proxy.php?id="
+
+
+def to_check(url: str) -> str:
+    """The http twin of a stored URL — used for every verification
+    fetch, because alixbd https cannot be reached from this network."""
+    if url.startswith(HTTPS_PROXY):
+        return PROXY + url[len(HTTPS_PROXY):]
+    return url
+
+
+def to_store(url: str) -> str:
+    """The form written to channels.json: proxy.php URLs as https."""
+    if url.startswith(PROXY):
+        return HTTPS_PROXY + url[len(PROXY):]
+    return url
 STATS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                           "source_stats.json")
 
@@ -230,33 +256,47 @@ def process_channel(ch, by_name):
     cands = ordered(cands, key)
     notes = []
 
-    # --- main link ---
-    if current_replaceable(url):
+    # --- scheme migration: http proxy URL -> https, same id ---
+    if to_store(url) != url:
+        ch["url"] = to_store(url)
+        url = ch["url"]
+        notes.append("scheme->https")
+    check_url = to_check(url)
+
+    # --- main link (all checks on the http twin) ---
+    if current_replaceable(check_url):
         winner = None
         for label, cand in cands:
-            if cand != url and twice_proven(key, label, cand):
+            if cand != check_url and twice_proven(key, label, cand):
                 winner = cand
                 break
         if winner:
-            ch["url"] = winner
-            url = winner
+            ch["url"] = to_store(winner)
+            url = ch["url"]
+            check_url = to_check(url)
             notes.append("main updated")
         else:
             notes.append("main lifeless, no proven replacement")
 
     # --- backup link ---
     backup = ch.get("backup_url") or ""
-    if not backup or backup == url or not proof_of_life(backup):
+    if backup and to_store(backup) != backup:
+        ch["backup_url"] = to_store(backup)
+        backup = ch["backup_url"]
+        notes.append("backup scheme->https")
+    check_backup = to_check(backup)
+    if not backup or check_backup == check_url or not proof_of_life(check_backup):
         spare = None
         for label, cand in cands:
-            if cand != url and cand != backup and \
+            if cand != check_url and cand != check_backup and \
                twice_proven(key, label, cand):
                 spare = cand
                 break
         if spare:
-            ch["backup_url"] = spare
+            ch["backup_url"] = to_store(spare)
             notes.append("backup set")
-        elif backup and backup != url and not proof_of_life(backup):
+        elif backup and check_backup != check_url and \
+                not proof_of_life(check_backup):
             notes.append("backup lifeless, no proven spare (kept)")
 
     return f"  {name}: " + ("; ".join(notes) if notes else "ok")
