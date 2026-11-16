@@ -391,16 +391,16 @@
     "name": "Somoy Tv",
     "logo": "https://tstatic.akash-go.com/cms-ui/images/custom-content/1784629064327.png",
     "category": "News",
-    "url": "https://alixbd.com/proxy/proxy.php?id=6416df7aecb0bf5d6ed08cb193919cd4ba14",
+    "url": "http://116.204.149.16/somoytv/index.m3u8",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-35",
     "order": 27,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/proxy/proxy.php?id=5f96db7d2ad9400d05e7002ade686f91eece"
+    "backup_url": null
   },
   {
     "name": "Atn Bangla",
