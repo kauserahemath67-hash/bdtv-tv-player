@@ -1,16 +1,22 @@
 {
-  "versionCode": 310,
-  "versionName": "3.1.0",
+  "versionCode": 317,
+  "versionName": "3.1.7",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.7/BDTv.apk",
   "updateTitle": "BDTv v3.1.7 Update Available",
   "changelog": [
-    "Smart Engine Memory: Per-channel working engine persisted across restarts",
-    "Cross-engine rescue chain: Instant failover on explicit errors (403, etc.)",
-    "Reduced buffering: ExoPlayer 15s-40s deep cushion & libVLC 3000ms caching",
-    "Mid-playback buffer auto-refill without stream restart"
+    "Single high-performance libmpv player engine (io.github.abdallahmehiz:mpv-android-lib:0.2.1)",
+    "HLS live edge instant tune-in (live_start_index=-1)",
+    "In-app local proxy real-time streaming relay (zero-delay chunk flushing)",
+    "Hardware decoding first with software decode fallback",
+    "Rapid switching serialized through switchGeneration",
+    "Smart route & decoder memory + resume on last played channel",
+    "Bundled Mozilla TLS root CA verification for all HTTPS streams",
+    "4-stage failover: Direct -> Backup -> In-app Local Proxy",
+    "Z-order fix: Original TV animation sits directly above video surface and below channel drawer",
+    "Edge-to-edge fullscreen fill with panscan=1.0"
   ],
   "forceUpdate": false,
-  "updateMessage": "v3.1.7 আপডেট: স্মার্ট ইঞ্জিন মেমরি ও বাফারিং অপ্টিমাইজেশন।",
-  "updatedAt": "2026-11-15T20:53:57.825Z"
+  "updateMessage": "v3.1.7 আপডেট: সিঙ্গেল libmpv ইঞ্জিন ও বাফারিং-মুক্ত ইনস্ট্যান্ট চ্যানেল প্লেব্যাক।",
+  "updatedAt": "2026-11-16T18:20:00.000Z"
 }
