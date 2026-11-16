@@ -5,18 +5,11 @@
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.7/BDTv.apk",
   "updateTitle": "BDTv v3.1.7 Update Available",
   "changelog": [
-    "Single high-performance libmpv player engine (io.github.abdallahmehiz:mpv-android-lib:0.2.1)",
-    "HLS live edge instant tune-in (live_start_index=-1)",
-    "In-app local proxy real-time streaming relay (zero-delay chunk flushing)",
-    "Hardware decoding first with software decode fallback",
-    "Rapid switching serialized through switchGeneration",
-    "Smart route & decoder memory + resume on last played channel",
-    "Bundled Mozilla TLS root CA verification for all HTTPS streams",
-    "4-stage failover: Direct -> Backup -> In-app Local Proxy",
-    "Z-order fix: Original TV animation sits directly above video surface and below channel drawer",
-    "Edge-to-edge fullscreen fill with panscan=1.0"
+    "Single high-performance libmpv player engine",
+    "HLS live edge instant tune-in ",
+    "In-app local proxy real-time streaming relay "
   ],
-  "forceUpdate": false,
+  "forceUpdate": true,
   "updateMessage": "v3.1.7 আপডেট: সিঙ্গেল libmpv ইঞ্জিন ও বাফারিং-মুক্ত ইনস্ট্যান্ট চ্যানেল প্লেব্যাক।",
-  "updatedAt": "2026-11-16T18:20:00.000Z"
+  "updatedAt": "2026-11-16T12:25:18.797Z"
 }
