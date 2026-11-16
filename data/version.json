@@ -1,15 +1,17 @@
 {
-  "versionCode": 1,
-  "versionName": "1",
+  "versionCode": 317,
+  "versionName": "3.1.7",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.7/BDTv.apk",
   "updateTitle": "BDTv v3.1.7 Update Available",
   "changelog": [
-    "Single high-performance libmpv player engine",
-    "HLS live edge instant tune-in ",
-    "In-app local proxy real-time streaming relay "
+    "Single proven libVLC player engine (libvlc-all:3.6.2) for all channels",
+    "Instant channel switching with locked 1500ms network caching",
+    "4-stage failover: Direct -> Backup -> In-app local proxy",
+    "Hardware acceleration with edge-to-edge fullscreen fill",
+    "Smart route memory and instant resume on last played channel"
   ],
-  "forceUpdate": false,
-  "updateMessage": "v3.1.7 আপডেট: সিঙ্গেল libmpv ইঞ্জিন ও বাফারিং-মুক্ত ইনস্ট্যান্ট চ্যানেল প্লেব্যাক।",
-  "updatedAt": "2026-11-16T12:38:01.801Z"
+  "forceUpdate": true,
+  "updateMessage": "v3.1.7 আপডেট: সমস্ত চ্যানেলের জন্য সিঙ্গেল libVLC ইঞ্জিন ও বাফারিং-মুক্ত ইনস্ট্যান্ট চ্যানেল প্লেব্যাক।",
+  "updatedAt": "2026-11-16T12:59:00.000Z"
 }
