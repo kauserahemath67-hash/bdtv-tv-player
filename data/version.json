@@ -1,6 +1,6 @@
 {
-  "versionCode": 317,
-  "versionName": "3.1.7",
+  "versionCode": 1,
+  "versionName": "1",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.7/BDTv.apk",
   "updateTitle": "BDTv v3.1.7 Update Available",
@@ -9,7 +9,7 @@
     "HLS live edge instant tune-in ",
     "In-app local proxy real-time streaming relay "
   ],
-  "forceUpdate": true,
+  "forceUpdate": false,
   "updateMessage": "v3.1.7 আপডেট: সিঙ্গেল libmpv ইঞ্জিন ও বাফারিং-মুক্ত ইনস্ট্যান্ট চ্যানেল প্লেব্যাক।",
-  "updatedAt": "2026-11-16T12:25:18.797Z"
+  "updatedAt": "2026-11-16T12:38:01.801Z"
 }
