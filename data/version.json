@@ -1,13 +1,16 @@
 {
-  "versionCode": 1,
-  "versionName": "1",
-  "minSupportedVersion": 100,
+  "versionCode": 318,
+  "versionName": "3.1.8",
+  "minSupportedVersion": 318,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.8/BDTv.apk",
   "updateTitle": "BDTv v3.1.8 Update Available",
   "changelog": [
-    "Updated Android TV app to v3.1.8 (versionCode 318)."
+    "Single libmpv player engine",
+    "Intro splash screen added",
+    "TV remote full support",
+    "VIP mode & announcement bar"
   ],
   "forceUpdate": true,
   "updateMessage": "BDTv v3.1.8 আপডেট: Android TV অ্যাপের নতুন সংস্করণ।",
-  "updatedAt": "2026-11-17T15:59:07.523Z"
+  "updatedAt": "2026-11-17T17:47:27.637Z"
 }
