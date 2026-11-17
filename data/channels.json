@@ -108,7 +108,7 @@
     "name": "Sony Ten Sports 5",
     "logo": "https://assets-prod.services.toffeelive.com/vi5n-JQBv9knK3AHqzTC/posters/d171fd4d-0369-4213-b0c5-e241974f5459.png",
     "category": "Sports",
-    "url": "https://alixbd.com/proxy/proxy.php?id=3cc197f426a7f8883afb5b065530cfddff8b",
+    "url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/sony_sports_5_hd/playlist.m3u8",
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-6",
@@ -117,7 +117,7 @@
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/proxy/proxy.php?id=692901e7921ea00438144b67a753cc37bc70"
+    "backup_url": "https://stream.ottplus.bd/live/ten_5_hd_abr/index.m3u8"
   },
   {
     "name": "PTV Sports",
