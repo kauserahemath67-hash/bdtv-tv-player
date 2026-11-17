@@ -5,9 +5,10 @@
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.8/BDTv.apk",
   "updateTitle": "BDTv v3.1.8 Update Available",
   "changelog": [
-    "Bug fixes"
+    "Bug fixes",
+    "Apps logo animation upgrade"
   ],
   "forceUpdate": true,
   "updateMessage": "BDTv v3.1.8 আপডেট: Android TV অ্যাপের নতুন সংস্করণ।",
-  "updatedAt": "2026-11-17T17:48:29.031Z"
+  "updatedAt": "2026-11-17T17:48:57.346Z"
 }
