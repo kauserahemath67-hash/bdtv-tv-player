@@ -174,10 +174,10 @@
     "id": "ch-1794166482825-9",
     "order": 12,
     "manual_override": true,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": null
+    "backup_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/ten_cricket/playlist.m3u8"
   },
   {
     "name": "Fox Sports",
