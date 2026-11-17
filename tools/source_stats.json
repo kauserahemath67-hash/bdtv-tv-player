@@ -13,11 +13,11 @@
  },
  "atn news": {
   "ayna": {
-   "fail": 1,
-   "pass": 5
+   "fail": 2,
+   "pass": 6
   },
   "jagobd": {
-   "fail": 4,
+   "fail": 5,
    "pass": 0
   }
  },
