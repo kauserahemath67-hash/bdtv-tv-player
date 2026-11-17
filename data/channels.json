@@ -284,21 +284,6 @@
     "backup_url": null
   },
   {
-    "name": "WC Match Recap",
-    "logo": "https://assets-prod.services.toffeelive.com/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png",
-    "category": "Sports",
-    "url": "https://alixbd.com/proxy/proxy.php?id=e9c26b4748d64414ac144dec9d0f3197276b",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-261",
-    "order": 20,
-    "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/proxy/proxy.php?id=7e06181de1a9b0d1a8f5aad576dbe0f23092"
-  },
-  {
     "name": "Eurosport HD",
     "logo": "https://assets-prod.services.toffeelive.com/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",
     "category": "Sports",
