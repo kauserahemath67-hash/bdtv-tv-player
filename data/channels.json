@@ -3207,17 +3207,6 @@
     "manual_override": true
   },
   {
-    "name": "Rakuten TV Comedy Movies Germany",
-    "logo": "https://i.imgur.com/Meew6eX.png",
-    "category": "Movies",
-    "url": "https://ecac08c9e2214375b907d6825aaf9a01.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6182/master.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-205",
-    "order": 247,
-    "manual_override": true
-  },
-  {
     "name": "Rakuten TV Drama Movies",
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
