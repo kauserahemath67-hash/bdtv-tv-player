@@ -4005,7 +4005,7 @@
     "order": 309,
     "status": "OFFLINE",
     "manual_override": false,
-    "use_proxy": false,
+    "use_proxy": true,
     "backup_url": "http://1204786.2734260009.growthtry.com/live/YqXTywueEV/damp2purchase/66162.ts",
     "proxy_referer": null,
     "proxy_user_agent": null
