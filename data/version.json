@@ -10,7 +10,7 @@
     "Updated Android TV app package",
     "Instant channel switching and failover improvements"
   ],
-  "forceUpdate": false,
+  "forceUpdate": true,
   "updateMessage": "v3.2.0 আপডেট: উন্নত UI এবং ইনস্ট্যান্ট লাইভ চ্যানেল প্লেব্যাক।",
-  "updatedAt": "2026-11-18T13:52:27.482+06:00"
+  "updatedAt": "2026-11-18T07:56:45.925Z"
 }
