@@ -398,7 +398,7 @@
     "id": "ch-1794166482825-35",
     "order": 26,
     "manual_override": true,
-    "use_proxy": true,
+    "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null,
     "backup_url": null
@@ -1273,36 +1273,6 @@
     "proxy_user_agent": null
   },
   {
-    "name": "Toffee TV",
-    "logo": "https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",
-    "category": "Entertainment",
-    "url": "https://alixbd.com/proxy/proxy.php?id=bb4493ce0f8ae694635ebc0077af7b22da16",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-259",
-    "order": 87,
-    "manual_override": true,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/proxy/proxy.php?id=cb24c9e9f88f57b8418ec36f754f800a79d6"
-  },
-  {
-    "name": "Toffee Movies",
-    "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
-    "category": "Entertainment",
-    "url": "https://alixbd.com/proxy/proxy.php?id=00b296fdf36d8049bbbe98292a5b7961ea90",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-260",
-    "order": 88,
-    "manual_override": false,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/proxy/proxy.php?id=7c6c87100f872847bf66f8c8e61e2bb5acea"
-  },
-  {
     "name": "AWSN TV",
     "logo": "https://assets-prod.services.toffeelive.com/F9UM56ABalKyvLQIr9B1/posters/26081e64-671e-44a8-95ba-a692bfaae49c.jpeg",
     "category": "Entertainment",
@@ -1333,6 +1303,21 @@
     "backup_url": null
   },
   {
+    "name": "Toffee TV",
+    "logo": "https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",
+    "category": "Entertainment",
+    "url": "https://alixbd.com/proxy/proxy.php?id=bb4493ce0f8ae694635ebc0077af7b22da16",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-259",
+    "order": 87,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": "https://alixbd.com/proxy/proxy.php?id=cb24c9e9f88f57b8418ec36f754f800a79d6"
+  },
+  {
     "name": "Channel S",
     "logo": "https://assets-prod.services.toffeelive.com/WyPuDJsBEef-9-uVUA_z/posters/ea20055c-a824-443c-8083-ce8e2da8b922.png",
     "category": "Entertainment",
@@ -1346,6 +1331,21 @@
     "proxy_referer": "https://app24.jagobd.com.bd/",
     "proxy_user_agent": null,
     "backup_url": null
+  },
+  {
+    "name": "Toffee Movies",
+    "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
+    "category": "Entertainment",
+    "url": "https://alixbd.com/proxy/proxy.php?id=00b296fdf36d8049bbbe98292a5b7961ea90",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-260",
+    "order": 88,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": "https://alixbd.com/proxy/proxy.php?id=7c6c87100f872847bf66f8c8e61e2bb5acea"
   },
   {
     "name": "Rajdhani TV",
