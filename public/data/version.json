@@ -1,21 +1,16 @@
 {
-  "versionCode": 317,
-  "versionName": "3.1.7",
+  "versionCode": 320,
+  "versionName": "3.2.0",
   "minSupportedVersion": 100,
-  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.1.7/BDTv.apk",
-  "updateTitle": "BDTv v3.1.7 Update Available",
+  "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.2.0/BDTv.apk",
+  "updateTitle": "BDTv v3.2.0 Update Available",
   "changelog": [
-    "Single proven libVLC engine (org.videolan.android:libvlc-all:3.6.2) for ALL channels",
-    "Instant playback on stubborn streams (including alixbd) with :network-caching=1500 & :http-reconnect",
-    "Rapid switching serialized through switchGeneration",
-    "Streaming relay in-app local proxy (127.0.0.1) with real-time chunk flushing",
-    "Fullscreen edge-to-edge crop-to-fill (SURFACE_FILL) with zero black bars",
-    "Smart route memory + resume on last played channel",
-    "Original glowing TV loading animation preserved",
-    "4-stage failover: Direct -> Backup -> In-App Local Proxy",
-    "Lightweight 39 MB ARM-optimized APK"
+    "Refined live TV player interface and notice ticker",
+    "Updated Android TV app package for v3.2.0",
+    "Single libVLC engine and instant channel switching",
+    "In-app local streaming proxy and four-stage failover"
   ],
   "forceUpdate": false,
-  "updateMessage": "v3.1.7 আপডেট: সিঙ্গেল libVLC ইঞ্জিন ও বাফারিং-মুক্ত ইনস্ট্যান্ট চ্যানেল প্লেব্যাক।",
-  "updatedAt": "2026-11-16T18:50:00.000Z"
+  "updateMessage": "v3.2.0 আপডেট: উন্নত UI এবং ইনস্ট্যান্ট লাইভ চ্যানেল প্লেব্যাক।",
+  "updatedAt": "2026-11-18T13:44:09.226+06:00"
 }
