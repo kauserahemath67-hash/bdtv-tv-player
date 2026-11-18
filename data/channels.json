@@ -38,7 +38,7 @@
     "order": 3,
     "status": "ONLINE",
     "is_pinned": true,
-    "manual_override": true,
+    "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null,
