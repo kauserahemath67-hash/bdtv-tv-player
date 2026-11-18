@@ -3181,21 +3181,6 @@
     "order": 244
   },
   {
-    "name": "Raj Digital Plus",
-    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_DIGITAL_PLUS/images/LOGO_HD/image.png",
-    "category": "Movies",
-    "url": "https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8",
-    "status": "OFFLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-199",
-    "order": 245,
-    "manual_override": true,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
     "name": "Rakuten TV Comedy Movies",
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
