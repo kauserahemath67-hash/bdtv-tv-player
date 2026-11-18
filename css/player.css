@@ -20,6 +20,10 @@ body.native-player #video-wrapper {
   background-color: transparent !important;
 }
 
+body.native-player #buffering-overlay {
+  display: none !important;
+}
+
 body.native-player #player {
   background: transparent !important;
   opacity: 0 !important;
