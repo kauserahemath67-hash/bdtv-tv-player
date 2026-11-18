@@ -85,6 +85,14 @@ class IPTVPlayer {
     await this.loadSettings();
     await this.loadChannels();
 
+    // Safety timeout: if intro overlay doesn't dismiss within 3.5s, force start playback
+    setTimeout(() => {
+      if (this.pendingIntroPlay) {
+        console.warn('[Intro] Safety timeout reached, starting playback');
+        this.onIntroDismissed();
+      }
+    }, 3500);
+
     // Reload settings (Notice bar, VIP status) every 60 seconds
     setInterval(() => this.loadSettings(), 60 * 1000);
 
@@ -93,6 +101,29 @@ class IPTVPlayer {
 
     // Subscription + device block watcher — check every 30 seconds during playback
     setInterval(() => this.checkSubscriptionLive(), 30 * 1000);
+  }
+
+  // Play initial channel safely respecting the intro animation & chime
+  playInitialChannel() {
+    if (window.bdtvIntroActive) {
+      console.log('[Intro] Intro animation active; holding channel playback until intro finishes');
+      this.pendingIntroPlay = true;
+      return;
+    }
+    if (this.currentIndex < 0 && this.channels.length > 0) {
+      this.pendingIntroPlay = false;
+      this.playChannel(this.getInitialChannelIndex());
+    }
+  }
+
+  // Called when intro animation finishes or is skipped by user
+  onIntroDismissed() {
+    console.log('[Intro] Intro dismissed; starting playback now');
+    window.bdtvIntroActive = false;
+    if (this.pendingIntroPlay || (this.currentIndex < 0 && this.channels.length > 0)) {
+      this.pendingIntroPlay = false;
+      this.playChannel(this.getInitialChannelIndex());
+    }
   }
 
   // Auto-restore customer session if device hardware ID is already registered
@@ -347,9 +378,7 @@ class IPTVPlayer {
             this.channels = parsed;
             this.filterChannels(this.currentCategory || 'All');
             hasLoadedFromCache = true;
-            if (this.currentIndex < 0 && this.channels.length > 0) {
-              this.playChannel(this.getInitialChannelIndex());
-            }
+            this.playInitialChannel();
           }
         }
       }
@@ -366,9 +395,7 @@ class IPTVPlayer {
             this.channels = cached;
             this.filterChannels(this.currentCategory || 'All');
             hasLoadedFromCache = true;
-            if (this.currentIndex < 0 && this.channels.length > 0) {
-              this.playChannel(this.getInitialChannelIndex());
-            }
+            this.playInitialChannel();
           }
         }
       } catch (e) {
@@ -393,9 +420,7 @@ class IPTVPlayer {
             try {
               localStorage.setItem('_bdtv_secure_ch_v2', encodeCache(seedChannels));
             } catch (_) {}
-            if (this.currentIndex < 0 && this.channels.length > 0) {
-              this.playChannel(this.getInitialChannelIndex());
-            }
+            this.playInitialChannel();
           }
         }
       } catch (e) {
@@ -453,7 +478,7 @@ class IPTVPlayer {
               }
             }
           } else if (!hasLoadedFromCache && this.channels.length > 0) {
-            this.playChannel(this.getInitialChannelIndex());
+            this.playInitialChannel();
           }
         } else {
           // Channels are identical to local cache — keep data reference without re-rendering DOM
@@ -472,7 +497,7 @@ class IPTVPlayer {
         this.channels = FALLBACK_CHANNELS;
         this.filterChannels('All');
         if (this.channels.length > 0) {
-          this.playChannel(this.getInitialChannelIndex());
+          this.playInitialChannel();
         }
       }
     }
@@ -909,6 +934,12 @@ class IPTVPlayer {
   // 5. Play Specific Channel
   playChannel(index) {
     if (!Number.isInteger(index) || index < 0 || index >= this.filteredChannels.length) return;
+    if (window.bdtvIntroActive && typeof window.dismissIntro === 'function') {
+      window.dismissIntro();
+    }
+    window.bdtvIntroActive = false;
+    this.pendingIntroPlay = false;
+
     this.currentIndex = index;
     const channel = this.filteredChannels[index];
 
@@ -2028,6 +2059,11 @@ class IPTVPlayer {
   }
 
   showBuffering(show) {
+    if (show) {
+      document.body.classList.add('buffering-active');
+    } else {
+      document.body.classList.remove('buffering-active');
+    }
     const channel = (this.filteredChannels && this.filteredChannels[this.currentIndex]) ||
                     (this.channels && this.channels[this.currentIndex]);
     const name = channel ? (channel.name || '') : '';

@@ -20,6 +20,20 @@ body.native-player #video-wrapper {
   background-color: transparent !important;
 }
 
+body.pip-mode #top-bar,
+body.pip-mode #channel-drawer,
+body.pip-mode #channel-hud,
+body.pip-mode .notice-bar,
+body.pip-mode .ad-slot,
+body.pip-mode .modal-backdrop {
+  display: none !important;
+}
+
+body.pip-mode,
+body.pip-mode #video-wrapper {
+  background: transparent !important;
+}
+
 body.native-player #player {
   background: transparent !important;
   opacity: 0 !important;
@@ -89,7 +103,7 @@ html, body {
 }
 
 /* ---------------------------------------------------------
-   1. Notice Bar (Live Marquee Ticker)
+   1. Notice Bar (Unique Cyber-Broadcast Marquee Ticker)
    --------------------------------------------------------- */
 .notice-bar {
   position: absolute;
@@ -99,21 +113,69 @@ html, body {
   z-index: 95;
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: linear-gradient(90deg, #060813 0%, #0c1328 72%, #11233d 100%);
-  border-bottom: 1px solid var(--surface-border);
-  color: #fff;
+  gap: 12px;
+  background: linear-gradient(90deg, rgba(8, 14, 28, 0.95) 0%, rgba(13, 24, 48, 0.92) 50%, rgba(8, 14, 28, 0.95) 100%);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.28);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6), 0 1px 0 rgba(56, 189, 248, 0.15);
+  color: #f1f5f9;
   padding: 6px calc(16px + var(--safe-right)) 6px calc(16px + var(--safe-left));
   padding-top: max(6px, var(--safe-top));
-  font-size: 13px;
+  font-size: 13.5px;
   font-weight: 600;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
-  /* backdrop-filter optimized */
 }
 
-.notice-icon {
-  font-size: 15px;
+.notice-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.2) 0%, rgba(59, 130, 246, 0.3) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.45);
+  padding: 3px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.3);
   flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.notice-live-dot {
+  width: 7px;
+  height: 7px;
+  background-color: #ef4444;
+  border-radius: 50%;
+  box-shadow: 0 0 8px #ef4444, 0 0 14px #ef4444;
+  animation: notice-pulse 1.6s infinite ease-in-out;
+}
+
+@keyframes notice-pulse {
+  0%, 100% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+    box-shadow: 0 0 12px #ef4444, 0 0 20px #ef4444;
+  }
+}
+
+.notice-icon-svg {
+  width: 15px;
+  height: 15px;
+  color: #38bdf8;
+  stroke: #38bdf8;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 4px rgba(56, 189, 248, 0.5));
+}
+
+.notice-badge-text {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #38bdf8;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
 }
 
 .notice-content {
@@ -121,12 +183,20 @@ html, body {
   white-space: nowrap;
   flex: 1;
   position: relative;
+  mask-image: linear-gradient(90deg, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 20px, black calc(100% - 20px), transparent 100%);
 }
 
 .notice-content span {
   display: inline-block;
   padding-left: 100%;
   animation: notice-marquee 25s linear infinite;
+  color: #f1f5f9;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+}
+
+.notice-content:hover span {
+  animation-play-state: paused;
 }
 
 @keyframes notice-marquee {
@@ -547,7 +617,7 @@ video::-webkit-media-controls-overlay-play-button {
 }
 
 .drawer-handle {
-  height: 36px;
+  height: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -555,7 +625,7 @@ video::-webkit-media-controls-overlay-play-button {
   cursor: pointer;
   background: transparent;
   flex-shrink: 0;
-  padding-top: 4px;
+  padding: 4px 0 2px 0;
 }
 
 .handle-bar {
@@ -579,8 +649,9 @@ video::-webkit-media-controls-overlay-play-button {
 }
 
 .drawer-inner {
-  padding: 8px calc(14px + var(--safe-right)) 20px calc(14px + var(--safe-left));
+  padding: 2px calc(14px + var(--safe-right)) 16px calc(14px + var(--safe-left));
   overflow-y: auto;
+  overflow-x: visible;
   flex: 1;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
@@ -635,9 +706,17 @@ video::-webkit-media-controls-overlay-play-button {
    --------------------------------------------------------- */
 .channel-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
-  gap: 10px;
-  padding: 4px 2px 14px 2px;
+  grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
+  gap: 16px 12px;
+  padding: 2px 6px 20px 6px;
+}
+
+.channel-empty {
+  grid-column: 1 / -1;
+  padding: 24px 12px;
+  color: rgba(226, 232, 240, 0.78);
+  text-align: center;
+  font-size: 15px;
 }
 
 .channel-card {
@@ -670,37 +749,29 @@ video::-webkit-media-controls-overlay-play-button {
 
 /* Android TV Remote & Keyboard Focus State (High-Visibility Dual Ring & Badge) */
 .channel-card.focused, .channel-card:focus-visible {
-  transform: scale(1.12) !important;
-  border: 3.5px solid #ffeb3b !important;
-  outline: 3px solid #ffffff !important;
-  outline-offset: 3px !important;
-  box-shadow: 0 0 35px rgba(255, 235, 59, 0.95), 0 0 15px rgba(255, 255, 255, 0.8), inset 0 0 20px rgba(255, 235, 59, 0.35) !important;
-  background: rgba(255, 235, 59, 0.28) !important;
-  z-index: 100 !important;
+  transform: scale(1.05) !important;
+  border: 3px solid #ffeb3b !important;
+  outline: none !important;
+  box-shadow: 0 0 25px rgba(255, 235, 59, 0.95), inset 0 0 15px rgba(255, 235, 59, 0.3) !important;
+  background: rgba(255, 235, 59, 0.22) !important;
+  z-index: 20 !important;
 }
 
 .channel-card.focused::before {
   content: "▶ SELECT";
   position: absolute;
-  top: -12px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 6px;
+  left: 6px;
   background: #ffeb3b;
   color: #000;
-  font-size: 10px;
+  font-size: 8.5px;
   font-weight: 900;
-  padding: 2px 8px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.8), 0 0 10px rgba(255, 235, 59, 0.8);
-  letter-spacing: 0.8px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.5px;
   white-space: nowrap;
-  z-index: 105;
-  animation: focusPulse 1s infinite alternate ease-in-out;
-}
-
-@keyframes focusPulse {
-  0% { transform: translateX(-50%) scale(0.95); opacity: 0.9; }
-  100% { transform: translateX(-50%) scale(1.08); opacity: 1; }
+  z-index: 25;
 }
 
 /* Android TV Remote Focus for Update Modal & Buttons */
@@ -782,24 +853,6 @@ video::-webkit-media-controls-overlay-play-button {
 /* ---------------------------------------------------------
    8. Overlays (Buffering, Error & VIP Modal)
    --------------------------------------------------------- */
-#buffering-overlay {
-  background: transparent !important;
-  pointer-events: none !important;
-}
-
-#buffering-overlay .spinner {
-  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.85));
-}
-
-#buffering-overlay .buffering-text {
-  background: rgba(0, 0, 0, 0.65);
-  padding: 8px 18px;
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
-  margin-top: 14px;
-}
-
 .overlay {
   position: absolute;
   top: 0;
@@ -819,27 +872,6 @@ video::-webkit-media-controls-overlay-play-button {
 
 .overlay.hidden {
   display: none !important;
-}
-
-.spinner {
-  width: 52px;
-  height: 52px;
-  border: 4px solid rgba(255, 255, 255, 0.15);
-  border-top-color: var(--primary);
-  border-radius: 50%;
-  animation: spin 0.85s linear infinite;
-}
-
-@keyframes spin {
-  to { transform: rotate(360deg); }
-}
-
-.buffering-text {
-  margin-top: 16px;
-  font-size: 15px;
-  color: #eee;
-  font-weight: 600;
-  text-align: center;
 }
 
 .glass-panel {
@@ -1355,7 +1387,7 @@ video::-webkit-media-controls-overlay-play-button {
   .channel-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 8px;
-    padding: 2px 2px 14px 2px;
+    padding: 18px 2px 14px 2px;
   }
 
   .channel-card {
@@ -1421,8 +1453,8 @@ video::-webkit-media-controls-overlay-play-button {
 
   .channel-grid {
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 8px;
-    padding: 2px 2px 12px 2px;
+    gap: 16px 12px;
+    padding: 2px 4px 16px 4px;
   }
 
   .channel-card {
@@ -1482,9 +1514,19 @@ video::-webkit-media-controls-overlay-play-button {
     padding: 10px 20px;
   }
 
+  .drawer-handle {
+    height: 18px;
+    padding: 4px 0 2px 0;
+  }
+
+  .drawer-inner {
+    padding: 2px 40px 24px 40px;
+  }
+
   .channel-grid {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
     gap: 20px;
+    padding: 2px 8px 24px 8px;
   }
 
   .channel-card {
