@@ -1610,7 +1610,7 @@
     "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8",
     "is_pinned": false,
     "order": 108,
-    "status": "OFFLINE",
+    "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
     "backup_url": null,
