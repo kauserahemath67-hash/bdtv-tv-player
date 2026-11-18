@@ -1,6 +1,6 @@
 {
-  "versionCode": 320,
-  "versionName": "3.2.0",
+  "versionCode": 1,
+  "versionName": "1",
   "minSupportedVersion": 100,
   "apkUrl": "https://github.com/kauserahemath67-hash/bdtv-tv-player/releases/download/v3.2.0/BDTv.apk",
   "updateTitle": "BDTv v3.2.0 Update Available",
@@ -12,5 +12,5 @@
   ],
   "forceUpdate": true,
   "updateMessage": "v3.2.0 আপডেট: উন্নত UI এবং ইনস্ট্যান্ট লাইভ চ্যানেল প্লেব্যাক।",
-  "updatedAt": "2026-11-18T07:56:45.925Z"
+  "updatedAt": "2026-11-18T08:01:03.334Z"
 }
