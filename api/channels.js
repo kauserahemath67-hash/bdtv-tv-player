@@ -170,7 +170,7 @@ module.exports = async (req, res) => {
       const etag = `W/"${hash}"`;
 
       res.setHeader('ETag', etag);
-      res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+      res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
 
       const ifNoneMatch = req.headers['if-none-match'];
       if (ifNoneMatch && (ifNoneMatch === etag || ifNoneMatch === hash || ifNoneMatch === `"${hash}"`)) {

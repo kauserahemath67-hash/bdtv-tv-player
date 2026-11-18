@@ -226,7 +226,7 @@ module.exports = async (req, res) => {
       res.setHeader('Content-Type', 'audio/x-mpegurl; charset=utf-8');
       res.setHeader('Content-Disposition', 'inline; filename="playlist.m3u"');
       res.setHeader('ETag', etag);
-      res.setHeader('Cache-Control', 'public, max-age=0, must-revalidate');
+      res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
 
       const ifNoneMatch = req.headers['if-none-match'];
       if (ifNoneMatch && (ifNoneMatch === etag || ifNoneMatch === hash || ifNoneMatch === `"${hash}"`)) {

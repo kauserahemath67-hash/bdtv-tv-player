@@ -10,6 +10,7 @@ module.exports = async (req, res) => {
   try {
     if (req.method === 'GET') {
       const version = await db.getVersion();
+      res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
       return res.status(200).json(version);
     }
 

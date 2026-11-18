@@ -13,6 +13,7 @@ module.exports = async (req, res) => {
       const publicSettings = { ...settings };
       delete publicSettings.admin_pin;
       delete publicSettings.admin_password;
+      res.setHeader('Cache-Control', 'public, s-maxage=300, stale-while-revalidate=600');
       return res.status(200).json({ success: true, data: publicSettings });
     }
 
