@@ -1206,7 +1206,7 @@
     "is_pinned": false,
     "id": "ch-1794166482825-79",
     "order": 81,
-    "manual_override": true,
+    "manual_override": false,
     "use_proxy": true,
     "proxy_referer": null,
     "proxy_user_agent": null,
