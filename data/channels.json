@@ -83,7 +83,7 @@
     "is_pinned": true,
     "id": "ch-1794166482825-3",
     "order": 6,
-    "manual_override": true,
+    "manual_override": false,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/proxy/",
     "proxy_user_agent": null,
