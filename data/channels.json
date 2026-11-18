@@ -158,7 +158,7 @@
     "is_pinned": true,
     "id": "ch-1794166482825-8",
     "order": 11,
-    "manual_override": true,
+    "manual_override": false,
     "use_proxy": false,
     "proxy_referer": "https://real-vk.proxy.nellaiiptv.com/",
     "proxy_user_agent": null,
