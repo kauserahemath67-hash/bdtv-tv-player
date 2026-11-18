@@ -284,6 +284,21 @@
     "backup_url": null
   },
   {
+    "name": "WC Match Recap",
+    "logo": "https://assets-prod.services.toffeelive.com/V__o054BObUt2AG6LL5C/posters/84590b8d-6430-4ba8-a0a5-757bf2f57c05.png",
+    "category": "Sports",
+    "url": "https://alixbd.com/proxy/proxy.php?id=e9c26b4748d64414ac144dec9d0f3197276b",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-261",
+    "order": 20,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": "https://alixbd.com/proxy/proxy.php?id=dd231b061cfe68da4e59d4168e740db8367d"
+  },
+  {
     "name": "Eurosport HD",
     "logo": "https://assets-prod.services.toffeelive.com/Uy6Q-JQBv9knK3AHcDUQ/posters/01709bcd-6d53-4710-a64f-bc49cecf1d61.webp",
     "category": "Sports",
@@ -1256,6 +1271,36 @@
     "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
+  },
+  {
+    "name": "Toffee TV",
+    "logo": "https://assets-prod.services.toffeelive.com/DNMXs5UBm1RY_In7IJ72/posters/737b5c6e-8435-4cd8-81de-16a499fa6f4e.png",
+    "category": "Entertainment",
+    "url": "https://alixbd.com/proxy/proxy.php?id=bb4493ce0f8ae694635ebc0077af7b22da16",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-259",
+    "order": 87,
+    "manual_override": true,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": "https://alixbd.com/proxy/proxy.php?id=cb24c9e9f88f57b8418ec36f754f800a79d6"
+  },
+  {
+    "name": "Toffee Movies",
+    "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
+    "category": "Entertainment",
+    "url": "https://alixbd.com/proxy/proxy.php?id=00b296fdf36d8049bbbe98292a5b7961ea90",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-260",
+    "order": 88,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": "https://alixbd.com/proxy/proxy.php?id=7c6c87100f872847bf66f8c8e61e2bb5acea"
   },
   {
     "name": "AWSN TV",
@@ -3151,6 +3196,46 @@
     "proxy_user_agent": null
   },
   {
+    "name": "Rakuten TV Action Movies",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://a9c57ec7ec5e4b7daeacc6316a0bb404.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6069/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-200",
+    "order": 247
+  },
+  {
+    "name": "Rakuten TV Action Movies Germany",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://284824cf70404fdfb6ddf9349009c710.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6066/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-201",
+    "order": 248
+  },
+  {
+    "name": "Rakuten TV Action Movies Italy",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://87f2e2e5e7624e3bad85da1ca2ed31a7.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6067/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-202",
+    "order": 249
+  },
+  {
+    "name": "Rakuten TV Action Movies UK",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://54045f0c40fd442c8b06df076aaf1e85.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-6065/master.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-203",
+    "order": 250
+  },
+  {
     "name": "Rakuten TV Comedy Movies",
     "logo": "https://i.imgur.com/Meew6eX.png",
     "category": "Movies",
@@ -3269,6 +3354,43 @@
     "is_pinned": false,
     "id": "ch-1794166482825-215",
     "order": 254
+  },
+  {
+    "name": "Rakuten TV Top Movies",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://ff335120300e4742a2b135ee9a9e7df8.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5983/master.m3u8",
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-216",
+    "order": 263,
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "name": "Rakuten TV Top Movies Germany",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://cbb622b29f5d43b598991f3fa19de291.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5985/master.m3u8",
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-217",
+    "order": 264,
+    "manual_override": true
+  },
+  {
+    "name": "Rakuten TV Top Movies Italy",
+    "logo": "https://i.imgur.com/Meew6eX.png",
+    "category": "Movies",
+    "url": "https://d4a4999341764c67a67e9ec9eb3790ab.mediatailor.eu-west-1.amazonaws.com/v1/master/0547f18649bd788bec7b67b746e47670f558b6b2/production-LiveChannel-5984/master.m3u8",
+    "status": "OFFLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-218",
+    "order": 265,
+    "manual_override": true
   },
   {
     "name": "Rakuten TV Top Movies UK",
