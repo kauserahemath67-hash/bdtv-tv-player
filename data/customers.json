@@ -37,8 +37,8 @@
   },
   {
     "id": "cust-1793714991373",
-    "customer_code": "kauser",
-    "name": "kauser",
+    "customer_code": "Kauser Ahamed",
+    "name": "Kauser Ahamed",
     "login_pin": "0987",
     "account_status": "ACTIVE",
     "manual_block": false,
@@ -46,12 +46,12 @@
     "max_devices": 2,
     "channels_enabled": true,
     "plan": "VIP",
-    "starts_at": "2026-11-16",
+    "starts_at": "2026-11-20",
     "expires_at": "2026-12-03",
     "payment_status": "PAID",
     "transaction_reference": "",
     "createdAt": "2026-11-03T14:09:51.373Z",
-    "updatedAt": "2026-11-16T17:41:03.869Z"
+    "updatedAt": "2026-11-20T09:03:44.061Z"
   },
   {
     "id": "cust-1793125203845",
