@@ -2,7 +2,7 @@
  "& pictures hd": {
   "toffee": {
    "fail": 1,
-   "pass": 15
+   "pass": 17
   }
  },
  "24/7 anime": {
@@ -24,7 +24,7 @@
  "awsn tv": {
   "toffee": {
    "fail": 0,
-   "pass": 14
+   "pass": 16
   }
  },
  "cartoon network hd +": {
@@ -40,7 +40,7 @@
  "discovery science": {
   "toffee": {
    "fail": 1,
-   "pass": 14
+   "pass": 16
   }
  },
  "ekattor tv": {
@@ -86,7 +86,7 @@
   },
   "toffee": {
    "fail": 0,
-   "pass": 14
+   "pass": 16
   }
  },
  "ntv": {
@@ -102,11 +102,11 @@
  "sananda tv": {
   "server 1": {
    "fail": 1,
-   "pass": 10
+   "pass": 12
   },
   "server 2": {
    "fail": 1,
-   "pass": 4
+   "pass": 6
   },
   "server 3": {
    "fail": 1,
@@ -122,33 +122,33 @@
  "sony max": {
   "toffee": {
    "fail": 0,
-   "pass": 14
+   "pass": 18
   }
  },
  "sony max 2": {
   "toffee": {
    "fail": 1,
-   "pass": 14
+   "pass": 16
   }
  },
  "sony pix hd": {
   "techandeat": {
    "fail": 0,
-   "pass": 6
+   "pass": 8
   },
   "toffee": {
    "fail": 0,
-   "pass": 8
+   "pass": 10
   }
  },
  "sony sab hd": {
   "techandeat": {
    "fail": 0,
-   "pass": 6
+   "pass": 8
   },
   "toffee": {
    "fail": 0,
-   "pass": 8
+   "pass": 10
   }
  },
  "sony ten cricket": {
@@ -184,31 +184,31 @@
  "toffee movies": {
   "toffee": {
    "fail": 1,
-   "pass": 17
+   "pass": 19
   }
  },
  "toffee tv": {
   "toffee": {
    "fail": 1,
-   "pass": 16
+   "pass": 18
   }
  },
  "wc match recap": {
   "toffee": {
    "fail": 1,
-   "pass": 14
+   "pass": 16
   }
  },
  "zee anmol": {
   "toffee": {
    "fail": 0,
-   "pass": 14
+   "pass": 16
   }
  },
  "zee cafe": {
   "toffee": {
    "fail": 0,
-   "pass": 14
+   "pass": 16
   }
  }
 }
