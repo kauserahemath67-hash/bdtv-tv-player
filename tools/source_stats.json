@@ -2,7 +2,7 @@
  "& pictures hd": {
   "toffee": {
    "fail": 1,
-   "pass": 17
+   "pass": 19
   }
  },
  "24/7 anime": {
@@ -40,7 +40,7 @@
  "discovery science": {
   "toffee": {
    "fail": 1,
-   "pass": 16
+   "pass": 18
   }
  },
  "ekattor tv": {
@@ -128,7 +128,7 @@
  "sony max 2": {
   "toffee": {
    "fail": 1,
-   "pass": 16
+   "pass": 18
   }
  },
  "sony pix hd": {
@@ -184,19 +184,19 @@
  "toffee movies": {
   "toffee": {
    "fail": 1,
-   "pass": 19
+   "pass": 21
   }
  },
  "toffee tv": {
   "toffee": {
    "fail": 1,
-   "pass": 18
+   "pass": 20
   }
  },
  "wc match recap": {
   "toffee": {
    "fail": 1,
-   "pass": 16
+   "pass": 18
   }
  },
  "zee anmol": {
