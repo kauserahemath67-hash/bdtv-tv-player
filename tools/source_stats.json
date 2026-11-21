@@ -24,7 +24,7 @@
  "awsn tv": {
   "toffee": {
    "fail": 0,
-   "pass": 16
+   "pass": 18
   }
  },
  "cartoon network hd +": {
@@ -86,7 +86,7 @@
   },
   "toffee": {
    "fail": 0,
-   "pass": 16
+   "pass": 18
   }
  },
  "ntv": {
@@ -202,13 +202,13 @@
  "zee anmol": {
   "toffee": {
    "fail": 0,
-   "pass": 16
+   "pass": 18
   }
  },
  "zee cafe": {
   "toffee": {
    "fail": 0,
-   "pass": 16
+   "pass": 18
   }
  }
 }
