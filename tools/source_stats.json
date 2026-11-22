@@ -2,7 +2,7 @@
  "& pictures hd": {
   "toffee": {
    "fail": 1,
-   "pass": 21
+   "pass": 23
   }
  },
  "24/7 anime": {
@@ -24,7 +24,7 @@
  "awsn tv": {
   "toffee": {
    "fail": 1,
-   "pass": 19
+   "pass": 21
   }
  },
  "cartoon network hd +": {
@@ -40,7 +40,7 @@
  "discovery science": {
   "toffee": {
    "fail": 2,
-   "pass": 19
+   "pass": 21
   }
  },
  "ekattor tv": {
@@ -86,7 +86,7 @@
   },
   "toffee": {
    "fail": 0,
-   "pass": 20
+   "pass": 22
   }
  },
  "ntv": {
@@ -102,7 +102,7 @@
  "sananda tv": {
   "server 1": {
    "fail": 1,
-   "pass": 14
+   "pass": 16
   },
   "server 2": {
    "fail": 2,
@@ -132,7 +132,7 @@
  "sony max 2": {
   "toffee": {
    "fail": 2,
-   "pass": 19
+   "pass": 21
   }
  },
  "sony pix hd": {
@@ -188,31 +188,31 @@
  "toffee movies": {
   "toffee": {
    "fail": 3,
-   "pass": 22
+   "pass": 24
   }
  },
  "toffee tv": {
   "toffee": {
    "fail": 1,
-   "pass": 22
+   "pass": 24
   }
  },
  "wc match recap": {
   "toffee": {
    "fail": 2,
-   "pass": 19
+   "pass": 21
   }
  },
  "zee anmol": {
   "toffee": {
    "fail": 1,
-   "pass": 18
+   "pass": 20
   }
  },
  "zee cafe": {
   "toffee": {
    "fail": 1,
-   "pass": 18
+   "pass": 20
   }
  }
 }
