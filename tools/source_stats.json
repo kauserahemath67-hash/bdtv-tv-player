@@ -24,7 +24,7 @@
  "awsn tv": {
   "toffee": {
    "fail": 1,
-   "pass": 21
+   "pass": 23
   }
  },
  "cartoon network hd +": {
@@ -40,7 +40,7 @@
  "discovery science": {
   "toffee": {
    "fail": 2,
-   "pass": 21
+   "pass": 23
   }
  },
  "ekattor tv": {
@@ -132,7 +132,7 @@
  "sony max 2": {
   "toffee": {
    "fail": 2,
-   "pass": 21
+   "pass": 23
   }
  },
  "sony pix hd": {
@@ -142,7 +142,7 @@
   },
   "toffee": {
    "fail": 1,
-   "pass": 12
+   "pass": 14
   }
  },
  "sony sab hd": {
@@ -152,7 +152,7 @@
   },
   "toffee": {
    "fail": 1,
-   "pass": 13
+   "pass": 15
   }
  },
  "sony ten cricket": {
@@ -188,7 +188,7 @@
  "toffee movies": {
   "toffee": {
    "fail": 3,
-   "pass": 24
+   "pass": 26
   }
  },
  "toffee tv": {
@@ -200,19 +200,19 @@
  "wc match recap": {
   "toffee": {
    "fail": 2,
-   "pass": 21
+   "pass": 23
   }
  },
  "zee anmol": {
   "toffee": {
    "fail": 1,
-   "pass": 20
+   "pass": 22
   }
  },
  "zee cafe": {
   "toffee": {
    "fail": 1,
-   "pass": 20
+   "pass": 22
   }
  }
 }
