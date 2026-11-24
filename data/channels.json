@@ -274,7 +274,7 @@
     "category": "Sports",
     "logo": "https://static.wikia.nocookie.net/dreamlogos/images/f/ff/Sony_Sports_Ten_3.png/revision/latest/scale-to-width-down/377?cb=20260818054054",
     "url": "https://stream-through-spark.lovable.app/api/proxy?u=http%3A%2F%2Flive.ftpbdlive.com%3A8080%2Flive%2FFTPBD-LIVETV%2FFTPBD-2026%2F14.m3u8",
-    "is_pinned": false,
+    "is_pinned": true,
     "order": 19,
     "status": "ONLINE",
     "manual_override": false,
