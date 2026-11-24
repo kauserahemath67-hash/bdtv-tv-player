@@ -1,5 +1,9 @@
 {
  "& pictures hd": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "toffee": {
    "fail": 1,
    "pass": 27
@@ -22,6 +26,10 @@
   }
  },
  "awsn tv": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "toffee": {
    "fail": 1,
    "pass": 27
@@ -38,6 +46,10 @@
   }
  },
  "discovery science": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "toffee": {
    "fail": 2,
    "pass": 27
@@ -100,6 +112,10 @@
   }
  },
  "sananda tv": {
+  "rs-json": {
+   "fail": 2,
+   "pass": 0
+  },
   "server 1": {
    "fail": 2,
    "pass": 19
@@ -120,6 +136,14 @@
   }
  },
  "sony max": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
+  "rs-json": {
+   "fail": 1,
+   "pass": 0
+  },
   "techandeat": {
    "fail": 0,
    "pass": 2
@@ -130,12 +154,24 @@
   }
  },
  "sony max 2": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
+  "rs-json": {
+   "fail": 1,
+   "pass": 0
+  },
   "toffee": {
    "fail": 2,
    "pass": 27
   }
  },
  "sony pix hd": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "techandeat": {
    "fail": 0,
    "pass": 12
@@ -146,6 +182,10 @@
   }
  },
  "sony sab hd": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "techandeat": {
    "fail": 0,
    "pass": 12
@@ -186,12 +226,20 @@
   }
  },
  "toffee movies": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "toffee": {
    "fail": 3,
    "pass": 30
   }
  },
  "toffee tv": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "toffee": {
    "fail": 1,
    "pass": 28
@@ -204,12 +252,20 @@
   }
  },
  "zee anmol": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "toffee": {
    "fail": 1,
    "pass": 26
   }
  },
  "zee cafe": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "toffee": {
    "fail": 1,
    "pass": 26
