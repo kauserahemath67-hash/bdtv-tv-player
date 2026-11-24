@@ -1471,16 +1471,16 @@
     "name": "Zee Anmol",
     "logo": "https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f9c07bfc-9fde-40d0-91a1-e28c5840f400.png",
     "category": "Entertainment",
-    "url": "https://alixbd.com/proxy/proxy.php?id=6e3bde97c422842c3687039131d0f106997f",
+    "url": "https://stream-through-spark.lovable.app/api/proxy?u=https%3A%2F%2Fprod-linear-media.toffeelive.com%2Fcdn%2Flive%2Fzee_anmol%2F576%2F576.m3u8%3Fhdntl%3DExpires%3D1795625141~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data%3DeyJzdWJzY3JpYmVyX2lkIjoiYzgwZTMxOGQtODg2NS00ZDA3LWE2MGUtZmVjNDBiNzAxNWRkIn0~Signature%3DAaVr0ucKIbStCZjvO_AOm0rkg-PVw3mgMubPXNtiAw9yuzCexD11X8HpQjqHYIMmLZsJpnijWycxbvYVuxj1tfGnM3QI",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-289",
     "order": 99,
-    "manual_override": true,
+    "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/proxy/proxy.php?id=a28fd939d87815806e5323a7383ae0c3f999"
+    "backup_url": null
   },
   {
     "name": "HUM",
