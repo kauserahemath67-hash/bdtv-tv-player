@@ -2,7 +2,11 @@
  "& pictures hd": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
+  },
+  "playlist1": {
+   "fail": 0,
+   "pass": 2
   },
   "toffee": {
    "fail": 1,
@@ -28,7 +32,7 @@
  "awsn tv": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "toffee": {
    "fail": 1,
@@ -36,6 +40,10 @@
   }
  },
  "cartoon network hd +": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 2
+  },
   "server 2": {
    "fail": 0,
    "pass": 2
@@ -48,7 +56,7 @@
  "discovery science": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "toffee": {
    "fail": 2,
@@ -59,6 +67,10 @@
   "ayna": {
    "fail": 0,
    "pass": 2
+  },
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
   },
   "toffee": {
    "fail": 0,
@@ -73,6 +85,10 @@
   "jagobd": {
    "fail": 4,
    "pass": 0
+  },
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
   },
   "server 3": {
    "fail": 1,
@@ -92,6 +108,14 @@
    "fail": 3,
    "pass": 0
   },
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
+  "rs-json": {
+   "fail": 1,
+   "pass": 0
+  },
   "server 3": {
    "fail": 3,
    "pass": 0
@@ -106,6 +130,14 @@
    "fail": 0,
    "pass": 2
   },
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
+  "rs-json": {
+   "fail": 1,
+   "pass": 1
+  },
   "toffee": {
    "fail": 0,
    "pass": 4
@@ -113,7 +145,7 @@
  },
  "sananda tv": {
   "rs-json": {
-   "fail": 2,
+   "fail": 4,
    "pass": 0
   },
   "server 1": {
@@ -130,6 +162,14 @@
   }
  },
  "somoy tv": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
+  "rs-json": {
+   "fail": 1,
+   "pass": 0
+  },
   "toffee": {
    "fail": 0,
    "pass": 2
@@ -138,10 +178,10 @@
  "sony max": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "rs-json": {
-   "fail": 1,
+   "fail": 2,
    "pass": 0
   },
   "techandeat": {
@@ -156,10 +196,10 @@
  "sony max 2": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "rs-json": {
-   "fail": 1,
+   "fail": 2,
    "pass": 0
   },
   "toffee": {
@@ -170,7 +210,7 @@
  "sony pix hd": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "techandeat": {
    "fail": 0,
@@ -184,7 +224,7 @@
  "sony sab hd": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "techandeat": {
    "fail": 0,
@@ -195,7 +235,27 @@
    "pass": 17
   }
  },
+ "sony sports 1": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  }
+ },
+ "sony sports 5": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  }
+ },
  "sony ten cricket": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
+  "playlist1": {
+   "fail": 0,
+   "pass": 2
+  },
   "server 2": {
    "fail": 1,
    "pass": 0
@@ -228,7 +288,7 @@
  "toffee movies": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "toffee": {
    "fail": 3,
@@ -238,7 +298,7 @@
  "toffee tv": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "toffee": {
    "fail": 1,
@@ -246,6 +306,10 @@
   }
  },
  "wc match recap": {
+  "playlist0": {
+   "fail": 0,
+   "pass": 1
+  },
   "toffee": {
    "fail": 2,
    "pass": 27
@@ -254,7 +318,7 @@
  "zee anmol": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "toffee": {
    "fail": 1,
@@ -264,7 +328,7 @@
  "zee cafe": {
   "playlist0": {
    "fail": 0,
-   "pass": 1
+   "pass": 2
   },
   "toffee": {
    "fail": 1,
