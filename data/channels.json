@@ -1351,7 +1351,7 @@
     "name": "Toffee Movies",
     "logo": "https://assets-prod.services.toffeelive.com/b60Ss5UBrjBfS2_RJPb8/posters/c68ede73-0be0-41b7-9130-9628a16f2feb.png",
     "category": "Entertainment",
-    "url": "https://alixbd.com/proxy/proxy.php?id=2d2e26e922a07143e646b3bfb55dd4f6f075",
+    "url": "https://stream-through-spark.lovable.app/api/proxy?u=https%3A%2F%2Fprod-linear-media.toffeelive.com%2Fcdn%2Flive%2Ftoffee_movie%2F1080%2F1080.m3u8%3Fhdntl%3DExpires%3D1795625256~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data%3DeyJzdWJzY3JpYmVyX2lkIjoiYzgwZTMxOGQtODg2NS00ZDA3LWE2MGUtZmVjNDBiNzAxNWRkIn0~Signature%3DAaVr0ufRxk9QHOnTedfzUSyDeuibCHRGn6Q6f0ob7Y5CKDa_-1azlrt1guJpRG5Ng-r0zWy_PWqrJNCG4Cuy32valbYF",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-260",
@@ -1360,7 +1360,7 @@
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/proxy/proxy.php?id=015f2b39625261d7ec6c611164f7541a97d3"
+    "backup_url": null
   },
   {
     "name": "Rajdhani TV",
