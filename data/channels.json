@@ -1453,21 +1453,6 @@
     "backup_url": null
   },
   {
-    "name": "Discovery Kids",
-    "logo": "https://assets-prod.services.toffeelive.com/1i6e-JQBv9knK3AHHTXR/posters/325887a7-84ea-4cf9-a6fd-6111ddc25671.webp",
-    "category": "International",
-    "url": "https://stream-through-spark.lovable.app/api/proxy?u=https%3A%2F%2Fprod-linear-media.toffeelive.com%2Fcdn%2Flive%2Fdiscovery_kids%2F576%2F576.m3u8%3Fhdntl%3DExpires%3D1795625188~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data%3DeyJzdWJzY3JpYmVyX2lkIjoiYzgwZTMxOGQtODg2NS00ZDA3LWE2MGUtZmVjNDBiNzAxNWRkIn0~Signature%3DAaVr0ueKAPEOrBztFqJ3ZsnVseDbT9fJA14H1FsdllzzGa0_urz-0iKiiqnf7uF2Vwky6bmMSODyj1QCH5njvemjg3gO",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-287",
-    "order": 98,
-    "manual_override": false,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
     "name": "Zee Anmol",
     "logo": "https://assets-prod.services.toffeelive.com/7x0Jd5YBEef-9-uVv_Gy/posters/f9c07bfc-9fde-40d0-91a1-e28c5840f400.png",
     "category": "Entertainment",
@@ -1475,7 +1460,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-289",
-    "order": 99,
+    "order": 98,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1490,7 +1475,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-291",
-    "order": 100,
+    "order": 99,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1505,7 +1490,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-292",
-    "order": 101,
+    "order": 100,
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": null,
@@ -1520,7 +1505,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-293",
-    "order": 102,
+    "order": 101,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1535,7 +1520,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-295",
-    "order": 103,
+    "order": 102,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1550,7 +1535,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-301",
-    "order": 104,
+    "order": 103,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
@@ -1565,7 +1550,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-305",
-    "order": 105,
+    "order": 104,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
@@ -1579,7 +1564,7 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/b/bf/DangalTVLogo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
     "url": "https://live-dangal.akamaized.net/liveabr/playlist.m3u8",
     "is_pinned": false,
-    "order": 106,
+    "order": 105,
     "status": "ONLINE",
     "manual_override": false,
     "use_proxy": false,
@@ -1594,7 +1579,7 @@
     "logo": "https://i.imgur.com/BEr1r7L.png",
     "url": "https://live-dangal2.akamaized.net/liveabr/playlist.m3u8",
     "is_pinned": false,
-    "order": 107,
+    "order": 106,
     "status": "ONLINE",
     "manual_override": false,
     "use_proxy": false,
@@ -1609,7 +1594,7 @@
     "logo": "https://static.wikia.nocookie.net/etv-gspn-bangla/images/a/ae/Madani_Channel_Bangla_logo.png/revision/latest?cb=20231128143429",
     "url": "https://streaming.madanichannel.tv/static/streaming-playlists/hls/d3e49b76-ac06-4689-a641-9200445b647f/master.m3u8",
     "is_pinned": false,
-    "order": 108,
+    "order": 107,
     "status": "ONLINE",
     "manual_override": false,
     "use_proxy": false,
@@ -1624,7 +1609,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/2f66f13b85531977f2990c18ca414e83.png",
     "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00864-shemarooenterta-shemabollywood-ono/playlist.m3u8",
     "is_pinned": false,
-    "order": 109,
+    "order": 108,
     "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
@@ -1639,7 +1624,7 @@
     "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9X_JALWA/images/LOGO_HD/image.png",
     "url": "https://wiselp.wiseplayout.com/9X_Jalwa/master.m3u8",
     "is_pinned": false,
-    "order": 110,
+    "order": 109,
     "status": "ONLINE",
     "manual_override": false,
     "use_proxy": false,
@@ -1654,7 +1639,7 @@
     "logo": "https://images.pluto.tv/channels/5f7790b3ed0c88000720b241/colorLogoPNG_1731837233662.png",
     "url": "https://jmp2.uk/plu-69affcad8940750a23a7231a.m3u8",
     "is_pinned": false,
-    "order": 111,
+    "order": 110,
     "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
@@ -1669,7 +1654,7 @@
     "logo": "https://images.pluto.tv/channels/629a066860ef810008267b70/solidLogoPNG.png?w=512",
     "url": "https://jmp2.uk/plu-629a066860ef810008267b70.m3u8",
     "is_pinned": false,
-    "order": 112,
+    "order": 111,
     "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
@@ -1684,11 +1669,266 @@
     "logo": "https://i.imgur.com/2FlIQUO.png",
     "url": "https://jmp2.uk/plu-65652f7fc0fc88000883537a.m3u8",
     "is_pinned": false,
-    "order": 113,
+    "order": 112,
     "status": "ONLINE",
     "manual_override": true,
     "use_proxy": true,
     "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "name": "Discovery Kids",
+    "logo": "https://assets-prod.services.toffeelive.com/1i6e-JQBv9knK3AHHTXR/posters/325887a7-84ea-4cf9-a6fd-6111ddc25671.webp",
+    "category": "International",
+    "url": "https://stream-through-spark.lovable.app/api/proxy?u=https%3A%2F%2Fprod-linear-media.toffeelive.com%2Fcdn%2Flive%2Fdiscovery_kids%2F576%2F576.m3u8%3Fhdntl%3DExpires%3D1795625188~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data%3DeyJzdWJzY3JpYmVyX2lkIjoiYzgwZTMxOGQtODg2NS00ZDA3LWE2MGUtZmVjNDBiNzAxNWRkIn0~Signature%3DAaVr0ueKAPEOrBztFqJ3ZsnVseDbT9fJA14H1FsdllzzGa0_urz-0iKiiqnf7uF2Vwky6bmMSODyj1QCH5njvemjg3gO",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-287",
+    "order": 113,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": null
+  },
+  {
+    "name": "Dorama",
+    "logo": "https://i.imgur.com/ZH5LuXU.png",
+    "category": "International",
+    "url": "https://stream8.cinerama.uz/1273/tracks-v1a1/mono.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-121",
+    "order": 114,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": null
+  },
+  {
+    "name": "Wu Tang Collection",
+    "logo": "https://i.imgur.com/sz55sBl.png",
+    "category": "International",
+    "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991745/hls/master.m3u8?ads.xumo_channelId=99991745",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-251",
+    "order": 115,
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "name": "Cartoon Network HD +",
+    "logo": "https://assets-prod.services.toffeelive.com/1y6e-JQBv9knK3AHNDWb/posters/ee9ba01b-1bcf-436b-b273-7b857f0810fb.webp",
+    "category": "International",
+    "url": "https://tvsen5.aynaott.com/cartoonnetwork/index.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-285",
+    "order": 116,
+    "manual_override": false,
+    "use_proxy": false,
+    "proxy_referer": "https://alixbd.com/playlistconfig/",
+    "proxy_user_agent": null,
+    "backup_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/cartoon_network_hd/playlist.m3u8"
+  },
+  {
+    "name": "Anime x HIDIVE",
+    "logo": "https://i.imgur.com/v0BlxCa.png",
+    "category": "International",
+    "url": "https://d3f088nnrrvkwf.cloudfront.net/v1/amc_anime_x_hidive_1/samsungheadend_us/latest/main/hls/playlist.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-317",
+    "order": 117,
+    "manual_override": false,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": null
+  },
+  {
+    "name": "SONIC",
+    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONIC/images/LOGO_HD/image.png",
+    "category": "International",
+    "url": "https://iptvcable.netlify.app/Altogether-007/Cartoon/SONIC.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-318",
+    "order": 118,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": "https://iptvcable.netlify.app/",
+    "proxy_user_agent": null,
+    "backup_url": null
+  },
+  {
+    "name": "CCTV-8",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBO8UqIs3A2Qx9wEU-jnSP4kx5MjvZOfk3ICZjHjOlng&s=10",
+    "category": "International",
+    "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
+    "status": "ONLINE",
+    "is_pinned": false,
+    "id": "ch-1794166482825-320",
+    "order": 119,
+    "manual_override": true,
+    "use_proxy": true,
+    "proxy_referer": null,
+    "proxy_user_agent": null,
+    "backup_url": null
+  },
+  {
+    "id": "ch-1794415058701",
+    "name": "NonStop Kung Fu",
+    "category": "International",
+    "logo": "https://images.pluto.tv/channels/6728d2be529ac9000830dc15/colorLogoPNG_1732110461260.png",
+    "url": "https://jmp2.uk/plu-6728d33f030a2c0008edf4be.m3u8",
+    "is_pinned": false,
+    "order": 120,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794415100549",
+    "name": "Hi-YAH!",
+    "category": "International",
+    "logo": "https://dr56wvhu2c8zo.cloudfront.net/hi-yahtv/assets/4f35a43c-50ed-4ba3-a1ac-41af0f16b7fb.png",
+    "url": "https://linear-59.frequency.stream/dist/xumo/59/hls/master/playlist_1024x576.m3u8",
+    "is_pinned": false,
+    "order": 121,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794495123851",
+    "name": "ADN TV+",
+    "category": "International",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKrUszVDsrzu0vFKPRGHwZXKSfY-UEZFpv0sbUdb2ordxzWSZV8yTpH1L5&s=10",
+    "url": "https://d3b73b34o7cvkq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gz2sgqzp076kf/adn.m3u8",
+    "is_pinned": false,
+    "order": 122,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794508233927",
+    "name": "Naruto Shippuden",
+    "category": "International",
+    "logo": "https://images.pluto.tv/channels/64c92fea3c3344000869e8a9/colorLogoPNG.png",
+    "url": "https://jmp2.uk/plu-64c92f965580090008084968.m3u8",
+    "is_pinned": false,
+    "order": 123,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794677674974",
+    "name": "RetroCrush",
+    "category": "International",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ulG85jTQOgbHuZ-7aKeSxxq9OFEL1LaXzZ9XEQ06ZlpPd0IMc2FB4V9X&s=10",
+    "url": "https://d2nqmwm1ndpgi2.cloudfront.net/playlist.m3u8",
+    "is_pinned": false,
+    "order": 124,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794677749742",
+    "name": "FilmRise Anime",
+    "category": "International",
+    "logo": "https://images.plex.tv/photo?size=large-1920&scale=1&url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2Fcff7361f-e0ba-4aeb-9251-9530f4eb1d80%2FFilmRise_Anime_1500x1000_Light_Logo.png",
+    "url": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8",
+    "is_pinned": false,
+    "order": 125,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794677954483",
+    "name": "Pokémon",
+    "category": "International",
+    "logo": "https://images.pluto.tv/channels/6675c7868768aa0008d7f1c7/colorLogoPNG.png",
+    "url": "https://ipv4.pluto.tv/api/tn/video/playout/v2/stitch/hls/channel/6675c7868768aa0008d7f1c7/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6IjY2MTUzYmEyLTM0NGEtNDVhZC04Zjg2LWE2YzU5ODFkYWYyYyIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiI1NzFmNzM0NC1lNzFmLTExZjEtYmUwYi0yMjBhZGQ4M2RiMDAiLCJjbGllbnRJUCI6IjE4NS4yMzYuMjAwLjE3MiIsImNpdHkiOiJMb3MgQW5nZWxlcyIsInBvc3RhbENvZGUiOiI5MDAxMSIsImNvdW50cnkiOiJVUyIsImRtYSI6ODAzLCJhY3RpdmVSZWdpb24iOiJVUyIsImRldmljZUxhdCI6MzQuMDA5OTk4MzIxNTMzMiwiZGV2aWNlTG9uIjotMTE4LjI2MDAwMjEzNjIzMDQ3LCJwcmVmZXJyZWRMYW5ndWFnZSI6ImVuIiwiZGV2aWNlVHlwZSI6IndlYiIsImRldmljZVZlcnNpb24iOiIxMjIuMC4wIiwiZGV2aWNlTWFrZSI6ImNocm9tZSIsImRldmljZU1vZGVsIjoid2ViIiwiYXBwTmFtZSI6IndlYiIsImFwcFZlcnNpb24iOiI5LjIwLjAtODkyNTgyOTAyNjQ4Mzg1MTVlMjY0ZjViMDUxYjdjMTYwMmE1ODQ4MiIsImNsaWVudElEIjoiNzg0ODhlNzktZDRjOS00N2U4LWJjMWMtODQ5YTM3NTE5NGQ0IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkFtZXJpY2EvTG9zX0FuZ2VsZXMiLCJzZXJ2ZXJTaWRlQWRzIjpmYWxzZSwiZTJlQmVhY29ucyI6ZmFsc2UsImZlYXR1cmVzIjp7ImFkTG9hZCI6eyJjb2hvcnQiOiIifSwibXVsdGlBdWRpbyI6eyJlbmFibGVkIjp0cnVlfSwibXVsdGlQb2RBZHMiOnsiY29ob3J0IjoiIiwiZW5hYmxlZCI6dHJ1ZX0sInNlYXJjaEFQSSI6eyJxdWVyeVZlcnNpb24iOiJoeWJyaWQifSwic3RpdGNoZXJBZFNlc3Npb25FdmVudCI6eyJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJEYXNoTmciOnsiaml0UGFjayI6InJlcGFja0ppdCxkZWNyeXB0In0sInN0aXRjaGVySGxzTmciOnsiZGVtdXhlZEF1ZGlvIjoiaml0In0sInN0aXRjaGVySGxzTmdWbGwiOnsiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmdWb2QiOnsiZW5hYmxlZCI6dHJ1ZX19LCJmbXNQYXJhbXMiOnsiZndWY0lEMiI6Ijc4NDg4ZTc5LWQ0YzktNDdlOC1iYzFjLTg0OWEzNzUxOTRkNCIsImZ3VmNJRDJDb3BwYSI6Ijc4NDg4ZTc5LWQ0YzktNDdlOC1iYzFjLTg0OWEzNzUxOTRkNCIsImN1c3RvbVBhcmFtcyI6eyJmbXNfbGl2ZXJhbXBfaWRsIjoiIiwiZm1zX2VtYWlsaGFzaCI6IiIsImZtc19zdWJzY3JpYmVyaWQiOiIiLCJmbXNfaWZhIjoiIiwiZm1zX2lkZnYiOiIiLCJmbXNfdXNlcmlkIjoiNzg0ODhlNzktZDRjOS00N2U4LWJjMWMtODQ5YTM3NTE5NGQ0IiwiZm1zX3ZjaWQydHlwZSI6InVzZXJpZCIsImZtc19yYW1wX2lkIjoiIiwiZm1zX2hoX3JhbXBfaWQiOiIiLCJmbXNfYmlkaWR0eXBlIjoiIiwiX2Z3XzNQX1VJRCI6IiIsImZtc19ydWxlaWQiOiIxMDAwOSwxMDAwMCJ9fSwic2Vzc2lvblN0YXJ0VGltZSI6MTc5NTQyNTcyMTY4NywiaXNzIjoiYm9vdC5wbHV0by50diIsInN1YiI6InByaTp2MTpwbHV0bzpkZXZpY2VzOlVTOk56ZzBPRGhsTnprdFpEUmpPUzAwTjJVNExXSmpNV010T0RRNVlUTTNOVEU1TkdRMCIsImF1ZCI6IioucGx1dG8udHYiLCJleHAiOjE3OTU1MTIxMjEsImlhdCI6MTc5NTQyNTcyMSwianRpIjoiOWIxNTg2NzgtYTMwOS00ZDU0LWIwMTQtMzk2MmNkODJlNjMyIn0.XLs_HvjSDOzzS6OlVKRiMIyKL70ZE7N-XyscT8LPUss&includeExtendedEvents=true",
+    "is_pinned": false,
+    "order": 126,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794678538676",
+    "name": "24/7 Anime",
+    "category": "International",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cartoon_Network_HD%2B_India_logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
+    "url": "https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8",
+    "is_pinned": false,
+    "order": 127,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794678757128",
+    "name": "ETV Bal Bharat HD ⭐",
+    "category": "International",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24rWIj_3ou1es5Wop3AN4vWSbO874UXSVSwonYIZ3kw&s=10",
+    "url": "http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/355286.ts",
+    "is_pinned": false,
+    "order": 128,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": false,
+    "backup_url": "http://1204786.2734260009.growthtry.com/live/YqXTywueEV/damp2purchase/355286.ts",
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
+    "id": "ch-1794678862486",
+    "name": "Super Hungama",
+    "category": "International",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYNPjSIkhgYS_IAwh9RiBLA-uRDRfBnNhjbbUvMAU1KU34qMmG3tiZoQ&s=10",
+    "url": "http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/66162.ts",
+    "is_pinned": false,
+    "order": 129,
+    "status": "ONLINE",
+    "manual_override": true,
+    "use_proxy": true,
+    "backup_url": "http://1204786.2734260009.growthtry.com/live/YqXTywueEV/damp2purchase/66162.ts",
     "proxy_referer": null,
     "proxy_user_agent": null
   },
@@ -1700,7 +1940,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-60",
-    "order": 114
+    "order": 130
   },
   {
     "name": "+MaisUm",
@@ -1710,7 +1950,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-258",
-    "order": 115,
+    "order": 131,
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": "https://stream.ichibansys.com:3230/",
@@ -1724,7 +1964,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-278",
-    "order": 116,
+    "order": 132,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1738,7 +1978,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-279",
-    "order": 117,
+    "order": 133,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1752,7 +1992,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-280",
-    "order": 118,
+    "order": 134,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": "https://app24.jagobd.com.bd/",
@@ -1767,7 +2007,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-281",
-    "order": 119,
+    "order": 135,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1781,7 +2021,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-283",
-    "order": 120,
+    "order": 136,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1795,7 +2035,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-284",
-    "order": 121,
+    "order": 137,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1809,7 +2049,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-290",
-    "order": 122,
+    "order": 138,
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": null,
@@ -1823,7 +2063,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-296",
-    "order": 123,
+    "order": 139,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
@@ -1838,7 +2078,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-307",
-    "order": 124,
+    "order": 140,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
@@ -1852,7 +2092,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-308",
-    "order": 125,
+    "order": 141,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
@@ -1866,7 +2106,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-310",
-    "order": 126,
+    "order": 142,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
@@ -1881,7 +2121,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-311",
-    "order": 127,
+    "order": 143,
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1895,7 +2135,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-312",
-    "order": 128,
+    "order": 144,
     "manual_override": true,
     "use_proxy": true,
     "proxy_referer": null,
@@ -1909,7 +2149,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-313",
-    "order": 129,
+    "order": 145,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1923,7 +2163,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-67",
-    "order": 130,
+    "order": 146,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1938,7 +2178,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-68",
-    "order": 131,
+    "order": 147,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -1952,7 +2192,7 @@
     "logo": "https://static.vecteezy.com/system/resources/previews/009/020/540/non_2x/yaf-logo-yaf-letter-yaf-letter-logo-design-initials-yaf-logo-linked-with-circle-and-uppercase-monogram-logo-yaf-typography-for-technology-business-and-real-estate-brand-vector.jpg",
     "url": "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8",
     "is_pinned": false,
-    "order": 132,
+    "order": 148,
     "status": "ONLINE",
     "manual_override": false,
     "use_proxy": false,
@@ -1967,7 +2207,7 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/Balle_Balle_TV.png",
     "url": "https://mcncdndigital.com/balleballetv/index.m3u8",
     "is_pinned": false,
-    "order": 133,
+    "order": 149,
     "status": "ONLINE",
     "manual_override": false,
     "use_proxy": false,
@@ -1983,7 +2223,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-71",
-    "order": 134,
+    "order": 150,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -1998,7 +2238,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-83",
-    "order": 135
+    "order": 151
   },
   {
     "name": "30A TV Classic Movies",
@@ -2008,7 +2248,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-84",
-    "order": 136
+    "order": 152
   },
   {
     "name": "Afra Film",
@@ -2018,7 +2258,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-85",
-    "order": 137,
+    "order": 153,
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": "https://afrafhls.wns.live/",
@@ -2033,7 +2273,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-86",
-    "order": 138
+    "order": 154
   },
   {
     "name": "Allo Cine",
@@ -2043,7 +2283,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-87",
-    "order": 139
+    "order": 155
   },
   {
     "name": "ARTFLIX Movie",
@@ -2053,7 +2293,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-88",
-    "order": 140
+    "order": 156
   },
   {
     "name": "Asianet Movies",
@@ -2063,7 +2303,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-89",
-    "order": 141
+    "order": 157
   },
   {
     "name": "Aurora Media Films",
@@ -2073,7 +2313,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-90",
-    "order": 142
+    "order": 158
   },
   {
     "name": "B4U Bhojpuri Plus",
@@ -2083,7 +2323,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-91",
-    "order": 143
+    "order": 159
   },
   {
     "name": "B4U Movies",
@@ -2093,7 +2333,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-92",
-    "order": 144,
+    "order": 160,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -2108,7 +2348,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-93",
-    "order": 145
+    "order": 161
   },
   {
     "name": "Bollywood Classic Romania",
@@ -2118,7 +2358,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-94",
-    "order": 146
+    "order": 162
   },
   {
     "name": "Bollywood HD Russia",
@@ -2128,7 +2368,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-95",
-    "order": 147
+    "order": 163
   },
   {
     "name": "Boreal",
@@ -2138,7 +2378,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-96",
-    "order": 148
+    "order": 164
   },
   {
     "name": "Cafe Film",
@@ -2148,7 +2388,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-97",
-    "order": 149
+    "order": 165
   },
   {
     "name": "Canal Cine Dios",
@@ -2158,7 +2398,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-98",
-    "order": 150,
+    "order": 166,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2172,7 +2412,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-99",
-    "order": 151
+    "order": 167
   },
   {
     "name": "CINDIE TV",
@@ -2182,7 +2422,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-100",
-    "order": 152
+    "order": 168
   },
   {
     "name": "Cine Friki",
@@ -2192,7 +2432,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-101",
-    "order": 153
+    "order": 169
   },
   {
     "name": "Cine Nanar",
@@ -2202,7 +2442,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-102",
-    "order": 154
+    "order": 170
   },
   {
     "name": "Cine Romantico",
@@ -2212,7 +2452,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-103",
-    "order": 155
+    "order": 171
   },
   {
     "name": "Cine Western",
@@ -2222,7 +2462,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-104",
-    "order": 156
+    "order": 172
   },
   {
     "name": "Cinemaraton Plus",
@@ -2232,7 +2472,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-106",
-    "order": 157
+    "order": 173
   },
   {
     "name": "CineWow",
@@ -2242,7 +2482,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-107",
-    "order": 158
+    "order": 174
   },
   {
     "name": "City Eden KinoAction",
@@ -2252,7 +2492,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-108",
-    "order": 159,
+    "order": 175,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2266,7 +2506,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-109",
-    "order": 160,
+    "order": 176,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2280,7 +2520,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-110",
-    "order": 161
+    "order": 177
   },
   {
     "name": "City Eden KinoDetektiv",
@@ -2290,7 +2530,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-111",
-    "order": 162
+    "order": 178
   },
   {
     "name": "City Eden KinoFantastika",
@@ -2300,7 +2540,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-112",
-    "order": 163
+    "order": 179
   },
   {
     "name": "City Eden KinoKlassika",
@@ -2310,7 +2550,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-113",
-    "order": 164,
+    "order": 180,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2324,7 +2564,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-114",
-    "order": 165
+    "order": 181
   },
   {
     "name": "City Eden KinoMistika",
@@ -2334,7 +2574,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-115",
-    "order": 166
+    "order": 182
   },
   {
     "name": "Classic Cinema",
@@ -2344,7 +2584,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-116",
-    "order": 167,
+    "order": 183,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2358,7 +2598,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-117",
-    "order": 168
+    "order": 184
   },
   {
     "name": "Colors Cineplex",
@@ -2368,7 +2608,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-118",
-    "order": 169
+    "order": 185
   },
   {
     "name": "Cosmos Tv",
@@ -2378,7 +2618,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-119",
-    "order": 170,
+    "order": 186,
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": null,
@@ -2392,7 +2632,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-120",
-    "order": 171,
+    "order": 187,
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": null,
@@ -2406,7 +2646,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-122",
-    "order": 172
+    "order": 188
   },
   {
     "name": "Ebony TV",
@@ -2416,7 +2656,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-123",
-    "order": 173
+    "order": 189
   },
   {
     "name": "EBS Cinema",
@@ -2426,7 +2666,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-124",
-    "order": 174,
+    "order": 190,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2440,7 +2680,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-125",
-    "order": 175
+    "order": 191
   },
   {
     "name": "Epic Bhojpuri Digital",
@@ -2450,7 +2690,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-126",
-    "order": 176
+    "order": 192
   },
   {
     "name": "ETV Cinema",
@@ -2460,7 +2700,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-127",
-    "order": 177
+    "order": 193
   },
   {
     "name": "FILMBOX+ Comedy Romania",
@@ -2470,7 +2710,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-128",
-    "order": 178
+    "order": 194
   },
   {
     "name": "FILMBOX+ Festival",
@@ -2480,7 +2720,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-129",
-    "order": 179
+    "order": 195
   },
   {
     "name": "FILMBOX+ Festival HD",
@@ -2490,7 +2730,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-130",
-    "order": 180
+    "order": 196
   },
   {
     "name": "FILMBOX+ Hits Romania",
@@ -2500,7 +2740,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-131",
-    "order": 181
+    "order": 197
   },
   {
     "name": "FILMBOX+ Love & Crime Romania",
@@ -2510,7 +2750,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-132",
-    "order": 182
+    "order": 198
   },
   {
     "name": "FILMBOX+ One Romania",
@@ -2520,7 +2760,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-133",
-    "order": 183
+    "order": 199
   },
   {
     "name": "FilmUA Live",
@@ -2530,7 +2770,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-134",
-    "order": 184
+    "order": 200
   },
   {
     "name": "FrightFlix",
@@ -2540,7 +2780,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-135",
-    "order": 185,
+    "order": 201,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2554,7 +2794,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-136",
-    "order": 186
+    "order": 202
   },
   {
     "name": "Goldmines",
@@ -2564,7 +2804,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-137",
-    "order": 187,
+    "order": 203,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -2579,7 +2819,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-138",
-    "order": 188
+    "order": 204
   },
   {
     "name": "Gravitas Movies",
@@ -2589,7 +2829,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-139",
-    "order": 189
+    "order": 205
   },
   {
     "name": "Grjngo Western Movies",
@@ -2599,7 +2839,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-140",
-    "order": 190
+    "order": 206
   },
   {
     "name": "Hallmark Movies",
@@ -2609,7 +2849,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-141",
-    "order": 191
+    "order": 207
   },
   {
     "name": "Horoshee Kino",
@@ -2619,7 +2859,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-142",
-    "order": 192
+    "order": 208
   },
   {
     "name": "iFilm 2",
@@ -2629,7 +2869,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-143",
-    "order": 193,
+    "order": 209,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -2644,7 +2884,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-144",
-    "order": 194
+    "order": 210
   },
   {
     "name": "iFilm English",
@@ -2654,7 +2894,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-145",
-    "order": 195
+    "order": 211
   },
   {
     "name": "iFilm Persian",
@@ -2664,7 +2904,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-146",
-    "order": 196
+    "order": 212
   },
   {
     "name": "India Talkies",
@@ -2674,7 +2914,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-147",
-    "order": 197
+    "order": 213
   },
   {
     "name": "Indywood TV",
@@ -2684,7 +2924,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-148",
-    "order": 198
+    "order": 214
   },
   {
     "name": "Itage TV",
@@ -2694,7 +2934,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-149",
-    "order": 199,
+    "order": 215,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2708,7 +2948,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-150",
-    "order": 200,
+    "order": 216,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -2723,7 +2963,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-151",
-    "order": 201
+    "order": 217
   },
   {
     "name": "Kinoseriya",
@@ -2733,7 +2973,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-152",
-    "order": 202
+    "order": 218
   },
   {
     "name": "Kinoteatr",
@@ -2743,7 +2983,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-153",
-    "order": 203
+    "order": 219
   },
   {
     "name": "Kuriakos Cine",
@@ -2753,7 +2993,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-154",
-    "order": 204
+    "order": 220
   },
   {
     "name": "Maah TV",
@@ -2763,7 +3003,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-155",
-    "order": 205
+    "order": 221
   },
   {
     "name": "Made In Hollywood",
@@ -2773,7 +3013,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-156",
-    "order": 206
+    "order": 222
   },
   {
     "name": "Maha Movie",
@@ -2783,7 +3023,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-157",
-    "order": 207,
+    "order": 223,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2797,7 +3037,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-158",
-    "order": 208
+    "order": 224
   },
   {
     "name": "Manoranjan Grand",
@@ -2807,7 +3047,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-159",
-    "order": 209,
+    "order": 225,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -2822,7 +3062,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-160",
-    "order": 210
+    "order": 226
   },
   {
     "name": "Maverick Black Cinema",
@@ -2832,7 +3072,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-161",
-    "order": 211
+    "order": 227
   },
   {
     "name": "Maxcine Family",
@@ -2842,7 +3082,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-165",
-    "order": 212,
+    "order": 228,
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": null,
@@ -2856,7 +3096,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-166",
-    "order": 213
+    "order": 229
   },
   {
     "name": "Mega Cine TV",
@@ -2866,7 +3106,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-167",
-    "order": 214
+    "order": 230
   },
   {
     "name": "Meta Film TV",
@@ -2876,7 +3116,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-168",
-    "order": 215
+    "order": 231
   },
   {
     "name": "Mix Hollywood",
@@ -2886,7 +3126,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-169",
-    "order": 216
+    "order": 232
   },
   {
     "name": "MN+",
@@ -2896,7 +3136,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-170",
-    "order": 217
+    "order": 233
   },
   {
     "name": "Movie Punjab",
@@ -2906,7 +3146,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-171",
-    "order": 218
+    "order": 234
   },
   {
     "name": "Movies! KPVM-LD",
@@ -2916,7 +3156,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-172",
-    "order": 219
+    "order": 235
   },
   {
     "name": "MovieSphere",
@@ -2926,7 +3166,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-173",
-    "order": 220
+    "order": 236
   },
   {
     "name": "MovieSphere AU",
@@ -2936,7 +3176,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-174",
-    "order": 221
+    "order": 237
   },
   {
     "name": "MovieSphere Gold WFXT",
@@ -2946,7 +3186,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-175",
-    "order": 222,
+    "order": 238,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -2961,7 +3201,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-176",
-    "order": 223
+    "order": 239
   },
   {
     "name": "My Cinema Europe",
@@ -2971,7 +3211,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-177",
-    "order": 224
+    "order": 240
   },
   {
     "name": "MyTime Movie Network",
@@ -2981,7 +3221,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-178",
-    "order": 225
+    "order": 241
   },
   {
     "name": "MyTime Movie",
@@ -2991,7 +3231,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-179",
-    "order": 226
+    "order": 242
   },
   {
     "name": "Nashe Novoe Kino",
@@ -3001,7 +3241,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-180",
-    "order": 227,
+    "order": 243,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -3015,7 +3255,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-181",
-    "order": 228
+    "order": 244
   },
   {
     "name": "NH BollyFlix",
@@ -3025,7 +3265,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-182",
-    "order": 229,
+    "order": 245,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -3039,7 +3279,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-183",
-    "order": 230
+    "order": 246
   },
   {
     "name": "NOST",
@@ -3049,7 +3289,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-184",
-    "order": 231
+    "order": 247
   },
   {
     "name": "Nostalgia TV",
@@ -3059,7 +3299,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-185",
-    "order": 232
+    "order": 248
   },
   {
     "name": "ON Movies",
@@ -3069,7 +3309,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-186",
-    "order": 233,
+    "order": 249,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -3083,7 +3323,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-187",
-    "order": 234
+    "order": 250
   },
   {
     "name": "OuterSphere",
@@ -3093,7 +3333,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-188",
-    "order": 235
+    "order": 251
   },
   {
     "name": "Persiana Cinema",
@@ -3103,7 +3343,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-189",
-    "order": 236
+    "order": 252
   },
   {
     "name": "Persiana Family",
@@ -3113,7 +3353,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-190",
-    "order": 237
+    "order": 253
   },
   {
     "name": "Persiana Iranian",
@@ -3123,7 +3363,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-191",
-    "order": 238
+    "order": 254
   },
   {
     "name": "Persiana Korea",
@@ -3133,7 +3373,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-192",
-    "order": 239
+    "order": 255
   },
   {
     "name": "Persiana Plus",
@@ -3143,7 +3383,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-193",
-    "order": 240
+    "order": 256
   },
   {
     "name": "Pitaara",
@@ -3153,7 +3393,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-194",
-    "order": 241
+    "order": 257
   },
   {
     "name": "Pocket Films",
@@ -3163,7 +3403,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-195",
-    "order": 242
+    "order": 258
   },
   {
     "name": "Popcorn Central",
@@ -3173,7 +3413,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-196",
-    "order": 243
+    "order": 259
   },
   {
     "name": "Public Movies",
@@ -3183,7 +3423,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-197",
-    "order": 244
+    "order": 260
   },
   {
     "name": "Punjabi Shorts",
@@ -3193,7 +3433,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-198",
-    "order": 245
+    "order": 261
   },
   {
     "name": "Rakuten TV Family Movies UK",
@@ -3203,7 +3443,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-215",
-    "order": 246
+    "order": 262
   },
   {
     "name": "Rotana Cinema Egypt",
@@ -3213,7 +3453,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-220",
-    "order": 247
+    "order": 263
   },
   {
     "name": "Rotana Cinema KSA",
@@ -3223,7 +3463,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-221",
-    "order": 248
+    "order": 264
   },
   {
     "name": "Runtime Espanol",
@@ -3233,7 +3473,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-222",
-    "order": 249
+    "order": 265
   },
   {
     "name": "ScreamIN",
@@ -3243,7 +3483,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-223",
-    "order": 250
+    "order": 266
   },
   {
     "name": "Shemaroo Josh",
@@ -3253,7 +3493,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-224",
-    "order": 251,
+    "order": 267,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -3268,7 +3508,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-225",
-    "order": 252
+    "order": 268
   },
   {
     "name": "Silk Way Cinema",
@@ -3278,7 +3518,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-226",
-    "order": 253
+    "order": 269
   },
   {
     "name": "SL 1",
@@ -3288,7 +3528,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-227",
-    "order": 254
+    "order": 270
   },
   {
     "name": "SL 2",
@@ -3298,7 +3538,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-228",
-    "order": 255
+    "order": 271
   },
   {
     "name": "Smotrim 100% Klassika",
@@ -3308,7 +3548,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-229",
-    "order": 256
+    "order": 272
   },
   {
     "name": "Soneri Cinema",
@@ -3318,7 +3558,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-231",
-    "order": 257
+    "order": 273
   },
   {
     "name": "Sony One Favoris",
@@ -3328,7 +3568,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-233",
-    "order": 258
+    "order": 274
   },
   {
     "name": "Sony One Hits Action",
@@ -3338,7 +3578,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-234",
-    "order": 259
+    "order": 275
   },
   {
     "name": "Sony One Hits Comedie",
@@ -3348,7 +3588,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-235",
-    "order": 260
+    "order": 276
   },
   {
     "name": "South Station",
@@ -3358,7 +3598,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-236",
-    "order": 261
+    "order": 277
   },
   {
     "name": "Star Cinema",
@@ -3368,7 +3608,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-237",
-    "order": 262,
+    "order": 278,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -3383,7 +3623,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-238",
-    "order": 263,
+    "order": 279,
     "manual_override": false,
     "use_proxy": true,
     "backup_url": null,
@@ -3398,7 +3638,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-239",
-    "order": 264
+    "order": 280
   },
   {
     "name": "Studio One +",
@@ -3408,7 +3648,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-240",
-    "order": 265,
+    "order": 281,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -3423,7 +3663,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-241",
-    "order": 266,
+    "order": 282,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -3438,7 +3678,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-242",
-    "order": 267,
+    "order": 283,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -3453,7 +3693,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-243",
-    "order": 268,
+    "order": 284,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -3468,7 +3708,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-245",
-    "order": 269,
+    "order": 285,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -3483,7 +3723,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-246",
-    "order": 270
+    "order": 286
   },
   {
     "name": "TVS Drive In Movie",
@@ -3493,7 +3733,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-247",
-    "order": 271,
+    "order": 287,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": null,
@@ -3508,7 +3748,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-248",
-    "order": 272,
+    "order": 288,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -3523,7 +3763,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-249",
-    "order": 273
+    "order": 289
   },
   {
     "name": "Whiplash Cinema",
@@ -3533,7 +3773,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-250",
-    "order": 274,
+    "order": 290,
     "manual_override": false,
     "use_proxy": false,
     "backup_url": null,
@@ -3548,7 +3788,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-252",
-    "order": 275,
+    "order": 291,
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": "https://stmv6.voxtvhd.com.br/",
@@ -3562,7 +3802,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-255",
-    "order": 276,
+    "order": 292,
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": "https://server.zillarbarta.com/",
@@ -3576,7 +3816,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-256",
-    "order": 277,
+    "order": 293,
     "manual_override": false,
     "use_proxy": true,
     "proxy_referer": null,
@@ -3590,7 +3830,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-302",
-    "order": 278,
+    "order": 294,
     "manual_override": false,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
@@ -3605,7 +3845,7 @@
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-315",
-    "order": 279,
+    "order": 295,
     "manual_override": true,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
@@ -3619,7 +3859,7 @@
     "logo": "https://upload.wikimedia.org/wikipedia/en/6/68/Goldmines.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original",
     "url": "https://mumt04.tangotv.in/m18aqlK4GOLDMINEMOVIES/index.m3u8",
     "is_pinned": false,
-    "order": 280,
+    "order": 296,
     "status": "ONLINE",
     "manual_override": false,
     "use_proxy": false,
@@ -3634,251 +3874,11 @@
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/63ca523d57c534aae4b50f9cd4d2a80c.png",
     "url": "https://amg00877-b4unew-amg00877c4-xiaomi-in-5473.playouts.now.amagi.tv/playlist.m3u8",
     "is_pinned": false,
-    "order": 281,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": false,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "name": "Dorama",
-    "logo": "https://i.imgur.com/ZH5LuXU.png",
-    "category": "International",
-    "url": "https://stream8.cinerama.uz/1273/tracks-v1a1/mono.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-121",
-    "order": 282,
-    "manual_override": false,
-    "use_proxy": false,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
-    "name": "Wu Tang Collection",
-    "logo": "https://i.imgur.com/sz55sBl.png",
-    "category": "International",
-    "url": "https://dbrb49pjoymg4.cloudfront.net/10001/99991745/hls/master.m3u8?ads.xumo_channelId=99991745",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-251",
-    "order": 283,
-    "manual_override": false,
-    "use_proxy": false,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "name": "Cartoon Network HD +",
-    "logo": "https://assets-prod.services.toffeelive.com/1y6e-JQBv9knK3AHNDWb/posters/ee9ba01b-1bcf-436b-b273-7b857f0810fb.webp",
-    "category": "International",
-    "url": "https://tvsen5.aynaott.com/cartoonnetwork/index.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-285",
-    "order": 284,
-    "manual_override": false,
-    "use_proxy": false,
-    "proxy_referer": "https://alixbd.com/playlistconfig/",
-    "proxy_user_agent": null,
-    "backup_url": "https://bldcmprod-cdn.toffeelive.com/cdn/live/cartoon_network_hd/playlist.m3u8"
-  },
-  {
-    "name": "Anime x HIDIVE",
-    "logo": "https://i.imgur.com/v0BlxCa.png",
-    "category": "International",
-    "url": "https://d3f088nnrrvkwf.cloudfront.net/v1/amc_anime_x_hidive_1/samsungheadend_us/latest/main/hls/playlist.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-317",
-    "order": 285,
-    "manual_override": false,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
-    "name": "SONIC",
-    "logo": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONIC/images/LOGO_HD/image.png",
-    "category": "International",
-    "url": "https://iptvcable.netlify.app/Altogether-007/Cartoon/SONIC.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-318",
-    "order": 286,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": "https://iptvcable.netlify.app/",
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
-    "name": "CCTV-8",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBO8UqIs3A2Qx9wEU-jnSP4kx5MjvZOfk3ICZjHjOlng&s=10",
-    "category": "International",
-    "url": "http://74.91.26.218:82/live/cctv8hd.m3u8",
-    "status": "ONLINE",
-    "is_pinned": false,
-    "id": "ch-1794166482825-320",
-    "order": 287,
-    "manual_override": true,
-    "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null,
-    "backup_url": null
-  },
-  {
-    "id": "ch-1794415058701",
-    "name": "NonStop Kung Fu",
-    "category": "International",
-    "logo": "https://images.pluto.tv/channels/6728d2be529ac9000830dc15/colorLogoPNG_1732110461260.png",
-    "url": "https://jmp2.uk/plu-6728d33f030a2c0008edf4be.m3u8",
-    "is_pinned": false,
-    "order": 288,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794415100549",
-    "name": "Hi-YAH!",
-    "category": "International",
-    "logo": "https://dr56wvhu2c8zo.cloudfront.net/hi-yahtv/assets/4f35a43c-50ed-4ba3-a1ac-41af0f16b7fb.png",
-    "url": "https://linear-59.frequency.stream/dist/xumo/59/hls/master/playlist_1024x576.m3u8",
-    "is_pinned": false,
-    "order": 289,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": false,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794495123851",
-    "name": "ADN TV+",
-    "category": "International",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKrUszVDsrzu0vFKPRGHwZXKSfY-UEZFpv0sbUdb2ordxzWSZV8yTpH1L5&s=10",
-    "url": "https://d3b73b34o7cvkq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gz2sgqzp076kf/adn.m3u8",
-    "is_pinned": false,
-    "order": 290,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": false,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794508233927",
-    "name": "Naruto Shippuden",
-    "category": "International",
-    "logo": "https://images.pluto.tv/channels/64c92fea3c3344000869e8a9/colorLogoPNG.png",
-    "url": "https://jmp2.uk/plu-64c92f965580090008084968.m3u8",
-    "is_pinned": false,
-    "order": 291,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794677674974",
-    "name": "RetroCrush",
-    "category": "International",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2ulG85jTQOgbHuZ-7aKeSxxq9OFEL1LaXzZ9XEQ06ZlpPd0IMc2FB4V9X&s=10",
-    "url": "https://d2nqmwm1ndpgi2.cloudfront.net/playlist.m3u8",
-    "is_pinned": false,
-    "order": 292,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": false,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794677749742",
-    "name": "FilmRise Anime",
-    "category": "International",
-    "logo": "https://images.plex.tv/photo?size=large-1920&scale=1&url=https%3A%2F%2Fprovider-static.plex.tv%2Fepg%2Fcms%2Fproduction%2Fcff7361f-e0ba-4aeb-9251-9530f4eb1d80%2FFilmRise_Anime_1500x1000_Light_Logo.png",
-    "url": "https://dvu7aia8rjlfm.cloudfront.net/master.m3u8",
-    "is_pinned": false,
-    "order": 293,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": false,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794677954483",
-    "name": "Pokémon",
-    "category": "International",
-    "logo": "https://images.pluto.tv/channels/6675c7868768aa0008d7f1c7/colorLogoPNG.png",
-    "url": "https://ipv4.pluto.tv/api/tn/video/playout/v2/stitch/hls/channel/6675c7868768aa0008d7f1c7/master.m3u8?jwt=eyJhbGciOiJIUzI1NiIsImtpZCI6IjY2MTUzYmEyLTM0NGEtNDVhZC04Zjg2LWE2YzU5ODFkYWYyYyIsInR5cCI6IkpXVCJ9.eyJzZXNzaW9uSUQiOiI1NzFmNzM0NC1lNzFmLTExZjEtYmUwYi0yMjBhZGQ4M2RiMDAiLCJjbGllbnRJUCI6IjE4NS4yMzYuMjAwLjE3MiIsImNpdHkiOiJMb3MgQW5nZWxlcyIsInBvc3RhbENvZGUiOiI5MDAxMSIsImNvdW50cnkiOiJVUyIsImRtYSI6ODAzLCJhY3RpdmVSZWdpb24iOiJVUyIsImRldmljZUxhdCI6MzQuMDA5OTk4MzIxNTMzMiwiZGV2aWNlTG9uIjotMTE4LjI2MDAwMjEzNjIzMDQ3LCJwcmVmZXJyZWRMYW5ndWFnZSI6ImVuIiwiZGV2aWNlVHlwZSI6IndlYiIsImRldmljZVZlcnNpb24iOiIxMjIuMC4wIiwiZGV2aWNlTWFrZSI6ImNocm9tZSIsImRldmljZU1vZGVsIjoid2ViIiwiYXBwTmFtZSI6IndlYiIsImFwcFZlcnNpb24iOiI5LjIwLjAtODkyNTgyOTAyNjQ4Mzg1MTVlMjY0ZjViMDUxYjdjMTYwMmE1ODQ4MiIsImNsaWVudElEIjoiNzg0ODhlNzktZDRjOS00N2U4LWJjMWMtODQ5YTM3NTE5NGQ0IiwiY21BdWRpZW5jZUlEIjoiIiwiaXNDbGllbnRETlQiOmZhbHNlLCJ1c2VySUQiOiIiLCJsb2dMZXZlbCI6IkRFRkFVTFQiLCJ0aW1lWm9uZSI6IkFtZXJpY2EvTG9zX0FuZ2VsZXMiLCJzZXJ2ZXJTaWRlQWRzIjpmYWxzZSwiZTJlQmVhY29ucyI6ZmFsc2UsImZlYXR1cmVzIjp7ImFkTG9hZCI6eyJjb2hvcnQiOiIifSwibXVsdGlBdWRpbyI6eyJlbmFibGVkIjp0cnVlfSwibXVsdGlQb2RBZHMiOnsiY29ob3J0IjoiIiwiZW5hYmxlZCI6dHJ1ZX0sInNlYXJjaEFQSSI6eyJxdWVyeVZlcnNpb24iOiJoeWJyaWQifSwic3RpdGNoZXJBZFNlc3Npb25FdmVudCI6eyJlbmFibGVkIjp0cnVlfSwic3RpdGNoZXJEYXNoTmciOnsiaml0UGFjayI6InJlcGFja0ppdCxkZWNyeXB0In0sInN0aXRjaGVySGxzTmciOnsiZGVtdXhlZEF1ZGlvIjoiaml0In0sInN0aXRjaGVySGxzTmdWbGwiOnsiZW5hYmxlZCI6dHJ1ZX0sInN0aXRjaGVySGxzTmdWb2QiOnsiZW5hYmxlZCI6dHJ1ZX19LCJmbXNQYXJhbXMiOnsiZndWY0lEMiI6Ijc4NDg4ZTc5LWQ0YzktNDdlOC1iYzFjLTg0OWEzNzUxOTRkNCIsImZ3VmNJRDJDb3BwYSI6Ijc4NDg4ZTc5LWQ0YzktNDdlOC1iYzFjLTg0OWEzNzUxOTRkNCIsImN1c3RvbVBhcmFtcyI6eyJmbXNfbGl2ZXJhbXBfaWRsIjoiIiwiZm1zX2VtYWlsaGFzaCI6IiIsImZtc19zdWJzY3JpYmVyaWQiOiIiLCJmbXNfaWZhIjoiIiwiZm1zX2lkZnYiOiIiLCJmbXNfdXNlcmlkIjoiNzg0ODhlNzktZDRjOS00N2U4LWJjMWMtODQ5YTM3NTE5NGQ0IiwiZm1zX3ZjaWQydHlwZSI6InVzZXJpZCIsImZtc19yYW1wX2lkIjoiIiwiZm1zX2hoX3JhbXBfaWQiOiIiLCJmbXNfYmlkaWR0eXBlIjoiIiwiX2Z3XzNQX1VJRCI6IiIsImZtc19ydWxlaWQiOiIxMDAwOSwxMDAwMCJ9fSwic2Vzc2lvblN0YXJ0VGltZSI6MTc5NTQyNTcyMTY4NywiaXNzIjoiYm9vdC5wbHV0by50diIsInN1YiI6InByaTp2MTpwbHV0bzpkZXZpY2VzOlVTOk56ZzBPRGhsTnprdFpEUmpPUzAwTjJVNExXSmpNV010T0RRNVlUTTNOVEU1TkdRMCIsImF1ZCI6IioucGx1dG8udHYiLCJleHAiOjE3OTU1MTIxMjEsImlhdCI6MTc5NTQyNTcyMSwianRpIjoiOWIxNTg2NzgtYTMwOS00ZDU0LWIwMTQtMzk2MmNkODJlNjMyIn0.XLs_HvjSDOzzS6OlVKRiMIyKL70ZE7N-XyscT8LPUss&includeExtendedEvents=true",
-    "is_pinned": false,
-    "order": 294,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794678538676",
-    "name": "24/7 Anime",
-    "category": "International",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Cartoon_Network_HD%2B_India_logo.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original",
-    "url": "https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8",
-    "is_pinned": false,
-    "order": 295,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": false,
-    "backup_url": null,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794678757128",
-    "name": "ETV Bal Bharat HD ⭐",
-    "category": "International",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ24rWIj_3ou1es5Wop3AN4vWSbO874UXSVSwonYIZ3kw&s=10",
-    "url": "http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/355286.ts",
-    "is_pinned": false,
-    "order": 296,
-    "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": false,
-    "backup_url": "http://1204786.2734260009.growthtry.com/live/YqXTywueEV/damp2purchase/355286.ts",
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1794678862486",
-    "name": "Super Hungama",
-    "category": "International",
-    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUYNPjSIkhgYS_IAwh9RiBLA-uRDRfBnNhjbbUvMAU1KU34qMmG3tiZoQ&s=10",
-    "url": "http://rgkkw.live/live/1Aoen7elp5/IgMJ60tmAa/66162.ts",
-    "is_pinned": false,
     "order": 297,
     "status": "ONLINE",
-    "manual_override": true,
-    "use_proxy": true,
-    "backup_url": "http://1204786.2734260009.growthtry.com/live/YqXTywueEV/damp2purchase/66162.ts",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
   }
