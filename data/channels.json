@@ -240,6 +240,21 @@
     "backup_url": null
   },
   {
+    "id": "ch-1795537416536",
+    "name": "Sony Sports 3",
+    "category": "Sports",
+    "logo": "https://static.wikia.nocookie.net/dreamlogos/images/f/ff/Sony_Sports_Ten_3.png/revision/latest/scale-to-width-down/377?cb=20260818054054",
+    "url": "https://stream-through-spark.lovable.app/api/proxy?u=http%3A%2F%2Flive.ftpbdlive.com%3A8080%2Flive%2FFTPBD-LIVETV%2FFTPBD-2026%2F14.m3u8",
+    "is_pinned": true,
+    "order": 17,
+    "status": "ONLINE",
+    "manual_override": false,
+    "use_proxy": false,
+    "backup_url": null,
+    "proxy_referer": null,
+    "proxy_user_agent": null
+  },
+  {
     "name": "ESPN Premium",
     "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKMWF9cKi_6w6ni8bx4jWZi5-sn2NbYzuzdQov068INkk26pNze_XOGOSZ&s=10",
     "category": "Sports",
@@ -247,24 +262,9 @@
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-263",
-    "order": 17,
+    "order": 18,
     "manual_override": true,
     "use_proxy": true,
-    "proxy_referer": null,
-    "proxy_user_agent": null
-  },
-  {
-    "id": "ch-1795537416536",
-    "name": "Sony Sports 3",
-    "category": "Sports",
-    "logo": "https://static.wikia.nocookie.net/dreamlogos/images/f/ff/Sony_Sports_Ten_3.png/revision/latest/scale-to-width-down/377?cb=20260818054054",
-    "url": "https://stream-through-spark.lovable.app/api/proxy?u=http%3A%2F%2Flive.ftpbdlive.com%3A8080%2Flive%2FFTPBD-LIVETV%2FFTPBD-2026%2F14.m3u8",
-    "is_pinned": true,
-    "order": 18,
-    "status": "ONLINE",
-    "manual_override": false,
-    "use_proxy": false,
-    "backup_url": null,
     "proxy_referer": null,
     "proxy_user_agent": null
   },
