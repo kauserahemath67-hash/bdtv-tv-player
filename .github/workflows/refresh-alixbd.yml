@@ -1,4 +1,4 @@
-name: Refresh alixbd links
+name: Refresh RS Live TV links
 
 on:
   schedule:
@@ -28,6 +28,6 @@ jobs:
             echo "No changes — all alixbd links already fresh."
           else
             git add data/channels.json tools/source_stats.json
-            git commit -m "chore: refresh alixbd links"
+            git commit -m "chore: refresh RS links"
             git push origin HEAD:data-storage
           fi
