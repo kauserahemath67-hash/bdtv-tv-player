@@ -1862,16 +1862,16 @@
     "name": "Discovery Science",
     "logo": "https://assets-prod.services.toffeelive.com/AS6s-JQBv9knK3AHDTZb/posters/eab8fd0f-9351-464c-b45e-332f38b49f4b.webp",
     "category": "General",
-    "url": "https://alixbd.com/proxy/proxy.php?id=2a9d31a85349e9e33bb811f9d2f2c718c4c3",
+    "url": "https://stream-through-spark.lovable.app/api/proxy?u=https%3A%2F%2Fprod-linear-media.toffeelive.com%2Fcdn%2Flive%2Fdiscovery_science%2F576%2F576.m3u8%3Fhdntl%3DExpires%3D1795625041~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data%3DeyJzdWJzY3JpYmVyX2lkIjoiYzgwZTMxOGQtODg2NS00ZDA3LWE2MGUtZmVjNDBiNzAxNWRkIn0~Signature%3DAaVr0ueELQaRqikWpk8Ej3PswRA7wzsmoEdi-AD33Y3mbs4xxsVsExJ2-kDL0ecZOpYjXsUONRqO1tE6K6OhnImVzeYC",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-310",
     "order": 126,
-    "manual_override": true,
+    "manual_override": false,
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
     "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/proxy/proxy.php?id=2c9a052f4f1b5b32aa0c1a581702abd4b5c8"
+    "backup_url": null
   },
   {
     "name": "Discovery Turbo",
