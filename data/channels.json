@@ -109,7 +109,7 @@
     "name": "Sony Sports 3",
     "category": "Sports",
     "logo": "https://jiotvimages.cdn.jio.com/dare_images/images/channel/c063708662593e2a313084f6c0a3f496.png",
-    "url": "https://stream-through-spark.lovable.app/api/proxy?u=http%3A%2F%2Flive.ftpbdlive.com%3A8080%2Flive%2FFTPBD-LIVETV%2FFTPBD-2026%2F14.m3u8",
+    "url": "http://live.ftpbdlive.com:8080/live/FTPBD-LIVETV/FTPBD-2026/14.m3u8",
     "is_pinned": true,
     "order": 8,
     "status": "ONLINE",
@@ -153,7 +153,7 @@
     "name": "Star Sports 1",
     "logo": "https://i.postimg.cc/rmQ7XZg7/20241005-170805.png",
     "category": "Sports",
-    "url": "https://stream-through-spark.lovable.app/api/proxy?u=http%3A%2F%2Flive.ftpbdlive.com%3A8080%2Flive%2FFTPBD-LIVETV%2FFTPBD-2026%2F5.m3u8",
+    "url": "http://live.ftpbdlive.com:8080/live/FTPBD-LIVETV/FTPBD-2026/5.m3u8",
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-7",
@@ -168,7 +168,7 @@
     "name": "Star Sports 2",
     "logo": "https://i.postimg.cc/2yhw5M0c/20241005-170916.png",
     "category": "Sports",
-    "url": "https://tvsen7.aynaott.com/ssport2hd/index.m3u8",
+    "url": "http://live.ftpbdlive.com:8080/live/FTPBD-LIVETV/FTPBD-2026/6.m3u8",
     "status": "ONLINE",
     "is_pinned": true,
     "id": "ch-1794166482825-8",
@@ -596,7 +596,7 @@
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": "https://iptvlive.ahmed-bd-org.workers.dev/ntv-1/index.m3u8"
+    "backup_url": "https://tvsen5.aynaott.com/JHPxHAWonztVucyc4GzF/index.m3u8?e=1782665440&u=f54c14f5-0c1d-4106-885c-3bcd7626f69f&token=7f955e1c0f7b6e3afa3d8b92c3f19359"
   },
   {
     "name": "Channel 24 HD",
