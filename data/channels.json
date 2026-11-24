@@ -1546,7 +1546,7 @@
     "name": "Sony PIX HD",
     "logo": "https://assets-prod.services.toffeelive.com/Ly6C-JQBv9knK3AHOjXt/posters/252e64ca-8d99-46e7-a951-e10c1703c11d.webp",
     "category": "Entertainment",
-    "url": "https://alixbd.com/proxy/proxy.php?id=be0ce78518fd44f75cb007cda8313f2d0743",
+    "url": "https://stream-through-spark.lovable.app/api/proxy?u=https%3A%2F%2Fprod-linear-media.toffeelive.com%2Fcdn%2Flive%2Fsonypix_hd%2F576%2F576.m3u8%3Fhdntl%3DExpires%3D1795624594~_GO%3DGenerated~URLPrefix%3DaHR0cHM6Ly9wcm9kLWxpbmVhci1tZWRpYS50b2ZmZWVsaXZlLmNvbQ~Data%3DeyJzdWJzY3JpYmVyX2lkIjoiYzgwZTMxOGQtODg2NS00ZDA3LWE2MGUtZmVjNDBiNzAxNWRkIn0~Signature%3DAaVr0ud--HqlcqrY_jFNojoDp1vnr_On3WAx1TOa7WdVkI0P98jdFDbObT56UtnyDPJGakW8JIPex4c4CCaKCP5pBFYB",
     "status": "ONLINE",
     "is_pinned": false,
     "id": "ch-1794166482825-301",
@@ -1555,7 +1555,7 @@
     "use_proxy": false,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
     "proxy_user_agent": null,
-    "backup_url": "https://alixbd.com/proxy/proxy.php?id=96c819edf0b3fe98d90489664fa61a09d3dc"
+    "backup_url": null
   },
   {
     "name": "TLC HD",
