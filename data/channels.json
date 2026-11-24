@@ -102,7 +102,7 @@
     "use_proxy": false,
     "proxy_referer": null,
     "proxy_user_agent": null,
-    "backup_url": null
+    "backup_url": "http://103.114.11.37:8081/Sony-sports-2/index.m3u8?token=sbox"
   },
   {
     "name": "Sony Sports 5",
