@@ -3832,8 +3832,8 @@
     "id": "ch-1794166482825-302",
     "order": 294,
     "manual_override": false,
-    "use_proxy": false,
-    "proxy_referer": null,
+    "use_proxy": true,
+    "proxy_referer": "https://prod-linear-media.toffeelive.com",
     "proxy_user_agent": null,
     "backup_url": null
   },
