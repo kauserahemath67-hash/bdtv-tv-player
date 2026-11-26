@@ -1,53 +1,53 @@
 #!/usr/bin/env python3
-"""Refresh the managed channels' URLs from RS Live TV's sources. (v10)
+"""Refresh the managed channels' URLs from RS Live TV + alixbd. (v11)
 
-Replaces the v7 alixbd bot (same file path, same workflow, same CLI).
-Ordered by Kauser 2026-11-24: the channels that used to load from
-alixbd must now load from https://rslivetv.pages.dev/ instead.
-v9 (same day, Kauser: "all 24 will change, clear"): the managed set
-is the FULL original 24 bot-managed channels, and every one of them
-is synced to RS's link — including the ones Kauser had since moved
-to other sources by hand.
-v10 (same day): adds a WATCH set (Kauser's screenshot list) — sports
-channels the bot does NOT force-sync; for those it only replaces the
-main link when the current one shows a problem (no proof of life in
-three fetches), using a proven/published RS candidate.
+Dual-source successor of the v10 RS bot (same file path, same
+workflow, same CLI). Ordered by Kauser 2026-11-26: the bot goes back
+to taking links from alixbd like before AND keeps taking them from
+RS Live TV. On every run it looks in BOTH sources, play-verifies the
+candidates, and writes the link that actually plays as the main
+link; if two links play, one becomes main and the other the backup.
 
-How RS Live TV publishes its channels (from its public app.js):
-- /settings.json lists public M3U playlists (GitHub-hosted, kept
-  up to date by their owners — the Toffee playlist is refreshed
-  daily, so the edge-cache tokens inside it are fresh).
-- /bd76t2s1w9.json is an AES-GCM/PBKDF2-encrypted JSON channel list;
-  the key sits in their public app.js (client-side, every visitor's
-  browser decrypts it). This script decrypts it with `node`
-  (preinstalled on GitHub runners); if node is missing, the JSON
-  source is skipped and the playlists alone are used.
+How the alixbd side works now: alixbd.com (the "S-Live"/SBOX site)
+is a JavaScript app. Its channel data (channels.json: names, match
+aliases, categories, and a serverNames map that labels each stream
+URL by host keyword - SBOX, Akash Go, Toffee, AYNA, AYNA(Proxy))
+sits on top of merged playlists that the same operator builds and
+auto-updates in his public GitHub repo (mahdiridoy/Tv): scan.m3u
+and mahdi_iptv.m3u8. In those files one channel appears several
+times with different stream URLs - those duplicates ARE the site's
+Server 1 / Server 2 / Server 3. So the bot reads the same playlists
+the site is built from, treats every same-name entry as one server
+candidate, and play-verifies each one exactly like the RS ones.
 
-Scope — a FIXED managed set: the original 24 bot-managed channels
-(MANAGED below). Per Kauser's v9 order, every one of them syncs to
-RS's link, even if Kauser had moved it to another source by hand;
-channels outside the 24 are never touched.
+Scope - unchanged from v10: the FIXED managed set of the original 24
+bot-managed channels (MANAGED below), plus the WATCH set of 5 sports
+channels on the problem-only rule (RS candidates only, as in v10).
+NEVER_TOUCH (T Sports, Btv HD) is a hard guard, as before.
 
-Safety rules (v7 spirit kept):
-- Only `url` and `backup_url` of managed channels ever change.
-- A globally-reachable candidate must pass the STRONG live check
-  (playlist loads, first+last segments answer, media sequence
-  advancing) TWICE in a row before it is written.
-- Toffee CDN candidates are Bangladesh-only: they cannot be reached
-  from the bot's foreign network at all (same class of problem as
-  alixbd's https). For those, presence in RS's CURRENT published
-  playlist is the proof — that playlist is auto-updated by its
-  owner, so a listed link carries a fresh token. The app audience
-  is in Bangladesh, where these links play.
-- A channel's main link is replaced when it is an alixbd link (the
-  migration Kauser ordered), or when it is an RS link that is no
-  longer in RS's current list (stale token), or when it shows no
-  proof of life in three fetches (v7 rule). If no candidate passes,
-  the current link is kept untouched.
-- backup_url: replaced by a second proven/published RS candidate
-  when one exists; otherwise left exactly as Kauser/the bot set it.
-- If RS's settings cannot be fetched, or the total parsed channel
-  count looks wrong (<100), the script aborts and writes NOTHING.
+Selection rule for the 24 (Kauser, 2026-11-26):
+- If the current main link still plays (strong check) - or, for
+  Bangladesh-only Toffee links that cannot be reached from the
+  bot's foreign network, is still present in a freshly fetched
+  source list - it stays.
+- Otherwise candidates are tested, alixbd's servers first, then
+  RS's; the first one PROVEN to play (playlist loads, first+last
+  segments answer, media sequence advancing - twice in a row)
+  becomes the main link.
+- If no candidate can be proven from this network, a Bangladesh-
+  only (Toffee) candidate listed in a current source list is used
+  (presence in the fresh list is the proof, as in v10).
+- Backup: a second proven/published link, preferring one from the
+  OTHER source than the main link's, so a channel ends up with one
+  link from each site whenever both sites have a working one.
+- If nothing qualifies, the current links stay untouched.
+
+Safety rules (v10 spine kept):
+- Only `url` and `backup_url` of managed/watch channels ever change.
+- If BOTH sources fail to load or the total parsed channel count
+  looks wrong (<100), the script aborts and writes NOTHING. If only
+  one source loads, the run proceeds on that source alone and says
+  so in the log.
 
 Usage: python3 refresh_alixbd.py data/channels.json
 Exit code 0 = done; 2 = aborted, nothing changed.
@@ -70,8 +70,13 @@ JSON_URL = RS_BASE + "/bd76t2s1w9.json"
 JSON_KEY = "Ho1fXTZ4gNTWGfmqFUVM5xCIgXWplXE8"  # from RS's public app.js
 RS_PROXY_PREFIX = "https://stream-through-spark.lovable.app/api/proxy?u="
 
-# The 24 channels managed by this bot: the full original bot-managed
-# set (Kauser's current names, as in channels.json).
+# alixbd's operator playlists (the data layer of the S-Live site).
+ALIX_PLAYLISTS = [
+    ("alixbd-scan", "https://raw.githubusercontent.com/mahdiridoy/Tv/main/scan.m3u"),
+    ("alixbd-mahdi", "https://raw.githubusercontent.com/mahdiridoy/Tv/main/mahdi_iptv.m3u8"),
+]
+
+# The 24 channels managed by this bot (Kauser's current DB names).
 MANAGED = [
     "Sony Sports 1", "Sony Sports 5", "Sony Ten Cricket",
     "WC Match Recap", "Somoy Tv", "ATN News", "Independent TV", "NTV",
@@ -81,13 +86,10 @@ MANAGED = [
     "Cartoon Network HD +", "24/7 Anime",
 ]
 
-# NEVER touch these, ever (Kauser, 2026-11-24): hard guard — even
-# if a future edit adds them to a set by mistake, they are skipped.
+# NEVER touch these, ever (Kauser, 2026-11-24): hard guard.
 NEVER_TOUCH = {"t sports", "btv hd"}
 
-# Watch set (Kauser, 2026-11-24 screenshot): replace ONLY on problem.
-# (Sony Sports 1, Sony Sports 5 and Sony Ten Cricket from his list
-# are already in the always-sync 24 above.)
+# Watch set (Kauser, 2026-11-24): replace ONLY on problem, RS only.
 WATCH = [
     "Sony Sports 2", "Sony Sports 3", "PTV Sports",
     "Star Sports 1", "Star Sports 2",
@@ -100,8 +102,8 @@ WATCH_ALIASES = {
     "star sports 2": ["star sports 2 hd"],
 }
 
-# DB name (normalised) -> RS list names (normalised) that mean the
-# same channel, when they differ from the DB name.
+# DB name (normalised) -> RS list names (normalised) for the same
+# channel, when they differ from the DB name.
 ALIASES = {
     "sony sports 1": ["sony sports ten 1 hd", "sony ten sports 1 hd"],
     "sony sports 5": ["sony sports ten 5 hd", "sony ten sports 5 hd"],
@@ -111,20 +113,33 @@ ALIASES = {
     "& pictures hd": ["&pictures hd"],
 }
 
-# Hosts whose links this bot may write / has written. A managed channel
-# whose current url is on none of these hosts and is not alixbd is
-# Kauser's own source -> hands off.
-RS_HOSTS = (
-    "prod-linear-media.toffeelive.com",
-    "bldcmprod-cdn.toffeelive.com",
-    "toffeelive.com",
-    "toffee.aliflaila.live",
-    "live.sanandatelevision.in",
-)
+# DB name (normalised) -> alixbd-side names (normalised). The v6
+# alixbd aliases (verified against alixbd 2026-11-15) plus the RS
+# ones that also occur in the operator playlists.
+ALIX_ALIASES = {
+    "sony sports 1": ["sony sports ten 1 hd", "sony ten sports 1 hd"],
+    "sony sports 5": ["sony sports ten 5 hd", "sony ten sports 5 hd"],
+    "sony ten cricket": ["ten cricket"],
+    "atn news": ["atn news hd"],
+    "ntv": ["ntv hd"],
+    "ekattor tv": ["ekattor hd"],
+    "sananda tv": ["sananda"],
+    "sony max": ["sony max hd"],
+    "sony max 2": ["sony max 2 hd"],
+    "sony sab hd": ["sony sab"],
+    "zee cafe": ["zee cafe hd"],
+    "cartoon network hd +": ["cartoon network"],
+    "& pictures hd": ["&pictures hd"],
+}
+
 # Bangladesh-only hosts: unreachable from the bot's network by design.
 BD_ONLY_HOSTS = ("prod-linear-media.toffeelive.com",
                  "bldcmprod-cdn.toffeelive.com",
                  "toffeelive.com")
+
+# Cap on strong (network) verifications per channel per run, so one
+# channel with many dead servers cannot stall the whole run.
+MAX_STRONG_TESTS = 6
 
 STATS_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)),
                           "source_stats.json")
@@ -156,13 +171,17 @@ def unwrap(url: str) -> str:
     return url
 
 
+def clean_url(url: str) -> str:
+    """Operator playlists carry junk '#source' fragments on some URLs;
+    a fragment is never part of the stream address."""
+    url = (url or "").strip()
+    if "#" in url:
+        url = url.split("#", 1)[0]
+    return url
+
+
 def is_bd_only(url: str) -> bool:
     return host_of(url).endswith(BD_ONLY_HOSTS)
-
-
-def is_rs_host(url: str) -> bool:
-    h = host_of(url)
-    return any(h == x or h.endswith("." + x) for x in RS_HOSTS)
 
 
 def parse_m3u(content: str, label: str, by_name: dict):
@@ -173,7 +192,9 @@ def parse_m3u(content: str, label: str, by_name: dict):
             m = re.search(r",([^,]+)$", line)
             cur = m.group(1).strip() if m else None
         elif line and not line.startswith("#") and cur:
-            by_name.setdefault(norm(cur), []).append((label, unwrap(line)))
+            url = clean_url(line)
+            if url.startswith("http"):
+                by_name.setdefault(norm(cur), []).append((label, unwrap(url)))
             cur = None
 
 
@@ -241,6 +262,28 @@ def load_rs_sources():
                 total += 1
     except Exception as e:
         print(f"  warn: RS json source failed: {e}")
+    return by_name, total
+
+
+def load_alix_sources():
+    """alixbd side: the operator's merged playlists (scan.m3u +
+    mahdi_iptv.m3u8). Same-name duplicates = the site's servers.
+    Returns (by_name, total_count) like load_rs_sources."""
+    by_name = {}
+    total = 0
+    for label, url in ALIX_PLAYLISTS:
+        before = sum(len(v) for v in by_name.values())
+        parse_m3u(fetch(url, timeout=60), label, by_name)
+        total += sum(len(v) for v in by_name.values()) - before
+    # Dedupe per name, preserving order (the playlists repeat a lot).
+    for key in by_name:
+        seen = set()
+        uniq = []
+        for label, u in by_name[key]:
+            if u not in seen:
+                seen.add(u)
+                uniq.append((label, u))
+        by_name[key] = uniq
     return by_name, total
 
 
@@ -331,7 +374,7 @@ def twice_proven(ch_key: str, label: str, url: str) -> bool:
 
 
 def candidate_ok(ch_key: str, label: str, url: str) -> bool:
-    """BD-only (Toffee) candidates: presence in RS's freshly fetched
+    """BD-only (Toffee) candidates: presence in a freshly fetched
     list is the proof (they are unreachable from this network).
     Anything else must pass the strong check twice."""
     if is_bd_only(url):
@@ -340,57 +383,144 @@ def candidate_ok(ch_key: str, label: str, url: str) -> bool:
     return twice_proven(ch_key, label, url)
 
 
-def process_channel(ch, by_name):
-    """Returns a short log line. Mutates ch in place (url/backup_url)."""
+def gather(by_name, key, aliases):
+    cands = list(by_name.get(key) or [])
+    for alias in aliases.get(key, []):
+        cands += by_name.get(alias) or []
+    seen = set()
+    out = []
+    for label, u in cands:
+        if u not in seen:
+            seen.add(u)
+            out.append((label, u))
+    return out
+
+
+class Prover:
+    """Per-channel memoised play-verification with a test budget."""
+
+    def __init__(self, ch_key, published_urls):
+        self.key = ch_key
+        self.published = published_urls  # urls in a fresh source list
+        self.memo = {}
+        self.budget = MAX_STRONG_TESTS
+
+    def state(self, label, url):
+        """-> 'proven' | 'published' | 'dead' | 'unknown'
+        'published' = BD-only link present in a fresh source list.
+        'unknown' = could not be tested within this run's budget."""
+        if url in self.memo:
+            return self.memo[url]
+        if is_bd_only(url):
+            st = "published" if url in self.published else "dead"
+            record(self.key, label, st == "published")
+            self.memo[url] = st
+            return st
+        if self.budget <= 0:
+            return "unknown"
+        self.budget -= 1
+        st = "proven" if twice_proven(self.key, label, url) else "dead"
+        self.memo[url] = st
+        return st
+
+
+def process_channel(ch, rs_by, alix_by):
+    """Managed 24, Kauser's dual-source rule (see module docstring).
+    Mutates ch in place (url/backup_url). Returns a log line."""
     name = ch.get("name")
     key = norm(name or "")
     url = unwrap(ch.get("url") or "")
     if url != (ch.get("url") or ""):
         ch["url"] = url
-
-    # Kauser's v9 order: ALL 24 sync to RS — no hands-off exception.
-    cands = list(by_name.get(key) or [])
-    for alias in ALIASES.get(key, []):
-        cands += by_name.get(alias) or []
-    if not cands:
-        return f"  unmatched in RS (kept): {name}"
-    cand_urls = [u for _, u in cands]
-    notes = []
-
-    # --- main link: always RS's current link for this channel ---
-    if url in cand_urls:
-        notes.append("main already current RS link")
-    else:
-        winner = None
-        for label, cand in cands:
-            if cand != url and candidate_ok(key, label, cand):
-                winner = cand
-                break
-        if winner:
-            ch["url"] = winner
-            url = winner
-            notes.append("main updated from RS")
-        else:
-            notes.append("no proven RS replacement (kept)")
-
-    # --- backup link ---
     backup = unwrap(ch.get("backup_url") or "")
     if backup and backup != (ch.get("backup_url") or ""):
         ch["backup_url"] = backup
-    if backup != url and backup in cand_urls:
-        notes.append("backup current")
+
+    rs_cands = gather(rs_by, key, ALIASES)
+    alix_cands = gather(alix_by, key, ALIX_ALIASES)
+    if not rs_cands and not alix_cands:
+        return f"  unmatched in both sources (kept): {name}"
+    rs_urls = {u for _, u in rs_cands}
+    alix_urls = {u for _, u in alix_cands}
+    published = rs_urls | alix_urls
+    prover = Prover(key, published)
+    # Kauser's order: alixbd's servers first, then RS.
+    pools = [("alixbd", alix_cands), ("rs", rs_cands)]
+    notes = []
+
+    def pool_of(u):
+        if u in alix_urls:
+            return "alixbd"
+        if u in rs_urls:
+            return "rs"
+        return None
+
+    def label_of(u):
+        for _, cands in pools:
+            for label, cand in cands:
+                if cand == u:
+                    return label
+        return "current"
+
+    # --- main link ---
+    main = url
+    cur_state = prover.state(label_of(url), url) if url else "dead"
+    if cur_state in ("proven", "published"):
+        notes.append(f"main kept ({cur_state})")
     else:
+        winner = None
+        for pool, cands in pools:
+            for label, cand in cands:
+                if cand == url:
+                    continue
+                if prover.state(label, cand) == "proven":
+                    winner = cand
+                    break
+            if winner:
+                break
+        if not winner:  # fall back to a published BD-only candidate
+            for pool, cands in pools:
+                for label, cand in cands:
+                    if cand != url and prover.state(label, cand) == "published":
+                        winner = cand
+                        break
+                if winner:
+                    break
+        if winner:
+            ch["url"] = winner
+            main = winner
+            notes.append(f"main updated from {pool_of(winner) or 'source'}")
+        else:
+            notes.append("no live replacement (kept)")
+
+    # --- backup link: a second live link, other source preferred ---
+    backup_ok = False
+    if backup and backup != main:
+        backup_ok = prover.state(label_of(backup), backup) in (
+            "proven", "published")
+    if backup_ok:
+        notes.append("backup kept (live)")
+    else:
+        main_pool = pool_of(main)
+        ordered = []
+        for pool, cands in pools:
+            if pool != main_pool:
+                ordered += cands
+        for pool, cands in pools:
+            if pool == main_pool:
+                ordered += cands
         spare = None
-        for label, cand in cands:
-            if cand != url and cand != backup and \
-               candidate_ok(key, label, cand):
+        for label, cand in ordered:
+            if cand == main or cand == backup:
+                continue
+            if prover.state(label, cand) in ("proven", "published"):
                 spare = cand
                 break
         if spare:
             ch["backup_url"] = spare
-            notes.append("backup set from RS")
-        elif "alixbd.com" in backup:
-            notes.append("backup still alixbd (no RS spare)")
+            notes.append(f"backup set from {pool_of(spare) or 'source'}")
+        elif backup:
+            notes.append("backup kept (no proven spare)")
 
     return f"  {name}: " + ("; ".join(notes) if notes else "ok")
 
@@ -398,15 +528,13 @@ def process_channel(ch, by_name):
 def process_watch_channel(ch, by_name):
     """Watch set: touch the main link ONLY when it shows a problem
     (no proof of life in 3 fetches). BD-only current links cannot be
-    judged from this network — those are left alone."""
+    judged from this network - those are left alone. (v10, RS only.)"""
     name = ch.get("name")
     key = norm(name or "")
     url = unwrap(ch.get("url") or "")
     if url != (ch.get("url") or ""):
         ch["url"] = url
-    cands = list(by_name.get(key) or [])
-    for alias in WATCH_ALIASES.get(key, []):
-        cands += by_name.get(alias) or []
+    cands = gather(by_name, key, WATCH_ALIASES)
     if not cands:
         return f"  [watch] unmatched in RS (kept): {name}"
     cand_urls = [u for _, u in cands]
@@ -431,16 +559,24 @@ def main() -> int:
     global _stats
     path = sys.argv[1] if len(sys.argv) > 1 else "data/channels.json"
 
+    rs_by, rs_total = {}, 0
     try:
-        by_name, total = load_rs_sources()
+        rs_by, rs_total = load_rs_sources()
+        print(f"RS sources parsed: {rs_total} channel entries, "
+              f"{len(rs_by)} unique names")
     except Exception as e:
-        print(f"ABORT: could not load RS sources: {e}")
+        print(f"  warn: RS sources failed: {e}")
+    alix_by, alix_total = {}, 0
+    try:
+        alix_by, alix_total = load_alix_sources()
+        print(f"alixbd sources parsed: {alix_total} channel entries, "
+              f"{len(alix_by)} unique names")
+    except Exception as e:
+        print(f"  warn: alixbd sources failed: {e}")
+    if rs_total + alix_total < 100 or (not rs_by and not alix_by):
+        print(f"ABORT: only {rs_total + alix_total} channels parsed "
+              f"from both sources")
         return 2
-    if total < 100:
-        print(f"ABORT: only {total} channels parsed from RS sources")
-        return 2
-    print(f"RS sources parsed: {total} channel entries, "
-          f"{len(by_name)} unique names")
 
     if os.path.exists(STATS_PATH):
         try:
@@ -461,7 +597,8 @@ def main() -> int:
               and norm(c.get("name") or "") not in NEVER_TOUCH]
     print(f"managed channels found in DB: {len(scoped)}/{len(MANAGED)}")
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
-        for line in ex.map(lambda c: process_channel(c, by_name), scoped):
+        for line in ex.map(
+                lambda c: process_channel(c, rs_by, alix_by), scoped):
             print(line, flush=True)
     watch_keys = {norm(n) for n in WATCH}
     watched = [c for c in channels
@@ -469,7 +606,7 @@ def main() -> int:
                and norm(c.get("name") or "") not in NEVER_TOUCH]
     print(f"watch channels found in DB: {len(watched)}/{len(WATCH)}")
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as ex:
-        for line in ex.map(lambda c: process_watch_channel(c, by_name),
+        for line in ex.map(lambda c: process_watch_channel(c, rs_by),
                            watched):
             print(line, flush=True)
 
