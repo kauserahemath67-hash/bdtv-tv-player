@@ -3832,7 +3832,7 @@
     "id": "ch-1794166482825-302",
     "order": 294,
     "manual_override": false,
-    "use_proxy": false,
+    "use_proxy": true,
     "proxy_referer": "https://alixbd.com/playlistconfig/",
     "proxy_user_agent": null,
     "backup_url": null
