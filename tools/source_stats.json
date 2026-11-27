@@ -2,7 +2,7 @@
  "& pictures hd": {
   "alixbd-scan": {
    "fail": 1,
-   "pass": 2
+   "pass": 3
   },
   "current": {
    "fail": 1,
@@ -14,7 +14,7 @@
   },
   "playlist1": {
    "fail": 0,
-   "pass": 6
+   "pass": 8
   },
   "toffee": {
    "fail": 1,
@@ -30,7 +30,7 @@
  "atn news": {
   "alixbd-scan": {
    "fail": 0,
-   "pass": 4
+   "pass": 6
   },
   "ayna": {
    "fail": 2,
@@ -38,7 +38,7 @@
   },
   "current": {
    "fail": 2,
-   "pass": 0
+   "pass": 2
   },
   "jagobd": {
    "fail": 5,
@@ -47,16 +47,16 @@
  },
  "awsn tv": {
   "alixbd-scan": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "current": {
-   "fail": 4,
+   "fail": 6,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "toffee": {
    "fail": 1,
@@ -66,7 +66,7 @@
  "cartoon network hd +": {
   "alixbd-scan": {
    "fail": 3,
-   "pass": 3
+   "pass": 4
   },
   "current": {
    "fail": 2,
@@ -78,7 +78,7 @@
   },
   "playlist1": {
    "fail": 0,
-   "pass": 4
+   "pass": 6
   },
   "server 2": {
    "fail": 0,
@@ -92,15 +92,15 @@
  "discovery science": {
   "alixbd-scan": {
    "fail": 1,
-   "pass": 2
+   "pass": 3
   },
   "current": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "toffee": {
    "fail": 2,
@@ -109,8 +109,8 @@
  },
  "ekattor tv": {
   "alixbd-scan": {
-   "fail": 0,
-   "pass": 4
+   "fail": 2,
+   "pass": 5
   },
   "ayna": {
    "fail": 0,
@@ -122,10 +122,10 @@
   },
   "playlist0": {
    "fail": 0,
-   "pass": 6
+   "pass": 7
   },
   "rs-json": {
-   "fail": 0,
+   "fail": 1,
    "pass": 4
   },
   "toffee": {
@@ -136,14 +136,14 @@
  "ekhon tv": {
   "alixbd-scan": {
    "fail": 4,
-   "pass": 0
+   "pass": 2
   },
   "ayna": {
    "fail": 1,
    "pass": 0
   },
   "current": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "jagobd": {
@@ -152,7 +152,7 @@
   },
   "playlist0": {
    "fail": 0,
-   "pass": 8
+   "pass": 9
   },
   "server 3": {
    "fail": 1,
@@ -170,19 +170,19 @@
  "independent tv": {
   "alixbd-scan": {
    "fail": 0,
-   "pass": 4
+   "pass": 6
   },
   "ayna": {
    "fail": 3,
    "pass": 0
   },
   "current": {
-   "fail": 3,
+   "fail": 4,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 8
+   "pass": 9
   },
   "rs-json": {
    "fail": 7,
@@ -199,20 +199,20 @@
  },
  "ntv": {
   "alixbd-scan": {
-   "fail": 0,
-   "pass": 4
+   "fail": 1,
+   "pass": 7
   },
   "ayna": {
    "fail": 0,
    "pass": 2
   },
   "current": {
-   "fail": 1,
+   "fail": 2,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 7
+   "pass": 8
   },
   "rs-json": {
    "fail": 2,
@@ -225,15 +225,15 @@
  },
  "sananda tv": {
   "alixbd-scan": {
-   "fail": 1,
-   "pass": 9
+   "fail": 3,
+   "pass": 13
   },
   "current": {
    "fail": 2,
    "pass": 0
   },
   "rs-json": {
-   "fail": 18,
+   "fail": 19,
    "pass": 0
   },
   "server 1": {
@@ -251,19 +251,19 @@
  },
  "somoy tv": {
   "alixbd-scan": {
-   "fail": 2,
+   "fail": 4,
    "pass": 3
   },
   "current": {
-   "fail": 3,
+   "fail": 5,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 8
+   "pass": 9
   },
   "rs-json": {
-   "fail": 8,
+   "fail": 9,
    "pass": 0
   },
   "toffee": {
@@ -274,15 +274,15 @@
  "sony max": {
   "alixbd-scan": {
    "fail": 0,
-   "pass": 4
+   "pass": 6
   },
   "current": {
-   "fail": 3,
+   "fail": 4,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "rs-json": {
    "fail": 8,
@@ -299,19 +299,19 @@
  },
  "sony max 2": {
   "alixbd-scan": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "current": {
-   "fail": 4,
+   "fail": 6,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "rs-json": {
-   "fail": 10,
+   "fail": 11,
    "pass": 0
   },
   "toffee": {
@@ -321,16 +321,16 @@
  },
  "sony pix hd": {
   "alixbd-scan": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "current": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "techandeat": {
    "fail": 0,
@@ -344,15 +344,15 @@
  "sony sab hd": {
   "alixbd-scan": {
    "fail": 1,
-   "pass": 2
+   "pass": 3
   },
   "current": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "techandeat": {
    "fail": 0,
@@ -366,7 +366,7 @@
  "sony sports 1": {
   "alixbd-scan": {
    "fail": 0,
-   "pass": 2
+   "pass": 3
   },
   "current": {
    "fail": 1,
@@ -378,13 +378,13 @@
   },
   "playlist1": {
    "fail": 0,
-   "pass": 4
+   "pass": 6
   }
  },
  "sony sports 5": {
   "alixbd-scan": {
    "fail": 0,
-   "pass": 2
+   "pass": 3
   },
   "current": {
    "fail": 1,
@@ -396,25 +396,25 @@
   },
   "playlist1": {
    "fail": 0,
-   "pass": 4
+   "pass": 6
   }
  },
  "sony ten cricket": {
   "alixbd-scan": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "current": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 8
+   "pass": 9
   },
   "playlist1": {
    "fail": 0,
-   "pass": 6
+   "pass": 8
   },
   "server 2": {
    "fail": 1,
@@ -453,16 +453,16 @@
  },
  "toffee movies": {
   "alixbd-scan": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "current": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "toffee": {
    "fail": 3,
@@ -471,16 +471,16 @@
  },
  "toffee tv": {
   "alixbd-scan": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "current": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "toffee": {
    "fail": 1,
@@ -489,16 +489,16 @@
  },
  "wc match recap": {
   "alixbd-scan": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "current": {
-   "fail": 4,
+   "fail": 6,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 8
+   "pass": 9
   },
   "toffee": {
    "fail": 2,
@@ -508,15 +508,15 @@
  "zee anmol": {
   "alixbd-scan": {
    "fail": 1,
-   "pass": 2
+   "pass": 3
   },
   "current": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "toffee": {
    "fail": 1,
@@ -526,15 +526,15 @@
  "zee cafe": {
   "alixbd-scan": {
    "fail": 1,
-   "pass": 2
+   "pass": 3
   },
   "current": {
-   "fail": 2,
+   "fail": 3,
    "pass": 0
   },
   "playlist0": {
    "fail": 0,
-   "pass": 9
+   "pass": 10
   },
   "toffee": {
    "fail": 1,
